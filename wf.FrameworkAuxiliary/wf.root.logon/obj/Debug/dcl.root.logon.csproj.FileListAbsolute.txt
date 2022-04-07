@@ -1,0 +1,14 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.root.logon.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.root.logon.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.Properties.Resources.resources
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csproj.GenerateResource.Cache
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.dll
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.root.logon.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.root.logon.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.Properties.Resources.resources
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csproj.GenerateResource.Cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.pdb

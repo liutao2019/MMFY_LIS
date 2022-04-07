@@ -1,0 +1,1371 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v8.2, Version=8.2.2.0, Culture=neutral, PublicKeyToken=a6519d31830a2c3c</AssemblyFullName>
+///   <AssemblyLocation>C:\Windows\assembly\GAC_MSIL\DevExpress.XtraReports.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraReports.v8.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>zh-CHS</Localization>
+///   <References>
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraReports.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraReports.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Data.SqlXml\2.0.0.0__b77a5c561934e089\System.Data.SqlXml.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\Microsoft.VisualC\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualC.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_64\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_64\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.DirectoryServices\2.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.DirectoryServices.Protocols\2.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.Protocols.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.ServiceProcess\2.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Configuration.Install\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.Install.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Runtime.Serialization.Formatters.Soap\2.0.0.0__b03f5f7f11d50a3a\System.Runtime.Serialization.Formatters.Soap.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\Accessibility\2.0.0.0__b03f5f7f11d50a3a\Accessibility.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Deployment\2.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\System.Drawing.Design\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.Design.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_64\System.Data.OracleClient\2.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraPrinting.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraPrinting.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.Data.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.Data.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.Utils.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.Utils.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraTreeList.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraTreeList.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraEditors.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraEditors.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraRichTextEdit.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraRichTextEdit.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraBars.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraBars.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraPivotGrid.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraPivotGrid.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraPivotGrid.v8.2.Core\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraPivotGrid.v8.2.Core.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraNavBar.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraNavBar.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.XtraCharts.v8.2\8.2.2.0__a6519d31830a2c3c\DevExpress.XtraCharts.v8.2.dll" />
+///     <Reference Path="C:\Windows\assembly\GAC_MSIL\DevExpress.Charts.v8.2.Core\8.2.2.0__a6519d31830a2c3c\DevExpress.Charts.v8.2.Core.dll" />
+///   </References>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtrResu_Rig : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
+        private System.Data.DataSet dataSet1;
+        private System.Resources.ResourceManager _resources;
+        public xtrResu_Rig() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = @"zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.dataSet1 = new XtraReportSerialization.dataSet1();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel6,
+                        this.xrLabel2,
+                        this.xrLabel9,
+                        this.xrLabel8,
+                        this.xrLabel4,
+                        this.xrLabel7,
+                        this.xrLabel1,
+                        this.xrLabel3});
+            this.Detail.Height = 17;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.Height = 1;
+            this.PageFooter.Name = "PageFooter";
+            this.PageFooter.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.PageFooter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // ReportHeader
+            // 
+            this.ReportHeader.Height = 0;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.结果异常提示", "")});
+            this.xrLabel6.Location = new System.Drawing.Point(211, 0);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.Size = new System.Drawing.Size(33, 17);
+            this.xrLabel6.Text = "xrLabel6";
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.参考值线", "")});
+            this.xrLabel2.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel2.Location = new System.Drawing.Point(373, 0);
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.Size = new System.Drawing.Size(20, 8);
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "xrLabel2";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel9
+            // 
+            this.xrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.试验方法", "")});
+            this.xrLabel9.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel9.Location = new System.Drawing.Point(433, 0);
+            this.xrLabel9.Name = "xrLabel9";
+            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel9.Size = new System.Drawing.Size(131, 17);
+            this.xrLabel9.StylePriority.UseTextAlignment = false;
+            this.xrLabel9.Text = "xrLabel9";
+            this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.参考值上线", "")});
+            this.xrLabel8.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel8.Location = new System.Drawing.Point(395, 0);
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.Size = new System.Drawing.Size(33, 17);
+            this.xrLabel8.StylePriority.UseTextAlignment = false;
+            this.xrLabel8.Text = "xrLabel8";
+            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.参考值下线", "")});
+            this.xrLabel4.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel4.Location = new System.Drawing.Point(339, 0);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.Size = new System.Drawing.Size(33, 17);
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "xrLabel4";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.检验结果", "")});
+            this.xrLabel7.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel7.Location = new System.Drawing.Point(162, 0);
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.Size = new System.Drawing.Size(48, 17);
+            this.xrLabel7.StylePriority.UseTextAlignment = false;
+            this.xrLabel7.Text = "xrLabel7";
+            this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.检查项目名称", "")});
+            this.xrLabel1.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel1.Location = new System.Drawing.Point(0, 0);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.Size = new System.Drawing.Size(158, 17);
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "xrLabel1";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.结果单位", "")});
+            this.xrLabel3.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel3.Location = new System.Drawing.Point(245, 0);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.Size = new System.Drawing.Size(45, 17);
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.Text = "xrLabel3";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "dataSet1";
+            // 
+            // xtrResu_Rig
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.PageFooter,
+                        this.ReportHeader});
+            this.DataMember = "可设计字段";
+            this.DataSource = this.dataSet1;
+            this.Margins = new System.Drawing.Printing.Margins(43, 5, 100, 100);
+            this.Name = "xtrResu_Rig";
+            this.PageHeight = 583;
+            this.PageWidth = 827;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.Version = "8.2";
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
+namespace XtraReportSerialization {
+    
+    /// <summary>
+    ///Represents a strongly typed in-memory cache of data.
+    ///</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+    [global::System.Serializable()]
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
+    [global::System.Xml.Serialization.XmlRootAttribute("dataSet1")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
+    public partial class dataSet1 : global::System.Data.DataSet {
+        private 可设计字段DataTable table可设计字段;
+        private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public dataSet1() {
+            this.BeginInit();
+            this.InitClass();
+            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+            base.Tables.CollectionChanged += schemaChangedHandler;
+            base.Relations.CollectionChanged += schemaChangedHandler;
+            this.EndInit();
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected dataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                base(info, context, false) {
+            if ((this.IsBinarySerialized(info, context) == true)) {
+                this.InitVars(false);
+                global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler1 = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+                this.Tables.CollectionChanged += schemaChangedHandler1;
+                this.Relations.CollectionChanged += schemaChangedHandler1;
+                return;
+            }
+            string strSchema = ((string)(info.GetValue("XmlSchema", typeof(string))));
+            if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
+                global::System.Data.DataSet ds = new global::System.Data.DataSet();
+                ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+                if ((ds.Tables["可设计字段"] != null)) {
+                    base.Tables.Add(new 可设计字段DataTable(ds.Tables["可设计字段"]));
+                }
+                this.DataSetName = ds.DataSetName;
+                this.Prefix = ds.Prefix;
+                this.Namespace = ds.Namespace;
+                this.Locale = ds.Locale;
+                this.CaseSensitive = ds.CaseSensitive;
+                this.EnforceConstraints = ds.EnforceConstraints;
+                this.Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
+                this.InitVars();
+            }
+            else {
+                this.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+            }
+            this.GetSerializationData(info, context);
+            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+            base.Tables.CollectionChanged += schemaChangedHandler;
+            this.Relations.CollectionChanged += schemaChangedHandler;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public 可设计字段DataTable 可设计字段 {
+            get {
+                return this.table可设计字段;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.BrowsableAttribute(true)]
+        [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
+        public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
+            get {
+                return this._schemaSerializationMode;
+            }
+            set {
+                this._schemaSerializationMode = value;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public new global::System.Data.DataTableCollection Tables {
+            get {
+                return base.Tables;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public new global::System.Data.DataRelationCollection Relations {
+            get {
+                return base.Relations;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override void InitializeDerivedDataSet() {
+            this.BeginInit();
+            this.InitClass();
+            this.EndInit();
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public override global::System.Data.DataSet Clone() {
+            dataSet1 cln = ((dataSet1)(base.Clone()));
+            cln.InitVars();
+            cln.SchemaSerializationMode = this.SchemaSerializationMode;
+            return cln;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override bool ShouldSerializeTables() {
+            return false;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override bool ShouldSerializeRelations() {
+            return false;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override void ReadXmlSerializable(global::System.Xml.XmlReader reader) {
+            if ((this.DetermineSchemaSerializationMode(reader) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
+                this.Reset();
+                global::System.Data.DataSet ds = new global::System.Data.DataSet();
+                ds.ReadXml(reader);
+                if ((ds.Tables["可设计字段"] != null)) {
+                    base.Tables.Add(new 可设计字段DataTable(ds.Tables["可设计字段"]));
+                }
+                this.DataSetName = ds.DataSetName;
+                this.Prefix = ds.Prefix;
+                this.Namespace = ds.Namespace;
+                this.Locale = ds.Locale;
+                this.CaseSensitive = ds.CaseSensitive;
+                this.EnforceConstraints = ds.EnforceConstraints;
+                this.Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
+                this.InitVars();
+            }
+            else {
+                this.ReadXml(reader);
+                this.InitVars();
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override global::System.Xml.Schema.XmlSchema GetSchemaSerializable() {
+            global::System.IO.MemoryStream stream = new global::System.IO.MemoryStream();
+            this.WriteXmlSchema(new global::System.Xml.XmlTextWriter(stream, null));
+            stream.Position = 0;
+            return global::System.Xml.Schema.XmlSchema.Read(new global::System.Xml.XmlTextReader(stream), null);
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        internal void InitVars() {
+            this.InitVars(true);
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        internal void InitVars(bool initTable) {
+            this.table可设计字段 = ((可设计字段DataTable)(base.Tables["可设计字段"]));
+            if ((initTable == true)) {
+                if ((this.table可设计字段 != null)) {
+                    this.table可设计字段.InitVars();
+                }
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private void InitClass() {
+            this.DataSetName = "dataSet1";
+            this.Prefix = "";
+            this.EnforceConstraints = true;
+            this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+            this.table可设计字段 = new 可设计字段DataTable();
+            base.Tables.Add(this.table可设计字段);
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private bool ShouldSerialize可设计字段() {
+            return false;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
+            if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
+                this.InitVars();
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+            dataSet1 ds = new dataSet1();
+            global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+            global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+            global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
+            any.Namespace = ds.Namespace;
+            sequence.Items.Add(any);
+            type.Particle = sequence;
+            global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+            if (xs.Contains(dsSchema.TargetNamespace)) {
+                global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                try {
+                    global::System.Xml.Schema.XmlSchema schema = null;
+                    dsSchema.Write(s1);
+                    for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                        schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                        s2.SetLength(0);
+                        schema.Write(s2);
+                        if ((s1.Length == s2.Length)) {
+                            s1.Position = 0;
+                            s2.Position = 0;
+                            for (; ((s1.Position != s1.Length) 
+                                        && (s1.ReadByte() == s2.ReadByte())); ) {
+                                ;
+                            }
+                            if ((s1.Position == s1.Length)) {
+                                return type;
+                            }
+                        }
+                    }
+                }
+                finally {
+                    if ((s1 != null)) {
+                        s1.Close();
+                    }
+                    if ((s2 != null)) {
+                        s2.Close();
+                    }
+                }
+            }
+            xs.Add(dsSchema);
+            return type;
+        }
+        public delegate void 可设计字段RowChangeEventHandler(object sender, 可设计字段RowChangeEvent e);
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class 可设计字段DataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+            private global::System.Data.DataColumn column报告类型;
+            private global::System.Data.DataColumn column检查项目名称;
+            private global::System.Data.DataColumn column检验项目代码;
+            private global::System.Data.DataColumn column检验结果;
+            private global::System.Data.DataColumn columnOD结果;
+            private global::System.Data.DataColumn column数值结果;
+            private global::System.Data.DataColumn column结果单位;
+            private global::System.Data.DataColumn column价格;
+            private global::System.Data.DataColumn column参考值下线;
+            private global::System.Data.DataColumn column参考值上线;
+            private global::System.Data.DataColumn column参考值线;
+            private global::System.Data.DataColumn column结果异常提示;
+            private global::System.Data.DataColumn column参考值分期;
+            private global::System.Data.DataColumn column阳性标志;
+            private global::System.Data.DataColumn column试验方法;
+            private global::System.Data.DataColumn column结果日期;
+            private global::System.Data.DataColumn column有效标志;
+            private global::System.Data.DataColumn column结果类型;
+            private global::System.Data.DataColumn column结果显示位置;
+            private global::System.Data.DataColumn column项目ID;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段DataTable() {
+                this.TableName = "可设计字段";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal 可设计字段DataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected 可设计字段DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 报告类型Column {
+                get {
+                    return this.column报告类型;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 检查项目名称Column {
+                get {
+                    return this.column检查项目名称;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 检验项目代码Column {
+                get {
+                    return this.column检验项目代码;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 检验结果Column {
+                get {
+                    return this.column检验结果;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn OD结果Column {
+                get {
+                    return this.columnOD结果;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 数值结果Column {
+                get {
+                    return this.column数值结果;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 结果单位Column {
+                get {
+                    return this.column结果单位;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 价格Column {
+                get {
+                    return this.column价格;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 参考值下线Column {
+                get {
+                    return this.column参考值下线;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 参考值上线Column {
+                get {
+                    return this.column参考值上线;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 参考值线Column {
+                get {
+                    return this.column参考值线;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 结果异常提示Column {
+                get {
+                    return this.column结果异常提示;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 参考值分期Column {
+                get {
+                    return this.column参考值分期;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 阳性标志Column {
+                get {
+                    return this.column阳性标志;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 试验方法Column {
+                get {
+                    return this.column试验方法;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 结果日期Column {
+                get {
+                    return this.column结果日期;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 有效标志Column {
+                get {
+                    return this.column有效标志;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 结果类型Column {
+                get {
+                    return this.column结果类型;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 结果显示位置Column {
+                get {
+                    return this.column结果显示位置;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 项目IDColumn {
+                get {
+                    return this.column项目ID;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row this[int index] {
+                get {
+                    return ((可设计字段Row)(this.Rows[index]));
+                }
+            }
+            public event 可设计字段RowChangeEventHandler 可设计字段RowChanging;
+            public event 可设计字段RowChangeEventHandler 可设计字段RowChanged;
+            public event 可设计字段RowChangeEventHandler 可设计字段RowDeleting;
+            public event 可设计字段RowChangeEventHandler 可设计字段RowDeleted;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Add可设计字段Row(可设计字段Row row) {
+                this.Rows.Add(row);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row Add可设计字段Row(
+                        int 报告类型, 
+                        string 检查项目名称, 
+                        string 检验项目代码, 
+                        string 检验结果, 
+                        string OD结果, 
+                        decimal 数值结果, 
+                        string 结果单位, 
+                        decimal 价格, 
+                        string 参考值下线, 
+                        string 参考值上线, 
+                        string 参考值线, 
+                        string 结果异常提示, 
+                        string 参考值分期, 
+                        string 阳性标志, 
+                        string 试验方法, 
+                        System.DateTime 结果日期, 
+                        int 有效标志, 
+                        int 结果类型, 
+                        int 结果显示位置, 
+                        string 项目ID) {
+                可设计字段Row row可设计字段Row = ((可设计字段Row)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        报告类型,
+                        检查项目名称,
+                        检验项目代码,
+                        检验结果,
+                        OD结果,
+                        数值结果,
+                        结果单位,
+                        价格,
+                        参考值下线,
+                        参考值上线,
+                        参考值线,
+                        结果异常提示,
+                        参考值分期,
+                        阳性标志,
+                        试验方法,
+                        结果日期,
+                        有效标志,
+                        结果类型,
+                        结果显示位置,
+                        项目ID};
+                row可设计字段Row.ItemArray = columnValuesArray;
+                this.Rows.Add(row可设计字段Row);
+                return row可设计字段Row;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public virtual global::System.Collections.IEnumerator GetEnumerator() {
+                return this.Rows.GetEnumerator();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public override global::System.Data.DataTable Clone() {
+                可设计字段DataTable cln = ((可设计字段DataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new 可设计字段DataTable();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal void InitVars() {
+                this.column报告类型 = base.Columns["报告类型"];
+                this.column检查项目名称 = base.Columns["检查项目名称"];
+                this.column检验项目代码 = base.Columns["检验项目代码"];
+                this.column检验结果 = base.Columns["检验结果"];
+                this.columnOD结果 = base.Columns["OD结果"];
+                this.column数值结果 = base.Columns["数值结果"];
+                this.column结果单位 = base.Columns["结果单位"];
+                this.column价格 = base.Columns["价格"];
+                this.column参考值下线 = base.Columns["参考值下线"];
+                this.column参考值上线 = base.Columns["参考值上线"];
+                this.column参考值线 = base.Columns["参考值线"];
+                this.column结果异常提示 = base.Columns["结果异常提示"];
+                this.column参考值分期 = base.Columns["参考值分期"];
+                this.column阳性标志 = base.Columns["阳性标志"];
+                this.column试验方法 = base.Columns["试验方法"];
+                this.column结果日期 = base.Columns["结果日期"];
+                this.column有效标志 = base.Columns["有效标志"];
+                this.column结果类型 = base.Columns["结果类型"];
+                this.column结果显示位置 = base.Columns["结果显示位置"];
+                this.column项目ID = base.Columns["项目ID"];
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            private void InitClass() {
+                this.column报告类型 = new global::System.Data.DataColumn("报告类型", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column报告类型);
+                this.column检查项目名称 = new global::System.Data.DataColumn("检查项目名称", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column检查项目名称);
+                this.column检验项目代码 = new global::System.Data.DataColumn("检验项目代码", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column检验项目代码);
+                this.column检验结果 = new global::System.Data.DataColumn("检验结果", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column检验结果);
+                this.columnOD结果 = new global::System.Data.DataColumn("OD结果", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOD结果);
+                this.column数值结果 = new global::System.Data.DataColumn("数值结果", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column数值结果);
+                this.column结果单位 = new global::System.Data.DataColumn("结果单位", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column结果单位);
+                this.column价格 = new global::System.Data.DataColumn("价格", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column价格);
+                this.column参考值下线 = new global::System.Data.DataColumn("参考值下线", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column参考值下线);
+                this.column参考值上线 = new global::System.Data.DataColumn("参考值上线", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column参考值上线);
+                this.column参考值线 = new global::System.Data.DataColumn("参考值线", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column参考值线);
+                this.column结果异常提示 = new global::System.Data.DataColumn("结果异常提示", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column结果异常提示);
+                this.column参考值分期 = new global::System.Data.DataColumn("参考值分期", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column参考值分期);
+                this.column阳性标志 = new global::System.Data.DataColumn("阳性标志", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column阳性标志);
+                this.column试验方法 = new global::System.Data.DataColumn("试验方法", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column试验方法);
+                this.column结果日期 = new global::System.Data.DataColumn("结果日期", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column结果日期);
+                this.column有效标志 = new global::System.Data.DataColumn("有效标志", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column有效标志);
+                this.column结果类型 = new global::System.Data.DataColumn("结果类型", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column结果类型);
+                this.column结果显示位置 = new global::System.Data.DataColumn("结果显示位置", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column结果显示位置);
+                this.column项目ID = new global::System.Data.DataColumn("项目ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column项目ID);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row New可设计字段Row() {
+                return ((可设计字段Row)(this.NewRow()));
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new 可设计字段Row(builder);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Type GetRowType() {
+                return typeof(可设计字段Row);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.可设计字段RowChanged != null)) {
+                    this.可设计字段RowChanged(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.可设计字段RowChanging != null)) {
+                    this.可设计字段RowChanging(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.可设计字段RowDeleted != null)) {
+                    this.可设计字段RowDeleted(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.可设计字段RowDeleting != null)) {
+                    this.可设计字段RowDeleting(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Remove可设计字段Row(可设计字段Row row) {
+                this.Rows.Remove(row);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dataSet1 ds = new dataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "可设计字段DataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        public partial class 可设计字段Row : global::System.Data.DataRow {
+            private 可设计字段DataTable table可设计字段;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal 可设计字段Row(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.table可设计字段 = ((可设计字段DataTable)(this.Table));
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int 报告类型 {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.报告类型Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“报告类型”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.报告类型Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 检查项目名称 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.检查项目名称Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“检查项目名称”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.检查项目名称Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 检验项目代码 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.检验项目代码Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“检验项目代码”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.检验项目代码Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 检验结果 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.检验结果Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“检验结果”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.检验结果Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string OD结果 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.OD结果Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“OD结果”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.OD结果Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal 数值结果 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.数值结果Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“数值结果”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.数值结果Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 结果单位 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.结果单位Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“结果单位”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.结果单位Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal 价格 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.价格Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“价格”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.价格Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 参考值下线 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.参考值下线Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“参考值下线”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.参考值下线Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 参考值上线 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.参考值上线Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“参考值上线”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.参考值上线Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 参考值线 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.参考值线Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“参考值线”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.参考值线Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 结果异常提示 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.结果异常提示Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“结果异常提示”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.结果异常提示Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 参考值分期 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.参考值分期Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“参考值分期”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.参考值分期Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 阳性标志 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.阳性标志Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“阳性标志”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.阳性标志Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 试验方法 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.试验方法Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“试验方法”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.试验方法Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public System.DateTime 结果日期 {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.table可设计字段.结果日期Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“结果日期”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.结果日期Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int 有效标志 {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.有效标志Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“有效标志”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.有效标志Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int 结果类型 {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.结果类型Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“结果类型”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.结果类型Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int 结果显示位置 {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.结果显示位置Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“结果显示位置”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.结果显示位置Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 项目ID {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.项目IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“项目ID”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.项目IDColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is报告类型Null() {
+                return this.IsNull(this.table可设计字段.报告类型Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set报告类型Null() {
+                this[this.table可设计字段.报告类型Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is检查项目名称Null() {
+                return this.IsNull(this.table可设计字段.检查项目名称Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set检查项目名称Null() {
+                this[this.table可设计字段.检查项目名称Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is检验项目代码Null() {
+                return this.IsNull(this.table可设计字段.检验项目代码Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set检验项目代码Null() {
+                this[this.table可设计字段.检验项目代码Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is检验结果Null() {
+                return this.IsNull(this.table可设计字段.检验结果Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set检验结果Null() {
+                this[this.table可设计字段.检验结果Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsOD结果Null() {
+                return this.IsNull(this.table可设计字段.OD结果Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetOD结果Null() {
+                this[this.table可设计字段.OD结果Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is数值结果Null() {
+                return this.IsNull(this.table可设计字段.数值结果Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set数值结果Null() {
+                this[this.table可设计字段.数值结果Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is结果单位Null() {
+                return this.IsNull(this.table可设计字段.结果单位Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set结果单位Null() {
+                this[this.table可设计字段.结果单位Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is价格Null() {
+                return this.IsNull(this.table可设计字段.价格Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set价格Null() {
+                this[this.table可设计字段.价格Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is参考值下线Null() {
+                return this.IsNull(this.table可设计字段.参考值下线Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set参考值下线Null() {
+                this[this.table可设计字段.参考值下线Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is参考值上线Null() {
+                return this.IsNull(this.table可设计字段.参考值上线Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set参考值上线Null() {
+                this[this.table可设计字段.参考值上线Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is参考值线Null() {
+                return this.IsNull(this.table可设计字段.参考值线Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set参考值线Null() {
+                this[this.table可设计字段.参考值线Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is结果异常提示Null() {
+                return this.IsNull(this.table可设计字段.结果异常提示Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set结果异常提示Null() {
+                this[this.table可设计字段.结果异常提示Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is参考值分期Null() {
+                return this.IsNull(this.table可设计字段.参考值分期Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set参考值分期Null() {
+                this[this.table可设计字段.参考值分期Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is阳性标志Null() {
+                return this.IsNull(this.table可设计字段.阳性标志Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set阳性标志Null() {
+                this[this.table可设计字段.阳性标志Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is试验方法Null() {
+                return this.IsNull(this.table可设计字段.试验方法Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set试验方法Null() {
+                this[this.table可设计字段.试验方法Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is结果日期Null() {
+                return this.IsNull(this.table可设计字段.结果日期Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set结果日期Null() {
+                this[this.table可设计字段.结果日期Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is有效标志Null() {
+                return this.IsNull(this.table可设计字段.有效标志Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set有效标志Null() {
+                this[this.table可设计字段.有效标志Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is结果类型Null() {
+                return this.IsNull(this.table可设计字段.结果类型Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set结果类型Null() {
+                this[this.table可设计字段.结果类型Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is结果显示位置Null() {
+                return this.IsNull(this.table可设计字段.结果显示位置Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set结果显示位置Null() {
+                this[this.table可设计字段.结果显示位置Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is项目IDNull() {
+                return this.IsNull(this.table可设计字段.项目IDColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set项目IDNull() {
+                this[this.table可设计字段.项目IDColumn] = global::System.Convert.DBNull;
+            }
+        }
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        public class 可设计字段RowChangeEvent : global::System.EventArgs {
+            private 可设计字段Row eventRow;
+            private global::System.Data.DataRowAction eventAction;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段RowChangeEvent(可设计字段Row row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+    }
+}

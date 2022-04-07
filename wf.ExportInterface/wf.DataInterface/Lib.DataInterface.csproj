@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C13E8696-4A00-4D9C-8B51-2CBE78E6485C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lib.DataInterface</RootNamespace>
+    <AssemblyName>Lib.DataInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Reference\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.common.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.DAC, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Lib.DAC.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.EntityCore, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Lib.EntityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager">
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4778.30637, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataConverter\Converter\NoConverter.cs" />
+    <Compile Include="DataConverter\Converter\DIConverter.cs" />
+    <Compile Include="DataInterface\BinDll\BinDllDataInterfaceCommand.cs" />
+    <Compile Include="DataInterface\BinDll\BinDllDataInterfaceConnection.cs" />
+    <Compile Include="DataInterface\BinDll\BinDllDataInterfaceParameter.cs" />
+    <Compile Include="DataInterface\BinDll\BinDllDataInterfaceParameterCollection.cs" />
+    <Compile Include="DataInterface\BinDll\BinDllLoader.cs" />
+    <Compile Include="DataInterface\ConnectionHelper.cs" />
+    <Compile Include="DataConverter\Converter\ContrastConverter.cs" />
+    <Compile Include="DataTableMapping\DataInterfaceDataTableMappingContrast.cs" />
+    <Compile Include="Enum\EnumDeploymentMode.cs" />
+    <Compile Include="Implement\Cache\AbstractDICache.cs" />
+    <Compile Include="Implement\Cache\CacheDirectDBDataInterface.cs" />
+    <Compile Include="Implement\Cache\CacheDataDemandDataInterface.cs" />
+    <Compile Include="Implement\Controls\ctrlDataConverterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Implement\Controls\ctrlDataConverterEditor.Designer.cs">
+      <DependentUpon>ctrlDataConverterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\Controls\ctrlDataInterfaceCommandEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Implement\Controls\ctrlDataInterfaceCommandEditor.Designer.cs">
+      <DependentUpon>ctrlDataInterfaceCommandEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\Controls\ctrlDataInterfaceConnectionEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Implement\Controls\ctrlDataInterfaceConnectionEditor.Designer.cs">
+      <DependentUpon>ctrlDataInterfaceConnectionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\DACManager.cs" />
+    <Compile Include="Implement\DIEnviorment.cs" />
+    <Compile Include="Implement\EnumDataAccessMode.cs" />
+    <Compile Include="Implement\ControlBindingData.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataConvertContrast.cs" />
+    <Compile Include="Implement\DAC\CRUDDataInterfaceConvertContrast.cs" />
+    <Compile Include="Implement\DAC\CRUDDataInterfaceConverter.cs" />
+    <Compile Include="DataConverter\DataConverterConstrstItem.cs" />
+    <Compile Include="Implement\DataConverterFactory.cs" />
+    <Compile Include="DataConverter\Converter\IInterfaceDataConverter.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataConverter.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataInterface.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataInterfaceCommand.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataInterfaceCommandParameter.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataInterfaceConnection.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataInterfaceMapping.cs" />
+    <Compile Include="Implement\DataModel\EntityDictDataInterfaceMappingContrast.cs" />
+    <Compile Include="DataInterface\DataInterfaceCommand.cs" />
+    <Compile Include="DataInterface\DataInterfaceConnection.cs" />
+    <Compile Include="DataInterface\DOSCommand\DOSCmdDataInterfaceCommand.cs" />
+    <Compile Include="DataInterface\DOSCommand\DOSCmdDataInterfaceConnection.cs" />
+    <Compile Include="DataInterface\DOSCommand\DOSCmdDataInterfaceParameter.cs" />
+    <Compile Include="DataInterface\DOSCommand\DOSCmdDataInterfaceParameterCollection.cs" />
+    <Compile Include="Enum\EnumDataInterfaceConverterType.cs" />
+    <Compile Include="Implement\DataInterfaceHelper.cs" />
+    <Compile Include="DataInterface\DataInterfaceParameter.cs" />
+    <Compile Include="DataInterface\DataInterfaceParameterCollection.cs" />
+    <Compile Include="Implement\DAC\CRUDDataInterfaceConnection.cs" />
+    <Compile Include="Implement\DAC\CRUDDataInterfaceCommand.cs" />
+    <Compile Include="Implement\DAC\CRUDDataInterfaceCommandParameter.cs" />
+    <Compile Include="Implement\Form\frmDataConverterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement\Form\frmDataConverterEditor.Designer.cs">
+      <DependentUpon>frmDataConverterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\Form\frmDataInterfaceCommandEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement\Form\frmDataInterfaceCommandEditor.Designer.cs">
+      <DependentUpon>frmDataInterfaceCommandEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\Form\frmDataInterfaceConnectionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement\Form\frmDataInterfaceConnectionEditor.Designer.cs">
+      <DependentUpon>frmDataInterfaceConnectionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\frmTestCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement\frmTestCommand.Designer.cs">
+      <DependentUpon>frmTestCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\frmTips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement\frmTips.Designer.cs">
+      <DependentUpon>frmTips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\Service\ImplementDataInterfaceWebService.cs" />
+    <Compile Include="Implement\Service\IDataInterfaceServiceContract.cs" />
+    <Compile Include="SettingSerializer.cs" />
+    <Compile Include="Enum\EnumCommandExecuteType.cs" />
+    <Compile Include="Enum\EnumCommandType.cs" />
+    <Compile Include="Enum\EnumDataInterfaceConnectionType.cs" />
+    <Compile Include="DataInterface\NetDll\NetDllDataInterfaceCommand.cs" />
+    <Compile Include="DataInterface\NetDll\NetDllDataInterfaceConnection.cs" />
+    <Compile Include="DataInterface\NetDll\NetDllDataInterfaceParameter.cs" />
+    <Compile Include="DataInterface\NetDll\NetDllDataInterfaceParameterCollection.cs" />
+    <Compile Include="DataInterface\NetDll\NetDllLoader.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DataInterface\SQL\SqlDataInterfaceCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataInterface\SQL\SqlDataInterfaceConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataInterface\SQL\SqlDataInterfaceParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataInterface\SQL\SqlDataInterfaceParameterCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\DataTypeUtil.cs" />
+    <Compile Include="Util\FilePathHelper.cs" />
+    <Compile Include="Util\frmCommandTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\frmCommandTest.Designer.cs">
+      <DependentUpon>frmCommandTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abstract\AbstractDataInterfaceCommand.cs" />
+    <Compile Include="Abstract\AbstractDataInterfaceConnection.cs" />
+    <Compile Include="Abstract\AbstractDataInterfaceParameter.cs" />
+    <Compile Include="Abstract\AbstractDataInterfaceParameterCollection.cs" />
+    <Compile Include="Enum\EnumDataInterfaceParameterDirection.cs" />
+    <Compile Include="Abstract\IDataInterfaceCommand.cs" />
+    <Compile Include="Abstract\IDataInterfaceConnection.cs" />
+    <Compile Include="Abstract\IDataInterfaceParameter.cs" />
+    <Compile Include="Abstract\IDataInterfaceParameterCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataInterface\WCF\WCFDataInterfaceConnection.cs" />
+    <Compile Include="DataInterface\WCF\WCFDataInterfaceCommand.cs" />
+    <Compile Include="DataInterface\WCF\WCFDataInterfaceParameter.cs" />
+    <Compile Include="DataInterface\WCF\WCFDataInterfaceParameterCollection.cs" />
+    <Compile Include="DataInterface\Webservice\WSDataInterfaceCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataInterface\Webservice\WSDataInterfaceConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataInterface\Webservice\WSDataInterfaceParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataInterface\Webservice\WSDataInterfaceParameterCollection.cs" />
+    <Compile Include="DataInterface\Webservice\WSInvokerCache.cs" />
+    <Compile Include="Util\ObjectDisplayHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Implement\Controls\ctrlDataConverterEditor.resx">
+      <DependentUpon>ctrlDataConverterEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement\Controls\ctrlDataInterfaceCommandEditor.resx">
+      <DependentUpon>ctrlDataInterfaceCommandEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement\Controls\ctrlDataInterfaceConnectionEditor.resx">
+      <DependentUpon>ctrlDataInterfaceConnectionEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement\Form\frmDataConverterEditor.resx">
+      <DependentUpon>frmDataConverterEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement\Form\frmDataInterfaceCommandEditor.resx">
+      <DependentUpon>frmDataInterfaceCommandEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement\Form\frmDataInterfaceConnectionEditor.resx">
+      <DependentUpon>frmDataInterfaceConnectionEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement\frmTestCommand.resx">
+      <DependentUpon>frmTestCommand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement\frmTips.resx">
+      <DependentUpon>frmTips.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\frmCommandTest.resx">
+      <DependentUpon>frmCommandTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Lib.DataInterface.Implement.EntityDictDataConvertRule.datasource" />
+    <None Include="Properties\DataSources\Lib.DataInterface.Implement.EntityDictDataInterface.datasource" />
+    <None Include="Properties\DataSources\Lib.DataInterface.Implement.EntityDictDataInterfaceCommand.datasource" />
+    <None Include="Properties\DataSources\Lib.DataInterface.Implement.EntityDictDataInterfaceConnection.datasource" />
+    <None Include="Properties\DataSources\Lib.DataInterface.Implement.EntityDictDataInterfaceMapping.datasource" />
+    <None Include="Resources\Network_Map.png" />
+    <None Include="Resources\cmd.png" />
+    <None Include="Resources\复制.png" />
+    <None Include="Resources\连接测试.png" />
+    <None Include="Resources\连接.png" />
+    <None Include="Resources\取消.png" />
+    <None Include="Resources\新增.png" />
+    <None Include="Resources\修改.png" />
+    <None Include="Resources\删除.png" />
+    <None Include="Resources\关闭.png" />
+    <None Include="Resources\返回.png" />
+    <None Include="Resources\保存.png" />
+    <None Include="Resources\图标16.png" />
+    <None Include="Resources\ClosePreviewHS.bmp" />
+    <None Include="Resources\DeleteHS.png" />
+    <None Include="Resources\FormRunHS.png" />
+    <None Include="Resources\EditTableHS.png" />
+    <None Include="Resources\Edit_UndoHS.png" />
+    <None Include="Resources\saveHS.png" />
+    <None Include="Resources\NewDocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

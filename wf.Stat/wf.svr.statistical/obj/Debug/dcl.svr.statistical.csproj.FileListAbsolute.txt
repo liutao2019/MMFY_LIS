@@ -1,0 +1,12 @@
+D:\WiseFly\Source Code\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.statistical.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.statistical.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Stat\wf.svr.statistical\obj\Debug\dcl.svr.statistical.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Stat\wf.svr.statistical\obj\Debug\dcl.svr.statistical.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Stat\wf.svr.statistical\obj\Debug\dcl.svr.statistical.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.statistical.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.statistical.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Stat\wf.svr.statistical\obj\Debug\dcl.svr.statistical.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Stat\wf.svr.statistical\obj\Debug\dcl.svr.statistical.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Stat\wf.svr.statistical\obj\Debug\dcl.svr.statistical.pdb

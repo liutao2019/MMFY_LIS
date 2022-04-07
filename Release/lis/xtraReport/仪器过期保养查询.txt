@@ -1,0 +1,28 @@
+select DISTINCT 
+dict_type.type_name as 组别,
+dict_instrmt.itr_mid as 仪器名称,
+--DATEPART (dw,dict_instrmt_maintain_Registration.reg_register_date)-1 as 星期,
+case datepart(dw,dict_instrmt_maintain_Registration.reg_register_date)
+when 2 then '星期一'
+when 3 then '星期二'
+when 4 then '星期三'
+when 5 then '星期四'
+when 6 then '星期五'
+when 7 then '星期六'
+else   '星期日'
+end,
+
+ 
+--dict_instrmt_maintain_Registration.reg_register_date as 日期1,
+convert(varchar(30),dict_instrmt_maintain_Registration.reg_register_date,23) as 过期保养登记日期 ,
+dict_instrmt_maintain.mai_content as 保养内容,
+'&sDate&' +' ~ '+'&eDate&'  as daterange
+--dict_instrmt_maintain_Registration.*
+ from dbo.dict_instrmt_maintain_Registration
+left join dict_instrmt on dict_instrmt.itr_id=dict_instrmt_maintain_Registration.reg_itr_id
+left join dict_instrmt_maintain on dict_instrmt_maintain.mai_id=dict_instrmt_maintain_Registration.reg_mai_id
+left join dict_type on dict_type.type_id=dict_instrmt.itr_type
+where dict_instrmt_maintain_Registration.reg_register_date>'&sDate&' and dict_instrmt_maintain_Registration.reg_register_date<'&eDate&'
+and dict_instrmt_maintain_Registration.over_interval_time>3
+and DATEPART (dw,dict_instrmt_maintain_Registration.reg_register_date)<>2
+order by 组别,仪器名称,过期保养登记日期

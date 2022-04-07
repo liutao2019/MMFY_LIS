@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UploadPatInfoAndResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="patBuffer" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="buffer" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadPatInfoAndResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadPatInfoAndResultResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadPatInfoAndResultSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadPatInfoAndResult" />
+  </wsdl:message>
+  <wsdl:message name="UploadPatInfoAndResultSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadPatInfoAndResultResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UploadDataSoap">
+    <wsdl:operation name="UploadPatInfoAndResult">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传病人资料和结果</wsdl:documentation>
+      <wsdl:input message="tns:UploadPatInfoAndResultSoapIn" />
+      <wsdl:output message="tns:UploadPatInfoAndResultSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UploadDataSoap" type="tns:UploadDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadPatInfoAndResult">
+      <soap:operation soapAction="http://tempuri.org/UploadPatInfoAndResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UploadDataSoap12" type="tns:UploadDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadPatInfoAndResult">
+      <soap12:operation soapAction="http://tempuri.org/UploadPatInfoAndResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UploadData">
+    <wsdl:port name="UploadDataSoap" binding="tns:UploadDataSoap">
+      <soap:address location="http://localhost:8190/lis/WebService/UploadData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UploadDataSoap12" binding="tns:UploadDataSoap12">
+      <soap12:address location="http://localhost:8190/lis/WebService/UploadData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

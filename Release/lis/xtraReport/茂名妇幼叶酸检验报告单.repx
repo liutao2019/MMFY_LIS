@@ -1,0 +1,826 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>D:\MMFYLIS\LISClient\TempFileDownload\DevExpress.XtraReports.v15.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>zh-Hans</Localization>
+///   <Version>15.2</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.xtraReport11">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAACAAAAAAAAAFBBRFBBRFBJodDRQ2/gSgAAAAAbAAAAMAEAABZsAGEAYgBlAGwAOQAuAFQAZQB4AHQAAAAAAExwAGkAYwB0AHUAcgBlAEIAbwB4ADIALgBJAG0AYQBnAGUAJgBTAHkAcwB0AGUAbQAuAEQAcgBhAHcAaQBuAGcALgBJAG0AYQBnAGUAYwQAAAHgCOazqDoNCjHjgIHmnKzlrp7pqozph4fnlKhQQ1It6YeR56OB5b6u57KS5bGC5p6Q5rOV5a+55Lqa55Sy5Z+65Zub5rCi
+/// 5Y+26YW46L+Y5Y6f6YW2KE1USEZSKUM2NzdU55qE5Z+65Zug5Z6L6L+b6KGM5a6a5oCn5qOA5rWLLg0KMuOAgeajgOa1i+ino+ivu++8iOS7heS+m+WPguiAg++8ie+8muS6mueUsuWfuuWbm+awouWPtumFuOi/mOWOn+mFtu+8iE1USEZS77yJ5piv5Y+26YW45Luj6LCi5Lit55qE5YWz6ZSu6YW244CCTVRIRlLnrKw2Nzflj7fkvY3ngrnlnKjkuI3lkIzkuKrkvZPkuK3lrZjlnKjlt67lvILvvIjkuK3lm73kurpUVA0KICAg5Z6L5Z+65Zug57qm5Y2gMjUl77yJ77yM5YW25Z+65Zug5aSa5oCB5oCnQ1TjgIFUVOWfuuWboOWei+WvvOiHtE1USEZS6YW25rS75oCn5LiL6ZmN77yaQ0PlnovphbbmtLvmgKfkuLoxMDAl77ybQ1TlnovphbbmtLvmgKfkuIvpmY3kuLo3
+/// MSXvvJtUVOWei+mFtua0u+aAp+S7heS4ujM0JeOAgg0KICAg57un6ICM5byV5Y+R5ZCM5Z6L5Y2K6IOx5rCo6YW45rC05bmz5Y2H6auY77yM6YCg5oiQ5Y+26YW45Luj6LCi6Zqc56KN44CC5aSa6aG556CU56m26KGo5piO77yMTVRIRlLln7rlm6DlpJrmgIHmgKflr7zoh7TnmoTlj7bphbjku6PosKLpmpznoo3og73lpJ/lvJXotbfnpZ7nu4/nrqHnvLrpmbfjgIHllJDmsI/nu7wNCiAgIOWQiOeXh+OAgeWFiOWkqeaAp+W/g+iEj+eXheOAgeWUh+iFreijguetieaWsOeUn+WEv+e8uumZt+OAguWFtuWfuuWboOWkmuaAgeaAp+W8lei1t+eahOmrmOWQjOWei+WNiuiDseawqOmFuOihgOeXh+i/mOWPr+WinuWKoOW/g+iEkeihgOeuoeeWvueXheWPkeeUn+eahOmj
+/// jumZqeOAgg0KM+OAgeacrOWunumqjOeahOWxgOmZkOaAp+S4uuaXoOazleWvueajgOa1i+iMg+WbtOWklueahOWFtuS7luWfuuWboOWei+i/m+ihjOajgOa1i+OAgg0KNOOAgeacrOaKpeWRiuS7heWvueacrOagh+acrOi0n+i0o++8jOajgOa1i+e7k+aenOS7heS+m+WPguiAg++8jOS4jeS9nOS4uuivgeaYjuadkOaWmeOAgg0KNeOAgeWmguWvuee7k+aenOacieeWkemXru+8jOivt+S6juaUtuWIsOacrOaKpeWRijfkuKrlt6XkvZzml6XlhoXkuI7pgZfkvKDlrp7pqozlrqTogZTns7vvvIznlLXor53vvJowNjY4LTIzNzEzNDPjgIIg9REAAIlQTkcNChoKAAAADUlIRFIAAABBAAAAQAgGAAAARasa4AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBI
+/// WXMAAA7DAAAOwwHHb6hkAAARiklEQVR4Xu1bCXhN1/bfmUQkETInEpGEIDKYCYp6ZoK0qkoND+WpoWpozS8TIRFCCaJUqaFFJ9oqHq/60D/e07+5NbT/uufcMTd3iJv57Pfb557ITRzE1xuv7/9Z3/f7bnLPOXuv39prrb3Wzgl5Ls/luTyXuhLjspNEN/gjoo7NJcrQbMJ7ryJ8Y4B9+q4myqZribrNJqIdsIsUzPhKeur/gRRM+YKo220mnOcKcoP0IbphexuoYzc1VYava68MzOqlbJI9VBmSPUwZuvZPqoicdqo2G0NhqAbXSXfCNUgn6vjNRD/5C2m0/zIpeONLooraQM6TekTdfksgiA7Fqmdy7itOcq5pdxUuKXqFU7JF4ZRSCpQBRew7zjX1Dueefor3ylirDF7zkrrdllBKKYHBRA/5rxBj8imiDM8hZT/pHNVxue3h5is5t/TLIFmscPgrVZBagt3rlFzKuaXdRLjkqCJz
+/// EgwLjjnDc/7YoaLpsZ0wN1ZFb4wC+XUgoFQ4JMuTfBrAIFy9VC2MsV3dZmN75hnwEGnWP4iISsVsIvkjP3ZVhq2bhFi++VSrXlswY9RP+w1hMl/b+wNP5BCiH3NQ0uI/KBX6IqLplMfgi9XfoHBOscgSeCyYtzCk2KDyO5n7nZLL+EYZ+5BrIpQBWaRw8wVJm/+Q8H6ZRNtvV1MksoMKx2RBVulHAiSxurz3u1TdZibV9p5EdQMniJ/qmBmU91sAwstxX6VRbJ5lXuG58oy6w5Z2v5KZpOjwT5JGz1hYCGg6bg2CBxyBAaor+SSAnCZhKjVn96Yl37ei5XdCaIUqgApaf/Gz/G4ILf0hit7fkUD1Y0dRZfB8PPewIfiGKy+p226OU5DlYlg+U8l/7SDR9vrAE8nqQyS/p/OAesuoYfYwkahg9qaCyYcKBqDAtwoGwIjv2PV8P1p6NooWTEuivNcijGFjDKtHnEaiDIMxJO2egRR/e5uY
+/// kk85Ye9ewuKzGsEnIpnmJ42lFXyglaQt8ceBGQrGsOzpRFXN3xLHeTCmGFKrdmn773I3zP5a0rKOReGSygqhfihs8qsTfDI4z0W0+Ei8dYXlyD4JMEbxsRiqiqphCKeUEhRk059JSFg+vU6wPXkjFk/Zkqsdkqmq9Sxafjv0Yfd/Gpi8adEnHcSEamsIFGW3UWa31A3fJ2lbh6IMW/sXsdStRrA2SKbqdtNpxf8FW2NejuBTwPD2UISCbVgkU95ndTZCwlFStW4EVaEP57Hif6qTkwNTjqH6vq9sMo+W/jPSGuMyxGoN5BM2jjLsbWls67zoS+6pWm9sXZh7XtLYzqJL3Mva3ZEs/qoTtoWVLHNVTce/UN3g8VTbbyJVtZoFBZeK14zzhohJ7qkSoxz0vlQ//hWMyYwszY+divfPXFJnuYE1MMjCu6uTtoV1pY3zh9CSv7emFb/B7dm+r/Gn5T83pfd3dqHqDtMp57GEGt8ZTMtuhlnJ
+/// MGMwiFtlDaKPA5JrYW4PqnCsrgfK9jOaznkNJbXtKxg4BE3RLdsJq5BMNd3eoCUno+UJsUQIpUsvNBeTI1Ocfepfe5UWTB9BDTOHU1NKPximae2TJhJk8TexlHNfXF0X5xSDstm6rpLa9hWEQj9MUFRtQhFIeHEzRIJP3PpgHFYoVeWJypwBoIosOtC+9tsnxio52/KhXYKV7yjnZ5nXnpU0t5MI90vZEdhbcq0x57ZUdPVaKQ/FjQuG4DmbOK4cByvKVpatsOyzNYGxSs9FYUd4B89X1wsN1vbi43ccJPXtIyzRoDbYYDuRFdZtr/yXJk92Y4RHhTKA6vpPxHMPG4FvtFDsI+j9xlV5gkFuLAYYofhEG7EAqzkW557+NyRyN0l9+4gp/TsnDHyg5mSMDCuDxWwvp6gtYCTWKGk6TROfs66ezQq6LBObJdOyAdQwa5iYK4qPwjMeZQh4nmV3Z+SAZVVjSODqp11Ge+8jqW8f0U/+oj7n
+/// ueJEzckYGbYNsl1AVlEZlPyjJTWl9qPGRYOobtB4yqGhqhqv0jAp9B5Jw3Y6VFxxuXHE0MJOVM2QEjiXlFvK0LXBkvr2kfxXD7ihSJIplbEtomApvYQC6HGuawt2H8sfAKsetb0mi+PYjsmg6TJNjHnZcZlXIQRZLSJnBOAWmjv7GqFg6peu8ITjMpOJXZzhzRFWb6jt9lYJEKwqeKzklU3nUgM8oOxas8eGwv1t3VCAPRwKDFy91FuqyPX2NYI5+6wj577iY7kJGdgOYXx3MK24F1T77A4irC5Qx7+JMVLEFtm4cJB1q2XXH2UAfF92tZmYkB/hBSwnXFJ32OotqW8fEXcHr4wcuQkfwHk51Q0Zb01mzCuYy7N4ZmQqIYUBu84yu27ARFSZ88Vts+zHiKr75MgzYLxyhFD+q6OrN081gKrxW92Ifa6S+vYRWl7BzhNnPG5iK6x9A9sxWElbcqo1Lf1XJC27FEFLf2hBi75sS82ZL1Jd
+/// 4jjKBywQk2rJKVSZlSdJcsQZJAOWXQ63GsBJbu4qYDvfXHz0ln3rBCbK4DU90TwVyk1aHcxQiHHH5ZT3WkiVQfOpMnge5f3eQdgsEa9z9RE+2B2s4SNDvtIozGtYEvypKS187wWxMn1UCDwAKkZlUNabhZvqoJNUx+cGINauyk78WDClq8Dyh3nln6y1BUuktoQZYIQKRZDoQZa9nahhxnDxNJqF2xMNACApFqiiNnSW1LavGN897oi8sEVu4loDOwk7MH2QM0C+ggPhi83F0yJTel+qf30U1XSdKnqPtYaoNKDMeDLgPFd+j2qxbrpI3cDdBN3ZEPkmqjZAiY0VLbuOFlrnJ/YJbCvU9JgihgxXz3reYLtdyo/zGLDmKSBrQZ2eNWr7ftiIa7jytKwCTwLaZ/OqPrTsRhjVjxtlc3xeSVrmmacEQuGuqtV7LSyf35A0rgO5TFqzlnr840+X5IAiCKvNVp+Vylbicvf9DrBTpUYZaSjs
+/// 7L8r2ErxybtE0/39hoi7r2UVeSRSxPLYuHSg6BHy9/w+oDa4ro7LDdf2ewbvMSDmiKrley9wrmkqOWXkkUzzh4+lms6sg7SP61eDc4pFGZI93jYX0AoVoSU7iVCUjp9vSd/aSUqvaoh57TlH1A1zax0W2BXYgav1FEjm+lOhMmlW5pPUcs5zzXu3CHUW8j2IoHeT4EDKrxFScYUQIR8wdpEY2El0SfuIbsged95n9WZk5Ap5ZW0AI7BDWOtfmWtetyVVSawS7Hfcg+dYocUOXnj/BWLnys4ldP0n0IIpY/SlF7unCMZW8wVDqwVVCF8sGJrn4XO7YIybI5gTGwrGeBgjhggFQfjsSgTzQNE4qE0AH/zcDt+9LIJalhPh/kyJ8SMEuYFoe+7w5f0z97Ot6dHErITu1STmvAxxDGLwDmXIXPFYnoWLbsAEqh89WuxM2QFLYU5PatnVmRYdjqclp1vR0vMtaNmVZmK1yU6yQUAQDOxQpyYC
+/// UIg1UwqGqHMgt1AwvdhcMMb6CsY2PjCCj2Ds7C2Y+nsLxk4NMYY7jOAuGNu6C+YkINGd3p/tgU83QotWwypJRDD1gJU6A3FEMLQEwkTrlXzflKjbHvPlfTK3K1ySSzkXEPNYLJbIbLXYewaa7m9Q3dBxYstsmJNITWn9aOGmHmI1WPx1HC0505KW/W84Lb8VKlaKIjF9jSqyErYNme1ptiz8YZwQNfALSF8TCoJ/FgoCrwJXcB2fQZeFgiZA4EX8fs6K4LMw3Gl4z7eCMfqQYOy4VOweBfNLHoKpWwCMEAGLtoMh+giG6CS43BTB0AIWjlhT8Vv0Z5b9CRYLqj72B1PWLLF2l/35XfwLtE5cMSuJaqRsiFWW0A+RsQceeEcFYAFxPYxwD6SvwUh/EwxND4F8LvgsQbhMgPf0xc+xgqkP4sT0Qgtc/Ao337A+xB4OKIKVy6sGxiRM+Uetlt2JYU7m/ia/EqHQv1Aw++cLxkAFVvUOCF0G
+/// /gFdD2M194AIiEUuh/fOAY/xyAnD4PI9sJhtsLBh4OcjFI6pL5R85CgokTz1TvDwYHh6JNAKDjCMZdSYWaJbySpTx2CeYfYtF8x+9wVTEC8YmlwEMZBrnlHyXWKuedW0I4a3Zh4vmDFvt3nN7FGCqWcIYtxHMA+H5w5wgRc7VPwq7Qz6BiDnD2LNgWjwQoI0dQd6EaHwVWCSuJ3KimCI+FJWwTqBP1w10IyVuAv3PF76Q8I5c9a468YF008YFy9aWHJ6WqBgWVhP0KBW8bnpwfvmZCic0ot5/5y5quYHkOR6Y+UGSTkMP1uWgNgnEpPfIXCr2/IK/x6IsVkGwvlCQcgVIT/sIFZ4jWCIeb2CT3ih/E7fiOITsz3UHT8K4AM2TuYbZf1d1WpHrLLpXUehcDIxvP0ZUXfcGsC5p/+T91p5WDdin7umyzZJ4zoQKFosT6S2EAkjfwQZBEPoJewq+5B0MpBcXxKM7duWnBkfpo5eP4ZzX72e
+/// c12dzTdeN4n3y56oDFozRRmQtQQk30cleF7VYsMQdLCiTkVHfnJgf3nm6qepVVEbutf5i51QvgapJ4GRDixEkroOlz6GhJQpFMS/Ihi7daE00YfSC46ClpDyX1sRU2oLwjejDuqYXF+Uvaf5xqtOa3ps90OD5qWKXN8IpXkkH5A5D4QvK8PXHdB0yfNhb6GoojfGok+4x14ZNi4+4VinbTMTZFqTPNlKiKRNWOULgjEijxZHzqGlcT0Rk4GUjnXNH9GZ8H7HfJRBOam8X9Zftb0/bCAU5xHtgN1uysCspVjJefmjPmmkIMuPgNTR0itqZ1Xz9eIrwsbkUy73d/7oBC9IwHdLVJE5bxhmf+0CY23nPFZcVXfYGqpL3CNpWoeCreKoDGkLSP+Ia5uwjUxFQdFDMA/xVsd+4qUgmUkKp5z4sivDiKr1Dles5Ej2ojcI70DnaUav380w5xs0YBvag4gexGcUTDvsiAryK5Tgx/STPnf7jcxz
+/// QozXV4aunc03zoiBJxBN122NEQ5Z8JBpnFu6StlkzcTzxEXSso4FBVIXeAMqKlRbhrBPEc8oJtr1F8wD/MvPsnBpjHtikZEHE22vna5cvdRP2cud+gmf1YPCnXjvVb9oErb1QLO1EQa5rArPmV9ynnNg7ycj7n/GPa8wd4YRDnOeK64rm2RPRZc6CQZYyrmlXYeHiGeFcH8CbxiETy3yxFfaPjs9zOvOiTrWudCy7xxAOhD1dbBgWeQi7rlsrzX1R3MxR7rLKkJqKVE4JW8FwaPqDltikdDmIb7P6IbuaQPCuVjRvcrwnExNp7wIuPTnMMAmuHjSGjxr9YRVJ3RJ+33hBV7wHn/eKyNb4ZLSiY1tOXiNeUM8vMDI+61+B+Oyr5+NCIV/xkqjs2J9Q+EEIhSvl648LDdJf4JGagtcfyWS11zeL3M3lE3W9tsVA8NsBklGeqoybF0q3yjjJIwxDp7xchaeFY2AnFBy9p6zbtheokl4n/2L
+/// UCA8w9M6Ohq2hG1t4QkGjDufvVj+h5TCP19kRshDbI9FzO5EKHwKwiO1fT9kRsjF7xuRzKKxwrdhkDxNzx09VRE5L2mbbGBGYInxG4SGI3tlmAnGIMqgLGL57IbYscIT4uAJJtw3j73Cy/6X6g8nyNReSGQfw+WnY4XfBPHZqtYbp8G9R/KBWQexgp/njz4QAiPth4eMRpJ8DSGzDPe8iPj/F7zjgrr9lq76MQedpSFFKfr2toO29wcdcd+7XMOVPMbdidqgL3YQ+76EYQ/RDdztpo7fHK3pvj0CWb5h/ssfN9R0zgvXvLCjDba5gdgOh+Qn7Q/Gd81AqjG+6wRPGQhy/bG6iTBUIsglFEz5olraZ56gG/RRKMaJ03R7Pwbjx2pf3Bml7bnjGW0PTyHsgFN8/R/xrB97SHzvEe7P3BiunU2w6tZ/CWT3oMyFAUR3Z5Ug+285eBGBdxD964ekEa1iOXSdaPvvEmsH5AUCQ7DDHHGe5/Jc
+/// nstzebZCyL8Bssx8SyVs65sAAAAASUVORK5CYII=</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtraReport11 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRLabel label11;
+        private DevExpress.XtraReports.UI.XRLabel label10;
+        private DevExpress.XtraReports.UI.XRLabel label23;
+        private DevExpress.XtraReports.UI.XRLabel label13;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private DevExpress.XtraReports.UI.XRLine line2;
+        private DevExpress.XtraReports.UI.XRLabel label9;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox3;
+        private DevExpress.XtraReports.UI.XRLabel label16;
+        private DevExpress.XtraReports.UI.XRLabel label17;
+        private DevExpress.XtraReports.UI.XRLabel label7;
+        private DevExpress.XtraReports.UI.XRLabel label15;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
+        private DevExpress.XtraReports.UI.XRLabel label25;
+        private DevExpress.XtraReports.UI.XRLabel label24;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel44;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel33;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel32;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel25;
+        private DevExpress.XtraReports.UI.XRLine xrLine3;
+        private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
+        private DevExpress.XtraReports.UI.GroupHeaderBand 病人分组头;
+        private DevExpress.XtraReports.UI.GroupFooterBand 病人分组尾;
+        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
+        private DevExpress.XtraReports.UI.XRLabel label8;
+        private DevExpress.XtraReports.UI.XRLabel label19;
+        private DevExpress.XtraReports.UI.XRLabel label18;
+        private DevExpress.XtraReports.UI.XRLabel label4;
+        private DevExpress.XtraReports.UI.XRLabel label5;
+        private DevExpress.XtraReports.UI.XRLine line1;
+        private DevExpress.XtraReports.UI.XRLabel label6;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.XRLabel label3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel29;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel19;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel18;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLine xrLine2;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox2;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private DevExpress.XtraReports.UI.XRControlStyle xrControlStyle1;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public xtraReport11() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.xtraReport11");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            DevExpress.XtraReports.UI.XRSummary summary1 = new DevExpress.XtraReports.UI.XRSummary();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.病人分组头 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.病人分组尾 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.label11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label23 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label13 = new DevExpress.XtraReports.UI.XRLabel();
+            this.line2 = new DevExpress.XtraReports.UI.XRLine();
+            this.label9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.pictureBox3 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.label16 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label15 = new DevExpress.XtraReports.UI.XRLabel();
+            this.pictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.label25 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label24 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel44 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel33 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel32 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
+            this.label8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label19 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.line1 = new DevExpress.XtraReports.UI.XRLine();
+            this.label6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel29 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine2 = new DevExpress.XtraReports.UI.XRLine();
+            this.pictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.xrControlStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label11,
+                        this.label10,
+                        this.label23,
+                        this.label13});
+            this.Detail.HeightF = 17.79162F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.line2,
+                        this.label9,
+                        this.pictureBox3,
+                        this.label16,
+                        this.label17,
+                        this.label7,
+                        this.label15,
+                        this.pictureBox1,
+                        this.label25,
+                        this.label24,
+                        this.xrLabel44,
+                        this.xrLabel33,
+                        this.xrLabel32,
+                        this.xrLabel25,
+                        this.xrLine3});
+            this.PageFooter.HeightF = 210.3737F;
+            this.PageFooter.Name = "PageFooter";
+            this.PageFooter.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.PageFooter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // ReportHeader
+            // 
+            this.ReportHeader.HeightF = 0F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
+            // 病人分组头
+            // 
+            this.病人分组头.Expanded = false;
+            this.病人分组头.Font = new System.Drawing.Font("Times New Roman", 48F);
+            this.病人分组头.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+                        new DevExpress.XtraReports.UI.GroupField("标识ID", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.病人分组头.HeightF = 0F;
+            this.病人分组头.Name = "病人分组头";
+            // 
+            // 病人分组尾
+            // 
+            this.病人分组尾.HeightF = 0F;
+            this.病人分组尾.Name = "病人分组尾";
+            this.病人分组尾.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand;
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label8,
+                        this.label19,
+                        this.label18,
+                        this.label4,
+                        this.label5,
+                        this.line1,
+                        this.label6,
+                        this.label1,
+                        this.label2,
+                        this.label3,
+                        this.xrLabel29,
+                        this.xrLabel19,
+                        this.xrLabel18,
+                        this.xrLabel17,
+                        this.xrLabel16,
+                        this.xrLabel11,
+                        this.xrLabel10,
+                        this.xrLabel9,
+                        this.xrLabel8,
+                        this.xrLabel7,
+                        this.xrLabel6,
+                        this.xrLabel5,
+                        this.xrLabel4,
+                        this.xrLabel3,
+                        this.xrLabel2,
+                        this.xrLine2,
+                        this.pictureBox2});
+            this.PageHeader.HeightF = 166.0611F;
+            this.PageHeader.Name = "PageHeader";
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.HeightF = 6F;
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.HeightF = 9.248479F;
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // label11
+            // 
+            this.label11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.结果异常提示")});
+            this.label11.LocationFloat = new DevExpress.Utils.PointFloat(750.4565F, 0F);
+            this.label11.Name = "label11";
+            this.label11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label11.SizeF = new System.Drawing.SizeF(22.08331F, 13F);
+            this.label11.StylePriority.UseTextAlignment = false;
+            this.label11.Text = "label11";
+            this.label11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // label10
+            // 
+            this.label10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.检验项目")});
+            this.label10.Font = new System.Drawing.Font("宋体", 10F);
+            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(57.12499F, 2.083333F);
+            this.label10.Name = "label10";
+            this.label10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label10.SizeF = new System.Drawing.SizeF(229.125F, 13F);
+            this.label10.StylePriority.UseFont = false;
+            this.label10.StylePriority.UseTextAlignment = false;
+            this.label10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.序号")});
+            this.label23.Font = new System.Drawing.Font("宋体", 10F);
+            this.label23.LocationFloat = new DevExpress.Utils.PointFloat(26.91666F, 2.083333F);
+            this.label23.Name = "label23";
+            this.label23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label23.SizeF = new System.Drawing.SizeF(30.20833F, 13F);
+            this.label23.StylePriority.UseFont = false;
+            this.label23.StylePriority.UseTextAlignment = false;
+            summary1.Func = DevExpress.XtraReports.UI.SummaryFunc.RecordNumber;
+            summary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.label23.Summary = summary1;
+            this.label23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label23.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.项目结果")});
+            this.label13.Font = new System.Drawing.Font("宋体", 10F);
+            this.label13.LocationFloat = new DevExpress.Utils.PointFloat(543.0403F, 0F);
+            this.label13.Name = "label13";
+            this.label13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label13.SizeF = new System.Drawing.SizeF(207.4161F, 13F);
+            this.label13.StylePriority.UseFont = false;
+            this.label13.StylePriority.UseTextAlignment = false;
+            this.label13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // line2
+            // 
+            this.line2.LocationFloat = new DevExpress.Utils.PointFloat(4.832268F, 0F);
+            this.line2.Name = "line2";
+            this.line2.SizeF = new System.Drawing.SizeF(802.1678F, 3.413327F);
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("宋体", 9F);
+            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(17.58253F, 3.33F);
+            this.label9.Multiline = true;
+            this.label9.Name = "label9";
+            this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label9.SizeF = new System.Drawing.SizeF(780.2499F, 135.4167F);
+            this.label9.StylePriority.UseFont = false;
+            this.label9.StylePriority.UseTextAlignment = false;
+            this.label9.Text = resources.GetString("label9.Text");
+            this.label9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Image", null, "可设计字段.检验者签名")});
+            this.pictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(379.8734F, 170.5385F);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.SizeF = new System.Drawing.SizeF(121.875F, 33.00004F);
+            this.pictureBox3.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // label16
+            // 
+            this.label16.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.报告时间")});
+            this.label16.Font = new System.Drawing.Font("宋体", 10F);
+            this.label16.LocationFloat = new DevExpress.Utils.PointFloat(91.4986F, 178.5385F);
+            this.label16.Name = "label16";
+            this.label16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label16.SizeF = new System.Drawing.SizeF(159.4162F, 16.99991F);
+            this.label16.StylePriority.UseFont = false;
+            this.label16.StylePriority.UseTextAlignment = false;
+            this.label16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("宋体", 10F);
+            this.label17.LocationFloat = new DevExpress.Utils.PointFloat(21.37367F, 178.5384F);
+            this.label17.Name = "label17";
+            this.label17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label17.SizeF = new System.Drawing.SizeF(83.45824F, 17F);
+            this.label17.StylePriority.UseFont = false;
+            this.label17.StylePriority.UseTextAlignment = false;
+            this.label17.Text = "报告时间：";
+            this.label17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("宋体", 10F);
+            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(564.9153F, 150.2047F);
+            this.label7.Name = "label7";
+            this.label7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label7.SizeF = new System.Drawing.SizeF(83.41666F, 17F);
+            this.label7.StylePriority.UseFont = false;
+            this.label7.StylePriority.UseTextAlignment = false;
+            this.label7.Text = "签收时间：";
+            this.label7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label15
+            // 
+            this.label15.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.签收时间")});
+            this.label15.Font = new System.Drawing.Font("宋体", 10F);
+            this.label15.LocationFloat = new DevExpress.Utils.PointFloat(634.9986F, 150.2048F);
+            this.label15.Name = "label15";
+            this.label15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label15.SizeF = new System.Drawing.SizeF(159.4162F, 16.99991F);
+            this.label15.StylePriority.UseFont = false;
+            this.label15.StylePriority.UseTextAlignment = false;
+            this.label15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Image", null, "可设计字段.审核者签名")});
+            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(634.9986F, 170.5387F);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.SizeF = new System.Drawing.SizeF(98.4176F, 33F);
+            this.pictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // label25
+            // 
+            this.label25.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.申请时间")});
+            this.label25.Font = new System.Drawing.Font("宋体", 10F);
+            this.label25.LocationFloat = new DevExpress.Utils.PointFloat(91.4986F, 150.2049F);
+            this.label25.Name = "label25";
+            this.label25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label25.SizeF = new System.Drawing.SizeF(172.3335F, 16.99998F);
+            this.label25.StylePriority.UseFont = false;
+            this.label25.StylePriority.UseTextAlignment = false;
+            this.label25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label24
+            // 
+            this.label24.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.送检时间")});
+            this.label24.Font = new System.Drawing.Font("宋体", 10F);
+            this.label24.LocationFloat = new DevExpress.Utils.PointFloat(379.8734F, 150.2049F);
+            this.label24.Name = "label24";
+            this.label24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label24.SizeF = new System.Drawing.SizeF(160.0832F, 16.99991F);
+            this.label24.StylePriority.UseFont = false;
+            this.label24.StylePriority.UseTextAlignment = false;
+            this.label24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel44
+            // 
+            this.xrLabel44.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(21.37367F, 150.2049F);
+            this.xrLabel44.Name = "xrLabel44";
+            this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel44.SizeF = new System.Drawing.SizeF(81.58321F, 17F);
+            this.xrLabel44.StylePriority.UseFont = false;
+            this.xrLabel44.StylePriority.UseTextAlignment = false;
+            this.xrLabel44.Text = "申请时间：";
+            this.xrLabel44.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel33
+            // 
+            this.xrLabel33.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(563.1648F, 178.5386F);
+            this.xrLabel33.Name = "xrLabel33";
+            this.xrLabel33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel33.SizeF = new System.Drawing.SizeF(83.00146F, 17F);
+            this.xrLabel33.StylePriority.UseFont = false;
+            this.xrLabel33.StylePriority.UseTextAlignment = false;
+            this.xrLabel33.Text = "审 核 者：";
+            this.xrLabel33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel32
+            // 
+            this.xrLabel32.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(309.3741F, 178.5385F);
+            this.xrLabel32.Name = "xrLabel32";
+            this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel32.SizeF = new System.Drawing.SizeF(83.83264F, 17F);
+            this.xrLabel32.StylePriority.UseFont = false;
+            this.xrLabel32.StylePriority.UseTextAlignment = false;
+            this.xrLabel32.Text = "检 验 者：";
+            this.xrLabel32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel25
+            // 
+            this.xrLabel25.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(309.7901F, 150.2047F);
+            this.xrLabel25.Name = "xrLabel25";
+            this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel25.SizeF = new System.Drawing.SizeF(83.41666F, 17F);
+            this.xrLabel25.StylePriority.UseFont = false;
+            this.xrLabel25.StylePriority.UseTextAlignment = false;
+            this.xrLabel25.Text = "送检时间：";
+            this.xrLabel25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLine3
+            // 
+            this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(4.832411F, 138.7467F);
+            this.xrLine3.Name = "xrLine3";
+            this.xrLine3.SizeF = new System.Drawing.SizeF(802.3342F, 2F);
+            // 
+            // label8
+            // 
+            this.label8.CanGrow = false;
+            this.label8.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(13.99997F, 43.54F);
+            this.label8.Name = "label8";
+            this.label8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label8.SizeF = new System.Drawing.SizeF(793F, 23.4F);
+            this.label8.StylePriority.UseFont = false;
+            this.label8.StylePriority.UseTextAlignment = false;
+            this.label8.Text = "叶酸基因检测报告单";
+            this.label8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("宋体", 10F);
+            this.label19.LocationFloat = new DevExpress.Utils.PointFloat(24.04038F, 118.0661F);
+            this.label19.Name = "label19";
+            this.label19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label19.SizeF = new System.Drawing.SizeF(73.91615F, 16.54121F);
+            this.label19.StylePriority.UseFont = false;
+            this.label19.StylePriority.UseTextAlignment = false;
+            this.label19.Text = "临床诊断:";
+            this.label19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label18
+            // 
+            this.label18.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.诊断")});
+            this.label18.Font = new System.Drawing.Font("宋体", 10F);
+            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(97.95653F, 118.0661F);
+            this.label18.Name = "label18";
+            this.label18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label18.SizeF = new System.Drawing.SizeF(704.3352F, 16.54121F);
+            this.label18.StylePriority.UseFont = false;
+            this.label18.Text = "label18";
+            // 
+            // label4
+            // 
+            this.label4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.送检医生")});
+            this.label4.Font = new System.Drawing.Font("宋体", 10F);
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(95.37389F, 96.89948F);
+            this.label4.Name = "label4";
+            this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label4.SizeF = new System.Drawing.SizeF(110.0861F, 21.16667F);
+            this.label4.StylePriority.UseFont = false;
+            this.label4.StylePriority.UseTextAlignment = false;
+            this.label4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("宋体", 10F);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(24.62354F, 96.89948F);
+            this.label5.Name = "label5";
+            this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label5.SizeF = new System.Drawing.SizeF(73.33298F, 21.16667F);
+            this.label5.StylePriority.UseFont = false;
+            this.label5.StylePriority.UseTextAlignment = false;
+            this.label5.Text = "送检医生:";
+            this.label5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // line1
+            // 
+            this.line1.LocationFloat = new DevExpress.Utils.PointFloat(14.16481F, 159.7279F);
+            this.line1.Name = "line1";
+            this.line1.SizeF = new System.Drawing.SizeF(792.8352F, 6.33316F);
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(543.0403F, 140.9782F);
+            this.label6.Name = "label6";
+            this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label6.SizeF = new System.Drawing.SizeF(207.4161F, 15.08287F);
+            this.label6.StylePriority.UseFont = false;
+            this.label6.StylePriority.UseTextAlignment = false;
+            this.label6.Text = "结果";
+            this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(57.125F, 140.9782F);
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label1.SizeF = new System.Drawing.SizeF(229.125F, 15.08287F);
+            this.label1.StylePriority.UseFont = false;
+            this.label1.StylePriority.UseTextAlignment = false;
+            this.label1.Text = "项    目";
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("宋体", 10F);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(451.79F, 75.73274F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label2.SizeF = new System.Drawing.SizeF(54.5415F, 21.16668F);
+            this.label2.StylePriority.UseFont = false;
+            this.label2.StylePriority.UseTextAlignment = false;
+            this.label2.Text = "病历号:";
+            this.label2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.病人ID")});
+            this.label3.Font = new System.Drawing.Font("宋体", 10F);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(506.3315F, 75.73267F);
+            this.label3.Name = "label3";
+            this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label3.SizeF = new System.Drawing.SizeF(117.9597F, 21.16667F);
+            this.label3.StylePriority.UseFont = false;
+            this.label3.StylePriority.UseTextAlignment = false;
+            this.label3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel29
+            // 
+            this.xrLabel29.CanGrow = false;
+            this.xrLabel29.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(16.25F, 15F);
+            this.xrLabel29.Name = "xrLabel29";
+            this.xrLabel29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel29.SizeF = new System.Drawing.SizeF(793F, 28.54F);
+            this.xrLabel29.StylePriority.UseFont = false;
+            this.xrLabel29.StylePriority.UseTextAlignment = false;
+            this.xrLabel29.Text = "茂名市妇幼保健院遗传优生优育中心";
+            this.xrLabel29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel19
+            // 
+            this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.样本号")});
+            this.xrLabel19.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(703.8319F, 75.73277F);
+            this.xrLabel19.Name = "xrLabel19";
+            this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel19.SizeF = new System.Drawing.SizeF(95.58521F, 21.16668F);
+            this.xrLabel19.StylePriority.UseFont = false;
+            this.xrLabel19.StylePriority.UseTextAlignment = false;
+            this.xrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel18
+            // 
+            this.xrLabel18.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(634.7063F, 75.7328F);
+            this.xrLabel18.Name = "xrLabel18";
+            this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel18.SizeF = new System.Drawing.SizeF(69.12555F, 21.16668F);
+            this.xrLabel18.StylePriority.UseFont = false;
+            this.xrLabel18.StylePriority.UseTextAlignment = false;
+            this.xrLabel18.Text = "样本编号:";
+            this.xrLabel18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel17
+            // 
+            this.xrLabel17.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.床号")});
+            this.xrLabel17.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(506.4989F, 96.89948F);
+            this.xrLabel17.Name = "xrLabel17";
+            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel17.SizeF = new System.Drawing.SizeF(92.00192F, 21.16667F);
+            this.xrLabel17.StylePriority.UseFont = false;
+            // 
+            // xrLabel16
+            // 
+            this.xrLabel16.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(451.79F, 96.89935F);
+            this.xrLabel16.Name = "xrLabel16";
+            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel16.SizeF = new System.Drawing.SizeF(61.25119F, 21.16667F);
+            this.xrLabel16.StylePriority.UseFont = false;
+            this.xrLabel16.StylePriority.UseTextAlignment = false;
+            this.xrLabel16.Text = "床  号:";
+            this.xrLabel16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.标本类别")});
+            this.xrLabel11.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(707.9994F, 96.89954F);
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(91.12659F, 21.16666F);
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.StylePriority.UseTextAlignment = false;
+            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel10
+            // 
+            this.xrLabel10.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(634.8735F, 96.8996F);
+            this.xrLabel10.Name = "xrLabel10";
+            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel10.SizeF = new System.Drawing.SizeF(73.12585F, 21.16666F);
+            this.xrLabel10.StylePriority.UseFont = false;
+            this.xrLabel10.StylePriority.UseTextAlignment = false;
+            this.xrLabel10.Text = "标本种类:";
+            this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel9
+            // 
+            this.xrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.科室名称")});
+            this.xrLabel9.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(271.6231F, 96.89948F);
+            this.xrLabel9.Name = "xrLabel9";
+            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(180.1669F, 21.16668F);
+            this.xrLabel9.StylePriority.UseFont = false;
+            this.xrLabel9.StylePriority.UseTextAlignment = false;
+            this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(215.4564F, 96.89948F);
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(56.16672F, 21.16668F);
+            this.xrLabel8.StylePriority.UseFont = false;
+            this.xrLabel8.StylePriority.UseTextAlignment = false;
+            this.xrLabel8.Text = "科  室:";
+            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.年龄1")});
+            this.xrLabel7.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(375.6656F, 75.7328F);
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(76.12439F, 21.16667F);
+            this.xrLabel7.StylePriority.UseFont = false;
+            this.xrLabel7.StylePriority.UseTextAlignment = false;
+            this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(331.5408F, 75.7328F);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(50.20847F, 21.16667F);
+            this.xrLabel6.StylePriority.UseFont = false;
+            this.xrLabel6.StylePriority.UseTextAlignment = false;
+            this.xrLabel6.Text = "年龄:";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.性别")});
+            this.xrLabel5.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(271.6231F, 75.73267F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(40.00198F, 21.16668F);
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(215.2892F, 75.73267F);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(56.33392F, 21.16668F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "性  别:";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.姓名")});
+            this.xrLabel3.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Bold);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(68.7485F, 75.73277F);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(136.7115F, 21.16668F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(26.91666F, 75.73267F);
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(39.25183F, 21.16669F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "姓名:";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLine2
+            // 
+            this.xrLine2.LocationFloat = new DevExpress.Utils.PointFloat(14.16481F, 135.2699F);
+            this.xrLine2.Name = "xrLine2";
+            this.xrLine2.SizeF = new System.Drawing.SizeF(793.0018F, 2.083405F);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(185.9148F, 3.941663F);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.SizeF = new System.Drawing.SizeF(65F, 50.41667F);
+            this.pictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.Squeeze;
+            // 
+            // xrControlStyle1
+            // 
+            this.xrControlStyle1.Name = "xrControlStyle1";
+            // 
+            // xtraReport11
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.PageFooter,
+                        this.ReportHeader,
+                        this.病人分组头,
+                        this.病人分组尾,
+                        this.PageHeader,
+                        this.topMarginBand1,
+                        this.bottomMarginBand1});
+            this.Margins = new System.Drawing.Printing.Margins(7, 3, 6, 9);
+            this.Name = "xtraReport11";
+            this.PageHeight = 583;
+            this.PageWidth = 827;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A5Rotated;
+            this.ShowPrintMarginsWarning = false;
+            this.ShowPrintStatusDialog = false;
+            this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
+                        this.xrControlStyle1});
+            this.StyleSheetPath = null;
+            this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.Version = "15.2";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

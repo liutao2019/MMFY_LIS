@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9806270-2E25-45C3-B2F7-8B84FB010752}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.svr.dicbasic</RootNamespace>
+    <AssemblyName>dcl.svr.dicbasic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lis_dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.dao.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WCF\lis.wcf\bin\dcl.dao.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.DAC, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.DAC.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.EntityCore, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.EntityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lis.SendDataByHl7, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceHL7\Lis.SendDataByHl7.dll</HintPath>
+    </Reference>
+    <Reference Include="Lis.SendDataByHl7v3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lis.SendDataByHl7v3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CombineSplitBarCodeBIZ.cs" />
+    <Compile Include="CupsBIZ.cs" />
+    <Compile Include="DicIcdCombineBIZ.cs" />
+    <Compile Include="DictHarvesterBIZ.cs" />
+    <Compile Include="DictMitmNoResultViewBIZ.cs" />
+    <Compile Include="IceBoxBIZ.cs" />
+    <Compile Include="DictRackBIZ.cs" />
+    <Compile Include="BCCuvetteBIZ.cs" />
+    <Compile Include="BscripeBIZ.cs" />
+    <Compile Include="CheckbBIZ.cs" />
+    <Compile Include="ClItemBIZ.cs" />
+    <Compile Include="CombineTimeruleBIZ.cs" />
+    <Compile Include="ComReptimeBIZ.cs" />
+    <Compile Include="DiagnosBIZ.cs" />
+    <Compile Include="DictModBIZ.cs" />
+    <Compile Include="DicHoleModeBIZ.cs" />
+    <Compile Include="DicHoleStatusBIZ.cs" />
+    <Compile Include="DicItemHoleBIZ.cs" />
+    <Compile Include="DictItemUrgentValueBIZ.cs" />
+    <Compile Include="DictCalcBIZ.cs" />
+    <Compile Include="DictJudgeBIZ.cs" />
+    <Compile Include="DictNobactBIZ.cs" />
+    <Compile Include="EfficacyBIZ.cs" />
+    <Compile Include="HospitalBIZ.cs" />
+    <Compile Include="ItemCombineBarcodeBIZ.cs" />
+    <Compile Include="Item_PropBIZ.cs" />
+    <Compile Include="ItrResCopyBIZ.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampReturnBIZ.cs" />
+    <Compile Include="S_StateBIZ.cs" />
+    <Compile Include="TemperatureBIZ.cs" />
+    <Compile Include="TubeRackBIZ.cs" />
+    <Compile Include="TypeBIZ.cs" />
+    <Compile Include="SampleBIZ.cs" />
+    <Compile Include="InstrmtBIZ.cs" />
+    <Compile Include="ItemBIZ.cs" />
+    <Compile Include="DepartBIZ.cs" />
+    <Compile Include="Mitm_NoBIZ.cs" />
+    <Compile Include="CombineSplitBIZ.cs" />
+    <Compile Include="UGR_TypeBIZ.cs" />
+    <Compile Include="ItemCombineBIZ.cs" />
+    <Compile Include="DoctorBIZ.cs" />
+    <Compile Include="OriginBIZ.cs" />
+    <Compile Include="No_TypeBIZ.cs" />
+    <Compile Include="ConResAdjustBIZ.cs" />
+    <Compile Include="SamRemarksBIZ.cs" />
+    <Compile Include="ReferenceNameBIZ.cs" />
+    <Compile Include="FeesTypeBIZ.cs" />
+    <Compile Include="InstrmtComBIZ.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.Dao\wf.dao.interface\dcl.dao.interfaces.csproj">
+      <Project>{6d05d146-6d3f-4905-8d7e-7de11f2a3b53}</Project>
+      <Name>dcl.dao.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Cache\wf.svr.cache\dcl.svr.cache.csproj">
+      <Project>{86a5ce82-01c7-49df-b5ae-051342773452}</Project>
+      <Name>dcl.svr.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.svr.interfaces\dcl.svr.interfaces.csproj">
+      <Project>{2a6a0733-30f9-44fc-8ce4-6f5784b2c9a4}</Project>
+      <Name>dcl.svr.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

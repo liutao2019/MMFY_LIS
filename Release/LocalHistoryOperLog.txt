@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Records>
+    <Record EventDate="2019-12-16T15:53:04.9847329+08:00" EventModule="质控图表" EventDesc="admin" SenderTag="dcl.client.qc.FrmChart" SenderName="eFrmChart" SenderText="1.质控图表" />
+    <Record EventDate="2019-12-16T16:16:24.9635689+08:00" EventModule="质控图表" EventDesc="admin" SenderTag="dcl.client.qc.FrmChart" SenderName="eFrmChart" SenderText="1.质控图表" />
+    <Record EventDate="2019-12-16T16:24:24.3646171+08:00" EventModule="报表设计" EventDesc="admin" SenderTag="dcl.client.report.FrmReporMain" SenderName="acFrmReporMain" SenderText="5.报表设计" />
+    <Record EventDate="2019-12-16T16:48:42.8829619+08:00" EventModule="质控图表" EventDesc="admin" SenderTag="dcl.client.qc.FrmChart" SenderName="eFrmChart" SenderText="1.质控图表" />
+    <Record EventDate="2019-12-16T16:49:07.5568283+08:00" EventModule="报表设计" EventDesc="admin" SenderTag="dcl.client.report.FrmReporMain" SenderName="acFrmReporMain" SenderText="5.报表设计" />
+    <Record EventDate="2019-12-16T16:55:04.3015185+08:00" EventModule="质控图表" EventDesc="admin" SenderTag="dcl.client.qc.FrmChart" SenderName="eFrmChart" SenderText="1.质控图表" />
+    <Record EventDate="2019-12-16T17:03:22.6175321+08:00" EventModule="报表设计" EventDesc="admin" SenderTag="dcl.client.report.FrmReporMain" SenderName="acFrmReporMain" SenderText="5.报表设计" />
+    <Record EventDate="2019-12-16T17:18:06.246792+08:00" EventModule="质控统计" EventDesc="admin" SenderTag="dcl.client.qc.FrmQcDataAnalyse" SenderName="eFrmQcDataAnalyse" SenderText="2.质控统计" />
+    <Record EventDate="2019-12-16T17:20:43.3339862+08:00" EventModule="报表设计" EventDesc="admin" SenderTag="dcl.client.report.FrmReporMain" SenderName="acFrmReporMain" SenderText="5.报表设计" />
+    <Record EventDate="2019-12-16T17:22:14.8869577+08:00" EventModule="报表设计" EventDesc="admin" SenderTag="dcl.client.report.FrmReporMain" SenderName="acFrmReporMain" SenderText="5.报表设计" />
+    <Record EventDate="2019-12-17T09:15:05.9690428+08:00" EventModule="统计报表" EventDesc="admin" SenderTag="dcl.client.statistical.FrmGeneralStatistics" SenderName="eFrmGeneralStatistics" SenderText="1.统计报表" />
+    <Record EventDate="2019-12-17T09:17:15.4060812+08:00" EventModule="报表设计" EventDesc="admin" SenderTag="dcl.client.report.FrmReporMain" SenderName="acFrmReporMain" SenderText="5.报表设计" />
+    <Record EventDate="2019-12-17T09:26:56.7797451+08:00" EventModule="细菌检验" EventDesc="admin" SenderTag="dcl.client.result.FrmBacterialInputNew" SenderName="eFrmBacterialInput" SenderText="2.细菌检验" />
+    <Record EventDate="2019-12-17T10:16:17.6476057+08:00" EventModule="字典中心" EventDesc="admin" SenderTag="dcl.client.dicbasic.FrmDictMainDev" SenderName="acFrmDictMain" SenderText="1.字典中心" />
+    <Record EventDate="2019-12-17T14:15:07.320302+08:00" EventModule="数据分析" EventDesc="admin" SenderTag="dcl.client.ananlyse.FrmDateBasicAnalyse" SenderName="eFrmDateBasicAnalyse" SenderText="2.数据分析" />
+    <Record EventDate="2019-12-17T14:39:42.2587751+08:00" EventModule="WHONET导出" EventDesc="admin" SenderTag="dcl.client.whonet.FrmWhonet" SenderName="acWhonet" SenderText="3.WHONET导出" />
+    <Record EventDate="2019-12-17T15:40:07.994765+08:00" EventModule="质控统计" EventDesc="admin" SenderTag="dcl.client.qc.FrmQcDataAnalyse" SenderName="eFrmQcDataAnalyse" SenderText="2.质控统计" />
+    <Record EventDate="2019-12-17T16:26:06.3338228+08:00" EventModule="数据分析" EventDesc="admin" SenderTag="dcl.client.ananlyse.FrmDateBasicAnalyse" SenderName="eFrmDateBasicAnalyse" SenderText="2.数据分析" />
+    <Record EventDate="2019-12-17T16:26:53.7918142+08:00" EventModule="质控统计" EventDesc="admin" SenderTag="dcl.client.qc.FrmQcDataAnalyse" SenderName="eFrmQcDataAnalyse" SenderText="2.质控统计" />
+    <Record EventDate="2019-12-17T16:46:59.2620299+08:00" EventModule="报表设计" EventDesc="admin" SenderTag="dcl.client.report.FrmReporMain" SenderName="acFrmReporMain" SenderText="5.报表设计" />
+  </Records>
+</Document>

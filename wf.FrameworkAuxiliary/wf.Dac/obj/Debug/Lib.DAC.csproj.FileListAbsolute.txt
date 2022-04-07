@@ -1,0 +1,14 @@
+D:\WiseFly\Source Code\Lis.Release\Release\Lib.DAC.dll
+D:\WiseFly\Source Code\Lis.Release\Release\Lib.DAC.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.frmConnectionStringBuilder.resources
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.GenerateResource.Cache
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.dll
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\Lib.DAC.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\Lib.DAC.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.frmConnectionStringBuilder.resources
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.GenerateResource.Cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.pdb

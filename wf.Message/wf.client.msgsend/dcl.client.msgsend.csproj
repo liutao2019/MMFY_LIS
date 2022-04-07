@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B930AA1A-BBD9-4114-87F9-92252251D432}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.msgsend</RootNamespace>
+    <AssemblyName>dcl.client.msgsend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>3E6802591E05FB6BF4395D4ED363A49F9B5C77A0</ManifestCertificateThumbprint>
+    <ManifestKeyFile>lis.client.messagesend_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <ApplicationIcon>64X64.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>D:\版本发布\msgclient\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>48</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.client.cache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.cache.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.control">
+      <HintPath>..\..\Release\dcl.client.control.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\DevExpress.BonusSkins.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Lib.DataInterface">
+      <HintPath>..\..\Release\Lib.DataInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager">
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.WCFClientCore">
+      <HintPath>..\..\Reference\Lib.WCFClientCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddDIYMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddDIYMsg.Designer.cs">
+      <DependentUpon>FrmAddDIYMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBscripe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBscripe.Designer.cs">
+      <DependentUpon>FrmBscripe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDIYCritical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDIYCritical.Designer.cs">
+      <DependentUpon>FrmDIYCritical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReadAffirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReadAffirm.Designer.cs">
+      <DependentUpon>FrmReadAffirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReadAffirm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReadAffirm2.Designer.cs">
+      <DependentUpon>FrmReadAffirm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmshowhispatView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmshowhispatView.Designer.cs">
+      <DependentUpon>FrmshowhispatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowMsg.Designer.cs">
+      <DependentUpon>FrmShowMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddDIYMsg.resx">
+      <DependentUpon>FrmAddDIYMsg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBscripe.resx">
+      <DependentUpon>FrmBscripe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDIYCritical.resx">
+      <DependentUpon>FrmDIYCritical.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReadAffirm.resx">
+      <DependentUpon>FrmReadAffirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReadAffirm2.resx">
+      <DependentUpon>FrmReadAffirm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmshowhispatView.resx">
+      <DependentUpon>FrmshowhispatView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowMsg.resx">
+      <DependentUpon>FrmShowMsg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowInMsg.resx">
+      <DependentUpon>FrmShowInMsg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\dcl.entity.EntityDicObrMessageContent.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmShowInMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowInMsg.Designer.cs">
+      <DependentUpon>FrmShowInMsg.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560F53B-EABC-4B57-A118-2AB19EDDE52B}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925E3A3-4709-4DEC-8649-CB09D9CE7FC8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.client.common\dcl.client.common.csproj">
+      <Project>{75BED5D0-501A-4B11-9B69-8A78192A37D7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.client.control\lis.client.control.csproj">
+      <Project>{21acdd7f-ff28-49c1-9cce-b6990394e5c0}</Project>
+      <Name>lis.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69F9-4766-B09B-D2FABDF6354D}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4A0F5DFF-9EE1-4A37-9D15-03CB95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204E3C3D-3215-4092-B159-9E862EE34BC5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="64X64.ico" />
+    <Content Include="lis.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

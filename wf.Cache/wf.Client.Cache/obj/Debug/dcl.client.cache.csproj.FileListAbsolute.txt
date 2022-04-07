@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.cache.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.cache.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Cache\wf.Client.Cache\obj\Debug\dcl.client.cache.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Cache\wf.Client.Cache\obj\Debug\dcl.client.cache.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Cache\wf.Client.Cache\obj\Debug\dcl.client.cache.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.client.cache.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.client.cache.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Cache\wf.Client.Cache\obj\Debug\dcl.client.cache.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Cache\wf.Client.Cache\obj\Debug\dcl.client.cache.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Cache\wf.Client.Cache\obj\Debug\dcl.client.cache.pdb

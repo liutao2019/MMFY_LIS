@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8560F53B-EABC-4B57-A118-2AB19EDDE52B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.entity</RootNamespace>
+    <AssemblyName>dcl.entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuxiliaryEntity\AuditInfo.cs" />
+    <Compile Include="AuxiliaryEntity\BarcodeTable.cs" />
+    <Compile Include="AuxiliaryEntity\Barcode\BarcodeDownloadInfo.cs" />
+    <Compile Include="AuxiliaryEntity\Barcode\BarcodePatients.cs" />
+    <Compile Include="AuxiliaryEntity\Barcode\BCSignEntity.cs" />
+    <Compile Include="AuxiliaryEntity\EntityPatientsMi_4Barcode.cs" />
+    <Compile Include="AuxiliaryEntity\EntityRemoteCallClientInfo.cs" />
+    <Compile Include="AuxiliaryEntity\LIS_Const.cs" />
+    <Compile Include="AuxiliaryEntity\Barcode\PrintType.cs" />
+    <Compile Include="AuxiliaryEntity\Message\EntityMessageContent.cs" />
+    <Compile Include="AuxiliaryEntity\Message\EntityMessageReceiver.cs" />
+    <Compile Include="AuxiliaryEntity\Message\EnumMessageReceiverType.cs" />
+    <Compile Include="AuxiliaryEntity\Message\EnumMessageType.cs" />
+    <Compile Include="AuxiliaryEntity\Message\MessageReceiverCollection.cs" />
+    <Compile Include="AuxiliaryEntity\NetInterface\InterfacePatientInfo.cs" />
+    <Compile Include="AuxiliaryEntity\NetInterface\NetInterfaceType.cs" />
+    <Compile Include="AuxiliaryEntity\PatientsFields.cs" />
+    <Compile Include="AuxiliaryEntity\Print\EntityPrintData.cs" />
+    <Compile Include="AuxiliaryEntity\Print\EntityPrintParameter.cs" />
+    <Compile Include="AuxiliaryEntity\QC\QCItemAudit.cs" />
+    <Compile Include="AuxiliaryEntity\Setting\EntityLocalSetting.cs" />
+    <Compile Include="AuxiliaryEntity\Tool\BatchEditDest.cs" />
+    <Compile Include="AuxiliaryEntity\Tool\BatchEditSrc.cs" />
+    <Compile Include="CDR\EntityDCLReportParmeter.cs" />
+    <Compile Include="Core\ConvertStringSidToListSid.cs" />
+    <Compile Include="DataInterfaceCon\EntityDicDataInterfaceCommand.cs" />
+    <Compile Include="DataInterfaceCon\EntityDicDataInterfaceCommandParameter.cs" />
+    <Compile Include="DataInterfaceCon\EntityDicDataInterfaceConnection.cs" />
+    <Compile Include="DataInterfaceCon\Enum\EnumCommandExecuteTypeNew.cs" />
+    <Compile Include="DataInterfaceCon\Enum\EnumCommandTypeNew.cs" />
+    <Compile Include="DataInterfaceCon\Enum\EnumDataInterfaceConnectionTypeNew.cs" />
+    <Compile Include="DataInterfaceCon\Enum\EnumDataInterfaceParameterDirectionNew.cs" />
+    <Compile Include="DataInterfaceCon\Enum\EnumDeploymentModeNew.cs" />
+    <Compile Include="Dict\EntityDicPubIcdCombine.cs" />
+    <Compile Include="Dict\EntityDicCheckType.cs" />
+    <Compile Include="Dict\EntityDicPubStatus.cs" />
+    <Compile Include="Dict\EntityDicReaClaimant.cs" />
+    <Compile Include="Dict\EntityDicReaDept.cs" />
+    <Compile Include="Dict\EntityDicReaGroup.cs" />
+    <Compile Include="Dict\EntityDicRealTimeReportStat.cs" />
+    <Compile Include="Dict\EntityDicReaProduct.cs" />
+    <Compile Include="Dict\EntityDicReaReturn.cs" />
+    <Compile Include="Dict\EntityDicReaStoreCondition.cs" />
+    <Compile Include="Dict\EntityDicReaStorePos.cs" />
+    <Compile Include="Dict\EntityDicReaSupplier.cs" />
+    <Compile Include="Dict\EntityDicReaUnit.cs" />
+    <Compile Include="Dict\EntityDicTemperature.cs" />
+    <Compile Include="Dict\EntityDictHarvester.cs" />
+    <Compile Include="Dict\EntityKeyValue.cs" />
+    <Compile Include="Dict\EntitySampCustomType.cs" />
+    <Compile Include="Dict\EntityTypeBarcode.cs" />
+    <Compile Include="Dict\EntityDefAntiType.cs" />
+    <Compile Include="Dict\EntityDefItmResultTips.cs" />
+    <Compile Include="Dict\EntityDicAntibioType.cs" />
+    <Compile Include="Dict\EntityDicMicTemplate.cs" />
+    <Compile Include="Elisa\EntityElisaQc.cs" />
+    <Compile Include="Core\EntityManager.cs" />
+    <Compile Include="HL7\EntitySampOrderHL7.cs" />
+    <Compile Include="Interfaces\EntityInterfaceData.cs" />
+    <Compile Include="Interfaces\EntityInterfaceExtParameter.cs" />
+    <Compile Include="Interfaces\EntityInterfaceResponse.cs" />
+    <Compile Include="Interfaces\EntityInterfaceType.cs" />
+    <Compile Include="Login\EntityLoginUserInfo.cs" />
+    <Compile Include="Login\EntityLoginErrorInfo.cs" />
+    <Compile Include="Login\EntityLogin.cs" />
+    <Compile Include="Message\EntityDicMsgTAT.cs" />
+    <Compile Include="Message\EntityDicPidReportMainExt.cs.cs" />
+    <Compile Include="Message\EntityInstrmtWarningMsg.cs" />
+    <Compile Include="Microbe\EntityServerSetting.cs" />
+    <Compile Include="Microbe\ValueDisplayObject.cs" />
+    <Compile Include="Microbe\WhoNet\EntityWhonetResult.cs" />
+    <Compile Include="Microbe\WhoNet\EntityWhonetSample.cs" />
+    <Compile Include="Microbe\WhoNet\WhonetDataExportArg.cs" />
+    <Compile Include="Microbe\WhoNet\WhonetDataQueryArg.cs" />
+    <Compile Include="Monitor\EntitySampProcessMonitor.cs" />
+    <Compile Include="Monitor\EnumBarcodeOperationCodeNew.cs" />
+    <Compile Include="OA\EntityOaShiftTemplate.cs" />
+    <Compile Include="Elisa\EntityObrElisaResult.cs" />
+    <Compile Include="Message\EntityAuditInfo.cs" />
+    <Compile Include="Message\EntityUrgentHistoryUseParame.cs" />
+    <Compile Include="Message\EntityDicObrMessageContent.cs" />
+    <Compile Include="Message\EntityDicObrMessageReceive.cs" />
+    <Compile Include="Message\EnumObrMessageType.cs" />
+    <Compile Include="Message\EnumObrMessageReceiveType.cs" />
+    <Compile Include="Message\ObrMessageReceiveCollection.cs" />
+    <Compile Include="Print\EntityTouchPrintData.cs" />
+    <Compile Include="QCSpecific\EntityObrQcResult.cs" />
+    <Compile Include="QCSpecific\EntityObrQcAnalysis.cs" />
+    <Compile Include="QCSpecific\EntityObrQcResultQC.cs" />
+    <Compile Include="QCSpecific\EntityQcStatistic.cs" />
+    <Compile Include="QCSpecific\EntityQcTreeView.cs" />
+    <Compile Include="QueueNumber\EntitySysMessageSpeech.cs" />
+    <Compile Include="QueueNumber\EntityQueueNumber.cs" />
+    <Compile Include="Reagent\EntityReaApply.cs" />
+    <Compile Include="Reagent\EntityReaApplyDetail.cs" />
+    <Compile Include="Reagent\EntityReaDelivery.cs" />
+    <Compile Include="Reagent\EntityReaDeliveryDetail.cs" />
+    <Compile Include="Reagent\EntityReaLossReport.cs" />
+    <Compile Include="Reagent\EntityReaLossReportDetail.cs" />
+    <Compile Include="Reagent\EntityReaPurchase.cs" />
+    <Compile Include="Reagent\EntityReaPurchaseDetail.cs" />
+    <Compile Include="Reagent\EntityReaQC.cs" />
+    <Compile Include="Reagent\EntityReaSetting.cs" />
+    <Compile Include="Reagent\EntityReaStorage.cs" />
+    <Compile Include="Reagent\EntityReaStorageDetail.cs" />
+    <Compile Include="Reagent\EntityReaStoreCount.cs" />
+    <Compile Include="Reagent\EntityReaSubscribe.cs" />
+    <Compile Include="Reagent\EntityReaSubscribeDetail.cs" />
+    <Compile Include="Reagent\Enum\EnumReagentOperationCode.cs" />
+    <Compile Include="Report\EntityLisDoc.cs" />
+    <Compile Include="ResultCheck\EntityOperationError.cs" />
+    <Compile Include="ResultCheck\EntityOperationErrorCode.cs" />
+    <Compile Include="ResultCheck\EntityOperationResultData.cs" />
+    <Compile Include="ResultCheck\EnumOperationCode.cs" />
+    <Compile Include="ResultCheck\Enum\EnumBarcodeOperationCode.cs" />
+    <Compile Include="ResultCheck\Enum\EnumOperationErrorLevel.cs" />
+    <Compile Include="ResultCheck\Enum\EnumPatFlag.cs" />
+    <Compile Include="ResultCheck\Enum\EnumResRefFlag.cs" />
+    <Compile Include="Result\EntityItmRefInfo.cs" />
+    <Compile Include="Result\EntityMicResult.cs" />
+    <Compile Include="Result\EntityObrCellsMark.cs" />
+    <Compile Include="Result\EntityObrResultOriginalEx.cs" />
+    <Compile Include="Result\EntityObrResultTestSeqVer.cs" />
+    <Compile Include="Result\EntityReportComment.cs" />
+    <Compile Include="Result\EntityTimeLineParameters.cs" />
+    <Compile Include="Result\EntityWhonet.cs" />
+    <Compile Include="Result\EntityObrResultBakItm.cs" />
+    <Compile Include="Result\EntityObrResultAnti.cs" />
+    <Compile Include="QCSpecific\EntityDicQcItem.cs" />
+    <Compile Include="OA\EntityOaDicShiftDetail.cs" />
+    <Compile Include="Interfaces\EntitySysItfContrast.cs" />
+    <Compile Include="Interfaces\EntitySysItfInterface.cs" />
+    <Compile Include="Print\EntityDCLPrintParameter.cs" />
+    <Compile Include="Print\EntityDCLPrintData.cs" />
+    <Compile Include="Result\EntityObrResultBact.cs" />
+    <Compile Include="Result\EntityObrResultDesc.cs" />
+    <Compile Include="Result\EntityPatientFields.cs" />
+    <Compile Include="Result\EntityHistoryPatientQC.cs" />
+    <Compile Include="Result\EntityAntiQc.cs" />
+    <Compile Include="Result\EntityPatientQC.cs" />
+    <Compile Include="Result\EntityPatientRecheck.cs" />
+    <Compile Include="Result\EntityQcResultList.cs" />
+    <Compile Include="Result\EntityResultQC.cs" />
+    <Compile Include="Result\EntityMicViewData.cs" />
+    <Compile Include="SampMain\EntityPatientsToImport.cs" />
+    <Compile Include="SampMain\EntitySampImage.cs" />
+    <Compile Include="SampMain\EntitySampDetailMachineCode.cs" />
+    <Compile Include="SampMain\EntitySampOperateDetail.cs" />
+    <Compile Include="SampMain\EntityShelfSampToReportMain.cs" />
+    <Compile Include="SampMain\EntitySampRegister.cs" />
+    <Compile Include="SampMain\EntitySampDetail.cs" />
+    <Compile Include="SampMain\EntitySampOperation.cs" />
+    <Compile Include="SampMain\EntitySampProcessDetail.cs" />
+    <Compile Include="SampMain\EntitySampReturn.cs" />
+    <Compile Include="Dict\EntitySampStoreDetail.cs" />
+    <Compile Include="Dict\EntityDefItmProperty.cs" />
+    <Compile Include="Dict\EntityDicObrResultOriginal.cs" />
+    <Compile Include="SamSearch\EntityDicSamSearchParamter.cs" />
+    <Compile Include="SysInterfaceLog\EntitySysInterfaceLog.cs" />
+    <Compile Include="Sys\EntityOperateErrorLevel.cs" />
+    <Compile Include="Sys\EntityOperateErrorCode.cs" />
+    <Compile Include="Sys\EntityOperateError.cs" />
+    <Compile Include="Sys\EntityOperateResultData.cs" />
+    <Compile Include="Sys\EntityOperateResult.cs" />
+    <Compile Include="Sys\EntityLogQc.cs" />
+    <Compile Include="Sys\EntitySysOperationLog.cs" />
+    <Compile Include="Dict\EntityDicComReptime.cs" />
+    <Compile Include="Dict\EntityDicItmCheck.cs" />
+    <Compile Include="Dict\EntityDicItmCheckDetail.cs" />
+    <Compile Include="Dict\EntityDicItmCombine.cs" />
+    <Compile Include="Dict\EntityDicResultTips.cs" />
+    <Compile Include="Dict\EntityDicSampReturn.cs" />
+    <Compile Include="Dict\EntityDicElisaMeaning.cs" />
+    <Compile Include="Dict\EntityDicElisaCalu.cs" />
+    <Compile Include="Dict\EntityDicElisaCriter.cs" />
+    <Compile Include="Dict\EntityDicSampStoreStatus.cs" />
+    <Compile Include="Dict\EntitySampStoreRack.cs" />
+    <Compile Include="Dict\EntityDicElisaItem.cs" />
+    <Compile Include="Dict\EntityDicElisaSort.cs" />
+    <Compile Include="Dict\EntityDicElisaStatus.cs" />
+    <Compile Include="Dict\EntityDicSampStore.cs" />
+    <Compile Include="Dict\EntityDicSampTubeRack.cs" />
+    <Compile Include="Dict\EntityDicTubeRack.cs" />
+    <Compile Include="Dict\EntitySampMergeRule.cs" />
+    <Compile Include="SampMain\EntitySampQC.cs" />
+    <Compile Include="Core\FieldMapAttribute.cs" />
+    <Compile Include="Dict\EntityDicCombineTimeruleRelated.cs" />
+    <Compile Include="Dict\EntityDicItmCalu.cs" />
+    <Compile Include="Dict\EntityDicSampDivergeRule.cs" />
+    <Compile Include="Dict\EntityDicItrCombine.cs" />
+    <Compile Include="Dict\EntityDicItemSample.cs" />
+    <Compile Include="Dict\EntityDicMicAntidetail.cs" />
+    <Compile Include="Dict\EntityDicMachineCode.cs" />
+    <Compile Include="Dict\EntityDicMicAntibio.cs" />
+    <Compile Include="Dict\EntityDicMicAntitype.cs" />
+    <Compile Include="Dict\EntityDicCombineDetail.cs" />
+    <Compile Include="Dict\EntityDicMicBacttype.cs" />
+    <Compile Include="Dict\EntityDicMicSmear.cs" />
+    <Compile Include="Dict\EntityDicResAdjust.cs" />
+    <Compile Include="Dict\EntityDicItmRefdetail.cs" />
+    <Compile Include="Dict\EntityDicMicroscope.cs" />
+    <Compile Include="Dict\EntityDicMicBacteria.cs" />
+    <Compile Include="Dict\EntityDicCheckPurpose.cs" />
+    <Compile Include="Dict\EntityDicPubEvaluate.cs" />
+    <Compile Include="Dict\EntityDicItmItem.cs" />
+    <Compile Include="Dict\EntityDicCombine.cs" />
+    <Compile Include="Dict\EntityDicPubIcd.cs" />
+    <Compile Include="Dict\EntityDicDoctor.cs" />
+    <Compile Include="Dict\EntityDicInstrument.cs" />
+    <Compile Include="Dict\EntityDicPubIdent.cs" />
+    <Compile Include="Dict\EntityDicOrigin.cs" />
+    <Compile Include="Dict\EntityDicPubOrganize.cs" />
+    <Compile Include="Dict\EntityDicItmReftype.cs" />
+    <Compile Include="Dict\EntityDicCombineTimeRule.cs" />
+    <Compile Include="Dict\EntityDicTestTube.cs" />
+    <Compile Include="Dict\EntityDicUtgentValue.cs" />
+    <Compile Include="Dict\EntityDicSampRemark.cs" />
+    <Compile Include="Dict\EntityDicSState.cs" />
+    <Compile Include="Dict\EntityDicPubProfession.cs" />
+    <Compile Include="SampMain\EntitySampMain.cs" />
+    <Compile Include="Dict\EntityDicPubDept.cs" />
+    <Compile Include="Dict\EntityDicPubInsurance.cs" />
+    <Compile Include="Dict\EntityDicSample.cs" />
+    <Compile Include="Dict\EntityDicNobactCom.cs" />
+    <Compile Include="Dict\EntityReport.cs" />
+    <Compile Include="Dict\EntityDicSampStoreArea.cs" />
+    <Compile Include="Dict\EntitySysBarcodeGenerator.cs" />
+    <Compile Include="EntityRequest.cs" />
+    <Compile Include="EntityResponse.cs" />
+    <Compile Include="OA\EntityOaDicShift.cs" />
+    <Compile Include="OA\EntityOaWorkAttendance.cs" />
+    <Compile Include="OA\EntityOaTableDetail.cs" />
+    <Compile Include="OA\EntityOaTableField.cs" />
+    <Compile Include="OA\EntityOaTable.cs" />
+    <Compile Include="Core\EntityBase.cs" />
+    <Compile Include="InstrumentThings\EntityDicInstrmtMaintainRegistration.cs" />
+    <Compile Include="InstrumentThings\EntityDicItrInstrumentMaintain.cs" />
+    <Compile Include="InstrumentThings\EntityDicItrInstrumentServicing.cs" />
+    <Compile Include="OA\EntityHoRecord.cs" />
+    <Compile Include="OA\EntityDicHandOver.cs" />
+    <Compile Include="OA\EntityOaAnnouncementReceive.cs" />
+    <Compile Include="OA\EntityOaAnnouncement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QCSpecific\EntityDicQcConvert.cs" />
+    <Compile Include="QCSpecific\EntityDicQcInstrmtChannel.cs" />
+    <Compile Include="QCSpecific\EntityDicQcMateria.cs" />
+    <Compile Include="QCSpecific\EntityDicQcMateriaDetail.cs" />
+    <Compile Include="QCSpecific\EntityDicQcMateriaRule.cs" />
+    <Compile Include="QCSpecific\EntityDicQcRule.cs" />
+    <Compile Include="QCSpecific\EntityDicQcRuleMes.cs" />
+    <Compile Include="QCSpecific\EntityDicQcRuleTime.cs" />
+    <Compile Include="QCSpecific\EntityQcExteResult.cs" />
+    <Compile Include="Report\EntityReportStat.cs" />
+    <Compile Include="Report\EntityPidReportDetail.cs" />
+    <Compile Include="Report\EntitySysReportParameter.cs" />
+    <Compile Include="Report\EntitySysReport.cs" />
+    <Compile Include="AnanlyseQC\EntityAnanlyseQC.cs" />
+    <Compile Include="Result\EntityObrResultOriginal.cs" />
+    <Compile Include="Result\EntityObrResultImage.cs" />
+    <Compile Include="Result\EntityPidReportMain.cs" />
+    <Compile Include="Sys\EntityStatisticsQC.cs" />
+    <Compile Include="Sys\EntityTpTemplate.cs" />
+    <Compile Include="Result\EntityObrResult.cs" />
+    <Compile Include="TAT\EntityTatOverTime.cs" />
+    <Compile Include="TAT\EntityTatProRecord.cs" />
+    <Compile Include="ResultCheck\EntityOperationResult.cs" />
+    <Compile Include="ResultCheck\EntityOperationResultList.cs" />
+    <Compile Include="TempHandle\EntityTemHarvester.cs" />
+    <Compile Include="Tools\EntityMergeResultQC.cs" />
+    <Compile Include="User\EntityPowerList.cs" />
+    <Compile Include="User\EntityMark.cs" />
+    <Compile Include="User\EntitySysFunction.cs" />
+    <Compile Include="User\EntitySysMessage.cs" />
+    <Compile Include="User\EntitySysParameter.cs" />
+    <Compile Include="User\EntitySysRole.cs" />
+    <Compile Include="User\EntitySysRoleFunction.cs" />
+    <Compile Include="User\EntityCaSign.cs" />
+    <Compile Include="User\EntityUserDept.cs" />
+    <Compile Include="User\EntityUserHosQuality.cs" />
+    <Compile Include="User\EntityUserItrQuality.cs" />
+    <Compile Include="User\EntityUserKey.cs" />
+    <Compile Include="User\EntityUserLabQuality.cs" />
+    <Compile Include="User\EntitySex.cs" />
+    <Compile Include="User\EntityUserQc.cs" />
+    <Compile Include="User\EntityUserRole.cs" />
+    <Compile Include="User\EntityUserHospital.cs" />
+    <Compile Include="User\EntityUserInstrmt.cs" />
+    <Compile Include="User\EntityUserLab.cs" />
+    <Compile Include="User\EntitySysUser.cs" />
+    <Compile Include="Sys\EntityLogLogin.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

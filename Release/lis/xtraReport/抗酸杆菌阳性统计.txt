@@ -1,0 +1,117 @@
+
+select
+case when resulto.res_itm_ecd<>'' then '¿¹Ëá¸Ë¾ú' end as res_itm_ecd,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case
+when res_chr ='ÕÒµ½¿¹Ëá¸Ë¾ú' then '+'
+when res_chr ='¼ì³ö¿¹Ëá¸Ë¾ú' then '+'
+when res_chr ='ÑôĞÔ(+)' then '+'
+ else '-' end as res_chr,
+count(case
+when res_chr ='ÕÒµ½¿¹Ëá¸Ë¾ú' then '+'
+when res_chr ='¼ì³ö¿¹Ëá¸Ë¾ú' then '+'
+when res_chr ='ÑôĞÔ(+)' then '+'
+ else '-' end) as count_res_chr 
+into #gen_stat_1
+from resulto
+inner join patients on patients.pat_id = resulto.res_id 
+where len(pat_dep_name)>0 and res_flag = 1 
+and res_itm_id='10129'
+and ( res_date>='&sDate&' and res_date<='&eDate&')
+--and ( res_date>='2012-1-1' and res_date<='2012-12-1')
+group by patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case
+when res_chr ='ÕÒµ½¿¹Ëá¸Ë¾ú' then '+'
+when res_chr ='¼ì³ö¿¹Ëá¸Ë¾ú' then '+'
+when res_chr ='ÑôĞÔ(+)' then '+'
+else '-' end ,
+case when resulto.res_itm_ecd<>'' then '¿¹Ëá¸Ë¾ú' end
+
+
+select
+ '¿¹Ëá¸Ë¾ú'  as res_itm_ecd,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case
+when bsr_cname ='ÕÒµ½¿¹Ëá¸Ë¾ú' then '+'
+else '-' end as res_chr,
+count(case
+when bsr_cname ='ÕÒµ½¿¹Ëá¸Ë¾ú' then '+'
+else '-' end) as count_res_chr 
+into #gen_stat_2
+from cs_rlts
+inner join patients on patients.pat_id = cs_rlts.bsr_id 
+where bsr_cname like '%¿¹Ëá¸Ë¾ú%'
+and ( bsr_date>='&sDate&' and bsr_date<='&eDate&')
+--and ( bsr_date>='2012-1-1' and bsr_date<='2012-12-1')
+group by  
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case
+when bsr_cname ='ÕÒµ½¿¹Ëá¸Ë¾ú' then '+'
+else '-' end 
+
+select * 
+into #gen_stat
+from  #gen_stat_1
+union
+select * from  
+ #gen_stat_2
+
+select res_itm_ecd,res_chr,count(*) as cou
+into #temp_1
+from  #gen_stat
+where res_chr='+'
+group by res_itm_ecd,res_chr
+
+
+select res_itm_ecd ,sum(count_res_chr) as tsum
+into #temp_2 
+from #gen_stat group by res_itm_ecd
+
+if exists 
+(select * from #temp_1)
+
+select
+'&sDate&'+' ~ ' +'&eDate&' as Ê±¼ä·¶Î§,
+pat_in_no as ×¡ÔººÅ,
+pat_name as ĞÕÃû,
+pat_dep_name as ¿ÆÊÒ,
+#temp_1.res_chr as  ½á¹û,
+#temp_1.res_itm_ecd as  ÏîÄ¿,
+pat_date as ¼ì²éÈÕÆÚ,
+cou as ÑôĞÔÀıÊı,
+tsum as ×ÜÊı,
+cast(cast(cou as numeric(18,2))/cast(tsum as numeric(18,2)) as numeric(18,2)) as ÑôĞÔÂÊ
+from #gen_stat,#temp_1,#temp_2
+where #gen_stat.res_itm_ecd=#temp_1.res_itm_ecd
+and #gen_stat.res_chr=#temp_1.res_chr
+and #gen_stat.res_itm_ecd=#temp_2.res_itm_ecd
+and #gen_stat.res_chr='+'
+
+else
+
+select top 1
+'&sDate&'+' ~ ' +'&eDate&' as Ê±¼ä·¶Î§,
+ '' as ×¡ÔººÅ,
+ '' as ĞÕÃû,
+ '' as ¿ÆÊÒ,
+ '' as  ½á¹û,
+ #temp_2.res_itm_ecd as  ÏîÄ¿,
+ '' as ¼ì²éÈÕÆÚ,
+0 as ÑôĞÔÀıÊı,
+#temp_2.tsum as ×ÜÊı,
+0 as ÑôĞÔÂÊ
+from #gen_stat,
+#temp_2
+where  #gen_stat.res_itm_ecd=#temp_2.res_itm_ecd

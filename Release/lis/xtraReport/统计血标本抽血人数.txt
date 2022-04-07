@@ -1,0 +1,24 @@
+/*
+select  distinct bc_in_no,bc_d_name into #a 
+from bc_patients(nolock)
+where 1=1 
+and bc_date>='&sDate&'  and bc_date <'&eDate&'
+--and bc_date>='2014-08-06'  and bc_date <'2014-08-06'
+and bc_sam_name like '%血%'
+group by bc_in_no,bc_d_name
+*/
+
+--按执行地点来统计
+select distinct bc_in_no,bc_place as bc_d_name into #a
+from bc_patients(nolock)
+left join bc_sign(nolock) on bc_patients.bc_bar_code = bc_sign.bc_bar_code
+where 1=1 
+and bc_patients.bc_date>='&sDate&'  and bc_patients.bc_date <'&eDate&'
+--and bc_patients.bc_date>='2014-08-06 00:00:00'  and bc_patients.bc_date <'2014-08-06 23:59:59'
+and bc_sam_name like '%血%'
+and bc_sign.bc_status=2
+
+
+select bc_d_name,count(*) from #a
+group by bc_d_name
+

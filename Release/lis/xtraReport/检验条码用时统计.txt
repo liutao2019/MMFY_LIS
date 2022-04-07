@@ -1,0 +1,90 @@
+/*select dict_combine.com_name 组合名,
+		patients.pat_bar_code 条码号,
+		patients.pat_name 患者姓名,
+		patients.pat_in_no 患者ID,
+		dict_type.type_name 执行科室, 
+		dict_depart.dep_name 开单科室,
+
+		patients.pat_apply_date 签收时间,
+		patients.pat_jy_date 检验时间,
+		patients.pat_report_date 报告时间,
+
+		case when (patients.pat_apply_date is  null or patients.pat_jy_date is  null or patients.pat_apply_date>patients.pat_jy_date) then null
+             else datediff(n,patients.pat_apply_date,patients.pat_jy_date) end '接收-检验',
+		case when (patients.pat_jy_date is  null or patients.pat_report_date is  null or patients.pat_jy_date>patients.pat_report_date) then null
+             else datediff(n,patients.pat_jy_date,patients.pat_report_date) end '检验-报告',
+		
+		case when (patients.pat_apply_date is  null or patients.pat_apply_date>patients.pat_report_date) then 0
+			 when (patients.pat_apply_date is not null and patients.pat_report_date is  null ) then datediff(n,patients.pat_apply_date,getdate())
+             else datediff(n,patients.pat_apply_date,patients.pat_report_date) end 实际时间,
+		case when patients.pat_ctype='2' then  dict_combine.com_urgent_times
+			else  dict_combine.com_reptimes end 设定时间,
+		cast('&sDate&'as char(10)) + ' ~ ' + cast('&eDate&' as char(10)) as 日期范围,
+		'检验项目' 统计类型,
+		getdate() 打印日期
+into #tmp
+from patients 
+left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+left join dict_depart on patients.pat_dep_id=dict_depart.dep_code
+left join dict_sample on patients.pat_sam_id=dict_sample.sam_id
+left join poweruserinfo on patients.pat_i_code=poweruserinfo.loginId
+left join dict_doctor on patients.pat_doc_id=dict_doctor.doc_id
+left join patients_mi on patients.pat_id = patients_mi.pat_id
+left join dict_combine on patients_mi.pat_com_id = dict_combine.com_id
+where 1=1 
+and ((patients.pat_ctype='2' and dict_combine.com_urgent_times is not null) or (patients.pat_ctype='1' and dict_combine.com_reptimes is not null))
+--and dict_combine.com_name='血细胞分析' 
+--and pat_date>'20130127'
+&where&
+
+
+select * 
+from #tmp
+where 
+实际时间>设定时间
+order by 签收时间
+
+drop table #tmp
+*/
+
+
+select dict_combine.com_name 组合名,
+		bc_patients.bc_bar_code 条码号,
+		bc_patients.bc_name 患者姓名,
+		bc_patients.bc_in_no 病历号,
+		dict_type.type_name 执行科室, 
+		dict_depart.dep_name 开单科室,
+        bc_patients.bc_print_date 条码打印时间,
+        bc_patients.bc_blood_date 采集时间,
+		patients.pat_apply_date 签收时间,
+		patients.pat_jy_date 检验时间,
+		patients.pat_report_date 报告时间,
+
+        case when (bc_patients.bc_print_date is  null or bc_patients.bc_blood_date is  null or bc_patients.bc_print_date>bc_patients.bc_blood_date) then null
+             else datediff(n,bc_patients.bc_print_date,bc_patients.bc_blood_date) end '打印-采集（单位：分钟）',
+        case when (bc_patients.bc_blood_date is  null or patients.pat_apply_date is  null or bc_patients.bc_blood_date>patients.pat_apply_date) then null
+             else datediff(n,bc_patients.bc_blood_date,patients.pat_apply_date) end '采集-签收（单位：分钟）',
+		case when (patients.pat_apply_date is  null or patients.pat_jy_date is  null or patients.pat_apply_date>patients.pat_jy_date) then null
+             else datediff(n,patients.pat_apply_date,patients.pat_jy_date) end '签收-检验（单位：分钟）',
+		case when (patients.pat_jy_date is  null or patients.pat_report_date is  null or patients.pat_jy_date>patients.pat_report_date) then null
+             else datediff(n,patients.pat_jy_date,patients.pat_report_date) end '检验-报告（单位：分钟）',
+
+		cast('&sDate&'as char(10)) + ' ~ ' + cast('&eDate&' as char(10)) as 日期范围,
+		--'检验项目' 统计类型,
+		getdate() 打印日期
+from patients 
+left join bc_patients on bc_in_no=pat_in_no and bc_bar_code=pat_bar_code
+left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+left join dict_depart on patients.pat_dep_id=dict_depart.dep_code
+left join dict_sample on patients.pat_sam_id=dict_sample.sam_id
+left join poweruserinfo on patients.pat_i_code=poweruserinfo.loginId
+left join dict_doctor on patients.pat_doc_id=dict_doctor.doc_id
+left join patients_mi on patients.pat_id = patients_mi.pat_id
+left join dict_combine on patients_mi.pat_com_id = dict_combine.com_id
+where 1=1  &where&
+and patients.pat_flag>'1' and bc_bar_code is not null
+--and pat_date>'20130826'
+and patients.pat_date>'&sDate&' and patients.pat_date<'&eDate&'
+order by patients.pat_ori_id,dict_depart.dep_name desc

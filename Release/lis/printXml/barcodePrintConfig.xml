@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <printSet>
+    <paper>信纸</paper>
+    <heigth>1100</heigth>
+    <width>850</width>
+    <printName>Fax</printName>
+    <landscape>False</landscape>
+    <ReturnPrintName />
+    <PrintMode>True</PrintMode>
+    <PrintWay />
+  </printSet>
+</NewDataSet>

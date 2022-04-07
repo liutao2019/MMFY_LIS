@@ -1,0 +1,13 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.interfacesTool.exe.config
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.interfacesTool.exe.manifest
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.interfacesTool.application
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.interfacesTool.exe
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.interfacesTool.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.FrmInterfaceTool.resources
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.Properties.Resources.resources
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.csproj.GenerateResource.Cache
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.exe.manifest
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.application
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.exe
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.client.interfacesTool\obj\Debug\dcl.client.interfacesTool.pdb

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75BED5D0-501A-4B11-9B69-8A78192A37D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.common</RootNamespace>
+    <AssemblyName>dcl.client.common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lis_dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GDCAHeper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\GDCAHeper.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.NetcaPkiLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Interop.NetcaPkiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SecuInter, Version=4.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Interop.SecuInter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.WCFClientCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.WCFClientCore.dll</HintPath>
+    </Reference>
+    <Reference Include="NetcaUploadLink, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\NetcaUploadLink.dll</HintPath>
+    </Reference>
+    <Reference Include="Netca_PDFSign, Version=1.0.0.8, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Netca_PDFSign.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4778.30637, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankCarReader.cs" />
+    <Compile Include="BarActionException.cs" />
+    <Compile Include="BarActionNotInitException.cs" />
+    <Compile Include="CA\CertAuthClient.cs" />
+    <Compile Include="CA\GDCAReader.cs" />
+    <Compile Include="CA\GDNetCA.cs" />
+    <Compile Include="CA\NetCAPKI.cs" />
+    <Compile Include="CA\NetCAPKI2.cs" />
+    <Compile Include="ClientBaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="converter\BaseInputConvert.cs" />
+    <Compile Include="converter\ConverterCreator.cs" />
+    <Compile Include="converter\OutLinkCardNumConvert.cs" />
+    <Compile Include="ConvertToDataBaseName.cs" />
+    <Compile Include="DoAction.cs" />
+    <Compile Include="ExportInputPublic.cs" />
+    <Compile Include="FormatHelper.cs" />
+    <Compile Include="FrmSelectInstrument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectInstrument.designer.cs">
+      <DependentUpon>FrmSelectInstrument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridCheckMarksSelection.cs" />
+    <Compile Include="GridCheckSelection.cs" />
+    <Compile Include="GridControlCheckHeader.cs" />
+    <Compile Include="GridViewHelper.cs" />
+    <Compile Include="HuaDaIDReader.cs" />
+    <Compile Include="IBarAction.cs" />
+    <Compile Include="IClientBase.cs" />
+    <Compile Include="IniConfigMgr.cs" />
+    <Compile Include="KeysHelper.cs" />
+    <Compile Include="LastInputChecker.cs" />
+    <Compile Include="LisSysParam.cs" />
+    <Compile Include="LocalSetting.cs" />
+    <Compile Include="LookupEditSetter.cs" />
+    <Compile Include="MessageHelper.cs" />
+    <Compile Include="NavBarItemHelper.cs" />
+    <Compile Include="NetcaSign.cs" />
+    <Compile Include="OperationMessageHelper.cs" />
+    <Compile Include="PathManager.cs" />
+    <Compile Include="PrintPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintPreview.Designer.cs">
+      <DependentUpon>PrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SpellAndWbCodeTookit.cs" />
+    <Compile Include="SysToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SysToolBar.Designer.cs">
+      <DependentUpon>SysToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditHelper.cs" />
+    <Compile Include="UsageRecordsCache.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmSelectInstrument.resx">
+      <DependentUpon>FrmSelectInstrument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreview.resx">
+      <DependentUpon>PrintPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysToolBar.resx">
+      <DependentUpon>SysToolBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QcCodeHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\32-重叫.png" />
+    <None Include="Resources\32-修改.png" />
+    <None Include="Resources\32-新增.png" />
+    <None Include="Resources\32-销毁.png" />
+    <None Include="Resources\32-下载医嘱.png" />
+    <None Include="Resources\32-下个月.png" />
+    <None Include="Resources\32-统计.png" />
+    <None Include="Resources\32-跳过.png" />
+    <None Include="Resources\32-刷新.png" />
+    <None Include="Resources\32-审核.png" />
+    <None Include="Resources\32-设置.png" />
+    <None Include="Resources\32-上个月.png" />
+    <None Include="Resources\32-删除.png" />
+    <None Include="Resources\32-确认.png" />
+    <None Include="Resources\32-取消销毁.png" />
+    <None Include="Resources\32-取消审核.png" />
+    <None Include="Resources\32-取消二次审核.png" />
+    <None Include="Resources\32-取消.png" />
+    <None Include="Resources\32-清屏.png" />
+    <None Include="Resources\32-批量删除.png" />
+    <None Include="Resources\32-模版调用.png" />
+    <None Include="Resources\32-密钥.png" />
+    <None Include="Resources\32-结果判定.png" />
+    <None Include="Resources\32-记录.png" />
+    <None Include="Resources\32-计算.png" />
+    <None Include="Resources\32-回退标本.png" />
+    <None Include="Resources\32-关闭.png" />
+    <None Include="Resources\32-复制.png" />
+    <None Include="Resources\32-放弃.png" />
+    <None Include="Resources\32-返回.png" />
+    <None Include="Resources\32-发布.png" />
+    <None Include="Resources\32-二次审核.png" />
+    <None Include="Resources\32-导入.png" />
+    <None Include="Resources\32-导出.png" />
+    <None Include="Resources\32-打印预览.png" />
+    <None Include="Resources\32-打印条码.png" />
+    <None Include="Resources\32-打印清单.png" />
+    <None Include="Resources\32-打印.png" />
+    <None Include="Resources\32-拆分条码.png" />
+    <None Include="Resources\32-查询.png" />
+    <None Include="Resources\32-测定数据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204E3C3D-3215-4092-B159-9E862EE34BC5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Cache\wf.Client.Cache\dcl.client.cache.csproj">
+      <Project>{f07a75ec-fa9a-41f9-a95e-c9378b92f431}</Project>
+      <Name>dcl.client.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925e3a3-4709-4dec-8649-cb09d9ce7fc8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

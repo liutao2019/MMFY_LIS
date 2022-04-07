@@ -1,0 +1,32 @@
+select
+cast('&sDate&' as varchar(10)) as  开始日期
+,cast('&eDate&' as varchar(10)) as  结束日期
+,dict_origin.ori_name as 类型
+,dict_combine.com_name as 项目名称
+--,dict_combine.com_pri as 单价
+,case when patients_mi.pat_com_id='10456' and dict_origin.ori_id = '109' then 198.00
+	  when patients_mi.pat_com_id='10457' and dict_origin.ori_id = '109' then 98.00
+	  when patients_mi.pat_com_id='10456' and (dict_origin.ori_id = '107' or dict_origin.ori_id = '108') then 264.50
+	  when patients_mi.pat_com_id='10457' and (dict_origin.ori_id = '107' or dict_origin.ori_id = '108') then 155.30
+	  else 0 end as 单价
+,count(dict_combine.com_name) as 人次
+,count(dict_combine.com_name) * case when patients_mi.pat_com_id='10456' and dict_origin.ori_id = '109' then 198.00
+								  when patients_mi.pat_com_id='10457' and dict_origin.ori_id = '109' then 98.00
+								  when patients_mi.pat_com_id='10456' and (dict_origin.ori_id = '107' or dict_origin.ori_id = '108') then 264.50
+								  when patients_mi.pat_com_id='10457' and (dict_origin.ori_id = '107' or dict_origin.ori_id = '108') then 155.30
+								  else 0 end  as 总价
+--,patients_mi.pat_com_id
+--,dict_origin.ori_id
+from patients
+inner join patients_mi on patients.pat_id = patients_mi.pat_id
+inner join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+inner join dict_origin on dict_origin.ori_id = patients.pat_ori_id
+where pat_date >= '&sDate&' and pat_date <= '&eDate&'
+and pat_itr_id = '10087' and pat_flag in (2,4)
+group by
+	dict_combine.com_name
+	,dict_combine.com_pri
+	,dict_origin.ori_name
+	,patients_mi.pat_com_id
+	,dict_origin.ori_id
+order by dict_origin.ori_id,patients_mi.pat_com_id

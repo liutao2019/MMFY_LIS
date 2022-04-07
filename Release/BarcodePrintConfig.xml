@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BarcodePrint>
+  <!--打印模式 0=驱动 1=北洋串口-->
+  <PrintMode>0</PrintMode>
+  <!--驱动打印配置-->
+  <DriverPrint>
+    <BarcodePrinter>
+      <Paper>
+      </Paper>
+      <Height>
+      </Height>
+      <Width>
+      </Width>
+      <Printer>
+      </Printer>
+      <Landscape>
+      </Landscape>
+    </BarcodePrinter>
+    <ReturnPrinter>
+      <Paper>
+      </Paper>
+      <Height>
+      </Height>
+      <Width>
+      </Width>
+      <Printer>
+      </Printer>
+      <Landscape>
+      </Landscape>
+    </ReturnPrinter>
+  </DriverPrint>
+  <!--北洋串口打印配置-->
+  <BPPrint>
+    <!--端口-->
+    <Port>com1</Port>
+    <!--波特率-->
+    <Baudrate>19200</Baudrate>
+    <!--打印速度-->
+    <PrintSpeed>0</PrintSpeed>
+    <!--输出模式 0切刀，1剥离，2撕离，3回卷-->
+    <OutMode>1</OutMode>
+    <!--纸张模式 0非连续纸，1连续纸-->
+    <PaperMode>1</PaperMode>
+    <!--打印模式 0热敏打印，1热转印打印-->
+    <PrintMode>0</PrintMode>
+    <!--x坐标整体偏移-->
+    <XOffset>0</XOffset>
+    <!--y坐标整体偏移-->
+    <YOffset>0</YOffset>
+    <!--停止位-->
+    <EndPoint>160</EndPoint>
+    <TemplateSetted>
+      <Template code="mz" name="门诊条码(自动)" enabled="1">住院格式5x2x1</Template>
+      <Template code="mzreturn" name="门诊回执式样" enabled="1">回执格式5x2</Template>
+      <Template code="mz_preplace" name="门诊条码(预置)" enabled="1">住院格式5x2</Template>
+      <Template code="zy" name="住院条码(自动)" enabled="1">住院格式5x2x1</Template>
+      <Template code="zy_preplace" name="住院条码(预置)" enabled="1">住院格式5x2</Template>
+      <Template code="tj" name="体检条码(自动)" enabled="1">住院格式5x2x1</Template>
+      <Template code="tj_preplace" name="体检条码(预置)" enabled="1">住院格式5x2</Template>
+      <Template code="other" name="其他条码式样" enabled="1">备注格式5x2</Template>
+      <Template code="bc_exp" name="备注条码式样" enabled="1">备注格式5x2</Template>
+      <Template code="medicalwaste" name="医疗废物标签式样" enabled="1">住院格式5x2x1</Template>
+      <Template code="tjreturn1" name="体检回执1式样" enabled="1">住院格式5x2x1</Template>
+      <Template code="tjreturn2" name="体检回执2式样" enabled="1">住院格式5x2x1</Template>
+      <Template code="tjreturn3" name="体检回执3式样" enabled="1">住院格式5x2x1</Template>
+      <Template code="hospitalinfection" name="院感条码" enabled="1">门诊格式5x3</Template>
+    </TemplateSetted>
+  </BPPrint>
+</BarcodePrint>

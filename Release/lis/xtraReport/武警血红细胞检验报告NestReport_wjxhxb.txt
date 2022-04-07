@@ -1,0 +1,135 @@
+SELECT patients.pat_id 标识ID, 
+       (case isnull(patients.pat_host_order,0) when 0 then patients.pat_sid else patients.pat_host_order end )  样本号,
+       patients.pat_name 姓名,  
+       (case patients.pat_sex when 1 then '男' when 2 then '女' else '' end) 性别, 
+       --dbo.getAge(patients.pat_age_exp) 年龄,
+       (case isnull(dbo.getAge(patients.pat_age_exp),'') when '' then '' else dbo.getAge(patients.pat_age_exp) end )年龄,
+       patients.pat_age_unit 年龄单位, 
+       (case isnull(patients.pat_emp_id,'') when '' then patients.pat_in_no else patients.pat_emp_id end) 病人ID,
+       patients.pat_admiss_times 就诊次数, 
+       patients.pat_bed_no 床号, 
+       patients.pat_diag 诊断, 
+       resulto.res_unit 单位,
+       (case isnull(dict_no_type.no_name,'') when '' then '病历号：' else rtrim(ltrim(dict_no_type.no_name)) + ':' end) ID标识,
+       (case isnull(patients.pat_c_name,'') when '' then '' else '('+patients.pat_c_name+ ')' end ) 组合名称,    
+       patients.pat_chk_id 检查目的编码, 
+       patients.pat_i_code 检验者代码,
+       patients.pat_chk_code 审核者代码,
+       patients.pat_send_code 发送者代码, 
+       patients.pat_report_code 报告者代码,
+       patients.pat_send_flag 发送标志, 
+       patients.pat_prt_flag 打印标志, 
+       patients.pat_flag 状态, 
+       patients.pat_reg_flag 传染病上报标志,
+       patients.pat_urgent_flag 危机值标志, 
+       patients.pat_look_code, 
+       (case isnull(patients.pat_exp,'') when '' then '' else '备注：' + patients.pat_exp end ) 备注评价, 
+       patients.pat_pid 输入ID,
+       patients.pat_date 录入日期, 
+       patients.pat_sdate 送检日期, 
+       patients.pat_chk_date 审核日期,
+       patients.pat_report_date 报告日期, 
+       patients.pat_send_date 发送日期, 
+       patients.pat_look_date 查看日期,
+       patients.pat_social_no 医保卡号,
+       patients.pat_emp_id 体检ID, 
+       patients.pat_bar_code 条码号,
+       patients.pat_host_order 序号,
+       patients.pat_sample_date 标本采集时间, 
+       patients.pat_apply_date 申请时间old,
+       patients.pat_sample_receive_date 申请时间,
+       patients.pat_jy_date 检验时间, 
+       getdate() 报告打印时间, 
+       patients.pat_no_id 病人ID类型, 
+       patients.pat_mid_info 仪器检测信息,
+       patients.pat_comment 处理意见, 
+       patients.pat_rem  标本状态,
+       patients.pat_sam_rem 标本备注,
+       powerUserInfo.Username  检验者,
+       powerUserInfo2.signimage 检验者图,
+
+
+       powerUserInfo2.userName  报告者,
+       powerUserInfo2.Username 报告者图,
+       PowerUserInfo3.userName 检验审核审核者,
+       PowerUserInfo3.signimage 检验审核审核者图,
+       PowerUserInfo4.userName 仪器默认审核者,
+       case when isnull(patients.pat_chk_code,'') = '' then ''
+            when isnull(patients.pat_chk_code,'') = isnull(dict_instrmt.itr_chk_id,'')  then PowerUserInfo2.userName 
+            when (isnull(patients.pat_chk_code,'') <> isnull(dict_instrmt.itr_chk_id,'')) and isnull(dict_instrmt.itr_chk_id,'') <> '' then  PowerUserInfo3.userName + '/'+ PowerUserInfo4.userName
+            else  PowerUserInfo3.userName
+            end  报告最终审核者, 
+
+
+       dict_instrmt.itr_mid 仪器代码, 
+       dict_origin.ori_name 病人来源,
+       dict_instrmt.itr_name 仪器名称, 
+       dict_sample.sam_name 标本类别,
+       (case dict_item_sam.itm_att_flag when 1 then '★' else '' end) 互认标志,
+       patients.pat_dep_name 科室名称,
+       dict_type.type_name 组别名称,
+       dict_no_type.no_name 标识类型,
+       dict_doctor.doc_name 医生姓名,
+
+       resulto.res_rep_type 报告类型,
+       rtrim(isnull(dict_item.itm_name,'')+'('+ isnull(dict_item.itm_ecd,'')+')') 检查项目名称,
+      -- rtrim(isnull(isnull(resulto.res_itm_rep_ecd,resulto.res_itm_ecd),''))检查项目名称,
+       '('+ rtrim(isnull(isnull(resulto.res_itm_rep_ecd,resulto.res_itm_ecd),''))+')'+isnull(resulto.res_meams,'') 检验项目代码,
+       --isnull(resulto.res_itm_rep_ecd,resulto.res_itm_ecd) as  检验项目代码,  
+       
+       resulto.res_chr 结果,
+       --(case dict_res_ref_flag.value when '正常' then '' else dict_res_ref_flag.value end) 结果异常提示,     
+       (case when PATINDEX('%正常%', dict_res_ref_flag.value) > 0 OR PATINDEX('%阳性%', dict_res_ref_flag.value) > 0 THEN '' else dict_res_ref_flag.value end) 结果异常提示, 
+      
+       resulto.res_od_chr OD结果,
+       resulto.res_cast_chr 数值结果, 
+       resulto.res_unit 结果单位, 
+       resulto.res_price 价格, 
+       rtrim(isnull(resulto.res_ref_l,''))+(case when  resulto.res_ref_l is null or resulto.res_ref_h is null then '' else '--' end)+Rtrim(isnull(resulto.res_ref_h,'')) 参考值下线,
+       resulto.res_ref_h 参考值上线,
+       (case when  resulto.res_ref_l is null or resulto.res_ref_h is null then '' else '~' end) 参考值线,
+       resulto.res_ref_exp 参考值分期, 
+       resulto.res_ref_flag 阳性标志, 
+       resulto.res_meams 试验方法,
+       resulto.res_date 结果日期,
+       resulto.res_flag 有效标志, 
+       resulto.res_type 结果类型,
+       (case dict_res_ref_flag.value when '正常' then '' else dict_res_ref_flag.value end) 范围标识,
+       isnull((select top 1 configItemValue from sysconfig where configCode='ReportCount'),50) 自动分列标识,
+       dict_item.itm_rep_col 结果显示位置,
+       阳性标志 =case when res_ref_flag = '0' or res_ref_flag is null  then ''
+       else  dict_res_ref_flag.value end,
+       GETDATE() 打印日期,       
+       dict_doctor.doc_name 医生名称,
+       isnull(dict_combine.com_id,-1) 组合编码,
+	   isnull(dict_combine.com_name,'')分组合名称,
+	   参考名称加范围 = isnull(dbo.getitemnameandref1(resulto.res_itm_id,patients.pat_sam_id,patients.pat_sex),'')+'   '+
+       isnull(dbo.getitemnameandref2(resulto.res_itm_id,patients.pat_sam_id,patients.pat_sex),'')+'   '+
+       isnull(dbo.getitemnameandref3(resulto.res_itm_id,patients.pat_sam_id,patients.pat_sex),'')+'   '+
+       isnull(dbo.getitemnameandref4(resulto.res_itm_id,patients.pat_sam_id,patients.pat_sex),'') ,
+       (case len(patients.pat_id)%2 when 0 then patients.pat_id else patients.pat_id + '0' end ) 条码ID,
+       'D:\\1.jpg' 图片地址 
+       FROM patients left JOIN
+       resulto ON patients.pat_id = resulto.res_id and resulto.res_flag = 1 LEFT OUTER JOIN
+       patients_mi ON patients_mi.pat_id = patients.pat_id and resulto.res_com_id=patients_mi.pat_com_id LEFT OUTER JOIN
+       dict_instrmt ON patients.pat_itr_id = dict_instrmt.itr_id LEFT OUTER JOIN
+       dict_combine ON resulto.res_com_id = dict_combine.com_id LEFT OUTER JOIN
+       dict_depart ON patients.pat_dep_id = dict_depart.dep_id LEFT OUTER JOIN
+       dict_sample ON patients.pat_sam_id = dict_sample.sam_id LEFT OUTER JOIN
+       dict_origin ON patients.pat_ori_id = dict_origin.ori_id LEFT OUTER JOIN
+       dict_type ON dict_instrmt.itr_ptype = dict_type.type_id LEFT OUTER JOIN
+       dict_no_type ON patients.pat_no_id = dict_no_type.no_id LEFT OUTER JOIN
+       dict_doctor ON patients.pat_doc_id = dict_doctor.doc_id LEFT OUTER JOIN
+       dict_hospital ON patients.pat_hospital_id = dict_hospital.hos_id LEFT OUTER JOIN
+       dict_res_ref_flag on resulto.res_ref_flag=dict_res_ref_flag.id  LEFT OUTER JOIN
+       dict_item on resulto.res_itm_id=dict_item.itm_id LEFT OUTER JOIN
+       dict_item_sam on dict_item.itm_id=dict_item_sam.itm_id  and patients.pat_sam_id = dict_item_sam.itm_id LEFT  OUTER JOIN 
+       dict_combine_mi ON resulto.res_com_id = dict_combine_mi.com_id and resulto.res_itm_id = dict_combine_mi.com_itm_id  LEFT OUTER JOIN 
+       PowerUserInfo ON patients.pat_i_code = PowerUserInfo.loginId LEFT OUTER JOIN                    
+       PowerUserInfo AS PowerUserInfo2 on patients.pat_chk_code=PowerUserInfo2.loginId  LEFT OUTER JOIN
+       PowerUserInfo AS PowerUserInfo3 on patients.pat_report_code=PowerUserInfo3.loginId LEFT OUTER JOIN
+       PowerUserInfo AS PowerUserInfo4 ON dict_instrmt.itr_chk_id = PowerUserInfo4.loginId
+where  1=1 and resulto.res_chr <>''
+ &where& --and dict_item.itm_prt_flag = 1  
+--and patients.pat_bar_code in ('1000005309')
+order by dict_combine.com_seq,dict_combine_mi.com_sort

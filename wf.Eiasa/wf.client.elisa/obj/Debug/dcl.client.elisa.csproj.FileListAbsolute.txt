@@ -1,0 +1,13 @@
+D:\WiseFly\Source Code\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.elisa.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.elisa.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.ComplexResultsControl.resources
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.controls.StatusDescribeControl.resources
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.FrmEiasaAnalyse.resources
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.Properties.Resources.resources
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.SampleControl.resources
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.csproj.GenerateResource.Cache
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.dll.licenses
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.client.elisa\obj\Debug\dcl.client.elisa.pdb

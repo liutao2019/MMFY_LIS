@@ -1,0 +1,145 @@
+select dict_type.type_name,
+(case isnull(patients.pat_ori_id,0) when '107' then '门诊'  when '108' then '住院'  when '109' then '体检' else ' ' end) 来源,
+dict_combine.com_name,
+count() as 组合数,
+dict_combine.com_pri 项目组合单价,
+dict_combine.com_pricount() as 金额,
+dict_combine.com_cntcount() as 项目次数
+into #b
+from patients 
+ left join  patients_mi on patients_mi.pat_id = patients.pat_id 
+ left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+ left join dict_depart ON patients.pat_dep_id = dict_depart.dep_id 
+ left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+ left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+ where patients.pat_flag1 and patients.pat_date='&sDate&' and patients.pat_date=dateadd(day,1,'&eDate&')      
+&where&
+group by dict_type.type_name,pat_ori_id,dict_combine.com_name,dict_combine.com_pri,dict_combine.com_cnt
+order by dict_type.type_name
+
+
+
+select dict_type.type_name,
+(case isnull(patients.pat_ori_id,0) when '107' then '门诊'  when '108' then '住院'  when '109' then '体检' else ' ' end) 来源,
+dict_item.itm_name,
+count() as 项目数
+into #c 
+from  patients
+ left join  patients_mi on patients_mi.pat_id = patients.pat_id 
+ left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+ left join dict_combine_mi on dict_combine_mi.com_id = dict_combine.com_id
+ left join dict_item on  dict_combine_mi.com_itm_id =  dict_item.itm_id 
+ left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+ where patients.pat_flag1 and patients.pat_date='&sDate&' and patients.pat_date=dateadd(day,1,'&eDate&')
+&where&
+group by dict_type.type_name,pat_ori_id,dict_item.itm_name
+order by dict_type.type_name
+
+
+ select type_name,sum(金额) as 总额,sum(项目次数) as 物理组项目次数
+ into #e
+ from #b
+ group by type_name
+order by type_name
+
+
+ declare @sumTotal2 int
+ set @sumTotal2=(select sum(组合数) from #b) 
+ declare @sumTotal3 int
+ set @sumTotal3=(select sum(项目数) from #c)
+ declare @sumTotal4 numeric(10,2)
+ set @sumTotal4=(select sum(总额) from #e)
+
+
+select #b.type_name 物理组,#b.来源,#b.com_name 组合名称,
+#b.项目组合单价,#b.金额,#b.项目次数,
+#b.组合数,#e.总额,#e.物理组项目次数,
+--#c.项目数,#c.itm_name,
+'&sDate&' as 开始时间,
+'&eDate&' as 结束时间,
+getdate() as 统计时间
+from #b
+--left join #c on #b.type_name=#c.type_name
+left join #e on #b.type_name=#e.type_name
+group by #e.总额,#b.type_name,#b.com_name,#b.项目次数,
+#b.项目组合单价,#b.金额,#e.物理组项目次数,
+#b.组合数,#b.来源--#c.项目数,#c.itm_name,
+order by  #b.type_name,#b.来源
+
+drop table #b,#e--,#c
+
+
+--select dict_type.type_name,
+--(case when (pat_dep_id like'mz%' or pat_ori_id='107') then '门诊'  when (pat_dep_id ='0022000' and bc_social_no='0') then '体检(团体)' 
+-- when (pat_dep_id ='0022000' and bc_social_no='1') then '体检(个人)'  when (pat_dep_id like'00%' and pat_ori_id='108') then '住院' else '无科室来源 ' end) origin,dict_combine.com_name,
+--dict_combine.com_pri,
+--dict_combine.com_cnt 
+--into #a
+--from patients 
+--left join bc_patients on patients.pat_in_no=bc_patients.bc_in_no and patients.pat_bar_code=bc_patients.bc_bar_code
+--left join  patients_mi on patients_mi.pat_id = patients.pat_id  and patients.pat_bar_code=patients.pat_bar_code
+-- left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+-- left join dict_depart ON patients.pat_dep_id = dict_depart.dep_id 
+-- left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+-- left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+-- where patients.pat_flag1 and patients.pat_sample_date ''
+-- &where&
+--and patients.pat_report_date'&sDate&' and patients.pat_report_date'&eDate&'
+
+select distinct patients.pat_bar_code,dict_type.type_name,
+(case when (pat_dep_id like'mz%' or pat_ori_id='107') then '门诊'  when (pat_dep_id ='0022000' and bc_social_no='0') then '体检(团体)' 
+ when (pat_dep_id ='0022000' and bc_social_no='1') then '体检(个人)'  when (pat_dep_id like'00%' and pat_ori_id='108') then '住院' else '无科室来源 ' end) origin,dict_combine.com_name,
+dict_combine.com_pri,
+dict_combine.com_cnt ,pat_in_no,pat_name,pat_no_id
+into #a
+from patients 
+left join bc_patients on patients.pat_in_no=bc_patients.bc_in_no and patients.pat_bar_code=bc_patients.bc_bar_code
+left join  patients_mi on patients_mi.pat_id = patients.pat_id  and patients.pat_bar_code=patients.pat_bar_code
+ left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+ left join dict_depart ON patients.pat_dep_id = dict_depart.dep_id 
+ left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+ left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+ where patients.pat_flag1 --and patients.pat_sample_date ''
+and patients.pat_report_date'&sDate&' and patients.pat_report_date'&eDate&'
+ &subWhere&
+group by patients.pat_bar_code,dict_type.type_name,pat_dep_id,dict_combine.com_pri,pat_ori_id,
+dict_combine.com_cnt ,bc_patients.bc_social_no,dict_combine.com_name,pat_in_no,pat_name,pat_no_id
+
+
+select
+#a.type_name,
+#a.origin,
+#a.com_name,
+isnull(#a.com_pri,0) com_pri,
+#a.com_cnt,
+count(3) no1 into #b
+from #a
+group by #a.type_name,
+#a.origin,
+#a.com_name,
+#a.com_pri,
+#a.com_cnt
+
+
+
+select
+#b.type_name 物理组,
+#b.origin 来源,
+#b.com_name 组合,
+#b.com_pri 组合单价,
+#b.com_cnt 组合包含项目次数,
+#b.no1 组合数量,
+(#b.no1  #b.com_pri) 金额,
+(#b.no1  #b.com_cnt) 细项数量,
+'检验科工作量统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #b
+order by #b.type_name,
+#b.origin,
+#b.com_name,
+#b.com_pri,
+#b.com_cnt,
+#b.no1

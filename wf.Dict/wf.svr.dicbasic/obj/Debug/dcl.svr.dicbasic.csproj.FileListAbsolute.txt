@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.dicbasic.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.dicbasic.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Dict\wf.svr.dicbasic\obj\Debug\dcl.svr.dicbasic.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Dict\wf.svr.dicbasic\obj\Debug\dcl.svr.dicbasic.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Dict\wf.svr.dicbasic\obj\Debug\dcl.svr.dicbasic.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.dicbasic.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.dicbasic.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.svr.dicbasic\obj\Debug\dcl.svr.dicbasic.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.svr.dicbasic\obj\Debug\dcl.svr.dicbasic.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.svr.dicbasic\obj\Debug\dcl.svr.dicbasic.pdb

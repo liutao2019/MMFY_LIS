@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <printSet>
+    <paper>A4 (210 x 297 mm)</paper>
+    <heigth>1169</heigth>
+    <width>827</width>
+    <printName>RICOH Aficio MP 3350</printName>
+    <landscape>False</landscape>
+    <printType>0</printType>
+    <ContinuousPrinting>1</ContinuousPrinting>
+  </printSet>
+</NewDataSet>

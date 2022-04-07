@@ -1,0 +1,2607 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v8.2, Version=8.2.2.0, Culture=neutral, PublicKeyToken=a6519d31830a2c3c</AssemblyFullName>
+///   <AssemblyLocation>C:\Program Files\hope\HopeLisClient\DevExpress.XtraReports.v8.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>zh-CHS</Localization>
+///   <References>
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraReports.v8.2.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Data.SqlXml\2.0.0.0__b77a5c561934e089\System.Data.SqlXml.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualC\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualC.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.DirectoryServices\2.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.DirectoryServices.Protocols\2.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.Protocols.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.ServiceProcess\2.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Configuration.Install\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.Install.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Serialization.Formatters.Soap\2.0.0.0__b03f5f7f11d50a3a\System.Runtime.Serialization.Formatters.Soap.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\Accessibility\2.0.0.0__b03f5f7f11d50a3a\Accessibility.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Deployment\2.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_MSIL\System.Drawing.Design\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.Design.dll" />
+///     <Reference Path="C:\WINDOWS\assembly\GAC_32\System.Data.OracleClient\2.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraPrinting.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.Data.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.Utils.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraTreeList.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraEditors.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraRichTextEdit.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraBars.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraPivotGrid.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraPivotGrid.v8.2.Core.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraNavBar.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.XtraCharts.v8.2.dll" />
+///     <Reference Path="C:\Program Files\hope\HopeLisClient\DevExpress.Charts.v8.2.Core.dll" />
+///   </References>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtraReport1 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLine xrLine1;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel59;
+        private DevExpress.XtraReports.UI.XRLine xrLine6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel35;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel34;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel33;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel32;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel31;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel30;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel29;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel28;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel27;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel26;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel60;
+        private DevExpress.XtraReports.UI.XRLine xrLine4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel50;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel49;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel48;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel47;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel46;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel45;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel44;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel43;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel42;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel41;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel40;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel39;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel58;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel57;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel56;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel55;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel54;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel53;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel52;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel51;
+        private DevExpress.XtraReports.UI.XRLine xrLine3;
+        private DevExpress.XtraReports.UI.XRLine xrLine2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel38;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel37;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel36;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel25;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel24;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel19;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel13;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel20;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel23;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel22;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel21;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel18;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel15;
+        private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
+        private DevExpress.XtraReports.UI.XRLine xrLine5;
+        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private System.Data.DataSet dataSet1;
+        private System.Resources.ResourceManager _resources;
+        public xtraReport1() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = @"zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrLabel59 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine6 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrLabel35 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel34 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel33 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel32 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel31 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel30 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel29 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel28 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel26 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel60 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine4 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrLabel50 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel49 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel48 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel47 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel46 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel45 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel44 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel43 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel42 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel41 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel40 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel39 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel58 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel57 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel56 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel55 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel54 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel53 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel52 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel51 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrLine2 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrLabel38 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel37 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel36 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel20 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel22 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel21 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
+            this.dataSet1 = new XtraReportSerialization.dataSet1();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel14,
+                        this.xrLabel1,
+                        this.xrLabel6,
+                        this.xrLine1});
+            this.PageHeader.Height = 111;
+            this.PageHeader.Name = "PageHeader";
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel59,
+                        this.xrLine6,
+                        this.xrLabel35,
+                        this.xrLabel34,
+                        this.xrLabel33,
+                        this.xrLabel32,
+                        this.xrLabel31,
+                        this.xrLabel30,
+                        this.xrLabel29,
+                        this.xrLabel28,
+                        this.xrLabel27,
+                        this.xrLabel26});
+            this.Detail.Height = 65;
+            this.Detail.Name = "Detail";
+            this.Detail.PrintOnEmptyDataSource = false;
+            this.Detail.SortFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+                        new DevExpress.XtraReports.UI.GroupField("时间间隔", DevExpress.XtraReports.UI.XRColumnSortOrder.Descending),
+                        new DevExpress.XtraReports.UI.GroupField("日期", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.Height = 2;
+            this.PageFooter.Name = "PageFooter";
+            // 
+            // GroupHeader2
+            // 
+            this.GroupHeader2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel60,
+                        this.xrLine4,
+                        this.xrLabel50,
+                        this.xrLabel49,
+                        this.xrLabel48,
+                        this.xrLabel47,
+                        this.xrLabel46,
+                        this.xrLabel45,
+                        this.xrLabel44,
+                        this.xrLabel43,
+                        this.xrLabel42,
+                        this.xrLabel41,
+                        this.xrLabel40,
+                        this.xrLabel39,
+                        this.xrLabel58,
+                        this.xrLabel57,
+                        this.xrLabel56,
+                        this.xrLabel55,
+                        this.xrLabel54,
+                        this.xrLabel53,
+                        this.xrLabel52,
+                        this.xrLabel51,
+                        this.xrLine3,
+                        this.xrLine2,
+                        this.xrLabel38,
+                        this.xrLabel37,
+                        this.xrLabel36,
+                        this.xrLabel25,
+                        this.xrLabel24,
+                        this.xrLabel19,
+                        this.xrLabel17,
+                        this.xrLabel16,
+                        this.xrLabel13,
+                        this.xrLabel9,
+                        this.xrLabel8,
+                        this.xrLabel7,
+                        this.xrLabel5,
+                        this.xrLabel4,
+                        this.xrLabel3,
+                        this.xrLabel20,
+                        this.xrLabel23,
+                        this.xrLabel22,
+                        this.xrLabel21,
+                        this.xrLabel18,
+                        this.xrLabel12,
+                        this.xrLabel11,
+                        this.xrLabel10,
+                        this.xrLabel2,
+                        this.xrLabel15});
+            this.GroupHeader2.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+                        new DevExpress.XtraReports.UI.GroupField("流程", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader2.Height = 491;
+            this.GroupHeader2.Name = "GroupHeader2";
+            // 
+            // GroupFooter1
+            // 
+            this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLine5});
+            this.GroupFooter1.Height = 23;
+            this.GroupFooter1.Name = "GroupFooter1";
+            // 
+            // ReportFooter
+            // 
+            this.ReportFooter.Height = 0;
+            this.ReportFooter.Name = "ReportFooter";
+            // 
+            // xrLabel14
+            // 
+            this.xrLabel14.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.daterange", "")});
+            this.xrLabel14.Location = new System.Drawing.Point(275, 75);
+            this.xrLabel14.Name = "xrLabel14";
+            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel14.Size = new System.Drawing.Size(292, 25);
+            this.xrLabel14.Text = "xrLabel14";
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 24F);
+            this.xrLabel1.Location = new System.Drawing.Point(125, 8);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.Size = new System.Drawing.Size(467, 58);
+            this.xrLabel1.Text = "检验科住院标本时间分析";
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Location = new System.Drawing.Point(167, 75);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel6.Text = "统计时间段：";
+            // 
+            // xrLine1
+            // 
+            this.xrLine1.Location = new System.Drawing.Point(0, 100);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.Size = new System.Drawing.Size(767, 9);
+            // 
+            // xrLabel59
+            // 
+            this.xrLabel59.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.操作地点", "")});
+            this.xrLabel59.Location = new System.Drawing.Point(408, 25);
+            this.xrLabel59.Name = "xrLabel59";
+            this.xrLabel59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel59.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel59.Text = "xrLabel59";
+            // 
+            // xrLine6
+            // 
+            this.xrLine6.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.xrLine6.Location = new System.Drawing.Point(0, 42);
+            this.xrLine6.Name = "xrLine6";
+            this.xrLine6.Size = new System.Drawing.Size(767, 23);
+            // 
+            // xrLabel35
+            // 
+            this.xrLabel35.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.物理组", "")});
+            this.xrLabel35.Location = new System.Drawing.Point(33, 25);
+            this.xrLabel35.Name = "xrLabel35";
+            this.xrLabel35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel35.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel35.Text = "xrLabel35";
+            // 
+            // xrLabel34
+            // 
+            this.xrLabel34.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.组合名", "")});
+            this.xrLabel34.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel34.Location = new System.Drawing.Point(408, 0);
+            this.xrLabel34.Name = "xrLabel34";
+            this.xrLabel34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel34.Size = new System.Drawing.Size(358, 25);
+            this.xrLabel34.Text = "xrLabel34";
+            this.xrLabel34.WordWrap = false;
+            // 
+            // xrLabel33
+            // 
+            this.xrLabel33.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.日期", "")});
+            this.xrLabel33.Location = new System.Drawing.Point(233, 25);
+            this.xrLabel33.Name = "xrLabel33";
+            this.xrLabel33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel33.Size = new System.Drawing.Size(175, 25);
+            this.xrLabel33.Text = "xrLabel33";
+            // 
+            // xrLabel32
+            // 
+            this.xrLabel32.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.诊疗卡号", "")});
+            this.xrLabel32.Location = new System.Drawing.Point(308, 0);
+            this.xrLabel32.Name = "xrLabel32";
+            this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel32.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel32.Text = "xrLabel32";
+            // 
+            // xrLabel31
+            // 
+            this.xrLabel31.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.条码号", "")});
+            this.xrLabel31.Location = new System.Drawing.Point(133, 25);
+            this.xrLabel31.Name = "xrLabel31";
+            this.xrLabel31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel31.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel31.Text = "xrLabel31";
+            // 
+            // xrLabel30
+            // 
+            this.xrLabel30.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.操作人员", "")});
+            this.xrLabel30.Location = new System.Drawing.Point(533, 25);
+            this.xrLabel30.Name = "xrLabel30";
+            this.xrLabel30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel30.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel30.Text = "xrLabel30";
+            // 
+            // xrLabel29
+            // 
+            this.xrLabel29.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.时间间隔", "")});
+            this.xrLabel29.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel29.Location = new System.Drawing.Point(667, 25);
+            this.xrLabel29.Name = "xrLabel29";
+            this.xrLabel29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel29.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel29.Text = "xrLabel29";
+            // 
+            // xrLabel28
+            // 
+            this.xrLabel28.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.床号", "")});
+            this.xrLabel28.Location = new System.Drawing.Point(233, 0);
+            this.xrLabel28.Name = "xrLabel28";
+            this.xrLabel28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel28.Size = new System.Drawing.Size(67, 25);
+            this.xrLabel28.Text = "xrLabel28";
+            // 
+            // xrLabel27
+            // 
+            this.xrLabel27.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.科室名称", "")});
+            this.xrLabel27.Location = new System.Drawing.Point(100, 0);
+            this.xrLabel27.Name = "xrLabel27";
+            this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel27.Size = new System.Drawing.Size(133, 25);
+            this.xrLabel27.Text = "xrLabel27";
+            // 
+            // xrLabel26
+            // 
+            this.xrLabel26.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.病人姓名", "")});
+            this.xrLabel26.Location = new System.Drawing.Point(0, 0);
+            this.xrLabel26.Name = "xrLabel26";
+            this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel26.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel26.Text = "xrLabel26";
+            // 
+            // xrLabel60
+            // 
+            this.xrLabel60.Location = new System.Drawing.Point(400, 450);
+            this.xrLabel60.Name = "xrLabel60";
+            this.xrLabel60.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel60.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel60.Text = "操作地点";
+            // 
+            // xrLine4
+            // 
+            this.xrLine4.Location = new System.Drawing.Point(0, 467);
+            this.xrLine4.Name = "xrLine4";
+            this.xrLine4.Size = new System.Drawing.Size(767, 23);
+            // 
+            // xrLabel50
+            // 
+            this.xrLabel50.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel50.Location = new System.Drawing.Point(650, 450);
+            this.xrLabel50.Name = "xrLabel50";
+            this.xrLabel50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel50.Size = new System.Drawing.Size(117, 25);
+            this.xrLabel50.Text = "时间间隔（分钟）";
+            // 
+            // xrLabel49
+            // 
+            this.xrLabel49.Location = new System.Drawing.Point(517, 450);
+            this.xrLabel49.Name = "xrLabel49";
+            this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel49.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel49.Text = "操作人员";
+            // 
+            // xrLabel48
+            // 
+            this.xrLabel48.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel48.Location = new System.Drawing.Point(525, 425);
+            this.xrLabel48.Name = "xrLabel48";
+            this.xrLabel48.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel48.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel48.Text = "组合名称";
+            // 
+            // xrLabel47
+            // 
+            this.xrLabel47.Location = new System.Drawing.Point(25, 450);
+            this.xrLabel47.Name = "xrLabel47";
+            this.xrLabel47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel47.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel47.Text = "物理组";
+            // 
+            // xrLabel46
+            // 
+            this.xrLabel46.Location = new System.Drawing.Point(250, 450);
+            this.xrLabel46.Name = "xrLabel46";
+            this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel46.Size = new System.Drawing.Size(117, 23);
+            this.xrLabel46.Text = "操作日期";
+            // 
+            // xrLabel45
+            // 
+            this.xrLabel45.Location = new System.Drawing.Point(292, 425);
+            this.xrLabel45.Name = "xrLabel45";
+            this.xrLabel45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel45.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel45.Text = "住院号";
+            // 
+            // xrLabel44
+            // 
+            this.xrLabel44.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.f1", "")});
+            this.xrLabel44.Font = new System.Drawing.Font("Times New Roman", 16F);
+            this.xrLabel44.Location = new System.Drawing.Point(100, 375);
+            this.xrLabel44.Name = "xrLabel44";
+            this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel44.Size = new System.Drawing.Size(225, 42);
+            this.xrLabel44.Text = "xrLabel44";
+            this.xrLabel44.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
+            // xrLabel43
+            // 
+            this.xrLabel43.Location = new System.Drawing.Point(225, 425);
+            this.xrLabel43.Name = "xrLabel43";
+            this.xrLabel43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel43.Size = new System.Drawing.Size(58, 23);
+            this.xrLabel43.Text = "床号";
+            // 
+            // xrLabel42
+            // 
+            this.xrLabel42.Font = new System.Drawing.Font("Times New Roman", 16F);
+            this.xrLabel42.Location = new System.Drawing.Point(325, 375);
+            this.xrLabel42.Name = "xrLabel42";
+            this.xrLabel42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel42.Size = new System.Drawing.Size(325, 42);
+            this.xrLabel42.Text = "详细的病人资料";
+            this.xrLabel42.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLabel41
+            // 
+            this.xrLabel41.Location = new System.Drawing.Point(100, 425);
+            this.xrLabel41.Name = "xrLabel41";
+            this.xrLabel41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel41.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel41.Text = "科室";
+            // 
+            // xrLabel40
+            // 
+            this.xrLabel40.Location = new System.Drawing.Point(0, 425);
+            this.xrLabel40.Name = "xrLabel40";
+            this.xrLabel40.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel40.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel40.Text = "病人姓名";
+            // 
+            // xrLabel39
+            // 
+            this.xrLabel39.Location = new System.Drawing.Point(125, 450);
+            this.xrLabel39.Name = "xrLabel39";
+            this.xrLabel39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel39.Size = new System.Drawing.Size(108, 23);
+            this.xrLabel39.Text = "条码号";
+            // 
+            // xrLabel58
+            // 
+            this.xrLabel58.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLabel58.Location = new System.Drawing.Point(525, 167);
+            this.xrLabel58.Name = "xrLabel58";
+            this.xrLabel58.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel58.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel58.Text = "比率";
+            this.xrLabel58.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel57
+            // 
+            this.xrLabel57.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.f2", "")});
+            this.xrLabel57.Location = new System.Drawing.Point(525, 325);
+            this.xrLabel57.Name = "xrLabel57";
+            this.xrLabel57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel57.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel57.Text = "xrLabel57";
+            // 
+            // xrLabel56
+            // 
+            this.xrLabel56.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.e2", "")});
+            this.xrLabel56.Location = new System.Drawing.Point(525, 300);
+            this.xrLabel56.Name = "xrLabel56";
+            this.xrLabel56.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel56.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel56.Text = "xrLabel56";
+            // 
+            // xrLabel55
+            // 
+            this.xrLabel55.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.d2", "")});
+            this.xrLabel55.Location = new System.Drawing.Point(525, 275);
+            this.xrLabel55.Name = "xrLabel55";
+            this.xrLabel55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel55.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel55.Text = "xrLabel55";
+            // 
+            // xrLabel54
+            // 
+            this.xrLabel54.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.c2", "")});
+            this.xrLabel54.Location = new System.Drawing.Point(525, 250);
+            this.xrLabel54.Name = "xrLabel54";
+            this.xrLabel54.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel54.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel54.Text = "xrLabel54";
+            // 
+            // xrLabel53
+            // 
+            this.xrLabel53.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.b2", "")});
+            this.xrLabel53.Location = new System.Drawing.Point(525, 225);
+            this.xrLabel53.Name = "xrLabel53";
+            this.xrLabel53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel53.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel53.Text = "xrLabel53";
+            // 
+            // xrLabel52
+            // 
+            this.xrLabel52.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.a2", "")});
+            this.xrLabel52.Location = new System.Drawing.Point(525, 200);
+            this.xrLabel52.Name = "xrLabel52";
+            this.xrLabel52.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel52.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel52.Text = "xrLabel52";
+            // 
+            // xrLabel51
+            // 
+            this.xrLabel51.Font = new System.Drawing.Font("Times New Roman", 18F);
+            this.xrLabel51.Location = new System.Drawing.Point(8, 0);
+            this.xrLabel51.Name = "xrLabel51";
+            this.xrLabel51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel51.Size = new System.Drawing.Size(142, 42);
+            this.xrLabel51.Text = "送检流程：";
+            this.xrLabel51.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
+            // xrLine3
+            // 
+            this.xrLine3.Location = new System.Drawing.Point(142, 342);
+            this.xrLine3.Name = "xrLine3";
+            this.xrLine3.Size = new System.Drawing.Size(508, 23);
+            // 
+            // xrLine2
+            // 
+            this.xrLine2.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLine2.Location = new System.Drawing.Point(133, 183);
+            this.xrLine2.Name = "xrLine2";
+            this.xrLine2.Size = new System.Drawing.Size(517, 23);
+            // 
+            // xrLabel38
+            // 
+            this.xrLabel38.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLabel38.Location = new System.Drawing.Point(367, 167);
+            this.xrLabel38.Name = "xrLabel38";
+            this.xrLabel38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel38.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel38.Text = "标本数量";
+            this.xrLabel38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel37
+            // 
+            this.xrLabel37.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLabel37.Location = new System.Drawing.Point(167, 167);
+            this.xrLabel37.Name = "xrLabel37";
+            this.xrLabel37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel37.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel37.Text = "时间段";
+            this.xrLabel37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel36
+            // 
+            this.xrLabel36.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLabel36.Location = new System.Drawing.Point(333, 133);
+            this.xrLabel36.Name = "xrLabel36";
+            this.xrLabel36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel36.Size = new System.Drawing.Size(100, 23);
+            this.xrLabel36.Text = "时间段分析";
+            // 
+            // xrLabel25
+            // 
+            this.xrLabel25.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.f", "")});
+            this.xrLabel25.Location = new System.Drawing.Point(375, 325);
+            this.xrLabel25.Name = "xrLabel25";
+            this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel25.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel25.Text = "xrLabel25";
+            // 
+            // xrLabel24
+            // 
+            this.xrLabel24.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.f1", "")});
+            this.xrLabel24.Location = new System.Drawing.Point(175, 325);
+            this.xrLabel24.Name = "xrLabel24";
+            this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel24.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel24.Text = "xrLabel24";
+            this.xrLabel24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel19
+            // 
+            this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.e1", "")});
+            this.xrLabel19.Location = new System.Drawing.Point(175, 300);
+            this.xrLabel19.Name = "xrLabel19";
+            this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel19.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel19.Text = "xrLabel19";
+            this.xrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel17
+            // 
+            this.xrLabel17.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.e", "")});
+            this.xrLabel17.Location = new System.Drawing.Point(375, 300);
+            this.xrLabel17.Name = "xrLabel17";
+            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel17.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel17.Text = "xrLabel17";
+            // 
+            // xrLabel16
+            // 
+            this.xrLabel16.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.d1", "")});
+            this.xrLabel16.Location = new System.Drawing.Point(175, 275);
+            this.xrLabel16.Name = "xrLabel16";
+            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel16.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel16.Text = "xrLabel16";
+            this.xrLabel16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel13
+            // 
+            this.xrLabel13.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.d", "")});
+            this.xrLabel13.Location = new System.Drawing.Point(375, 275);
+            this.xrLabel13.Name = "xrLabel13";
+            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel13.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel13.Text = "xrLabel13";
+            // 
+            // xrLabel9
+            // 
+            this.xrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.c1", "")});
+            this.xrLabel9.Location = new System.Drawing.Point(175, 250);
+            this.xrLabel9.Name = "xrLabel9";
+            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel9.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel9.Text = "xrLabel9";
+            this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.c", "")});
+            this.xrLabel8.Location = new System.Drawing.Point(375, 250);
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel8.Text = "xrLabel8";
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.b1", "")});
+            this.xrLabel7.Location = new System.Drawing.Point(175, 225);
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel7.Text = "xrLabel7";
+            this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.b", "")});
+            this.xrLabel5.Location = new System.Drawing.Point(375, 225);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel5.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel5.Text = "xrLabel5";
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.a1", "")});
+            this.xrLabel4.Location = new System.Drawing.Point(175, 200);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel4.Text = "xrLabel4";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.a", "")});
+            this.xrLabel3.Location = new System.Drawing.Point(375, 200);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel3.Text = "xrLabel3";
+            // 
+            // xrLabel20
+            // 
+            this.xrLabel20.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.xrLabel20.Location = new System.Drawing.Point(75, 75);
+            this.xrLabel20.Name = "xrLabel20";
+            this.xrLabel20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel20.Size = new System.Drawing.Size(117, 25);
+            this.xrLabel20.Text = "平均时间:";
+            // 
+            // xrLabel23
+            // 
+            this.xrLabel23.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.最大时间", "")});
+            this.xrLabel23.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.xrLabel23.Location = new System.Drawing.Point(217, 50);
+            this.xrLabel23.Name = "xrLabel23";
+            this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel23.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel23.Text = "xrLabel2";
+            // 
+            // xrLabel22
+            // 
+            this.xrLabel22.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.平均时间", "")});
+            this.xrLabel22.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.xrLabel22.Location = new System.Drawing.Point(217, 75);
+            this.xrLabel22.Name = "xrLabel22";
+            this.xrLabel22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel22.Size = new System.Drawing.Size(100, 25);
+            xrSummary1.FormatString = "{0:#.00}";
+            this.xrLabel22.Summary = xrSummary1;
+            this.xrLabel22.Text = "xrLabel22";
+            // 
+            // xrLabel21
+            // 
+            this.xrLabel21.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.条码标本数量", "")});
+            this.xrLabel21.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.xrLabel21.Location = new System.Drawing.Point(217, 100);
+            this.xrLabel21.Name = "xrLabel21";
+            this.xrLabel21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel21.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel21.Text = "xrLabel7";
+            // 
+            // xrLabel18
+            // 
+            this.xrLabel18.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.xrLabel18.Location = new System.Drawing.Point(75, 100);
+            this.xrLabel18.Name = "xrLabel18";
+            this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel18.Size = new System.Drawing.Size(117, 25);
+            this.xrLabel18.Text = "检标本数:";
+            // 
+            // xrLabel12
+            // 
+            this.xrLabel12.Location = new System.Drawing.Point(333, 50);
+            this.xrLabel12.Name = "xrLabel12";
+            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel12.Size = new System.Drawing.Size(33, 25);
+            this.xrLabel12.Text = "分钟";
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.Location = new System.Drawing.Point(333, 75);
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel11.Size = new System.Drawing.Size(33, 25);
+            this.xrLabel11.Text = "分钟";
+            // 
+            // xrLabel10
+            // 
+            this.xrLabel10.Location = new System.Drawing.Point(333, 100);
+            this.xrLabel10.Name = "xrLabel10";
+            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel10.Size = new System.Drawing.Size(33, 25);
+            this.xrLabel10.Text = "例";
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.xrLabel2.Location = new System.Drawing.Point(75, 50);
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.Size = new System.Drawing.Size(100, 25);
+            this.xrLabel2.Text = "最大时间:";
+            // 
+            // xrLabel15
+            // 
+            this.xrLabel15.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.流程", "")});
+            this.xrLabel15.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold);
+            this.xrLabel15.Location = new System.Drawing.Point(150, 0);
+            this.xrLabel15.Name = "xrLabel15";
+            this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel15.Size = new System.Drawing.Size(200, 42);
+            this.xrLabel15.Text = "xrLabel15";
+            this.xrLabel15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLine5
+            // 
+            this.xrLine5.Location = new System.Drawing.Point(0, 0);
+            this.xrLine5.Name = "xrLine5";
+            this.xrLine5.Size = new System.Drawing.Size(767, 23);
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "dataSet1";
+            // 
+            // xtraReport1
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.PageHeader,
+                        this.Detail,
+                        this.PageFooter,
+                        this.GroupHeader2,
+                        this.GroupFooter1,
+                        this.ReportFooter});
+            this.DataSource = this.dataSet1;
+            this.Font = new System.Drawing.Font("宋体", 10F);
+            this.Margins = new System.Drawing.Printing.Margins(30, 30, 30, 30);
+            this.Name = "xtraReport1";
+            this.PageHeight = 1169;
+            this.PageWidth = 827;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.Version = "8.2";
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
+namespace XtraReportSerialization {
+    
+    /// <summary>
+    ///Represents a strongly typed in-memory cache of data.
+    ///</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+    [global::System.Serializable()]
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
+    [global::System.Xml.Serialization.XmlRootAttribute("dataSet1")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
+    public partial class dataSet1 : global::System.Data.DataSet {
+        private 可设计字段DataTable table可设计字段;
+        private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public dataSet1() {
+            this.BeginInit();
+            this.InitClass();
+            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+            base.Tables.CollectionChanged += schemaChangedHandler;
+            base.Relations.CollectionChanged += schemaChangedHandler;
+            this.EndInit();
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected dataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                base(info, context, false) {
+            if ((this.IsBinarySerialized(info, context) == true)) {
+                this.InitVars(false);
+                global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler1 = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+                this.Tables.CollectionChanged += schemaChangedHandler1;
+                this.Relations.CollectionChanged += schemaChangedHandler1;
+                return;
+            }
+            string strSchema = ((string)(info.GetValue("XmlSchema", typeof(string))));
+            if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
+                global::System.Data.DataSet ds = new global::System.Data.DataSet();
+                ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+                if ((ds.Tables["可设计字段"] != null)) {
+                    base.Tables.Add(new 可设计字段DataTable(ds.Tables["可设计字段"]));
+                }
+                this.DataSetName = ds.DataSetName;
+                this.Prefix = ds.Prefix;
+                this.Namespace = ds.Namespace;
+                this.Locale = ds.Locale;
+                this.CaseSensitive = ds.CaseSensitive;
+                this.EnforceConstraints = ds.EnforceConstraints;
+                this.Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
+                this.InitVars();
+            }
+            else {
+                this.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+            }
+            this.GetSerializationData(info, context);
+            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+            base.Tables.CollectionChanged += schemaChangedHandler;
+            this.Relations.CollectionChanged += schemaChangedHandler;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public 可设计字段DataTable 可设计字段 {
+            get {
+                return this.table可设计字段;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.BrowsableAttribute(true)]
+        [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
+        public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
+            get {
+                return this._schemaSerializationMode;
+            }
+            set {
+                this._schemaSerializationMode = value;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public new global::System.Data.DataTableCollection Tables {
+            get {
+                return base.Tables;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public new global::System.Data.DataRelationCollection Relations {
+            get {
+                return base.Relations;
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override void InitializeDerivedDataSet() {
+            this.BeginInit();
+            this.InitClass();
+            this.EndInit();
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public override global::System.Data.DataSet Clone() {
+            dataSet1 cln = ((dataSet1)(base.Clone()));
+            cln.InitVars();
+            cln.SchemaSerializationMode = this.SchemaSerializationMode;
+            return cln;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override bool ShouldSerializeTables() {
+            return false;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override bool ShouldSerializeRelations() {
+            return false;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override void ReadXmlSerializable(global::System.Xml.XmlReader reader) {
+            if ((this.DetermineSchemaSerializationMode(reader) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
+                this.Reset();
+                global::System.Data.DataSet ds = new global::System.Data.DataSet();
+                ds.ReadXml(reader);
+                if ((ds.Tables["可设计字段"] != null)) {
+                    base.Tables.Add(new 可设计字段DataTable(ds.Tables["可设计字段"]));
+                }
+                this.DataSetName = ds.DataSetName;
+                this.Prefix = ds.Prefix;
+                this.Namespace = ds.Namespace;
+                this.Locale = ds.Locale;
+                this.CaseSensitive = ds.CaseSensitive;
+                this.EnforceConstraints = ds.EnforceConstraints;
+                this.Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
+                this.InitVars();
+            }
+            else {
+                this.ReadXml(reader);
+                this.InitVars();
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        protected override global::System.Xml.Schema.XmlSchema GetSchemaSerializable() {
+            global::System.IO.MemoryStream stream = new global::System.IO.MemoryStream();
+            this.WriteXmlSchema(new global::System.Xml.XmlTextWriter(stream, null));
+            stream.Position = 0;
+            return global::System.Xml.Schema.XmlSchema.Read(new global::System.Xml.XmlTextReader(stream), null);
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        internal void InitVars() {
+            this.InitVars(true);
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        internal void InitVars(bool initTable) {
+            this.table可设计字段 = ((可设计字段DataTable)(base.Tables["可设计字段"]));
+            if ((initTable == true)) {
+                if ((this.table可设计字段 != null)) {
+                    this.table可设计字段.InitVars();
+                }
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private void InitClass() {
+            this.DataSetName = "dataSet1";
+            this.Prefix = "";
+            this.EnforceConstraints = true;
+            this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+            this.table可设计字段 = new 可设计字段DataTable();
+            base.Tables.Add(this.table可设计字段);
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private bool ShouldSerialize可设计字段() {
+            return false;
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
+            if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
+                this.InitVars();
+            }
+        }
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+            dataSet1 ds = new dataSet1();
+            global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+            global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+            global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
+            any.Namespace = ds.Namespace;
+            sequence.Items.Add(any);
+            type.Particle = sequence;
+            global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+            if (xs.Contains(dsSchema.TargetNamespace)) {
+                global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                try {
+                    global::System.Xml.Schema.XmlSchema schema = null;
+                    dsSchema.Write(s1);
+                    for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                        schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                        s2.SetLength(0);
+                        schema.Write(s2);
+                        if ((s1.Length == s2.Length)) {
+                            s1.Position = 0;
+                            s2.Position = 0;
+                            for (; ((s1.Position != s1.Length) 
+                                        && (s1.ReadByte() == s2.ReadByte())); ) {
+                                ;
+                            }
+                            if ((s1.Position == s1.Length)) {
+                                return type;
+                            }
+                        }
+                    }
+                }
+                finally {
+                    if ((s1 != null)) {
+                        s1.Close();
+                    }
+                    if ((s2 != null)) {
+                        s2.Close();
+                    }
+                }
+            }
+            xs.Add(dsSchema);
+            return type;
+        }
+        public delegate void 可设计字段RowChangeEventHandler(object sender, 可设计字段RowChangeEvent e);
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class 可设计字段DataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+            private global::System.Data.DataColumn column条码号;
+            private global::System.Data.DataColumn column病人姓名;
+            private global::System.Data.DataColumn column科室名称;
+            private global::System.Data.DataColumn column诊疗卡号;
+            private global::System.Data.DataColumn column床号;
+            private global::System.Data.DataColumn column组合名;
+            private global::System.Data.DataColumn column日期;
+            private global::System.Data.DataColumn column操作人员;
+            private global::System.Data.DataColumn column操作地点;
+            private global::System.Data.DataColumn column流程;
+            private global::System.Data.DataColumn column时间间隔;
+            private global::System.Data.DataColumn column物理组;
+            private global::System.Data.DataColumn column平均时间;
+            private global::System.Data.DataColumn column最大时间;
+            private global::System.Data.DataColumn column条码标本数量;
+            private global::System.Data.DataColumn columndaterange;
+            private global::System.Data.DataColumn column流程1;
+            private global::System.Data.DataColumn columna;
+            private global::System.Data.DataColumn columnb;
+            private global::System.Data.DataColumn columnc;
+            private global::System.Data.DataColumn columnd;
+            private global::System.Data.DataColumn columne;
+            private global::System.Data.DataColumn columnf;
+            private global::System.Data.DataColumn columna1;
+            private global::System.Data.DataColumn columnb1;
+            private global::System.Data.DataColumn columnc1;
+            private global::System.Data.DataColumn columnd1;
+            private global::System.Data.DataColumn columne1;
+            private global::System.Data.DataColumn columnf1;
+            private global::System.Data.DataColumn columna2;
+            private global::System.Data.DataColumn columnb2;
+            private global::System.Data.DataColumn columnc2;
+            private global::System.Data.DataColumn columnd2;
+            private global::System.Data.DataColumn columne2;
+            private global::System.Data.DataColumn columnf2;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段DataTable() {
+                this.TableName = "可设计字段";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal 可设计字段DataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected 可设计字段DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 条码号Column {
+                get {
+                    return this.column条码号;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 病人姓名Column {
+                get {
+                    return this.column病人姓名;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 科室名称Column {
+                get {
+                    return this.column科室名称;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 诊疗卡号Column {
+                get {
+                    return this.column诊疗卡号;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 床号Column {
+                get {
+                    return this.column床号;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 组合名Column {
+                get {
+                    return this.column组合名;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 日期Column {
+                get {
+                    return this.column日期;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 操作人员Column {
+                get {
+                    return this.column操作人员;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 操作地点Column {
+                get {
+                    return this.column操作地点;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 流程Column {
+                get {
+                    return this.column流程;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 时间间隔Column {
+                get {
+                    return this.column时间间隔;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 物理组Column {
+                get {
+                    return this.column物理组;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 平均时间Column {
+                get {
+                    return this.column平均时间;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 最大时间Column {
+                get {
+                    return this.column最大时间;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 条码标本数量Column {
+                get {
+                    return this.column条码标本数量;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn daterangeColumn {
+                get {
+                    return this.columndaterange;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn 流程1Column {
+                get {
+                    return this.column流程1;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn aColumn {
+                get {
+                    return this.columna;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn bColumn {
+                get {
+                    return this.columnb;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn cColumn {
+                get {
+                    return this.columnc;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn dColumn {
+                get {
+                    return this.columnd;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn eColumn {
+                get {
+                    return this.columne;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn fColumn {
+                get {
+                    return this.columnf;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn a1Column {
+                get {
+                    return this.columna1;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn b1Column {
+                get {
+                    return this.columnb1;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn c1Column {
+                get {
+                    return this.columnc1;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn d1Column {
+                get {
+                    return this.columnd1;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn e1Column {
+                get {
+                    return this.columne1;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn f1Column {
+                get {
+                    return this.columnf1;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn a2Column {
+                get {
+                    return this.columna2;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn b2Column {
+                get {
+                    return this.columnb2;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn c2Column {
+                get {
+                    return this.columnc2;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn d2Column {
+                get {
+                    return this.columnd2;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn e2Column {
+                get {
+                    return this.columne2;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn f2Column {
+                get {
+                    return this.columnf2;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row this[int index] {
+                get {
+                    return ((可设计字段Row)(this.Rows[index]));
+                }
+            }
+            public event 可设计字段RowChangeEventHandler 可设计字段RowChanging;
+            public event 可设计字段RowChangeEventHandler 可设计字段RowChanged;
+            public event 可设计字段RowChangeEventHandler 可设计字段RowDeleting;
+            public event 可设计字段RowChangeEventHandler 可设计字段RowDeleted;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Add可设计字段Row(可设计字段Row row) {
+                this.Rows.Add(row);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row Add可设计字段Row(
+                        string 条码号, 
+                        string 病人姓名, 
+                        string 科室名称, 
+                        string 诊疗卡号, 
+                        string 床号, 
+                        string 组合名, 
+                        System.DateTime 日期, 
+                        string 操作人员, 
+                        string 操作地点, 
+                        string 流程, 
+                        decimal 时间间隔, 
+                        string 物理组, 
+                        decimal 平均时间, 
+                        decimal 最大时间, 
+                        int 条码标本数量, 
+                        string daterange, 
+                        string 流程1, 
+                        int a, 
+                        int b, 
+                        int c, 
+                        int d, 
+                        int e, 
+                        int f, 
+                        string a1, 
+                        string b1, 
+                        string c1, 
+                        string d1, 
+                        string e1, 
+                        string f1, 
+                        decimal a2, 
+                        decimal b2, 
+                        decimal c2, 
+                        decimal d2, 
+                        decimal e2, 
+                        decimal f2) {
+                可设计字段Row row可设计字段Row = ((可设计字段Row)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        条码号,
+                        病人姓名,
+                        科室名称,
+                        诊疗卡号,
+                        床号,
+                        组合名,
+                        日期,
+                        操作人员,
+                        操作地点,
+                        流程,
+                        时间间隔,
+                        物理组,
+                        平均时间,
+                        最大时间,
+                        条码标本数量,
+                        daterange,
+                        流程1,
+                        a,
+                        b,
+                        c,
+                        d,
+                        e,
+                        f,
+                        a1,
+                        b1,
+                        c1,
+                        d1,
+                        e1,
+                        f1,
+                        a2,
+                        b2,
+                        c2,
+                        d2,
+                        e2,
+                        f2};
+                row可设计字段Row.ItemArray = columnValuesArray;
+                this.Rows.Add(row可设计字段Row);
+                return row可设计字段Row;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public virtual global::System.Collections.IEnumerator GetEnumerator() {
+                return this.Rows.GetEnumerator();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public override global::System.Data.DataTable Clone() {
+                可设计字段DataTable cln = ((可设计字段DataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new 可设计字段DataTable();
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal void InitVars() {
+                this.column条码号 = base.Columns["条码号"];
+                this.column病人姓名 = base.Columns["病人姓名"];
+                this.column科室名称 = base.Columns["科室名称"];
+                this.column诊疗卡号 = base.Columns["诊疗卡号"];
+                this.column床号 = base.Columns["床号"];
+                this.column组合名 = base.Columns["组合名"];
+                this.column日期 = base.Columns["日期"];
+                this.column操作人员 = base.Columns["操作人员"];
+                this.column操作地点 = base.Columns["操作地点"];
+                this.column流程 = base.Columns["流程"];
+                this.column时间间隔 = base.Columns["时间间隔"];
+                this.column物理组 = base.Columns["物理组"];
+                this.column平均时间 = base.Columns["平均时间"];
+                this.column最大时间 = base.Columns["最大时间"];
+                this.column条码标本数量 = base.Columns["条码标本数量"];
+                this.columndaterange = base.Columns["daterange"];
+                this.column流程1 = base.Columns["流程1"];
+                this.columna = base.Columns["a"];
+                this.columnb = base.Columns["b"];
+                this.columnc = base.Columns["c"];
+                this.columnd = base.Columns["d"];
+                this.columne = base.Columns["e"];
+                this.columnf = base.Columns["f"];
+                this.columna1 = base.Columns["a1"];
+                this.columnb1 = base.Columns["b1"];
+                this.columnc1 = base.Columns["c1"];
+                this.columnd1 = base.Columns["d1"];
+                this.columne1 = base.Columns["e1"];
+                this.columnf1 = base.Columns["f1"];
+                this.columna2 = base.Columns["a2"];
+                this.columnb2 = base.Columns["b2"];
+                this.columnc2 = base.Columns["c2"];
+                this.columnd2 = base.Columns["d2"];
+                this.columne2 = base.Columns["e2"];
+                this.columnf2 = base.Columns["f2"];
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            private void InitClass() {
+                this.column条码号 = new global::System.Data.DataColumn("条码号", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column条码号);
+                this.column病人姓名 = new global::System.Data.DataColumn("病人姓名", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column病人姓名);
+                this.column科室名称 = new global::System.Data.DataColumn("科室名称", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column科室名称);
+                this.column诊疗卡号 = new global::System.Data.DataColumn("诊疗卡号", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column诊疗卡号);
+                this.column床号 = new global::System.Data.DataColumn("床号", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column床号);
+                this.column组合名 = new global::System.Data.DataColumn("组合名", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column组合名);
+                this.column日期 = new global::System.Data.DataColumn("日期", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column日期);
+                this.column操作人员 = new global::System.Data.DataColumn("操作人员", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column操作人员);
+                this.column操作地点 = new global::System.Data.DataColumn("操作地点", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column操作地点);
+                this.column流程 = new global::System.Data.DataColumn("流程", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column流程);
+                this.column时间间隔 = new global::System.Data.DataColumn("时间间隔", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column时间间隔);
+                this.column物理组 = new global::System.Data.DataColumn("物理组", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column物理组);
+                this.column平均时间 = new global::System.Data.DataColumn("平均时间", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column平均时间);
+                this.column最大时间 = new global::System.Data.DataColumn("最大时间", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column最大时间);
+                this.column条码标本数量 = new global::System.Data.DataColumn("条码标本数量", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column条码标本数量);
+                this.columndaterange = new global::System.Data.DataColumn("daterange", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndaterange);
+                this.column流程1 = new global::System.Data.DataColumn("流程1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column流程1);
+                this.columna = new global::System.Data.DataColumn("a", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columna);
+                this.columnb = new global::System.Data.DataColumn("b", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnb);
+                this.columnc = new global::System.Data.DataColumn("c", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnc);
+                this.columnd = new global::System.Data.DataColumn("d", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnd);
+                this.columne = new global::System.Data.DataColumn("e", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columne);
+                this.columnf = new global::System.Data.DataColumn("f", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnf);
+                this.columna1 = new global::System.Data.DataColumn("a1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columna1);
+                this.columnb1 = new global::System.Data.DataColumn("b1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnb1);
+                this.columnc1 = new global::System.Data.DataColumn("c1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnc1);
+                this.columnd1 = new global::System.Data.DataColumn("d1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnd1);
+                this.columne1 = new global::System.Data.DataColumn("e1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columne1);
+                this.columnf1 = new global::System.Data.DataColumn("f1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnf1);
+                this.columna2 = new global::System.Data.DataColumn("a2", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columna2);
+                this.columnb2 = new global::System.Data.DataColumn("b2", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnb2);
+                this.columnc2 = new global::System.Data.DataColumn("c2", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnc2);
+                this.columnd2 = new global::System.Data.DataColumn("d2", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnd2);
+                this.columne2 = new global::System.Data.DataColumn("e2", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columne2);
+                this.columnf2 = new global::System.Data.DataColumn("f2", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnf2);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row New可设计字段Row() {
+                return ((可设计字段Row)(this.NewRow()));
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new 可设计字段Row(builder);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Type GetRowType() {
+                return typeof(可设计字段Row);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.可设计字段RowChanged != null)) {
+                    this.可设计字段RowChanged(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.可设计字段RowChanging != null)) {
+                    this.可设计字段RowChanging(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.可设计字段RowDeleted != null)) {
+                    this.可设计字段RowDeleted(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.可设计字段RowDeleting != null)) {
+                    this.可设计字段RowDeleting(this, new 可设计字段RowChangeEvent(((可设计字段Row)(e.Row)), e.Action));
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Remove可设计字段Row(可设计字段Row row) {
+                this.Rows.Remove(row);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dataSet1 ds = new dataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "可设计字段DataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        public partial class 可设计字段Row : global::System.Data.DataRow {
+            private 可设计字段DataTable table可设计字段;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal 可设计字段Row(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.table可设计字段 = ((可设计字段DataTable)(this.Table));
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 条码号 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.条码号Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“条码号”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.条码号Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 病人姓名 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.病人姓名Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“病人姓名”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.病人姓名Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 科室名称 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.科室名称Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“科室名称”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.科室名称Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 诊疗卡号 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.诊疗卡号Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“诊疗卡号”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.诊疗卡号Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 床号 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.床号Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“床号”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.床号Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 组合名 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.组合名Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“组合名”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.组合名Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public System.DateTime 日期 {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.table可设计字段.日期Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“日期”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.日期Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 操作人员 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.操作人员Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“操作人员”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.操作人员Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 操作地点 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.操作地点Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“操作地点”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.操作地点Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 流程 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.流程Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“流程”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.流程Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal 时间间隔 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.时间间隔Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“时间间隔”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.时间间隔Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 物理组 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.物理组Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“物理组”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.物理组Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal 平均时间 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.平均时间Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“平均时间”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.平均时间Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal 最大时间 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.最大时间Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“最大时间”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.最大时间Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int 条码标本数量 {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.条码标本数量Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“条码标本数量”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.条码标本数量Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string daterange {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.daterangeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“daterange”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.daterangeColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string 流程1 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.流程1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“流程1”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.流程1Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int a {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.aColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“a”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.aColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int b {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.bColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“b”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.bColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int c {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.cColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“c”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.cColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int d {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.dColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“d”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.dColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int e {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.eColumn]));
+                    }
+                    catch (global::System.InvalidCastException e1) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“e”的值为 DBNull。", e1);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.eColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int f {
+                get {
+                    try {
+                        return ((int)(this[this.table可设计字段.fColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“f”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.fColumn] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string a1 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.a1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“a1”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.a1Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string b1 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.b1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“b1”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.b1Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string c1 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.c1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“c1”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.c1Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string d1 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.d1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“d1”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.d1Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string e1 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.e1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“e1”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.e1Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string f1 {
+                get {
+                    try {
+                        return ((string)(this[this.table可设计字段.f1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“f1”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.f1Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal a2 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.a2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“a2”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.a2Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal b2 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.b2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“b2”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.b2Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal c2 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.c2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“c2”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.c2Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal d2 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.d2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“d2”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.d2Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal e2 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.e2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“e2”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.e2Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public decimal f2 {
+                get {
+                    try {
+                        return ((decimal)(this[this.table可设计字段.f2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“可设计字段”中列“f2”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.table可设计字段.f2Column] = value;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is条码号Null() {
+                return this.IsNull(this.table可设计字段.条码号Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set条码号Null() {
+                this[this.table可设计字段.条码号Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is病人姓名Null() {
+                return this.IsNull(this.table可设计字段.病人姓名Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set病人姓名Null() {
+                this[this.table可设计字段.病人姓名Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is科室名称Null() {
+                return this.IsNull(this.table可设计字段.科室名称Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set科室名称Null() {
+                this[this.table可设计字段.科室名称Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is诊疗卡号Null() {
+                return this.IsNull(this.table可设计字段.诊疗卡号Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set诊疗卡号Null() {
+                this[this.table可设计字段.诊疗卡号Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is床号Null() {
+                return this.IsNull(this.table可设计字段.床号Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set床号Null() {
+                this[this.table可设计字段.床号Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is组合名Null() {
+                return this.IsNull(this.table可设计字段.组合名Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set组合名Null() {
+                this[this.table可设计字段.组合名Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is日期Null() {
+                return this.IsNull(this.table可设计字段.日期Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set日期Null() {
+                this[this.table可设计字段.日期Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is操作人员Null() {
+                return this.IsNull(this.table可设计字段.操作人员Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set操作人员Null() {
+                this[this.table可设计字段.操作人员Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is操作地点Null() {
+                return this.IsNull(this.table可设计字段.操作地点Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set操作地点Null() {
+                this[this.table可设计字段.操作地点Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is流程Null() {
+                return this.IsNull(this.table可设计字段.流程Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set流程Null() {
+                this[this.table可设计字段.流程Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is时间间隔Null() {
+                return this.IsNull(this.table可设计字段.时间间隔Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set时间间隔Null() {
+                this[this.table可设计字段.时间间隔Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is物理组Null() {
+                return this.IsNull(this.table可设计字段.物理组Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set物理组Null() {
+                this[this.table可设计字段.物理组Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is平均时间Null() {
+                return this.IsNull(this.table可设计字段.平均时间Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set平均时间Null() {
+                this[this.table可设计字段.平均时间Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is最大时间Null() {
+                return this.IsNull(this.table可设计字段.最大时间Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set最大时间Null() {
+                this[this.table可设计字段.最大时间Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is条码标本数量Null() {
+                return this.IsNull(this.table可设计字段.条码标本数量Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set条码标本数量Null() {
+                this[this.table可设计字段.条码标本数量Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsdaterangeNull() {
+                return this.IsNull(this.table可设计字段.daterangeColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetdaterangeNull() {
+                this[this.table可设计字段.daterangeColumn] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is流程1Null() {
+                return this.IsNull(this.table可设计字段.流程1Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set流程1Null() {
+                this[this.table可设计字段.流程1Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsaNull() {
+                return this.IsNull(this.table可设计字段.aColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetaNull() {
+                this[this.table可设计字段.aColumn] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsbNull() {
+                return this.IsNull(this.table可设计字段.bColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetbNull() {
+                this[this.table可设计字段.bColumn] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IscNull() {
+                return this.IsNull(this.table可设计字段.cColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetcNull() {
+                this[this.table可设计字段.cColumn] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsdNull() {
+                return this.IsNull(this.table可设计字段.dColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetdNull() {
+                this[this.table可设计字段.dColumn] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IseNull() {
+                return this.IsNull(this.table可设计字段.eColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SeteNull() {
+                this[this.table可设计字段.eColumn] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsfNull() {
+                return this.IsNull(this.table可设计字段.fColumn);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetfNull() {
+                this[this.table可设计字段.fColumn] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isa1Null() {
+                return this.IsNull(this.table可设计字段.a1Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Seta1Null() {
+                this[this.table可设计字段.a1Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isb1Null() {
+                return this.IsNull(this.table可设计字段.b1Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setb1Null() {
+                this[this.table可设计字段.b1Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isc1Null() {
+                return this.IsNull(this.table可设计字段.c1Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setc1Null() {
+                this[this.table可设计字段.c1Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isd1Null() {
+                return this.IsNull(this.table可设计字段.d1Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setd1Null() {
+                this[this.table可设计字段.d1Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Ise1Null() {
+                return this.IsNull(this.table可设计字段.e1Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Sete1Null() {
+                this[this.table可设计字段.e1Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isf1Null() {
+                return this.IsNull(this.table可设计字段.f1Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setf1Null() {
+                this[this.table可设计字段.f1Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isa2Null() {
+                return this.IsNull(this.table可设计字段.a2Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Seta2Null() {
+                this[this.table可设计字段.a2Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isb2Null() {
+                return this.IsNull(this.table可设计字段.b2Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setb2Null() {
+                this[this.table可设计字段.b2Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isc2Null() {
+                return this.IsNull(this.table可设计字段.c2Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setc2Null() {
+                this[this.table可设计字段.c2Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isd2Null() {
+                return this.IsNull(this.table可设计字段.d2Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setd2Null() {
+                this[this.table可设计字段.d2Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Ise2Null() {
+                return this.IsNull(this.table可设计字段.e2Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Sete2Null() {
+                this[this.table可设计字段.e2Column] = global::System.Convert.DBNull;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Isf2Null() {
+                return this.IsNull(this.table可设计字段.f2Column);
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Setf2Null() {
+                this[this.table可设计字段.f2Column] = global::System.Convert.DBNull;
+            }
+        }
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        public class 可设计字段RowChangeEvent : global::System.EventArgs {
+            private 可设计字段Row eventRow;
+            private global::System.Data.DataRowAction eventAction;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段RowChangeEvent(可设计字段Row row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public 可设计字段Row Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+    }
+}

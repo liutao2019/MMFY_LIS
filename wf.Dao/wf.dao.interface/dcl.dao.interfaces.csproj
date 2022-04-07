@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D05D146-6D3F-4905-8D7E-7DE11F2A3B53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.dao.interfaces</RootNamespace>
+    <AssemblyName>dcl.dao.interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.dao.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WCF\lis.wcf\bin\dcl.dao.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataInterfaceCon\IDaoDicDataInterfaceCommand.cs" />
+    <Compile Include="DataInterfaceCon\IDaoDicDataInterfaceCommandParameter.cs" />
+    <Compile Include="DataInterfaceCon\IDaoDicDataInterfaceConnection.cs" />
+    <Compile Include="Dict\IDaoDicCombine.cs" />
+    <Compile Include="Dict\IDaoDicItmItem.cs" />
+    <Compile Include="Dict\IDaoDicMicAntidetail.cs" />
+    <Compile Include="Dict\IDaoDicMicSmear.cs" />
+    <Compile Include="Dict\IDaoDicCombineTimeRule.cs" />
+    <Compile Include="Dict\IDaoDicPubEvaluate.cs" />
+    <Compile Include="Dict\IDaoDicCombineDetail.cs" />
+    <Compile Include="Dict\IDaoSampMergeRule.cs" />
+    <Compile Include="Dict\IDaoDicInstrument.cs" />
+    <Compile Include="Dict\IDaoTypeBarcode.cs" />
+    <Compile Include="Elisa\IDaoElisaAnalyse.cs" />
+    <Compile Include="HL7\IDaoSampOrder.cs" />
+    <Compile Include="Microbe\ISpecialDictOperDao.cs" />
+    <Compile Include="QCSpecific\IDaoObrQcAnalysis.cs" />
+    <Compile Include="QCSpecific\IDaoQcRuleMes.cs" />
+    <Compile Include="QueueNumber\IDaoSysMessageSpeech.cs" />
+    <Compile Include="QueueNumber\IDaoQueueNumber.cs" />
+    <Compile Include="Reagent\IDaoReaApply.cs" />
+    <Compile Include="Reagent\IDaoReaApplyDetail.cs" />
+    <Compile Include="Reagent\IDaoReaDelivery.cs" />
+    <Compile Include="Reagent\IDaoReaDeliveryDetail.cs" />
+    <Compile Include="Reagent\IDaoReagentSetting.cs" />
+    <Compile Include="Reagent\IDaoReaLossReport.cs" />
+    <Compile Include="Reagent\IDaoReaLossReportDetail.cs" />
+    <Compile Include="Reagent\IDaoReaPurchase.cs" />
+    <Compile Include="Reagent\IDaoReaPurchaseDetail.cs" />
+    <Compile Include="Reagent\IDaoReaStorage.cs" />
+    <Compile Include="Reagent\IDaoReaStorageDetail.cs" />
+    <Compile Include="Reagent\IDaoReaStoreCount.cs" />
+    <Compile Include="Reagent\IDaoReaSubscribe.cs" />
+    <Compile Include="Reagent\IDaoReaSubscribeDetail.cs" />
+    <Compile Include="Report\IDaoLisDoc.cs" />
+    <Compile Include="ResultView\IDaoCdrHistroyResult.cs" />
+    <Compile Include="Result\IDaoReportComment.cs" />
+    <Compile Include="Setting\IDaoRuntimeSetting.cs" />
+    <Compile Include="TAT\IDaoTatOverTime.cs" />
+    <Compile Include="TempHandle\IDaoTempHandle.cs" />
+    <Compile Include="Message\IDaoCombineTATMsg.cs" />
+    <Compile Include="Message\IDaoDeptMessage.cs" />
+    <Compile Include="Message\IDaoInstrmtUrgentTATMsg.cs" />
+    <Compile Include="Message\IDaoObrMessageContent.cs" />
+    <Compile Include="Message\IDaoObrMessageReceive.cs" />
+    <Compile Include="Message\IDaoPidReportMainExt.cs" />
+    <Compile Include="Message\IDaoUrgentObrMessage.cs" />
+    <Compile Include="Message\IDaoInstrmtWardingMsg.cs" />
+    <Compile Include="Monitor\IDaoSampProcessMonitor.cs" />
+    <Compile Include="OA\IDaoOaHandOver.cs" />
+    <Compile Include="OA\IDaoOaHoRecord.cs" />
+    <Compile Include="QCSpecific\IDaoQcResult.cs" />
+    <Compile Include="OA\IDaoOaDicOaShiftTemplate.cs" />
+    <Compile Include="QCSpecific\IDaoQcMateria.cs" />
+    <Compile Include="QCSpecific\IDaoQcMateriaDetail.cs" />
+    <Compile Include="QCSpecific\IDaoQcMateriaRule.cs" />
+    <Compile Include="OA\IDaoOaTableDetail.cs" />
+    <Compile Include="ReportPrint\IDaoReportPrint.cs" />
+    <Compile Include="Report\IDaoPidReportDetail.cs" />
+    <Compile Include="ResultView\IDaoMitmNoResultView.cs" />
+    <Compile Include="ResultView\IDaoObrResultBakItm.cs" />
+    <Compile Include="Result\IDaoPatientRecheck.cs" />
+    <Compile Include="Result\IDaoObrResultImage.cs" />
+    <Compile Include="Result\IDaoPidReportMain.cs" />
+    <Compile Include="Result\IDaoResultTemp.cs" />
+    <Compile Include="Result\IMicData.cs" />
+    <Compile Include="SamDestory\IDaoSamDestory.cs" />
+    <Compile Include="Interfaces\IDaoSysItfContrast.cs" />
+    <Compile Include="SampMain\IDaoSampOperateDetail.cs" />
+    <Compile Include="SampMain\IDaoSampRegister.cs" />
+    <Compile Include="SampMain\IDaoSampDetail.cs" />
+    <Compile Include="SampMain\IDaoSampMain.cs" />
+    <Compile Include="SampMain\IDaoSampProcessDetail.cs" />
+    <Compile Include="SampMain\IDaoSampReturn.cs" />
+    <Compile Include="Dict\IDaoDic.cs" />
+    <Compile Include="OA\IDaoOaDicShiftDetail.cs" />
+    <Compile Include="OA\IDaoOaDicShift.cs" />
+    <Compile Include="OA\IDaoOaWorkAttendance.cs" />
+    <Compile Include="OA\IDaoOaOrderTableField.cs" />
+    <Compile Include="OA\IDaoOaOrderTable.cs" />
+    <Compile Include="OA\IDaoOaAnnouncement.cs" />
+    <Compile Include="Dict\IDaoSysBarcodeGenerator.cs" />
+    <Compile Include="InstrumentThings\IDaoItrInstrumentMaintain.cs" />
+    <Compile Include="InstrumentThings\IDaoItrInstrumentRegistration.cs" />
+    <Compile Include="InstrumentThings\IDaoItrInstrumentServicing.cs" />
+    <Compile Include="NoticeManage\IDaoNoticeManage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QCSpecific\IDaoFastAddQcItem.cs" />
+    <Compile Include="QCSpecific\IDaoFrmParameter.cs" />
+    <Compile Include="Report\IDaoReport.cs" />
+    <Compile Include="ResultQuery\IDaoCombModelSel.cs" />
+    <Compile Include="Result\IDaoResultOriginal.cs" />
+    <Compile Include="SampStock\IDaoSampStoreRack.cs" />
+    <Compile Include="SampStock\IDaoSampStoreDetail.cs" />
+    <Compile Include="ResultQuery\IDaoItemSort.cs" />
+    <Compile Include="ResultQuery\IDaoSummaryPrint.cs" />
+    <Compile Include="ResultView\IDaoObrResult.cs" />
+    <Compile Include="ResultView\IDaoObrResultAnti.cs" />
+    <Compile Include="ResultView\IDaoObrResultBact.cs" />
+    <Compile Include="ResultView\IDaoObrResultDesc.cs" />
+    <Compile Include="SampStock\IDaoSampStock.cs" />
+    <Compile Include="Statistical\IDaoSaveStatTemp.cs" />
+    <Compile Include="Statistical\IDaoAnalyse.cs" />
+    <Compile Include="SysInterfaceLog\IDaoSysInterfaceLog.cs" />
+    <Compile Include="Sys\IDaoSysLoginLog.cs" />
+    <Compile Include="TAT\IDaoTatProRecord.cs" />
+    <Compile Include="Tools\IDaoMergeResult.cs" />
+    <Compile Include="TouchPrint\IDaoTouchPrint.cs" />
+    <Compile Include="User\IDaoSysUser.cs" />
+    <Compile Include="User\IDaoSysRole.cs" />
+    <Compile Include="SamSave\IDaoSamSave.cs" />
+    <Compile Include="User\IDaoSysRoleFunc.cs" />
+    <Compile Include="SamSearch\IDaoSamSearch.cs" />
+    <Compile Include="Statistical\IDaoStatistical.cs" />
+    <Compile Include="Interfaces\IDaoSysItfInterface.cs" />
+    <Compile Include="Sys\IDaoSysOperationLog.cs" />
+    <Compile Include="User\IDaoUserCaSign.cs" />
+    <Compile Include="User\IDaoUserManage.cs" />
+    <Compile Include="Sys\IDaoSysLog.cs" />
+    <Compile Include="User\IDaoSysFunction.cs" />
+    <Compile Include="User\IDaoSysParameter.cs" />
+    <Compile Include="User\IDaoUserRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69F9-4766-B09B-D2FABDF6354D}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

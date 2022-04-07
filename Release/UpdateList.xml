@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<AutoUpdater>
+	<!--AULWriter程序配置项-->
+	<DeploymentSetting>
+
+		<!--程序发布端的需要发布程序的路径-->
+		<Path>D:\版本发布\client\Application Files\dcl.client_3_0_0_36</Path>
+
+		<!--入口程序路径-->
+		<EntryPointPath>D:\版本发布\client\Application Files\dcl.client_3_0_0_36\dcl.client.exe</EntryPointPath>
+
+		<!--生成文件列表时需要排除的文件扩展名-->
+		<ExcluExt>.pdb;.log;.scc</ExcluExt>
+
+		<!--排除的文件-->
+		<ExcluFile></ExcluFile>
+
+		<!--排除的路径-->
+		<ExcluPath>\log;\Temp;</ExcluPath>
+		<Require Name=".NET Framework 2.0 SP2" URL=""></Require>
+		<Require Name="Windows Installer 3.1" URL=""></Require>
+		<Require Name="" URL=""></Require>
+	</DeploymentSetting>
+	<Updater>
+		<Title>创惠医学检验信息系统更新程序</Title>
+		<Description>创惠医学检验信息系统更新程序</Description>
+		<Url>http://192.168.1.102:8156/</Url>
+		<LastUpdateTime>2018-12-16</LastUpdateTime>
+	</Updater>
+	<Application applicationId = "dcl.client">
+		<Title>创惠医学检验信息系统</Title>
+		<Description>创惠医学检验信息系统</Description>
+		<EntryPoint>dcl.client.exe</EntryPoint>
+		<ForceClientPath>1</ForceClientPath>
+		<ClientInstallPath>D:\Program Files\client\Application Files\dcl.client_3_0_0_36</ClientInstallPath>
+		<CreateDesktop>0</CreateDesktop>
+		<DesktopName>创惠医学检验信息系统</DesktopName>
+		<CreateStartmenu>1</CreateStartmenu>
+		<StartmenuName>创惠信息科技有限公司\创惠医学检验信息系统\创惠医学检验信息系统</StartmenuName>
+		<CreateStartup>0</CreateStartup>
+		<Version>1.3.5.32</Version>
+	</Application>
+	<Files>
+		<File Name= "lis\printXml\barcodePrintConfig.xml" Hash="10797141187150149149679116820213585211153151" />
+		<File Name= "lis\clientsetting.xml" Hash="2281191872311461281519321015318816318622389202" />
+		<File Name= "LisBackup\2018年12月31日14时06分02秒\QQ图片20181217144445.jpg" Hash="136227922255047178182190173582018242205" />
+		<File Name= "zh-CHS\dcl.client.result.resources.dll" Hash="472333498791731041717219212261624393241" />
+		<File Name= "zh-hans\DevExpress.Charts.Designer.v15.2.resources.dll" Hash="23724423117619921245210538813418416119985130" />
+		<File Name= "zh-hans\DevExpress.Data.v15.2.resources.dll" Hash="22417238161479121061142519188121279199" />
+		<File Name= "zh-hans\DevExpress.DataAccess.v15.2.resources.dll" Hash="14417010213657204127108125229211708217188202" />
+		<File Name= "zh-hans\DevExpress.DataAccess.v15.2.UI.resources.dll" Hash="2172169432010108212372391142358417792106" />
+		<File Name= "zh-hans\DevExpress.Map.v15.2.Core.resources.dll" Hash="19867010796942079372112612517096215102" />
+		<File Name= "zh-hans\DevExpress.Office.v15.2.Core.resources.dll" Hash="1822021608025440156891201462341052298140139" />
+		<File Name= "zh-hans\DevExpress.Pdf.v15.2.Core.resources.dll" Hash="15219419222461632063115214149821310814118" />
+		<File Name= "zh-hans\DevExpress.PivotGrid.v15.2.Core.resources.dll" Hash="1771983819723668511772252119064801925185" />
+		<File Name= "zh-hans\DevExpress.Printing.v15.2.Core.resources.dll" Hash="1472311974724154249214562121096721926111194" />
+		<File Name= "zh-hans\DevExpress.RichEdit.v15.2.Core.resources.dll" Hash="324547591741901501304510952320232151120" />
+		<File Name= "zh-hans\DevExpress.Utils.v15.2.resources.dll" Hash="1602161503419515018389229710823995233133185" />
+		<File Name= "zh-hans\DevExpress.Utils.v15.2.UI.resources.dll" Hash="88115117240228875920515121118710934252152164" />
+		<File Name= "zh-hans\DevExpress.XtraBars.v15.2.resources.dll" Hash="29171179881691262306911523210141101013091" />
+		<File Name= "zh-hans\DevExpress.XtraCharts.v15.2.resources.dll" Hash="1681462375621316422817499160234147151115237156" />
+		<File Name= "zh-hans\DevExpress.XtraCharts.v15.2.Wizard.resources.dll" Hash="1706024164146238216131216105168702424124188" />
+		<File Name= "zh-hans\DevExpress.XtraEditors.v15.2.resources.dll" Hash="1151031062124822724377982551762005018364163" />
+		<File Name= "zh-hans\DevExpress.XtraGauges.v15.2.Core.resources.dll" Hash="6431658297168302145119117823412132134238" />
+		<File Name= "zh-hans\DevExpress.XtraGauges.v15.2.Presets.resources.dll" Hash="6165581322125212171361071430862170141" />
+		<File Name= "zh-hans\DevExpress.XtraGrid.v15.2.resources.dll" Hash="49481910496203511226419174139111343" />
+		<File Name= "zh-hans\DevExpress.XtraLayout.v15.2.resources.dll" Hash="8343191892303317767167141527310839124141" />
+		<File Name= "zh-hans\DevExpress.XtraNavBar.v15.2.resources.dll" Hash="791861967155237185175254106127203645916787" />
+		<File Name= "zh-hans\DevExpress.XtraPdfViewer.v15.2.resources.dll" Hash="2212072049524323117911552762480372155946" />
+		<File Name= "zh-hans\DevExpress.XtraPivotGrid.v15.2.resources.dll" Hash="51164120151235881102432159025212946133215" />
+		<File Name= "zh-hans\DevExpress.XtraPrinting.v15.2.resources.dll" Hash="2128232190188252153421001846125010220611741" />
+		<File Name= "zh-hans\DevExpress.XtraReports.v15.2.Extensions.resources.dll" Hash="16810520313339249168194232458857104161154122" />
+		<File Name= "zh-hans\DevExpress.XtraReports.v15.2.resources.dll" Hash="10822520622782258010547203551039724519899" />
+		<File Name= "zh-hans\DevExpress.XtraReports.v15.2.Web.resources.dll" Hash="2057661208671421381442362382191388011386140" />
+		<File Name= "zh-hans\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll" Hash="1821652272402291681924819216123215239231253245" />
+		<File Name= "zh-hans\DevExpress.XtraRichEdit.v15.2.resources.dll" Hash="7517241062025176188921441523886187232103" />
+		<File Name= "zh-hans\DevExpress.XtraScheduler.v15.2.Core.resources.dll" Hash="107949464126390792038248485194236219" />
+		<File Name= "zh-hans\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll" Hash="85203195237123119244937680130972374180229" />
+		<File Name= "zh-hans\DevExpress.XtraScheduler.v15.2.Reporting.resources.dll" Hash="84213109149992298724022924739914117012352" />
+		<File Name= "zh-hans\DevExpress.XtraScheduler.v15.2.resources.dll" Hash="18139207227201255107958824587315313310617" />
+		<File Name= "zh-hans\DevExpress.XtraSpellChecker.v15.2.resources.dll" Hash="219185171226151925360206462241252552161180" />
+		<File Name= "zh-hans\DevExpress.XtraSpreadsheet.v15.2.resources.dll" Hash="41686820025018721591252019710010591719" />
+		<File Name= "zh-hans\DevExpress.XtraTreeList.v15.2.resources.dll" Hash="19344522162452122132311341702511068123077112" />
+		<File Name= "zh-hans\DevExpress.XtraVerticalGrid.v15.2.resources.dll" Hash="231802612254225921621462071186122612671" />
+		<File Name= "zh-hans\DevExpress.XtraWizard.v15.2.resources.dll" Hash="2032272472401721322114610156128246131201110238" />
+		<File Name= "64X64.ico" Hash="3425024520580182187225204702102371561034469" />
+		<File Name= "AForge.Controls.dll" Hash="23610721562521982272242311971845032460160" />
+		<File Name= "AForge.dll" Hash="73164521492322041399477236155180165149169" />
+		<File Name= "AForge.Video.DirectShow.dll" Hash="14048862185273637925077872272392214951" />
+		<File Name= "AForge.Video.dll" Hash="176165534641245177102208222961823916689186" />
+		<File Name= "AULWriter.exe" Hash="5312093178612251809766112161121102227227197" />
+		<File Name= "AutoUpdate.exe" Hash="1346818723821418770113211116451597021817737" />
+		<File Name= "AxInterop.XTXAppCOMLib.dll" Hash="9710827108129805025313087153101145128255" />
+		<File Name= "CardReader.dll" Hash="216127901301721497887902149510322879139126" />
+		<File Name= "ClearForUpdate.bat" Hash="1054714166247130592267920326413814204249" />
+		<File Name= "CodeConfig.xml" Hash="551615265513813153331206712018182236217" />
+		<File Name= "dcl.client.ananlyse.dll" Hash="21022116425280254211881541953054230231102" />
+		<File Name= "dcl.client.application" Hash="21924318518277111731775482155120243251121131" />
+		<File Name= "dcl.client.bi.dll" Hash="4221125411513018470158512220420716093204" />
+		<File Name= "dcl.client.cache.dll" Hash="1712872161810510730552019412043399347" />
+		<File Name= "dcl.client.cdrquery.dll" Hash="141121102128241941346115768177198835913928" />
+		<File Name= "dcl.client.common.dll" Hash="711421723338911131918920010099762419248" />
+		<File Name= "dcl.client.control.dll" Hash="7859111513213475877516622225384217149" />
+		<File Name= "dcl.client.dicbasic.dll" Hash="235901822156491512332525221517525012485228" />
+		<File Name= "dcl.client.dicmic.dll" Hash="22919174204226317977231114833320186125125" />
+		<File Name= "dcl.client.elisa.dll" Hash="249198222099121414066717411259194229187232" />
+		<File Name= "dcl.client.exe" Hash="1222151581191311308811341381164110512082148" />
+		<File Name= "dcl.client.exe.config" Hash="221788111118732761241129111127168587299" />
+		<File Name= "dcl.client.exe.manifest" Hash="2282190136171362021512252381911859218179165" />
+		<File Name= "dcl.client.frame.dll" Hash="164215818824322721623130232612797118209108" />
+		<File Name= "dcl.client.frame.runsetting.dll" Hash="150725839193325100246186148197179149249180" />
+		<File Name= "dcl.client.instrmt.dll" Hash="230126127562062372052321701141761689181124161" />
+		<File Name= "dcl.client.interfaces.dll" Hash="248204128993870122122792135272551183387" />
+		<File Name= "dcl.client.micManagement.dll" Hash="2471162414622868205167178321551236189203119" />
+		<File Name= "dcl.client.notifyclient.dll" Hash="71103145240883322386164517112615974146123" />
+		<File Name= "dcl.client.oa.dll" Hash="111041491581331975902431392149517411883" />
+		<File Name= "dcl.client.qc.dll" Hash="178124157416785312449739925572184138200" />
+		<File Name= "dcl.client.repdesign.dll" Hash="208981551471048523232185196230243154217163154" />
+		<File Name= "dcl.client.report.dll" Hash="10512619453195239155206180124157267849168164" />
+		<File Name= "dcl.client.result.dll" Hash="12021560841522078017224767238053110212218" />
+		<File Name= "dcl.client.resultquery.dll" Hash="178643280149491297211967842328913223986" />
+		<File Name= "dcl.client.sample.dll" Hash="12612280210181161721901879043234160192195195" />
+		<File Name= "dcl.client.samstock.dll" Hash="18212720373102532371941282081682321413719931" />
+		<File Name= "dcl.client.statistical.dll" Hash="1552056124320413912062211168611302351515212" />
+		<File Name= "dcl.client.tools.dll" Hash="229819541771851441731649122614155193238" />
+		<File Name= "dcl.client.users.dll" Hash="18824312112611169733614924588852147442207" />
+		<File Name= "dcl.client.wcf.dll" Hash="13028212157138176141429212807480183013" />
+		<File Name= "dcl.common.dll" Hash="70421028924822380132439629324623913201" />
+		<File Name= "dcl.dao.core.dll" Hash="23322116548112931231582122122323383149201170" />
+		<File Name= "dcl.dao.interfaces.dll" Hash="78174156215320251011619311570601242201" />
+		<File Name= "dcl.entity.dll" Hash="36794244115188681699119855815519017222" />
+		<File Name= "dcl.interfaces.dll" Hash="8023862375191178101222156011918275129" />
+		<File Name= "dcl.pub.entities.dict.dll" Hash="165481951871851931295114518422623815523624983" />
+		<File Name= "dcl.pub.entities.dll" Hash="11323422252215187193119773522414720716517614" />
+		<File Name= "dcl.root.common.dll" Hash="246119352274962164241481891471123911059202" />
+		<File Name= "dcl.root.dac.dll" Hash="2051442461423649215244989313618221913073236" />
+		<File Name= "dcl.root.dto.dll" Hash="3327228546296123143716322910921921213725" />
+		<File Name= "dcl.root.logon.dll" Hash="1081981912329413312711413517429156219154207" />
+		<File Name= "dcl.servececontract.dll" Hash="158177169293924920115420022313174126218117240" />
+		<File Name= "DevExpress.BonusSkins.v15.2.dll" Hash="518880154176145725314812261146131208158214" />
+		<File Name= "DevExpress.Charts.v15.2.Core.dll" Hash="19650542248211180232250327420119213911456" />
+		<File Name= "DevExpress.CodeParser.v15.2.dll" Hash="14316025508017216021018325316713823620756125" />
+		<File Name= "DevExpress.Data.v15.2.dll" Hash="9841581321966724581912511521158845151132" />
+		<File Name= "DevExpress.DataAccess.v15.2.dll" Hash="251742027320277100631208054246113217217224" />
+		<File Name= "DevExpress.DataAccess.v15.2.UI.dll" Hash="242131121162422461351052091425136642481931" />
+		<File Name= "DevExpress.Office.v15.2.Core.dll" Hash="116206187246212232281161241681227364711109" />
+		<File Name= "DevExpress.Pdf.v15.2.Core.dll" Hash="20167173181692399922317417911121941147153179" />
+		<File Name= "DevExpress.Pdf.v15.2.Drawing.dll" Hash="42192202131661052192306311191248102147113125" />
+		<File Name= "DevExpress.PivotGrid.v15.2.Core.dll" Hash="11294199250782281592032241489014518924671160" />
+		<File Name= "DevExpress.Printing.v15.2.Core.dll" Hash="30164127231951491081581824823964159236" />
+		<File Name= "DevExpress.RichEdit.v15.2.Core.dll" Hash="2116757205217606181124181161228528462209" />
+		<File Name= "DevExpress.Sparkline.v15.2.Core.dll" Hash="181169321122525243125615366714395231178" />
+		<File Name= "DevExpress.Utils.v15.2.dll" Hash="2045171141108323817623087234521005551" />
+		<File Name= "DevExpress.Utils.v15.2.UI.dll" Hash="1051501672511582338812112397222781453913159" />
+		<File Name= "DevExpress.Xpo.v15.2.dll" Hash="1182072521461820630438451822091012336176" />
+		<File Name= "DevExpress.XtraBars.v15.2.dll" Hash="95855113842362281001331305920011620272" />
+		<File Name= "DevExpress.XtraCharts.v15.2.dll" Hash="345221234250271492211682132012121040255153" />
+		<File Name= "DevExpress.XtraCharts.v15.2.Extensions.dll" Hash="1442045721751661291091428279718154195148" />
+		<File Name= "DevExpress.XtraCharts.v15.2.UI.dll" Hash="124910514918149787722450250786237124120" />
+		<File Name= "DevExpress.XtraCharts.v15.2.Wizard.dll" Hash="5892797167248951771282091221515812838250" />
+		<File Name= "DevExpress.XtraEditors.v15.2.dll" Hash="219811361465669140161938969611618914224" />
+		<File Name= "DevExpress.XtraGauges.v15.2.Core.dll" Hash="3071198787391271873217710410310968110110" />
+		<File Name= "DevExpress.XtraGauges.v15.2.Win.dll" Hash="2061553734313951832545296130151102231149" />
+		<File Name= "DevExpress.XtraGrid.v15.2.dll" Hash="19435332105814866622393918511512276118" />
+		<File Name= "DevExpress.XtraLayout.v15.2.dll" Hash="22016614834268711172261113217132095789" />
+		<File Name= "DevExpress.XtraNavBar.v15.2.dll" Hash="1003088104128244412514621220120914319415121" />
+		<File Name= "DevExpress.XtraPivotGrid.v15.2.dll" Hash="98186958861194208987921717545132130112148" />
+		<File Name= "DevExpress.XtraPrinting.v15.2.dll" Hash="134221149185701314819014211824418315532142143" />
+		<File Name= "DevExpress.XtraReports.v15.2.dll" Hash="10821263189254491125025221217379756418459" />
+		<File Name= "DevExpress.XtraReports.v15.2.Extensions.dll" Hash="17362237245568615720325511024925278110164239" />
+		<File Name= "DevExpress.XtraRichEdit.v15.2.dll" Hash="1783111922517013624899487421813210057234197" />
+		<File Name= "DevExpress.XtraTreeList.v15.2.dll" Hash="15030251192067224946113131151162338486" />
+		<File Name= "DevExpress.XtraVerticalGrid.v15.2.dll" Hash="16234214357020381517792442161832625209" />
+		<File Name= "Emgu.CV.World.dll" Hash="184152122137186134131525321511429102142344" />
+		<File Name= "GDCAHeper.dll" Hash="86123142128208218127116215591431021724918191" />
+		<File Name= "HQ.BPPrint.dll" Hash="14710717496431612384479166824918717117208" />
+		<File Name= "HQ.LabellerPrint.dll" Hash="73240133231931743547159762421675733143147" />
+		<File Name= "IBatisNet.Common.dll" Hash="5422120619517241236825721440240111022135" />
+		<File Name= "IBatisNet.DataMapper.dll" Hash="811992129825357107108111122242233175228235" />
+		<File Name= "ICSharpCode.SharpZipLib.dll" Hash="2002272118182246102222141311356854338112" />
+		<File Name= "ICSharpCode.TextEditor.dll" Hash="512291402221871885952971982022101862467189" />
+		<File Name= "Interop.GETKEYPICLib.dll" Hash="67481152614510814716212124822742170210214161" />
+		<File Name= "Interop.IWshRuntimeLibrary.dll" Hash="20420419823124024010572201242702155222222141" />
+		<File Name= "Interop.NetcaPkiLib.dll" Hash="4810799381108857212312022521335202200226" />
+		<File Name= "Interop.SecuInter.dll" Hash="1131473411923819412132161342037922713468228" />
+		<File Name= "Interop.XTXAppCOMLib.dll" Hash="2542321681437810880799624467644983242113" />
+		<File Name= "itextsharp.dll" Hash="2203923712415651369017491241852061366485" />
+		<File Name= "Lib.Controls.dll" Hash="2411818914289762138081515114446774882" />
+		<File Name= "Lib.DAC.dll" Hash="48205816012019621713501861925211120824277" />
+		<File Name= "Lib.DataInterface.dll" Hash="4021913319119610466210614417553368910233" />
+		<File Name= "Lib.EntityCore.dll" Hash="7553482032166451331529218194190177171" />
+		<File Name= "Lib.EntityDAC.dll" Hash="143211135116273216110816622917350139122140" />
+		<File Name= "Lib.LogManager.dll" Hash="153709970217249209801591210923534416" />
+		<File Name= "Lib.ProxyFactory.dll" Hash="189632536315961572458641821091217010085" />
+		<File Name= "Lib.WCFClientCore.dll" Hash="1144130659970104208282148186227701466" />
+		<File Name= "lis.client.barcode.dll.config" Hash="25110825415225215172751131791920713723314087" />
+		<File Name= "Lis.Client.CASign.dll" Hash="967612891831427121616924196945418620573" />
+		<File Name= "Lis.Client.CodeScript.dll" Hash="12023216075117194187981242241721277922411567" />
+		<File Name= "lis.client.control.dll" Hash="2277714817493117086172371347714160237113" />
+		<File Name= "lis.dto.dll" Hash="19424629117421091351522432195965014919714" />
+		<File Name= "Lis.EntityHl7v3.dll" Hash="153814223722522219514979183130137315040" />
+		<File Name= "lis.ico" Hash="10160194944338601617186218189128939526" />
+		<File Name= "Lis.PluginInterface.Client.dll" Hash="1041451169722021239140236132982559716925020" />
+		<File Name= "Lis.PluginInterface.Interface.dll" Hash="88233155235119611161851911011336454236199" />
+		<File Name= "Lis.SendDataByHl7v3.dll" Hash="193492563546017724317423014524816416547181" />
+		<File Name= "LISItemSyn.dll" Hash="22110476414050193149901671832212439417025" />
+		<File Name= "MdiTabControl.dll" Hash="1587772225111128301146117233154824776220" />
+		<File Name= "mod_MicrobeSystem.ExtDataInterface.SERMInterFace.dll" Hash="22219223921220381821962342319012102159203231" />
+		<File Name= "NetcaUploadLink.dll" Hash="1261222294212816024414120175126145126652276" />
+		<File Name= "Netca_PDFSign.dll" Hash="751922032158744239564761181143148235194190" />
+		<File Name= "NPOI.dll" Hash="19520515261783684139148120612414322623266" />
+		<File Name= "O2S.Components.PDFRender4NET.dll" Hash="25013410223731672232714689213752137037126" />
+		<File Name= "OutLink.dll" Hash="121182131002131771038487244337720328135179" />
+		<File Name= "OutLink.ini" Hash="95232412522512162088310997217128219121122215" />
+		<File Name= "OutLink2.ini" Hash="7326422066344171169582061183724624835" />
+		<File Name= "Paway.Windows.Forms.dll" Hash="1915819762382331591662358487528516244168" />
+		<File Name= "Paway.Windows.Helper.dll" Hash="1721101811062091551091151268021120424921021760" />
+		<File Name= "Paway.Windows.Resource.dll" Hash="92512241002401032391118111051129823714849" />
+		<File Name= "Paway.Windows.Win32.dll" Hash="57143114179657920457491913654912417810" />
+		<File Name= "publish.htm" Hash="17394129922391781482351992076662981819598" />
+		<File Name= "QQ图片20181217144445.jpg" Hash="136227922255047178182190173582018242205" />
+		<File Name= "Setup.exe" Hash="11423882231701051510549117117518615349197" />
+		<File Name= "SGL_CaClass.dll" Hash="25122594391851001261799188718720219229234" />
+		<File Name= "System.IdentityModel.dll" Hash="8340763810116118518918611717418410063155159" />
+		<File Name= "System.Runtime.Serialization.dll" Hash="26192119108248201175196228511266063124191193" />
+		<File Name= "System.ServiceModel.dll" Hash="179341661591771921721330781942557024513860" />
+		<File Name= "ThoughtWorks.QRCode.dll" Hash="872555220150322172097282059943166497" />
+		<File Name= "update.txt" Hash="731363227010520512523243198209127248130215" />
+		<File Name= "UpdateList.xml" Hash="191103183782376211374818513623024131193" />
+		<File Name= "web.config" Hash="16211091127109234661612757191157160594555" />
+	</Files>
+</AutoUpdater>

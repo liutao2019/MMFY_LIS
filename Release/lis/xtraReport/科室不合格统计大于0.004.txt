@@ -1,0 +1,168 @@
+--关联科室--
+select distinct pat_dep_name into #dep from patients 
+left join dict_instrmt on patients.pat_itr_id = dict_instrmt.itr_id 
+left join dict_type on dict_instrmt.itr_type = dict_type.type_id
+left join patients_mi on patients_mi.pat_id = patients.pat_id
+left join dict_combine on patients_mi.pat_com_id = dict_combine.com_id
+where 1=1 &where&
+
+--关联物理组--
+select distinct type_id into #ctype from patients 
+left join dict_instrmt on patients.pat_itr_id = dict_instrmt.itr_id 
+left join dict_type on dict_instrmt.itr_type = dict_type.type_id
+left join patients_mi on patients_mi.pat_id = patients.pat_id
+left join dict_combine on patients_mi.pat_com_id = dict_combine.com_id
+where 1=1 &where&
+
+--关联组合--
+select distinct patients_mi.pat_com_id into #combine from patients 
+left join dict_instrmt on patients.pat_itr_id = dict_instrmt.itr_id 
+left join dict_type on dict_instrmt.itr_type = dict_type.type_id
+left join patients_mi on patients_mi.pat_id = patients.pat_id
+left join dict_combine on patients_mi.pat_com_id = dict_combine.com_id
+where 1=1 &where&
+
+--查出所有回退信息--
+select 
+bc_patients.bc_name 姓名,
+bc_return_messages.bc_bar_code 条码号,
+bc_patients.bc_sam_id 标本编号,
+dict_sample.sam_name 标本,
+ltrim(rtrim(cast(bc_return_messages.bc_message as varchar(100)))) 回退原因,
+(case when bc_return_messages.bc_d_name like '%门诊%' then '门诊' else bc_return_messages.bc_d_name end) 科室,
+bc_return_messages.bc_sender_code 回退者工号,
+bc_return_messages.bc_sender_name 回退者,
+bc_return_messages.bc_time 回退时间,
+bc_patients.bc_his_name 组合名称  into #a1
+from  bc_return_messages  
+inner join #dep on #dep.pat_dep_name = bc_return_messages.bc_d_name
+LEFT OUTER JOIN  bc_patients on bc_patients.bc_bar_code=bc_return_messages.bc_bar_code
+inner join #ctype on #ctype.type_id = bc_patients.bc_ctype
+left join dict_sample on dict_sample.sam_id = bc_patients.bc_sam_id
+left join poweruserinfo on poweruserinfo.loginId = bc_return_messages.bc_sender_code
+left join bc_cname on bc_cname.bc_bar_code = bc_return_messages.bc_bar_code
+inner join #combine on #combine.pat_com_id = bc_cname.bc_lis_code
+where poweruserinfo.userType = '检验组'
+and poweruserinfo.loginId not in ('admin','9619','888') --过滤管理员
+and bc_return_messages.bc_time>='&sDate&' and bc_return_messages.bc_time<='&eDate&'
+--order by 
+--bc_return_messages.bc_d_name,bc_patients.bc_name,bc_return_messages.bc_time
+
+select distinct #a1.* into #a from #a1
+
+--每个科室每种原因数量--
+select
+#a.科室,
+#a.回退原因,
+count(*) nob into #b
+from #a
+where #a.回退原因 not like '%凝%'
+group by 
+#a.科室,
+#a.回退原因
+
+--回退标本总数--
+select
+count(*) yynob into #g
+from #a
+
+--每个科室标本总数量--
+select 
+(case when bc_patients.bc_d_name like '%门诊%' then '门诊' else bc_patients.bc_d_name end) bc_d_name,
+bc_patients.bc_bar_code into #c
+from bc_patients 
+--inner join #dep on #dep.pat_dep_name = bc_patients.bc_d_name
+where bc_patients.bc_del = '0'
+and bc_patients.bc_date > '&sDate&' and bc_patients.bc_date < '&eDate&'
+
+select 
+#c.bc_d_name,
+count(*) ksznob into #d
+from #c
+group by
+#c.bc_d_name
+
+--全院标本总数量--
+select 
+count(*) znob into #e
+from #c
+
+
+-----------------------按科室要求排序--------------------------------
+select distinct #b.科室 into #h from #b
+
+select 
+#h.科室,
+zhtj_depart.did into #m
+from #h
+left join zhtj_depart on zhtj_depart.dep_name = #h.科室
+
+select 
+#m.科室,
+isnull(#m.did,'99') did into #n
+from #m
+
+select 
+row_number() over(order by #n.did,#n.科室) as 序号,
+#n.科室 into #i
+from #n
+
+/*
+select 
+row_number() over(order by #h.科室) as 序号,
+#h.科室 into #i
+from #h
+*/
+
+---------------------------------------------------------------------
+
+select 
+#i.序号,
+#b.科室,
+#b.回退原因,
+#b.nob,
+#d.ksznob,
+cast(#b.nob as decimal(19,3))/#d.ksznob nunss into #f
+from #b
+left join #d on #d.bc_d_name = #b.科室
+left join #i on #i.科室 = #b.科室
+
+select 
+#f.序号,
+#f.科室,
+#f.回退原因,
+#f.nob,
+#f.ksznob,
+#f.nunss,
+#g.yynob,
+#e.znob,
+cast(#g.yynob as decimal(19,3))/#e.znob znunss into #o
+from #f,#e,#g
+
+select 
+#o.序号,
+#o.科室,
+sum(#o.nunss) kssub into #p
+from #o
+group by 
+#o.序号,
+#o.科室
+
+select 
+#o.序号,
+#o.科室,
+#o.回退原因,
+#o.nob,
+#o.ksznob,
+#o.nunss,
+#o.yynob,
+#o.znob,
+#o.znunss,
+'&sDate&' 开始时间,
+'&eDate&' 结束时间
+from #o
+where #o.科室 in (select #p.科室 from #p where #p.kssub >= 0.004)
+order by
+#o.序号,
+#o.科室,
+#o.回退原因

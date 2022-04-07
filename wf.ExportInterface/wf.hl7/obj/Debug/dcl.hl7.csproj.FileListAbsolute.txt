@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.hl7.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.hl7.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.dll
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.hl7.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.hl7.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.pdb

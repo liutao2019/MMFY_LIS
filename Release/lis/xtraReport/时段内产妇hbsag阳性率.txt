@@ -1,0 +1,188 @@
+/*
+select
+case when resulto.res_itm_ecd<>'' then 'HBsAg' end as res_itm_ecd,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+	 else '-' end as res_chr,
+count(case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+	 else '-' end) as count_res_chr 
+into #gen_stat_UuMh
+from resulto
+inner join patients on patients.pat_id = resulto.res_id and res_itm_id in ('46','47','48','50259') and (res_chr like '阴性%' or res_chr like '阳性%')
+where len(pat_dep_name)>0 and res_flag = 1 
+and 
+(
+pat_dep_name in ('产科','产科门诊')
+--or 
+--pat_dep_id in ('015','014','3100','016','3150','013')
+--patients.pat_ward_id in ('016','015','014','013','3100','3150')
+)
+and ( res_date>='&sDate&' and res_date<='&eDate&')
+--and ( res_date>='2012-11-1' and res_date<='2012-12-1')
+group by case when resulto.res_itm_ecd<>'' then 'HBsAg' end,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+	 else '-' end
+
+
+select res_itm_ecd,res_chr,count(*) as cou
+into #temp_1
+from  #gen_stat_UuMh 
+where res_chr='+'
+group by res_itm_ecd,res_chr
+
+
+select res_itm_ecd ,sum(count_res_chr) as tsum
+into #temp_2 
+from #gen_stat_UuMh group by res_itm_ecd
+
+
+
+if exists 
+(select * from #temp_1)
+
+select
+'&sDate&'+' ~ ' +'&eDate&' as 时间范围,
+pat_in_no as 住院号,
+pat_name as 姓名,
+pat_dep_name as 科室,
+#temp_1.res_chr as  结果,
+#temp_1.res_itm_ecd as  项目,
+pat_date as 检查日期,
+cou as 阳性例数,
+tsum as 总数,
+cast(cast(cou as numeric(18,2))/cast(tsum as numeric(18,2)) as numeric(18,2)) as 阳性率
+from #gen_stat_UuMh,#temp_1,#temp_2
+where #gen_stat_UuMh.res_itm_ecd=#temp_1.res_itm_ecd
+and #gen_stat_UuMh.res_chr=#temp_1.res_chr
+and #gen_stat_UuMh.res_itm_ecd=#temp_2.res_itm_ecd
+and #gen_stat_UuMh.res_chr='+'
+
+else
+
+select 
+'&sDate&'+' ~ ' +'&eDate&' as 时间范围,
+ '' as 住院号,
+ '' as 姓名,
+ '' as 科室,
+ '' as  结果,
+ #temp_2.res_itm_ecd as  项目,
+ '' as 检查日期,
+0 as 阳性例数,
+#temp_2.tsum as 总数,
+0 as 阳性率
+from #gen_stat_UuMh,
+#temp_2
+where  #gen_stat_UuMh.res_itm_ecd=#temp_2.res_itm_ecd
+
+
+*/
+
+
+
+select
+case when resulto.res_itm_ecd<>'' then 'HBsAg' end as res_itm_ecd,
+patients.pat_in_no,
+patients.pat_name,
+(case pat_dep_name when '产科' then '产科门诊' when '产房' then '产前区' when '产科ICU' then '产后区' else pat_dep_name end ) pat_dep_name,
+patients.pat_date,
+case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+	 else '-' end as res_chr,
+count(case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+	 else '-' end) as count_res_chr 
+into #a
+from resulto
+inner join patients on patients.pat_id = resulto.res_id and res_itm_id in ('46','47','48','50259') and (res_chr like '阴性%' or res_chr like '阳性%')
+where len(pat_dep_name)>0 and res_flag = 1 
+and 
+(
+pat_dep_name in ('产房','产前区','产科','产科门诊','产后区','产科ICU')
+)
+and res_date>='&sDate&' and res_date<='&eDate&'
+--and ( res_date>='2015-05-01 00:00:00' and res_date<='2015-06-06 23:59:59')
+group by case when resulto.res_itm_ecd<>'' then 'HBsAg' end,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+	 else '-' end,
+	 (case pat_dep_name when '产科' then '产科门诊' when '产房' then '产前区' when '产科ICU' then '产后区' else pat_dep_name end )
+	 
+	 --select * from #a
+	 --select * from #b
+	 --select * from #c
+	 
+	 --drop table #a
+	 --drop table #b
+	 
+	 
+	select distinct COUNT(*)over() as '总数', res_itm_ecd,count (pat_dep_name) over(partition by pat_dep_name) as '科室总数',pat_dep_name into #b from #a
+
+
+
+	select distinct COUNT(*)over() as '总数', res_itm_ecd,count (pat_dep_name) over(partition by pat_dep_name) as '科室总数',pat_dep_name into #c from #a
+where res_chr ='+'
+
+
+--select * from #b,#c
+--where #b.pat_dep_name = #c.pat_dep_name
+	
+	
+	if exists(select * from #c )
+	
+	select
+	'&sDate&'+' ~ ' +'&eDate&' as 时间范围,
+	#b.总数 总数,
+	#b.res_itm_ecd 项目,
+	#b.科室总数,
+	#b.pat_dep_name 科室,
+	#a.pat_name 姓名,
+	#a.pat_in_no 住院号,
+	#a.pat_date 检查日期,
+	#a.res_chr 结果,
+	#c.总数 阳性数,
+	#c.科室总数 as 科室阳性数
+	from #a,#b,#c
+	where res_chr='+'
+	and #a.pat_dep_name = #b.pat_dep_name
+	and #b.pat_dep_name = #c.pat_dep_name
+	and #a.pat_dep_name = #c.pat_dep_name
+	order by #c.pat_dep_name
+	
+	else
+	
+	select
+	'&sDate&'+' ~ ' +'&eDate&' as 时间范围,
+	'' 总数,
+	'' 项目,
+	'',
+	'' 科室,
+	'' 姓名,
+	'' 住院号,
+	'' 检查日期,
+	'' 结果,
+	'' 科室阳性数
+	from #a,#b,#c
+	where 1=1
+	and #a.pat_dep_name = #b.pat_dep_name
+	and #b.pat_dep_name = #c.pat_dep_name
+	and #a.pat_dep_name = #c.pat_dep_name
+	order by #c.pat_dep_name
+	
+	
+	 drop table #a
+	 drop table #b
+	 drop table #c

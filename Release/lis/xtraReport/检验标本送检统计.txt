@@ -1,0 +1,8 @@
+select '&sDate&'+' ~ ' +'&eDate&' as ÈÕÆÚ·¶Î§,
+bc_sign.bc_name, count(*)
+from bc_sign
+--left join bc_patients on bc_patients.bc_bar_code=bc_sign.bc_bar_code
+where --(bc_sign.bc_date>'&sDate&' and  bc_sign.bc_date>'&eDate&')
+( bc_sign.bc_date>='&sDate&' and bc_sign.bc_date<='&eDate&')
+and bc_sign.bc_status='4'
+group by bc_sign.bc_name

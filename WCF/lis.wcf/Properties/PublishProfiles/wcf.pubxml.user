@@ -1,0 +1,2292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\WiseFly\Workspace\MMFY\LIS\Server\NewRelease\WCF_Pub</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="addResult.txt">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="analyse/BacilliBasicAnalyseBIZ.svc">
+      <publishTime>07/31/2019 14:00:40</publishTime>
+    </File>
+    <File Include="analyse/DateBasicAnalyseBIZ.svc">
+      <publishTime>07/31/2019 14:00:40</publishTime>
+    </File>
+    <File Include="analyse/ItemDynamicAnalyseBIZ.svc">
+      <publishTime>07/31/2019 14:00:40</publishTime>
+    </File>
+    <File Include="analyse/ProveBatchReportBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="analyse/SummaryPrintBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="analyse/TATAnalyseBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="analyse/TimeAnalyseBIZ.svc">
+      <publishTime>07/31/2019 14:00:40</publishTime>
+    </File>
+    <File Include="analyse/Web.config">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="AutoAduit/AuditInstrmtParmBIZ.svc">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="AutoAduit/AuditItemParmBIZ.svc">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="AutoAduit/AutoAduitBIZ.svc">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="AutoAduit/Web.config">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="bac/AN_STypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/Ba_RltsBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/BTypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/DictAnSstdBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/DictAnStypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/DictComMediaBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/DictMediaBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/Dict_AntibioBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/Dict_An_SstdBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/Dict_An_StypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/Dict_BacteriBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/Dict_BtypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bac/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="barcode/Barcode4IntercaceBIZ.svc">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="barcode/BarcodeBIZ.svc">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="barcode/BarcodeDictBIZ.svc">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="barcode/BCCNameBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCCombineBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCCombineSplitBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCCuvetteBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCCuvetteShelfBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCCuvetteShelfRegister.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCHISDataBase.svc">
+      <publishTime>11/23/2018 15:17:35</publishTime>
+    </File>
+    <File Include="barcode/BCImageViewBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCMessageBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCMonitorBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCPatientBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCPrintBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/BCSignBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/CallingSystemBIZ.svc">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="barcode/GetTubeInfoByCombineBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/LabcodePrintBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/SecondStatBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="barcode/Web.config">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>07/31/2019 14:01:21</publishTime>
+    </File>
+    <File Include="bin/amqmdnet.dll">
+      <publishTime>09/24/2019 15:53:02</publishTime>
+    </File>
+    <File Include="bin/ClearForUpdate.bat">
+      <publishTime>01/13/2019 22:37:45</publishTime>
+    </File>
+    <File Include="bin/dcl.client.cache.dll">
+      <publishTime>12/11/2018 12:13:28</publishTime>
+    </File>
+    <File Include="bin/dcl.client.cache.pdb">
+      <publishTime>12/11/2018 12:13:28</publishTime>
+    </File>
+    <File Include="bin/dcl.client.common.dll">
+      <publishTime>01/08/2019 11:40:56</publishTime>
+    </File>
+    <File Include="bin/dcl.client.common.pdb">
+      <publishTime>01/08/2019 11:40:56</publishTime>
+    </File>
+    <File Include="bin/dcl.client.frame.dll">
+      <publishTime>01/08/2019 11:40:54</publishTime>
+    </File>
+    <File Include="bin/dcl.client.frame.pdb">
+      <publishTime>01/08/2019 11:40:54</publishTime>
+    </File>
+    <File Include="bin/dcl.client.wcf.dll">
+      <publishTime>01/08/2019 11:19:05</publishTime>
+    </File>
+    <File Include="bin/dcl.client.wcf.pdb">
+      <publishTime>01/08/2019 11:19:05</publishTime>
+    </File>
+    <File Include="bin/dcl.common.dll">
+      <publishTime>12/10/2019 14:44:04</publishTime>
+    </File>
+    <File Include="bin/dcl.common.pdb">
+      <publishTime>12/10/2019 14:44:04</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.clab.dll">
+      <publishTime>01/09/2019 10:18:32</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.clab.pdb">
+      <publishTime>01/09/2019 10:18:32</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.core.dll">
+      <publishTime>10/31/2019 17:01:05</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.core.pdb">
+      <publishTime>10/31/2019 17:01:05</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.interfaces.dll">
+      <publishTime>12/12/2019 13:29:33</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.interfaces.pdb">
+      <publishTime>12/12/2019 13:29:33</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.med.dll">
+      <publishTime>01/22/2019 09:34:34</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.med.pdb">
+      <publishTime>01/22/2019 09:34:34</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.wf.dll">
+      <publishTime>08/01/2019 20:58:43</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.wf.pdb">
+      <publishTime>08/01/2019 20:58:43</publishTime>
+    </File>
+    <File Include="bin/dcl.entity.dll">
+      <publishTime>12/10/2019 14:44:03</publishTime>
+    </File>
+    <File Include="bin/dcl.entity.pdb">
+      <publishTime>12/10/2019 14:44:03</publishTime>
+    </File>
+    <File Include="bin/dcl.hl7.dll">
+      <publishTime>12/12/2019 13:29:34</publishTime>
+    </File>
+    <File Include="bin/dcl.hl7.pdb">
+      <publishTime>12/12/2019 13:29:34</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.dict.dll">
+      <publishTime>08/14/2019 15:06:09</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.dict.pdb">
+      <publishTime>08/14/2019 15:06:09</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.dll">
+      <publishTime>08/21/2019 15:01:31</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.pdb">
+      <publishTime>08/21/2019 15:01:31</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.wcf.dll">
+      <publishTime>12/12/2019 13:51:13</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.wcf.pdb">
+      <publishTime>12/12/2019 13:51:13</publishTime>
+    </File>
+    <File Include="bin/dcl.root.common.dll">
+      <publishTime>12/26/2018 16:36:20</publishTime>
+    </File>
+    <File Include="bin/dcl.root.common.pdb">
+      <publishTime>12/26/2018 16:36:20</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dac.dll">
+      <publishTime>08/21/2019 16:12:24</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dac.pdb">
+      <publishTime>08/21/2019 16:12:24</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dto.dll">
+      <publishTime>08/21/2019 16:06:33</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dto.pdb">
+      <publishTime>08/21/2019 16:06:33</publishTime>
+    </File>
+    <File Include="bin/dcl.root.logon.dll">
+      <publishTime>12/12/2019 13:29:35</publishTime>
+    </File>
+    <File Include="bin/dcl.root.logon.pdb">
+      <publishTime>12/12/2019 13:29:35</publishTime>
+    </File>
+    <File Include="bin/Dcl.SendDataToAPP.dll">
+      <publishTime>07/31/2019 14:01:22</publishTime>
+    </File>
+    <File Include="bin/dcl.servececontract.dll">
+      <publishTime>12/12/2019 13:29:33</publishTime>
+    </File>
+    <File Include="bin/dcl.servececontract.pdb">
+      <publishTime>12/12/2019 13:29:33</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.ananlyse.dll">
+      <publishTime>12/12/2019 13:29:36</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.ananlyse.pdb">
+      <publishTime>12/12/2019 13:29:36</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.autoaudit.dll">
+      <publishTime>08/01/2019 20:58:55</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.autoaudit.pdb">
+      <publishTime>08/01/2019 20:58:55</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.bi.dll">
+      <publishTime>08/01/2019 20:58:52</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.bi.pdb">
+      <publishTime>08/01/2019 20:58:52</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.cache.dll">
+      <publishTime>12/12/2019 13:29:36</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.cache.pdb">
+      <publishTime>12/12/2019 13:29:36</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.dicbasic.dll">
+      <publishTime>12/12/2019 13:29:40</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.dicbasic.pdb">
+      <publishTime>12/12/2019 13:29:40</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.dicmic.dll">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.dicmic.pdb">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.elisa.dll">
+      <publishTime>10/31/2019 17:01:22</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.elisa.pdb">
+      <publishTime>10/31/2019 17:01:22</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.frame.dll">
+      <publishTime>08/21/2019 16:12:30</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.frame.pdb">
+      <publishTime>08/21/2019 16:12:30</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.instrmt.dll">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.instrmt.pdb">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.interfaces.dll">
+      <publishTime>12/12/2019 13:29:38</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.interfaces.pdb">
+      <publishTime>12/12/2019 13:29:38</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.micManageMent.dll">
+      <publishTime>01/09/2019 10:18:45</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.micManageMent.pdb">
+      <publishTime>01/09/2019 10:18:45</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.msg.dll">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.msg.pdb">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.oa.dll">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.oa.pdb">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.qc.dll">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.qc.pdb">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.queuenumber.dll">
+      <publishTime>09/24/2019 15:52:22</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.queuenumber.pdb">
+      <publishTime>08/01/2019 20:58:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.repdesign.dll">
+      <publishTime>01/22/2019 09:34:38</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.repdesign.pdb">
+      <publishTime>01/22/2019 09:34:38</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.report.dll">
+      <publishTime>12/12/2019 13:29:36</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.report.pdb">
+      <publishTime>12/12/2019 13:29:36</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.result.dll">
+      <publishTime>12/12/2019 13:29:44</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.result.pdb">
+      <publishTime>12/12/2019 13:29:44</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.resultcheck.dll">
+      <publishTime>12/12/2019 13:29:43</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.resultcheck.pdb">
+      <publishTime>12/12/2019 13:29:43</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.resultquery.dll">
+      <publishTime>12/12/2019 13:29:44</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.resultquery.pdb">
+      <publishTime>12/12/2019 13:29:44</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.root.com.dll">
+      <publishTime>08/21/2019 16:12:25</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.root.com.pdb">
+      <publishTime>08/21/2019 16:12:25</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.sample.dll">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.sample.pdb">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.samstock.dll">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.samstock.pdb">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.statistical.dll">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.statistical.pdb">
+      <publishTime>12/12/2019 13:29:42</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.tools.dll">
+      <publishTime>12/12/2019 13:29:44</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.tools.pdb">
+      <publishTime>12/12/2019 13:29:44</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.touchprint.dll">
+      <publishTime>12/12/2019 13:29:37</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.touchprint.pdb">
+      <publishTime>12/12/2019 13:29:37</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.users.dll">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.users.pdb">
+      <publishTime>12/12/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.wcf.dll">
+      <publishTime>12/12/2019 13:29:45</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.wcf.pdb">
+      <publishTime>12/12/2019 13:29:45</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.whonet.dll">
+      <publishTime>10/31/2019 17:01:14</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.whonet.pdb">
+      <publishTime>10/31/2019 17:01:14</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:13</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.DataAccess.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:16</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:19</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Utils.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:19</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:10</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Xpo.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraBars.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraEditors.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraGrid.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraLayout.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraNavBar.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraPrinting.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraReports.v15.2.Web.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraTreeList.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Charts.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.CodeParser.v15.2.dll">
+      <publishTime>08/07/2019 19:42:11</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v15.2.dll">
+      <publishTime>08/07/2019 19:42:13</publishTime>
+    </File>
+    <File Include="bin/DevExpress.DataAccess.v15.2.dll">
+      <publishTime>08/07/2019 19:42:16</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Pdf.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Pdf.v15.2.Drawing.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.PivotGrid.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Printing.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Sparkline.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:19</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Utils.v15.2.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxThemes.v15.2.dll">
+      <publishTime>08/07/2019 19:42:11</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v15.2.dll">
+      <publishTime>08/07/2019 19:42:10</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Xpo.v15.2.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraBars.v15.2.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v15.2.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v15.2.Web.dll">
+      <publishTime>08/07/2019 19:42:10</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraEditors.v15.2.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraGauges.v15.2.Core.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraGrid.v15.2.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraLayout.v15.2.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraNavBar.v15.2.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraPrinting.v15.2.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraReports.v15.2.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraReports.v15.2.Web.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraTreeList.v15.2.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/DongHuaHisLink.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:13</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.DataAccess.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:16</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:19</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Utils.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:10</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Xpo.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraBars.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraEditors.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraGrid.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraLayout.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraNavBar.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraPrinting.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraReports.v15.2.Web.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraTreeList.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/FrameWork.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/GDCAHeper.dll">
+      <publishTime>11/23/2018 15:17:59</publishTime>
+    </File>
+    <File Include="bin/HQTjDataLink.dll">
+      <publishTime>01/13/2019 22:36:59</publishTime>
+    </File>
+    <File Include="bin/IBatisNet.Common.dll">
+      <publishTime>01/13/2019 22:37:00</publishTime>
+    </File>
+    <File Include="bin/IBatisNet.DataMapper.dll">
+      <publishTime>01/13/2019 22:37:00</publishTime>
+    </File>
+    <File Include="bin/ImApiDotNet.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/Interop.NetcaPkiLib.dll">
+      <publishTime>11/23/2018 15:18:01</publishTime>
+    </File>
+    <File Include="bin/Interop.SecuInter.dll">
+      <publishTime>11/23/2018 15:18:00</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:13</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.DataAccess.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:16</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:19</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Utils.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:10</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Xpo.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraBars.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraEditors.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraGrid.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraLayout.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraNavBar.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraPrinting.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraReports.v15.2.Web.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraTreeList.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/Lib.biz.CASign.dll">
+      <publishTime>09/24/2019 15:53:33</publishTime>
+    </File>
+    <File Include="bin/Lib.DAC.dll">
+      <publishTime>12/10/2019 14:44:03</publishTime>
+    </File>
+    <File Include="bin/Lib.DAC.pdb">
+      <publishTime>12/10/2019 14:44:03</publishTime>
+    </File>
+    <File Include="bin/Lib.DataInterface.dll">
+      <publishTime>12/10/2019 14:54:03</publishTime>
+    </File>
+    <File Include="bin/Lib.DataInterface.pdb">
+      <publishTime>12/10/2019 14:54:03</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityCore.dll">
+      <publishTime>09/29/2019 15:00:59</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityCore.pdb">
+      <publishTime>09/29/2019 16:41:03</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityDAC.dll">
+      <publishTime>08/20/2019 10:23:42</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityDAC.pdb">
+      <publishTime>08/20/2019 10:23:42</publishTime>
+    </File>
+    <File Include="bin/Lib.LogManager.dll">
+      <publishTime>09/24/2019 15:53:02</publishTime>
+    </File>
+    <File Include="bin/Lib.ProxyFactory.dll">
+      <publishTime>07/31/2019 14:01:24</publishTime>
+    </File>
+    <File Include="bin/Lib.WCFClientCore.dll">
+      <publishTime>11/23/2018 15:17:59</publishTime>
+    </File>
+    <File Include="bin/Lis.Biz.CodeScript.dll">
+      <publishTime>07/31/2019 14:03:07</publishTime>
+    </File>
+    <File Include="bin/lis.biz.DataOption.dll">
+      <publishTime>07/31/2019 14:02:17</publishTime>
+    </File>
+    <File Include="bin/Lis.Client.OuterNet.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/lis.dto.dll">
+      <publishTime>08/20/2019 14:25:43</publishTime>
+    </File>
+    <File Include="bin/lis.dto.pdb">
+      <publishTime>08/20/2019 14:25:43</publishTime>
+    </File>
+    <File Include="bin/Lis.EntityHl7v3.dll">
+      <publishTime>09/24/2019 15:53:02</publishTime>
+    </File>
+    <File Include="bin/Lis.HZLYHis.Interface.dll">
+      <publishTime>01/13/2019 22:37:00</publishTime>
+    </File>
+    <File Include="bin/Lis.OuterNetContract.dll">
+      <publishTime>07/31/2019 14:01:24</publishTime>
+    </File>
+    <File Include="bin/Lis.OuterNetWCFClient.dll">
+      <publishTime>07/31/2019 14:01:30</publishTime>
+    </File>
+    <File Include="bin/Lis.PluginInterface.Interface.dll">
+      <publishTime>08/20/2019 10:23:43</publishTime>
+    </File>
+    <File Include="bin/Lis.PluginInterface.Interface.pdb">
+      <publishTime>08/20/2019 10:23:43</publishTime>
+    </File>
+    <File Include="bin/Lis.PluginInterface.Service.dll">
+      <publishTime>08/21/2019 16:12:30</publishTime>
+    </File>
+    <File Include="bin/Lis.PluginInterface.Service.pdb">
+      <publishTime>08/21/2019 16:12:30</publishTime>
+    </File>
+    <File Include="bin/Lis.PluginLoader.dll">
+      <publishTime>08/20/2019 10:23:43</publishTime>
+    </File>
+    <File Include="bin/Lis.PluginLoader.pdb">
+      <publishTime>08/20/2019 10:23:43</publishTime>
+    </File>
+    <File Include="bin/Lis.SendDataByHl7v3.dll">
+      <publishTime>09/24/2019 15:53:02</publishTime>
+    </File>
+    <File Include="bin/Lis.SendDataToCDR.dll">
+      <publishTime>07/31/2019 14:01:24</publishTime>
+    </File>
+    <File Include="bin/Lis.SendDataToLisCDR.dll">
+      <publishTime>07/31/2019 14:01:25</publishTime>
+    </File>
+    <File Include="bin/Lis.SendDataToMidXHYY.dll.config">
+      <publishTime>07/31/2019 14:03:38</publishTime>
+    </File>
+    <File Include="bin/Lis.SumDocument.Common.dll">
+      <publishTime>07/31/2019 14:01:19</publishTime>
+    </File>
+    <File Include="bin/Lis.SZRYHis.Interface.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/LISItemSyn.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/Maps/BarcodeCombines.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="bin/Maps/BarcodeCombinesRecodes.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="bin/Maps/BarcodePatients.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="bin/Maps/Combines.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="bin/Maps/ReturnMessages.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="bin/MQDLL.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/MSTjDataLink.dll">
+      <publishTime>01/13/2019 22:36:59</publishTime>
+    </File>
+    <File Include="bin/NetcaUploadLink.dll">
+      <publishTime>11/23/2018 15:18:00</publishTime>
+    </File>
+    <File Include="bin/Netca_PDFSign.dll">
+      <publishTime>11/23/2018 15:17:58</publishTime>
+    </File>
+    <File Include="bin/Neusoft.HisCrypto.dll">
+      <publishTime>07/31/2019 14:01:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.dll">
+      <publishTime>09/24/2019 15:53:02</publishTime>
+    </File>
+    <File Include="bin/OutLink.dll">
+      <publishTime>07/31/2019 14:03:18</publishTime>
+    </File>
+    <File Include="bin/OutLink.ini">
+      <publishTime>07/31/2019 14:03:18</publishTime>
+    </File>
+    <File Include="bin/providers.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:13</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.DataAccess.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:16</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:18</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:19</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Utils.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:10</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Xpo.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:20</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraBars.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraEditors.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraGrid.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraLayout.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraNavBar.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraPrinting.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraReports.v15.2.Web.resources.dll">
+      <publishTime>08/07/2019 19:42:21</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraTreeList.v15.2.resources.dll">
+      <publishTime>08/07/2019 19:42:23</publishTime>
+    </File>
+    <File Include="bin/SqlMap.config">
+      <publishTime>01/13/2019 22:37:45</publishTime>
+    </File>
+    <File Include="bin/ThoughtWorks.QRCode.dll">
+      <publishTime>11/23/2018 15:17:59</publishTime>
+    </File>
+    <File Include="bin/Web.config">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="bin/wf.dao.wf.dll">
+      <publishTime>12/12/2019 13:51:12</publishTime>
+    </File>
+    <File Include="bin/wf.dao.wf.pdb">
+      <publishTime>12/12/2019 13:51:12</publishTime>
+    </File>
+    <File Include="bin/ZlyySmsInterface.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="CDR/CDRBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="CDR/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="ClearForUpdate.bat">
+      <publishTime>01/13/2019 22:37:45</publishTime>
+    </File>
+    <File Include="CodeScript/CodeScriptService.svc">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="CodeScript/Web.config">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="common/CacheDataBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="common/CacheServiceBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="common/ChangeDepartPasswordBIZ.svc">
+      <publishTime>11/23/2018 15:17:38</publishTime>
+    </File>
+    <File Include="common/ClientConfig.svc">
+      <publishTime>11/23/2018 15:17:38</publishTime>
+    </File>
+    <File Include="common/FuncLibBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="common/RunTimeSetting.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="common/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="DataInterfaceCon/DataInterfaceCommandBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="DataInterfaceCon/DataInterfaceConnectionBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="DataInterfaceCon/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="DataOperation/DataRecoverService.svc">
+      <publishTime>07/31/2019 14:00:39</publishTime>
+    </File>
+    <File Include="DataOperation/Web.config">
+      <publishTime>07/31/2019 14:00:39</publishTime>
+    </File>
+    <File Include="demo/OrderBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="demo/ProductBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="demo/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="dict/BCCuvetteBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/BscripeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/BscripeExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="dict/CheckbBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/CHTypeBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/ClItemBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ClItemExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/CombineLabcodeBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="dict/CombineSplitBarCodeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/CombineSplitBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/CombineTimeruleBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ComReptimeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ConResAdjustBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/CupsBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DepartBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DiagnosBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DiagnosExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/DicGetReportTimeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DicHoleModeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DicHoleStatusBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DicIcdCombineBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DicItemHoleBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DICSampleBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/DICSampleExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="dict/DictCalcBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictComFeesBIZ.svc">
+      <publishTime>07/31/2019 14:00:36</publishTime>
+    </File>
+    <File Include="dict/DictHarvesterBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictItemUrgentValueBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictJudgeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictMitmNoResultViewBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictModBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictNobactBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictNobactExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/DictRackBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DictService.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/DoctorBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/EfficacyBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/FeesTypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/HospitalBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/IceBoxBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/InspectBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/InstrmtBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/InstrmtComBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/InstrmtWarningSignsBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="dict/ItemBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ItemCombineBarcodeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ItemCombineBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ItemCombineExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/ItemCopyBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/ItemDefaultBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="dict/ItemExportUpBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/ItemPropBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ItemTaxisBIZ.svc">
+      <publishTime>11/23/2018 15:17:45</publishTime>
+    </File>
+    <File Include="dict/Item_PropBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ItrResCopyBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/Mitm_NoBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/NobactBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/No_TypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/OriginBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/QCInstrmtBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="dict/ReferenceNameBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/ReportBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="dict/SampleBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/SampReturnBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/SamRemarksBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/SamRemarksExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/S_StateBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/S_StateExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="dict/TemperatureBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/TubeRackBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/TypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/UGRTypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/UGR_TypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/Web.config">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="dict/WorksheetBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="eiasa/DictCalcBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="eiasa/DictHoleModeBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="eiasa/DictHoleStatusBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="eiasa/DictItemHoleBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="eiasa/DictJudgeBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="eiasa/DictModBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="eiasa/ElisaAnalyse.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="eiasa/FrmEiasaAnalyse.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="eiasa/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="FrmMainBiz.svc">
+      <publishTime>11/23/2018 15:17:38</publishTime>
+    </File>
+    <File Include="GetAge.txt">
+      <publishTime>01/13/2019 22:37:45</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="Instrmt/DictInstrmtBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="Instrmt/DictInstrmtMaintainBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="Instrmt/DictInstrmtRegistrationBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="Instrmt/FrmMaintainInstrumentBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="Instrmt/MaintainSelectBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="Instrmt/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="InstrumentThings/DicItrInstrumentMaintainBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="InstrumentThings/DicItrInstrumentRegistrationBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="InstrumentThings/DicItrInstrumentServicingBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="InstrumentThings/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="interfaces/AdviceConfirmBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="interfaces/BCAdviceConfirmBIZ.svc">
+      <publishTime>11/23/2018 15:17:45</publishTime>
+    </File>
+    <File Include="interfaces/BCContrastBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="interfaces/BCHISInterfacesBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="interfaces/ContrastDefineBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="interfaces/DataInterfaceBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="interfaces/DCLInterfacesToolBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="interfaces/HISInterfacesBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="interfaces/LisDataInterfaceBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="interfaces/SMHisInterfacesBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="interfaces/Web.config">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="lab/BabyFilterPatientInputBIZ.svc">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="lab/BabyFilterPatViewBIZ.svc">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="lab/BacterialInputBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/BakItmForResultoBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/CheckBloodTypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/InstrmtWardingMsgBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/MicMediaBIZ.svc">
+      <publishTime>07/31/2019 14:00:49</publishTime>
+    </File>
+    <File Include="lab/MicroscopeBIZ.svc">
+      <publishTime>07/31/2019 14:00:49</publishTime>
+    </File>
+    <File Include="lab/NewLabSingleBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ObrResultBakItmBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ObrResultMergeBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/PatientBacteriBIZ.svc">
+      <publishTime>07/31/2019 14:00:49</publishTime>
+    </File>
+    <File Include="lab/PatientCRUDService.svc">
+      <publishTime>07/31/2019 14:00:49</publishTime>
+    </File>
+    <File Include="lab/PatientEditToolBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/PatientEnterService.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/PatientInput.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/PatTempInputBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/PidReportMainAuditBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/PidReportMainBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/RealTimeResultViewBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ResultDisplayBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ResulTempBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ResultMerge.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ResultMergeNewBiz.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ResultTemplateBIZ.svc">
+      <publishTime>07/31/2019 14:00:49</publishTime>
+    </File>
+    <File Include="lab/SetLayoutBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/TatProRecordBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/ViewBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="lab/Web.config">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="LoginBIZ.svc">
+      <publishTime>11/23/2018 15:17:38</publishTime>
+    </File>
+    <File Include="Maps/BarcodeCombines.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="Maps/BarcodeCombinesRecodes.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="Maps/BarcodePatients.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="Maps/BarcodeSignRecodes.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="Maps/Combines.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="Maps/DictInstrmt.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="Maps/ReturnMessages.xml">
+      <publishTime>07/31/2019 14:00:50</publishTime>
+    </File>
+    <File Include="Message/CombineTATMsgBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/InstrmtUrgentTATMsgBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/ObrMessageBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/ObrMessageContentBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/ObrMessageReceiveBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/PidReportMainExtBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/UrgentObrMessageBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/UserMessageBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Message/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="MicDict/DefAntiTypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="MicDict/DefComMediaBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DefMicCombineDyeingBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DefMicItmLociBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DefMicReagentBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DefSampComBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicCupsBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicGechanBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicGelociBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicIceBoxBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicItemBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicMediaBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicMedQABacBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicSmerslBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/DicMicTubeRackBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Dic_Antibio_TypeBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="MicDict/MicDeptToPositionBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/MicDictExpProcedureBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/MicDictPqoItemBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/MicDictRegQabacBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/MicStaColorBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Mic_BacCombineBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Mic_CategoryBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Mic_Dic_Phyqa_ObjectBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Mic_PositionBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Mic_Qa_BacBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Mic_StatusBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Mic_TemplateBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="MicDict/Mic_YgSampleBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/SenQaBacAntiBIZ.svc">
+      <publishTime>11/23/2018 15:17:43</publishTime>
+    </File>
+    <File Include="MicDict/Web.config">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="MicDict/微生物字典svc放这里.txt">
+      <publishTime>07/31/2019 14:00:41</publishTime>
+    </File>
+    <File Include="Microbe/MicCDRServiceBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="Microbe/MicQCBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="Microbe/MicQueryBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="Microbe/MicSampStoreBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="Microbe/MicStatisticsAnalysisBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="Microbe/MicToolsBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="Microbe/MicTuberculosisBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="Microbe/MicYGMainBIZ.svc">
+      <publishTime>07/31/2019 14:00:35</publishTime>
+    </File>
+    <File Include="Microbe/PidMicReportMainBIZ.svc">
+      <publishTime>11/23/2018 15:17:37</publishTime>
+    </File>
+    <File Include="Microbe/Web.config">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="Monitor/SampProcessMonitorBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Monitor/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="NoticeManage/NoticeManageBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="NoticeManage/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="office/Announcement.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/DutyDict.svc">
+      <publishTime>07/31/2019 14:00:40</publishTime>
+    </File>
+    <File Include="office/OaTableDetailBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OfficeAnnouncement.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OfficeAttendanceBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OfficeBusinessBIZ.svc">
+      <publishTime>07/31/2019 14:00:39</publishTime>
+    </File>
+    <File Include="office/OfficeHandOverBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OfficeHoRecordBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OfficeMessageBIZ.svc">
+      <publishTime>07/31/2019 14:00:39</publishTime>
+    </File>
+    <File Include="office/OfficePlanBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="office/OfficeShiftDictBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OfficeShiftPlanBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OrderDetailBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="office/OrderTableBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="office/OrderTypeBIZ.svc">
+      <publishTime>01/13/2019 22:37:48</publishTime>
+    </File>
+    <File Include="office/Web.config">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="OutLinkTest.aspx">
+      <publishTime>11/23/2018 15:17:38</publishTime>
+    </File>
+    <File Include="PluginInterface/PluginInterface.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="PluginInterface/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="power/FuncManageBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/FuncManageProBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/RoleManageBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/RoleManageProBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/SysDataBIZ.svc">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="power/SysLogBiz.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/SysOperationLogBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/SystemConfigBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/SysUserInfoBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/UserInfoBIZ.svc">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="power/UserManageBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="power/Web.config">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="providers.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="PublicBiz.svc">
+      <publishTime>07/31/2019 14:00:42</publishTime>
+    </File>
+    <File Include="QCSpecific/FastAddQcItemBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="QCSpecific/QcMateriaBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="QCSpecific/QcMateriaDetailBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="QCSpecific/QcMateriaRuleBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="QCSpecific/QcResultBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="QCSpecific/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="quality/AddQcItemBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/ChartBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="quality/ControlBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/ControlNewBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/CriterionBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="quality/DiversionBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="quality/EnterBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/FrmParameterBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="quality/MensurateBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/NewQCBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/ParameterBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/ParameterNewBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/QcAnalysisBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="quality/QcAuditBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/QcCopyBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/QcCopyNewBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/QcDataAnalyseBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/QCInstrmtBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/QcMonitorBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="quality/QcRuleInstBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="quality/QcRuleInstrmtBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/QcRuleTimeBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/ResultoExportBIZ.svc">
+      <publishTime>01/13/2019 22:37:50</publishTime>
+    </File>
+    <File Include="quality/RoomBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/RunAwayBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/RunAwayNewBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="quality/Web.config">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="QueueNumber/QueueNumberBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="QueueNumber/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="report/DCLReportPrintBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="report/PrintConfigurationBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="report/ReporMainBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="report/ReportBIZ.svc">
+      <publishTime>07/31/2019 14:00:48</publishTime>
+    </File>
+    <File Include="report/ReportPrintBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="report/ServerReportBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="report/TouchPrintBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="report/Web.config">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="ReportCopy/ReportCopyBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="ReportCopy/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="reportDesign/MainFormBIZ.svc">
+      <publishTime>01/13/2019 22:37:45</publishTime>
+    </File>
+    <File Include="reportDesign/Web.config">
+      <publishTime>01/13/2019 22:37:45</publishTime>
+    </File>
+    <File Include="Result/MarrowEnterBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Result/MicEnterNewBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Result/ObrResultImageBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Result/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/SamDestory.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/SampStock.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/SampStoreDetail.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/SampStoreRack.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/SampStoreRecord.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/SamSearch.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/SamStore.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SamManage/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SampDetailBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SampMainBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SampMainDownloadBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SampOperateDetailBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SampProcessDetailBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SampRegisterBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SampReturnBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/SecondSignBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/ShelfSampRegisterBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SampMain/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="select/AutoPrintBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/BabyFilterCallbackBIZ.svc">
+      <publishTime>11/23/2018 15:17:45</publishTime>
+    </File>
+    <File Include="select/BabyFilterCardBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="select/BabyFilterGatherBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="select/CombineModeSelBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="select/CombModelSelBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/HisFeeSelBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="select/ItemSortBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/ObrRelateResultBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/ObrResultAntiBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/ObrResultBactBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/ObrResultBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/ObrResultDescBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/PatEnterNewBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/PatientRecheckBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/PatMonitorBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/PatResultBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/PidReportDetailBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/PidReportMainInterfaceBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/Real_timeResultsBIZ.svc">
+      <publishTime>01/13/2019 22:37:46</publishTime>
+    </File>
+    <File Include="select/TwoWaySelectBIZ.svc">
+      <publishTime>01/13/2019 22:37:46</publishTime>
+    </File>
+    <File Include="select/TwoWaySelectNewBIZ.svc">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="select/UploadOutLisBIZ.svc">
+      <publishTime>07/31/2019 14:00:34</publishTime>
+    </File>
+    <File Include="select/Web.config">
+      <publishTime>09/24/2019 15:52:36</publishTime>
+    </File>
+    <File Include="setting/RuntimeSettingBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="setting/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="sql.txt">
+      <publishTime>11/23/2018 15:17:38</publishTime>
+    </File>
+    <File Include="sqlBI.txt">
+      <publishTime>01/13/2019 22:37:47</publishTime>
+    </File>
+    <File Include="SqlMap.config">
+      <publishTime>01/13/2019 22:37:45</publishTime>
+    </File>
+    <File Include="sqlmed.txt">
+      <publishTime>01/13/2019 22:37:47</publishTime>
+    </File>
+    <File Include="sqlMIC.txt">
+      <publishTime>11/23/2018 15:17:35</publishTime>
+    </File>
+    <File Include="sqlwf.txt">
+      <publishTime>09/29/2019 11:39:19</publishTime>
+    </File>
+    <File Include="sql备注.txt">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="stat/BIBIZ.svc">
+      <publishTime>07/31/2019 14:00:41</publishTime>
+    </File>
+    <File Include="stat/GeneralStatisticsBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="stat/ProveCollectBIZ.svc">
+      <publishTime>11/23/2018 15:17:37</publishTime>
+    </File>
+    <File Include="stat/SelectTemplateBIZ.svc">
+      <publishTime>07/31/2019 14:00:41</publishTime>
+    </File>
+    <File Include="stat/StatBIZ.svc">
+      <publishTime>07/31/2019 14:00:41</publishTime>
+    </File>
+    <File Include="stat/StatisticsTemplateBIZ.svc">
+      <publishTime>07/31/2019 14:00:41</publishTime>
+    </File>
+    <File Include="stat/StatTempBIZ.svc">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="stat/StatTermBIZ.svc">
+      <publishTime>07/31/2019 14:00:41</publishTime>
+    </File>
+    <File Include="stat/TATMonitor.svc">
+      <publishTime>07/31/2019 14:00:41</publishTime>
+    </File>
+    <File Include="stat/TATStatistics.svc">
+      <publishTime>07/31/2019 14:00:40</publishTime>
+    </File>
+    <File Include="stat/Web.config">
+      <publishTime>09/24/2019 15:52:32</publishTime>
+    </File>
+    <File Include="sw/Form1BIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="sw/SWMianBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="sw/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="sysconfig更新脚本.txt">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="SysInterfaceLog/SysInterfaceLogBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SysInterfaceLog/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="SystemSetting.xml">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="tool/BatchEditBIZ.svc">
+      <publishTime>09/24/2019 15:52:20</publishTime>
+    </File>
+    <File Include="tool/BatchEditBIZ2.svc">
+      <publishTime>07/31/2019 14:00:38</publishTime>
+    </File>
+    <File Include="tool/BatchEditNewBIZ.svc">
+      <publishTime>09/24/2019 15:52:20</publishTime>
+    </File>
+    <File Include="tool/CountManageBIZ.svc">
+      <publishTime>07/31/2019 14:00:38</publishTime>
+    </File>
+    <File Include="tool/DeleteRepItrItmBIZ.svc">
+      <publishTime>01/13/2019 22:37:49</publishTime>
+    </File>
+    <File Include="tool/EfficacyManageBIZ.svc">
+      <publishTime>09/24/2019 15:52:20</publishTime>
+    </File>
+    <File Include="tool/LisDocManagerBIZ.svc">
+      <publishTime>09/24/2019 15:52:20</publishTime>
+    </File>
+    <File Include="tool/MergeResultBIZ.svc">
+      <publishTime>09/24/2019 15:52:20</publishTime>
+    </File>
+    <File Include="tool/MergeSpecialResultBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="tool/MessageBIZ.svc">
+      <publishTime>07/31/2019 14:00:38</publishTime>
+    </File>
+    <File Include="tool/TempHandleBIZ.svc">
+      <publishTime>09/24/2019 15:52:20</publishTime>
+    </File>
+    <File Include="tool/TestResultsBIZ.svc">
+      <publishTime>11/23/2018 15:17:34</publishTime>
+    </File>
+    <File Include="tool/Web.config">
+      <publishTime>09/24/2019 15:52:20</publishTime>
+    </File>
+    <File Include="UserLoginBIZ.svc">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="web/AutoCompleteDict.asmx">
+      <publishTime>11/23/2018 15:17:44</publishTime>
+    </File>
+    <File Include="web/childrenHospital/FrmUserLogin.aspx">
+      <publishTime>07/31/2019 14:00:42</publishTime>
+    </File>
+    <File Include="web/childrenHospital/FrmUserReport.aspx">
+      <publishTime>07/31/2019 14:00:42</publishTime>
+    </File>
+    <File Include="web/css/pub.css">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/css/style.css">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/frmCriticalCheckReport.aspx">
+      <publishTime>07/31/2019 14:00:43</publishTime>
+    </File>
+    <File Include="web/FrmDaAnReport.aspx">
+      <publishTime>07/31/2019 14:00:47</publishTime>
+    </File>
+    <File Include="web/FrmJaneMain.aspx">
+      <publishTime>07/31/2019 14:00:47</publishTime>
+    </File>
+    <File Include="web/FrmLogin.aspx">
+      <publishTime>07/31/2019 14:00:47</publishTime>
+    </File>
+    <File Include="web/FrmMain.aspx">
+      <publishTime>07/31/2019 14:00:47</publishTime>
+    </File>
+    <File Include="web/FrmModifyPwd.aspx">
+      <publishTime>07/31/2019 14:00:45</publishTime>
+    </File>
+    <File Include="web/frmOriginResult.aspx">
+      <publishTime>07/31/2019 14:00:44</publishTime>
+    </File>
+    <File Include="web/FrmPatientInfo.aspx">
+      <publishTime>07/31/2019 14:00:47</publishTime>
+    </File>
+    <File Include="web/FrmReport.aspx">
+      <publishTime>07/31/2019 14:00:45</publishTime>
+    </File>
+    <File Include="web/FrmReportMain.aspx">
+      <publishTime>07/31/2019 14:00:44</publishTime>
+    </File>
+    <File Include="web/FrmReportSelect.aspx">
+      <publishTime>07/31/2019 14:00:44</publishTime>
+    </File>
+    <File Include="web/FrmSTJYReport.aspx">
+      <publishTime>07/31/2019 14:00:44</publishTime>
+    </File>
+    <File Include="web/FrmTest.aspx">
+      <publishTime>07/31/2019 14:00:45</publishTime>
+    </File>
+    <File Include="web/images/login.gif">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/images/logo.png">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/images/logo2.jpg">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/images/Message.jpg">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/images/progress.gif">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/images/skies.jpg">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/images/zs_pic2.jpg">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/images/zs_pic3.png">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/install_lodop.exe">
+      <publishTime>07/31/2019 14:00:46</publishTime>
+    </File>
+    <File Include="web/js/highcharts.js">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/js/jquery-1.7.2.min.js">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/js/reportscript.js">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/LodopFuncs.js">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="web/MessageWebService.asmx">
+      <publishTime>07/31/2019 14:00:46</publishTime>
+    </File>
+    <File Include="web/ResultQuery.aspx">
+      <publishTime>07/31/2019 14:00:44</publishTime>
+    </File>
+    <File Include="web/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="WebService/DCLReport.asmx">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="WebService/DownLoadData.asmx">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="WebService/GetTubeInfoByCombine.asmx">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="WebService/UploadData.asmx">
+      <publishTime>09/24/2019 15:52:31</publishTime>
+    </File>
+    <File Include="Whonet/Web.config">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="Whonet/WhonetBIZ.svc">
+      <publishTime>09/24/2019 15:52:37</publishTime>
+    </File>
+    <File Include="xml/nwind_Bulletin.xml">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="xml/nwind_Subsidy.xml">
+      <publishTime>07/31/2019 14:00:37</publishTime>
+    </File>
+    <File Include="审核系统参数配置.txt">
+      <publishTime>01/13/2019 22:37:47</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

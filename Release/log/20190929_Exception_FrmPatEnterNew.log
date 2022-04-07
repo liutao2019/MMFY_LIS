@@ -1,0 +1,84 @@
+类型：Exception 
+时间：2019-09-29 16:47:52
+进程：wf.ClientEntrance.exe
+模块：FrmPatEnterNew
+标题：Save
+附加信息:
+System.ServiceModel.ProtocolException: 格式化程序尝试对消息反序列化时引发异常: 尝试对参数 http://tempuri.org/ 进行反序列化时出错: reportMainExt。InnerException 消息是“在行 1、位置 1185 处出现错误。 “Element”命名空间“http://schemas.datacontract.org/2004/07/dcl.entity”中的“_x003C_PatCureFlag_x003E_k__BackingField”并非所需元素。所需元素应为“_x003C_PatBirthday_x003E_k__BackingField”。”。有关详细信息，请参见 InnerException。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 dcl.servececontract.IDicPidReportMainExt.AddOrUpdatePatientExt(EntityDicPidReportMainExt reportMainExt)
+   在 dcl.client.result.FrmPatInputBaseNew.Save() 位置 D:\WiseFly\Source Code\Lis.Release\wf.ResultCheck\wf.client.result\CommonPatientInput\FrmPatInputBaseNew.cs:行号 1690
+
+类型：Exception 
+时间：2019-09-29 16:49:24
+进程：wf.ClientEntrance.exe
+模块：FrmPatEnterNew
+标题：Save
+附加信息:
+System.ServiceModel.ProtocolException: 格式化程序尝试对消息反序列化时引发异常: 尝试对参数 http://tempuri.org/ 进行反序列化时出错: reportMainExt。InnerException 消息是“在行 1、位置 1185 处出现错误。 “Element”命名空间“http://schemas.datacontract.org/2004/07/dcl.entity”中的“_x003C_PatCureFlag_x003E_k__BackingField”并非所需元素。所需元素应为“_x003C_PatBirthday_x003E_k__BackingField”。”。有关详细信息，请参见 InnerException。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 dcl.servececontract.IDicPidReportMainExt.AddOrUpdatePatientExt(EntityDicPidReportMainExt reportMainExt)
+   在 dcl.client.result.FrmPatInputBaseNew.Save() 位置 D:\WiseFly\Source Code\Lis.Release\wf.ResultCheck\wf.client.result\CommonPatientInput\FrmPatInputBaseNew.cs:行号 1690
+
+类型：Exception 
+时间：2019-09-29 16:51:17
+进程：wf.ClientEntrance.exe
+模块：FrmPatEnterNew
+标题：Save
+附加信息:
+System.ServiceModel.ProtocolException: 格式化程序尝试对消息反序列化时引发异常: 尝试对参数 http://tempuri.org/ 进行反序列化时出错: reportMainExt。InnerException 消息是“在行 1、位置 1185 处出现错误。 “Element”命名空间“http://schemas.datacontract.org/2004/07/dcl.entity”中的“_x003C_PatCureFlag_x003E_k__BackingField”并非所需元素。所需元素应为“_x003C_PatBirthday_x003E_k__BackingField”。”。有关详细信息，请参见 InnerException。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 dcl.servececontract.IDicPidReportMainExt.AddOrUpdatePatientExt(EntityDicPidReportMainExt reportMainExt)
+   在 dcl.client.result.FrmPatInputBaseNew.Save() 位置 D:\WiseFly\Source Code\Lis.Release\wf.ResultCheck\wf.client.result\CommonPatientInput\FrmPatInputBaseNew.cs:行号 1690
+
+类型：Exception 
+时间：2019-09-29 16:52:22
+进程：wf.ClientEntrance.exe
+模块：FrmPatEnterNew
+标题：Save
+附加信息:
+System.ServiceModel.ProtocolException: 格式化程序尝试对消息反序列化时引发异常: 尝试对参数 http://tempuri.org/ 进行反序列化时出错: reportMainExt。InnerException 消息是“在行 1、位置 1185 处出现错误。 “Element”命名空间“http://schemas.datacontract.org/2004/07/dcl.entity”中的“_x003C_PatCureFlag_x003E_k__BackingField”并非所需元素。所需元素应为“_x003C_PatBirthday_x003E_k__BackingField”。”。有关详细信息，请参见 InnerException。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 dcl.servececontract.IDicPidReportMainExt.AddOrUpdatePatientExt(EntityDicPidReportMainExt reportMainExt)
+   在 dcl.client.result.FrmPatInputBaseNew.Save() 位置 D:\WiseFly\Source Code\Lis.Release\wf.ResultCheck\wf.client.result\CommonPatientInput\FrmPatInputBaseNew.cs:行号 1690
+

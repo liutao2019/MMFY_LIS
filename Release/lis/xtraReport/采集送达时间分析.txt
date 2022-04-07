@@ -1,0 +1,150 @@
+select 
+ bc_patients.bc_bar_code as 条码号
+ ,bc_patients.bc_name as 病人姓名
+ ,bc_patients.bc_d_name as 科室名称
+ ,bc_patients.bc_in_no  as 诊疗卡号
+ ,bc_patients.bc_bed_no as 床号
+ ,bc_patients.bc_his_name as 组合名
+ ,bc_sign.bc_date as 日期
+ ,bc_sign.bc_name as 操作人员
+ ,bc_sign.bc_step_memo as 流程
+ ,bc_sign.bc_step_time as stime
+ ,dict_type.type_name as 物理组
+ ,bc_sign.bc_place
+ into #a_temp
+ from  bc_patients,bc_sign,dict_type  
+ where bc_patients.bc_bar_code=bc_sign.bc_bar_code 
+and dict_type.type_id=bc_patients.bc_ctype
+ and (bc_sign.bc_step_memo='收取->送达'
+ or bc_sign.bc_step_memo='采集->收取')
+and (bc_sign.bc_date >= '&sDate&'
+and bc_sign.bc_date <'&eDate&')
+--and (bc_sign.bc_date >= '2012-11-1'
+--and bc_sign.bc_date <='2012-11-2')
+ and bc_patients.bc_ori_id='108'
+and dict_type.tyep_hospitalName='10001'
+--and bc_patients.bc_his_name in ('血气分析+GLU+BUN+CR','血气分析+GLU','血气分析')
+
+
+
+select
+case 
+when #a_temp.stime <= 10  then '10分钟'
+when #a_temp.stime > 10 and #a_temp.stime <= 20  then '20分钟'
+when #a_temp.stime > 20 and #a_temp.stime <= 30  then '30分钟'
+when #a_temp.stime > 30 and #a_temp.stime <= 40  then '40分钟'
+when #a_temp.stime > 40 and #a_temp.stime <= 50  then '50分钟'
+ else '50分钟以上' 
+end as 时间段
+,count(*) as res_count
+into #b1_temp
+from #a_temp
+where 流程='收取->送达'
+group by
+case 
+when #a_temp.stime <= 10  then '10分钟'
+when #a_temp.stime > 10 and #a_temp.stime <= 20  then '20分钟'
+when #a_temp.stime > 20 and #a_temp.stime <= 30  then '30分钟'
+when #a_temp.stime > 30 and #a_temp.stime <= 40  then '40分钟'
+when #a_temp.stime > 40 and #a_temp.stime <= 50  then '50分钟'
+ else '50分钟以上' 
+end 
+select
+'收取->送达' as  流程 ,
+max(case 时间段 when '10分钟' then res_count else 0 end) 'a',
+max(case 时间段 when '20分钟' then res_count else 0 end) 'b',
+max(case 时间段 when '30分钟' then res_count else 0 end) 'c',
+max(case 时间段 when '40分钟' then res_count else 0 end) 'd',
+max(case 时间段 when '50分钟' then res_count else 0 end) 'e',
+max(case 时间段 when '50分钟以上' then res_count else 0 end) 'f'
+into #b1_1_temp
+from #b1_temp
+
+
+select 
+case 
+when #a_temp.stime <= 10  then '10分钟'
+when #a_temp.stime > 10 and #a_temp.stime <= 20  then '20分钟'
+when #a_temp.stime > 20 and #a_temp.stime <= 30  then '30分钟'
+when #a_temp.stime > 30 and #a_temp.stime <= 40  then '40分钟'
+when #a_temp.stime > 40 and #a_temp.stime <= 50  then '50分钟'
+ else '50分钟以上'  
+end as 时间段
+,count(*) as res_count
+into #b2_temp
+from #a_temp
+where 流程='采集->收取'
+group by
+case 
+when #a_temp.stime <= 10  then '10分钟'
+when #a_temp.stime > 10 and #a_temp.stime <= 20  then '20分钟'
+when #a_temp.stime > 20 and #a_temp.stime <= 30  then '30分钟'
+when #a_temp.stime > 30 and #a_temp.stime <= 40  then '40分钟'
+when #a_temp.stime > 40 and #a_temp.stime <= 50  then '50分钟'
+ else '50分钟以上' 
+end
+select 
+'采集->收取' as 流程,
+max(case 时间段 when '10分钟' then res_count else 0 end) 'a',
+max(case 时间段 when '20分钟' then res_count else 0 end) 'b',
+max(case 时间段 when '30分钟' then res_count else 0 end) 'c',
+max(case 时间段 when '40分钟' then res_count else 0 end) 'd',
+max(case 时间段 when '50分钟' then res_count else 0 end) 'e',
+max(case 时间段 when '50分钟以上' then res_count else 0 end) 'f'
+into #b2_1_temp
+from #b2_temp
+  
+--select * ,(select from #b2_1_temp) from #b1_1_temp
+--
+--select * ,(select from #b2_1_temp) from #b1_1_temp
+--
+select 流程,a,b,c,d,e,f,'0~10分钟' as a1,'10~20分钟' as b1,'20~30分钟'  as c1,'30~40分钟'  as d1,'40~50分钟'  as e1,'50分钟以上'  as f1
+into #b_temp
+from #b1_1_temp
+UNION ALL
+select 流程,a,b,c,d,e,f,'0~10分钟' as a1,'10~20分钟' as b1,'20~30分钟'  as c1,'30~40分钟'  as d1,'40~50分钟'  as e1,'50分钟以上'  as f1 
+from #b2_1_temp
+
+select 流程,
+avg(cast(#a_temp.stime as numeric(18,2))) 平均时间,
+max(cast(#a_temp.stime as numeric(18,2)))  最大时间,
+count(#a_temp.stime)  条码标本数量
+into #c_temp
+from #a_temp
+group by 流程
+
+
+select 
+ #a_temp.条码号
+ ,#a_temp.病人姓名
+ ,#a_temp.科室名称
+ ,#a_temp.诊疗卡号
+ ,#a_temp.床号
+ ,#a_temp.组合名
+ ,#a_temp.日期
+ ,#a_temp.操作人员
+ ,#a_temp.bc_place as 操作地点
+ ,#a_temp.流程
+ ,cast(#a_temp.stime as numeric(18,0)) as 时间间隔
+,#a_temp.物理组
+,cast(#c_temp.平均时间 as numeric(18,2)) as 平均时间
+,#c_temp.最大时间
+,#c_temp.条码标本数量
+,'&sDate&' +' ~ '+'&eDate&'  as daterange
+,#b_temp.* 
+,cast(cast(#b_temp.a as numeric(18,2))/cast(#c_temp.条码标本数量 as numeric(18,2)) as numeric(18,2))  as a2
+,cast(cast(#b_temp.b as numeric(18,2))/cast(#c_temp.条码标本数量 as numeric(18,2)) as numeric(18,2))  as b2
+,cast(cast(#b_temp.c as numeric(18,2))/cast(#c_temp.条码标本数量 as numeric(18,2)) as numeric(18,2))  as c2
+,cast(cast(#b_temp.d as numeric(18,2))/cast(#c_temp.条码标本数量 as numeric(18,2)) as numeric(18,2))  as d2
+,cast(cast(#b_temp.e as numeric(18,2))/cast(#c_temp.条码标本数量 as numeric(18,2)) as numeric(18,2))  as e2
+,cast(cast(#b_temp.f as numeric(18,2))/cast(#c_temp.条码标本数量 as numeric(18,2)) as numeric(18,2))  as f2
+--,#b1_1_temp.* 
+from #a_temp,#b_temp,#c_temp
+ where 
+   (#a_temp.流程=#b_temp.流程 and #a_temp.流程=#c_temp.流程)
+ and ((#a_temp.stime >20 and #a_temp.流程='收取->送达') 
+ or (#a_temp.stime > 30 and #a_temp.流程='采集->收取'))
+ order by #a_temp.stime
+ 
+ 
+ 

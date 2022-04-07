@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\WCF\lis.wcf\bin\wf.dao.wf.dll
+D:\WiseFly\Source Code\Lis.Release\WCF\lis.wcf\bin\wf.dao.wf.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.wf\obj\Debug\wf.dao.wf.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.wf\obj\Debug\wf.dao.wf.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.wf\obj\Debug\wf.dao.wf.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\lis.wcf\bin\wf.dao.wf.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\lis.wcf\bin\wf.dao.wf.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dao\wf.dao.wf\obj\Debug\wf.dao.wf.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dao\wf.dao.wf\obj\Debug\wf.dao.wf.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dao\wf.dao.wf\obj\Debug\wf.dao.wf.pdb

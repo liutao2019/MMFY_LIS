@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\版本发布\OutsideService</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/dcl.common.dll">
+      <publishTime>08/05/2019 10:12:09</publishTime>
+    </File>
+    <File Include="bin/dcl.common.pdb">
+      <publishTime>08/05/2019 10:12:09</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.core.dll">
+      <publishTime>07/31/2019 14:00:14</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.interfaces.dll">
+      <publishTime>08/05/2019 10:12:10</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.interfaces.pdb">
+      <publishTime>08/05/2019 10:12:10</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.wf.dll">
+      <publishTime>08/05/2019 10:12:12</publishTime>
+    </File>
+    <File Include="bin/dcl.dao.wf.pdb">
+      <publishTime>08/05/2019 10:12:12</publishTime>
+    </File>
+    <File Include="bin/dcl.entity.dll">
+      <publishTime>08/05/2019 10:12:09</publishTime>
+    </File>
+    <File Include="bin/dcl.entity.pdb">
+      <publishTime>08/05/2019 10:12:09</publishTime>
+    </File>
+    <File Include="bin/dcl.hl7.dll">
+      <publishTime>08/05/2019 10:12:11</publishTime>
+    </File>
+    <File Include="bin/dcl.hl7.pdb">
+      <publishTime>08/05/2019 10:12:11</publishTime>
+    </File>
+    <File Include="bin/dcl.outside.service.dll">
+      <publishTime>08/05/2019 10:12:29</publishTime>
+    </File>
+    <File Include="bin/dcl.outside.service.pdb">
+      <publishTime>08/05/2019 10:12:29</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.dict.dll">
+      <publishTime>07/31/2019 16:00:44</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.dict.pdb">
+      <publishTime>07/31/2019 16:00:44</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.dll">
+      <publishTime>07/31/2019 16:00:43</publishTime>
+    </File>
+    <File Include="bin/dcl.pub.entities.pdb">
+      <publishTime>07/31/2019 16:00:43</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dac.dll">
+      <publishTime>08/05/2019 10:12:09</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dac.pdb">
+      <publishTime>08/05/2019 10:12:09</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dto.dll">
+      <publishTime>08/05/2019 10:12:12</publishTime>
+    </File>
+    <File Include="bin/dcl.root.dto.pdb">
+      <publishTime>08/05/2019 10:12:12</publishTime>
+    </File>
+    <File Include="bin/dcl.root.logon.dll">
+      <publishTime>08/05/2019 10:12:10</publishTime>
+    </File>
+    <File Include="bin/dcl.root.logon.pdb">
+      <publishTime>08/05/2019 10:12:10</publishTime>
+    </File>
+    <File Include="bin/Dcl.SendDataToAPP.dll">
+      <publishTime>07/31/2019 14:01:22</publishTime>
+    </File>
+    <File Include="bin/dcl.servececontract.dll">
+      <publishTime>08/05/2019 10:12:11</publishTime>
+    </File>
+    <File Include="bin/dcl.servececontract.pdb">
+      <publishTime>08/05/2019 10:12:11</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.cache.dll">
+      <publishTime>08/05/2019 10:12:13</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.cache.pdb">
+      <publishTime>08/05/2019 10:12:13</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.dicbasic.dll">
+      <publishTime>08/05/2019 10:12:22</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.dicbasic.pdb">
+      <publishTime>08/05/2019 10:12:22</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.frame.dll">
+      <publishTime>08/05/2019 10:12:14</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.frame.pdb">
+      <publishTime>08/05/2019 10:12:14</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.interfaces.dll">
+      <publishTime>08/05/2019 10:12:21</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.interfaces.pdb">
+      <publishTime>08/05/2019 10:12:21</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.msg.dll">
+      <publishTime>08/05/2019 10:12:25</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.msg.pdb">
+      <publishTime>08/05/2019 10:12:25</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.report.dll">
+      <publishTime>08/05/2019 10:12:20</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.report.pdb">
+      <publishTime>08/05/2019 10:12:20</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.result.dll">
+      <publishTime>08/05/2019 10:12:27</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.result.pdb">
+      <publishTime>08/05/2019 10:12:27</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.resultcheck.dll">
+      <publishTime>08/05/2019 10:12:26</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.resultcheck.pdb">
+      <publishTime>08/05/2019 10:12:26</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.root.com.dll">
+      <publishTime>08/05/2019 10:12:12</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.root.com.pdb">
+      <publishTime>08/05/2019 10:12:12</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.sample.dll">
+      <publishTime>08/05/2019 10:12:23</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.sample.pdb">
+      <publishTime>08/05/2019 10:12:23</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.users.dll">
+      <publishTime>08/05/2019 10:12:24</publishTime>
+    </File>
+    <File Include="bin/dcl.svr.users.pdb">
+      <publishTime>08/05/2019 10:12:24</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Charts.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:25</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v15.2.dll">
+      <publishTime>07/31/2019 14:01:34</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Pdf.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Pdf.v15.2.Drawing.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.PivotGrid.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Printing.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Sparkline.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v15.2.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraGauges.v15.2.Core.dll">
+      <publishTime>07/31/2019 14:01:21</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraReports.v15.2.dll">
+      <publishTime>07/31/2019 14:01:26</publishTime>
+    </File>
+    <File Include="bin/DongHuaHisLink.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/FrameWork.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/ImApiDotNet.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/Lib.biz.CASign.dll">
+      <publishTime>07/31/2019 14:02:20</publishTime>
+    </File>
+    <File Include="bin/Lib.DAC.dll">
+      <publishTime>08/05/2019 10:12:17</publishTime>
+    </File>
+    <File Include="bin/Lib.DAC.pdb">
+      <publishTime>08/05/2019 10:12:17</publishTime>
+    </File>
+    <File Include="bin/Lib.DataInterface.dll">
+      <publishTime>08/04/2019 20:12:20</publishTime>
+    </File>
+    <File Include="bin/Lib.DataInterface.pdb">
+      <publishTime>08/04/2019 20:12:20</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityCore.dll">
+      <publishTime>07/31/2019 14:01:30</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityCore.pdb">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityDAC.dll">
+      <publishTime>08/05/2019 10:12:18</publishTime>
+    </File>
+    <File Include="bin/Lib.EntityDAC.pdb">
+      <publishTime>08/05/2019 10:12:18</publishTime>
+    </File>
+    <File Include="bin/Lib.LogManager.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/Lib.ProxyFactory.dll">
+      <publishTime>07/31/2019 14:01:24</publishTime>
+    </File>
+    <File Include="bin/lis.dto.dll">
+      <publishTime>07/31/2019 14:22:00</publishTime>
+    </File>
+    <File Include="bin/lis.dto.pdb">
+      <publishTime>07/31/2019 14:13:36</publishTime>
+    </File>
+    <File Include="bin/Lis.EntityHl7v3.dll">
+      <publishTime>07/31/2019 14:01:26</publishTime>
+    </File>
+    <File Include="bin/Lis.SendDataByHl7v3.dll">
+      <publishTime>07/31/2019 14:01:22</publishTime>
+    </File>
+    <File Include="bin/Lis.SendDataToLisCDR.dll">
+      <publishTime>07/31/2019 14:01:25</publishTime>
+    </File>
+    <File Include="bin/Lis.SumDocument.Common.dll">
+      <publishTime>07/31/2019 14:01:19</publishTime>
+    </File>
+    <File Include="bin/LISItemSyn.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/MQDLL.dll">
+      <publishTime>07/31/2019 14:01:28</publishTime>
+    </File>
+    <File Include="bin/Neusoft.HisCrypto.dll">
+      <publishTime>07/31/2019 14:01:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/31/2019 14:01:31</publishTime>
+    </File>
+    <File Include="bin/O2S.Components.PDFRender4NET.dll">
+      <publishTime>07/31/2019 14:01:34</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.dll">
+      <publishTime>07/31/2019 14:01:25</publishTime>
+    </File>
+    <File Include="bin/OutLink.dll">
+      <publishTime>07/31/2019 14:03:18</publishTime>
+    </File>
+    <File Include="bin/OutLink.ini">
+      <publishTime>07/31/2019 14:03:18</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Data.v15.2.resources.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Office.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Pdf.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.PivotGrid.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Printing.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.RichEdit.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Sparkline.v15.2.Core.resources.dll">
+      <publishTime>07/31/2019 14:01:29</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraCharts.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraGauges.v15.2.Core.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraReports.v15.2.resources.dll">
+      <publishTime>11/02/2018 14:30:26</publishTime>
+    </File>
+    <File Include="bin/ZlyySmsInterface.dll">
+      <publishTime>07/31/2019 14:01:20</publishTime>
+    </File>
+    <File Include="DCLService.asmx">
+      <publishTime>07/31/2019 14:00:52</publishTime>
+    </File>
+    <File Include="OutSendService.asmx">
+      <publishTime>07/31/2019 14:00:51</publishTime>
+    </File>
+    <File Include="PadService.asmx">
+      <publishTime>07/31/2019 14:00:52</publishTime>
+    </File>
+    <File Include="Templet/OutSendServiceXMLFile1.xml">
+      <publishTime>07/31/2019 14:00:52</publishTime>
+    </File>
+    <File Include="Templet/OutSendServiceXMLFile2.xml">
+      <publishTime>07/31/2019 14:00:52</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/05/2019 10:12:29</publishTime>
+    </File>
+    <File Include="数字化实验室接口说明文档.doc">
+      <publishTime>07/31/2019 14:00:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

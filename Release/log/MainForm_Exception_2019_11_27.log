@@ -1,0 +1,9 @@
+
+时间：2019-11-27 10:44:15
+进程：wf.ClientEntrance.exe
+模块：MainForm   方法：MainForm_Load   行数：97
+标题：
+附加信息：
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 dcl.client.repdesign.MainForm.MainForm_Load(Object sender, EventArgs e) 位置 D:\WiseFly\Source Code\Lis.Release\wf.XtraReport\wf.client.repdesign\MainForm.cs:行号 77
+

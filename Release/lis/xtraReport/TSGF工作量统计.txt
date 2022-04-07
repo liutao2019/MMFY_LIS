@@ -1,0 +1,22 @@
+select
+cast('&sDate&' as varchar(10)) as  开始日期
+,cast('&eDate&' as varchar(10)) as  结束日期
+,dict_origin.ori_name as 类型
+,dict_combine.com_name as 项目名称
+,72.00 as 单价
+,count(dict_combine.com_name) as 人次
+,count(dict_combine.com_name) * 72.00 as 总价
+from patients
+inner join patients_mi on patients.pat_id = patients_mi.pat_id
+inner join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+inner join dict_origin on dict_origin.ori_id = patients.pat_ori_id
+--where pat_date >= '&sDate&' and pat_date <= '&eDate&'
+where pat_date >= '&sDate&' and pat_date < '&eDate&'
+and pat_itr_id = '10106' and pat_flag in (2,4)
+group by
+	dict_combine.com_name
+	,dict_combine.com_pri
+	,dict_origin.ori_name
+	,patients_mi.pat_com_id
+	,dict_origin.ori_id
+order by dict_origin.ori_id,patients_mi.pat_com_id

@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.samstock.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.samstock.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.dll
+D:\WiseFly\Source Code\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.samstock.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.samstock.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.pdb

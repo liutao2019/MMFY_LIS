@@ -1,0 +1,254 @@
+SCC = This is a Source Code Control file.
+
+[hope-lis.sln]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis
+
+[Lib.Biz.Audit.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lib.Biz.Audit
+
+[lib.biz.common.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lib.biz.common
+
+[lib.client.common.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lib.client.common
+
+[Lib.Common.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lib.Common
+
+[lib.dto.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lib.dto
+
+[lib.Logger.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lib.Logger
+
+[Lib.RunTimeSetting.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lib.RunTimeSetting
+
+[lis.biz.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz
+
+[lis.biz.analyse.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.analyse
+
+[lis.biz.bac.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.bac
+
+[lis.biz.barcode.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.barcode
+
+[Lis.Biz.CodeScript.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lis.Biz.CodeScript
+
+[lis.biz.dict.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.dict
+
+[lis.biz.eiasa.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.eiasa
+
+[lis.biz.instrmt.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.instrmt
+
+[lis.biz.interfaces.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.interfaces
+
+[lis.biz.lab.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.lab
+
+[lis.biz.message.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.message
+
+[lis.biz.office.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.office
+
+[lis.biz.quality.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.quality
+
+[lis.biz.report.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.report
+
+[lis.biz.reportDesign.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.reportDesign
+
+[lis.biz.select.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.select
+
+[lis.biz.stat.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.stat
+
+[lis.biz.tool.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.biz.tool
+
+[Lis.BLL.Dict.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lis.BLL.Dict
+
+[lis.client.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client
+
+[lis.client.analyse.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.analyse
+
+[lis.client.bac.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.bac
+
+[lis.client.barcode.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.barcode
+
+[lis.client.barcodeclient.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.barcodeclient
+
+[lis.client.cache.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/LIS.Client.Cache
+
+[Lis.Client.CodeScript.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lis.Client.CodeScript
+
+[lis.client.common.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.common
+
+[lis.client.control.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.control
+
+[lis.client.dict.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.dict
+
+[lis.client.eiasa.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.eiasa
+
+[lis.client.instrmt.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.instrmt
+
+[lis.client.interfaces.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.interfaces
+
+[lis.client.lab.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.lab
+
+[lis.client.message.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.message
+
+[lis.client.messageclient.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.messageclient
+
+[lis.client.office.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.office
+
+[lis.client.quality.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.quality
+
+[lis.client.report.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.report
+
+[LIS.Client.RunTimeSetting.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/LIS.Client.RunTimeSetting
+
+[lis.client.select.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.select
+
+[lis.client.stat.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.stat
+
+[lis.client.tool.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.tool
+
+[lis.client.touchprint.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.client.touchprint
+
+[lis.common.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.common
+
+[lis.common.DynamicCompilation.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.common.DynamicCompilation
+
+[lib.dal.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.dal
+
+[lis.dto.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.dto
+
+[Lis.Entities.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lis.Entities
+
+[lis.interfaces.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.interfaces
+
+[Lis.PluginCore.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/Lis.PluginCore
+
+[lis.register.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.register
+
+[lis.server.cache.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.server.cache
+
+[LIS.ServiceContract.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/LIS.ServiceContract
+
+[lis.test.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.test
+
+[lis.wcf.csproj]
+SCC_Aux_Path = 100.100.100.174:8877:DotnetLis
+SCC_Project_Name = $/hope-lis.root/hope-lis/lis.wcf
+

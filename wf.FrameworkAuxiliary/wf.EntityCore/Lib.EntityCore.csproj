@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EA1B8D2-D141-4DC5-9932-1A3F44D25EC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lib.EntityCore</RootNamespace>
+    <AssemblyName>Lib.EntityCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lib.DAC, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Lib.DAC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Entity\EntityDeleteWithFlagAttribute.cs" />
+    <Compile Include="Attributes\Property\DataTypeConverterAttribute.cs" />
+    <Compile Include="Attributes\Property\FieldDeleteFlagAttribute.cs" />
+    <Compile Include="Attributes\Property\FieldMapAttribute.cs" />
+    <Compile Include="Attributes\Entity\IEntityAttribute.cs" />
+    <Compile Include="Attributes\Property\FieldRowVersionAttribute.cs" />
+    <Compile Include="Attributes\Property\IEntityPropertyAttribute.cs" />
+    <Compile Include="Attributes\Property\SysTableIDGenerateAttribute.cs" />
+    <Compile Include="DataTypeConverter\ByteToBase64StringConverter.cs" />
+    <Compile Include="DataTypeConverter\ByteToStringConverter.cs" />
+    <Compile Include="DataTypeConverter\ColorToStringConverter.cs" />
+    <Compile Include="DataTypeConverter\DataTypeConverter.cs" />
+    <Compile Include="DataTypeConverter\FontToStringConverter.cs" />
+    <Compile Include="DataTypeConverter\IDataTypeConverter.cs" />
+    <Compile Include="DataTypeConverter\ValueConverter.cs" />
+    <Compile Include="EntityAnaliser.cs" />
+    <Compile Include="EntityHelper.cs" />
+    <Compile Include="EntityInfo.cs" />
+    <Compile Include="EntityInfoCache.cs" />
+    <Compile Include="Attributes\Entity\EntityTableAttribute.cs" />
+    <Compile Include="Attributes\Entity\EnumTableAssociateType.cs" />
+    <Compile Include="Attributes\Property\FieldAssociationAttribute.cs" />
+    <Compile Include="Attributes\Entity\TableAssociationAttribute.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="EntityLog\PropertiesValueLogs.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EntityLog\PropertyValueLogEntry.cs" />
+    <Compile Include="EntityLog\PropertyValueLogList.cs" />
+    <Compile Include="Utilily\DataConverter.cs" />
+    <Compile Include="Utilily\DataTableArrayConverter.cs" />
+    <Compile Include="Utilily\DynamicBuilder.cs" />
+    <Compile Include="Utilily\EntityDataTableConverter.cs" />
+    <Compile Include="Utilily\EntityXMLConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.whonet.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.client.whonet.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Whonet\wf.client.whonet\obj\Debug\dcl.client.whonet.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Whonet\wf.client.whonet\obj\Debug\dcl.client.whonet.FrmWhonet.resources
+D:\WiseFly\Source Code\Lis.Release\wf.Whonet\wf.client.whonet\obj\Debug\dcl.client.whonet.Resource1.resources
+D:\WiseFly\Source Code\Lis.Release\wf.Whonet\wf.client.whonet\obj\Debug\dcl.client.whonet.csproj.GenerateResource.Cache
+D:\WiseFly\Source Code\Lis.Release\wf.Whonet\wf.client.whonet\obj\Debug\dcl.client.whonet.dll.licenses
+D:\WiseFly\Source Code\Lis.Release\wf.Whonet\wf.client.whonet\obj\Debug\dcl.client.whonet.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Whonet\wf.client.whonet\obj\Debug\dcl.client.whonet.pdb

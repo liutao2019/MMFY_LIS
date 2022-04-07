@@ -1,0 +1,24 @@
+
+     SELECT
+       patients.pat_name,  
+       (case patients.pat_sex when 1 then '男' when 2 then '女' else '男*' end) pat_sex , 
+       --dbo.getAge(patients.pat_age_exp) 年龄,
+       (case isnull(dbo.getAge(patients.pat_age_exp),'') when '' then '20*' else dbo.getAge(patients.pat_age_exp) end ) pat_age,
+       patients.pat_in_no,
+       count (patients.pat_name) as count1
+      into #a
+		  FROM patients
+          
+		
+		  where 1=1 &where& and
+		        patients.pat_flag in ('4')
+		        and patients.pat_date>'&sDate&'
+		        and patients.pat_date<'&eDate&'   
+				and isnull(pat_bar_code,'')=''    
+     group by patients.pat_name,patients.pat_in_no,patients.pat_sex,patients.pat_age_exp
+
+select pat_name 姓名,pat_sex 性别, pat_age 年龄,pat_in_no 病人ID,count1 数量,sum(count1) as 总数 from #a 
+group by pat_name,pat_sex,pat_age,pat_in_no,count1
+
+
+drop table #a

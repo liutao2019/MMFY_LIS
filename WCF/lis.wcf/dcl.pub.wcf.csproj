@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{355965DE-E304-4838-83E2-5CCC56DD3B84}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.pub.wcf</RootNamespace>
+    <AssemblyName>dcl.pub.wcf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lis_dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.dao.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\dcl.dao.core.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.svr.elisa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.svr.elisa.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.svr.queuenumber, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\dcl.svr.queuenumber.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.svr.whonet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.svr.whonet.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Web, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Web, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Lib.biz.CASign, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Lib.biz.CASign.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tool\LisDocManagerBIZ.svc" />
+    <Content Include="barcode\GetTubeInfoByCombineBIZ.svc" />
+    <Content Include="DataInterfaceCon\DataInterfaceCommandBIZ.svc" />
+    <Content Include="DataInterfaceCon\DataInterfaceConnectionBIZ.svc" />
+    <Content Include="dict\CombineSplitBarCodeBIZ.svc" />
+    <Content Include="dict\DictHarvesterBIZ.svc" />
+    <Content Include="dict\DicIcdCombineBIZ.svc" />
+    <Content Include="dict\TemperatureBIZ.svc" />
+    <Content Include="interfaces\DCLInterfacesToolBIZ.svc" />
+    <Content Include="interfaces\SMHisInterfacesBIZ.svc" />
+    <Content Include="lab\ObrResultMergeBIZ.svc" />
+    <Content Include="lab\ObrResultBakItmBIZ.svc" />
+    <Content Include="lab\PidReportMainAuditBIZ.svc" />
+    <Content Include="Message\CombineTATMsgBIZ.svc" />
+    <Content Include="Message\InstrmtUrgentTATMsgBIZ.svc" />
+    <Content Include="Message\UserMessageBIZ.svc" />
+    <Content Include="Message\PidReportMainExtBIZ.svc" />
+    <Content Include="Message\UrgentObrMessageBIZ.svc" />
+    <Content Include="Message\ObrMessageContentBIZ.svc" />
+    <Content Include="Message\ObrMessageReceiveBIZ.svc" />
+    <Content Include="Message\ObrMessageBIZ.svc" />
+    <Content Include="lab\InstrmtWardingMsgBIZ.svc" />
+    <Content Include="lab\TatProRecordBIZ.svc" />
+    <Content Include="lab\PidReportMainBIZ.svc" />
+    <Content Include="lab\PatTempInputBIZ.svc" />
+    <Content Include="MicDict\DefAntiTypeBIZ.svc" />
+    <Content Include="MicDict\Dic_Antibio_TypeBIZ.svc" />
+    <Content Include="MicDict\Mic_TemplateBIZ.svc" />
+    <Content Include="Monitor\SampProcessMonitorBIZ.svc" />
+    <Content Include="office\Announcement.svc" />
+    <Content Include="office\OfficeHandOverBIZ.svc" />
+    <Content Include="office\OfficeHoRecordBIZ.svc" />
+    <Content Include="power\SysUserInfoBIZ.svc" />
+    <Content Include="quality\QcAnalysisBIZ.svc" />
+    <Content Include="QueueNumber\QueueNumberBIZ.svc" />
+    <Content Include="ReportCopy\ReportCopyBIZ.svc" />
+    <Content Include="Result\MarrowEnterBIZ.svc" />
+    <Content Include="select\PidReportMainInterfaceBIZ.svc" />
+    <Content Include="sql备注.txt" />
+    <Content Include="sqlwf.txt" />
+    <Content Include="WebService\DCLReport.asmx" />
+    <Content Include="report\TouchPrintBIZ.svc" />
+    <Content Include="Result\MicEnterNewBIZ.svc" />
+    <Content Include="Result\ObrResultImageBIZ.svc" />
+    <Content Include="SampMain\SampOperateDetailBIZ.svc" />
+    <Content Include="SampMain\ShelfSampRegisterBIZ.svc" />
+    <Content Include="SampMain\SampMainDownloadBIZ.svc" />
+    <Content Include="SampMain\SampRegisterBIZ.svc" />
+    <Content Include="SampMain\SecondSignBIZ.svc" />
+    <Content Include="select\PatEnterNewBIZ.svc" />
+    <Content Include="select\PatMonitorBIZ.svc" />
+    <Content Include="select\PatResultBIZ.svc" />
+    <Content Include="select\PatientRecheckBIZ.svc" />
+    <Content Include="select\ObrRelateResultBIZ.svc" />
+    <Content Include="select\TwoWaySelectNewBIZ.svc" />
+    <Content Include="setting\RuntimeSettingBIZ.svc" />
+    <Content Include="SysInterfaceLog\SysInterfaceLogBIZ.svc" />
+    <Content Include="tool\MergeResultBIZ.svc" />
+    <Content Include="tool\TempHandleBIZ.svc" />
+    <Content Include="tool\BatchEditNewBIZ.svc" />
+    <Content Include="UserLoginBIZ.svc" />
+    <Content Include="office\OfficeShiftPlanBIZ.svc" />
+    <Content Include="lab\ResulTempBIZ.svc" />
+    <Content Include="report\DCLReportPrintBIZ.svc" />
+    <Content Include="SampMain\SampReturnBIZ.svc" />
+    <Content Include="SampMain\SampProcessDetailBIZ.svc" />
+    <Content Include="SampMain\SampDetailBIZ.svc" />
+    <Content Include="SampMain\SampMainBIZ.svc" />
+    <Content Include="analyse\TATAnalyseBIZ.svc" />
+    <Content Include="common\CacheDataBIZ.svc" />
+    <Content Include="dict\DictMitmNoResultViewBIZ.svc" />
+    <Content Include="dict\ItrResCopyBIZ.svc" />
+    <Content Include="dict\CupsBIZ.svc" />
+    <Content Include="dict\IceBoxBIZ.svc" />
+    <Content Include="dict\DicItemHoleBIZ.svc" />
+    <Content Include="dict\DicHoleStatusBIZ.svc" />
+    <Content Include="dict\DicHoleModeBIZ.svc" />
+    <Content Include="dict\CombineSplitBIZ.svc" />
+    <Content Include="dict\BCCuvetteBIZ.svc" />
+    <Content Include="dict\ComReptimeBIZ.svc" />
+    <Content Include="dict\DictModBIZ.svc" />
+    <Content Include="dict\DictCalcBIZ.svc" />
+    <Content Include="dict\DictRackBIZ.svc" />
+    <Content Include="dict\ItemCombineBarcodeBIZ.svc" />
+    <Content Include="dict\SampReturnBIZ.svc" />
+    <Content Include="dict\TubeRackBIZ.svc" />
+    <Content Include="dict\DictJudgeBIZ.svc" />
+    <Content Include="eiasa\ElisaAnalyse.svc" />
+    <Content Include="office\OaTableDetailBIZ.svc" />
+    <Content Include="interfaces\ContrastDefineBIZ.svc" />
+    <Content Include="power\RoleManageProBIZ.svc" />
+    <Content Include="interfaces\HISInterfacesBIZ.svc" />
+    <Content Include="lab\RealTimeResultViewBIZ.svc" />
+    <Content Include="office\OfficeAnnouncement.svc" />
+    <Content Include="office\OfficeShiftDictBIZ.svc" />
+    <Content Include="office\OfficeAttendanceBIZ.svc" />
+    <Content Include="office\OrderTableBIZ.svc" />
+    <Content Include="InstrumentThings\DicItrInstrumentServicingBIZ.svc" />
+    <Content Include="InstrumentThings\DicItrInstrumentRegistrationBIZ.svc" />
+    <Content Include="InstrumentThings\DicItrInstrumentMaintainBIZ.svc" />
+    <Content Include="NoticeManage\NoticeManageBIZ.svc" />
+    <Content Include="power\SysOperationLogBIZ.svc" />
+    <Content Include="power\SystemConfigBIZ.svc" />
+    <Content Include="power\FuncManageProBIZ.svc" />
+    <Content Include="QCSpecific\QcResultBIZ.svc" />
+    <Content Include="QCSpecific\QcMateriaRuleBIZ.svc" />
+    <Content Include="QCSpecific\QcMateriaBIZ.svc" />
+    <Content Include="QCSpecific\QcMateriaDetailBIZ.svc" />
+    <Content Include="QCSpecific\FastAddQcItemBIZ.svc" />
+    <Content Include="quality\FrmParameterBIZ.svc" />
+    <Content Include="SamManage\SampStoreRack.svc" />
+    <Content Include="SamManage\SampStoreDetail.svc" />
+    <Content Include="SamManage\SampStoreRecord.svc" />
+    <Content Include="SamManage\SamSearch.svc" />
+    <Content Include="SamManage\SamDestory.svc" />
+    <Content Include="SamManage\SampStock.svc" />
+    <Content Include="select\ObrResultAntiBIZ.svc" />
+    <Content Include="select\ObrResultBactBIZ.svc" />
+    <Content Include="select\PidReportDetailBIZ.svc" />
+    <Content Include="select\ObrResultDescBIZ.svc" />
+    <Content Include="select\ObrResultBIZ.svc" />
+    <Content Include="select\CombModelSelBIZ.svc" />
+    <Content Include="dict\DictItemUrgentValueBIZ.svc" />
+    <Content Include="stat\StatTempBIZ.svc" />
+    <Content Include="Web.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebService\DCLReport.asmx.cs">
+      <DependentUpon>DCLReport.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\DownLoadData.asmx.cs">
+      <DependentUpon>DownLoadData.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\GetTubeInfoByCombine.asmx.cs">
+      <DependentUpon>GetTubeInfoByCombine.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\UploadData.asmx.cs">
+      <DependentUpon>UploadData.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="analyse\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="common\Web.config" />
+    <Content Include="power\FuncManageBIZ.svc" />
+    <Content Include="power\RoleManageBIZ.svc" />
+    <Content Include="power\UserManageBIZ.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="demo\OrderBIZ.svc" />
+    <Content Include="demo\ProductBIZ.svc" />
+    <Content Include="power\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bac\AN_STypeBIZ.svc" />
+    <Content Include="bac\Ba_RltsBIZ.svc" />
+    <Content Include="bac\BTypeBIZ.svc" />
+    <Content Include="bac\Dict_AntibioBIZ.svc" />
+    <Content Include="bac\Dict_An_SstdBIZ.svc" />
+    <Content Include="bac\Dict_An_StypeBIZ.svc" />
+    <Content Include="bac\Dict_BacteriBIZ.svc" />
+    <Content Include="bac\Dict_BtypeBIZ.svc" />
+    <Content Include="demo\Web.config" />
+    <Content Include="dict\BscripeBIZ.svc" />
+    <Content Include="dict\CheckbBIZ.svc" />
+    <Content Include="dict\ClItemBIZ.svc" />
+    <Content Include="dict\DepartBIZ.svc" />
+    <Content Include="dict\DiagnosBIZ.svc" />
+    <Content Include="dict\DoctorBIZ.svc" />
+    <Content Include="dict\HospitalBIZ.svc" />
+    <Content Include="dict\InspectBIZ.svc" />
+    <Content Include="dict\InstrmtBIZ.svc" />
+    <Content Include="dict\ItemBIZ.svc" />
+    <Content Include="dict\ItemCombineBIZ.svc" />
+    <Content Include="dict\Item_PropBIZ.svc" />
+    <Content Include="dict\Mitm_NoBIZ.svc" />
+    <Content Include="dict\No_TypeBIZ.svc" />
+    <Content Include="dict\OriginBIZ.svc" />
+    <Content Include="dict\SampleBIZ.svc" />
+    <Content Include="dict\S_StateBIZ.svc" />
+    <Content Include="dict\TypeBIZ.svc" />
+    <Content Include="dict\UGRTypeBIZ.svc" />
+    <Content Include="dict\UGR_TypeBIZ.svc" />
+    <Content Include="lab\BacterialInputBIZ.svc" />
+    <Content Include="lab\NewLabSingleBIZ.svc" />
+    <Content Include="quality\CriterionBIZ.svc" />
+    <Content Include="quality\DiversionBIZ.svc" />
+    <Content Include="select\AutoPrintBIZ.svc" />
+    <Content Include="tool\BatchEditBIZ.svc" />
+    <Content Include="tool\EfficacyManageBIZ.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bac\Web.config" />
+    <Content Include="dict\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="dict\DictNobactBIZ.svc" />
+    <Content Include="lab\Web.config" />
+    <Content Include="lab\SetLayoutBIZ.svc" />
+    <Content Include="lab\PatientInput.svc" />
+    <Content Include="report\ReporMainBIZ.svc" />
+    <Content Include="WebService\DownLoadData.asmx" />
+    <Content Include="WebService\GetTubeInfoByCombine.asmx" />
+    <Content Include="WebService\UploadData.asmx" />
+    <Content Include="Whonet\WhonetBIZ.svc" />
+    <Content Include="sw\Web.config" />
+    <Content Include="lab\ViewBIZ.svc" />
+    <Content Include="stat\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="quality\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="report\Web.config" />
+    <Content Include="select\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="sw\SWMianBIZ.svc" />
+    <Content Include="sw\Form1BIZ.svc" />
+    <Content Include="tool\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="analyse\SummaryPrintBIZ.svc" />
+    <Content Include="barcode\BCPrintBIZ.svc" />
+    <Content Include="barcode\BCPatientBIZ.svc" />
+    <Content Include="barcode\BCCNameBIZ.svc" />
+    <Content Include="barcode\BCSignBIZ.svc" />
+    <Content Include="barcode\BCMessageBIZ.svc" />
+    <Content Include="barcode\BCCuvetteBIZ.svc" />
+    <Content Include="barcode\BCCombineBIZ.svc" />
+    <Content Include="common\RunTimeSetting.svc" />
+    <Content Include="dict\DictService.svc" />
+    <Content Include="dict\NobactBIZ.svc" />
+    <Content Include="dict\ConResAdjustBIZ.svc" />
+    <Content Include="eiasa\Web.config" />
+    <Content Include="eiasa\FrmEiasaAnalyse.svc" />
+    <Content Include="lab\PatientEnterService.svc" />
+    <Content Include="report\ReportPrintBIZ.svc" />
+    <Content Include="office\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="select\ItemSortBIZ.svc" />
+    <Content Include="power\SysLogBiz.svc" />
+    <Content Include="barcode\Web.config" />
+    <Content Include="stat\GeneralStatisticsBIZ.svc" />
+    <Content Include="web\css\style.css" />
+    <Content Include="web\images\login.gif">
+    </Content>
+    <Content Include="web\images\progress.gif" />
+    <Content Include="web\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="barcode\BCCombineSplitBIZ.svc" />
+    <Content Include="dict\SamRemarksBIZ.svc" />
+    <Content Include="dict\ReferenceNameBIZ.svc" />
+    <Content Include="dict\FeesTypeBIZ.svc" />
+    <Content Include="interfaces\Web.config" />
+    <Content Include="report\PrintConfigurationBIZ.svc" />
+    <Content Include="report\ServerReportBIZ.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bac\DictAnSstdBIZ.svc" />
+    <Content Include="bac\DictAnStypeBIZ.svc" />
+    <Content Include="bac\DictMediaBIZ.svc" />
+    <Content Include="bac\DictComMediaBIZ.svc" />
+    <Content Include="barcode\BCCuvetteShelfBIZ.svc" />
+    <Content Include="barcode\BCCuvetteShelfRegister.svc" />
+    <Content Include="barcode\BCImageViewBIZ.svc" />
+    <Content Include="barcode\LabcodePrintBIZ.svc" />
+    <Content Include="barcode\SecondStatBIZ.svc" />
+    <Content Include="barcode\BCMonitorBIZ.svc" />
+    <Content Include="CDR\CDRBIZ.svc" />
+    <Content Include="common\CacheServiceBIZ.svc" />
+    <Content Include="dict\DicGetReportTimeBIZ.svc" />
+    <Content Include="dict\EfficacyBIZ.svc" />
+    <Content Include="dict\InstrmtComBIZ.svc" />
+    <Content Include="dict\CombineTimeruleBIZ.svc" />
+    <Content Include="dict\ItemPropBIZ.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="interfaces\AdviceConfirmBIZ.svc" />
+    <Content Include="interfaces\DataInterfaceBIZ.svc" />
+    <Content Include="interfaces\LisDataInterfaceBIZ.svc" />
+    <Content Include="lab\BakItmForResultoBIZ.svc" />
+    <Content Include="lab\CheckBloodTypeBIZ.svc" />
+    <Content Include="lab\PatientEditToolBIZ.svc" />
+    <Content Include="lab\ResultDisplayBIZ.svc" />
+    <Content Include="lab\ResultMerge.svc" />
+    <Content Include="lab\ResultMergeNewBiz.svc" />
+    <Content Include="providers.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quality\QcRuleInstBIZ.svc" />
+    <Content Include="quality\QcMonitorBIZ.svc" />
+    <Content Include="SamManage\SamStore.svc" />
+    <Content Include="CDR\Web.config" />
+    <None Include="DaoConfig.xsd" />
+    <Content Include="Instrmt\Web.config" />
+    <Content Include="InstrumentThings\Web.config" />
+    <Content Include="NoticeManage\Web.config" />
+    <Content Include="Message\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Monitor\Web.config" />
+    <Content Include="MicDict\Web.config" />
+    <Content Include="DataInterfaceCon\Web.config" />
+    <None Include="Properties\PublishProfiles\wcf.pubxml" />
+    <None Include="provider.xsd" />
+    <Content Include="SamManage\Web.config" />
+    <Content Include="SampMain\Web.config" />
+    <Content Include="QCSpecific\Web.config" />
+    <Content Include="Result\Web.config" />
+    <Content Include="ReportCopy\Web.config" />
+    <Content Include="setting\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="QueueNumber\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PluginInterface\Web.config" />
+    <Content Include="SysInterfaceLog\Web.config" />
+    <Content Include="Whonet\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SystemSetting.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PluginInterface\PluginInterface.svc" />
+    <Content Include="web\css\pub.css" />
+    <Content Include="web\images\logo.png" />
+    <Content Include="web\images\logo2.jpg" />
+    <Content Include="web\images\Message.jpg" />
+    <Content Include="web\images\skies.jpg" />
+    <Content Include="web\images\zs_pic2.jpg" />
+    <Content Include="web\images\zs_pic3.png" />
+    <Content Include="web\js\highcharts.js" />
+    <Content Include="web\js\jquery-1.7.2.min.js" />
+    <Content Include="web\js\reportscript.js" />
+    <Content Include="web\LodopFuncs.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.ca\dcl.svr.ca\dcl.svr.ca.csproj">
+      <Project>{e3c730bf-e9a0-4081-b521-0aaab040264f}</Project>
+      <Name>dcl.svr.ca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.dao.interface\dcl.dao.interfaces.csproj">
+      <Project>{6d05d146-6d3f-4905-8d7e-7de11f2a3b53}</Project>
+      <Name>dcl.dao.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.dao.wf\wf.dao.wf.csproj">
+      <Project>{9f13dd42-3310-4df9-a66e-c29a43f2d392}</Project>
+      <Name>wf.dao.wf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Reagent\wf.svr.reagent\wf.svr.reagent\wf.svr.reagent.csproj">
+      <Project>{afe6e23e-9265-4667-a1ec-65e98c9ecf46}</Project>
+      <Name>wf.svr.reagent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ShelfPrint\dcl.svr.touchprint\dcl.svr.touchprint.csproj">
+      <Project>{b134d0a2-b20e-4e4f-ae63-0ddeca8ec9d8}</Project>
+      <Name>dcl.svr.touchprint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkAuxiliary\wf.root.logon\dcl.root.logon.csproj">
+      <Project>{63041308-24f1-4854-be3e-241eb38a318e}</Project>
+      <Name>dcl.root.logon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Analyse\wf.svr.ananlyse\dcl.svr.ananlyse.csproj">
+      <Project>{055af6ea-ac2d-4393-bbbb-de0a6e20a240}</Project>
+      <Name>dcl.svr.ananlyse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Sample\wf.svr.sample\dcl.svr.sample.csproj">
+      <Project>{9eed2687-1ef9-4c9e-a920-94a0b806d4d5}</Project>
+      <Name>dcl.svr.sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Cache\wf.svr.cache\dcl.svr.cache.csproj">
+      <Project>{86a5ce82-01c7-49df-b5ae-051342773452}</Project>
+      <Name>dcl.svr.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dict\wf.svr.dicmic\dcl.svr.dicmic.csproj">
+      <Project>{5b545b1c-fe93-4e19-8552-444a8436aee2}</Project>
+      <Name>dcl.svr.dicmic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dict\wf.svr.dicbasic\dcl.svr.dicbasic.csproj">
+      <Project>{b9806270-2e25-45c3-b2f7-8b84fb010752}</Project>
+      <Name>dcl.svr.dicbasic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Instrmt\wf.svr.instrmt\dcl.svr.instrmt.csproj">
+      <Project>{4d68bf84-cf2f-40e6-a8fa-678ef3f8d140}</Project>
+      <Name>dcl.svr.instrmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.hl7\dcl.hl7.csproj">
+      <Project>{0fe18ee8-a797-4d36-935b-26d089927916}</Project>
+      <Name>dcl.hl7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.DataInterface\Lib.DataInterface.csproj">
+      <Project>{c13e8696-4a00-4d9c-8b51-2cbe78e6485c}</Project>
+      <Name>Lib.DataInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.svr.interfaces\dcl.svr.interfaces.csproj">
+      <Project>{2a6a0733-30f9-44fc-8ce4-6f5784b2c9a4}</Project>
+      <Name>dcl.svr.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ResultCheck\wf.svr.resultcheck\dcl.svr.resultcheck.csproj">
+      <Project>{F1AD76FF-BF03-4E0A-9A1C-588BF96B0825}</Project>
+      <Name>dcl.svr.resultcheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ResultCheck\wf.svr.result\dcl.svr.result.csproj">
+      <Project>{e7c99039-a58b-4c1b-8243-3666b95c97d9}</Project>
+      <Name>dcl.svr.result</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Message\wf.svr.msg\dcl.svr.msg.csproj">
+      <Project>{0a961490-4a41-476f-8047-8e599003138d}</Project>
+      <Name>dcl.svr.msg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.OA\wf.svr.oa\dcl.svr.oa.csproj">
+      <Project>{d6519702-3c1e-495a-8509-ebb9a1ff8d6a}</Project>
+      <Name>dcl.svr.oa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.SysUser\wf.svr.users\dcl.svr.users.csproj">
+      <Project>{85d1fad5-ab22-49b9-91d1-9e5cc3bafc7f}</Project>
+      <Name>dcl.svr.users</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.QualityControl\wf.svr.qc\dcl.svr.qc.csproj">
+      <Project>{477b8818-946d-4dab-88f4-dc408e23b082}</Project>
+      <Name>dcl.svr.qc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.XtraReport\wf.svr.report\dcl.svr.report.csproj">
+      <Project>{e178e729-49b0-4f16-8e75-613be91fc03d}</Project>
+      <Name>dcl.svr.report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.SamStore\wf.svr.samstock\dcl.svr.samstock.csproj">
+      <Project>{e0b450ef-141a-4069-ac57-56b423407e7d}</Project>
+      <Name>dcl.svr.samstock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Select\wf.svr.select\dcl.svr.resultquery.csproj">
+      <Project>{8ffef0fa-3de5-4745-88a3-addbdd37b360}</Project>
+      <Name>dcl.svr.resultquery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Stat\wf.svr.statistical\dcl.svr.statistical.csproj">
+      <Project>{3c16dc86-af21-4985-a55d-4fd77547a3f7}</Project>
+      <Name>dcl.svr.statistical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.AuxiliaryTool\wf.svr.tools\dcl.svr.tools.csproj">
+      <Project>{da39a350-8ac1-4301-827e-3cfcec51da38}</Project>
+      <Name>dcl.svr.tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIS.WCFService\dcl.svr.wcf.csproj">
+      <Project>{03961329-871f-4a03-8879-794ea8a39f64}</Project>
+      <Name>dcl.svr.wcf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="barcode\CA\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8190</DevelopmentServerPort>
+          <DevelopmentServerVPath>/lis</DevelopmentServerVPath>
+          <IISUrl>http://localhost/lis</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

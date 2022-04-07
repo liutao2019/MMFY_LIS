@@ -1,0 +1,24 @@
+类型：Exception 
+时间：2019-09-30 10:04:06
+进程：wf.ClientEntrance.exe
+模块：dcl.client.result.FrmPatEnterNew
+标题：print
+附加信息:
+方法“dcl.client.result.FrmPatInputBaseNew.OnPatPrint(System.String, Boolean)”尝试访问方法“dcl.client.report.DCLReportPrint.BatchPrint(System.Collections.Generic.List`1<dcl.entity.EntityDCLPrintParameter>, System.String)”失败。
+
+类型：Exception 
+时间：2019-09-30 10:11:53
+进程：wf.ClientEntrance.exe
+模块：dcl.client.result.FrmPatEnterNew
+标题：print
+附加信息:
+方法“dcl.client.result.FrmPatInputBaseNew.OnPatPrint(System.String, Boolean)”尝试访问方法“dcl.client.report.DCLReportPrint.BatchPrint(System.Collections.Generic.List`1<dcl.entity.EntityDCLPrintParameter>, System.String)”失败。
+
+类型：Exception 
+时间：2019-09-30 10:12:52
+进程：wf.ClientEntrance.exe
+模块：dcl.client.result.FrmPatEnterNew
+标题：print
+附加信息:
+方法“dcl.client.result.FrmPatInputBaseNew.OnPatPrint(System.String, Boolean)”尝试访问方法“dcl.client.report.DCLReportPrint.BatchPrint(System.Collections.Generic.List`1<dcl.entity.EntityDCLPrintParameter>, System.String)”失败。
+

@@ -1,0 +1,34 @@
+
+select 
+resulto.res_cast_chr,
+(case patients.pat_sex when 1 then '男' when 2 then '女' else '' end) pat_sex
+into #a
+--from patients a,resulto b
+--where a.pat_id=b.res_id 
+--and a.pat_dep_name ='产科门诊' 
+--and b.res_itm_ecd='mcv' 
+--and b.res_flag='1'
+--and b.res_date>'&sDate&'
+--and b.res_date<'&eDate&'
+
+from patients(nolock) left join resulto(nolock) on patients.pat_id = resulto.res_id
+where patients.pat_dep_name in('产科门诊','产科') 
+and pat_ori_id ='107'
+and resulto.res_itm_ecd ='mcv' and res_flag ='1' and 
+patients.pat_date>'&sDate&'
+and patients.pat_date<'&eDate&'
+
+--&where&
+select pat_sex as sex1,count(*) as t into #t from #a
+group by pat_sex
+
+select pat_sex as sex2,count(*) as y into #y from #a
+where res_cast_chr<'82'
+group by pat_sex 
+
+
+select #t.sex1,#t.t,#y.sex2,#y.y from #t,#y
+where #t.sex1=#y.sex2
+
+
+drop table #a,#t,#y

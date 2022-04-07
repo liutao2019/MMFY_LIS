@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE4307AA-0B7D-44B4-821E-C9AAACC0C648}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.samstock</RootNamespace>
+    <AssemblyName>dcl.client.samstock</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Controls, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9" />
+    <Reference Include="AForge.Video, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401" />
+    <Reference Include="AForge.Video.DirectShow, Version=2.0.0.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7" />
+    <Reference Include="dcl.client.cache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.cache.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.control.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.frame.runsetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="dcl.client.sample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="dcl.common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.common.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="dcl.root.logon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Emgu.CV.World, Version=3.4.1.2976, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Lib.EntityCore, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.ProxyFactory, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Lib.WCFClientCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Lis.Client.CASign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="lis.client.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Release\lis.client.control.dll</HintPath>
+    </Reference>
+    <Reference Include="O2S.Components.PDFRender4NET, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmPrintTempBarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrintTempBarCode.Designer.cs">
+      <DependentUpon>FrmPrintTempBarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRackUseStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRackUseStatus.Designer.cs">
+      <DependentUpon>FrmRackUseStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSamDestory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSamDestory.Designer.cs">
+      <DependentUpon>FrmSamDestory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSamSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSamSave.Designer.cs">
+      <DependentUpon>FrmSamSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSamSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSamSearch.Designer.cs">
+      <DependentUpon>FrmSamSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSamStoreRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSamStoreRecord.designer.cs">
+      <DependentUpon>FrmSamStoreRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientsView.Designer.cs">
+      <DependentUpon>FrmPatientsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmPrintTempBarCode.resx">
+      <DependentUpon>FrmPrintTempBarCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRackUseStatus.resx">
+      <DependentUpon>FrmRackUseStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSamDestory.resx">
+      <DependentUpon>FrmSamDestory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSamSave.resx">
+      <DependentUpon>FrmSamSave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSamSearch.resx">
+      <DependentUpon>FrmSamSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSamStoreRecord.resx">
+      <DependentUpon>FrmSamStoreRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientsView.resx">
+      <DependentUpon>FrmPatientsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lis.Framework\dcl.client.control\dcl.client.control.csproj">
+      <Project>{dca635d5-7a04-4fed-b8db-681a2139c42d}</Project>
+      <Name>dcl.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925e3a3-4709-4dec-8649-cb09d9ce7fc8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.client.common\dcl.client.common.csproj">
+      <Project>{75bed5d0-501a-4b11-9b69-8a78192a37d7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.XtraReport\wf.client.report\dcl.client.report.csproj">
+      <Project>{AB6E030C-5B48-418B-8350-87AE06E70B41}</Project>
+      <Name>dcl.client.report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204e3c3d-3215-4092-b159-9e862ee34bc5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSample.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampStoreStatus.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampTubeRack.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicTubeRack.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampStoreDetail.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="64X64.ico" />
+    <Content Include="lis.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

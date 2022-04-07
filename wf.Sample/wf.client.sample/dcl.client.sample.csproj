@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE0F8C48-D861-4323-8AF4-DAB52F3998AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.sample</RootNamespace>
+    <AssemblyName>dcl.client.sample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309</CodeAnalysisRules>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Controls, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.0.0.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CardReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\CardReader.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.dicmic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.dicmic.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.entity.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Emgu.CV.World, Version=3.4.1.2976, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="HQ.BPPrint, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\HQ.BPPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="HQ.LabellerPrint, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\HQ.LabellerPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SpeechLib">
+      <HintPath>..\..\Lis.Message\lis.client.messageclient\obj\Debug\Interop.SpeechLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Lib.DAC, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.DAC.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.ProxyFactory, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Lib.ProxyFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.WCFClientCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.WCFClientCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Lis.Client.CASign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="lis.client.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.ConnectionUI, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="O2S.Components.PDFRender4NET, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarcodeConfig.cs" />
+    <Compile Include="ConfirmByCard.cs" />
+    <Compile Include="Controls\BCManualYG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BCManualYG.Designer.cs">
+      <DependentUpon>BCManualYG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BCSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BCSearchControl.Designer.cs">
+      <DependentUpon>BCSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientControlForMed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientControlForMed.Designer.cs">
+      <DependentUpon>PatientControlForMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QueueNumberControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\QueueNumberControl.Designer.cs">
+      <DependentUpon>QueueNumberControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectIdentifierType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectIdentifierType.Designer.cs">
+      <DependentUpon>SelectIdentifierType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectPatType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectPatType.Designer.cs">
+      <DependentUpon>SelectPatType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StatusColorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\StatusColorPanel.Designer.cs">
+      <DependentUpon>StatusColorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BarcodeException.cs" />
+    <Compile Include="Core\Print\TJPaitent.cs" />
+    <Compile Include="Core\Print\ZeBraPrinter.cs" />
+    <Compile Include="Core\Step\SampleRegisterStep.cs" />
+    <Compile Include="Core\Step\SelectStep.cs" />
+    <Compile Include="Core\Step\SendStep.cs" />
+    <Compile Include="Core\Step\ReceiveStep.cs" />
+    <Compile Include="Controls\BCConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BCConfirm.Designer.cs">
+      <DependentUpon>BCConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BCManual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BCManual.Designer.cs">
+      <DependentUpon>BCManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AdviceTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AdviceTime.Designer.cs">
+      <DependentUpon>AdviceTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BCPrintControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BCPrintControl.Designer.cs">
+      <DependentUpon>BCPrintControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateTimeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTimeControl.Designer.cs">
+      <DependentUpon>DateTimeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Step\PrintStep.cs" />
+    <Compile Include="Core\Step\SamplingStep.cs" />
+    <Compile Include="Core\Step\AdviceStep.cs" />
+    <Compile Include="DateTimeRange.cs" />
+    <Compile Include="FrmBCManualYGPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCManualYGPrint.Designer.cs">
+      <DependentUpon>FrmBCManualYGPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBCMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCMonitor.Designer.cs">
+      <DependentUpon>FrmBCMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBCPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCPrint.Designer.cs">
+      <DependentUpon>FrmBCPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Print\Inpatient.cs" />
+    <Compile Include="Core\Print\OutPaitent.cs" />
+    <Compile Include="Core\Print\IPrint.cs" />
+    <Compile Include="Core\Step\IStep.cs" />
+    <Compile Include="Core\Step\IStepable.cs" />
+    <Compile Include="Core\Print\Manual.cs" />
+    <Compile Include="FrmPubEvaluateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPubEvaluateManager.Designer.cs">
+      <DependentUpon>FrmPubEvaluateManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCopyBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCopyBarcode.Designer.cs">
+      <DependentUpon>FrmCopyBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManualQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManualQuery.Designer.cs">
+      <DependentUpon>FrmManualQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBCQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCQuery.Designer.cs">
+      <DependentUpon>FrmBCQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBCSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCSearch.Designer.cs">
+      <DependentUpon>FrmBCSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloodIMAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloodIMAQ.Designer.cs">
+      <DependentUpon>frmBloodIMAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloodPicViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloodPicViewer.Designer.cs">
+      <DependentUpon>frmBloodPicViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckTime.Designer.cs">
+      <DependentUpon>FrmCheckTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHISCheckPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHISCheckPassword.Designer.cs">
+      <DependentUpon>FrmHISCheckPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCombineManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCombineManager.Designer.cs">
+      <DependentUpon>FrmCombineManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecordBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecordBarcode.Designer.cs">
+      <DependentUpon>FrmRecordBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReturnMessageV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReturnMessageV2.Designer.cs">
+      <DependentUpon>FrmReturnMessageV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSampMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSampMonitor.Designer.cs">
+      <DependentUpon>FrmSampMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOuterCourtRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOuterCourtRegister.Designer.cs">
+      <DependentUpon>FrmOuterCourtRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecondSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecondSign.Designer.cs">
+      <DependentUpon>FrmSecondSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecondStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecondStat.Designer.cs">
+      <DependentUpon>FrmSecondStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSimpleStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSimpleStatistics.Designer.cs">
+      <DependentUpon>FrmSimpleStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerifOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerifOrder.Designer.cs">
+      <DependentUpon>FrmVerifOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmBCSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCSignIn.Designer.cs">
+      <DependentUpon>FrmBCSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Step\ReachStep.cs" />
+    <Compile Include="Core\Step\StepFactory.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchControl.Designer.cs">
+      <DependentUpon>SearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignInfo.cs" />
+    <Compile Include="FrmReturnBarcodeV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReturnBarcodeV2.Designer.cs">
+      <DependentUpon>FrmReturnBarcodeV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrintConfigurationV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrintConfigurationV2.Designer.cs">
+      <DependentUpon>FrmPrintConfigurationV2.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\BCConfirm.resx">
+      <DependentUpon>BCConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BCManual.resx">
+      <DependentUpon>BCManual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BCManualYG.resx">
+      <DependentUpon>BCManualYG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BCPrintControl.resx">
+      <DependentUpon>BCPrintControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AdviceTime.resx">
+      <DependentUpon>AdviceTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DateTimeControl.resx">
+      <DependentUpon>DateTimeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BCSearchControl.resx">
+      <DependentUpon>BCSearchControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientControlForMed.resx">
+      <DependentUpon>PatientControlForMed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\QueueNumberControl.resx">
+      <DependentUpon>QueueNumberControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SelectIdentifierType.resx">
+      <DependentUpon>SelectIdentifierType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SelectPatType.resx">
+      <DependentUpon>SelectPatType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StatusColorPanel.resx">
+      <DependentUpon>StatusColorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCManualYGPrint.resx">
+      <DependentUpon>FrmBCManualYGPrint.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmBCManualYGPrint1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCPrint.resx">
+      <DependentUpon>FrmBCPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPubEvaluateManager.resx">
+      <DependentUpon>FrmPubEvaluateManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCopyBarcode.resx">
+      <DependentUpon>FrmCopyBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManualQuery.resx">
+      <DependentUpon>FrmManualQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCQuery.resx">
+      <DependentUpon>FrmBCQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCSearch.resx">
+      <DependentUpon>FrmBCSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCSignIn.resx">
+      <DependentUpon>FrmBCSignIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCombineManager.resx">
+      <DependentUpon>FrmCombineManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecordBarcode.resx">
+      <DependentUpon>FrmRecordBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSampMonitor.resx">
+      <DependentUpon>FrmSampMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOuterCourtRegister.resx">
+      <DependentUpon>FrmOuterCourtRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSimpleStatistics.resx">
+      <DependentUpon>FrmSimpleStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerifOrder.resx">
+      <DependentUpon>FrmVerifOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSample.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityKeyValue.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityQueueNumber.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampDetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampMain.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampProcessDetial.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCheckPurpose.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombine.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombineDetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombineTimeRule.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicDoctor.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicInstrument.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItemSample.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmItem.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmRefdetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmReftype.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItrCombine.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMachineCode.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntibio.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntidetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntitype.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicBacteria.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicBacttype.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicroscope.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicSmear.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicNobactCom.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicOrigin.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubDept.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubEvaluate.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubIcd.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubIdent.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubInsurance.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubOrganize.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubProfession.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicResAdjust.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampRemark.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSState.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicTestTube.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicUtgentValue.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityReport.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityRequest.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityResponse.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampQC.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampRegister.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.FieldMapAttribute.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\applications_internet.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\next_gray.png" />
+    <Content Include="images\print.png" />
+    <Content Include="images\print_gray.png" />
+    <Content Include="images\receive.png" />
+    <Content Include="images\receive_gray.png" />
+    <Content Include="images\right.png" />
+    <Content Include="images\right_gray.png" />
+    <Content Include="images\sample.png" />
+    <Content Include="images\sample_gray.png" />
+    <Content Include="images\send.png" />
+    <Content Include="images\send_gray.png" />
+    <Content Include="images\sign.png" />
+    <Content Include="images\sign_gray.png" />
+    <Content Include="images\关闭.png" />
+    <Content Include="images\取消.png" />
+    <Content Include="images\审核.png" />
+    <Content Include="images\审核灰色.png" />
+    <Content Include="lib\Microsoft.Data.ConnectionUI.Dialog.dll" />
+    <Content Include="Logo_ico.ico" />
+    <None Include="Resources\叫号.png" />
+    <None Include="Resources\二次.png" />
+    <None Include="Resources\签收.png" />
+    <None Include="Resources\送达.png" />
+    <None Include="Resources\收取.png" />
+    <None Include="Resources\采集.png" />
+    <None Include="Resources\体检.png" />
+    <None Include="Resources\手工.png" />
+    <None Include="Resources\门诊.png" />
+    <None Include="Resources\住院.png" />
+    <EmbeddedResource Include="FrmBCMonitor.resx">
+      <DependentUpon>FrmBCMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloodIMAQ.resx">
+      <DependentUpon>frmBloodIMAQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloodPicViewer.resx">
+      <DependentUpon>frmBloodPicViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckTime.resx">
+      <DependentUpon>FrmCheckTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHISCheckPassword.resx">
+      <DependentUpon>FrmHISCheckPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReturnMessageV2.resx">
+      <DependentUpon>FrmReturnMessageV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecondSign.resx">
+      <DependentUpon>FrmSecondSign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecondStat.resx">
+      <DependentUpon>FrmSecondStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchControl.resx">
+      <DependentUpon>SearchControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zh-CHS\Microsoft.Data.ConnectionUI.Dialog.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReturnBarcodeV2.resx">
+      <DependentUpon>FrmReturnBarcodeV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrintConfigurationV2.resx">
+      <DependentUpon>FrmPrintConfigurationV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="lib\Microsoft.Data.ConnectionUI.dll" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.FrameworkAuxiliary\wf.root.logon\dcl.root.logon.csproj">
+      <Project>{63041308-24f1-4854-be3e-241eb38a318e}</Project>
+      <Name>dcl.root.logon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Analyse\wf.client.ananlyse\dcl.client.ananlyse.csproj">
+      <Project>{72b674e4-ca49-4c92-b52f-8d0abde9db0f}</Project>
+      <Name>dcl.client.ananlyse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Cache\wf.Client.Cache\dcl.client.cache.csproj">
+      <Project>{f07a75ec-fa9a-41f9-a95e-c9378b92f431}</Project>
+      <Name>dcl.client.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\dcl.client.control\dcl.client.control.csproj">
+      <Project>{dca635d5-7a04-4fed-b8db-681a2139c42d}</Project>
+      <Name>dcl.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925e3a3-4709-4dec-8649-cb09d9ce7fc8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.client.common\dcl.client.common.csproj">
+      <Project>{75bed5d0-501a-4b11-9b69-8a78192a37d7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\LIS.Client.RunTimeSetting\dcl.client.frame.runsetting.csproj">
+      <Project>{96ec3c38-286b-448c-8237-f7fbee984e43}</Project>
+      <Name>dcl.client.frame.runsetting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.interfaces\dcl.interfaces.csproj">
+      <Project>{3e651c14-8d3c-494b-a4ea-95a25bd0398f}</Project>
+      <Name>dcl.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Message\wf.client.notifyclient\dcl.client.notifyclient.csproj">
+      <Project>{9a259846-81ea-40de-a650-e13024f41af5}</Project>
+      <Name>dcl.client.notifyclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.SysUser\wf.client.users\dcl.client.users.csproj">
+      <Project>{91e5da3e-b7ad-44b1-9b47-a811b8bed3ba}</Project>
+      <Name>dcl.client.users</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.XtraReport\wf.client.report\dcl.client.report.csproj">
+      <Project>{ab6e030c-5b48-418b-8350-87ae06e70b41}</Project>
+      <Name>dcl.client.report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204e3c3d-3215-4092-b159-9e862ee34bc5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

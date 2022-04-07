@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1AD76FF-BF03-4E0A-9A1C-588BF96B0825}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.svr.resultcheck</RootNamespace>
+    <AssemblyName>dcl.svr.resultcheck</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.dao.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WCF\lis.wcf\bin\dcl.dao.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.biz.CASign, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Lib.DataInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.DataInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.EntityCore, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.EntityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.ProxyFactory, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.ProxyFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractAuditClass.cs" />
+    <Compile Include="AuditConfig.cs" />
+    <Compile Include="Checker\CheckerAuditAndReportInfo.cs" />
+    <Compile Include="Checker\CheckerAuditAndReportUserinfoConsistent.cs" />
+    <Compile Include="Checker\CheckerCallBackPatient.cs" />
+    <Compile Include="Checker\CheckerClItem2.cs" />
+    <Compile Include="Checker\CheckerEfficacy.cs" />
+    <Compile Include="Checker\CheckerHistoryResultCompare.cs" />
+    <Compile Include="Checker\CheckerItemSample.cs" />
+    <Compile Include="Checker\CheckerItrMaintainance.cs" />
+    <Compile Include="Checker\CheckerLostItem.cs" />
+    <Compile Include="Checker\CheckerNotContaintItem.cs" />
+    <Compile Include="Checker\CheckerPatInfo.cs" />
+    <Compile Include="Checker\CheckerPatState.cs" />
+    <Compile Include="Checker\CheckerQCRule.cs" />
+    <Compile Include="Checker\CheckerRecheckInfo.cs" />
+    <Compile Include="Checker\CheckerRef.cs" />
+    <Compile Include="Checker\CheckerReportTimeInfo.cs" />
+    <Compile Include="Checker\CheckerResultDataType.cs" />
+    <Compile Include="Checker\CheckerSpcialTimeInfo.cs" />
+    <Compile Include="Checker\CheckerUrgentMsg.cs" />
+    <Compile Include="Checker\CheckerZeroItem.cs" />
+    <Compile Include="Checker\CheckPatInfo.cs" />
+    <Compile Include="Checker\CheckerUndoAuditExpired.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="DataUpdater.cs" />
+    <Compile Include="IAuditUpdater.cs" />
+    <Compile Include="LabAuditBiz.cs" />
+    <Compile Include="IAuditChecker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefGetter.cs" />
+    <Compile Include="DataUpload\SendDataToMid.cs" />
+    <Compile Include="Updater\CASignature.cs" />
+    <Compile Include="Updater\ClearCallBackMessage.cs" />
+    <Compile Include="Updater\ClearPatSendFlag.cs" />
+    <Compile Include="Updater\CreateSpecialComment.cs" />
+    <Compile Include="Updater\SendCriticalMessage.cs" />
+    <Compile Include="Updater\SendUrgentMessage.cs" />
+    <Compile Include="Updater\UpdateBarcodeLog.cs" />
+    <Compile Include="Updater\UpdateOperatorNTime.cs" />
+    <Compile Include="Updater\UpdatePatientsInfo.cs" />
+    <Compile Include="Updater\UpdatePatientsMi.cs" />
+    <Compile Include="Updater\UpdateResNotComItemData.cs" />
+    <Compile Include="Updater\UpdateResulto.cs" />
+    <Compile Include="Updater\UpdateReportInterpretation.cs" />
+    <Compile Include="Updater\UpdateResultoRefExp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.Dao\wf.dao.interface\dcl.dao.interfaces.csproj">
+      <Project>{6D05D146-6D3F-4905-8D7E-7DE11F2A3B53}</Project>
+      <Name>dcl.dao.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkAuxiliary\wf.Dac\Lib.DAC.csproj">
+      <Project>{5d945396-f128-44d0-9289-8a46fd76fdf0}</Project>
+      <Name>Lib.DAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkAuxiliary\wf.root.logon\dcl.root.logon.csproj">
+      <Project>{63041308-24f1-4854-be3e-241eb38a318e}</Project>
+      <Name>dcl.root.logon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Sample\wf.svr.sample\dcl.svr.sample.csproj">
+      <Project>{9EED2687-1EF9-4C9E-A920-94A0B806D4D5}</Project>
+      <Name>dcl.svr.sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Cache\wf.svr.cache\dcl.svr.cache.csproj">
+      <Project>{86a5ce82-01c7-49df-b5ae-051342773452}</Project>
+      <Name>dcl.svr.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.svr.interfaces\dcl.svr.interfaces.csproj">
+      <Project>{2A6A0733-30F9-44FC-8CE4-6F5784B2C9A4}</Project>
+      <Name>dcl.svr.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Message\wf.svr.msg\dcl.svr.msg.csproj">
+      <Project>{0a961490-4a41-476f-8047-8e599003138d}</Project>
+      <Name>dcl.svr.msg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4A0F5DFF-9EE1-4A37-9D15-03CB95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

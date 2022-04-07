@@ -1,0 +1,29 @@
+select 
+--'&sDate&' 开始日期,'&eDate&' 结束日期, 
+patients.pat_apply_date 标本接收时间,pat_sid 样本号,
+pat_name 姓名,(case patients.pat_sex when 1 then '男' when 2 then '女' else '' end) 性别,
+dbo.getAge(patients.pat_age_exp) 年龄,
+patients.pat_bed_no 床号,
+pat_dep_name 科室名称,pat_diag 诊断,
+dict_sample.sam_name  标本类型,
+--cast('&sDate&'as char(10)) + ' ~ ' + cast('&eDate&' as char(10)) as 日期范围,
+--getdate() 打印日期,
+(case isnull(cs_rlts.bsr_cname,'') when '' then dict_bacteri.bac_cname else cs_rlts.bsr_cname end) 结果,
+pat_report_date 报告时间
+--pat_date 报告时间
+from patients 
+left outer join cs_rlts on cs_rlts.bsr_id=patients.pat_id
+left outer join ba_rlts on ba_rlts.bar_id=patients.pat_id
+left join patients_mi on patients.pat_id=patients_mi.pat_id
+left outer join dict_sample on patients.pat_sam_id=dict_sample.sam_id
+left join dict_combine on patients_mi.pat_com_id=dict_combine.com_id
+left join dict_depart on patients.pat_dep_id=dict_depart.dep_id
+left join dict_bacteri on bac_id=ba_rlts.bar_bid
+left join dict_instrmt on dict_instrmt.itr_id=patients.pat_itr_id
+where 1=1  
+and len(patients.pat_sid) > '3'
+and patients.pat_apply_date>'&sDate&' and patients.pat_apply_date<'&eDate&'
+&subWhere&  
+and patients.pat_itr_id in('10051','10040') 
+and patients.pat_flag>='2' 
+order by cast(patients.pat_sid as bigint),patients.pat_apply_date,patients.pat_itr_id

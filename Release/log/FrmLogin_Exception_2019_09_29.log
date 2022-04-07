@@ -1,0 +1,71 @@
+
+时间：2019-09-29 15:06:22
+进程：wf.ClientEntrance.exe
+模块：FrmLogin   方法：getReportsFile   行数：806
+标题：下载报表文件遇到错误
+附加信息：
+System.ArgumentException: File not found.
+   at DevExpress.XtraReports.UI.XtraReport.LoadLayout(String fileName)
+   at wf.ClientEntrance.FrmLogin.getReportsFile() in D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:line 801
+
+
+时间：2019-09-29 16:44:16
+进程：wf.ClientEntrance.exe
+模块：FrmLogin   方法：getReportsFile   行数：806
+标题：下载报表文件遇到错误
+附加信息：
+System.ArgumentException: File not found.
+   at DevExpress.XtraReports.UI.XtraReport.LoadLayout(String fileName)
+   at wf.ClientEntrance.FrmLogin.getReportsFile() in D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:line 801
+
+
+时间：2019-09-29 16:47:30
+进程：wf.ClientEntrance.exe
+模块：FrmLogin   方法：getReportsFile   行数：806
+标题：下载报表文件遇到错误
+附加信息：
+System.ArgumentException: File not found.
+   at DevExpress.XtraReports.UI.XtraReport.LoadLayout(String fileName)
+   at wf.ClientEntrance.FrmLogin.getReportsFile() in D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:line 801
+
+
+时间：2019-09-29 16:56:05
+进程：wf.ClientEntrance.exe
+模块：FrmLogin   方法：FrmLogin_Load   行数：152
+标题：
+附加信息：
+System.ServiceModel.EndpointNotFoundException: 没有终结点在侦听可以接受消息的 http://127.0.0.1:8089/power/SystemConfigBIZ.svc。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。 ---> System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 dcl.servececontract.ISystemConfig.GetSysParaCaChe()
+   在 dcl.client.cache.CacheSysconfig.Refresh() 位置 D:\WiseFly\Source Code\Lis.Release\wf.Cache\wf.Client.Cache\CacheSysconfig.cs:行号 50
+   在 dcl.client.cache.CacheSysconfig..ctor() 位置 D:\WiseFly\Source Code\Lis.Release\wf.Cache\wf.Client.Cache\CacheSysconfig.cs:行号 41
+   在 dcl.client.cache.CacheSysconfig.get_Current() 位置 D:\WiseFly\Source Code\Lis.Release\wf.Cache\wf.Client.Cache\CacheSysconfig.cs:行号 26
+   在 dcl.client.common.ConfigHelper.GetSysConfigValueWithoutLogin(String configCode) 位置 D:\WiseFly\Source Code\Lis.Release\wf.FrameworkCore\lis.client.common\ConfigHelper.cs:行号 193
+   在 wf.ClientEntrance.FrmLogin.CASignRead() 位置 D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:行号 880
+   在 wf.ClientEntrance.FrmLogin.FrmLogin_Load(Object sender, EventArgs e) 位置 D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:行号 147
+
+
+时间：2019-09-29 16:56:28
+进程：wf.ClientEntrance.exe
+模块：FrmLogin   方法：getReportsFile   行数：806
+标题：下载报表文件遇到错误
+附加信息：
+System.ArgumentException: File not found.
+   at DevExpress.XtraReports.UI.XtraReport.LoadLayout(String fileName)
+   at wf.ClientEntrance.FrmLogin.getReportsFile() in D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:line 801
+

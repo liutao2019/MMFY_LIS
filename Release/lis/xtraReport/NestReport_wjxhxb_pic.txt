@@ -1,0 +1,13 @@
+SELECT top 3 pres_base64 图像源,
+       pres_chr 图片,
+       pres_it_ecd 图片项目名称 
+FROM dbo.resulto_p
+inner join patients on patients.pat_id = resulto_p.pres_id
+where 1=1 and pres_flag='1'
+--and pres_it_ecd in ('RBC','PLTF','PLT','WBC','HRBC','HPLT','SDIFF','SBASO','SRET') --and pres_it_ecd in ('WBC Fsc','RBC Fsc','Image')
+&where&
+--and pres_id = '1004920100402581' 
+--order by pres_key --desc
+--and patients.pat_id='1004420161031523'
+order by pres_it_ecd desc 
+--NestReport_szslfz_Rres

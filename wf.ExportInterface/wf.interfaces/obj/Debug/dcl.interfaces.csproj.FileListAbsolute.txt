@@ -1,0 +1,12 @@
+D:\WiseFly\Source Code\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.interfaces.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.interfaces.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.dll
+D:\WiseFly\Source Code\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.interfaces.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.interfaces.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.pdb

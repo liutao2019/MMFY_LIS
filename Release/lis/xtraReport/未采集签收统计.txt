@@ -1,0 +1,18 @@
+select  
+bc_patients.bc_bar_code  条码号,
+bc_patients.bc_name     姓名,
+bc_patients.bc_sex      性别,
+bc_patients.bc_age      年龄,
+bc_patients.bc_in_no    病人ID,
+bc_patients.bc_his_name  项目名称,
+bc_patients.bc_blood_date  抽血时间,
+bc_patients.bc_print_date  打印时间,
+bc_patients.bc_print_code  打印工号,
+bc_patients.bc_d_name        科室,
+bc_patients.bc_receiver_date  接收日期
+from bc_patients 
+where  bc_patients.bc_date>='&sDate&' and bc_patients.bc_date<='&eDate&'
+and bc_patients.bc_ori_id='108'
+and bc_patients.bc_blood_code is null
+and bc_patients.bc_receiver_flag='1'
+order by bc_patients.bc_d_name,bc_patients.bc_name

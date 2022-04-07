@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCA635D5-7A04-4FED-B8DB-681A2139C42D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.control</RootNamespace>
+    <AssemblyName>dcl.client.control</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.client.cache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.cache.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.wcf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.wcf.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.entity.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lis.Client.CASign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseButtonForm\BaseButtonFormEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseButtonForm\BaseButtonFormEx.designer.cs">
+      <DependentUpon>BaseButtonFormEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="core\DclPopSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="core\DclPopSelect.Designer.cs">
+      <DependentUpon>DclPopSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\AutoFixSonPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\MetrolButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\NumKeyBord\NumKeyBord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\NumKeyBord\NumKeyBord.designer.cs">
+      <DependentUpon>NumKeyBord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\RoundedRectangleF.cs" />
+    <Compile Include="CustomControl\RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\RoundPanelStatusCommon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\RoundPanelStatusCommon.designer.cs">
+      <DependentUpon>RoundPanelStatusCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\ShowDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomControl\ShowDialogForm.designer.cs">
+      <DependentUpon>ShowDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\TextBoxBase\ColorTable.cs" />
+    <Compile Include="CustomControl\TextBoxBase\NumberTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\TextBoxBase\TextBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\XRails_Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\XRails_TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\XRails_TitleLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomForm.Designer.cs">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\MetrolButtonEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\MetrolButtonEx.designer.cs">
+      <DependentUpon>MetrolButtonEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSum\FrmItmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSum\FrmItmInfo.Designer.cs">
+      <DependentUpon>FrmItmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSum\FrmLisKnowage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSum\FrmLisKnowage.Designer.cs">
+      <DependentUpon>FrmLisKnowage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSum\FrmReportComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSum\FrmReportComment.Designer.cs">
+      <DependentUpon>FrmReportComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSum\FrmReportSumInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSum\FrmReportSumInfo.designer.cs">
+      <DependentUpon>FrmReportSumInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIC\SelectDefItmResultTips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MIC\SelectDefItmResultTips.designer.cs">
+      <DependentUpon>SelectDefItmResultTips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIC\SelectDicAntibioType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MIC\SelectDicAntibioType.designer.cs">
+      <DependentUpon>SelectDicAntibioType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIC\SelectDicMicTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MIC\SelectDicMicTemplate.designer.cs">
+      <DependentUpon>SelectDicMicTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundPanelControl\UcRoundPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoundPanelControl\UcRoundPanel.Designer.cs">
+      <DependentUpon>UcRoundPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicCheckPurpose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicCheckPurpose.designer.cs">
+      <DependentUpon>SelectDicCheckPurpose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaClaimant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaClaimant.Designer.cs">
+      <DependentUpon>SelectDicReaClaimant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaDept.Designer.cs">
+      <DependentUpon>SelectDicReaDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaGroup.Designer.cs">
+      <DependentUpon>SelectDicReaGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaProduct.Designer.cs">
+      <DependentUpon>SelectDicReaProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaReturn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaReturn.Designer.cs">
+      <DependentUpon>SelectDicReaReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaSetting.Designer.cs">
+      <DependentUpon>SelectDicReaSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaStoreCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaStoreCondition.Designer.cs">
+      <DependentUpon>SelectDicReaStoreCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaStorePosition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaStorePosition.Designer.cs">
+      <DependentUpon>SelectDicReaStorePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaSupplier.Designer.cs">
+      <DependentUpon>SelectDicReaSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReaUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReaUnit.Designer.cs">
+      <DependentUpon>SelectDicReaUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicSex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicSex.Designer.cs">
+      <DependentUpon>SelectDicSex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicMicAntibio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicMicAntibio.Designer.cs">
+      <DependentUpon>SelectDicMicAntibio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicMicBacteria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicMicBacteria.Designer.cs">
+      <DependentUpon>SelectDicMicBacteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubEvaluate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubEvaluate.Designer.cs">
+      <DependentUpon>SelectDicPubEvaluate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicCheckType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicCheckType.Designer.cs">
+      <DependentUpon>SelectDicCheckType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicTemperature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicTemperature.Designer.cs">
+      <DependentUpon>SelectDicTemperature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicInstrument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicInstrument.designer.cs">
+      <DependentUpon>SelectDicInstrument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicMicAntitype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicMicAntitype.Designer.cs">
+      <DependentUpon>SelectDicMicAntitype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicHarvester.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicHarvester.Designer.cs">
+      <DependentUpon>SelectDicHarvester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicSample.Designer.cs">
+      <DependentUpon>SelectDicSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubOrganize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubOrganize.designer.cs">
+      <DependentUpon>SelectDicPubOrganize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubSource.Designer.cs">
+      <DependentUpon>SelectDicPubSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubProfession.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubProfession.Designer.cs">
+      <DependentUpon>SelectDicPubProfession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubDept.Designer.cs">
+      <DependentUpon>SelectDicPubDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicSampStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicSampStatus.Designer.cs">
+      <DependentUpon>SelectDicSampStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubDoctor.designer.cs">
+      <DependentUpon>SelectDicPubDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubInsurance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicLabProfession.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubInsurance.Designer.cs">
+      <DependentUpon>SelectDicPubInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicLabProfession.Designer.cs">
+      <DependentUpon>SelectDicLabProfession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubIdent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubIdent.Designer.cs">
+      <DependentUpon>SelectDicPubIdent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicPubIcd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicPubIcd.Designer.cs">
+      <DependentUpon>SelectDicPubIcd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicMicBacttype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicMicBacttype.Designer.cs">
+      <DependentUpon>SelectDicMicBacttype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicTubeRack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicTubeRack.Designer.cs">
+      <DependentUpon>SelectDicTubeRack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicTestTube.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicTestTube.Designer.cs">
+      <DependentUpon>SelectDicTestTube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicSampRemark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicSampRemark.Designer.cs">
+      <DependentUpon>SelectDicSampRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicItmReftype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicItmReftype.Designer.cs">
+      <DependentUpon>SelectDicItmReftype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicItmItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicItmItem.Designer.cs">
+      <DependentUpon>SelectDicItmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicCombine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicCombine.Designer.cs">
+      <DependentUpon>SelectDicCombine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDictGetReportTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDictGetReportTime.designer.cs">
+      <DependentUpon>SelectDictGetReportTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicReportStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicReportStat.Designer.cs">
+      <DependentUpon>SelectDicReportStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicMicroscope.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicMicroscope.Designer.cs">
+      <DependentUpon>SelectDicMicroscope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDictSysUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDictSysUser.Designer.cs">
+      <DependentUpon>SelectDictSysUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDicTypeChecks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDicTypeChecks.Designer.cs">
+      <DependentUpon>SelectDicTypeChecks.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseButtonForm\BaseButtonFormEx.resx">
+      <DependentUpon>BaseButtonFormEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="core\DclPopSelect.resx">
+      <DependentUpon>DclPopSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\NumKeyBord\NumKeyBord.resx">
+      <DependentUpon>NumKeyBord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\RoundPanel.resx">
+      <DependentUpon>RoundPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\RoundPanelStatusCommon.resx">
+      <DependentUpon>RoundPanelStatusCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\ShowDialogForm.resx">
+      <DependentUpon>ShowDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomForm.resx">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\MetrolButtonEx.resx">
+      <DependentUpon>MetrolButtonEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSum\FrmItmInfo.resx">
+      <DependentUpon>FrmItmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSum\FrmLisKnowage.resx">
+      <DependentUpon>FrmLisKnowage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSum\FrmReportComment.resx">
+      <DependentUpon>FrmReportComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSum\FrmReportSumInfo.resx">
+      <DependentUpon>FrmReportSumInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIC\SelectDefItmResultTips.resx">
+      <DependentUpon>SelectDefItmResultTips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIC\SelectDicAntibioType.resx">
+      <DependentUpon>SelectDicAntibioType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIC\SelectDicMicTemplate.resx">
+      <DependentUpon>SelectDicMicTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RoundPanelControl\UcRoundPanel.resx">
+      <DependentUpon>UcRoundPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicCheckPurpose.resx">
+      <DependentUpon>SelectDicCheckPurpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicReaClaimant.resx">
+      <DependentUpon>SelectDicReaClaimant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicReaGroup.resx">
+      <DependentUpon>SelectDicReaGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicSex.resx">
+      <DependentUpon>SelectDicSex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicMicAntibio.resx">
+      <DependentUpon>SelectDicMicAntibio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicMicBacteria.resx">
+      <DependentUpon>SelectDicMicBacteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubEvaluate.resx">
+      <DependentUpon>SelectDicPubEvaluate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicCheckType.resx">
+      <DependentUpon>SelectDicCheckType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicTemperature.resx">
+      <DependentUpon>SelectDicTemperature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicInstrument.resx">
+      <DependentUpon>SelectDicInstrument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicMicAntitype.resx">
+      <DependentUpon>SelectDicMicAntitype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicHarvester.resx">
+      <DependentUpon>SelectDicHarvester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicSample.resx">
+      <DependentUpon>SelectDicSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubOrganize.resx">
+      <DependentUpon>SelectDicPubOrganize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubSource.resx">
+      <DependentUpon>SelectDicPubSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubProfession.resx">
+      <DependentUpon>SelectDicPubProfession.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubDept.resx">
+      <DependentUpon>SelectDicPubDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicSampStatus.resx">
+      <DependentUpon>SelectDicSampStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubDoctor.resx">
+      <DependentUpon>SelectDicPubDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubInsurance.resx">
+      <DependentUpon>SelectDicPubInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubIdent.resx">
+      <DependentUpon>SelectDicPubIdent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicPubIcd.resx">
+      <DependentUpon>SelectDicPubIcd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicMicBacttype.resx">
+      <DependentUpon>SelectDicMicBacttype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicTubeRack.resx">
+      <DependentUpon>SelectDicTubeRack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicTestTube.resx">
+      <DependentUpon>SelectDicTestTube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicLabProfession.resx">
+      <DependentUpon>SelectDicLabProfession.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicSampRemark.resx">
+      <DependentUpon>SelectDicSampRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicItmReftype.resx">
+      <DependentUpon>SelectDicItmReftype.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicItmItem.resx">
+      <DependentUpon>SelectDicItmItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicCombine.resx">
+      <DependentUpon>SelectDicCombine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDictGetReportTime.resx">
+      <DependentUpon>SelectDictGetReportTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicReportStat.resx">
+      <DependentUpon>SelectDicReportStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicMicroscope.resx">
+      <DependentUpon>SelectDicMicroscope.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDictSysUser.resx">
+      <DependentUpon>SelectDictSysUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDicTypeChecks.resx">
+      <DependentUpon>SelectDicTypeChecks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4A0F5DFF-9EE1-4A37-9D15-03CB95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925e3a3-4709-4dec-8649-cb09d9ce7fc8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lis.client.common\dcl.client.common.csproj">
+      <Project>{75bed5d0-501a-4b11-9b69-8a78192a37d7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lis.common\dcl.common.csproj">
+      <Project>{50812891-69F9-4766-B09B-D2FABDF6354D}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,99 @@
+
+
+
+ select patients.pat_dep_name,
+ count(*) as pat_count_rc  into #a
+ from patients 
+left join dict_depart ON patients.pat_dep_id = dict_depart.dep_id 
+where patients.pat_flag>1 and patients.pat_date>='&sDate&' and patients.pat_date<'&eDate&'
+&where&
+group by patients.pat_dep_name
+order  by patients.pat_dep_name
+
+
+ select  
+patients.pat_dep_name,
+count(*) as pat_count_zhhz
+ 
+ into #b
+ from  patients
+ left join  patients_mi on patients_mi.pat_id = patients.pat_id 
+ left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+ left join dict_depart ON patients.pat_dep_id = dict_depart.dep_id 
+ where patients.pat_flag>1 and patients.pat_date>='&sDate&' and patients.pat_date<'&eDate&'
+
+&where&
+group by patients.pat_dep_name
+order by patients.pat_dep_name
+
+
+ select  
+patients.pat_dep_name,
+dict_combine.com_name,
+count(*) as pat_count_zh,
+ dict_combine.com_pri,
+dict_combine.com_pri*count(*) as pat_count_zhjg into #c
+ from  patients
+ left join  patients_mi on patients_mi.pat_id = patients.pat_id 
+ left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+ left join dict_depart ON patients.pat_dep_id = dict_depart.dep_id 
+ where patients.pat_flag>1 and patients.pat_date>='&sDate&' and patients.pat_date<'&eDate&'
+&where&
+group by patients.pat_dep_name,dict_combine.com_name, dict_combine.com_pri
+order by patients.pat_dep_name
+
+
+ select pat_dep_name,sum(pat_count_zhjg) as pat_count_zhjehz into #d
+ from #c
+ group by pat_dep_name
+ 
+
+declare @pat_count_zzjehz numeric(10,2)
+set @pat_count_zzjehz= (select sum(pat_count_zhjg) from #c)
+
+ select  
+patients.pat_dep_name,
+count(*) as pat_count_xm into #e
+ from  patients
+ left join  patients_mi on patients_mi.pat_id = patients.pat_id 
+ left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+ left join dict_combine_mi on dict_combine_mi.com_id = dict_combine.com_id
+ left join dict_item on  dict_combine_mi.com_itm_id =  dict_item.itm_id
+ where patients.pat_flag>1 and patients.pat_date>='&sDate&' and patients.pat_date<'&eDate&'
+&where&
+group by patients.pat_dep_name
+order by patients.pat_dep_name
+
+
+ select #a.pat_dep_name,
+#a.pat_count_rc,
+#b.pat_count_zhhz,
+#e.pat_count_xm,
+#d.pat_count_zhjehz,
+@pat_count_zzjehz as pat_count_zzjehz  ,
+'&sDate&' as sdate ,
+'&eDate&' as edate,
+getdate() as ndate
+ from  #a
+  
+ left join #b on #b.pat_dep_name =#a.pat_dep_name
+ left join #d on #d.pat_dep_name =#a.pat_dep_name
+ left join #e on #e.pat_dep_name =#a.pat_dep_name
+
+order by #a.pat_dep_name
+
+
+
+
+--  select * from  #a
+--  select * from  #b
+--  select * from  #c
+--  select * from  #d
+--  select * from  #e
+--  
+-- drop table #a
+-- drop table #b
+-- drop table #c
+-- drop table #d
+-- drop table #e
+

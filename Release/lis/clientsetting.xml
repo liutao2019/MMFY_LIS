@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CType_id" type="xs:string" minOccurs="0" />
+                <xs:element name="CType_name" type="xs:string" minOccurs="0" />
+                <xs:element name="Itr_id" type="xs:string" minOccurs="0" />
+                <xs:element name="LocalItrID" type="xs:string" minOccurs="0" />
+                <xs:element name="Barcode_Dep_id" type="xs:string" minOccurs="0" />
+                <xs:element name="Barcode_Dep_name" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="HospitalID" type="xs:string" minOccurs="0" />
+                <xs:element name="HospitalName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsUrgentNotity" type="xs:string" minOccurs="0" />
+                <xs:element name="IsItrUrgentNotity" type="xs:string" minOccurs="0" />
+                <xs:element name="IsQCNotify" type="xs:string" minOccurs="0" />
+                <xs:element name="IsTATNotify" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBcTATNotify" type="xs:string" minOccurs="0" />
+                <xs:element name="ItrIDList" type="xs:string" minOccurs="0" />
+                <xs:element name="TypeIDList" type="xs:string" minOccurs="0" />
+                <xs:element name="IDTypeFlag" type="xs:string" minOccurs="0" />
+                <xs:element name="QsTypeIDList" type="xs:string" minOccurs="0" />
+                <xs:element name="SdTypeIDList" type="xs:string" minOccurs="0" />
+                <xs:element name="LabResultShowType" type="xs:string" minOccurs="0" />
+                <xs:element name="BloodWindow" type="xs:string" minOccurs="0" />
+                <xs:element name="BloodArea" type="xs:string" minOccurs="0" />
+                <xs:element name="MzDefaultCombines" type="xs:string" minOccurs="0" />
+                <xs:element name="CachePwTime" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table1>
+    <CType_id />
+    <CType_name />
+    <Itr_id />
+    <LocalItrID />
+    <Barcode_Dep_id />
+    <Barcode_Dep_name />
+    <Description />
+    <HospitalID />
+    <HospitalName />
+    <IsUrgentNotity>1</IsUrgentNotity>
+    <IsItrUrgentNotity>0</IsItrUrgentNotity>
+    <IsQCNotify>0</IsQCNotify>
+    <IsTATNotify>0</IsTATNotify>
+    <IsBcTATNotify>0</IsBcTATNotify>
+    <ItrIDList />
+    <TypeIDList>'10011','10013'</TypeIDList>
+    <IDTypeFlag>10061|遗传中心</IDTypeFlag>
+    <QsTypeIDList />
+    <SdTypeIDList />
+    <LabResultShowType>1</LabResultShowType>
+    <BloodWindow />
+    <BloodArea />
+    <MzDefaultCombines />
+    <CachePwTime>0</CachePwTime>
+  </Table1>
+</NewDataSet>

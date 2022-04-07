@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{204E3C3D-3215-4092-B159-9E862EE34BC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.wcf</RootNamespace>
+    <AssemblyName>dcl.client.wcf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lis_dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lib.DataInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.DataInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Lib.WCFClientCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.WCFClientCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\ProxyCacheData.cs" />
+    <Compile Include="DataInterfaceCon\ProxyDataInterfaceCommand.cs" />
+    <Compile Include="DataInterfaceCon\ProxyDataInterfaceConnection.cs" />
+    <Compile Include="Dict\ProxyCombineSplitBarCode.cs" />
+    <Compile Include="Dict\ProxyDicSample.cs" />
+    <Compile Include="Elisa\ProxyElisaAnalyse.cs" />
+    <Compile Include="InstrumentThings\ProxyItrInstrumentMaintain.cs" />
+    <Compile Include="InstrumentThings\ProxyItrInstrumentRegistration.cs" />
+    <Compile Include="InstrumentThings\ProxyItrInstrumentServicing.cs" />
+    <Compile Include="Interfaces\ProxyDCLInterfacesTool.cs" />
+    <Compile Include="Interfaces\ProxySMHisInterfaces.cs" />
+    <Compile Include="Interfaces\ProxySysItfContrast.cs" />
+    <Compile Include="Message\ProxyCombineTATMsg.cs" />
+    <Compile Include="Message\ProxyInstrmtUrgentTATMsg.cs" />
+    <Compile Include="Message\ProxyInstrmtWardingMsg.cs" />
+    <Compile Include="Message\ProxyObrMessage.cs" />
+    <Compile Include="Message\ProxyObrMessageContent.cs" />
+    <Compile Include="Message\ProxyObrMessageReceive.cs" />
+    <Compile Include="Message\ProxyPidReportMainExt.cs" />
+    <Compile Include="Message\ProxyUrgentObrMessage.cs" />
+    <Compile Include="Login\ProxyLogin.cs" />
+    <Compile Include="Message\ProxyUserMessage.cs" />
+    <Compile Include="Monitor\ProxySampProcessMonitor.cs" />
+    <Compile Include="NoticeManage\ProxyNoticeManage.cs" />
+    <Compile Include="OA\ProxyOaHandOver.cs" />
+    <Compile Include="OA\ProxyOaShiftDictDetail.cs" />
+    <Compile Include="OA\ProxyOaTableDetail.cs" />
+    <Compile Include="OA\ProxyAttendance.cs" />
+    <Compile Include="OA\ProxyOaShiftDict.cs" />
+    <Compile Include="OA\ProxyOaHoRecord.cs" />
+    <Compile Include="OA\ProxyOrderTable.cs" />
+    <Compile Include="OA\ProxyOfficeAnnouncement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyBase.cs" />
+    <Compile Include="ProxyDataInterface.cs" />
+    <Compile Include="ProxyResultoMerge.cs" />
+    <Compile Include="ProxyCacheService.cs" />
+    <Compile Include="ProxySamManage.cs" />
+    <Compile Include="QCSpecific\PoxyFrmParameter.cs" />
+    <Compile Include="QCSpecific\ProxyFastAddQcItem.cs" />
+    <Compile Include="QCSpecific\ProxyObrQcResult.cs" />
+    <Compile Include="QCSpecific\ProxyObrQcAnalysis.cs" />
+    <Compile Include="QCSpecific\ProxyQcMateria.cs" />
+    <Compile Include="QCSpecific\ProxyQcMateriaDetail.cs" />
+    <Compile Include="QCSpecific\ProxyQcMateriaRule.cs" />
+    <Compile Include="QueueNumber\ProxyQueueNumber.cs" />
+    <Compile Include="ReagentSetting\ProxyReaSetting.cs" />
+    <Compile Include="Reagent\ProxyReaApply.cs" />
+    <Compile Include="Reagent\ProxyReaApplyDetail.cs" />
+    <Compile Include="Reagent\ProxyReaDelivery.cs" />
+    <Compile Include="Reagent\ProxyReaDeliveryDetail.cs" />
+    <Compile Include="Reagent\ProxyReaLossReport.cs" />
+    <Compile Include="Reagent\ProxyReaLossReportDetail.cs" />
+    <Compile Include="Reagent\ProxyReaPurchase.cs" />
+    <Compile Include="Reagent\ProxyReaPurchaseDetail.cs" />
+    <Compile Include="Reagent\ProxyReaStorage.cs" />
+    <Compile Include="Reagent\ProxyReaStorageDetail.cs" />
+    <Compile Include="Reagent\ProxyReaSubscribe.cs" />
+    <Compile Include="Reagent\ProxyReaSubscribeDetail.cs" />
+    <Compile Include="ReportCopy\ProxyReportCopy.cs" />
+    <Compile Include="ReportMain\ProxyReportDetail.cs" />
+    <Compile Include="ReportMain\ProxyReportMain.cs" />
+    <Compile Include="ReportPrint\ProxyReportPrint.cs" />
+    <Compile Include="ResultQuery\ProxyTwoWaySelect.cs" />
+    <Compile Include="Result\ProxyBatchPatData.cs" />
+    <Compile Include="Result\ProxyMarrowEnter.cs" />
+    <Compile Include="Result\ProxyMicEnter.cs" />
+    <Compile Include="Result\ProxyObrResultDesc.cs" />
+    <Compile Include="Result\ProxyObrResult.cs" />
+    <Compile Include="Result\ProxyObrResultBakItm.cs" />
+    <Compile Include="Result\ProxyPatientRecheck.cs" />
+    <Compile Include="Result\ProxyMonitor.cs" />
+    <Compile Include="Result\ProxyPidReportMainAudit.cs" />
+    <Compile Include="Result\ProxyPidReportMainInterface.cs" />
+    <Compile Include="Result\ProxyPatResult.cs" />
+    <Compile Include="Result\ProxyObrResultImage.cs" />
+    <Compile Include="Result\ProxyPatTempInput.cs" />
+    <Compile Include="Result\ProxyPidReportMain.cs" />
+    <Compile Include="Result\ProxyPatEnterNew.cs" />
+    <Compile Include="Result\ProxyRelateResult.cs" />
+    <Compile Include="Result\ProxyResultTemp.cs" />
+    <Compile Include="Setting\ProxyRuntimeSetting.cs" />
+    <Compile Include="Tools\ProxyLisDoc.cs" />
+    <Compile Include="Tools\ProxyMergeResult.cs" />
+    <Compile Include="SampMain\ProxySampOperateDetail.cs" />
+    <Compile Include="SampMain\ProxyShelfSampRegister.cs" />
+    <Compile Include="SampMain\ProxySampMainDownload.cs" />
+    <Compile Include="SampMain\ProxySecondSign.cs" />
+    <Compile Include="SampMain\ProxySampReturn.cs" />
+    <Compile Include="SampMain\ProxySampProcessDetial.cs" />
+    <Compile Include="SampMain\ProxySampDetail.cs" />
+    <Compile Include="ResultQuery\ProxyCombModelSel.cs" />
+    <Compile Include="Result\ProxyObrResultOriginal.cs" />
+    <Compile Include="ResultView\PoxyMitmNoResultView.cs" />
+    <Compile Include="ResultQuery\ProxyItemSort.cs" />
+    <Compile Include="SamDestory\ProxySamDestory.cs" />
+    <Compile Include="ResultQuery\ProxySummaryPrint.cs" />
+    <Compile Include="SampMain\ProxySampMain.cs" />
+    <Compile Include="SampStock\ProxySampStoreRecord.cs" />
+    <Compile Include="SamSearch\ProxySamSearch.cs" />
+    <Compile Include="ServiceMap.cs" />
+    <Compile Include="SampStock\PoxySampStock.cs" />
+    <Compile Include="Statistical\ProxyStatTemp.cs" />
+    <Compile Include="Statistical\ProxyAnalyse.cs" />
+    <Compile Include="Statistical\ProxyStatistical.cs" />
+    <Compile Include="SysInterfaceLog\ProxySysInterfaceLog.cs" />
+    <Compile Include="TempHandle\ProxyTempHandle.cs" />
+    <Compile Include="TouchPrint\ProxyTouchPrint.cs" />
+    <Compile Include="User\ProxyRoleManagePro.cs" />
+    <Compile Include="Interfaces\ProxySysItfInterface.cs" />
+    <Compile Include="User\ProxySysFunc.cs" />
+    <Compile Include="Sys\ProxySysOperationLog.cs" />
+    <Compile Include="User\ProxySystemConfig.cs" />
+    <Compile Include="User\ProxySysUserInfo.cs" />
+    <Compile Include="User\ProxyUserManage.cs" />
+    <Compile Include="Sys\ProxySysLog.cs" />
+    <Compile Include="Whonet\ProxyWhonet.cs" />
+    <Compile Include="细菌字典\ProxyDictMedia.cs" />
+    <Compile Include="细菌字典\ProxyDictComMedia.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

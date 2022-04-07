@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFE6E23E-9265-4667-A1EC-65E98C9ECF46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wf.svr.reagent</RootNamespace>
+    <AssemblyName>wf.svr.reagent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\PACS\代码文件\Wisefly_US\WiseflyUS\ya - 副本\lib\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmReagentSettingBIZ.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaDeliveryBIZ.cs" />
+    <Compile Include="ReaLossReportBIZ.cs" />
+    <Compile Include="ReaLossReportDetailBIZ.cs" />
+    <Compile Include="ReaSubscribeBIZ.cs" />
+    <Compile Include="ReaSubscribeDetailBIZ.cs" />
+    <Compile Include="ReaStorageBIZ.cs" />
+    <Compile Include="ReaDeliveryDetailBIZ.cs" />
+    <Compile Include="ReaStorageDetailBIZ.cs" />
+    <Compile Include="ReaPurchaseDetailBIZ.cs" />
+    <Compile Include="ReaPurchaseBIZ.cs" />
+    <Compile Include="ReaApplyBIZ.cs" />
+    <Compile Include="ReaApplyDetailBIZ.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4A0F5DFF-9EE1-4A37-9D15-03CB95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Cache\wf.Client.Cache\dcl.client.cache.csproj">
+      <Project>{F07A75EC-FA9A-41F9-A95E-C9378B92F431}</Project>
+      <Name>dcl.client.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Cache\wf.svr.cache\dcl.svr.cache.csproj">
+      <Project>{86A5CE82-01C7-49DF-B5AE-051342773452}</Project>
+      <Name>dcl.svr.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Dao\wf.dao.core\dcl.dao.core.csproj">
+      <Project>{E0B5D747-0B64-4CE1-A9E7-F2BFCFD3A3D6}</Project>
+      <Name>dcl.dao.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Dao\wf.dao.interface\dcl.dao.interfaces.csproj">
+      <Project>{6D05D146-6D3F-4905-8D7E-7DE11F2A3B53}</Project>
+      <Name>dcl.dao.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560F53B-EABC-4B57-A118-2AB19EDDE52B}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkAuxiliary\wf.root.logon\dcl.root.logon.csproj">
+      <Project>{63041308-24F1-4854-BE3E-241EB38A318E}</Project>
+      <Name>dcl.root.logon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69F9-4766-B09B-D2FABDF6354D}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Sample\wf.svr.sample\dcl.svr.sample.csproj">
+      <Project>{9EED2687-1EF9-4C9E-A920-94A0B806D4D5}</Project>
+      <Name>dcl.svr.sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.SysUser\wf.svr.users\dcl.svr.users.csproj">
+      <Project>{85D1FAD5-AB22-49B9-91D1-9E5CC3BAFC7F}</Project>
+      <Name>dcl.svr.users</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="checker\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

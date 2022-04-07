@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.touchprint.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.touchprint.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.dll
+D:\WiseFly\Source Code\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.touchprint.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.touchprint.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.pdb

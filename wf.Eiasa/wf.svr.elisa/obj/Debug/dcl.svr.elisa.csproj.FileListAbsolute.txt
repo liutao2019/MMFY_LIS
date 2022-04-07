@@ -1,0 +1,6 @@
+D:\WiseFly\Source Code\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.elisa.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.elisa.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.svr.elisa\obj\Debug\dcl.svr.elisa.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.svr.elisa\obj\Debug\dcl.svr.elisa.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Eiasa\wf.svr.elisa\obj\Debug\dcl.svr.elisa.pdb

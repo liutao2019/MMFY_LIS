@@ -1,0 +1,83 @@
+select
+case when resulto.res_itm_ecd<>'' then '抗HCV' end as res_itm_ecd,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+     when (res_itm_id='50495'and res_chr >'1.0') then '+' --添加anti_hcv判断
+	 else '-' end as res_chr,
+count(case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+     when (res_itm_id='50495'and res_chr >'1.0') then '+'--添加anti_hcv判断
+	 else '-' end) as count_res_chr 
+into #gen_stat_UuMh
+from resulto
+inner join patients on patients.pat_id = resulto.res_id and res_itm_id in ('81','20150','30122','50495')
+--and (res_chr like '阴性%' or res_chr like '阳性%')--去除过滤定量的数据，add by wxb
+where len(pat_dep_name)>0 and res_flag = 1 
+and ( res_date>='&sDate&' and res_date<='&eDate&')
+--and ( res_date>='2012-11-21' and res_date<='2012-12-2')
+group by case when resulto.res_itm_ecd<>'' then '抗HCV' end,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_date,
+res_itm_id,--add by wxb
+res_chr,--add by wxb
+case when res_chr like '阳性%' then '+'
+     when res_chr like '阴性%' then '-'
+	 else '-' end
+
+
+select res_itm_ecd,res_chr,count(*) as cou
+into #temp_1
+from  #gen_stat_UuMh 
+where res_chr='+'
+group by res_itm_ecd,res_chr
+
+
+select res_itm_ecd ,sum(count_res_chr) as tsum
+into #temp_2 
+from #gen_stat_UuMh 
+group by res_itm_ecd
+
+
+
+if exists 
+(select * from #temp_1)
+
+select
+'&sDate&'+' ~ ' +'&eDate&' as 时间范围,
+pat_in_no as 住院号,
+pat_name as 姓名,
+pat_dep_name as 科室,
+#temp_1.res_chr as  结果,
+#temp_1.res_itm_ecd as  项目,
+pat_date as 检查日期,
+cou as 阳性例数,
+tsum as 总数,
+cast(cast(cou as numeric(18,2))/cast(tsum as numeric(18,2)) as numeric(18,2)) as 阳性率
+from #gen_stat_UuMh,#temp_1,#temp_2
+where #gen_stat_UuMh.res_itm_ecd=#temp_1.res_itm_ecd
+and #gen_stat_UuMh.res_chr=#temp_1.res_chr
+and #gen_stat_UuMh.res_itm_ecd=#temp_2.res_itm_ecd
+and #gen_stat_UuMh.res_chr='+'
+
+else
+
+select 
+'&sDate&'+' ~ ' +'&eDate&' as 时间范围,
+ '' as 住院号,
+ '' as 姓名,
+ '' as 科室,
+ '' as  结果,
+ #temp_2.res_itm_ecd as  项目,
+ '' as 检查日期,
+0 as 阳性例数,
+#temp_2.tsum as 总数,
+0 as 阳性率
+from #gen_stat_UuMh,
+#temp_2
+where  #gen_stat_UuMh.res_itm_ecd=#temp_2.res_itm_ecd

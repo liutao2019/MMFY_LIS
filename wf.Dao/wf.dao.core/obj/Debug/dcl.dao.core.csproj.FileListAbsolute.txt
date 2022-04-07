@@ -1,0 +1,5 @@
+D:\WiseFly\Source Code\Lis.Release\WCF\lis.wcf\bin\dcl.dao.core.dll
+D:\WiseFly\Source Code\Lis.Release\WCF\lis.wcf\bin\dcl.dao.core.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.pdb

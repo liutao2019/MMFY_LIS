@@ -1,0 +1,161 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\Program Files\hope\DCLLisClient\DevExpress.XtraReports.v15.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>zh-Hans</Localization>
+///   <Version>15.2</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.xtraReport11">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFBIXnLBAAAAAOcAAAAmJAB0AGgAaQBzAC4AUwBjAHIAaQBwAHQAcwBTAG8AdQByAGMAZQAAAAAAAe8OcHJpdmF0ZSB2b2lkIHhyUmVwUmVzdWx0b19CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJaWYoeHJMYWJlbDEuVGV4dD09IjEiICkNCgl7DQoJCVh0cmFSZXBvcnQg
+/// eHIyID0gbmV3IFh0cmFSZXBvcnQoKTsNCgkJc3RyaW5nIGxvY2FsUGF0aCA9IEVudmlyb25tZW50LkdldEZvbGRlclBhdGgoRW52aXJvbm1lbnQuU3BlY2lhbEZvbGRlci5Qcm9ncmFtRmlsZXMpICsgQCJcbWVkY2hhbmdlXGxpc1x4dHJhUmVwb3J0XOi0neWIqeWwlOaAp+a/gOe0oOWFremhueaKpeWRiuWNlS5yZXB4IjsNCgkJIGlmKCFTeXN0ZW0uSU8uRmlsZS5FeGlzdHMobG9jYWxQYXRoKSkNCgkJew0KCQlsb2NhbFBhdGg9QCJDOlxQcm9ncmFtIEZpbGVzXG1lZGNoYW5nZVxsaXNceHRyYVJlcG9ydFzotJ3liKnlsJTmgKfmv4DntKDlha3pobnmiqXlkYrljZUucmVweCI7DQoJCX0NCgkJeHJSZXBSZXN1bHRvLlZpc2libGU9dHJ1ZTsNCgkJeHIyLkxvYWRM
+/// YXlvdXQobG9jYWxQYXRoKTsNCgkJeHIyLkRhdGFTb3VyY2U9eHRyYVJlcG9ydDExLkRhdGFTb3VyY2U7DQogICAgICAgIAkvL3hyMi5QYXJhbWV0ZXJzWyJwYXJJZCJdLlZhbHVlPXhySWQuVGV4dC5Ub1N0cmluZygpOw0KCQl4clJlcFJlc3VsdG8uUmVwb3J0U291cmNlPXhyMjsNCg0KCX0NCgkgaWYgKHhyTGFiZWwxLlRleHQ9PSIyIikNCgl7ICAgICANCgkJWHRyYVJlcG9ydCB4cjIgPSBuZXcgWHRyYVJlcG9ydCgpOw0KCQlzdHJpbmcgbG9jYWxQYXRoID0gRW52aXJvbm1lbnQuR2V0Rm9sZGVyUGF0aChFbnZpcm9ubWVudC5TcGVjaWFsRm9sZGVyLlByb2dyYW1GaWxlcykgKyBAIlxtZWRjaGFuZ2VcbGlzXHh0cmFSZXBvcnRc5qOA6aqM5oql5ZGKKOaWsOWb
+/// vikucmVweCI7DQogCQlpZighU3lzdGVtLklPLkZpbGUuRXhpc3RzKGxvY2FsUGF0aCkpDQoJCXsNCgkJCWxvY2FsUGF0aD1AIkM6XFByb2dyYW0gRmlsZXNcbWVkY2hhbmdlXGxpc1x4dHJhUmVwb3J0XOajgOmqjOaKpeWRiijmlrDlm74pLnJlcHgiOw0KCQl9DQogICAgICAgICAgICB4clJlcFJlc3VsdG8uVmlzaWJsZT10cnVlOw0KCQl4cjIuTG9hZExheW91dChsb2NhbFBhdGgpOw0KCQl4cjIuRGF0YVNvdXJjZT14dHJhUmVwb3J0MTEuRGF0YVNvdXJjZTsNCiAgICAgICAgCS8veHIyLlBhcmFtZXRlcnNbInBhcklkIl0uVmFsdWU9eHJJZC5UZXh0LlRvU3RyaW5nKCk7DQoJCXhyUmVwUmVzdWx0by5SZXBvcnRTb3VyY2U9eHIyOw0KDQoJICAgICAgICANCgl9
+/// DQoJaWYgKHhyTGFiZWwxLlRleHQ9PSIwIikNCiAgICAgICB7ICAgIA0KICAgCQlYdHJhUmVwb3J0IHhyMiA9IG5ldyBYdHJhUmVwb3J0KCk7DQoJCXN0cmluZyBsb2NhbFBhdGggPSBFbnZpcm9ubWVudC5HZXRGb2xkZXJQYXRoKEVudmlyb25tZW50LlNwZWNpYWxGb2xkZXIuUHJvZ3JhbUZpbGVzKSArIEAiXG1lZGNoYW5nZVxsaXNceHRyYVJlcG9ydFzniLHljZrmganljLvpmaLmma7pgJrmiqXlkYrljZXmoLzlvI8ucmVweCI7DQogCQlpZighU3lzdGVtLklPLkZpbGUuRXhpc3RzKGxvY2FsUGF0aCkpDQoJCXsNCgkJCWxvY2FsUGF0aD1AIkM6XFByb2dyYW0gRmlsZXNcbWVkY2hhbmdlXGxpc1x4dHJhUmVwb3J0XOeIseWNmuaBqeWMu+mZouaZrumAmuaKpeWR
+/// iuWNleagvOW8jy5yZXB4IjsNCgkJfQ0KCQl4clJlcFJlc3VsdG8uVmlzaWJsZT10cnVlOw0KCQl4cjIuTG9hZExheW91dChsb2NhbFBhdGgpOw0KCQl4cjIuRGF0YVNvdXJjZT14dHJhUmVwb3J0MTEuRGF0YVNvdXJjZTsNCiAgICAgICAgCS8veHIyLlBhcmFtZXRlcnNbInBhcklkIl0uVmFsdWU9eHJJZC5UZXh0LlRvU3RyaW5nKCk7DQoJCXhyUmVwUmVzdWx0by5SZXBvcnRTb3VyY2U9eHIyOw0KDQoJICAgICAgIA0KICAgICAgIH0NCgkJDQoJCQ0KCQkNCn0NCg==</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtraReport11 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.GroupHeaderBand 病人分组头;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRSubreport xrRepResulto;
+        private DevExpress.XtraReports.UI.XRLabel xrGroupCount;
+        private DevExpress.XtraReports.UI.XRLabel xrId;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public xtraReport11() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.xtraReport11");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.病人分组头 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrRepResulto = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrGroupCount = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrId = new DevExpress.XtraReports.UI.XRLabel();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Detail
+            // 
+            this.Detail.Dpi = 254F;
+            this.Detail.HeightF = 0F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // 病人分组头
+            // 
+            this.病人分组头.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel1,
+                        this.xrRepResulto,
+                        this.xrGroupCount,
+                        this.xrId});
+            this.病人分组头.Dpi = 254F;
+            this.病人分组头.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+                        new DevExpress.XtraReports.UI.GroupField("标识ID", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.病人分组头.HeightF = 232F;
+            this.病人分组头.Name = "病人分组头";
+            this.病人分组头.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand;
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.Dpi = 254F;
+            this.topMarginBand1.HeightF = 0F;
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.Dpi = 254F;
+            this.bottomMarginBand1.HeightF = 7.9375F;
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.wjbz")});
+            this.xrLabel1.Dpi = 254F;
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(889F, 0F);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(254F, 42F);
+            this.xrLabel1.Text = "xrLabel1";
+            // 
+            // xrRepResulto
+            // 
+            this.xrRepResulto.Dpi = 254F;
+            this.xrRepResulto.LocationFloat = new DevExpress.Utils.PointFloat(0F, 42F);
+            this.xrRepResulto.Name = "xrRepResulto";
+            this.xrRepResulto.Scripts.OnBeforePrint = "xrRepResulto_BeforePrint";
+            this.xrRepResulto.SizeF = new System.Drawing.SizeF(1990F, 190F);
+            this.xrRepResulto.Visible = false;
+            // 
+            // xrGroupCount
+            // 
+            this.xrGroupCount.BackColor = System.Drawing.Color.Transparent;
+            this.xrGroupCount.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.xrGroupCount.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrGroupCount.BorderWidth = 0F;
+            this.xrGroupCount.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.自动分列标识")});
+            this.xrGroupCount.Dpi = 254F;
+            this.xrGroupCount.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.xrGroupCount.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.xrGroupCount.LocationFloat = new DevExpress.Utils.PointFloat(423F, 0F);
+            this.xrGroupCount.Name = "xrGroupCount";
+            this.xrGroupCount.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.xrGroupCount.SizeF = new System.Drawing.SizeF(381F, 42F);
+            this.xrGroupCount.StylePriority.UseBorderWidth = false;
+            this.xrGroupCount.StylePriority.UsePadding = false;
+            this.xrGroupCount.Text = "xrGroupCount";
+            this.xrGroupCount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrGroupCount.Visible = false;
+            // 
+            // xrId
+            // 
+            this.xrId.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.标识ID")});
+            this.xrId.Dpi = 254F;
+            this.xrId.LocationFloat = new DevExpress.Utils.PointFloat(1228F, 0F);
+            this.xrId.Name = "xrId";
+            this.xrId.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrId.SizeF = new System.Drawing.SizeF(466F, 42F);
+            this.xrId.Text = "xrId";
+            this.xrId.Visible = false;
+            // 
+            // xtraReport11
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.病人分组头,
+                        this.topMarginBand1,
+                        this.bottomMarginBand1});
+            this.Dpi = 254F;
+            this.Margins = new System.Drawing.Printing.Margins(50, 30, 0, 8);
+            this.Name = "xtraReport11";
+            this.PageHeight = 1400;
+            this.PageWidth = 2101;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
+            this.StyleSheetPath = null;
+            this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.Version = "15.2";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

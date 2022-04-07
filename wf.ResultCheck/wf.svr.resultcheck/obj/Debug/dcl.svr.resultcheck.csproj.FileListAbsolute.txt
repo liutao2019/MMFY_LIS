@@ -1,0 +1,12 @@
+D:\WiseFly\Source Code\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.resultcheck.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.resultcheck.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.ResultCheck\wf.svr.resultcheck\obj\Debug\dcl.svr.resultcheck.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.ResultCheck\wf.svr.resultcheck\obj\Debug\dcl.svr.resultcheck.dll
+D:\WiseFly\Source Code\Lis.Release\wf.ResultCheck\wf.svr.resultcheck\obj\Debug\dcl.svr.resultcheck.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.resultcheck.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.resultcheck.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ResultCheck\wf.svr.resultcheck\obj\Debug\dcl.svr.resultcheck.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ResultCheck\wf.svr.resultcheck\obj\Debug\dcl.svr.resultcheck.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ResultCheck\wf.svr.resultcheck\obj\Debug\dcl.svr.resultcheck.pdb

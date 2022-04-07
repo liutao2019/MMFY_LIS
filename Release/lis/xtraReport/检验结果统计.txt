@@ -1,0 +1,543 @@
+--获得存在结果的普通仪器--
+select distinct patients.pat_itr_id into #b from patients
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where dict_instrmt.itr_rep_flag = '1' &where&--1普通仪器,2酶标仪器,3细菌仪器,4描述仪器
+
+--排序--
+select identity(int,1,1) rownum,#b.pat_itr_id into #instrmt from #b
+
+select p.* into #a 
+from (
+
+--门诊--
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '1')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '2')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '3')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '4')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '5')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '6')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '7')
+
+union all
+
+--住院--
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '1')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '2')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '3')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '4')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '5')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '6')
+
+union all
+
+select top 2
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '7')
+
+union all
+
+--体检--
+select top 1
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '1')
+
+union all
+
+select top 1
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '2')
+
+union all
+
+select top 1
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '3')
+
+union all
+
+select top 1
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '4')
+
+union all
+
+select top 1
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '5')
+
+union all
+
+select top 1
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '6')
+
+union all
+
+select top 1
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,--'107门诊，108住院，109体检'
+resulto.res_itm_id,
+resulto.res_itm_ecd,
+resulto.res_chr
+from patients
+left join resulto on resulto.res_id = patients.pat_id
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '7')
+) as p
+
+select
+#a.itr_mid,
+ROW_NUMBER() OVER (ORDER BY #a.res_itm_ecd) AS 序号,
+#a.pat_bar_code,
+#a.res_itm_ecd,
+#a.res_chr res_chr_yq,
+#a.res_chr res_chr_lis,
+#a.res_chr res_chr_yd,
+#a.res_chr res_chr_zy,
+#a.res_chr res_chr_mz,
+#a.res_chr res_chr_tj,
+'检验结果统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+where #a.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '1')
+
+union all
+
+select
+#a.itr_mid,
+ROW_NUMBER() OVER (ORDER BY #a.res_itm_ecd) AS 序号,
+#a.pat_bar_code,
+#a.res_itm_ecd,
+#a.res_chr res_chr_yq,
+#a.res_chr res_chr_lis,
+#a.res_chr res_chr_yd,
+#a.res_chr res_chr_zy,
+#a.res_chr res_chr_mz,
+#a.res_chr res_chr_tj,
+'检验结果统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+where #a.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '2')
+
+union all
+
+select
+#a.itr_mid,
+ROW_NUMBER() OVER (ORDER BY #a.res_itm_ecd) AS 序号,
+#a.pat_bar_code,
+#a.res_itm_ecd,
+#a.res_chr res_chr_yq,
+#a.res_chr res_chr_lis,
+#a.res_chr res_chr_yd,
+#a.res_chr res_chr_zy,
+#a.res_chr res_chr_mz,
+#a.res_chr res_chr_tj,
+'检验结果统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+where #a.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '3')
+
+union all
+
+select
+#a.itr_mid,
+ROW_NUMBER() OVER (ORDER BY #a.res_itm_ecd) AS 序号,
+#a.pat_bar_code,
+#a.res_itm_ecd,
+#a.res_chr res_chr_yq,
+#a.res_chr res_chr_lis,
+#a.res_chr res_chr_yd,
+#a.res_chr res_chr_zy,
+#a.res_chr res_chr_mz,
+#a.res_chr res_chr_tj,
+'检验结果统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+where #a.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '4')
+
+union all
+
+select
+#a.itr_mid,
+ROW_NUMBER() OVER (ORDER BY #a.res_itm_ecd) AS 序号,
+#a.pat_bar_code,
+#a.res_itm_ecd,
+#a.res_chr res_chr_yq,
+#a.res_chr res_chr_lis,
+#a.res_chr res_chr_yd,
+#a.res_chr res_chr_zy,
+#a.res_chr res_chr_mz,
+#a.res_chr res_chr_tj,
+'检验结果统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+where #a.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '5')
+
+union all
+
+select
+#a.itr_mid,
+ROW_NUMBER() OVER (ORDER BY #a.res_itm_ecd) AS 序号,
+#a.pat_bar_code,
+#a.res_itm_ecd,
+#a.res_chr res_chr_yq,
+#a.res_chr res_chr_lis,
+#a.res_chr res_chr_yd,
+#a.res_chr res_chr_zy,
+#a.res_chr res_chr_mz,
+#a.res_chr res_chr_tj,
+'检验结果统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+where #a.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '6')
+
+union all
+
+select
+#a.itr_mid,
+ROW_NUMBER() OVER (ORDER BY #a.res_itm_ecd) AS 序号,
+#a.pat_bar_code,
+#a.res_itm_ecd,
+#a.res_chr res_chr_yq,
+#a.res_chr res_chr_lis,
+#a.res_chr res_chr_yd,
+#a.res_chr res_chr_zy,
+#a.res_chr res_chr_mz,
+#a.res_chr res_chr_tj,
+'检验结果统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+where #a.pat_itr_id = (select #instrmt.pat_itr_id from #instrmt where #instrmt.rownum = '7')
+

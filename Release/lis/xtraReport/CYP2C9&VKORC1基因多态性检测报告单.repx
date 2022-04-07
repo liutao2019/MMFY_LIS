@@ -1,0 +1,2352 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>D:\Program Files\medchange\LisClient\DevExpress.XtraReports.v15.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>zh-Hans</Localization>
+///   <Version>15.2</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.xtraReport11">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtraReport11 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
+        private DevExpress.XtraReports.UI.GroupHeaderBand 病人分组头;
+        private DevExpress.XtraReports.UI.XRLabel label74;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
+        private DevExpress.XtraReports.UI.XRLine line10;
+        private DevExpress.XtraReports.UI.XRLabel label19;
+        private DevExpress.XtraReports.UI.XRLabel label20;
+        private DevExpress.XtraReports.UI.XRLabel label80;
+        private DevExpress.XtraReports.UI.XRLabel label81;
+        private DevExpress.XtraReports.UI.XRLabel label82;
+        private DevExpress.XtraReports.UI.XRLabel label83;
+        private DevExpress.XtraReports.UI.XRLabel label84;
+        private DevExpress.XtraReports.UI.XRLabel label87;
+        private DevExpress.XtraReports.UI.XRLabel label88;
+        private DevExpress.XtraReports.UI.XRLabel label89;
+        private DevExpress.XtraReports.UI.XRLabel label92;
+        private DevExpress.XtraReports.UI.XRLabel label93;
+        private DevExpress.XtraReports.UI.XRLabel label94;
+        private DevExpress.XtraReports.UI.XRLabel label96;
+        private DevExpress.XtraReports.UI.XRLabel label97;
+        private DevExpress.XtraReports.UI.XRLabel label98;
+        private DevExpress.XtraReports.UI.XRLabel label99;
+        private DevExpress.XtraReports.UI.XRLabel label101;
+        private DevExpress.XtraReports.UI.XRLabel label102;
+        private DevExpress.XtraReports.UI.XRLabel label103;
+        private DevExpress.XtraReports.UI.XRLabel label104;
+        private DevExpress.XtraReports.UI.XRLabel label107;
+        private DevExpress.XtraReports.UI.XRLabel label108;
+        private DevExpress.XtraReports.UI.XRLabel label109;
+        private DevExpress.XtraReports.UI.XRLabel label112;
+        private DevExpress.XtraReports.UI.XRLabel label113;
+        private DevExpress.XtraReports.UI.XRLabel label114;
+        private DevExpress.XtraReports.UI.XRLabel label117;
+        private DevExpress.XtraReports.UI.XRLabel label118;
+        private DevExpress.XtraReports.UI.XRLabel label119;
+        private DevExpress.XtraReports.UI.XRLabel label122;
+        private DevExpress.XtraReports.UI.XRLabel label123;
+        private DevExpress.XtraReports.UI.XRLabel label124;
+        private DevExpress.XtraReports.UI.XRLabel label125;
+        private DevExpress.XtraReports.UI.XRLabel label127;
+        private DevExpress.XtraReports.UI.XRLabel label128;
+        private DevExpress.XtraReports.UI.XRLabel label129;
+        private DevExpress.XtraReports.UI.GroupFooterBand 病人分组尾;
+        private DevExpress.XtraReports.UI.XRLabel label73;
+        private DevExpress.XtraReports.UI.XRLabel label67;
+        private DevExpress.XtraReports.UI.XRLabel label68;
+        private DevExpress.XtraReports.UI.XRLabel label69;
+        private DevExpress.XtraReports.UI.XRLabel label70;
+        private DevExpress.XtraReports.UI.XRLabel label71;
+        private DevExpress.XtraReports.UI.XRLabel label72;
+        private DevExpress.XtraReports.UI.XRLabel label64;
+        private DevExpress.XtraReports.UI.XRLabel label65;
+        private DevExpress.XtraReports.UI.XRLabel label66;
+        private DevExpress.XtraReports.UI.XRLabel label61;
+        private DevExpress.XtraReports.UI.XRLabel label62;
+        private DevExpress.XtraReports.UI.XRLabel label63;
+        private DevExpress.XtraReports.UI.XRLabel label45;
+        private DevExpress.XtraReports.UI.XRLabel label46;
+        private DevExpress.XtraReports.UI.XRLabel label47;
+        private DevExpress.XtraReports.UI.XRLabel label42;
+        private DevExpress.XtraReports.UI.XRLabel label43;
+        private DevExpress.XtraReports.UI.XRLabel label44;
+        private DevExpress.XtraReports.UI.XRLabel label39;
+        private DevExpress.XtraReports.UI.XRLabel label40;
+        private DevExpress.XtraReports.UI.XRLabel label41;
+        private DevExpress.XtraReports.UI.XRLabel label36;
+        private DevExpress.XtraReports.UI.XRLabel label37;
+        private DevExpress.XtraReports.UI.XRLabel label38;
+        private DevExpress.XtraReports.UI.XRLabel label35;
+        private DevExpress.XtraReports.UI.XRLabel label32;
+        private DevExpress.XtraReports.UI.XRLabel label33;
+        private DevExpress.XtraReports.UI.XRLabel label34;
+        private DevExpress.XtraReports.UI.XRLabel label31;
+        private DevExpress.XtraReports.UI.XRLabel label30;
+        private DevExpress.XtraReports.UI.XRLabel label29;
+        private DevExpress.XtraReports.UI.XRLabel label28;
+        private DevExpress.XtraReports.UI.XRLabel label10;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel25;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel32;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel33;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel40;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel44;
+        private DevExpress.XtraReports.UI.XRLine line2;
+        private DevExpress.XtraReports.UI.XRLabel label24;
+        private DevExpress.XtraReports.UI.XRLabel label25;
+        private DevExpress.XtraReports.UI.XRLabel label26;
+        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
+        private DevExpress.XtraReports.UI.XRLine line1;
+        private DevExpress.XtraReports.UI.XRLabel label9;
+        private DevExpress.XtraReports.UI.XRLabel label8;
+        private DevExpress.XtraReports.UI.XRLabel label18;
+        private DevExpress.XtraReports.UI.XRLabel label17;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.XRLabel label3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel24;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel23;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel19;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel18;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private DevExpress.XtraReports.UI.XRControlStyle xrControlStyle1;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public xtraReport11() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.xtraReport11");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.病人分组头 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.病人分组尾 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.label74 = new DevExpress.XtraReports.UI.XRLabel();
+            this.pictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.line10 = new DevExpress.XtraReports.UI.XRLine();
+            this.label19 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label20 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label80 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label81 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label82 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label83 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label84 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label87 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label88 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label89 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label92 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label93 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label94 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label96 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label97 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label98 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label99 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label101 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label102 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label103 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label104 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label107 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label108 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label109 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label112 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label113 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label114 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label117 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label118 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label119 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label122 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label123 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label124 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label125 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label127 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label128 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label129 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label73 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label67 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label68 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label69 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label70 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label71 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label72 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label64 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label65 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label66 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label61 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label62 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label63 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label45 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label46 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label47 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label42 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label43 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label44 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label39 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label40 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label41 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label36 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label37 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label38 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label35 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label32 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label33 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label34 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label31 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label30 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label29 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label28 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel32 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel33 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel40 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel44 = new DevExpress.XtraReports.UI.XRLabel();
+            this.line2 = new DevExpress.XtraReports.UI.XRLine();
+            this.label24 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label25 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label26 = new DevExpress.XtraReports.UI.XRLabel();
+            this.line1 = new DevExpress.XtraReports.UI.XRLine();
+            this.label9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrControlStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Detail
+            // 
+            this.Detail.HeightF = 0F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.StylePriority.UseTextAlignment = false;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.HeightF = 57.29167F;
+            this.PageFooter.Name = "PageFooter";
+            this.PageFooter.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.PageFooter.StylePriority.UseBackColor = false;
+            this.PageFooter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // ReportHeader
+            // 
+            this.ReportHeader.HeightF = 0F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
+            // 病人分组头
+            // 
+            this.病人分组头.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.病人分组头.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label74,
+                        this.pictureBox1,
+                        this.line10,
+                        this.label19,
+                        this.label20,
+                        this.label80,
+                        this.label81,
+                        this.label82,
+                        this.label83,
+                        this.label84,
+                        this.label87,
+                        this.label88,
+                        this.label89,
+                        this.label92,
+                        this.label93,
+                        this.label94,
+                        this.label96,
+                        this.label97,
+                        this.label98,
+                        this.label99,
+                        this.label101,
+                        this.label102,
+                        this.label103,
+                        this.label104,
+                        this.label107,
+                        this.label108,
+                        this.label109,
+                        this.label112,
+                        this.label113,
+                        this.label114,
+                        this.label117,
+                        this.label118,
+                        this.label119,
+                        this.label122,
+                        this.label123,
+                        this.label124,
+                        this.label125,
+                        this.label127,
+                        this.label128,
+                        this.label129});
+            this.病人分组头.Font = new System.Drawing.Font("Times New Roman", 48F);
+            this.病人分组头.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+                        new DevExpress.XtraReports.UI.GroupField("标识ID", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.病人分组头.HeightF = 320.5312F;
+            this.病人分组头.Name = "病人分组头";
+            this.病人分组头.StylePriority.UseBorders = false;
+            // 
+            // 病人分组尾
+            // 
+            this.病人分组尾.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label73,
+                        this.label67,
+                        this.label68,
+                        this.label69,
+                        this.label70,
+                        this.label71,
+                        this.label72,
+                        this.label64,
+                        this.label65,
+                        this.label66,
+                        this.label61,
+                        this.label62,
+                        this.label63,
+                        this.label45,
+                        this.label46,
+                        this.label47,
+                        this.label42,
+                        this.label43,
+                        this.label44,
+                        this.label39,
+                        this.label40,
+                        this.label41,
+                        this.label36,
+                        this.label37,
+                        this.label38,
+                        this.label35,
+                        this.label32,
+                        this.label33,
+                        this.label34,
+                        this.label31,
+                        this.label30,
+                        this.label29,
+                        this.label28,
+                        this.label10,
+                        this.xrLabel25,
+                        this.xrLabel32,
+                        this.xrLabel33,
+                        this.xrLabel40,
+                        this.xrLabel44,
+                        this.line2,
+                        this.label24,
+                        this.label25,
+                        this.label26});
+            this.病人分组尾.HeightF = 416.1668F;
+            this.病人分组尾.Name = "病人分组尾";
+            this.病人分组尾.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand;
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.line1,
+                        this.label9,
+                        this.label8,
+                        this.label18,
+                        this.label17,
+                        this.label2,
+                        this.label3,
+                        this.xrLabel24,
+                        this.xrLabel23,
+                        this.xrLabel19,
+                        this.xrLabel18,
+                        this.xrLabel17,
+                        this.xrLabel16,
+                        this.xrLabel11,
+                        this.xrLabel10,
+                        this.xrLabel9,
+                        this.xrLabel8,
+                        this.xrLabel7,
+                        this.xrLabel6,
+                        this.xrLabel5,
+                        this.xrLabel4,
+                        this.xrLabel3,
+                        this.xrLabel2});
+            this.PageHeader.HeightF = 242.6042F;
+            this.PageHeader.Name = "PageHeader";
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.HeightF = 20F;
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.HeightF = 15F;
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // label74
+            // 
+            this.label74.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.label74.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.检测结果2")});
+            this.label74.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.label74.LocationFloat = new DevExpress.Utils.PointFloat(400.8537F, 275.9479F);
+            this.label74.Name = "label74";
+            this.label74.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label74.SizeF = new System.Drawing.SizeF(364.813F, 23F);
+            this.label74.StylePriority.UseBorders = false;
+            this.label74.StylePriority.UseFont = false;
+            this.label74.StylePriority.UseTextAlignment = false;
+            this.label74.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.pictureBox1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Image", null, "可设计字段.图片")});
+            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(16.00001F, 79.7917F);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.SizeF = new System.Drawing.SizeF(148.4584F, 116.0416F);
+            this.pictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
+            this.pictureBox1.StylePriority.UseBorders = false;
+            // 
+            // line10
+            // 
+            this.line10.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.line10.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 292.9479F);
+            this.line10.Name = "line10";
+            this.line10.SizeF = new System.Drawing.SizeF(771.3749F, 23F);
+            this.line10.StylePriority.UseBorders = false;
+            // 
+            // label19
+            // 
+            this.label19.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.label19.Font = new System.Drawing.Font("宋体", 10F);
+            this.label19.LocationFloat = new DevExpress.Utils.PointFloat(23.95833F, 275.9479F);
+            this.label19.Name = "label19";
+            this.label19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label19.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.label19.StylePriority.UseBorders = false;
+            this.label19.StylePriority.UseFont = false;
+            this.label19.Text = "检测结果:";
+            // 
+            // label20
+            // 
+            this.label20.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.label20.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.检测结果1")});
+            this.label20.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(123.9584F, 275.9479F);
+            this.label20.Name = "label20";
+            this.label20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label20.SizeF = new System.Drawing.SizeF(278.0627F, 23F);
+            this.label20.StylePriority.UseBorders = false;
+            this.label20.StylePriority.UseFont = false;
+            this.label20.StylePriority.UseTextAlignment = false;
+            this.label20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label80
+            // 
+            this.label80.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label80.BorderColor = System.Drawing.Color.Black;
+            this.label80.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label80.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label80.BorderWidth = 1F;
+            this.label80.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.label80.ForeColor = System.Drawing.Color.Black;
+            this.label80.LocationFloat = new DevExpress.Utils.PointFloat(11.00001F, 20.83333F);
+            this.label80.Name = "label80";
+            this.label80.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label80.SizeF = new System.Drawing.SizeF(163.075F, 25F);
+            this.label80.StylePriority.UseBackColor = false;
+            this.label80.StylePriority.UseBorderColor = false;
+            this.label80.StylePriority.UseBorderDashStyle = false;
+            this.label80.StylePriority.UseBorders = false;
+            this.label80.StylePriority.UseBorderWidth = false;
+            this.label80.StylePriority.UseFont = false;
+            this.label80.StylePriority.UseForeColor = false;
+            this.label80.StylePriority.UsePadding = false;
+            this.label80.StylePriority.UseTextAlignment = false;
+            this.label80.Text = "芯片图";
+            this.label80.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label81
+            // 
+            this.label81.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label81.BorderColor = System.Drawing.Color.Black;
+            this.label81.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label81.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label81.BorderWidth = 1F;
+            this.label81.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.label81.ForeColor = System.Drawing.Color.Black;
+            this.label81.LocationFloat = new DevExpress.Utils.PointFloat(173.075F, 20.83333F);
+            this.label81.Name = "label81";
+            this.label81.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label81.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label81.StylePriority.UseBackColor = false;
+            this.label81.StylePriority.UseBorderColor = false;
+            this.label81.StylePriority.UseBorderDashStyle = false;
+            this.label81.StylePriority.UseBorders = false;
+            this.label81.StylePriority.UseBorderWidth = false;
+            this.label81.StylePriority.UseFont = false;
+            this.label81.StylePriority.UseForeColor = false;
+            this.label81.StylePriority.UsePadding = false;
+            this.label81.StylePriority.UseTextAlignment = false;
+            this.label81.Text = "基因名称";
+            this.label81.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label82
+            // 
+            this.label82.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label82.BorderColor = System.Drawing.Color.Black;
+            this.label82.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label82.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label82.BorderWidth = 1F;
+            this.label82.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold);
+            this.label82.ForeColor = System.Drawing.Color.Black;
+            this.label82.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 20.83333F);
+            this.label82.Name = "label82";
+            this.label82.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label82.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label82.StylePriority.UseBackColor = false;
+            this.label82.StylePriority.UseBorderColor = false;
+            this.label82.StylePriority.UseBorderDashStyle = false;
+            this.label82.StylePriority.UseBorders = false;
+            this.label82.StylePriority.UseBorderWidth = false;
+            this.label82.StylePriority.UseFont = false;
+            this.label82.StylePriority.UseForeColor = false;
+            this.label82.StylePriority.UsePadding = false;
+            this.label82.StylePriority.UseTextAlignment = false;
+            this.label82.Text = "基因型";
+            this.label82.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label83
+            // 
+            this.label83.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label83.BorderColor = System.Drawing.Color.Black;
+            this.label83.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label83.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label83.BorderWidth = 1F;
+            this.label83.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold);
+            this.label83.ForeColor = System.Drawing.Color.Black;
+            this.label83.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 20.83333F);
+            this.label83.Name = "label83";
+            this.label83.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label83.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label83.StylePriority.UseBackColor = false;
+            this.label83.StylePriority.UseBorderColor = false;
+            this.label83.StylePriority.UseBorderDashStyle = false;
+            this.label83.StylePriority.UseBorders = false;
+            this.label83.StylePriority.UseBorderWidth = false;
+            this.label83.StylePriority.UseFont = false;
+            this.label83.StylePriority.UseForeColor = false;
+            this.label83.StylePriority.UsePadding = false;
+            this.label83.StylePriority.UseTextAlignment = false;
+            this.label83.Text = "检测结果";
+            this.label83.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label84
+            // 
+            this.label84.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label84.BorderColor = System.Drawing.Color.Black;
+            this.label84.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label84.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label84.BorderWidth = 1F;
+            this.label84.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold);
+            this.label84.ForeColor = System.Drawing.Color.Black;
+            this.label84.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 20.83333F);
+            this.label84.Name = "label84";
+            this.label84.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label84.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label84.StylePriority.UseBackColor = false;
+            this.label84.StylePriority.UseBorderColor = false;
+            this.label84.StylePriority.UseBorderDashStyle = false;
+            this.label84.StylePriority.UseBorders = false;
+            this.label84.StylePriority.UseBorderWidth = false;
+            this.label84.StylePriority.UseFont = false;
+            this.label84.StylePriority.UseForeColor = false;
+            this.label84.StylePriority.UsePadding = false;
+            this.label84.StylePriority.UseTextAlignment = false;
+            this.label84.Text = "表现型";
+            this.label84.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label87
+            // 
+            this.label87.BackColor = System.Drawing.Color.Transparent;
+            this.label87.BorderColor = System.Drawing.Color.Black;
+            this.label87.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label87.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label87.BorderWidth = 1F;
+            this.label87.Font = new System.Drawing.Font("宋体", 9F);
+            this.label87.ForeColor = System.Drawing.Color.Black;
+            this.label87.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 45.83334F);
+            this.label87.Name = "label87";
+            this.label87.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label87.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label87.StylePriority.UseBackColor = false;
+            this.label87.StylePriority.UseBorderColor = false;
+            this.label87.StylePriority.UseBorderDashStyle = false;
+            this.label87.StylePriority.UseBorders = false;
+            this.label87.StylePriority.UseBorderWidth = false;
+            this.label87.StylePriority.UseFont = false;
+            this.label87.StylePriority.UseForeColor = false;
+            this.label87.StylePriority.UsePadding = false;
+            this.label87.StylePriority.UseTextAlignment = false;
+            this.label87.Text = "GG";
+            this.label87.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label88
+            // 
+            this.label88.BackColor = System.Drawing.Color.Transparent;
+            this.label88.BorderColor = System.Drawing.Color.Black;
+            this.label88.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label88.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label88.BorderWidth = 1F;
+            this.label88.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.GG")});
+            this.label88.Font = new System.Drawing.Font("宋体", 9F);
+            this.label88.ForeColor = System.Drawing.Color.Black;
+            this.label88.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 45.83334F);
+            this.label88.Name = "label88";
+            this.label88.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label88.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label88.StylePriority.UseBackColor = false;
+            this.label88.StylePriority.UseBorderColor = false;
+            this.label88.StylePriority.UseBorderDashStyle = false;
+            this.label88.StylePriority.UseBorders = false;
+            this.label88.StylePriority.UseBorderWidth = false;
+            this.label88.StylePriority.UseFont = false;
+            this.label88.StylePriority.UseForeColor = false;
+            this.label88.StylePriority.UsePadding = false;
+            this.label88.StylePriority.UseTextAlignment = false;
+            this.label88.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label89
+            // 
+            this.label89.BackColor = System.Drawing.Color.Transparent;
+            this.label89.BorderColor = System.Drawing.Color.Black;
+            this.label89.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label89.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label89.BorderWidth = 1F;
+            this.label89.Font = new System.Drawing.Font("宋体", 9F);
+            this.label89.ForeColor = System.Drawing.Color.Black;
+            this.label89.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 45.83334F);
+            this.label89.Name = "label89";
+            this.label89.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label89.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label89.StylePriority.UseBackColor = false;
+            this.label89.StylePriority.UseBorderColor = false;
+            this.label89.StylePriority.UseBorderDashStyle = false;
+            this.label89.StylePriority.UseBorders = false;
+            this.label89.StylePriority.UseBorderWidth = false;
+            this.label89.StylePriority.UseFont = false;
+            this.label89.StylePriority.UseForeColor = false;
+            this.label89.StylePriority.UsePadding = false;
+            this.label89.StylePriority.UseTextAlignment = false;
+            this.label89.Text = "酶活性高";
+            this.label89.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label92
+            // 
+            this.label92.BackColor = System.Drawing.Color.Transparent;
+            this.label92.BorderColor = System.Drawing.Color.Black;
+            this.label92.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label92.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label92.BorderWidth = 1F;
+            this.label92.Font = new System.Drawing.Font("宋体", 9F);
+            this.label92.ForeColor = System.Drawing.Color.Black;
+            this.label92.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 70.83334F);
+            this.label92.Name = "label92";
+            this.label92.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label92.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label92.StylePriority.UseBackColor = false;
+            this.label92.StylePriority.UseBorderColor = false;
+            this.label92.StylePriority.UseBorderDashStyle = false;
+            this.label92.StylePriority.UseBorders = false;
+            this.label92.StylePriority.UseBorderWidth = false;
+            this.label92.StylePriority.UseFont = false;
+            this.label92.StylePriority.UseForeColor = false;
+            this.label92.StylePriority.UsePadding = false;
+            this.label92.StylePriority.UseTextAlignment = false;
+            this.label92.Text = "GA";
+            this.label92.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label93
+            // 
+            this.label93.BackColor = System.Drawing.Color.Transparent;
+            this.label93.BorderColor = System.Drawing.Color.Black;
+            this.label93.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label93.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label93.BorderWidth = 1F;
+            this.label93.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.GA")});
+            this.label93.Font = new System.Drawing.Font("宋体", 9F);
+            this.label93.ForeColor = System.Drawing.Color.Black;
+            this.label93.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 70.83334F);
+            this.label93.Name = "label93";
+            this.label93.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label93.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label93.StylePriority.UseBackColor = false;
+            this.label93.StylePriority.UseBorderColor = false;
+            this.label93.StylePriority.UseBorderDashStyle = false;
+            this.label93.StylePriority.UseBorders = false;
+            this.label93.StylePriority.UseBorderWidth = false;
+            this.label93.StylePriority.UseFont = false;
+            this.label93.StylePriority.UseForeColor = false;
+            this.label93.StylePriority.UsePadding = false;
+            this.label93.StylePriority.UseTextAlignment = false;
+            this.label93.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label94
+            // 
+            this.label94.BackColor = System.Drawing.Color.Transparent;
+            this.label94.BorderColor = System.Drawing.Color.Black;
+            this.label94.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label94.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label94.BorderWidth = 1F;
+            this.label94.Font = new System.Drawing.Font("宋体", 9F);
+            this.label94.ForeColor = System.Drawing.Color.Black;
+            this.label94.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 70.83334F);
+            this.label94.Name = "label94";
+            this.label94.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label94.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label94.StylePriority.UseBackColor = false;
+            this.label94.StylePriority.UseBorderColor = false;
+            this.label94.StylePriority.UseBorderDashStyle = false;
+            this.label94.StylePriority.UseBorders = false;
+            this.label94.StylePriority.UseBorderWidth = false;
+            this.label94.StylePriority.UseFont = false;
+            this.label94.StylePriority.UseForeColor = false;
+            this.label94.StylePriority.UsePadding = false;
+            this.label94.StylePriority.UseTextAlignment = false;
+            this.label94.Text = "酶活性中";
+            this.label94.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label96
+            // 
+            this.label96.BackColor = System.Drawing.Color.Transparent;
+            this.label96.BorderColor = System.Drawing.Color.Black;
+            this.label96.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label96.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label96.BorderWidth = 1F;
+            this.label96.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold);
+            this.label96.ForeColor = System.Drawing.Color.Black;
+            this.label96.LocationFloat = new DevExpress.Utils.PointFloat(173.075F, 45.83333F);
+            this.label96.Name = "label96";
+            this.label96.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label96.SizeF = new System.Drawing.SizeF(152.075F, 75F);
+            this.label96.StylePriority.UseBackColor = false;
+            this.label96.StylePriority.UseBorderColor = false;
+            this.label96.StylePriority.UseBorderDashStyle = false;
+            this.label96.StylePriority.UseBorders = false;
+            this.label96.StylePriority.UseBorderWidth = false;
+            this.label96.StylePriority.UseFont = false;
+            this.label96.StylePriority.UseForeColor = false;
+            this.label96.StylePriority.UsePadding = false;
+            this.label96.StylePriority.UseTextAlignment = false;
+            this.label96.Text = "VKORC1";
+            this.label96.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label97
+            // 
+            this.label97.BackColor = System.Drawing.Color.Transparent;
+            this.label97.BorderColor = System.Drawing.Color.Black;
+            this.label97.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label97.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label97.BorderWidth = 1F;
+            this.label97.Font = new System.Drawing.Font("宋体", 9F);
+            this.label97.ForeColor = System.Drawing.Color.Black;
+            this.label97.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 95.83334F);
+            this.label97.Name = "label97";
+            this.label97.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label97.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label97.StylePriority.UseBackColor = false;
+            this.label97.StylePriority.UseBorderColor = false;
+            this.label97.StylePriority.UseBorderDashStyle = false;
+            this.label97.StylePriority.UseBorders = false;
+            this.label97.StylePriority.UseBorderWidth = false;
+            this.label97.StylePriority.UseFont = false;
+            this.label97.StylePriority.UseForeColor = false;
+            this.label97.StylePriority.UsePadding = false;
+            this.label97.StylePriority.UseTextAlignment = false;
+            this.label97.Text = "AA";
+            this.label97.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label98
+            // 
+            this.label98.BackColor = System.Drawing.Color.Transparent;
+            this.label98.BorderColor = System.Drawing.Color.Black;
+            this.label98.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label98.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label98.BorderWidth = 1F;
+            this.label98.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.AA")});
+            this.label98.Font = new System.Drawing.Font("宋体", 9F);
+            this.label98.ForeColor = System.Drawing.Color.Black;
+            this.label98.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 95.83334F);
+            this.label98.Name = "label98";
+            this.label98.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label98.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label98.StylePriority.UseBackColor = false;
+            this.label98.StylePriority.UseBorderColor = false;
+            this.label98.StylePriority.UseBorderDashStyle = false;
+            this.label98.StylePriority.UseBorders = false;
+            this.label98.StylePriority.UseBorderWidth = false;
+            this.label98.StylePriority.UseFont = false;
+            this.label98.StylePriority.UseForeColor = false;
+            this.label98.StylePriority.UsePadding = false;
+            this.label98.StylePriority.UseTextAlignment = false;
+            this.label98.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label99
+            // 
+            this.label99.BackColor = System.Drawing.Color.Transparent;
+            this.label99.BorderColor = System.Drawing.Color.Black;
+            this.label99.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label99.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label99.BorderWidth = 1F;
+            this.label99.Font = new System.Drawing.Font("宋体", 9F);
+            this.label99.ForeColor = System.Drawing.Color.Black;
+            this.label99.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 95.83334F);
+            this.label99.Name = "label99";
+            this.label99.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label99.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label99.StylePriority.UseBackColor = false;
+            this.label99.StylePriority.UseBorderColor = false;
+            this.label99.StylePriority.UseBorderDashStyle = false;
+            this.label99.StylePriority.UseBorders = false;
+            this.label99.StylePriority.UseBorderWidth = false;
+            this.label99.StylePriority.UseFont = false;
+            this.label99.StylePriority.UseForeColor = false;
+            this.label99.StylePriority.UsePadding = false;
+            this.label99.StylePriority.UseTextAlignment = false;
+            this.label99.Text = "酶活性低";
+            this.label99.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label101
+            // 
+            this.label101.BackColor = System.Drawing.Color.Transparent;
+            this.label101.BorderColor = System.Drawing.Color.Black;
+            this.label101.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label101.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label101.BorderWidth = 1F;
+            this.label101.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold);
+            this.label101.ForeColor = System.Drawing.Color.Black;
+            this.label101.LocationFloat = new DevExpress.Utils.PointFloat(173.075F, 120.8333F);
+            this.label101.Name = "label101";
+            this.label101.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label101.SizeF = new System.Drawing.SizeF(152.075F, 150F);
+            this.label101.StylePriority.UseBackColor = false;
+            this.label101.StylePriority.UseBorderColor = false;
+            this.label101.StylePriority.UseBorderDashStyle = false;
+            this.label101.StylePriority.UseBorders = false;
+            this.label101.StylePriority.UseBorderWidth = false;
+            this.label101.StylePriority.UseFont = false;
+            this.label101.StylePriority.UseForeColor = false;
+            this.label101.StylePriority.UsePadding = false;
+            this.label101.StylePriority.UseTextAlignment = false;
+            this.label101.Text = "CYP2C9";
+            this.label101.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label102
+            // 
+            this.label102.BackColor = System.Drawing.Color.Transparent;
+            this.label102.BorderColor = System.Drawing.Color.Black;
+            this.label102.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label102.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label102.BorderWidth = 1F;
+            this.label102.Font = new System.Drawing.Font("宋体", 9F);
+            this.label102.ForeColor = System.Drawing.Color.Black;
+            this.label102.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 120.8333F);
+            this.label102.Name = "label102";
+            this.label102.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label102.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label102.StylePriority.UseBackColor = false;
+            this.label102.StylePriority.UseBorderColor = false;
+            this.label102.StylePriority.UseBorderDashStyle = false;
+            this.label102.StylePriority.UseBorders = false;
+            this.label102.StylePriority.UseBorderWidth = false;
+            this.label102.StylePriority.UseFont = false;
+            this.label102.StylePriority.UseForeColor = false;
+            this.label102.StylePriority.UsePadding = false;
+            this.label102.StylePriority.UseTextAlignment = false;
+            this.label102.Text = "*1/*1";
+            this.label102.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label103
+            // 
+            this.label103.BackColor = System.Drawing.Color.Transparent;
+            this.label103.BorderColor = System.Drawing.Color.Black;
+            this.label103.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label103.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label103.BorderWidth = 1F;
+            this.label103.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.CYP2C191")});
+            this.label103.Font = new System.Drawing.Font("宋体", 9F);
+            this.label103.ForeColor = System.Drawing.Color.Black;
+            this.label103.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 120.8333F);
+            this.label103.Name = "label103";
+            this.label103.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label103.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label103.StylePriority.UseBackColor = false;
+            this.label103.StylePriority.UseBorderColor = false;
+            this.label103.StylePriority.UseBorderDashStyle = false;
+            this.label103.StylePriority.UseBorders = false;
+            this.label103.StylePriority.UseBorderWidth = false;
+            this.label103.StylePriority.UseFont = false;
+            this.label103.StylePriority.UseForeColor = false;
+            this.label103.StylePriority.UsePadding = false;
+            this.label103.StylePriority.UseTextAlignment = false;
+            this.label103.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label104
+            // 
+            this.label104.BackColor = System.Drawing.Color.Transparent;
+            this.label104.BorderColor = System.Drawing.Color.Black;
+            this.label104.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label104.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label104.BorderWidth = 1F;
+            this.label104.Font = new System.Drawing.Font("宋体", 9F);
+            this.label104.ForeColor = System.Drawing.Color.Black;
+            this.label104.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 120.8333F);
+            this.label104.Name = "label104";
+            this.label104.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label104.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label104.StylePriority.UseBackColor = false;
+            this.label104.StylePriority.UseBorderColor = false;
+            this.label104.StylePriority.UseBorderDashStyle = false;
+            this.label104.StylePriority.UseBorders = false;
+            this.label104.StylePriority.UseBorderWidth = false;
+            this.label104.StylePriority.UseFont = false;
+            this.label104.StylePriority.UseForeColor = false;
+            this.label104.StylePriority.UsePadding = false;
+            this.label104.StylePriority.UseTextAlignment = false;
+            this.label104.Text = "酶活性高,快代谢";
+            this.label104.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label107
+            // 
+            this.label107.BackColor = System.Drawing.Color.Transparent;
+            this.label107.BorderColor = System.Drawing.Color.Black;
+            this.label107.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label107.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label107.BorderWidth = 1F;
+            this.label107.Font = new System.Drawing.Font("宋体", 9F);
+            this.label107.ForeColor = System.Drawing.Color.Black;
+            this.label107.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 145.8333F);
+            this.label107.Name = "label107";
+            this.label107.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label107.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label107.StylePriority.UseBackColor = false;
+            this.label107.StylePriority.UseBorderColor = false;
+            this.label107.StylePriority.UseBorderDashStyle = false;
+            this.label107.StylePriority.UseBorders = false;
+            this.label107.StylePriority.UseBorderWidth = false;
+            this.label107.StylePriority.UseFont = false;
+            this.label107.StylePriority.UseForeColor = false;
+            this.label107.StylePriority.UsePadding = false;
+            this.label107.StylePriority.UseTextAlignment = false;
+            this.label107.Text = "*1/*2";
+            this.label107.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label108
+            // 
+            this.label108.BackColor = System.Drawing.Color.Transparent;
+            this.label108.BorderColor = System.Drawing.Color.Black;
+            this.label108.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label108.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label108.BorderWidth = 1F;
+            this.label108.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.CYP2C192")});
+            this.label108.Font = new System.Drawing.Font("宋体", 9F);
+            this.label108.ForeColor = System.Drawing.Color.Black;
+            this.label108.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 145.8333F);
+            this.label108.Name = "label108";
+            this.label108.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label108.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label108.StylePriority.UseBackColor = false;
+            this.label108.StylePriority.UseBorderColor = false;
+            this.label108.StylePriority.UseBorderDashStyle = false;
+            this.label108.StylePriority.UseBorders = false;
+            this.label108.StylePriority.UseBorderWidth = false;
+            this.label108.StylePriority.UseFont = false;
+            this.label108.StylePriority.UseForeColor = false;
+            this.label108.StylePriority.UsePadding = false;
+            this.label108.StylePriority.UseTextAlignment = false;
+            this.label108.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label109
+            // 
+            this.label109.BackColor = System.Drawing.Color.Transparent;
+            this.label109.BorderColor = System.Drawing.Color.Black;
+            this.label109.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label109.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label109.BorderWidth = 1F;
+            this.label109.Font = new System.Drawing.Font("宋体", 9F);
+            this.label109.ForeColor = System.Drawing.Color.Black;
+            this.label109.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 145.8333F);
+            this.label109.Name = "label109";
+            this.label109.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label109.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label109.StylePriority.UseBackColor = false;
+            this.label109.StylePriority.UseBorderColor = false;
+            this.label109.StylePriority.UseBorderDashStyle = false;
+            this.label109.StylePriority.UseBorders = false;
+            this.label109.StylePriority.UseBorderWidth = false;
+            this.label109.StylePriority.UseFont = false;
+            this.label109.StylePriority.UseForeColor = false;
+            this.label109.StylePriority.UsePadding = false;
+            this.label109.StylePriority.UseTextAlignment = false;
+            this.label109.Text = "酶活性中,中等代谢";
+            this.label109.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label112
+            // 
+            this.label112.BackColor = System.Drawing.Color.Transparent;
+            this.label112.BorderColor = System.Drawing.Color.Black;
+            this.label112.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label112.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label112.BorderWidth = 1F;
+            this.label112.Font = new System.Drawing.Font("宋体", 9F);
+            this.label112.ForeColor = System.Drawing.Color.Black;
+            this.label112.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 170.8333F);
+            this.label112.Name = "label112";
+            this.label112.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label112.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label112.StylePriority.UseBackColor = false;
+            this.label112.StylePriority.UseBorderColor = false;
+            this.label112.StylePriority.UseBorderDashStyle = false;
+            this.label112.StylePriority.UseBorders = false;
+            this.label112.StylePriority.UseBorderWidth = false;
+            this.label112.StylePriority.UseFont = false;
+            this.label112.StylePriority.UseForeColor = false;
+            this.label112.StylePriority.UsePadding = false;
+            this.label112.StylePriority.UseTextAlignment = false;
+            this.label112.Text = "*1/*3";
+            this.label112.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label113
+            // 
+            this.label113.BackColor = System.Drawing.Color.Transparent;
+            this.label113.BorderColor = System.Drawing.Color.Black;
+            this.label113.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label113.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label113.BorderWidth = 1F;
+            this.label113.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.CYP2C193")});
+            this.label113.Font = new System.Drawing.Font("宋体", 9F);
+            this.label113.ForeColor = System.Drawing.Color.Black;
+            this.label113.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 170.8333F);
+            this.label113.Name = "label113";
+            this.label113.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label113.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label113.StylePriority.UseBackColor = false;
+            this.label113.StylePriority.UseBorderColor = false;
+            this.label113.StylePriority.UseBorderDashStyle = false;
+            this.label113.StylePriority.UseBorders = false;
+            this.label113.StylePriority.UseBorderWidth = false;
+            this.label113.StylePriority.UseFont = false;
+            this.label113.StylePriority.UseForeColor = false;
+            this.label113.StylePriority.UsePadding = false;
+            this.label113.StylePriority.UseTextAlignment = false;
+            this.label113.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label114
+            // 
+            this.label114.BackColor = System.Drawing.Color.Transparent;
+            this.label114.BorderColor = System.Drawing.Color.Black;
+            this.label114.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label114.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label114.BorderWidth = 1F;
+            this.label114.Font = new System.Drawing.Font("宋体", 9F);
+            this.label114.ForeColor = System.Drawing.Color.Black;
+            this.label114.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 170.8333F);
+            this.label114.Name = "label114";
+            this.label114.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label114.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label114.StylePriority.UseBackColor = false;
+            this.label114.StylePriority.UseBorderColor = false;
+            this.label114.StylePriority.UseBorderDashStyle = false;
+            this.label114.StylePriority.UseBorders = false;
+            this.label114.StylePriority.UseBorderWidth = false;
+            this.label114.StylePriority.UseFont = false;
+            this.label114.StylePriority.UseForeColor = false;
+            this.label114.StylePriority.UsePadding = false;
+            this.label114.StylePriority.UseTextAlignment = false;
+            this.label114.Text = "酶活性中,中等代谢";
+            this.label114.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label117
+            // 
+            this.label117.BackColor = System.Drawing.Color.Transparent;
+            this.label117.BorderColor = System.Drawing.Color.Black;
+            this.label117.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label117.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label117.BorderWidth = 1F;
+            this.label117.Font = new System.Drawing.Font("宋体", 9F);
+            this.label117.ForeColor = System.Drawing.Color.Black;
+            this.label117.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 195.8333F);
+            this.label117.Name = "label117";
+            this.label117.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label117.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label117.StylePriority.UseBackColor = false;
+            this.label117.StylePriority.UseBorderColor = false;
+            this.label117.StylePriority.UseBorderDashStyle = false;
+            this.label117.StylePriority.UseBorders = false;
+            this.label117.StylePriority.UseBorderWidth = false;
+            this.label117.StylePriority.UseFont = false;
+            this.label117.StylePriority.UseForeColor = false;
+            this.label117.StylePriority.UsePadding = false;
+            this.label117.StylePriority.UseTextAlignment = false;
+            this.label117.Text = "*2/*2";
+            this.label117.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label118
+            // 
+            this.label118.BackColor = System.Drawing.Color.Transparent;
+            this.label118.BorderColor = System.Drawing.Color.Black;
+            this.label118.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label118.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label118.BorderWidth = 1F;
+            this.label118.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.CYP2C194")});
+            this.label118.Font = new System.Drawing.Font("宋体", 9F);
+            this.label118.ForeColor = System.Drawing.Color.Black;
+            this.label118.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 195.8333F);
+            this.label118.Name = "label118";
+            this.label118.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label118.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label118.StylePriority.UseBackColor = false;
+            this.label118.StylePriority.UseBorderColor = false;
+            this.label118.StylePriority.UseBorderDashStyle = false;
+            this.label118.StylePriority.UseBorders = false;
+            this.label118.StylePriority.UseBorderWidth = false;
+            this.label118.StylePriority.UseFont = false;
+            this.label118.StylePriority.UseForeColor = false;
+            this.label118.StylePriority.UsePadding = false;
+            this.label118.StylePriority.UseTextAlignment = false;
+            this.label118.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label119
+            // 
+            this.label119.BackColor = System.Drawing.Color.Transparent;
+            this.label119.BorderColor = System.Drawing.Color.Black;
+            this.label119.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label119.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label119.BorderWidth = 1F;
+            this.label119.Font = new System.Drawing.Font("宋体", 9F);
+            this.label119.ForeColor = System.Drawing.Color.Black;
+            this.label119.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 195.8333F);
+            this.label119.Name = "label119";
+            this.label119.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label119.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label119.StylePriority.UseBackColor = false;
+            this.label119.StylePriority.UseBorderColor = false;
+            this.label119.StylePriority.UseBorderDashStyle = false;
+            this.label119.StylePriority.UseBorders = false;
+            this.label119.StylePriority.UseBorderWidth = false;
+            this.label119.StylePriority.UseFont = false;
+            this.label119.StylePriority.UseForeColor = false;
+            this.label119.StylePriority.UsePadding = false;
+            this.label119.StylePriority.UseTextAlignment = false;
+            this.label119.Text = "酶活性低,慢代谢";
+            this.label119.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label122
+            // 
+            this.label122.BackColor = System.Drawing.Color.Transparent;
+            this.label122.BorderColor = System.Drawing.Color.Black;
+            this.label122.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label122.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label122.BorderWidth = 1F;
+            this.label122.Font = new System.Drawing.Font("宋体", 9F);
+            this.label122.ForeColor = System.Drawing.Color.Black;
+            this.label122.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 220.8333F);
+            this.label122.Name = "label122";
+            this.label122.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label122.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label122.StylePriority.UseBackColor = false;
+            this.label122.StylePriority.UseBorderColor = false;
+            this.label122.StylePriority.UseBorderDashStyle = false;
+            this.label122.StylePriority.UseBorders = false;
+            this.label122.StylePriority.UseBorderWidth = false;
+            this.label122.StylePriority.UseFont = false;
+            this.label122.StylePriority.UseForeColor = false;
+            this.label122.StylePriority.UsePadding = false;
+            this.label122.StylePriority.UseTextAlignment = false;
+            this.label122.Text = "*2/*3";
+            this.label122.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label123
+            // 
+            this.label123.BackColor = System.Drawing.Color.Transparent;
+            this.label123.BorderColor = System.Drawing.Color.Black;
+            this.label123.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label123.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label123.BorderWidth = 1F;
+            this.label123.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.CYP2C195")});
+            this.label123.Font = new System.Drawing.Font("宋体", 9F);
+            this.label123.ForeColor = System.Drawing.Color.Black;
+            this.label123.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 220.8333F);
+            this.label123.Name = "label123";
+            this.label123.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label123.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label123.StylePriority.UseBackColor = false;
+            this.label123.StylePriority.UseBorderColor = false;
+            this.label123.StylePriority.UseBorderDashStyle = false;
+            this.label123.StylePriority.UseBorders = false;
+            this.label123.StylePriority.UseBorderWidth = false;
+            this.label123.StylePriority.UseFont = false;
+            this.label123.StylePriority.UseForeColor = false;
+            this.label123.StylePriority.UsePadding = false;
+            this.label123.StylePriority.UseTextAlignment = false;
+            this.label123.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label124
+            // 
+            this.label124.BackColor = System.Drawing.Color.Transparent;
+            this.label124.BorderColor = System.Drawing.Color.Black;
+            this.label124.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label124.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label124.BorderWidth = 1F;
+            this.label124.Font = new System.Drawing.Font("宋体", 9F);
+            this.label124.ForeColor = System.Drawing.Color.Black;
+            this.label124.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 220.8333F);
+            this.label124.Name = "label124";
+            this.label124.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label124.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label124.StylePriority.UseBackColor = false;
+            this.label124.StylePriority.UseBorderColor = false;
+            this.label124.StylePriority.UseBorderDashStyle = false;
+            this.label124.StylePriority.UseBorders = false;
+            this.label124.StylePriority.UseBorderWidth = false;
+            this.label124.StylePriority.UseFont = false;
+            this.label124.StylePriority.UseForeColor = false;
+            this.label124.StylePriority.UsePadding = false;
+            this.label124.StylePriority.UseTextAlignment = false;
+            this.label124.Text = "酶活性低,慢代谢";
+            this.label124.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label125
+            // 
+            this.label125.BackColor = System.Drawing.Color.Transparent;
+            this.label125.BorderColor = System.Drawing.Color.Black;
+            this.label125.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label125.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.label125.BorderWidth = 1F;
+            this.label125.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.label125.ForeColor = System.Drawing.Color.Black;
+            this.label125.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 245.8333F);
+            this.label125.Name = "label125";
+            this.label125.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label125.SizeF = new System.Drawing.SizeF(163.075F, 25.00002F);
+            this.label125.StylePriority.UseBackColor = false;
+            this.label125.StylePriority.UseBorderColor = false;
+            this.label125.StylePriority.UseBorderDashStyle = false;
+            this.label125.StylePriority.UseBorders = false;
+            this.label125.StylePriority.UseBorderWidth = false;
+            this.label125.StylePriority.UseFont = false;
+            this.label125.StylePriority.UseForeColor = false;
+            this.label125.StylePriority.UsePadding = false;
+            this.label125.StylePriority.UseTextAlignment = false;
+            this.label125.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label127
+            // 
+            this.label127.BackColor = System.Drawing.Color.Transparent;
+            this.label127.BorderColor = System.Drawing.Color.Black;
+            this.label127.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label127.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label127.BorderWidth = 1F;
+            this.label127.Font = new System.Drawing.Font("宋体", 9F);
+            this.label127.ForeColor = System.Drawing.Color.Black;
+            this.label127.LocationFloat = new DevExpress.Utils.PointFloat(325.15F, 245.8333F);
+            this.label127.Name = "label127";
+            this.label127.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label127.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label127.StylePriority.UseBackColor = false;
+            this.label127.StylePriority.UseBorderColor = false;
+            this.label127.StylePriority.UseBorderDashStyle = false;
+            this.label127.StylePriority.UseBorders = false;
+            this.label127.StylePriority.UseBorderWidth = false;
+            this.label127.StylePriority.UseFont = false;
+            this.label127.StylePriority.UseForeColor = false;
+            this.label127.StylePriority.UsePadding = false;
+            this.label127.StylePriority.UseTextAlignment = false;
+            this.label127.Text = "*3/*3";
+            this.label127.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label128
+            // 
+            this.label128.BackColor = System.Drawing.Color.Transparent;
+            this.label128.BorderColor = System.Drawing.Color.Black;
+            this.label128.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label128.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label128.BorderWidth = 1F;
+            this.label128.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.CYP2C196")});
+            this.label128.Font = new System.Drawing.Font("宋体", 9F);
+            this.label128.ForeColor = System.Drawing.Color.Black;
+            this.label128.LocationFloat = new DevExpress.Utils.PointFloat(477.2249F, 245.8333F);
+            this.label128.Name = "label128";
+            this.label128.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label128.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label128.StylePriority.UseBackColor = false;
+            this.label128.StylePriority.UseBorderColor = false;
+            this.label128.StylePriority.UseBorderDashStyle = false;
+            this.label128.StylePriority.UseBorders = false;
+            this.label128.StylePriority.UseBorderWidth = false;
+            this.label128.StylePriority.UseFont = false;
+            this.label128.StylePriority.UseForeColor = false;
+            this.label128.StylePriority.UsePadding = false;
+            this.label128.StylePriority.UseTextAlignment = false;
+            this.label128.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label129
+            // 
+            this.label129.BackColor = System.Drawing.Color.Transparent;
+            this.label129.BorderColor = System.Drawing.Color.Black;
+            this.label129.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
+            this.label129.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label129.BorderWidth = 1F;
+            this.label129.Font = new System.Drawing.Font("宋体", 9F);
+            this.label129.ForeColor = System.Drawing.Color.Black;
+            this.label129.LocationFloat = new DevExpress.Utils.PointFloat(629.2999F, 245.8333F);
+            this.label129.Name = "label129";
+            this.label129.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label129.SizeF = new System.Drawing.SizeF(152.075F, 25F);
+            this.label129.StylePriority.UseBackColor = false;
+            this.label129.StylePriority.UseBorderColor = false;
+            this.label129.StylePriority.UseBorderDashStyle = false;
+            this.label129.StylePriority.UseBorders = false;
+            this.label129.StylePriority.UseBorderWidth = false;
+            this.label129.StylePriority.UseFont = false;
+            this.label129.StylePriority.UseForeColor = false;
+            this.label129.StylePriority.UsePadding = false;
+            this.label129.StylePriority.UseTextAlignment = false;
+            this.label129.Text = "酶活性低,慢代谢";
+            this.label129.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label73
+            // 
+            this.label73.LocationFloat = new DevExpress.Utils.PointFloat(14.95829F, 250.2501F);
+            this.label73.Name = "label73";
+            this.label73.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label73.SizeF = new System.Drawing.SizeF(759.229F, 23F);
+            this.label73.Text = "也可参考国际华法林药物基因组学联合会网（www.warfarindosing.org）计算华法林使用剂量。";
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.DarkGray;
+            this.label67.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label67.Font = new System.Drawing.Font("宋体", 10F);
+            this.label67.LocationFloat = new DevExpress.Utils.PointFloat(168.126F, 205.8491F);
+            this.label67.Name = "label67";
+            this.label67.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label67.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label67.StylePriority.UseBackColor = false;
+            this.label67.StylePriority.UseBorders = false;
+            this.label67.StylePriority.UseFont = false;
+            this.label67.StylePriority.UseTextAlignment = false;
+            this.label67.Text = "3-4";
+            this.label67.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.DarkGray;
+            this.label68.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label68.Font = new System.Drawing.Font("宋体", 10F);
+            this.label68.LocationFloat = new DevExpress.Utils.PointFloat(267.0841F, 205.698F);
+            this.label68.Name = "label68";
+            this.label68.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label68.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label68.StylePriority.UseBackColor = false;
+            this.label68.StylePriority.UseBorders = false;
+            this.label68.StylePriority.UseFont = false;
+            this.label68.StylePriority.UseTextAlignment = false;
+            this.label68.Text = "3-4";
+            this.label68.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            this.label69.BackColor = System.Drawing.Color.DimGray;
+            this.label69.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label69.Font = new System.Drawing.Font("宋体", 10F);
+            this.label69.LocationFloat = new DevExpress.Utils.PointFloat(367.0212F, 205.8491F);
+            this.label69.Name = "label69";
+            this.label69.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label69.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label69.StylePriority.UseBackColor = false;
+            this.label69.StylePriority.UseBorders = false;
+            this.label69.StylePriority.UseFont = false;
+            this.label69.StylePriority.UseTextAlignment = false;
+            this.label69.Text = "0.5-2";
+            this.label69.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label70
+            // 
+            this.label70.BackColor = System.Drawing.Color.DimGray;
+            this.label70.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label70.Font = new System.Drawing.Font("宋体", 10F);
+            this.label70.LocationFloat = new DevExpress.Utils.PointFloat(466.9584F, 205.8491F);
+            this.label70.Name = "label70";
+            this.label70.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label70.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label70.StylePriority.UseBackColor = false;
+            this.label70.StylePriority.UseBorders = false;
+            this.label70.StylePriority.UseFont = false;
+            this.label70.StylePriority.UseTextAlignment = false;
+            this.label70.Text = "0.5-2";
+            this.label70.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label71
+            // 
+            this.label71.BackColor = System.Drawing.Color.DimGray;
+            this.label71.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label71.Font = new System.Drawing.Font("宋体", 10F);
+            this.label71.LocationFloat = new DevExpress.Utils.PointFloat(566.8956F, 205.8491F);
+            this.label71.Name = "label71";
+            this.label71.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label71.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label71.StylePriority.UseBackColor = false;
+            this.label71.StylePriority.UseBorders = false;
+            this.label71.StylePriority.UseFont = false;
+            this.label71.StylePriority.UseTextAlignment = false;
+            this.label71.Text = "0.5-2";
+            this.label71.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label72
+            // 
+            this.label72.BackColor = System.Drawing.Color.DimGray;
+            this.label72.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label72.Font = new System.Drawing.Font("宋体", 10F);
+            this.label72.LocationFloat = new DevExpress.Utils.PointFloat(664.8329F, 205.8491F);
+            this.label72.Name = "label72";
+            this.label72.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label72.SizeF = new System.Drawing.SizeF(101.8339F, 23F);
+            this.label72.StylePriority.UseBackColor = false;
+            this.label72.StylePriority.UseBorders = false;
+            this.label72.StylePriority.UseFont = false;
+            this.label72.StylePriority.UseTextAlignment = false;
+            this.label72.Text = "0.5-2";
+            this.label72.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label64
+            // 
+            this.label64.BackColor = System.Drawing.Color.DimGray;
+            this.label64.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label64.Font = new System.Drawing.Font("宋体", 10F);
+            this.label64.LocationFloat = new DevExpress.Utils.PointFloat(666.7068F, 182.849F);
+            this.label64.Name = "label64";
+            this.label64.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label64.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label64.StylePriority.UseBackColor = false;
+            this.label64.StylePriority.UseBorders = false;
+            this.label64.StylePriority.UseFont = false;
+            this.label64.StylePriority.UseTextAlignment = false;
+            this.label64.Text = "0.5-2";
+            this.label64.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            this.label65.BackColor = System.Drawing.Color.DimGray;
+            this.label65.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label65.Font = new System.Drawing.Font("宋体", 10F);
+            this.label65.LocationFloat = new DevExpress.Utils.PointFloat(666.7068F, 160.0001F);
+            this.label65.Name = "label65";
+            this.label65.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label65.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label65.StylePriority.UseBackColor = false;
+            this.label65.StylePriority.UseBorders = false;
+            this.label65.StylePriority.UseFont = false;
+            this.label65.StylePriority.UseTextAlignment = false;
+            this.label65.Text = "0.5-2";
+            this.label65.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            this.label66.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label66.Font = new System.Drawing.Font("宋体", 10F);
+            this.label66.LocationFloat = new DevExpress.Utils.PointFloat(666.7067F, 137.0001F);
+            this.label66.Name = "label66";
+            this.label66.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label66.SizeF = new System.Drawing.SizeF(99.93724F, 23F);
+            this.label66.StylePriority.UseBorders = false;
+            this.label66.StylePriority.UseFont = false;
+            this.label66.StylePriority.UseTextAlignment = false;
+            this.label66.Text = "*3/*3";
+            this.label66.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label61
+            // 
+            this.label61.BackColor = System.Drawing.Color.DimGray;
+            this.label61.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label61.Font = new System.Drawing.Font("宋体", 10F);
+            this.label61.LocationFloat = new DevExpress.Utils.PointFloat(566.7696F, 182.849F);
+            this.label61.Name = "label61";
+            this.label61.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label61.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label61.StylePriority.UseBackColor = false;
+            this.label61.StylePriority.UseBorders = false;
+            this.label61.StylePriority.UseFont = false;
+            this.label61.StylePriority.UseTextAlignment = false;
+            this.label61.Text = "0.5-2";
+            this.label61.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label62
+            // 
+            this.label62.BackColor = System.Drawing.Color.DarkGray;
+            this.label62.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label62.Font = new System.Drawing.Font("宋体", 10F);
+            this.label62.LocationFloat = new DevExpress.Utils.PointFloat(566.7696F, 160.0001F);
+            this.label62.Name = "label62";
+            this.label62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label62.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label62.StylePriority.UseBackColor = false;
+            this.label62.StylePriority.UseBorders = false;
+            this.label62.StylePriority.UseFont = false;
+            this.label62.StylePriority.UseTextAlignment = false;
+            this.label62.Text = "3-4";
+            this.label62.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label63
+            // 
+            this.label63.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label63.Font = new System.Drawing.Font("宋体", 10F);
+            this.label63.LocationFloat = new DevExpress.Utils.PointFloat(566.7695F, 137.0001F);
+            this.label63.Name = "label63";
+            this.label63.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label63.SizeF = new System.Drawing.SizeF(99.93724F, 23F);
+            this.label63.StylePriority.UseBorders = false;
+            this.label63.StylePriority.UseFont = false;
+            this.label63.StylePriority.UseTextAlignment = false;
+            this.label63.Text = "*2/*3";
+            this.label63.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.DarkGray;
+            this.label45.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label45.Font = new System.Drawing.Font("宋体", 10F);
+            this.label45.LocationFloat = new DevExpress.Utils.PointFloat(466.8325F, 182.849F);
+            this.label45.Name = "label45";
+            this.label45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label45.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label45.StylePriority.UseBackColor = false;
+            this.label45.StylePriority.UseBorders = false;
+            this.label45.StylePriority.UseFont = false;
+            this.label45.StylePriority.UseTextAlignment = false;
+            this.label45.Text = "3-4";
+            this.label45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.DarkGray;
+            this.label46.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label46.Font = new System.Drawing.Font("宋体", 10F);
+            this.label46.LocationFloat = new DevExpress.Utils.PointFloat(466.8325F, 160.0001F);
+            this.label46.Name = "label46";
+            this.label46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label46.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label46.StylePriority.UseBackColor = false;
+            this.label46.StylePriority.UseBorders = false;
+            this.label46.StylePriority.UseFont = false;
+            this.label46.StylePriority.UseTextAlignment = false;
+            this.label46.Text = "3-4";
+            this.label46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label47.Font = new System.Drawing.Font("宋体", 10F);
+            this.label47.LocationFloat = new DevExpress.Utils.PointFloat(466.8324F, 137.0001F);
+            this.label47.Name = "label47";
+            this.label47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label47.SizeF = new System.Drawing.SizeF(99.93724F, 23F);
+            this.label47.StylePriority.UseBorders = false;
+            this.label47.StylePriority.UseFont = false;
+            this.label47.StylePriority.UseTextAlignment = false;
+            this.label47.Text = "*2/*2";
+            this.label47.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.Color.DarkGray;
+            this.label42.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label42.Font = new System.Drawing.Font("宋体", 10F);
+            this.label42.LocationFloat = new DevExpress.Utils.PointFloat(366.8952F, 182.849F);
+            this.label42.Name = "label42";
+            this.label42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label42.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label42.StylePriority.UseBackColor = false;
+            this.label42.StylePriority.UseBorders = false;
+            this.label42.StylePriority.UseFont = false;
+            this.label42.StylePriority.UseTextAlignment = false;
+            this.label42.Text = "3-4";
+            this.label42.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            this.label43.BackColor = System.Drawing.Color.DarkGray;
+            this.label43.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label43.Font = new System.Drawing.Font("宋体", 10F);
+            this.label43.LocationFloat = new DevExpress.Utils.PointFloat(366.8952F, 160.0001F);
+            this.label43.Name = "label43";
+            this.label43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label43.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label43.StylePriority.UseBackColor = false;
+            this.label43.StylePriority.UseBorders = false;
+            this.label43.StylePriority.UseFont = false;
+            this.label43.StylePriority.UseTextAlignment = false;
+            this.label43.Text = "3-4";
+            this.label43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label44
+            // 
+            this.label44.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label44.Font = new System.Drawing.Font("宋体", 10F);
+            this.label44.LocationFloat = new DevExpress.Utils.PointFloat(366.8951F, 137.0001F);
+            this.label44.Name = "label44";
+            this.label44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label44.SizeF = new System.Drawing.SizeF(99.93724F, 23F);
+            this.label44.StylePriority.UseBorders = false;
+            this.label44.StylePriority.UseFont = false;
+            this.label44.StylePriority.UseTextAlignment = false;
+            this.label44.Text = "*1/*3";
+            this.label44.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.DarkGray;
+            this.label39.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label39.Font = new System.Drawing.Font("宋体", 10F);
+            this.label39.LocationFloat = new DevExpress.Utils.PointFloat(266.9581F, 182.698F);
+            this.label39.Name = "label39";
+            this.label39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label39.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label39.StylePriority.UseBackColor = false;
+            this.label39.StylePriority.UseBorders = false;
+            this.label39.StylePriority.UseFont = false;
+            this.label39.StylePriority.UseTextAlignment = false;
+            this.label39.Text = "3-4";
+            this.label39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.Color.Gray;
+            this.label40.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label40.Font = new System.Drawing.Font("宋体", 10F);
+            this.label40.LocationFloat = new DevExpress.Utils.PointFloat(266.9581F, 159.849F);
+            this.label40.Name = "label40";
+            this.label40.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label40.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label40.StylePriority.UseBackColor = false;
+            this.label40.StylePriority.UseBorders = false;
+            this.label40.StylePriority.UseFont = false;
+            this.label40.StylePriority.UseTextAlignment = false;
+            this.label40.Text = "5-7";
+            this.label40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label41.Font = new System.Drawing.Font("宋体", 10F);
+            this.label41.LocationFloat = new DevExpress.Utils.PointFloat(266.958F, 136.849F);
+            this.label41.Name = "label41";
+            this.label41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label41.SizeF = new System.Drawing.SizeF(99.93724F, 23F);
+            this.label41.StylePriority.UseBorders = false;
+            this.label41.StylePriority.UseFont = false;
+            this.label41.StylePriority.UseTextAlignment = false;
+            this.label41.Text = "*1/*2";
+            this.label41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.Gray;
+            this.label36.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label36.Font = new System.Drawing.Font("宋体", 10F);
+            this.label36.LocationFloat = new DevExpress.Utils.PointFloat(168F, 182.849F);
+            this.label36.Name = "label36";
+            this.label36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label36.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label36.StylePriority.UseBackColor = false;
+            this.label36.StylePriority.UseBorders = false;
+            this.label36.StylePriority.UseFont = false;
+            this.label36.StylePriority.UseTextAlignment = false;
+            this.label36.Text = "5-7";
+            this.label36.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.Color.Gray;
+            this.label37.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label37.Font = new System.Drawing.Font("宋体", 10F);
+            this.label37.LocationFloat = new DevExpress.Utils.PointFloat(168F, 160.0001F);
+            this.label37.Name = "label37";
+            this.label37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label37.SizeF = new System.Drawing.SizeF(99.93712F, 23F);
+            this.label37.StylePriority.UseBackColor = false;
+            this.label37.StylePriority.UseBorders = false;
+            this.label37.StylePriority.UseFont = false;
+            this.label37.StylePriority.UseTextAlignment = false;
+            this.label37.Text = "5-7";
+            this.label37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label38.Font = new System.Drawing.Font("宋体", 10F);
+            this.label38.LocationFloat = new DevExpress.Utils.PointFloat(167.9999F, 137.0001F);
+            this.label38.Name = "label38";
+            this.label38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label38.SizeF = new System.Drawing.SizeF(99.93724F, 23F);
+            this.label38.StylePriority.UseBorders = false;
+            this.label38.StylePriority.UseFont = false;
+            this.label38.StylePriority.UseTextAlignment = false;
+            this.label38.Text = "*1/*1";
+            this.label38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label35.Font = new System.Drawing.Font("宋体", 10F);
+            this.label35.LocationFloat = new DevExpress.Utils.PointFloat(167.9999F, 114.0001F);
+            this.label35.Name = "label35";
+            this.label35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label35.SizeF = new System.Drawing.SizeF(598.6669F, 23F);
+            this.label35.StylePriority.UseBorders = false;
+            this.label35.StylePriority.UseFont = false;
+            this.label35.StylePriority.UseTextAlignment = false;
+            this.label35.Text = "CYP2C19";
+            this.label35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            this.label32.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label32.Font = new System.Drawing.Font("宋体", 10F);
+            this.label32.LocationFloat = new DevExpress.Utils.PointFloat(18.06275F, 160.0001F);
+            this.label32.Name = "label32";
+            this.label32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label32.SizeF = new System.Drawing.SizeF(149.9371F, 23F);
+            this.label32.StylePriority.UseBorders = false;
+            this.label32.StylePriority.UseFont = false;
+            this.label32.StylePriority.UseTextAlignment = false;
+            this.label32.Text = "GG";
+            this.label32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label33.Font = new System.Drawing.Font("宋体", 10F);
+            this.label33.LocationFloat = new DevExpress.Utils.PointFloat(18.06288F, 183.0001F);
+            this.label33.Name = "label33";
+            this.label33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label33.SizeF = new System.Drawing.SizeF(149.937F, 23F);
+            this.label33.StylePriority.UseBorders = false;
+            this.label33.StylePriority.UseFont = false;
+            this.label33.StylePriority.UseTextAlignment = false;
+            this.label33.Text = "GA";
+            this.label33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label34.Font = new System.Drawing.Font("宋体", 10F);
+            this.label34.LocationFloat = new DevExpress.Utils.PointFloat(18.06288F, 205.849F);
+            this.label34.Name = "label34";
+            this.label34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label34.SizeF = new System.Drawing.SizeF(149.937F, 23F);
+            this.label34.StylePriority.UseBorders = false;
+            this.label34.StylePriority.UseFont = false;
+            this.label34.StylePriority.UseTextAlignment = false;
+            this.label34.Text = "AA";
+            this.label34.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            this.label31.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label31.Font = new System.Drawing.Font("宋体", 10F);
+            this.label31.LocationFloat = new DevExpress.Utils.PointFloat(18.06288F, 114.0001F);
+            this.label31.Name = "label31";
+            this.label31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label31.SizeF = new System.Drawing.SizeF(149.937F, 46.00002F);
+            this.label31.StylePriority.UseBorders = false;
+            this.label31.StylePriority.UseFont = false;
+            this.label31.StylePriority.UseTextAlignment = false;
+            this.label31.Text = "VKORC1";
+            this.label31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.Font = new System.Drawing.Font("宋体", 10F);
+            this.label30.LocationFloat = new DevExpress.Utils.PointFloat(14.95829F, 81.00003F);
+            this.label30.Name = "label30";
+            this.label30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label30.SizeF = new System.Drawing.SizeF(750.7085F, 23F);
+            this.label30.StylePriority.UseFont = false;
+            this.label30.StylePriority.UseTextAlignment = false;
+            this.label30.Text = "美国FDA认可的不同基因型的华法林起始给药剂量（mg/d）表";
+            this.label30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.Font = new System.Drawing.Font("宋体", 10F);
+            this.label29.LocationFloat = new DevExpress.Utils.PointFloat(14.95829F, 58.00002F);
+            this.label29.Name = "label29";
+            this.label29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label29.SizeF = new System.Drawing.SizeF(485.4167F, 23F);
+            this.label29.StylePriority.UseFont = false;
+            this.label29.Text = "根据基因型检测结果可以参考下表——华法林起始给药剂量。";
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.label28.LocationFloat = new DevExpress.Utils.PointFloat(302.0212F, 14F);
+            this.label28.Name = "label28";
+            this.label28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label28.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.label28.StylePriority.UseFont = false;
+            this.label28.StylePriority.UseTextAlignment = false;
+            this.label28.Text = "备注";
+            this.label28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("宋体", 8F);
+            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(1.729647F, 361.3335F);
+            this.label10.Name = "label10";
+            this.label10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label10.SizeF = new System.Drawing.SizeF(775.2703F, 23F);
+            this.label10.StylePriority.UseFont = false;
+            this.label10.Text = "1.本报告仅对本次样本负责。2.本报告仅供本院医师诊疗时参考，不能作为证明材料。";
+            // 
+            // xrLabel25
+            // 
+            this.xrLabel25.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(1.729647F, 320.3333F);
+            this.xrLabel25.Name = "xrLabel25";
+            this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel25.SizeF = new System.Drawing.SizeF(84.375F, 17F);
+            this.xrLabel25.StylePriority.UseFont = false;
+            this.xrLabel25.StylePriority.UseTextAlignment = false;
+            this.xrLabel25.Text = "送检时间：";
+            this.xrLabel25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel32
+            // 
+            this.xrLabel32.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(474.3545F, 320.3336F);
+            this.xrLabel32.Name = "xrLabel32";
+            this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel32.SizeF = new System.Drawing.SizeF(68.41672F, 17F);
+            this.xrLabel32.StylePriority.UseFont = false;
+            this.xrLabel32.StylePriority.UseTextAlignment = false;
+            this.xrLabel32.Text = "检验者：";
+            this.xrLabel32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel33
+            // 
+            this.xrLabel33.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(629.8546F, 320.3333F);
+            this.xrLabel33.Name = "xrLabel33";
+            this.xrLabel33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel33.SizeF = new System.Drawing.SizeF(71.54156F, 17F);
+            this.xrLabel33.StylePriority.UseFont = false;
+            this.xrLabel33.StylePriority.UseTextAlignment = false;
+            this.xrLabel33.Text = "审核者：";
+            this.xrLabel33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel40
+            // 
+            this.xrLabel40.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.报告最终审核者")});
+            this.xrLabel40.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel40.LocationFloat = new DevExpress.Utils.PointFloat(684.8549F, 320.3336F);
+            this.xrLabel40.Name = "xrLabel40";
+            this.xrLabel40.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel40.SizeF = new System.Drawing.SizeF(89.3324F, 16.99994F);
+            this.xrLabel40.StylePriority.UseFont = false;
+            this.xrLabel40.StylePriority.UseTextAlignment = false;
+            this.xrLabel40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel44
+            // 
+            this.xrLabel44.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(231.8962F, 320.3333F);
+            this.xrLabel44.Name = "xrLabel44";
+            this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel44.SizeF = new System.Drawing.SizeF(81.58321F, 17F);
+            this.xrLabel44.StylePriority.UseFont = false;
+            this.xrLabel44.StylePriority.UseTextAlignment = false;
+            this.xrLabel44.Text = "报告时间：";
+            this.xrLabel44.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // line2
+            // 
+            this.line2.LocationFloat = new DevExpress.Utils.PointFloat(0.9379069F, 291.2501F);
+            this.line2.Name = "line2";
+            this.line2.SizeF = new System.Drawing.SizeF(779.1661F, 4.083347F);
+            // 
+            // label24
+            // 
+            this.label24.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.申请时间")});
+            this.label24.Font = new System.Drawing.Font("宋体", 10F);
+            this.label24.LocationFloat = new DevExpress.Utils.PointFloat(71.81298F, 320.3336F);
+            this.label24.Name = "label24";
+            this.label24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label24.SizeF = new System.Drawing.SizeF(138.9166F, 16.99991F);
+            this.label24.StylePriority.UseFont = false;
+            this.label24.StylePriority.UseTextAlignment = false;
+            this.label24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label25
+            // 
+            this.label25.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.报告日期")});
+            this.label25.Font = new System.Drawing.Font("宋体", 10F);
+            this.label25.LocationFloat = new DevExpress.Utils.PointFloat(302.0212F, 320.3336F);
+            this.label25.Name = "label25";
+            this.label25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label25.SizeF = new System.Drawing.SizeF(172.3335F, 16.99998F);
+            this.label25.StylePriority.UseFont = false;
+            this.label25.StylePriority.UseTextAlignment = false;
+            this.label25.Text = "label25";
+            this.label25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label26
+            // 
+            this.label26.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.检验者")});
+            this.label26.Font = new System.Drawing.Font("宋体", 10F);
+            this.label26.LocationFloat = new DevExpress.Utils.PointFloat(529.8546F, 320.3336F);
+            this.label26.Name = "label26";
+            this.label26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label26.SizeF = new System.Drawing.SizeF(100F, 16.99991F);
+            this.label26.StylePriority.UseFont = false;
+            this.label26.StylePriority.UseTextAlignment = false;
+            this.label26.Text = "label26";
+            this.label26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // line1
+            // 
+            this.line1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 213.4375F);
+            this.line1.Name = "line1";
+            this.line1.SizeF = new System.Drawing.SizeF(771.3749F, 23F);
+            // 
+            // label9
+            // 
+            this.label9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.标题")});
+            this.label9.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Bold);
+            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(21.45828F, 47.02066F);
+            this.label9.Name = "label9";
+            this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label9.SizeF = new System.Drawing.SizeF(753.9162F, 40.70834F);
+            this.label9.StylePriority.UseFont = false;
+            this.label9.StylePriority.UseTextAlignment = false;
+            this.label9.Text = "label9";
+            this.label9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("宋体", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(21.45831F, 87.72901F);
+            this.label8.Name = "label8";
+            this.label8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label8.SizeF = new System.Drawing.SizeF(753.9161F, 28.58333F);
+            this.label8.StylePriority.UseFont = false;
+            this.label8.StylePriority.UseTextAlignment = false;
+            this.label8.Text = "CYP2C9&VKORC1基因多态性检测报告单";
+            this.label8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.诊断")});
+            this.label18.Font = new System.Drawing.Font("宋体", 10F);
+            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(252.1249F, 192.2707F);
+            this.label18.Name = "label18";
+            this.label18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label18.SizeF = new System.Drawing.SizeF(524.8751F, 21.16667F);
+            this.label18.StylePriority.UseFont = false;
+            this.label18.Text = "label18";
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("宋体", 10F);
+            this.label17.LocationFloat = new DevExpress.Utils.PointFloat(190.5833F, 192.2707F);
+            this.label17.Name = "label17";
+            this.label17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label17.SizeF = new System.Drawing.SizeF(61.54161F, 21.16663F);
+            this.label17.StylePriority.UseFont = false;
+            this.label17.Text = "诊  断：";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("宋体", 10F);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(190.5833F, 128.9375F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label2.SizeF = new System.Drawing.SizeF(54.54164F, 21.16668F);
+            this.label2.StylePriority.UseFont = false;
+            this.label2.StylePriority.UseTextAlignment = false;
+            this.label2.Text = "登记号:";
+            this.label2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.登记号")});
+            this.label3.Font = new System.Drawing.Font("宋体", 10F);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(245.1249F, 128.9374F);
+            this.label3.Name = "label3";
+            this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label3.SizeF = new System.Drawing.SizeF(137.8329F, 21.16667F);
+            this.label3.StylePriority.UseFont = false;
+            this.label3.StylePriority.UseTextAlignment = false;
+            this.label3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel24
+            // 
+            this.xrLabel24.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.医生姓名")});
+            this.xrLabel24.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(675.9579F, 162.1041F);
+            this.xrLabel24.Name = "xrLabel24";
+            this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel24.SizeF = new System.Drawing.SizeF(99.41684F, 21.16667F);
+            this.xrLabel24.StylePriority.UseFont = false;
+            this.xrLabel24.StylePriority.UseTextAlignment = false;
+            this.xrLabel24.Text = "xrLabel27";
+            this.xrLabel24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel23
+            // 
+            this.xrLabel23.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(592.3328F, 162.1042F);
+            this.xrLabel23.Name = "xrLabel23";
+            this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel23.SizeF = new System.Drawing.SizeF(86.58368F, 21.16667F);
+            this.xrLabel23.StylePriority.UseFont = false;
+            this.xrLabel23.StylePriority.UseTextAlignment = false;
+            this.xrLabel23.Text = "送  检  者:";
+            this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel19
+            // 
+            this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.样本号")});
+            this.xrLabel19.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(674.9162F, 128.9375F);
+            this.xrLabel19.Name = "xrLabel19";
+            this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel19.SizeF = new System.Drawing.SizeF(100.4584F, 21.16668F);
+            this.xrLabel19.StylePriority.UseFont = false;
+            this.xrLabel19.StylePriority.UseTextAlignment = false;
+            this.xrLabel19.Text = "xrLabel11";
+            this.xrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel18
+            // 
+            this.xrLabel18.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(592.3328F, 128.9375F);
+            this.xrLabel18.Name = "xrLabel18";
+            this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel18.SizeF = new System.Drawing.SizeF(86.58371F, 21.16668F);
+            this.xrLabel18.StylePriority.UseFont = false;
+            this.xrLabel18.StylePriority.UseTextAlignment = false;
+            this.xrLabel18.Text = "样  本  号:";
+            this.xrLabel18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel17
+            // 
+            this.xrLabel17.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.床号")});
+            this.xrLabel17.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(245.1249F, 162.1041F);
+            this.xrLabel17.Name = "xrLabel17";
+            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel17.SizeF = new System.Drawing.SizeF(96.87502F, 21.16667F);
+            this.xrLabel17.StylePriority.UseFont = false;
+            this.xrLabel17.Text = "xrLabel57";
+            // 
+            // xrLabel16
+            // 
+            this.xrLabel16.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(190.5833F, 162.1041F);
+            this.xrLabel16.Name = "xrLabel16";
+            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel16.SizeF = new System.Drawing.SizeF(54.54164F, 21.16667F);
+            this.xrLabel16.StylePriority.UseFont = false;
+            this.xrLabel16.StylePriority.UseTextAlignment = false;
+            this.xrLabel16.Text = "床  号:";
+            this.xrLabel16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.标本类别")});
+            this.xrLabel11.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(440.8748F, 128.9375F);
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(145.8753F, 21.16666F);
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.StylePriority.UseTextAlignment = false;
+            this.xrLabel11.Text = "xrLabel2";
+            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel10
+            // 
+            this.xrLabel10.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(386.3332F, 128.9375F);
+            this.xrLabel10.Name = "xrLabel10";
+            this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel10.SizeF = new System.Drawing.SizeF(78.62512F, 21.16666F);
+            this.xrLabel10.StylePriority.UseFont = false;
+            this.xrLabel10.StylePriority.UseTextAlignment = false;
+            this.xrLabel10.Text = "标  本:";
+            this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel9
+            // 
+            this.xrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.科室名称")});
+            this.xrLabel9.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(440.8748F, 162.1041F);
+            this.xrLabel9.Name = "xrLabel9";
+            this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(145.8753F, 21.16668F);
+            this.xrLabel9.StylePriority.UseFont = false;
+            this.xrLabel9.StylePriority.UseTextAlignment = false;
+            this.xrLabel9.Text = "xrLabel13";
+            this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(386.3332F, 162.1041F);
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(54.08337F, 21.16668F);
+            this.xrLabel8.StylePriority.UseFont = false;
+            this.xrLabel8.StylePriority.UseTextAlignment = false;
+            this.xrLabel8.Text = "科  别:";
+            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.年龄")});
+            this.xrLabel7.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(71.58327F, 192.2708F);
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(66.70831F, 21.16667F);
+            this.xrLabel7.StylePriority.UseFont = false;
+            this.xrLabel7.StylePriority.UseTextAlignment = false;
+            this.xrLabel7.Text = "xrLabel9";
+            this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(21.45831F, 192.2708F);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(50.125F, 21.16667F);
+            this.xrLabel6.StylePriority.UseFont = false;
+            this.xrLabel6.StylePriority.UseTextAlignment = false;
+            this.xrLabel6.Text = "年 龄:";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.性别")});
+            this.xrLabel5.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(71.58327F, 162.1042F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(64.87511F, 21.16668F);
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "xrLabel7";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(21.45831F, 162.1042F);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(50.12498F, 21.16669F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "性 别:";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "可设计字段.姓名")});
+            this.xrLabel3.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(71.58327F, 128.9375F);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(125F, 21.16668F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.Text = "xrLabel5";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("宋体", 10F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(21.45831F, 128.9375F);
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(50.12498F, 21.16669F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "姓 名:";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrControlStyle1
+            // 
+            this.xrControlStyle1.Name = "xrControlStyle1";
+            // 
+            // xtraReport11
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.PageFooter,
+                        this.ReportHeader,
+                        this.病人分组头,
+                        this.病人分组尾,
+                        this.PageHeader,
+                        this.topMarginBand1,
+                        this.bottomMarginBand1});
+            this.Margins = new System.Drawing.Printing.Margins(15, 16, 20, 15);
+            this.Name = "xtraReport11";
+            this.PageHeight = 1169;
+            this.PageWidth = 827;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            this.ShowPrintMarginsWarning = false;
+            this.ShowPrintStatusDialog = false;
+            this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
+                        this.xrControlStyle1});
+            this.StyleSheetPath = null;
+            this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.Version = "15.2";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

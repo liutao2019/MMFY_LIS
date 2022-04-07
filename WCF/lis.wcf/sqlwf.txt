@@ -1,0 +1,204 @@
+
+--添加报告显示颜色 -- 2019-07-22 茂名妇幼
+insert into sys_pub_parameter values ('Barcode_Color_FirstReported','条码','条码颜色显示：已报告','枚举','绿色','黑色,红色,灰色,蓝色,绿色,紫色,棕色','system',null)
+
+--添加报告明细记录的申请单号 -- 2019-07-22 茂名妇幼
+alter table Pat_lis_detail add Pdet_applyid varchar(255) null
+
+--添加中期报告相关字段 -- 2019-07-22 茂名妇幼
+alter table Pat_lis_main add Pma_micreport_flag int
+alter table Pat_lis_main add Pma_micreport_date datetime
+alter table Pat_lis_main add Pma_micreport_chkuserid varchar(50)
+alter table Pat_lis_main add Pma_micreport_senduserid varchar(50)
+
+
+--添加权限--显示门诊导入按钮   -- 2019-07-22 茂名妇幼
+if not exists(select top 1 * from Base_parameter where Bparm_code  = 'Lab_ShowMZImport')
+begin
+INSERT INTO Base_parameter ([Bparm_code]
+      ,[Bparm_group]
+      ,[Bparm_field_name]
+      ,[Bparm_field_type]
+      ,[Bparm_field_value]
+      ,[Bparm_dic_list]
+      ,[Bparm_type])
+     VALUES
+           ('Lab_ShowMZImport'
+           ,'检验报告管理'
+           ,'显示门诊导入按钮'
+           ,'枚举'
+           ,'否'
+           ,'是,否'
+           ,'system')
+end
+go
+
+
+--添加权限--显示快速登记按钮  -- 2019-07-22 茂名妇幼
+if not exists(select top 1 * from Base_parameter where Bparm_code  = 'Lab_QuickRegister')
+begin
+INSERT INTO Base_parameter ([Bparm_code]
+      ,[Bparm_group]
+      ,[Bparm_field_name]
+      ,[Bparm_field_type]
+      ,[Bparm_field_value]
+      ,[Bparm_dic_list]
+      ,[Bparm_type])
+     VALUES
+           ('Lab_QuickRegister'
+           ,'检验报告管理'
+           ,'显示快速登记按钮'
+           ,'枚举'
+           ,'是'
+           ,'是,否'
+           ,'system')
+end
+go
+
+--添加仪器原始结果清洗后的中间表 -- 2019-07-23 茂名妇幼
+USE [dcl_mmfy]
+GO
+/****** Object:  Table [dbo].[Lis_result_originalex]    Script Date: 07/23/2019 11:56:39 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Lis_result_originalex](
+	[Lro_id] [int] IDENTITY(1,1) NOT NULL,
+	[Lro_Ditr_id] [varchar](12) NULL,
+	[Lro_source_Ditr_id] [varchar](12) NULL,
+	[Lro_sid] [varchar](18) NULL,
+	[Lro_Ricc_code] [varchar](100) NULL,
+	[Lro_value] [varchar](100) NULL,
+	[Lro_value2] [varchar](100) NULL,
+	[Lro_value3] [varchar](100) NULL,
+	[Lro_value4] [varchar](100) NULL,
+	[Lro_date] [datetime] NULL,
+	[Lro_remark] [varchar](250) NULL,
+	[Lro_data_type] [int] NULL,
+	[Lro_receiver_flag] [int] NULL,
+	[Lro_Lresdesc_id] [varchar](50) NULL,
+	[Lro_critical_flag] [char](1) NULL,
+	[Lro_unit] [varchar](12) NULL,
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+
+
+--添加权限--报告(二审)是否记录前一个人的密码  -- 2019-07-22 茂名妇幼
+if not exists(select top 1 * from Base_parameter where Bparm_code  = 'Lab_report_DefaultPw')
+begin
+INSERT INTO Base_parameter ([Bparm_code]
+      ,[Bparm_group]
+      ,[Bparm_field_name]
+      ,[Bparm_field_type]
+      ,[Bparm_field_value]
+      ,[Bparm_dic_list]
+      ,[Bparm_type])
+     VALUES
+           ('Lab_report_DefaultPw'
+           ,'检验报告管理'
+           ,'报告(二审)是否记录前一个人的密码'
+           ,'枚举'
+           ,'是'
+           ,'是,否'
+           ,'system')
+end
+go
+
+
+
+--报告(二审)时允许修改一审人   -- 2019-07-26 茂名妇幼
+if not exists(select top 1 * from Base_parameter where Bparm_code  = 'report_Allowedit_auditercode')
+begin
+INSERT INTO Base_parameter ([Bparm_code]
+      ,[Bparm_group]
+      ,[Bparm_field_name]
+      ,[Bparm_field_type]
+      ,[Bparm_field_value]
+      ,[Bparm_dic_list]
+      ,[Bparm_type])
+     VALUES
+           ('report_Allowedit_auditercode'
+           ,'审核'
+           ,'报告(二审)时允许修改一审人'
+           ,'枚举'
+           ,'是'
+           ,'是,否'
+           ,'system')
+end
+go
+
+--报告(二审)签名时，签名弹窗是否显示一审人   -- 2019-07-26 茂名妇幼
+if not exists(select top 1 * from Base_parameter where Bparm_code  = 'report_checkform_showlPat_i_code')
+begin
+INSERT INTO Base_parameter ([Bparm_code]
+      ,[Bparm_group]
+      ,[Bparm_field_name]
+      ,[Bparm_field_type]
+      ,[Bparm_field_value]
+      ,[Bparm_dic_list]
+      ,[Bparm_type])
+     VALUES
+           ('report_checkform_showlPat_i_code'
+           ,'审核'
+           ,'报告(二审)签名时，签名弹窗是否显示一审人'
+           ,'枚举'
+           ,'否'
+           ,'是,否'
+           ,'system')
+end
+go
+
+
+--标本流转的时候,是否跳转到最后一行
+if not exists(select top 1 * from Base_parameter where Bparm_code  = 'Barcode_ActionMoveLast')
+begin
+INSERT INTO Base_parameter ([Bparm_code]
+      ,[Bparm_group]
+      ,[Bparm_field_name]
+      ,[Bparm_field_type]
+      ,[Bparm_field_value]
+      ,[Bparm_dic_list]
+      ,[Bparm_type])
+     VALUES
+           ('Barcode_ActionMoveLast'
+           ,'条码'
+           ,'标本流转的时候,是否跳转到最后一行'
+           ,'枚举'
+           ,'是'
+           ,'是,否'
+           ,'system')
+end
+go
+
+
+--添加检测对象字段 -- 2019-08-09 茂名妇幼
+alter table Lis_result_desc add Lrd_checkobj varchar(32)
+
+--添加传染病标识字段 -- 2019-09-05 茂名妇幼
+alter table Lis_result_bact add Lbac_idd_flag int;
+
+--添加索引 -- 2019-09-10 茂名妇幼
+CREATE INDEX index_rep_id ON Pat_lis_main (pma_rep_id)
+
+--新建 lis_report_doc 表，保存检验文档数据，张华鑫 2019-09-24  茂名妇幼
+CREATE TABLE lis_report_doc 
+(doc_id INT  PRIMARY KEY IDENTITY(1,1) NOT NULL  --文档编码
+, doc_date DATETIME NOT NULL --文档日期
+, doc_type CHAR(1) NOT NULL --文档类型 0模板 1数据
+, doc_title VARCHAR(200) NOT NULL --模板类型（文档标题）
+, doc_content TEXT --文档内容
+)
+GO
+
+
+--种族
+alter table Pid_report_main_ext ADD pat_race varchar(16)
+--胎数
+alter table Pid_report_main_ext ADD pat_birth_number varchar(16)
+--通知时间
+alter table Pid_report_main_ext ADD pat_notice_date datetime

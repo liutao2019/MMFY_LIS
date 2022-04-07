@@ -1,0 +1,63 @@
+declare @dep nvarchar(500)
+
+select distinct 
+patients.pat_dep_name into #dep
+from patients (nolock)
+where isnull(patients.pat_dep_name,'') <> ''
+&where&
+
+--列出科室
+set @dep = (select #dep.[pat_dep_name] + ',' from #dep for xml path(''))
+set @dep = left(@dep,len(@dep)-1)
+
+select
+bc_patients.bc_receiver_date 接收日期,
+bc_patients.bc_bar_code 条形码,
+bc_patients.bc_name 病人姓名,
+bc_cname.bc_lis_code 组合编码1,
+dict_combine.com_name 项目名称1,
+bc_patients.bc_his_name 项目名称,
+bc_patients.bc_d_name 临床科室,
+bc_patients.bc_doct_name 医生,
+dict_combine.com_pri 医院价格,
+'' 备注,
+@dep 总科室,
+'&sDate&' 开始时间,
+'&eDate&' 结束时间  into #c
+from bc_patients (nolock)
+inner join #dep on #dep.pat_dep_name = bc_patients.bc_d_name
+left join bc_cname (nolock) on bc_cname.bc_bar_code = bc_patients.bc_bar_code
+left join dict_combine on dict_combine.com_id = bc_cname.bc_lis_code
+where bc_patients.bc_del = '0'
+and bc_patients.bc_receiver_date >'&sDate&' and bc_patients.bc_receiver_date <='&eDate&'
+--and bc_patients.bc_bar_code = '2917090219'
+--order by  bc_patients.bc_receiver_date,bc_patients.bc_name
+
+
+select 
+#c.接收日期,
+#c.条形码,
+#c.病人姓名,
+#c.项目名称,
+#c.临床科室,
+#c.医生,
+sum(#c.医院价格) 医院价格,
+#c.备注,
+#c.总科室,
+#c.开始时间,
+#c.结束时间
+from #c
+group by
+#c.接收日期,
+#c.条形码,
+#c.病人姓名,
+#c.项目名称,
+#c.临床科室,
+#c.医生,
+#c.备注,
+#c.总科室,
+#c.开始时间,
+#c.结束时间
+order by
+#c.接收日期,
+#c.病人姓名

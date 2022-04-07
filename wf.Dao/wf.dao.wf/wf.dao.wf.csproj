@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F13DD42-3310-4DF9-A66E-C29A43F2D392}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wf.dao.wf</RootNamespace>
+    <AssemblyName>wf.dao.wf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\WCF\lis.wcf\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.dao.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WCF\lis.wcf\bin\dcl.dao.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.DataInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.DataInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnanlyseQC\DaoCombModelSel.cs" />
+    <Compile Include="DataInterfaceCon\DaoDicDataInterfaceCommand.cs" />
+    <Compile Include="DataInterfaceCon\DaoDicDataInterfaceCommandParameter.cs" />
+    <Compile Include="DataInterfaceCon\DaoDicDataInterfaceConnection.cs" />
+    <Compile Include="Dict\DaoDefItmProperty.cs" />
+    <Compile Include="Dict\DaoDicCombineDetail.cs" />
+    <Compile Include="Dict\DaoDicPubIcdCombine.cs" />
+    <Compile Include="Dict\DaoDicPubStatus.cs" />
+    <Compile Include="Dict\DaoDicReaClaimant.cs" />
+    <Compile Include="Dict\DaoDicReaDept.cs" />
+    <Compile Include="Dict\DaoDicReaGroup.cs" />
+    <Compile Include="Dict\DaoDicRealTimeReportStat.cs" />
+    <Compile Include="Dict\DaoDicReaProduct.cs" />
+    <Compile Include="Dict\DaoDicReaReturn.cs" />
+    <Compile Include="Dict\DaoDicReaStoreCondition.cs" />
+    <Compile Include="Dict\DaoDicReaStorePosition.cs" />
+    <Compile Include="Dict\DaoDicReasupplier.cs" />
+    <Compile Include="Dict\DaoDicReaUnit.cs" />
+    <Compile Include="Dict\DaoDicSampStoreStatus.cs" />
+    <Compile Include="Dict\DaoDicCombineTimeruleRelated.cs" />
+    <Compile Include="Dict\DaoDicComReptime.cs" />
+    <Compile Include="Dict\DaoDicElisaCalu.cs" />
+    <Compile Include="Dict\DaoDicElisaCriter.cs" />
+    <Compile Include="Dict\DaoDicElisaMeaning.cs" />
+    <Compile Include="Dict\DaoDicElisaItem.cs" />
+    <Compile Include="Dict\DaoDicElisaSort.cs" />
+    <Compile Include="Dict\DaoDicElisaStatus.cs" />
+    <Compile Include="Dict\DaoDicItmCalu.cs" />
+    <Compile Include="Dict\DaoDicItmCheck.cs" />
+    <Compile Include="Dict\DaoDicItmCheckDetail.cs" />
+    <Compile Include="Dict\DaoDicItmCombine.cs" />
+    <Compile Include="Dict\DaoDicItmReftype.cs" />
+    <Compile Include="Dict\DaoDicItrCombine.cs" />
+    <Compile Include="Dict\DaoDicComTimeRule.cs" />
+    <Compile Include="Dict\DaoDicMicAntidetail.cs" />
+    <Compile Include="Dict\DaoDicMachineCode.cs" />
+    <Compile Include="Dict\DaoDicMicAntibio.cs" />
+    <Compile Include="Dict\DaoDicMicAntitype.cs" />
+    <Compile Include="Dict\DaoDicMicBacteria.cs" />
+    <Compile Include="Dict\DaoDicCheckPurpose.cs" />
+    <Compile Include="Dict\DaoDicItemSample.cs" />
+    <Compile Include="Dict\DaoDicItmItem.cs" />
+    <Compile Include="Dict\DaoDicItmRefdetail.cs" />
+    <Compile Include="Dict\DaoDicMicBacttype.cs" />
+    <Compile Include="Dict\DaoDicMicSmear.cs" />
+    <Compile Include="Dict\DaoDicNobactCom.cs" />
+    <Compile Include="Dict\DaoDicTemperature.cs" />
+    <Compile Include="Dict\DaoDictHarvester.cs" />
+    <Compile Include="Dict\DaoTypeBarcode.cs" />
+    <Compile Include="Dict\Mic\DaoDefAntiType.cs" />
+    <Compile Include="Dict\Mic\DaoDefItmResultTips.cs" />
+    <Compile Include="Dict\Mic\DaoDicAntibioType.cs" />
+    <Compile Include="Dict\Mic\DaoDicMicTemplate.cs" />
+    <Compile Include="Elisa\DaoElisaAnalyse.cs" />
+    <Compile Include="HL7\DaoSampOrder.cs" />
+    <Compile Include="Interfaces\DaoSysItfContrast.cs" />
+    <Compile Include="Interfaces\DaoSysItfInterface.cs" />
+    <Compile Include="Message\DaoCombineTATMsg.cs" />
+    <Compile Include="Message\DaoDeptMessage.cs" />
+    <Compile Include="Message\DaoInstrmtUrgentTATMsg.cs" />
+    <Compile Include="Message\DaoInstrmtWardingMsg.cs" />
+    <Compile Include="Message\DaoObrMessageContent.cs" />
+    <Compile Include="Message\DaoObrMessageReceive.cs" />
+    <Compile Include="Message\DaoPidReportMainExt.cs" />
+    <Compile Include="Message\DaoUrgentObrMessage.cs" />
+    <Compile Include="MIC\DaoSpecialDictOper.cs" />
+    <Compile Include="Monitor\DaoSampProcessMonitor.cs" />
+    <Compile Include="OA\DaoOaDicShiftTemplate.cs" />
+    <Compile Include="OA\DaoOaHandOver.cs" />
+    <Compile Include="OA\DaoOaHoRecord.cs" />
+    <Compile Include="QCSpecific\DaoObrQcAnalysis.cs" />
+    <Compile Include="QCSpecific\DaoObrQcResult.cs" />
+    <Compile Include="QueueNumber\DaoSysMessageSpeech.cs" />
+    <Compile Include="QueueNumber\DaoQueueNumber.cs" />
+    <Compile Include="Reagent\DaoReaApply.cs" />
+    <Compile Include="Reagent\DaoReaApplyDetail.cs" />
+    <Compile Include="Reagent\DaoReaDelivery.cs" />
+    <Compile Include="Reagent\DaoReaDeliveryDetail.cs" />
+    <Compile Include="Reagent\DaoReaLossReport.cs" />
+    <Compile Include="Reagent\DaoReaLossReportDetail.cs" />
+    <Compile Include="Reagent\DaoReaPurchase.cs" />
+    <Compile Include="Reagent\DaoReaPurchaseDetail.cs" />
+    <Compile Include="Reagent\DaoReaSetting.cs" />
+    <Compile Include="Reagent\DaoReaStorage.cs" />
+    <Compile Include="Reagent\DaoReaStorageDetail.cs" />
+    <Compile Include="Reagent\DaoReaStoreCount.cs" />
+    <Compile Include="Reagent\DaoReaSubscribe.cs" />
+    <Compile Include="Reagent\DaoReaSubscribeDetail.cs" />
+    <Compile Include="ReportPrint\DaoReportPrint.cs" />
+    <Compile Include="Report\DaoLisDoc.cs" />
+    <Compile Include="ResultView\DaoCdrHistoryResult.cs" />
+    <Compile Include="ResultView\DaoObrResultBakItm.cs" />
+    <Compile Include="Result\DaoMicData.cs" />
+    <Compile Include="Result\DaoReportComment.cs" />
+    <Compile Include="Result\DaoPatientRecheck.cs" />
+    <Compile Include="Result\DaoObrResultImage.cs" />
+    <Compile Include="Result\DaoPidReportDetail.cs" />
+    <Compile Include="ResultView\DaoObrResult.cs" />
+    <Compile Include="ResultView\DaoObrResultAnti.cs" />
+    <Compile Include="ResultView\DaoObrResultBact.cs" />
+    <Compile Include="ResultView\DaoObrResultDesc.cs" />
+    <Compile Include="Result\DaoReportMain.cs" />
+    <Compile Include="Result\DaoResultTemp.cs" />
+    <Compile Include="SampMain\DaoSampDetail.cs" />
+    <Compile Include="SampMain\DaoSampleMain.cs" />
+    <Compile Include="SampMain\DaoSampOperateDetail.cs" />
+    <Compile Include="SampMain\DaoSampProcessDetail.cs" />
+    <Compile Include="SampMain\DaoSampRegister.cs" />
+    <Compile Include="SampMain\DaoSampReturn.cs" />
+    <Compile Include="SampStock\DaoSampStoreDetail.cs" />
+    <Compile Include="SampStock\DaoSampStoreRack.cs" />
+    <Compile Include="SampStock\DaoSamRack.cs" />
+    <Compile Include="Setting\DaoRunTimeSetting.cs" />
+    <Compile Include="Statistical\DaoAnalyse.cs" />
+    <Compile Include="Statistical\DaoStatTemplate.cs" />
+    <Compile Include="SysInterfaceLog\DaoSysInterfaceLog.cs" />
+    <Compile Include="Sys\DaoSysLoginLog.cs" />
+    <Compile Include="Sys\DaoSysOperationLog.cs" />
+    <Compile Include="Dict\DaoDicPubEvaluate.cs" />
+    <Compile Include="Dict\DaoDicCombine.cs" />
+    <Compile Include="Dict\DaoDicDoctor.cs" />
+    <Compile Include="Dict\DaoDicInstrument.cs" />
+    <Compile Include="Dict\DaoDicMicroscope.cs" />
+    <Compile Include="Dict\DaoDicPubIdent.cs" />
+    <Compile Include="Dict\DaoDicOrigin.cs" />
+    <Compile Include="Dict\DaoDicPubOrganize.cs" />
+    <Compile Include="Dict\DaoDicPubDept.cs" />
+    <Compile Include="Dict\DaoDicPubIcd.cs" />
+    <Compile Include="Dict\DaoDicPubInsurance.cs" />
+    <Compile Include="Dict\DaoDicResAdjust.cs" />
+    <Compile Include="Dict\DaoDicSampDivergeRule.cs" />
+    <Compile Include="Dict\DaoDicSample.cs" />
+    <Compile Include="Dict\DaoDicSampRemark.cs" />
+    <Compile Include="Dict\DaoDicSampReturn.cs" />
+    <Compile Include="Dict\DaoDicSampStore.cs" />
+    <Compile Include="Dict\DaoDicSampStoreArea.cs" />
+    <Compile Include="Dict\DaoDicSState.cs" />
+    <Compile Include="Dict\DaoDicPubProfession.cs" />
+    <Compile Include="Dict\DaoDicTestTube.cs" />
+    <Compile Include="Dict\DaoDicTubeRack.cs" />
+    <Compile Include="Dict\DaoDicSampTubeRack.cs" />
+    <Compile Include="Dict\DaoDicUtgentValue.cs" />
+    <Compile Include="Dict\DaoReport.cs" />
+    <Compile Include="Dict\DaoSampMergeRule.cs" />
+    <Compile Include="Dict\DaoSysBarcodeGenerator.cs" />
+    <Compile Include="OA\DaoOaAnnouncement.cs" />
+    <Compile Include="OA\DaoOaDicShift.cs" />
+    <Compile Include="OA\DaoOaDicShiftDetail.cs" />
+    <Compile Include="OA\DaoOaOrderTable.cs" />
+    <Compile Include="OA\DaoOaOrderTableField.cs" />
+    <Compile Include="OA\DaoOaTableDetail.cs" />
+    <Compile Include="OA\DaoOaWorkAttendance.cs" />
+    <Compile Include="Dict\DaoSamStoreRack.cs" />
+    <Compile Include="InstrumentThings\DaoItrInstrumentMaintain.cs" />
+    <Compile Include="InstrumentThings\DaoItrInstrumentRegistration.cs" />
+    <Compile Include="InstrumentThings\DaoItrInstrumentServicing.cs" />
+    <Compile Include="NoticeManage\DaoNoticeManage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QCSpecific\DaoQcMateriaRule.cs" />
+    <Compile Include="Result\DaoObrResultOriginal.cs" />
+    <Compile Include="QCSpecific\DaoDicQcConvert.cs" />
+    <Compile Include="QCSpecific\DaoDicQcExteResult.cs" />
+    <Compile Include="QCSpecific\DaoDicQcInstrmtChannel.cs" />
+    <Compile Include="QCSpecific\DaoDicQcMateria.cs" />
+    <Compile Include="QCSpecific\DaoDicQcMateriaDetail.cs" />
+    <Compile Include="QCSpecific\DaoDicQcRule.cs" />
+    <Compile Include="QCSpecific\DaoDicQcRuleMes.cs" />
+    <Compile Include="QCSpecific\DaoDicQcRuleTime.cs" />
+    <Compile Include="QCSpecific\DaoFastAddQcItem.cs" />
+    <Compile Include="QCSpecific\DaoFrmParameter.cs" />
+    <Compile Include="ResultView\DaoMitmNoResultView.cs" />
+    <Compile Include="Report\DaoReportStat.cs" />
+    <Compile Include="SamDestory\DaoSamDestory.cs" />
+    <Compile Include="SamSave\DaoSamSave.cs" />
+    <Compile Include="SamSearch\DaoSamSearch.cs" />
+    <Compile Include="Statistical\DaoResRefFlag.cs" />
+    <Compile Include="Statistical\DaoStatistical.cs" />
+    <Compile Include="TAT\DaoTatOverTime.cs" />
+    <Compile Include="TAT\DaoTatProRecord.cs" />
+    <Compile Include="TempHandle\DaoTempHandle.cs" />
+    <Compile Include="Tools\DaoMergeResult.cs" />
+    <Compile Include="TouchPrint\DaoTouchPrint.cs" />
+    <Compile Include="User\DaoSysUser.cs" />
+    <Compile Include="AnanlyseQC\DaoItemSort.cs" />
+    <Compile Include="AnanlyseQC\DaoSummaryPrint.cs" />
+    <Compile Include="User\DaoSysRole.cs" />
+    <Compile Include="User\DaoSysRoleFunc.cs" />
+    <Compile Include="User\DaoUserCaSign.cs" />
+    <Compile Include="User\DaoUserManage.cs" />
+    <Compile Include="Report\DaoSysReport.cs" />
+    <Compile Include="Sys\DaoSysLog.cs" />
+    <Compile Include="User\DaoSysFunction.cs" />
+    <Compile Include="User\DaoSysParameter.cs" />
+    <Compile Include="User\DaoUserRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.FrameworkAuxiliary\wf.Dac\Lib.DAC.csproj">
+      <Project>{5D945396-F128-44D0-9289-8A46FD76FDF0}</Project>
+      <Name>Lib.DAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\wf.dao.interface\dcl.dao.interfaces.csproj">
+      <Project>{6d05d146-6d3f-4905-8d7e-7de11f2a3b53}</Project>
+      <Name>dcl.dao.interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dict\Mic\微生物dao放这里.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

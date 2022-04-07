@@ -1,0 +1,32 @@
+select
+cast('&sDate&' as varchar(10)) as  开始日期
+,cast('&eDate&' as varchar(10)) as  结束日期
+,dict_combine.com_name as 项目名称
+,count(dict_combine.com_name) as 人次
+,case when patients.pat_dep_name = '预防保健科' then '体检中心'
+	  when patients.pat_dep_name is null then '(未知)'
+      else patients.pat_dep_name end
+		as 开单科室
+,case when patients.pat_doc_name = '' or patients.pat_doc_name is null then '(未知)'
+	  else patients.pat_doc_name end
+		as 开单医生
+from patients
+inner join patients_mi on patients.pat_id = patients_mi.pat_id
+inner join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+inner join dict_origin on dict_origin.ori_id = patients.pat_ori_id
+where pat_date >= '&sDate&' and pat_date <= '&eDate&'
+--where pat_date >= '2014-12-01' and pat_date < '2014-12-16'
+and pat_itr_id = '10106' and pat_flag in (2,4)
+group by
+	dict_combine.com_name
+	,patients_mi.pat_com_id
+,case when patients.pat_dep_name = '预防保健科' then '体检中心'
+	  when patients.pat_dep_name is null then '(未知)'
+      else patients.pat_dep_name end
+	,patients.pat_doc_name
+order by 
+	  case when patients.pat_dep_name = '预防保健科' then '体检中心'
+	  when patients.pat_dep_name is null then '(未知)'
+      else patients.pat_dep_name end
+      ,count(patients.pat_doc_name) desc
+      ,patients_mi.pat_com_id

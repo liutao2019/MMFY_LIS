@@ -1,0 +1,51 @@
+select  dict_instrmt.itr_type,
+		dict_type.type_name,		
+		count(resulto.res_itm_ecd) ecdNumber,
+		sum(isnull(dict_item_sam.itm_pri,0)) moneys,
+		--sum(isnull(resulto.res_price,0)) moneys,
+		patients.pat_no_id,
+		patients.pat_in_no,
+		patients.pat_name,
+		patients.pat_id,
+		resulto.res_itm_ecd
+into #a
+from patients left join resulto on (resulto.res_id=patients.pat_id and resulto.res_flag=1)
+	left join dict_item on resulto.res_itm_id=dict_item.itm_id
+	left join dict_item_sam on dict_item.itm_id=dict_item_sam.itm_id and patients.pat_sam_id=dict_item_sam.itm_sam_id
+	left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+	left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+	left join dict_depart on patients.pat_dep_id=dict_depart.dep_id
+	left join dict_sample on patients.pat_sam_id=dict_sample.sam_id
+	left join poweruserinfo on patients.pat_i_code=poweruserinfo.loginId
+	left join dict_doctor on patients.pat_doc_id=dict_doctor.doc_id
+where 1=1  and (patients.pat_flag='2' or patients.pat_flag='4') and dict_item_sam.itm_pri>0
+           and patients.pat_dep_name='先烈东门诊' and dict_type.type_name='生化室'
+           and patients.pat_date>'20131001' and pat_date<'20131031'
+group by dict_instrmt.itr_type,
+	dict_type.type_name,
+	patients.pat_no_id,
+	patients.pat_in_no,
+	patients.pat_name,
+	patients.pat_id,
+	resulto.res_itm_ecd
+
+select 
+	res_itm_ecd 检验项目,
+	sum(ecdNumber) 项目数,
+	sum(moneys) 金额,
+	res_itm_ecd,
+	itr_type,type_name,
+	count(distinct IsNull(pat_name,'')+'-'+IsNull(pat_no_id,'')+'-'+IsNull(pat_in_no,'')) 人数,
+	count(distinct isnull(pat_id,'')) 人次,
+	cast('&sDate&'as char(10)) + ' ~ ' + cast('&eDate&' as char(10)) as 日期范围,
+	'检验项目' 统计类型,
+	'项目工作量统计报表' 标题,
+	getdate() 打印日期
+	
+ from #a bb  
+ group by itr_type,
+ type_name,res_itm_ecd 
+ order by 人数 desc,itr_type, 
+ res_itm_ecd
+ 
+ drop table  #a

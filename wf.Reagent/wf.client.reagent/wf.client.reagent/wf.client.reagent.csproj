@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7167F85C-D5B3-49B6-A595-DC686CA02BEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wf.client.reagent</RootNamespace>
+    <AssemblyName>wf.client.reagent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="HQ.BPPrint, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Release\HQ.BPPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager">
+      <HintPath>..\..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMsg.Designer.cs">
+      <DependentUpon>FrmMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrintConfigurationV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrintConfigurationV2.Designer.cs">
+      <DependentUpon>FrmPrintConfigurationV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPurDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPurDetail.Designer.cs">
+      <DependentUpon>FrmPurDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReaCheckPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReaCheckPassword.Designer.cs">
+      <DependentUpon>FrmReaCheckPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentBarcode.Designer.cs">
+      <DependentUpon>FrmReagentBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentLossReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentLossReport.Designer.cs">
+      <DependentUpon>FrmReagentLossReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentManagerV3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentManagerV3.Designer.cs">
+      <DependentUpon>FrmReagentManagerV3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentSubscribe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentSubscribe.Designer.cs">
+      <DependentUpon>FrmReagentSubscribe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentPurchase.Designer.cs">
+      <DependentUpon>FrmReagentPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentManagerV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentManagerV2.Designer.cs">
+      <DependentUpon>FrmReagentManagerV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentApplication.Designer.cs">
+      <DependentUpon>FrmReagentApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentSetting.Designer.cs">
+      <DependentUpon>FrmReagentSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentDelivery.Designer.cs">
+      <DependentUpon>FrmReagentDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReagentStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReagentStorage.Designer.cs">
+      <DependentUpon>FrmReagentStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReaPanelConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReaPanelConfig.Designer.cs">
+      <DependentUpon>FrmReaPanelConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IReagentEditor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaControl\ReagentSubscribeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReaControl\ReagentSubscribeEditor.Designer.cs">
+      <DependentUpon>ReagentSubscribeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaControl\ReagentPurchaseEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReaControl\ReagentPurchaseEditor.Designer.cs">
+      <DependentUpon>ReagentPurchaseEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaControl\ReagentEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReaControl\ReagentEditor.Designer.cs">
+      <DependentUpon>ReagentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Step\BarcodeException.cs" />
+    <Compile Include="Step\DeliveryStep.cs" />
+    <Compile Include="Step\LossReportStep.cs" />
+    <Compile Include="Step\SubscribeStep.cs" />
+    <Compile Include="Step\StorageStep.cs" />
+    <Compile Include="Step\PurchaseStep.cs" />
+    <Compile Include="Step\ApplyStep.cs" />
+    <Compile Include="Step\EnumAction.cs" />
+    <Compile Include="Step\Istep.cs" />
+    <Compile Include="Step\ZeBraPrinter.cs" />
+    <Compile Include="SwitchStatus\RoundLossReportGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SwitchStatus\RoundLossReportGroup.designer.cs">
+      <DependentUpon>RoundLossReportGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchStatus\RoundDeliveryGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SwitchStatus\RoundDeliveryGroup.designer.cs">
+      <DependentUpon>RoundDeliveryGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchStatus\RoundStorageGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SwitchStatus\RoundStorageGroup.designer.cs">
+      <DependentUpon>RoundStorageGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchStatus\RoundPanelGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SwitchStatus\RoundPanelGroup.designer.cs">
+      <DependentUpon>RoundPanelGroup.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4A0F5DFF-9EE1-4A37-9D15-03CB95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204E3C3D-3215-4092-B159-9E862EE34BC5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Cache\wf.Client.Cache\dcl.client.cache.csproj">
+      <Project>{F07A75EC-FA9A-41F9-A95E-C9378B92F431}</Project>
+      <Name>dcl.client.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560F53B-EABC-4B57-A118-2AB19EDDE52B}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkAuxiliary\wf.Dac\Lib.DAC.csproj">
+      <Project>{5D945396-F128-44D0-9289-8A46FD76FDF0}</Project>
+      <Name>Lib.DAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkAuxiliary\wf.root.logon\dcl.root.logon.csproj">
+      <Project>{63041308-24F1-4854-BE3E-241EB38A318E}</Project>
+      <Name>dcl.root.logon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkCore\dcl.client.control\dcl.client.control.csproj">
+      <Project>{dca635d5-7a04-4fed-b8db-681a2139c42d}</Project>
+      <Name>dcl.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkCore\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925E3A3-4709-4DEC-8649-CB09D9CE7FC8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkCore\lis.client.common\dcl.client.common.csproj">
+      <Project>{75BED5D0-501A-4B11-9B69-8A78192A37D7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkCore\lis.client.control\lis.client.control.csproj">
+      <Project>{21ACDD7F-FF28-49C1-9CCE-B6990394E5C0}</Project>
+      <Name>lis.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkCore\LIS.Client.RunTimeSetting\dcl.client.frame.runsetting.csproj">
+      <Project>{96EC3C38-286B-448C-8237-F7FBEE984E43}</Project>
+      <Name>dcl.client.frame.runsetting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.Message\wf.client.msgclient\dcl.client.msgclient.csproj">
+      <Project>{E5FCF0D4-9205-4CFF-B2E4-B55FA13B3C12}</Project>
+      <Name>dcl.client.msgclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.ResultCheck\wf.client.result\dcl.client.result.csproj">
+      <Project>{ADB004A8-B2D4-4600-86D0-8782A9758B36}</Project>
+      <Name>dcl.client.result</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\wf.XtraReport\wf.client.report\dcl.client.report.csproj">
+      <Project>{AB6E030C-5B48-418B-8350-87AE06E70B41}</Project>
+      <Name>dcl.client.report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmMsg.resx">
+      <DependentUpon>FrmMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrintConfigurationV2.resx">
+      <DependentUpon>FrmPrintConfigurationV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPurDetail.resx">
+      <DependentUpon>FrmPurDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReaCheckPassword.resx">
+      <DependentUpon>FrmReaCheckPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentBarcode.resx">
+      <DependentUpon>FrmReagentBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentLossReport.resx">
+      <DependentUpon>FrmReagentLossReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentManagerV3.resx">
+      <DependentUpon>FrmReagentManagerV3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentSubscribe.resx">
+      <DependentUpon>FrmReagentSubscribe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentPurchase.resx">
+      <DependentUpon>FrmReagentPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentManagerV2.resx">
+      <DependentUpon>FrmReagentManagerV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentApplication.resx">
+      <DependentUpon>FrmReagentApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentSetting.resx">
+      <DependentUpon>FrmReagentSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentDelivery.resx">
+      <DependentUpon>FrmReagentDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReagentStorage.resx">
+      <DependentUpon>FrmReagentStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReaPanelConfig.resx">
+      <DependentUpon>FrmReaPanelConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaControl\ReagentSubscribeEditor.resx">
+      <DependentUpon>ReagentSubscribeEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaControl\ReagentPurchaseEditor.resx">
+      <DependentUpon>ReagentPurchaseEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaControl\ReagentEditor.resx">
+      <DependentUpon>ReagentEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwitchStatus\RoundLossReportGroup.resx">
+      <DependentUpon>RoundLossReportGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwitchStatus\RoundDeliveryGroup.resx">
+      <DependentUpon>RoundDeliveryGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwitchStatus\RoundStorageGroup.resx">
+      <DependentUpon>RoundStorageGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwitchStatus\RoundPanelGroup.resx">
+      <DependentUpon>RoundPanelGroup.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\dcl.entity.EntityReaStorageDetail.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityDicReaGroup.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityDicReaProduct.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityDicReaStoreCondition.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityDicReaStorePos.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityDicReaSupplier.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityDicReaUnit.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaApply.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaApplyDetail.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaPurchase.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaPurchaseDetail.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaSetting.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaStorage.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaStorageDetail.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaSubscribe.datasource" />
+    <None Include="Properties\DataSources\wf.entity.EntityReaSubscribeDetail.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

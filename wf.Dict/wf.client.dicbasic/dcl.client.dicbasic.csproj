@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3721A2FF-1C6F-4BAE-B1DF-6D97A483C693}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.dicbasic</RootNamespace>
+    <AssemblyName>dcl.client.dicbasic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lis_dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="dcl.client.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.control.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.cache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.cache.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.elisa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.elisa.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.repdesign, Version=1.0.7155.29681, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.repdesign.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.report, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.report.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="ICSharpCode.TextEditor, Version=4.0.2.6466, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a" />
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca" />
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.LogManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.ProxyFactory, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Lib.WCFClientCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.WCFClientCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Lis.Client.CASign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="lis.client.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\Reference\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMitmOrAdjustCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMitmOrAdjustCopy.Designer.cs">
+      <DependentUpon>FrmMitmOrAdjustCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zh_HansGridLocalizer.cs" />
+    <Compile Include="FrmDictMainDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDictMainDev.Designer.cs">
+      <DependentUpon>FrmDictMainDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConEfficacy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConEfficacy.Designer.cs">
+      <DependentUpon>ConEfficacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\FrmDictMitmNoResultView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本字典\FrmDictMitmNoResultView.Designer.cs">
+      <DependentUpon>FrmDictMitmNoResultView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="归档字典\ConIceBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="归档字典\ConIceBox.Designer.cs">
+      <DependentUpon>ConIceBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="归档字典\ConDictRack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="归档字典\ConDictRack.Designer.cs">
+      <DependentUpon>ConDictRack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="归档字典\ConCups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="归档字典\ConCups.Designer.cs">
+      <DependentUpon>ConCups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="条码字典\ConBCCuvette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="条码字典\ConBCCuvette.Designer.cs">
+      <DependentUpon>ConBCCuvette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConsType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConsType.Designer.cs">
+      <DependentUpon>ConsType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\FrmPatInfoCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本字典\FrmPatInfoCopy.designer.cs">
+      <DependentUpon>FrmPatInfoCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="条码字典\ConBCCombineSplit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="条码字典\ConBCCombineSplit.Designer.cs">
+      <DependentUpon>ConBCCombineSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="条码字典\ConComReptime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="条码字典\ConComReptime.designer.cs">
+      <DependentUpon>ConComReptime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="温控字典\ConDictHarvester.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="温控字典\ConDictHarvester.Designer.cs">
+      <DependentUpon>ConDictHarvester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="温控字典\ConTemperature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="温控字典\ConTemperature.Designer.cs">
+      <DependentUpon>ConTemperature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaHoleMode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaHoleMode.Designer.cs">
+      <DependentUpon>ConElisaHoleMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaHoleStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaHoleStatus.Designer.cs">
+      <DependentUpon>ConElisaHoleStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaItemHole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaItemHole.Designer.cs">
+      <DependentUpon>ConElisaItemHole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="条码字典\ConItemCombineBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="条码字典\ConItemCombineBarcode.Designer.cs">
+      <DependentUpon>ConItemCombineBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="条码字典\ConSampReturn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="条码字典\ConSampReturn.designer.cs">
+      <DependentUpon>ConSampReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="条码字典\ConTubeRack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="条码字典\ConTubeRack.designer.cs">
+      <DependentUpon>ConTubeRack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaJudgeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaJudgeControl.Designer.cs">
+      <DependentUpon>ConElisaJudgeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaCalcControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaCalcControl.Designer.cs">
+      <DependentUpon>ConElisaCalcControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaModControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="酶标字典\ConElisaModControl.Designer.cs">
+      <DependentUpon>ConElisaModControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="酶标字典\EiasaAoutoHoleModeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="酶标字典\EiasaAoutoHoleModeControl.Designer.cs">
+      <DependentUpon>EiasaAoutoHoleModeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConIcdCombine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConIcdCombine.Designer.cs">
+      <DependentUpon>ConIcdCombine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConItemCombineTAT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConItemCombineTAT.Designer.cs">
+      <DependentUpon>ConItemCombineTAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConItemCombineDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConItemCombineDetail.Designer.cs">
+      <DependentUpon>ConItemCombineDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConItemCombineInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConItemCombineInfo.Designer.cs">
+      <DependentUpon>ConItemCombineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConItemProInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConItemProInfo.Designer.cs">
+      <DependentUpon>ConItemProInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\conItemUrgentValue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目字典\conItemUrgentValue.Designer.cs">
+      <DependentUpon>conItemUrgentValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConCombineTimerule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConCombineTimerule.Designer.cs">
+      <DependentUpon>ConCombineTimerule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchControl.Designer.cs">
+      <DependentUpon>SearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConHospital.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConHospital.Designer.cs">
+      <DependentUpon>ConHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConDepart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConDepart.Designer.cs">
+      <DependentUpon>ConDepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConBscripe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConBscripe.Designer.cs">
+      <DependentUpon>ConBscripe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConNobact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConNobact.Designer.cs">
+      <DependentUpon>ConNobact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConResAdjust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConResAdjust.Designer.cs">
+      <DependentUpon>ConResAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConType.Designer.cs">
+      <DependentUpon>ConType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConInstrmt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConInstrmt.Designer.cs">
+      <DependentUpon>ConInstrmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConDiagnos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConDiagnos.Designer.cs">
+      <DependentUpon>ConDiagnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConCheckb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConCheckb.Designer.cs">
+      <DependentUpon>ConCheckb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConUGR_Type.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConUGR_Type.Designer.cs">
+      <DependentUpon>ConUGR_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConDoctor.Designer.cs">
+      <DependentUpon>ConDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConClItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConClItem.Designer.cs">
+      <DependentUpon>ConClItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConMitm_No.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConMitm_No.Designer.cs">
+      <DependentUpon>ConMitm_No.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConItem_Prop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConItem_Prop.Designer.cs">
+      <DependentUpon>ConItem_Prop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConS_State.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConS_State.Designer.cs">
+      <DependentUpon>ConS_State.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConSample.Designer.cs">
+      <DependentUpon>ConSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConOrigin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConOrigin.Designer.cs">
+      <DependentUpon>ConOrigin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConNo_Type.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConNo_Type.Designer.cs">
+      <DependentUpon>ConNo_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConSamRemarks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConSamRemarks.Designer.cs">
+      <DependentUpon>ConSamRemarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConFeesType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConFeesType.Designer.cs">
+      <DependentUpon>ConFeesType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本字典\ConInstrmtCom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="基本字典\ConInstrmtCom.Designer.cs">
+      <DependentUpon>ConInstrmtCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConItemPro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConItemPro.Designer.cs">
+      <DependentUpon>ConItemPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConReferenceName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConReferenceName.Designer.cs">
+      <DependentUpon>ConReferenceName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\ConItemCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目字典\ConItemCopy.Designer.cs">
+      <DependentUpon>ConItemCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\frmCombineBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目字典\frmCombineBarcode.Designer.cs">
+      <DependentUpon>frmCombineBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\frmCombineView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目字典\frmCombineView.Designer.cs">
+      <DependentUpon>frmCombineView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目字典\frmItemModifyHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目字典\frmItemModifyHistory.Designer.cs">
+      <DependentUpon>frmItemModifyHistory.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmMitmOrAdjustCopy.resx">
+      <DependentUpon>FrmMitmOrAdjustCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDictMainDev.resx">
+      <DependentUpon>FrmDictMainDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="基本字典\ConCombineTimerule.resx">
+      <DependentUpon>ConCombineTimerule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchControl.resx">
+      <DependentUpon>SearchControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConEfficacy.resx">
+      <DependentUpon>ConEfficacy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\FrmDictMitmNoResultView.resx">
+      <DependentUpon>FrmDictMitmNoResultView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="归档字典\ConIceBox.resx">
+      <DependentUpon>ConIceBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="归档字典\ConDictRack.resx">
+      <DependentUpon>ConDictRack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="归档字典\ConCups.resx">
+      <DependentUpon>ConCups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="条码字典\ConBCCuvette.resx">
+      <DependentUpon>ConBCCuvette.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConHospital.resx">
+      <DependentUpon>ConHospital.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConDepart.resx">
+      <DependentUpon>ConDepart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConBscripe.resx">
+      <DependentUpon>ConBscripe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConNobact.resx">
+      <DependentUpon>ConNobact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConResAdjust.resx">
+      <DependentUpon>ConResAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConsType.resx">
+      <DependentUpon>ConsType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConType.resx">
+      <DependentUpon>ConType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConInstrmt.resx">
+      <DependentUpon>ConInstrmt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConDiagnos.resx">
+      <DependentUpon>ConDiagnos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConCheckb.resx">
+      <DependentUpon>ConCheckb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConUGR_Type.resx">
+      <DependentUpon>ConUGR_Type.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConDoctor.resx">
+      <DependentUpon>ConDoctor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConClItem.resx">
+      <DependentUpon>ConClItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConMitm_No.resx">
+      <DependentUpon>ConMitm_No.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConItem_Prop.resx">
+      <DependentUpon>ConItem_Prop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConS_State.resx">
+      <DependentUpon>ConS_State.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConSample.resx">
+      <DependentUpon>ConSample.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConOrigin.resx">
+      <DependentUpon>ConOrigin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConNo_Type.resx">
+      <DependentUpon>ConNo_Type.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConSamRemarks.resx">
+      <DependentUpon>ConSamRemarks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConFeesType.resx">
+      <DependentUpon>ConFeesType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\ConInstrmtCom.resx">
+      <DependentUpon>ConInstrmtCom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本字典\FrmPatInfoCopy.resx">
+      <DependentUpon>FrmPatInfoCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="条码字典\ConBCCombineSplit.resx">
+      <DependentUpon>ConBCCombineSplit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="条码字典\ConComReptime.resx">
+      <DependentUpon>ConComReptime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="温控字典\ConDictHarvester.resx">
+      <DependentUpon>ConDictHarvester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="温控字典\ConTemperature.resx">
+      <DependentUpon>ConTemperature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="酶标字典\ConElisaHoleMode.resx">
+      <DependentUpon>ConElisaHoleMode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="酶标字典\ConElisaHoleStatus.resx">
+      <DependentUpon>ConElisaHoleStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="酶标字典\ConElisaItemHole.resx">
+      <DependentUpon>ConElisaItemHole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="条码字典\ConItemCombineBarcode.resx">
+      <DependentUpon>ConItemCombineBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="条码字典\ConSampReturn.resx">
+      <DependentUpon>ConSampReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="条码字典\ConTubeRack.resx">
+      <DependentUpon>ConTubeRack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="酶标字典\ConElisaJudgeControl.resx">
+      <DependentUpon>ConElisaJudgeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="酶标字典\ConElisaCalcControl.resx">
+      <DependentUpon>ConElisaCalcControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="酶标字典\ConElisaModControl.resx">
+      <DependentUpon>ConElisaModControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="酶标字典\EiasaAoutoHoleModeControl.resx">
+      <DependentUpon>EiasaAoutoHoleModeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConIcdCombine.resx">
+      <DependentUpon>ConIcdCombine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConItemCombineTAT.resx">
+      <DependentUpon>ConItemCombineTAT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConItemCombineDetail.resx">
+      <DependentUpon>ConItemCombineDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConItemCombineInfo.resx">
+      <DependentUpon>ConItemCombineInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConItemCopy.resx">
+      <DependentUpon>ConItemCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConItemProInfo.resx">
+      <DependentUpon>ConItemProInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConItemPro.resx">
+      <DependentUpon>ConItemPro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\conItemUrgentValue.resx">
+      <DependentUpon>conItemUrgentValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\ConReferenceName.resx">
+      <DependentUpon>ConReferenceName.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\frmCombineBarcode.resx">
+      <DependentUpon>frmCombineBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\frmCombineView.resx">
+      <DependentUpon>frmCombineView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目字典\frmItemModifyHistory.resx">
+      <DependentUpon>frmItemModifyHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\dcl.entity.Dict.EntityDicDoctor.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.Dict.EntityDicTemperature.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.Dict.EntityDictHarvester.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDefItmProperty.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCheckPurpose1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombineTimeruleRelated1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicComReptime.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicElisaCalu.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicElisaCriter.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicElisaItem.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicElisaMeaning.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicElisaSort.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicElisaStatus.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItemSample.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmCheck.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmCombine1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmItem.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmRefdetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombineTimeRule.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombineDetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicInstrument.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmCheckDetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmReftype.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItrCombine1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntibio.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntidetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntitype.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicBacteria.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicBacttype.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmCalu.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMachineCode.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicroscope.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicSmear.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicNobactCom1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicOrigin.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.BarCode.EntitySampMain.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.Dict.EntityDicDepart.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.Dict.EntityDicFeesType.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombine.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicDepart.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicDiagnos.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicDoctor.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicFeesType.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicNoType.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubEvaluate.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubOrganize.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubProfession.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicPubStatus.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicResAdjust.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampDivergeRule.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSample.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampleRemark.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampReturn.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampStore.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampStoreArea.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampStoreStatus1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSampTubeRack1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSState.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicTestTube1.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicTubeRack.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicType.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityReport.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicUtgentValue.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityRequest.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityResponse.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampMain.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampMergeRule.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampQC.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampStoreRack.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.FieldMapAttribute.datasource" />
+    <None Include="Properties\DataSources\Lis.Entities.Dict.EntityDictItemUrgentValue.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkAuxiliary\wf.root.logon\dcl.root.logon.csproj">
+      <Project>{63041308-24f1-4854-be3e-241eb38a318e}</Project>
+      <Name>dcl.root.logon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lis.Framework\dcl.client.control\dcl.client.control.csproj">
+      <Project>{dca635d5-7a04-4fed-b8db-681a2139c42d}</Project>
+      <Name>dcl.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925e3a3-4709-4dec-8649-cb09d9ce7fc8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.client.common\dcl.client.common.csproj">
+      <Project>{75bed5d0-501a-4b11-9b69-8a78192a37d7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.interfaces\dcl.interfaces.csproj">
+      <Project>{3e651c14-8d3c-494b-a4ea-95a25bd0398f}</Project>
+      <Name>dcl.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.SysUser\wf.client.users\dcl.client.users.csproj">
+      <Project>{91e5da3e-b7ad-44b1-9b47-a811b8bed3ba}</Project>
+      <Name>dcl.client.users</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204e3c3d-3215-4092-b159-9e862ee34bc5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

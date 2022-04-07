@@ -1,0 +1,1104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADB004A8-B2D4-4600-86D0-8782A9758B36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dcl.client.result</RootNamespace>
+    <AssemblyName>dcl.client.result</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lis_dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.0.0.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.dicbasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.dicbasic.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.elisa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="dcl.client.micManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.micManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\..\Reference\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI.GL">
+      <HintPath>..\..\Reference\Emgu.CV.UI.GL.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World">
+      <HintPath>..\..\Reference\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Lib.ProxyFactory, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.ProxyFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.WCFClientCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.WCFClientCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Lis.Client.CASign, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="lis.client.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="NPOI, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="O2S.Components.PDFRender4NET">
+      <HintPath>..\..\Reference\O2S.Components.PDFRender4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="O2S.Components.PDFView4NET">
+      <HintPath>..\..\Reference\O2S.Components.PDFView4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarCode\FrmManuaSelectNobat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\FrmManuaSelectNobat.designer.cs">
+      <DependentUpon>FrmManuaSelectNobat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\FrmSampleRegisterNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\FrmSampleRegisterNew.Designer.cs">
+      <DependentUpon>FrmSampleRegisterNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\frmShelfSampleRegister_AvalibleCombine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\frmShelfSampleRegister_AvalibleCombine.Designer.cs">
+      <DependentUpon>frmShelfSampleRegister_AvalibleCombine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClickEventArgs.cs" />
+    <Compile Include="CommonPatientInput\FrmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmMonitor.Designer.cs">
+      <DependentUpon>FrmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatMarrowBlood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatMarrowBlood.Designer.cs">
+      <DependentUpon>FrmPatMarrowBlood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatEnterNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatEnterNew.Designer.cs">
+      <DependentUpon>FrmPatEnterNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatInputBaseNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatInputBaseNew.Designer.cs">
+      <DependentUpon>FrmPatInputBaseNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBacterialInputNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBacterialInputNew.Designer.cs">
+      <DependentUpon>FrmBacterialInputNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarrowDescribe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarrowDescribe.Designer.cs">
+      <DependentUpon>FrmMarrowDescribe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBscripe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBscripe.Designer.cs">
+      <DependentUpon>FrmBscripe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDict_An_Sstd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDict_An_Sstd.Designer.cs">
+      <DependentUpon>FrmDict_An_Sstd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmItmPropLst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmItmPropLst.Designer.cs">
+      <DependentUpon>FrmItmPropLst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarrowInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarrowInput.Designer.cs">
+      <DependentUpon>FrmMarrowInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatDescEnterNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatDescEnterNew.Designer.cs">
+      <DependentUpon>FrmPatDescEnterNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmView.Designer.cs">
+      <DependentUpon>FrmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarrowMark\FrmImagView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarrowMark\FrmImagView.Designer.cs">
+      <DependentUpon>FrmImagView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarrowMark\FrmMarrowMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarrowMark\FrmMarrowMark.Designer.cs">
+      <DependentUpon>FrmMarrowMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\BarcodeSampleInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\BarcodeSampleInfo.Designer.cs">
+      <DependentUpon>BarcodeSampleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\ControlPatListNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\ControlPatListNew.Designer.cs">
+      <DependentUpon>ControlPatListNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\FrmPatInfoExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\FrmPatInfoExt.Designer.cs">
+      <DependentUpon>FrmPatInfoExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\MZImportForm\FrmMZImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\MZImportForm\FrmMZImport.Designer.cs">
+      <DependentUpon>FrmMZImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelResult.designer.cs">
+      <DependentUpon>RoundPanelResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelGroupBac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelGroupBac.designer.cs">
+      <DependentUpon>RoundPanelGroupBac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelInstrument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelInstrument.designer.cs">
+      <DependentUpon>RoundPanelInstrument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelStatusCommon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelStatusCommon.Designer.cs">
+      <DependentUpon>RoundPanelStatusCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelType.designer.cs">
+      <DependentUpon>RoundPanelType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\SwitchStatus\RoundPanelGroup.designer.cs">
+      <DependentUpon>RoundPanelGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\ucTimeLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\ucTimeLine.designer.cs">
+      <DependentUpon>ucTimeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmDict_Antibio1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDict_Antibio1.Designer.cs">
+      <DependentUpon>FrmDict_Antibio1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BarCode\FrmManuaSelectNobat.resx">
+      <DependentUpon>FrmManuaSelectNobat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\FrmSampleRegisterNew.resx">
+      <DependentUpon>FrmSampleRegisterNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\frmShelfSampleRegister_AvalibleCombine.resx">
+      <DependentUpon>frmShelfSampleRegister_AvalibleCombine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\AuditResultViwer.resx">
+      <DependentUpon>AuditResultViwer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\frmBarcodeCombineSelect.resx">
+      <DependentUpon>frmBarcodeCombineSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmItmPropLstV3.resx">
+      <DependentUpon>FrmItmPropLstV3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmMonitor.resx">
+      <DependentUpon>FrmMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmPatMarrowBlood.resx">
+      <DependentUpon>FrmPatMarrowBlood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmPatDescEnterNew.resx">
+      <DependentUpon>FrmPatDescEnterNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmPatEnterNew.resx">
+      <DependentUpon>FrmPatEnterNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmPatHistoryEXP.resx">
+      <DependentUpon>FrmPatHistoryEXP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmPatInfoCopy.resx">
+      <DependentUpon>FrmPatInfoCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmPatInputBaseNew.resx">
+      <DependentUpon>FrmPatInputBaseNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBacterialInputNew.resx">
+      <DependentUpon>FrmBacterialInputNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBacterialInputNew.zh-CHS.resx">
+      <DependentUpon>FrmBacterialInputNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBakItmForResulto.resx">
+      <DependentUpon>FrmBakItmForResulto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarrowDescribe.resx">
+      <DependentUpon>FrmMarrowDescribe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarrowInput.resx">
+      <DependentUpon>FrmMarrowInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOldResultView.resx">
+      <DependentUpon>FrmOldResultView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientsExt.resx">
+      <DependentUpon>FrmPatientsExt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRealTimeResultView.resx">
+      <DependentUpon>FrmRealTimeResultView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientList.resx">
+      <DependentUpon>FrmPatientList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecheckConfirm.resx">
+      <DependentUpon>FrmRecheckConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResultTemplate.resx">
+      <DependentUpon>FrmResultTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResultView.resx">
+      <DependentUpon>FrmResultView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmDescTempleteConfirm.resx">
+      <DependentUpon>FrmDescTempleteConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmOpResultViwer.resx">
+      <DependentUpon>FrmOpResultViwer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmBscripeSelectV2.resx">
+      <DependentUpon>FrmBscripeSelectV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientTemplateInput.resx">
+      <DependentUpon>FrmPatientTemplateInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\frmShelfSampleRegister.resx">
+      <DependentUpon>frmShelfSampleRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowText.resx">
+      <DependentUpon>FrmShowText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarrowMark\FrmImagView.resx">
+      <DependentUpon>FrmImagView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarrowMark\FrmMarrowMark.resx">
+      <DependentUpon>FrmMarrowMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\BarcodeSampleInfo.resx">
+      <DependentUpon>BarcodeSampleInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\CombineEditor.resx">
+      <DependentUpon>CombineEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\ControlPatDescResult.resx">
+      <DependentUpon>ControlPatDescResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\ControlPatListNew.resx">
+      <DependentUpon>ControlPatListNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmItemInfo.resx">
+      <DependentUpon>FrmItemInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmItemSelect.resx">
+      <DependentUpon>FrmItemSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\ControlResultMerge.resx">
+      <DependentUpon>ControlResultMerge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\FrmAdditionalBarcode.resx">
+      <DependentUpon>FrmAdditionalBarcode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\frmAdviceSelect.resx">
+      <DependentUpon>frmAdviceSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clipboard\frmViewResultClipboard.resx">
+      <DependentUpon>frmViewResultClipboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\FrmBatchAddCombine.resx">
+      <DependentUpon>FrmBatchAddCombine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\FrmImageAcquisition.resx">
+      <DependentUpon>FrmImageAcquisition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\FrmItemCompare.resx">
+      <DependentUpon>FrmItemCompare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\frmItemModifyHistory.resx">
+      <DependentUpon>frmItemModifyHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\FrmPatInfoExt.resx">
+      <DependentUpon>FrmPatInfoExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\ItrWarningMsg.resx">
+      <DependentUpon>ItrWarningMsg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\MZImportForm\FrmMZImport.resx">
+      <DependentUpon>FrmMZImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\PatHistory.resx">
+      <DependentUpon>PatHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\PatPhotoList.resx">
+      <DependentUpon>PatPhotoList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\PatRelateResult.resx">
+      <DependentUpon>PatRelateResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\PatResult.resx">
+      <DependentUpon>PatResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\PhotoViwer.resx">
+      <DependentUpon>PhotoViwer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\PatResultDoubleColumn.resx">
+      <DependentUpon>PatResultDoubleColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\SwitchStatus\RoundPanelResult.resx">
+      <DependentUpon>RoundPanelResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\SwitchStatus\RoundPanelGroupBac.resx">
+      <DependentUpon>RoundPanelGroupBac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\SwitchStatus\RoundPanelInstrument.resx">
+      <DependentUpon>RoundPanelInstrument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\SwitchStatus\RoundPanelStatusCommon.resx">
+      <DependentUpon>RoundPanelStatusCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\SwitchStatus\RoundPanelType.resx">
+      <DependentUpon>RoundPanelType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\SwitchStatus\RoundPanelGroup.resx">
+      <DependentUpon>RoundPanelGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\TextPictureBox.resx">
+      <DependentUpon>TextPictureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBscripe.resx">
+      <DependentUpon>FrmBscripe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDict_An_Sstd.resx">
+      <DependentUpon>FrmDict_An_Sstd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmItmPropLst.resx">
+      <DependentUpon>FrmItmPropLst.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmView.resx">
+      <DependentUpon>FrmView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPatientInput\FrmPatPanelConfig.resx">
+      <DependentUpon>FrmPatPanelConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\FrmCombineManagerV2.resx">
+      <DependentUpon>FrmCombineManagerV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatControl\ucTimeLine.resx">
+      <DependentUpon>ucTimeLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDict_Antibio1.resx">
+      <DependentUpon>FrmDict_Antibio1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControl\ImmResult.resx">
+      <DependentUpon>ImmResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControl\ItemResult.resx">
+      <DependentUpon>ItemResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControl\MultiSampleResult.resx">
+      <DependentUpon>MultiSampleResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControl\BacResult.resx">
+      <DependentUpon>BacResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUndoRepotReson.resx">
+      <DependentUpon>FrmUndoRepotReson.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonPatientInput\AuditResultViwer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\AuditResultViwer.Designer.cs">
+      <DependentUpon>AuditResultViwer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\frmBarcodeCombineSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\frmBarcodeCombineSelect.Designer.cs">
+      <DependentUpon>frmBarcodeCombineSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmItmPropLstV3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmItmPropLstV3.Designer.cs">
+      <DependentUpon>FrmItmPropLstV3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatHistoryEXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatHistoryEXP.Designer.cs">
+      <DependentUpon>FrmPatHistoryEXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatInfoCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatInfoCopy.Designer.cs">
+      <DependentUpon>FrmPatInfoCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictToolkit\DictClItem.cs" />
+    <Compile Include="DictToolkit\DictDepartment.cs" />
+    <Compile Include="DictToolkit\DictImmJudge.cs" />
+    <Compile Include="DictToolkit\DictPatNumberType.cs" />
+    <Compile Include="FrmBakItmForResulto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBakItmForResulto.Designer.cs">
+      <DependentUpon>FrmBakItmForResulto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOldResultView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOldResultView.Designer.cs">
+      <DependentUpon>FrmOldResultView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientsExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientsExt.Designer.cs">
+      <DependentUpon>FrmPatientsExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRealTimeResultView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRealTimeResultView.Designer.cs">
+      <DependentUpon>FrmRealTimeResultView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientList.Designer.cs">
+      <DependentUpon>FrmPatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecheckConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecheckConfirm.Designer.cs">
+      <DependentUpon>FrmRecheckConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResultTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResultTemplate.Designer.cs">
+      <DependentUpon>FrmResultTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResultView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResultView.Designer.cs">
+      <DependentUpon>FrmResultView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmDescTempleteConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmDescTempleteConfirm.Designer.cs">
+      <DependentUpon>FrmDescTempleteConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmOpResultViwer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmOpResultViwer.Designer.cs">
+      <DependentUpon>FrmOpResultViwer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmBscripeSelectV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmBscripeSelectV2.Designer.cs">
+      <DependentUpon>FrmBscripeSelectV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientTemplateInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientTemplateInput.Designer.cs">
+      <DependentUpon>FrmPatientTemplateInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\frmShelfSampleRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\frmShelfSampleRegister.Designer.cs">
+      <DependentUpon>frmShelfSampleRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowText.Designer.cs">
+      <DependentUpon>FrmShowText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ICombineEditor.cs" />
+    <Compile Include="Interface\IPatEnter.cs" />
+    <Compile Include="Interface\IPatientList.cs" />
+    <Compile Include="Interface\IPatPanelConfig.cs" />
+    <Compile Include="PatControl\CalcItemResHelper.cs" />
+    <Compile Include="PatControl\CombineEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\CombineEditor.Designer.cs">
+      <DependentUpon>CombineEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\ControlPatDescResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\ControlPatDescResult.Designer.cs">
+      <DependentUpon>ControlPatDescResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictToolkit\DictCombine.cs" />
+    <Compile Include="DictToolkit\DictCombineMi.cs" />
+    <Compile Include="CommonPatientInput\FrmItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmItemInfo.Designer.cs">
+      <DependentUpon>FrmItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmItemSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmItemSelect.Designer.cs">
+      <DependentUpon>FrmItemSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatPanelConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\FrmPatPanelConfig.Designer.cs">
+      <DependentUpon>FrmPatPanelConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictToolkit\DictItem.cs" />
+    <Compile Include="PatControl\ControlResultMerge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\ControlResultMerge.Designer.cs">
+      <DependentUpon>ControlResultMerge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\FrmAdditionalBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\FrmAdditionalBarcode.Designer.cs">
+      <DependentUpon>FrmAdditionalBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\frmAdviceSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\frmAdviceSelect.Designer.cs">
+      <DependentUpon>frmAdviceSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clipboard\frmViewResultClipboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clipboard\frmViewResultClipboard.Designer.cs">
+      <DependentUpon>frmViewResultClipboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\FrmBatchAddCombine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\FrmBatchAddCombine.Designer.cs">
+      <DependentUpon>FrmBatchAddCombine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\FrmImageAcquisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\FrmImageAcquisition.Designer.cs">
+      <DependentUpon>FrmImageAcquisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\FrmItemCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\FrmItemCompare.Designer.cs">
+      <DependentUpon>FrmItemCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\frmItemModifyHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\frmItemModifyHistory.Designer.cs">
+      <DependentUpon>frmItemModifyHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\ItrWarningMsg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\ItrWarningMsg.Designer.cs">
+      <DependentUpon>ItrWarningMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\PatHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\PatHistory.Designer.cs">
+      <DependentUpon>PatHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\PatPhotoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\PatPhotoList.Designer.cs">
+      <DependentUpon>PatPhotoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\PatRelateResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\PatRelateResult.Designer.cs">
+      <DependentUpon>PatRelateResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\PatResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\PatResult.Designer.cs">
+      <DependentUpon>PatResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPatientInput\PhotoViwer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonPatientInput\PhotoViwer.Designer.cs">
+      <DependentUpon>PhotoViwer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatControl\PatResultDoubleColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\PatResultDoubleColumn.Designer.cs">
+      <DependentUpon>PatResultDoubleColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clipboard\ResultClipboard.cs" />
+    <Compile Include="PatControl\TextPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatControl\TextPictureBox.Designer.cs">
+      <DependentUpon>TextPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IDescriptionTemplate.cs" />
+    <Compile Include="MyLayoutControlItemPropertyWrapper.cs" />
+    <Compile Include="PatControl\FrmCombineManagerV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatControl\FrmCombineManagerV2.Designer.cs">
+      <DependentUpon>FrmCombineManagerV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControl\ImmResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultControl\ImmResult.Designer.cs">
+      <DependentUpon>ImmResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControl\ItemResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultControl\ItemResult.Designer.cs">
+      <DependentUpon>ItemResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControl\MultiSampleResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultControl\MultiSampleResult.Designer.cs">
+      <DependentUpon>MultiSampleResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultControl\BacResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultControl\BacResult.Designer.cs">
+      <DependentUpon>BacResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILogic\PatEnterUILogic.cs" />
+    <Compile Include="FrmUndoRepotReson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUndoRepotReson.Designer.cs">
+      <DependentUpon>FrmUndoRepotReson.cs</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\dcl.entity.EntityDefItmProperty.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicAuditInstrmtParm.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicAuditItemParm.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicCombine.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicItmItem.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntibio.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicAntidetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicMicBacteria.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicObrResultOriginal.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityDicSState.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityInstrmtWarningMsg.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityObrResult.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityObrResultAnti.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityObrResultBact.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityObrResultBakItm.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityObrResultDesc.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityPatients.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityPatientsToImport.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntityPidReportDetail.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySampRegister.datasource" />
+    <None Include="Properties\DataSources\dcl.entity.EntitySysOperationLog.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Lis.Entities.EntityAuditRule.datasource" />
+    <None Include="Properties\DataSources\Lis.Entities.EntityAutoAuditItr.datasource" />
+    <None Include="Resources\uncheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.ca\dcl.client.ca\dcl.client.ca.csproj">
+      <Project>{F46A5AFB-EA9E-4577-BB77-5C9A4FF2B093}</Project>
+      <Name>dcl.client.ca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560F53B-EABC-4B57-A118-2AB19EDDE52B}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkAuxiliary\wf.root.logon\dcl.root.logon.csproj">
+      <Project>{63041308-24f1-4854-be3e-241eb38a318e}</Project>
+      <Name>dcl.root.logon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Sample\wf.client.sample\dcl.client.sample.csproj">
+      <Project>{ae0f8c48-d861-4323-8af4-dab52f3998af}</Project>
+      <Name>dcl.client.sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Cache\wf.Client.Cache\dcl.client.cache.csproj">
+      <Project>{f07a75ec-fa9a-41f9-a95e-c9378b92f431}</Project>
+      <Name>dcl.client.cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\dcl.client.control\dcl.client.control.csproj">
+      <Project>{dca635d5-7a04-4fed-b8db-681a2139c42d}</Project>
+      <Name>dcl.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925e3a3-4709-4dec-8649-cb09d9ce7fc8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.client.common\dcl.client.common.csproj">
+      <Project>{75bed5d0-501a-4b11-9b69-8a78192a37d7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\LIS.Client.RunTimeSetting\dcl.client.frame.runsetting.csproj">
+      <Project>{96ec3c38-286b-448c-8237-f7fbee984e43}</Project>
+      <Name>dcl.client.frame.runsetting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.ExportInterface\wf.interfaces\dcl.interfaces.csproj">
+      <Project>{3e651c14-8d3c-494b-a4ea-95a25bd0398f}</Project>
+      <Name>dcl.interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.SysUser\wf.client.users\dcl.client.users.csproj">
+      <Project>{91e5da3e-b7ad-44b1-9b47-a811b8bed3ba}</Project>
+      <Name>dcl.client.users</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.QualityControl\wf.client.qc\dcl.client.qc.csproj">
+      <Project>{230cc2e6-0d5b-4700-9fa6-2d4bb3476f4d}</Project>
+      <Name>dcl.client.qc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.XtraReport\wf.client.report\dcl.client.report.csproj">
+      <Project>{ab6e030c-5b48-418b-8350-87ae06e70b41}</Project>
+      <Name>dcl.client.report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204e3c3d-3215-4092-b159-9e862ee34bc5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo_ico.ico" />
+    <Content Include="Resources\保存.png" />
+    <Content Include="Resources\关闭.png" />
+    <Content Include="Resources\图像翻转.png" />
+    <Content Include="Resources\导入.png" />
+    <Content Include="Resources\截图.png" />
+    <Content Include="Resources\清空.png" />
+    <Content Include="Resources\视频.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

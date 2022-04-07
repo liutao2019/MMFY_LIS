@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.instrmt.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.instrmt.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Instrmt\wf.svr.instrmt\obj\Debug\dcl.svr.instrmt.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Instrmt\wf.svr.instrmt\obj\Debug\dcl.svr.instrmt.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Instrmt\wf.svr.instrmt\obj\Debug\dcl.svr.instrmt.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.instrmt.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.instrmt.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Instrmt\wf.svr.instrmt\obj\Debug\dcl.svr.instrmt.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Instrmt\wf.svr.instrmt\obj\Debug\dcl.svr.instrmt.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Instrmt\wf.svr.instrmt\obj\Debug\dcl.svr.instrmt.pdb

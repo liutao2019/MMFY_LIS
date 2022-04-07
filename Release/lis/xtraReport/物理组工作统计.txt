@@ -1,0 +1,112 @@
+/*select distinct patients.pat_bar_code,dict_type.type_name,
+(case when (pat_dep_id like'mz%' or pat_ori_id='107') then '门诊'  when pat_dep_id ='0022000'  then '体检' 
+ when (pat_dep_id like'00%' and pat_ori_id='108') then '住院' else '无科室来源 ' end) origin,dict_combine.com_name,
+dict_combine.com_pri,patients.pat_name,
+dict_combine.com_cnt 
+into #a
+from patients 
+full join  patients_mi on patients_mi.pat_id = patients.pat_id  and patients.pat_bar_code=patients.pat_bar_code
+left join resulto on res_id=patients.pat_id
+left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+ left join dict_depart ON patients.pat_dep_id = dict_depart.dep_id 
+ left join dict_instrmt on patients.pat_itr_id=dict_instrmt.itr_id
+ left join dict_type on dict_instrmt.itr_type=dict_type.type_id
+ where patients.pat_flag>1 
+and patients.pat_report_date>'&sDate&' and patients.pat_report_date<'&eDate&'
+&subWhere&
+--and pat_c_name  in('风湿四项','风湿六项')
+group by patients.pat_bar_code,dict_type.type_name,pat_dep_id,dict_combine.com_pri,pat_ori_id,
+dict_combine.com_cnt ,dict_combine.com_name,patients.pat_name
+order by com_name,origin
+
+
+select
+#a.type_name,
+#a.origin,
+#a.com_name,
+isnull(#a.com_pri,0) com_pri,
+#a.com_cnt,
+count(3) no1 into #b
+from #a
+group by #a.type_name,
+#a.origin,
+#a.com_name,
+#a.com_pri,
+#a.com_cnt
+
+
+
+select
+#b.type_name 物理组,
+#b.origin 来源,
+#b.com_name 组合,
+#b.com_pri 组合单价,
+#b.com_cnt 组合包含项目次数,
+#b.no1 组合数量,
+(#b.no1 * #b.com_pri) 金额,
+(#b.no1 * #b.com_cnt) 细项数量,
+'检验科工作量汇总统计' title,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期 into #c
+ from #b
+order by #b.type_name,
+#b.origin,
+#b.com_name,
+#b.com_pri,
+#b.com_cnt,
+#b.no1
+
+
+select sum(金额) 总金额,sum(细项数量) 总细项数量,  物理组,
+来源,title, 开始日期,结束日期,
+getdate() 打印日期 from #c
+group by  物理组,
+来源,title, 开始日期,结束日期
+
+drop table #a,#b,#c
+*/
+--关联物理组--
+select distinct type_id into #ctype from patients 
+left join dict_instrmt on patients.pat_itr_id = dict_instrmt.itr_id 
+left join dict_type on dict_instrmt.itr_type = dict_type.type_id
+where isnull(type_id,'') <> '' &where&
+
+select
+patients.pat_id,
+patients.pat_in_no,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_bar_code,
+(case when (pat_dep_id like'mz%' or pat_ori_id='107') then '门诊'  when pat_dep_id ='0022000'  then '体检' 
+ when (pat_dep_id like'00%' and pat_ori_id='108') then '住院' else '无科室来源 ' end) pat_ori_name,
+patients_mi.pat_com_id,
+dict_combine.com_name,
+dict_combine.com_pri,
+dict_combine.com_cnt,
+dict_combine.com_ctype,
+dict_type.type_name into #a
+from patients(nolock)
+left join patients_mi(nolock) on patients_mi.pat_id = patients.pat_id
+left join dict_combine on dict_combine.com_id = patients_mi.pat_com_id
+left join dict_type on dict_type.type_id = dict_combine.com_ctype
+inner join #ctype on #ctype.type_id = dict_combine.com_ctype
+where pat_flag >'1' 
+and isnull(patients.pat_bar_code,'') <> ''
+and patients.pat_date >'&sDate&' and patients.pat_date <'&eDate&'
+
+select
+#a.type_name,
+#a.pat_ori_name,
+sum(#a.com_pri) pri,
+sum(#a.com_cnt) cnt,
+'&sDate&' 开始日期,
+'&eDate&' 结束日期,
+getdate() 打印日期
+from #a
+group by 
+#a.type_name,
+#a.pat_ori_name
+order by 
+#a.type_name,
+#a.pat_ori_name

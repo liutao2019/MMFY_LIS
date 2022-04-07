@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D945396-F128-44D0-9289-8A46FD76FDF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lib.DAC</RootNamespace>
+    <AssemblyName>Lib.DAC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\Reference\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdoTransaction.cs" />
+    <Compile Include="Command\DbCommandEx.cs" />
+    <Compile Include="Command\DbDataAdapterEx.cs" />
+    <Compile Include="Command\ISqlStringPart.cs" />
+    <Compile Include="Command\SqlString2.cs" />
+    <Compile Include="Command\SqlStringComment.cs" />
+    <Compile Include="Command\SqlStringParameter.cs" />
+    <Compile Include="Command\SqlParameterFormatter.cs" />
+    <Compile Include="Command\SqlString.cs" />
+    <Compile Include="Command\DbCommandEx2.cs" />
+    <Compile Include="ConnectionStringProvider\ConnectionStringBuilder.cs" />
+    <Compile Include="ConnectionStringProvider\ConnectionStrBuilderHelper.cs" />
+    <Compile Include="ConnectionStringProvider\frmConnectionStringBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionStringProvider\frmConnectionStringBuilder.Designer.cs">
+      <DependentUpon>frmConnectionStringBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionStringProvider\MSSqlConnStringBuider.cs" />
+    <Compile Include="ConnectionStringProvider\ODBCConnStringBuilder.cs" />
+    <Compile Include="ConnectionStringProvider\OledbConnStringBuilder.cs" />
+    <Compile Include="ConnectionStringProvider\OracleConnStringBuilder.cs" />
+    <Compile Include="Connection\ConnectionPrivider.cs" />
+    <Compile Include="Connection\IConnectionPrivider.cs" />
+    <Compile Include="DACConfig.cs" />
+    <Compile Include="DacEnviroment.cs" />
+    <Compile Include="DACHelper.cs" />
+    <Compile Include="DbDialet\DbDialetHelper.cs" />
+    <Compile Include="DbDialet\DialetDB2.cs" />
+    <Compile Include="DbDialet\DialetMSAccess.cs" />
+    <Compile Include="DbDialet\DialetMSExcel.cs" />
+    <Compile Include="DbDialet\DialetSql2008.cs" />
+    <Compile Include="DbDialet\Function\ABS.cs" />
+    <Compile Include="DbDialet\Function\SqlFunctionTemplate.cs" />
+    <Compile Include="DbDialet\DialetOracle11g.cs" />
+    <Compile Include="DbDriver\DbDriverHelper.cs" />
+    <Compile Include="DbSchema\DBProperty\DbSchemaColumnCollection.cs" />
+    <Compile Include="DbSchema\DBProperty\DbSchemaParameter.cs" />
+    <Compile Include="DbSchema\DBProperty\DbSchemaView.cs" />
+    <Compile Include="DbSchema\Provider\AbstractDbSchemaProvider.cs" />
+    <Compile Include="DbSchema\Provider\AccessDbSchemaProvidercs.cs" />
+    <Compile Include="DbSchema\Provider\DbSchemaHelper.cs" />
+    <Compile Include="DbSchema\Provider\OracleDbSchemaProvider.cs" />
+    <Compile Include="DbSchema\DBProperty\DbSchemaProcedure.cs" />
+    <Compile Include="DbSchema\DBProperty\DbSchemaFunction.cs" />
+    <Compile Include="DbSchema\DBProperty\DbSchemaColumn.cs" />
+    <Compile Include="DbSchema\DbSchemaInfo.cs" />
+    <Compile Include="DbSchema\DBProperty\DbSchemaTable.cs" />
+    <Compile Include="DbSchema\DbSchemaCache.cs" />
+    <Compile Include="DbSchema\Provider\IDbSchemaProvider.cs" />
+    <Compile Include="DbSchema\Provider\MSSqlDbSchemaProvider.cs" />
+    <Compile Include="DbDialet\DialetOracle10g.cs" />
+    <Compile Include="DbDialet\DialetOracle8i.cs" />
+    <Compile Include="DbDialet\DialetOracle9i.cs" />
+    <Compile Include="DbDialet\DialetProvider.cs" />
+    <Compile Include="DbDialet\DialetSql2000.cs" />
+    <Compile Include="DbDialet\DialetSql2005.cs" />
+    <Compile Include="DbDialet\EnumDataBaseDialet.cs" />
+    <Compile Include="DbDialet\IDialet.cs" />
+    <Compile Include="DbDriver\DriverBase.cs" />
+    <Compile Include="DbDriver\EnumDbDriver.cs" />
+    <Compile Include="DbDriver\IDbDriver.cs" />
+    <Compile Include="DbDriver\ODBCDriver.cs" />
+    <Compile Include="DbDriver\OledbDriver.cs" />
+    <Compile Include="DbDriver\OracleDriver.cs" />
+    <Compile Include="DbDriver\SqlClientDriver.cs" />
+    <Compile Include="DbDialet\Function\ISqlFunction.cs" />
+    <Compile Include="DbDialet\Function\SqlFunction.cs" />
+    <Compile Include="DbDialet\Function\StandardSqlFunction.cs" />
+    <Compile Include="DbSysTableID\GlobalSysTableIDGenerator.cs" />
+    <Compile Include="DbSysTableID\GlobalSysTableIDRule.cs" />
+    <Compile Include="ITransaction.cs" />
+    <Compile Include="MD5Helper.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="DbTableHelper\DbTableHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\BasicSqlFormatter.cs" />
+    <Compile Include="Util\DBDataTypeConverter.cs" />
+    <Compile Include="Util\SqlStringConst.cs" />
+    <Compile Include="Util\StringTokenizer.cs" />
+    <Compile Include="Util\StringTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectionStringProvider\frmConnectionStringBuilder.resx">
+      <DependentUpon>frmConnectionStringBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LibDAC使用文档.doc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,113 @@
+select s.* into #a from
+(
+select top 5
+patients.pat_id,
+(case isnull(patients.pat_host_order,0) when 0 then patients.pat_sid else patients.pat_host_order end )  样本号, 
+patients.pat_name 姓名,  
+(case patients.pat_sex when 1 then '男' when 2 then '女' else '未知' end) 性别,
+(case isnull(dbo.getAge(patients.pat_age_exp),'') when '' then '20*' else dbo.getAge(patients.pat_age_exp) end )年龄,
+patients.pat_in_no 病人ID,
+patients.pat_admiss_times 就诊次数, 
+isnull(patients.pat_bed_no,'') 床号, 
+patients.pat_diag 诊断, 
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id, --'107门诊，108住院，109体检'
+(case patients.pat_ori_id when '107' then '门诊' when '108' then '住院' else '体检' end) 来源--'107门诊，108住院，109体检'
+from patients
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '107'
+and isnull(patients.pat_bar_code,'') <> ''
+
+union all 
+
+select top 5
+patients.pat_id,
+(case isnull(patients.pat_host_order,0) when 0 then patients.pat_sid else patients.pat_host_order end )  样本号, 
+patients.pat_name 姓名,  
+(case patients.pat_sex when 1 then '男' when 2 then '女' else '未知' end) 性别,
+(case isnull(dbo.getAge(patients.pat_age_exp),'') when '' then '20*' else dbo.getAge(patients.pat_age_exp) end )年龄,
+patients.pat_in_no 病人ID,
+patients.pat_admiss_times 就诊次数, 
+isnull(patients.pat_bed_no,'') 床号, 
+patients.pat_diag 诊断, 
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id, --'107门诊，108住院，109体检'
+(case patients.pat_ori_id when '107' then '门诊' when '108' then '住院' else '体检' end) 来源--'107门诊，108住院，109体检'
+from patients
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '108'
+and isnull(patients.pat_bar_code,'') <> ''
+
+union all
+
+
+select top 5
+patients.pat_id,
+(case isnull(patients.pat_host_order,0) when 0 then patients.pat_sid else patients.pat_host_order end )  样本号, 
+patients.pat_name 姓名,  
+(case patients.pat_sex when 1 then '男' when 2 then '女' else '未知' end) 性别,
+(case isnull(dbo.getAge(patients.pat_age_exp),'') when '' then '20*' else dbo.getAge(patients.pat_age_exp) end )年龄,
+patients.pat_in_no 病人ID,
+patients.pat_admiss_times 就诊次数, 
+isnull(patients.pat_bed_no,'') 床号, 
+patients.pat_diag 诊断, 
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_bar_code,
+patients.pat_ori_id,
+(case patients.pat_ori_id when '107' then '门诊' when '108' then '住院' else '体检' end) 来源--'107门诊，108住院，109体检'
+from patients
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+where patients.pat_flag > '1' &where&
+and patients.pat_ori_id = '109'
+and isnull(patients.pat_bar_code,'') <> ''
+) s
+
+
+
+select p.*  into #b from 
+(
+select 'LIS系统最终数据' 类型,
+'1' 序号,
+#a.*
+from #a
+
+union all
+
+select '住院系统最终数据' 类型,
+'2' 序号,
+#a.*
+from #a
+where #a.pat_ori_id = '108'
+
+union all
+
+select '门诊系统最终数据' 类型,
+'3' 序号,
+#a.*
+from #a
+where #a.pat_ori_id = '107'
+
+union all
+
+select '体检系统最终数据' 类型,
+'4' 序号,
+#a.*
+from #a
+where #a.pat_ori_id = '109'
+
+union all
+
+select '验单打印数据' 类型,
+'5' 序号,
+#a.*
+from #a
+) p
+
+select * from #b order by pat_id,序号,来源

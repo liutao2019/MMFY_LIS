@@ -1,0 +1,98 @@
+--过滤标本类型
+select 
+dict_sample.sam_id into #s 
+from dict_sample 
+where dict_sample.sam_name like '%全血%'
+
+--查找所有血培养已签收标本--
+select
+bc_patients.bc_bar_code 条码号, 
+bc_patients.bc_date 条码时间,   
+bc_patients.bc_d_name 科室,
+bc_patients.bc_in_no 住院号,
+isnull(bc_patients.bc_bed_no,'') 床号,
+bc_patients.bc_name 姓名,
+(case bc_patients.bc_sex when '男' then '男' when '女' then '女' when '1' then '男' when '2' then '女' else '男*' end) 性别,
+dbo.getAge(bc_patients.bc_age) 年龄,
+bc_patients.bc_his_name 组合名称,
+(case when bc_sam_name is not null and len(bc_sam_name)>0 then bc_patients.bc_sam_name
+		     else dict_sample.sam_name  end) 标本,
+bc_cname.bc_lis_code 组合编码,
+bc_cname.bc_name 打印名称,
+bc_patients.bc_ori_id into #az
+from bc_patients 
+left join dict_sample ON bc_patients.bc_sam_id = dict_sample.sam_id
+left join bc_cname on bc_cname.bc_bar_code = bc_patients.bc_bar_code
+inner join #s on #s.sam_id = bc_patients.bc_sam_id
+where bc_patients.bc_receiver_flag = '1'
+and bc_cname.bc_lis_code in ('304','489')
+and bc_patients.bc_receiver_date>'&sDate&' and bc_patients.bc_receiver_date<='&eDate&'
+--order by bc_patients.bc_ori_id,bc_cname.bc_lis_code,bc_patients.bc_d_name,bc_patients.bc_date,bc_patients.bc_in_no
+
+--所有已审核的血培养细菌标本--
+select 
+patients.pat_sample_date,
+patients.pat_apply_date,
+patients.pat_report_date,
+patients.pat_id,
+patients.pat_itr_id,
+dict_instrmt.itr_mid,
+patients.pat_in_no,
+patients.pat_bar_code,
+patients.pat_name,
+patients.pat_dep_name,
+patients.pat_sam_id,
+dict_sample.sam_name,
+patients.pat_ori_id,
+dict_origin.ori_name into #a
+from patients
+left join dict_instrmt on dict_instrmt.itr_id = patients.pat_itr_id
+left join dict_sample on dict_sample.sam_id = patients.pat_sam_id
+left join dict_origin on dict_origin.ori_id = patients.pat_ori_id
+inner join #s on #s.sam_id = patients.pat_sam_id
+where patients.pat_flag > '1' &where&
+and dict_instrmt.itr_rep_flag = '3'
+--and isnull(patients.pat_bar_code,'') <> ''
+--and patients.pat_date > '2015-05-19 00:00:00.000' and patients.pat_date < '2015-05-19 23:59:59.000'
+
+
+--药敏结果血培养可疑污染--
+select 
+#a.pat_id,
+#a.pat_in_no,
+#a.pat_bar_code,
+ba_rlts.bar_scripe into #b
+from #a
+inner join ba_rlts on ba_rlts.bar_id = #a.pat_id
+where ba_rlts.bar_scripe like '%污染%'
+
+--涂片结果血培养可疑污染--
+select 
+#a.pat_id,
+#a.pat_in_no,
+#a.pat_bar_code,
+cs_rlts.bsr_cname into #c
+from #a
+inner join cs_rlts on cs_rlts.bsr_id = #a.pat_id
+where cs_rlts.bsr_cname like '%污染%'
+
+select 
+count(*) 总数 into #a1
+from #az
+
+select 
+count(*) 药敏数 into #b1
+from #b
+
+select 
+count(*) 涂片数 into #c1
+from #c
+
+select 
+#b1.药敏数,
+#c1.涂片数,
+#a1.总数,
+((cast(#b1.药敏数 as decimal(19,3)) + cast(#c1.涂片数 as decimal(19,3)))/cast((case when #a1.总数 = 0 then 1 else #a1.总数 end) as decimal(19,3))) 血培养污染百分率,
+'&sDate&' 开始时间,
+'&eDate&' 结束时间
+from #a1,#b1,#c1

@@ -1,0 +1,14 @@
+D:\WiseFly\Source Code\Lis.Release\Release\zh-CHS\Microsoft.Data.ConnectionUI.Dialog.resources.dll
+D:\WiseFly\Source Code\Lis.Release\Release\CodeConfig.xml
+D:\WiseFly\Source Code\Lis.Release\Release\App.config
+D:\WiseFly\Source Code\Lis.Release\Release\wf.Auxiliary.exe.config
+D:\WiseFly\Source Code\Lis.Release\Release\wf.Auxiliary.exe.manifest
+D:\WiseFly\Source Code\Lis.Release\Release\wf.Auxiliary.application
+D:\WiseFly\Source Code\Lis.Release\Release\wf.Auxiliary.exe
+D:\WiseFly\Source Code\Lis.Release\Release\wf.Auxiliary.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.Auxiliary\obj\Debug\wf.Auxiliary.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.Auxiliary\obj\Debug\wf.Auxiliary.TrustInfo.xml
+D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.Auxiliary\obj\Debug\wf.Auxiliary.exe.manifest
+D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.Auxiliary\obj\Debug\wf.Auxiliary.application
+D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.Auxiliary\obj\Debug\wf.Auxiliary.exe
+D:\WiseFly\Source Code\Lis.Release\wf.MainClient\wf.Auxiliary\obj\Debug\wf.Auxiliary.pdb

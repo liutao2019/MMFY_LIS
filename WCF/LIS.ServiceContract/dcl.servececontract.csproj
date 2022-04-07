@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A0F5DFF-9EE1-4A37-9D15-03CB95559190}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>dcl.servececontract</RootNamespace>
+    <AssemblyName>dcl.servececontract</AssemblyName>
+    <ProjectGuid>{4A0F5DFF-9EE1-4A37-9D15-03CB95559190}</ProjectGuid>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lib.DataInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.DataInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib.EntityCore, Version=1.1.8.23, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lib.EntityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataInterfaceCon\IDicDataInterfaceCommand.cs" />
+    <Compile Include="DataInterfaceCon\IDicDataInterfaceCommandParameter.cs" />
+    <Compile Include="DataInterfaceCon\IDicDataInterfaceConnection.cs" />
+    <Compile Include="Dict\ICombineSplitBarCode.cs" />
+    <Compile Include="ReagentSetting\IReaSetting.cs" />
+    <Compile Include="Reagent\IReaApply.cs" />
+    <Compile Include="Reagent\IReaApplyDetail.cs" />
+    <Compile Include="Reagent\IReaDelivery.cs" />
+    <Compile Include="Reagent\IReaDeliveryDetail.cs" />
+    <Compile Include="Reagent\IReaLossReport.cs" />
+    <Compile Include="Reagent\IReaLossReportDetail.cs" />
+    <Compile Include="Reagent\IReaPurchase.cs" />
+    <Compile Include="Reagent\IReaPurchaseDetail.cs" />
+    <Compile Include="Reagent\IReaStorage.cs" />
+    <Compile Include="Reagent\IReaStorageDetail.cs" />
+    <Compile Include="Reagent\IReaSubscribe.cs" />
+    <Compile Include="Reagent\IReaSubscribeDetail.cs" />
+    <Compile Include="SampMain\IGetTubeInfoByCombine.cs" />
+    <Compile Include="Interfaces\IDCLInterfacesTool.cs" />
+    <Compile Include="Interfaces\ISMHisInterfaces.cs" />
+    <Compile Include="Message\IDicCombineTATMsg.cs" />
+    <Compile Include="Message\IDicInstrmtUrgentTATMsg.cs" />
+    <Compile Include="Message\IDicObrMessage.cs" />
+    <Compile Include="Message\IDicObrMessageContent.cs" />
+    <Compile Include="Message\IDicObrMessageReceive.cs" />
+    <Compile Include="Message\IDicPidReportMainExt.cs" />
+    <Compile Include="Message\IDicUrgentObrMessage.cs" />
+    <Compile Include="Elisa\IElisaAnalyse.cs" />
+    <Compile Include="Interfaces\ISysItfContrast.cs" />
+    <Compile Include="Interfaces\ISysItfInterfaces.cs" />
+    <Compile Include="Login\ILogin.cs" />
+    <Compile Include="Message\IInstrmtWardingMsg.cs" />
+    <Compile Include="Message\IUserMessage.cs" />
+    <Compile Include="Monitor\IDicSampProcessMonitor.cs" />
+    <Compile Include="OA\IOfficeHandOver.cs" />
+    <Compile Include="OA\IOfficeHoRecord.cs" />
+    <Compile Include="QCSpecific\IDicObrQcAnalysis.cs" />
+    <Compile Include="QCSpecific\IObrQcResult.cs" />
+    <Compile Include="QueueNumber\IQueueNumber.cs" />
+    <Compile Include="ReportCopy\IReportCopy.cs" />
+    <Compile Include="ReportPrint\IReportPrint.cs" />
+    <Compile Include="QCSpecific\IDicQcMateria.cs" />
+    <Compile Include="QCSpecific\IDicQcMateriaDetail.cs" />
+    <Compile Include="QCSpecific\IDicQcMateriaRule.cs" />
+    <Compile Include="OA\IOaTabelDetail.cs" />
+    <Compile Include="OA\IOfficeAttendance.cs" />
+    <Compile Include="OA\IOfficeShiftDictDetail.cs" />
+    <Compile Include="OA\IOfficeShiftDict.cs" />
+    <Compile Include="Report\IPidReportDetail.cs" />
+    <Compile Include="ResultQuery\ITwoWaySelect.cs" />
+    <Compile Include="ResultView\IObrResult.cs" />
+    <Compile Include="ResultView\IObrResultAnti.cs" />
+    <Compile Include="ResultView\IObrResultBact.cs" />
+    <Compile Include="ResultView\IObrResultBakItm.cs" />
+    <Compile Include="ResultView\IObrResultDesc.cs" />
+    <Compile Include="ResultView\IObrResultMerge.cs" />
+    <Compile Include="Result\IMarrowEnter.cs" />
+    <Compile Include="Result\IMicEnterNew.cs" />
+    <Compile Include="Result\IBatchEditNew.cs" />
+    <Compile Include="Result\IObrResultImage.cs" />
+    <Compile Include="Result\IObrResultOriginal.cs" />
+    <Compile Include="Result\IPatEnterNew.cs" />
+    <Compile Include="Result\IPidReportMainAudit.cs" />
+    <Compile Include="Result\IPatientRecheck.cs" />
+    <Compile Include="Result\IPatMonitor.cs" />
+    <Compile Include="Result\IPidReportMainInterface.cs" />
+    <Compile Include="Result\IPatResult.cs" />
+    <Compile Include="Result\IPatTempInput.cs" />
+    <Compile Include="Result\IPidReportMain.cs" />
+    <Compile Include="ResultView\IObrRelateResult.cs" />
+    <Compile Include="Result\IResultTemp.cs" />
+    <Compile Include="SamDestory\IDicSamDestory.cs" />
+    <Compile Include="OA\IOfficeAnnouncement.cs" />
+    <Compile Include="SampMain\ISampOperateDetail.cs" />
+    <Compile Include="SampMain\IShelfSampRegister.cs" />
+    <Compile Include="SampMain\ISampMainDownload.cs" />
+    <Compile Include="SampMain\ISampRegister.cs" />
+    <Compile Include="SampMain\ISecondSign.cs" />
+    <Compile Include="SampMain\ISampProcessDetial.cs" />
+    <Compile Include="SampMain\ISampDetail.cs" />
+    <Compile Include="SampMain\ISampMain.cs" />
+    <Compile Include="Cache\ICacheData.cs" />
+    <Compile Include="ICacheService.cs" />
+    <Compile Include="IDicCommon.cs" />
+    <Compile Include="InstrumentThings\IDicItrInstrumentMaintain.cs" />
+    <Compile Include="InstrumentThings\IDicItrInstrumentRegistration.cs" />
+    <Compile Include="InstrumentThings\IDicItrInstrumentServicing.cs" />
+    <Compile Include="OA\IOrderTable.cs" />
+    <Compile Include="NoticeManage\IDicNoticeManage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="ISamManage.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QCSpecific\IDicFastAddQcItem.cs" />
+    <Compile Include="QCSpecific\IDicItemParameter.cs" />
+    <Compile Include="Report\IReportMain.cs" />
+    <Compile Include="ResultQuery\ICombModelSel.cs" />
+    <Compile Include="SampMain\ISampReturn.cs" />
+    <Compile Include="ResultView\IDictMitmNoResultView.cs" />
+    <Compile Include="SampStock\ISampStoreRack.cs" />
+    <Compile Include="SampStock\ISampStoreDetail.cs" />
+    <Compile Include="SampStock\ISampStoreRecord.cs" />
+    <Compile Include="ResultQuery\IItemSort.cs" />
+    <Compile Include="ResultQuery\ISummaryPrint.cs" />
+    <Compile Include="SampStock\ISampStock.cs" />
+    <Compile Include="Tools\ILisDoc.cs" />
+    <Compile Include="Statistical\IStatTemp.cs" />
+    <Compile Include="Statistical\IAnalyse.cs" />
+    <Compile Include="Statistical\IStatistical.cs" />
+    <Compile Include="SysInterfaceLog\ISysInterfaceLog.cs" />
+    <Compile Include="TAT\ITatProRecord.cs" />
+    <Compile Include="TempHandle\ITempHandle.cs" />
+    <Compile Include="Tools\IMergeResult.cs" />
+    <Compile Include="Setting\IRunTimeSetting.cs" />
+    <Compile Include="TouchPrint\ITouchPrint.cs" />
+    <Compile Include="User\IRoleManagePro.cs" />
+    <Compile Include="User\ISysFunction.cs" />
+    <Compile Include="User\ISysRoleFunc.cs" />
+    <Compile Include="User\ISystemConfig.cs" />
+    <Compile Include="User\ISysUserInfo.cs" />
+    <Compile Include="User\ISysUserRole.cs" />
+    <Compile Include="SamSearch\IDicSamSearch.cs" />
+    <Compile Include="Sys\ISysOperationLog.cs" />
+    <Compile Include="User\IUserManage.cs" />
+    <Compile Include="Sys\ISysLog.cs" />
+    <Compile Include="Whonet\IWhonet.cs" />
+    <Compile Include="细菌字典\IDictMedia.cs" />
+    <Compile Include="细菌字典\IDictComMedia.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560f53b-eabc-4b57-a118-2ab19edde52b}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.FrameworkCore\lis.common\dcl.common.csproj">
+      <Project>{50812891-69F9-4766-B09B-D2FABDF6354D}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildToolsPath)\Workflow.Targets" />
+</Project>

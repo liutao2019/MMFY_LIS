@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.report.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.svr.report.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.dll
+D:\WiseFly\Source Code\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.report.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.report.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.pdb

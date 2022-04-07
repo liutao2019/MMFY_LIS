@@ -1,0 +1,10 @@
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.dao.interfaces.dll
+D:\WiseFly\Source Code\Lis.Release\Release\dcl.dao.interfaces.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.dll
+D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.dao.interfaces.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.dao.interfaces.pdb
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.csprojResolveAssemblyReference.cache
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.dll
+D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.pdb

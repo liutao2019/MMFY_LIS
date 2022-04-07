@@ -1,0 +1,5 @@
+D:\WiseFly\Source Code\Lis.Release\Release\Lib.EntityCore.dll
+D:\WiseFly\Source Code\Lis.Release\Release\Lib.EntityCore.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.EntityCore\obj\Debug\Lib.EntityCore.dll
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.EntityCore\obj\Debug\Lib.EntityCore.pdb
+D:\WiseFly\Source Code\Lis.Release\wf.FrameworkAuxiliary\wf.EntityCore\obj\Debug\Lib.EntityCore.csprojResolveAssemblyReference.cache

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21ACDD7F-FF28-49C1-9CCE-B6990394E5C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lis.client.control</RootNamespace>
+    <AssemblyName>lis.client.control</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lis_dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dcl.client.cache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.cache.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Lis.Client.CASign, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Lis.Client.CASign.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ctlLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlLookUpEdit.Designer.cs">
+      <DependentUpon>ctlLookUpEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlPopupLookUpEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ctlPopupLookUpEditForm.Designer.cs">
+      <DependentUpon>ctlPopupLookUpEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlTimeCountDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlTimeCountDown.Designer.cs">
+      <DependentUpon>ctlTimeCountDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsBasic.cs">
+      <DependentUpon>dsBasic.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBasic.Designer.cs">
+      <DependentUpon>dsBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LISControl\ctlGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MicrobeSign\IsignInterface.cs" />
+    <Compile Include="FilterEditor\FilterControl.cs" />
+    <Compile Include="FilterEditor\LabelInfo.cs" />
+    <Compile Include="FilterEditor\Model.cs" />
+    <Compile Include="FrmCheckPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckPassword.Designer.cs">
+      <DependentUpon>FrmCheckPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilter.Designer.cs">
+      <DependentUpon>FrmFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HopePopSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HopePopSelect.Designer.cs">
+      <DependentUpon>HopePopSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LISCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LISCheckBox.Designer.cs">
+      <DependentUpon>LISCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LISControl\ILISControl.cs" />
+    <Compile Include="LISControl\LISTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LISControl\ScrollingText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmMessageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageDialog.Designer.cs">
+      <DependentUpon>frmMessageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageDialog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDict_TypeChecks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDict_TypeChecks.Designer.cs">
+      <DependentUpon>SelectDict_TypeChecks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextAgeInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectDict_Sex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDict_Sex.Designer.cs">
+      <DependentUpon>SelectDict_Sex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDict_PatCheckType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectDict_PatCheckType.Designer.cs">
+      <DependentUpon>SelectDict_PatCheckType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoControl\VideoAPI.cs" />
+    <Compile Include="VideoControl\VideoControl.cs" />
+    <Compile Include="VideoControl\VideoOutputControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VideoControl\VideoOutputControl.Designer.cs">
+      <DependentUpon>VideoOutputControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitingDailog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitingDailog.Designer.cs">
+      <DependentUpon>WaitingDailog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmCheckPassword.resx">
+      <DependentUpon>FrmCheckPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HopePopSelect.resx">
+      <DependentUpon>HopePopSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LISCheckBox.resx">
+      <DependentUpon>LISCheckBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dsBasic.xsc">
+      <DependentUpon>dsBasic.xsd</DependentUpon>
+    </None>
+    <None Include="dsBasic.xsd" />
+    <None Include="dsBasic.xss">
+      <DependentUpon>dsBasic.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctlTimeCountDown.resx">
+      <DependentUpon>ctlTimeCountDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterEditor\Images\ClauseImages.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterEditor\Images\GroupImages.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterEditor\Images\NodeImages.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilter.resx">
+      <DependentUpon>FrmFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LISControl\ScrollingText.resx">
+      <DependentUpon>ScrollingText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageDialog.resx">
+      <DependentUpon>frmMessageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDict_Sex.resx">
+      <DependentUpon>SelectDict_Sex.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDict_PatCheckType.resx">
+      <DependentUpon>SelectDict_PatCheckType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDict_TypeChecks.resx">
+      <DependentUpon>SelectDict_TypeChecks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoControl\VideoOutputControl.resx">
+      <DependentUpon>VideoOutputControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitingDailog.resx">
+      <DependentUpon>WaitingDailog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LISControl\ScrollingText.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\wf.ca\dcl.client.ca\dcl.client.ca.csproj">
+      <Project>{F46A5AFB-EA9E-4577-BB77-5C9A4FF2B093}</Project>
+      <Name>dcl.client.ca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\wf.Dao\wf.entity\dcl.entity.csproj">
+      <Project>{8560F53B-EABC-4B57-A118-2AB19EDDE52B}</Project>
+      <Name>dcl.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.ServiceContract\dcl.servececontract.csproj">
+      <Project>{4a0f5dff-9ee1-4a37-9d15-03cb95559190}</Project>
+      <Name>dcl.servececontract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\LIS.WCFClient\dcl.client.wcf.csproj">
+      <Project>{204e3c3d-3215-4092-b159-9e862ee34bc5}</Project>
+      <Name>dcl.client.wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dcl.client.control\dcl.client.control.csproj">
+      <Project>{dca635d5-7a04-4fed-b8db-681a2139c42d}</Project>
+      <Name>dcl.client.control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib.client.common\dcl.client.frame.csproj">
+      <Project>{9925e3a3-4709-4dec-8649-cb09d9ce7fc8}</Project>
+      <Name>dcl.client.frame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lis.client.common\dcl.client.common.csproj">
+      <Project>{75bed5d0-501a-4b11-9b69-8a78192a37d7}</Project>
+      <Name>dcl.client.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lis.common\dcl.common.csproj">
+      <Project>{50812891-69f9-4766-b09b-d2fabdf6354d}</Project>
+      <Name>dcl.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
