@@ -196,6 +196,55 @@ namespace dcl.svr.result
             return patient;
         }
 
+        /// <summary>
+        /// 根据条码信息转换成病人信息
+        /// </summary>
+        /// <param name="entitySampMain"></param>
+        /// <returns></returns>
+        public List<EntityPidReportMain> GetPatientsBySampleMain(List<EntitySampMain> entitySampMain)
+        {
+            List<EntityPidReportMain> patientList = new List<EntityPidReportMain>();
+
+            foreach (var sampMain in entitySampMain)
+            {
+                EntityPidReportMain patient = new EntityPidReportMain();
+
+                if (sampMain != null && !string.IsNullOrEmpty(sampMain.SampBarCode))
+                {
+                    //填充条码病人资料到lis病人资料
+                    patient = ConvertSampMainToPatient(sampMain);
+
+                    //根据条码获取条码明细
+                    List<EntitySampDetail> dtBCCombine = sampMain.ListSampDetail;
+
+
+                    //项目序号
+                    int com_seq = 0;
+                    foreach (EntitySampDetail drBCCombine in dtBCCombine)//条码检验组合转换为LIS中的病人检验组合
+                    {
+                        EntityPidReportDetail reportDetail = new EntityPidReportDetail();
+
+                        reportDetail.ComId = drBCCombine.ComId;//项目ID
+                        reportDetail.OrderCode = drBCCombine.OrderCode;//组合HIS编码
+                        reportDetail.OrderPrice = drBCCombine.OrderPrice.ToString();//价格
+                        reportDetail.OrderSn = drBCCombine.OrderSn;//医嘱ID
+                        reportDetail.SortNo = com_seq;//顺序号
+                        reportDetail.SampFlag = drBCCombine.SampFlag;//上机标志
+                        reportDetail.PatComName = drBCCombine.ComName;//组合名称
+                        reportDetail.RepBarCode = sampMain.SampBarCode;//条码号
+                        reportDetail.ApplyID = drBCCombine.ApplyID;//申请单号
+
+                        patient.ListPidReportDetail.Add(reportDetail);
+                    }
+
+                }
+
+                patientList.Add(patient);
+            }
+
+         
+            return patientList;
+        }
 
         public List<EntityPidReportMain> GetAllLabPat(string labId, DateTime startDate, DateTime endDate)
         {
@@ -2071,13 +2120,13 @@ namespace dcl.svr.result
         /// </summary>
         /// <param name="Reports"></param>
         /// <returns></returns>
-        public List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc)
+        public List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc, string type)
         {
             List<EntityPidReportMain> list = new List<EntityPidReportMain>();
             IDaoPidReportMain mainDao = DclDaoFactory.DaoHandler<IDaoPidReportMain>();
             if (mainDao != null)
             {
-                list = mainDao.GetFaultUpLoadReport(qc);
+                list = mainDao.GetFaultUpLoadReport(qc, type);
             }
             return list;
         }

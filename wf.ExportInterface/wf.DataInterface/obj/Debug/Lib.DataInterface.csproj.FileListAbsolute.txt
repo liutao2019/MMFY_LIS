@@ -32,3 +32,22 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.DataInterface\o
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.pdb
+D:\LIS\NEW_MMFY_LIS\Reference\Lib.DataInterface.dll
+D:\LIS\NEW_MMFY_LIS\Reference\Lib.DataInterface.pdb
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.ctrlDataConverterEditor.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.ctrlDataInterfaceCommandEditor.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.ctrlDataInterfaceConnectionEditor.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.frmDataConverterEditor.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.frmDataInterfaceCommandEditor.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.frmDataInterfaceConnectionEditor.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.frmTestCommand.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Implement.frmTips.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.frmCommandTest.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.dll
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.DataInterface\obj\Debug\Lib.DataInterface.pdb

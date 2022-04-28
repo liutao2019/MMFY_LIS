@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.touchprint.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.touchprint.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.touchprint.pdb
+D:\LIS\NEW_MMFY_LIS\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.dll
+D:\LIS\NEW_MMFY_LIS\wf.ShelfPrint\dcl.svr.touchprint\obj\Debug\dcl.svr.touchprint.pdb

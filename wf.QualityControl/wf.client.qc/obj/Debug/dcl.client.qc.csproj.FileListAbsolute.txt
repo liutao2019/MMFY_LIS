@@ -56,3 +56,34 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.QualityControl\wf.client.qc\obj\De
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.qc.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.qc.pdb
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmAddQcItemNew.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmBscripeSelectV3.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmAudiData.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmChart.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmCriterion.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmDiversion.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQcDesc.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmParameter.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQcCopyNew.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQcDataAnalyse.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQcDataModify.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.frmQcDataModifyHistory.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQcView.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQutityDict.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmReagentsCompare.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmRoom.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmMensurate.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmControl.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQcParameterRuleInstNew.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.FrmQcRuleInst.resources
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.dll
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.client.qc\obj\Debug\dcl.client.qc.pdb

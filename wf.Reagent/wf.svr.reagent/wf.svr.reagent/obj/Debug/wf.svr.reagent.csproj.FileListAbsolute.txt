@@ -1,0 +1,8 @@
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.svr.reagent\wf.svr.reagent\obj\Debug\wf.svr.reagent.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.svr.reagent\wf.svr.reagent\obj\Debug\wf.svr.reagent.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\Release\wf.svr.reagent.dll
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\Release\wf.svr.reagent.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.svr.reagent\wf.svr.reagent\obj\Debug\wf.svr.reagent.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.svr.reagent\wf.svr.reagent\obj\Debug\wf.svr.reagent.dll
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.svr.reagent\wf.svr.reagent\obj\Debug\wf.svr.reagent.pdb

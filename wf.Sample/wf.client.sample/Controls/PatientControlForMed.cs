@@ -1057,6 +1057,7 @@ namespace dcl.client.sample
         /// <returns>是否成功</returns>
         public bool AddBarcode(string barCode, ArrayList cTypes)
         {
+
             if (IncludeBarcode(barCode))  //表中已有条码号,提示并不增加
             {
                 PointOut(barCode);
@@ -1064,6 +1065,7 @@ namespace dcl.client.sample
                 lis.client.control.MessageDialog.Show(string.Format("该条码 {0} 已经在当前表中!", barCode), "条码重复");
                 return false;
             }
+
 
             EntitySampMain sampMain = proxy.Service.SampMainQueryByBarId(barCode);
 

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<SystemSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListSysConn>
+    <SystemConnectionEntity>
+      <Client>Lis</Client>
+      <SysConnection>ConnCode</SysConnection>
+    </SystemConnectionEntity>
+    <SystemConnectionEntity>
+      <Client>BL</Client>
+      <SysConnection>ConnCode</SysConnection>
+    </SystemConnectionEntity>
+    <SystemConnectionEntity>
+      <Client>GS</Client>
+      <SysConnection>ConnCode</SysConnection>
+    </SystemConnectionEntity>
+    <SystemConnectionEntity>
+      <Client>OldLis</Client>
+      <SysConnection>odbc_lis</SysConnection>
+    </SystemConnectionEntity>
+    <SystemConnectionEntity>
+      <Client>TJ</Client>
+      <SysConnection>ConnCode</SysConnection>
+    </SystemConnectionEntity>
+    <SystemConnectionEntity>
+      <Client>XK</Client>
+      <SysConnection>ConnCode</SysConnection>
+    </SystemConnectionEntity>
+  </ListSysConn>
+  <ReportPath>C:\Program Files\hope\lis\xtraReport</ReportPath>
+</SystemSetting>

@@ -38,3 +38,25 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.client.report\obj\De
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.report.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.report.pdb
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmPrintConfiguration.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmReporMain.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmGetTplName.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmReportPrint.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmSelectTemplate.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmServerReport.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmShowPreview.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.FrmStatisticsTemplate.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.xtrRepPatients.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.xtrRepResulto.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.xtrRepResulto_p.resources
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.dll
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.report\obj\Debug\dcl.client.report.pdb

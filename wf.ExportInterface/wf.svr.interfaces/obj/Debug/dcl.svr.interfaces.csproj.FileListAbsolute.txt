@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.interfaces.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.interfaces.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.interfaces.pdb
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.dll
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.svr.interfaces\obj\Debug\dcl.svr.interfaces.pdb

@@ -38,3 +38,26 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.MainClient\wf.ClientEntrance\obj\D
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.application
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.exe
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.pdb
+D:\LIS\NEW_MMFY_LIS\Release\zh-CHS\Microsoft.Data.ConnectionUI.Dialog.resources.dll
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\危急值配置.exe
+D:\LIS\NEW_MMFY_LIS\Release\App.config
+D:\LIS\NEW_MMFY_LIS\Release\wf.ClientEntrance.exe.config
+D:\LIS\NEW_MMFY_LIS\Release\wf.ClientEntrance.exe.manifest
+D:\LIS\NEW_MMFY_LIS\Release\wf.ClientEntrance.application
+D:\LIS\NEW_MMFY_LIS\Release\wf.ClientEntrance.exe
+D:\LIS\NEW_MMFY_LIS\Release\wf.ClientEntrance.pdb
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.CustomWaitForm.resources
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.FrmLogin.resources
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.FrmMainNew.resources
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.FrmAbout.resources
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.TrustInfo.xml
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.exe.manifest
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.application
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.exe
+D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\obj\Debug\wf.ClientEntrance.pdb

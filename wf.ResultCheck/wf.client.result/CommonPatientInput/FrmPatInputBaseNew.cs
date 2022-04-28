@@ -1664,6 +1664,34 @@ namespace dcl.client.result
                         //************************************************************
 
                         //调用子类的保存方法
+
+                        if (patient.RepBarCode == patient.PidName)//粤核总码使用条码做完姓名生成
+                        {
+                            EntitySampQC sampQC1 = new EntitySampQC();
+                            sampQC1.SampYhsBarCode = patient.RepBarCode;
+                            List<EntitySampMain> patientList = new ProxySampMain().Service.SampMainQuery(sampQC1);
+                            EntityPatientQC qc = new EntityPatientQC();
+
+                            if (patientList != null && patientList.Count > 0)
+                            {
+                                foreach (var patSqmpMain in patientList)
+                                {
+                                    List<EntityPidReportMain> listPid = new List<EntityPidReportMain>();
+                                    qc.RepBarCode = patSqmpMain.SampBarCode;
+                                    listPid = new ProxyPidReportMain().Service.PatientQuery(qc);
+
+                                    if (listPid != null && listPid.Count > 0)
+                                    {
+                                        foreach (var pat in listPid)
+                                        {
+                                            pat_id = PatEnter.Save(pat);
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+
                         pat_id = PatEnter.Save(patient);
                         if (!string.IsNullOrEmpty(pat_id))
                         {

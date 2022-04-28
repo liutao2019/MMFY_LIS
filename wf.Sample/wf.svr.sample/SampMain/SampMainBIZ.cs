@@ -331,6 +331,26 @@ namespace dcl.svr.sample
         }
 
         /// <summary>
+        /// 更新条码绑定的总码信息
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="sex"></param>
+        /// <param name="sampBarId"></param>
+        /// <returns></returns>
+        public Boolean UpdateSampMainYHSBarCode(EntitySampMain sampMain, String sampBarId)
+        {
+            bool result = false;
+
+            IDaoSampMain dao = DclDaoFactory.DaoHandler<IDaoSampMain>();
+            if (dao != null)
+            {
+                result = dao.UpdateSampMainYHSBarCode(sampMain, sampBarId);
+            }
+
+            return result;
+        }
+
+        /// <summary>
         /// 更新条码状态
         /// </summary>
         /// <param name="operation"></param>
@@ -974,5 +994,17 @@ namespace dcl.svr.sample
             }
             return list;
         }
+
+
+        /// <summary>
+        /// 调用粤核酸查询接口获取采样人员信息
+        /// </summary>
+        public List<EntitySampMain> GetSampleInfo(List<string> listPatId)
+        {
+            List<EntitySampMain> entitySampMainsList = DCLExtInterfaceFactory.DCLExtInterface.GetYssPatientInfo(listPatId);
+            return entitySampMainsList;
+        }
+
+        
     }
 }

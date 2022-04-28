@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using dcl.entity;
 using System.Linq;
 using dcl.client.cache;
+using System.Threading;
 
 namespace dcl.client.sample
 {
@@ -483,140 +484,177 @@ namespace dcl.client.sample
 
         private void txtBarcode_KeyPress(object sender, KeyPressEventArgs e)
         {
-            try
+            if (e.KeyChar != (char)Keys.Enter)
+                return;
+
+            if (this.chkHsBarCode.Checked && Extensions.IsNotEmpty(txtBarcode.Text) && Step.StepName == "签收")
             {
-                if (e.KeyChar != (char)Keys.Enter)
-                    return;
+                List<string> BarCodeList = new List<string>();
+                BarCodeList.Add(txtBarcode.Text.Trim());
 
-                isNotClearOp = false;
+                ProxySampMain proxySampMain = new ProxySampMain();
 
-                if (txtBarcode.Text.Trim().Length > 12 
-                    && StepType != StepType.Sampling
-                    && ConfigHelper.GetSysConfigValueWithoutLogin("Barcode_EablePackBarcode") == "是")
+                List<EntitySampMain> listPatient = proxySampMain.Service.GetSampleInfo(BarCodeList);
+                MessageDialog.ShowAutoCloseDialog("患者数量:" + listPatient.Count.ToString() , 2m);
+                bool res = false;
+                bool result = false;
+                string SampBarCode = string.Empty;
+
+                if (listPatient != null && listPatient.Count > 0)
                 {
-                    EntitySampQC sampQC = new EntitySampQC();
-                    sampQC.PidUniqueId = txtBarcode.Text.Trim();
-                    patientControl.LoadDataForPack(sampQC);
-                    if (patientControl.HasData())
+                    foreach (var patient in listPatient)
                     {
-                        isNotClearOp = true;
+                        SampBarCode += patient.SampBarCode + ",";
 
-                        if (patientControl.Selection != null)
-                            patientControl.Selection.SelectAll();
-                        sysToolBar1.BtnReset.Caption = "重置";
+                        result = patientControl.AddBarcode(patient.SampBarCode, lueTypes.valueMember);
 
-                        barConfirm(false, false, false);
-                        lbPackCount.Visible = true;
-                        string strStep = string.Empty;
-                        switch (this.StepType)
+                        if (!result)
                         {
-                            case StepType.Send:
-                                strStep = "3";
-                                break;
-                            case StepType.Reach:
-                                strStep = "4";
-                                break;
-                            case StepType.Confirm:
-                                strStep = "5";
-                                break;
-                            default:
-                                break;
+                            ClearAndFocusBarcode();
+                            return;
                         }
-                        if (!string.IsNullOrEmpty(strStep))
-                        {
-                            List<EntitySampMain> dtSource = patientControl.ListSampMain;
-                            if (dtSource != null && dtSource.Count > 0)
-                            {
-                                int count = dtSource.Count - 1;
-                                string bc_d_code = dtSource[count].PidDeptCode;
-                                ProxySampMain proxy = new ProxySampMain();
-                                List<string> list = proxy.Service.GetPackCount(strStep, bc_d_code);
-                                if (list.Count > 1)
-                                {
-                                    int packCount = Convert.ToInt16(list[0].ToString());
-                                    if (dtSource[count].SampStatusId != strStep)
-                                    {
-                                        if (packCountTr == 0)
-                                            packCountTr = packCount + 1;
-                                        else
-                                            packCountTr++;
-                                    }
-                                    else
-                                        packCountTr = packCount;
-                                    lbPackCount.Text = string.Format(@"已收取包数：{0}  应收取包数：{1}", packCountTr.ToString(), list[1].ToString());
-                                }
-
-                            }
-                        }
-
                     }
-                    ClearAndFocusBarcode();
-                    return;
                 }
 
-                bool isNeedChildConfirm = false;
-                if (Extensions.IsNotEmpty(txtBarcode.Text))
+                ClearAndFocusBarcode();
+                return;
+            }
+            else
+            {
+                try
                 {
-                    bool result = false;
-                    patientControl.Step.Bcfrequency = this.txtBcfrequency.Text.Trim();
+                   
+                    isNotClearOp = false;
 
-                    //系统配置--条码确认时[回退条码]加急提醒
-                    if (UserInfo.GetSysConfigValue("IsReturnBarCodeClew") == "是")
+                    if (txtBarcode.Text.Trim().Length > 12
+                        && StepType != StepType.Sampling
+                        && ConfigHelper.GetSysConfigValueWithoutLogin("Barcode_EablePackBarcode") == "是")
                     {
-                        if (this.StepType == StepType.Sampling || this.StepType == StepType.Send || this.StepType == StepType.Reach || this.StepType == StepType.Confirm)
+                        EntitySampQC sampQC = new EntitySampQC();
+                        sampQC.PidUniqueId = txtBarcode.Text.Trim();
+                        patientControl.LoadDataForPack(sampQC);
+                        if (patientControl.HasData())
                         {
-                            patientControl.ReturnBarCodeClew(txtBarcode.Text);
+                            isNotClearOp = true;
+
+                            if (patientControl.Selection != null)
+                                patientControl.Selection.SelectAll();
+                            sysToolBar1.BtnReset.Caption = "重置";
+
+                            barConfirm(false, false, false);
+                            lbPackCount.Visible = true;
+                            string strStep = string.Empty;
+                            switch (this.StepType)
+                            {
+                                case StepType.Send:
+                                    strStep = "3";
+                                    break;
+                                case StepType.Reach:
+                                    strStep = "4";
+                                    break;
+                                case StepType.Confirm:
+                                    strStep = "5";
+                                    break;
+                                default:
+                                    break;
+                            }
+                            if (!string.IsNullOrEmpty(strStep))
+                            {
+                                List<EntitySampMain> dtSource = patientControl.ListSampMain;
+                                if (dtSource != null && dtSource.Count > 0)
+                                {
+                                    int count = dtSource.Count - 1;
+                                    string bc_d_code = dtSource[count].PidDeptCode;
+                                    ProxySampMain proxy = new ProxySampMain();
+                                    List<string> list = proxy.Service.GetPackCount(strStep, bc_d_code);
+                                    if (list.Count > 1)
+                                    {
+                                        int packCount = Convert.ToInt16(list[0].ToString());
+                                        if (dtSource[count].SampStatusId != strStep)
+                                        {
+                                            if (packCountTr == 0)
+                                                packCountTr = packCount + 1;
+                                            else
+                                                packCountTr++;
+                                        }
+                                        else
+                                            packCountTr = packCount;
+                                        lbPackCount.Text = string.Format(@"已收取包数：{0}  应收取包数：{1}", packCountTr.ToString(), list[1].ToString());
+                                    }
+
+                                }
+                            }
+
                         }
-                    }
-
-                    if ((Step.StepName == "签收" || (BC_ForceSendDestFlag && Step.StepName == "送达")) 
-                        && lueTypes.valueMember != null 
-                        && lueTypes.valueMember.Count > 0)
-                        result = patientControl.AddBarcode(txtBarcode.Text, lueTypes.valueMember);
-                    else
-                        result = patientControl.AddBarcode(txtBarcode.Text);
-
-                    if (!result)
-                    {
                         ClearAndFocusBarcode();
                         return;
                     }
 
-                    Step.ShouldEnlableSimpleSearchPanel = false;
-
-                    sysToolBar1.BtnClear.Enabled = false;
-                    sysToolBar1.BtnReset.Caption = "完成";
-
-                    if (patientControl.HasData())
+                    bool isNeedChildConfirm = false;
+                    if (Extensions.IsNotEmpty(txtBarcode.Text))
                     {
-                        ShowTo(patientControl.BaseSampMain);
-                        //检验科标本收集时，扫描条码时，碰到急诊标本请用不同声音提示操作者
-                        if (StepType == StepType.Confirm && patientControl.BaseSampMain.SampUrgentFlag && File.Exists(Application.StartupPath + @"\Urgent.wav"))
+                        bool result = false;
+                        patientControl.Step.Bcfrequency = this.txtBcfrequency.Text.Trim();
+
+                        //系统配置--条码确认时[回退条码]加急提醒
+                        if (UserInfo.GetSysConfigValue("IsReturnBarCodeClew") == "是")
                         {
-                            SoundPlayer soundPlayer = new SoundPlayer();
-                            soundPlayer.SoundLocation = Application.StartupPath + @"\Urgent.wav";
-                            soundPlayer.Load();
-                            soundPlayer.Play();
-                            soundPlayer.Dispose();
+                            if (this.StepType == StepType.Sampling || this.StepType == StepType.Send || this.StepType == StepType.Reach || this.StepType == StepType.Confirm)
+                            {
+                                patientControl.ReturnBarCodeClew(txtBarcode.Text);
+                            }
                         }
-                    }
 
-                    if (this.ctlTimeCountDown1.Visible)
-                    {
-                        this.ctlTimeCountDown1.ReCount();
-                    }
+                        if ((Step.StepName == "签收" || (BC_ForceSendDestFlag && Step.StepName == "送达"))
+                            && lueTypes.valueMember != null
+                            && lueTypes.valueMember.Count > 0)
+                            result = patientControl.AddBarcode(txtBarcode.Text, lueTypes.valueMember);
+                        else
+                            result = patientControl.AddBarcode(txtBarcode.Text);
 
-                    sysToolBar1.BtnConfirm.Enabled = false;
-                    barConfirm(false, false, isNeedChildConfirm);
+                        if (!result)
+                        {
+                            ClearAndFocusBarcode();
+                            return;
+                        }
+
+                        Step.ShouldEnlableSimpleSearchPanel = false;
+
+                        sysToolBar1.BtnClear.Enabled = false;
+                        sysToolBar1.BtnReset.Caption = "完成";
+
+                        if (patientControl.HasData())
+                        {
+                            ShowTo(patientControl.BaseSampMain);
+                            //检验科标本收集时，扫描条码时，碰到急诊标本请用不同声音提示操作者
+                            if (StepType == StepType.Confirm && patientControl.BaseSampMain.SampUrgentFlag && File.Exists(Application.StartupPath + @"\Urgent.wav"))
+                            {
+                                SoundPlayer soundPlayer = new SoundPlayer();
+                                soundPlayer.SoundLocation = Application.StartupPath + @"\Urgent.wav";
+                                soundPlayer.Load();
+                                soundPlayer.Play();
+                                soundPlayer.Dispose();
+                            }
+                        }
+
+                        if (this.ctlTimeCountDown1.Visible)
+                        {
+                            this.ctlTimeCountDown1.ReCount();
+                        }
+
+                        sysToolBar1.BtnConfirm.Enabled = false;
+                        barConfirm(false, false, isNeedChildConfirm);
+                        ClearAndFocusBarcode();
+                    }
+                }
+                catch (Exception ex)
+                {
                     ClearAndFocusBarcode();
+                    Lib.LogManager.Logger.LogException(ex);
+                    MessageDialog.ShowAutoCloseDialog(ex.Message);
                 }
             }
-            catch (Exception ex)
-            {
-                ClearAndFocusBarcode();
-                Lib.LogManager.Logger.LogException(ex);
-                MessageDialog.ShowAutoCloseDialog(ex.Message);
-            }
+            
         }
 
         private void sysToolBar1_OnCloseClicked(object sender, EventArgs e)

@@ -1729,18 +1729,26 @@ group by Pma_rep_id,Pma_bar_code", strin);
         /// </summary>
         /// <param name="qc"></param>
         /// <returns></returns>
-        public List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc)
+        public List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc, string type)
         {
             string sql = @"select Pat_lis_main.*,
 sys_interface_log.operation_content pid_res
 from 
 sys_interface_log(nolock)
 left outer join Pat_lis_main(nolock) on Pat_lis_main.Pma_rep_id=sys_interface_log.rep_id
-where operation_name='上传二审数据到中间表' and operation_success=0
+where operation_name='{0}' and operation_success=0
 and rep_id not in(
-select rep_id from sys_interface_log where operation_name='上传二审数据到中间表'
+select rep_id from sys_interface_log where operation_name='{0}'
 and operation_success=1
 ) ";
+            if (!string.IsNullOrEmpty(type))
+            {
+                sql = string.Format(sql, type);
+            }
+            else
+            {
+                sql = string.Format(sql, "上传二审数据到中间表");
+            }
             if(!string.IsNullOrEmpty(qc.RepBarCode))
             {
                 sql += string.Format(" and Pat_lis_main.Pma_bar_code='{0}'",qc.RepBarCode);

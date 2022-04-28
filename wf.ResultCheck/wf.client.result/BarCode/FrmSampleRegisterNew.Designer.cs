@@ -30,13 +30,12 @@ namespace dcl.client.result
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSampleRegisterNew));
             this.pnlQuery = new System.Windows.Forms.Panel();
             this.pnlPatInfo = new System.Windows.Forms.Panel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.lblPatcName = new DevExpress.XtraEditors.LabelControl();
-            this.bsPatInfo = new System.Windows.Forms.BindingSource(this.components);
+            this.bsPatInfo = new System.Windows.Forms.BindingSource();
             this.lblHostOrder = new DevExpress.XtraEditors.LabelControl();
             this.lblSid2 = new DevExpress.XtraEditors.LabelControl();
             this.lblName = new DevExpress.XtraEditors.LabelControl();
@@ -50,6 +49,7 @@ namespace dcl.client.result
             this.cbManualIntr = new DevExpress.XtraEditors.CheckEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.chkYhsBarCode = new System.Windows.Forms.CheckBox();
             this.lbSid = new System.Windows.Forms.Label();
             this.txtSid = new DevExpress.XtraEditors.TextEdit();
             this.txtBarCode = new DevExpress.XtraEditors.TextEdit();
@@ -73,7 +73,7 @@ namespace dcl.client.result
             this.ckOrder = new DevExpress.XtraEditors.CheckEdit();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gridControlSingle = new DevExpress.XtraGrid.GridControl();
-            this.bsPatList = new System.Windows.Forms.BindingSource(this.components);
+            this.bsPatList = new System.Windows.Forms.BindingSource();
             this.gridViewSingle = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.col_selected = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
@@ -173,19 +173,17 @@ namespace dcl.client.result
             this.pnlQuery.Controls.Add(this.panel1);
             this.pnlQuery.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlQuery.Location = new System.Drawing.Point(2, 2);
-            this.pnlQuery.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlQuery.Name = "pnlQuery";
-            this.pnlQuery.Size = new System.Drawing.Size(302, 724);
+            this.pnlQuery.Size = new System.Drawing.Size(264, 562);
             this.pnlQuery.TabIndex = 0;
             // 
             // pnlPatInfo
             // 
             this.pnlPatInfo.Controls.Add(this.groupControl1);
             this.pnlPatInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPatInfo.Location = new System.Drawing.Point(0, 450);
-            this.pnlPatInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlPatInfo.Location = new System.Drawing.Point(0, 375);
             this.pnlPatInfo.Name = "pnlPatInfo";
-            this.pnlPatInfo.Size = new System.Drawing.Size(302, 274);
+            this.pnlPatInfo.Size = new System.Drawing.Size(264, 187);
             this.pnlPatInfo.TabIndex = 0;
             // 
             // groupControl1
@@ -204,9 +202,8 @@ namespace dcl.client.result
             this.groupControl1.Controls.Add(this.label22);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(302, 274);
+            this.groupControl1.Size = new System.Drawing.Size(264, 187);
             this.groupControl1.TabIndex = 154;
             this.groupControl1.Text = "标本信息";
             // 
@@ -215,10 +212,9 @@ namespace dcl.client.result
             this.lblPatcName.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.lblPatcName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
             this.lblPatcName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPatInfo, "PidComName", true));
-            this.lblPatcName.Location = new System.Drawing.Point(106, 175);
-            this.lblPatcName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblPatcName.Location = new System.Drawing.Point(93, 136);
             this.lblPatcName.Name = "lblPatcName";
-            this.lblPatcName.Size = new System.Drawing.Size(177, 24);
+            this.lblPatcName.Size = new System.Drawing.Size(155, 19);
             this.lblPatcName.TabIndex = 161;
             this.lblPatcName.Text = "lblPatcName";
             // 
@@ -230,10 +226,9 @@ namespace dcl.client.result
             // 
             this.lblHostOrder.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.lblHostOrder.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPatInfo, "RepSerialNum", true));
-            this.lblHostOrder.Location = new System.Drawing.Point(106, 101);
-            this.lblHostOrder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblHostOrder.Location = new System.Drawing.Point(93, 79);
             this.lblHostOrder.Name = "lblHostOrder";
-            this.lblHostOrder.Size = new System.Drawing.Size(128, 24);
+            this.lblHostOrder.Size = new System.Drawing.Size(103, 19);
             this.lblHostOrder.TabIndex = 158;
             this.lblHostOrder.Text = "lblHostOrder";
             // 
@@ -242,10 +237,9 @@ namespace dcl.client.result
             this.lblSid2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.lblSid2.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lblSid2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPatInfo, "RepSid", true));
-            this.lblSid2.Location = new System.Drawing.Point(106, 66);
-            this.lblSid2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblSid2.Location = new System.Drawing.Point(93, 51);
             this.lblSid2.Name = "lblSid2";
-            this.lblSid2.Size = new System.Drawing.Size(59, 24);
+            this.lblSid2.Size = new System.Drawing.Size(48, 19);
             this.lblSid2.TabIndex = 156;
             this.lblSid2.Text = "lblSid2";
             // 
@@ -253,10 +247,9 @@ namespace dcl.client.result
             // 
             this.lblName.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.lblName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPatInfo, "PidName", true));
-            this.lblName.Location = new System.Drawing.Point(106, 137);
-            this.lblName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblName.Location = new System.Drawing.Point(93, 107);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(73, 24);
+            this.lblName.Size = new System.Drawing.Size(58, 19);
             this.lblName.TabIndex = 155;
             this.lblName.Text = "lblName";
             // 
@@ -264,10 +257,9 @@ namespace dcl.client.result
             // 
             this.lblItr.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.lblItr.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPatInfo, "ItrEname", true));
-            this.lblItr.Location = new System.Drawing.Point(106, 33);
-            this.lblItr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblItr.Location = new System.Drawing.Point(93, 26);
             this.lblItr.Name = "lblItr";
-            this.lblItr.Size = new System.Drawing.Size(42, 24);
+            this.lblItr.Size = new System.Drawing.Size(34, 19);
             this.lblItr.TabIndex = 154;
             this.lblItr.Text = "lblItr";
             // 
@@ -275,9 +267,9 @@ namespace dcl.client.result
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label7.Location = new System.Drawing.Point(50, 32);
+            this.label7.Location = new System.Drawing.Point(44, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 24);
+            this.label7.Size = new System.Drawing.Size(41, 19);
             this.label7.TabIndex = 3;
             this.label7.Text = "仪器";
             // 
@@ -285,9 +277,9 @@ namespace dcl.client.result
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(27, 66);
+            this.label6.Location = new System.Drawing.Point(24, 51);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 24);
+            this.label6.Size = new System.Drawing.Size(60, 19);
             this.label6.TabIndex = 11;
             this.label6.Text = "标本号";
             // 
@@ -295,9 +287,9 @@ namespace dcl.client.result
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(27, 101);
+            this.label20.Location = new System.Drawing.Point(24, 79);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 24);
+            this.label20.Size = new System.Drawing.Size(60, 19);
             this.label20.TabIndex = 45;
             this.label20.Text = "流水号";
             // 
@@ -305,9 +297,9 @@ namespace dcl.client.result
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label8.Location = new System.Drawing.Point(50, 137);
+            this.label8.Location = new System.Drawing.Point(44, 107);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 24);
+            this.label8.Size = new System.Drawing.Size(41, 19);
             this.label8.TabIndex = 13;
             this.label8.Text = "姓名";
             // 
@@ -315,17 +307,16 @@ namespace dcl.client.result
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label22.Location = new System.Drawing.Point(10, 175);
+            this.label22.Location = new System.Drawing.Point(9, 136);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(90, 24);
+            this.label22.Size = new System.Drawing.Size(73, 19);
             this.label22.TabIndex = 42;
             this.label22.Text = "检查组合";
             // 
             // dateCheck
             // 
             this.dateCheck.EditValue = new System.DateTime(2010, 4, 3, 12, 20, 8, 609);
-            this.dateCheck.Location = new System.Drawing.Point(110, 680);
-            this.dateCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateCheck.Location = new System.Drawing.Point(96, 529);
             this.dateCheck.Name = "dateCheck";
             this.dateCheck.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.dateCheck.Properties.Appearance.Options.UseFont = true;
@@ -338,19 +329,18 @@ namespace dcl.client.result
             this.dateCheck.Properties.EditFormat.FormatString = "u";
             this.dateCheck.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dateCheck.Properties.Mask.EditMask = "u";
-            this.dateCheck.Size = new System.Drawing.Size(38, 28);
+            this.dateCheck.Size = new System.Drawing.Size(33, 24);
             this.dateCheck.TabIndex = 18;
             this.dateCheck.Visible = false;
             // 
             // cbManualIntr
             // 
-            this.cbManualIntr.Location = new System.Drawing.Point(15, 838);
-            this.cbManualIntr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbManualIntr.Location = new System.Drawing.Point(13, 652);
             this.cbManualIntr.Name = "cbManualIntr";
             this.cbManualIntr.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.cbManualIntr.Properties.Appearance.Options.UseFont = true;
             this.cbManualIntr.Properties.Caption = "手工选择仪器";
-            this.cbManualIntr.Size = new System.Drawing.Size(126, 26);
+            this.cbManualIntr.Size = new System.Drawing.Size(110, 21);
             this.cbManualIntr.TabIndex = 16;
             this.cbManualIntr.Visible = false;
             // 
@@ -361,13 +351,13 @@ namespace dcl.client.result
             this.panel1.Controls.Add(this.groupControl3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(302, 450);
+            this.panel1.Size = new System.Drawing.Size(264, 375);
             this.panel1.TabIndex = 36;
             // 
             // groupControl4
             // 
+            this.groupControl4.Controls.Add(this.chkYhsBarCode);
             this.groupControl4.Controls.Add(this.lbSid);
             this.groupControl4.Controls.Add(this.txtSid);
             this.groupControl4.Controls.Add(this.txtBarCode);
@@ -380,19 +370,30 @@ namespace dcl.client.result
             this.groupControl4.Controls.Add(this.label1);
             this.groupControl4.Controls.Add(this.txtType);
             this.groupControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl4.Location = new System.Drawing.Point(0, 120);
+            this.groupControl4.Location = new System.Drawing.Point(0, 93);
+            this.groupControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(302, 258);
+            this.groupControl4.Size = new System.Drawing.Size(264, 226);
             this.groupControl4.TabIndex = 39;
             this.groupControl4.Text = "查找";
+            // 
+            // chkYhsBarCode
+            // 
+            this.chkYhsBarCode.AutoSize = true;
+            this.chkYhsBarCode.Location = new System.Drawing.Point(35, 201);
+            this.chkYhsBarCode.Name = "chkYhsBarCode";
+            this.chkYhsBarCode.Size = new System.Drawing.Size(74, 18);
+            this.chkYhsBarCode.TabIndex = 35;
+            this.chkYhsBarCode.Text = "核酸总码";
+            this.chkYhsBarCode.UseVisualStyleBackColor = true;
             // 
             // lbSid
             // 
             this.lbSid.AutoSize = true;
             this.lbSid.Font = new System.Drawing.Font("Tahoma", 10.5F);
-            this.lbSid.Location = new System.Drawing.Point(36, 222);
+            this.lbSid.Location = new System.Drawing.Point(32, 173);
             this.lbSid.Name = "lbSid";
-            this.lbSid.Size = new System.Drawing.Size(64, 22);
+            this.lbSid.Size = new System.Drawing.Size(50, 17);
             this.lbSid.TabIndex = 16;
             this.lbSid.Text = "标本号";
             // 
@@ -400,26 +401,24 @@ namespace dcl.client.result
             // 
             this.txtSid.EditValue = "";
             this.txtSid.EnterMoveNextControl = true;
-            this.txtSid.Location = new System.Drawing.Point(106, 220);
-            this.txtSid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSid.Location = new System.Drawing.Point(93, 171);
             this.txtSid.Name = "txtSid";
             this.txtSid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.txtSid.Properties.Appearance.Options.UseFont = true;
             this.txtSid.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?";
             this.txtSid.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtSid.Size = new System.Drawing.Size(166, 28);
+            this.txtSid.Size = new System.Drawing.Size(145, 24);
             this.txtSid.TabIndex = 3;
             this.txtSid.Leave += new System.EventHandler(this.txtSid_Leave);
             // 
             // txtBarCode
             // 
-            this.txtBarCode.Location = new System.Drawing.Point(106, 139);
-            this.txtBarCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBarCode.Location = new System.Drawing.Point(93, 108);
             this.txtBarCode.Name = "txtBarCode";
             this.txtBarCode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.txtBarCode.Properties.Appearance.Options.UseFont = true;
             this.txtBarCode.Properties.Mask.EditMask = "f0";
-            this.txtBarCode.Size = new System.Drawing.Size(166, 28);
+            this.txtBarCode.Size = new System.Drawing.Size(145, 24);
             this.txtBarCode.TabIndex = 4;
             this.txtBarCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBarCode_KeyDown);
             this.txtBarCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarCode_KeyPress);
@@ -427,8 +426,7 @@ namespace dcl.client.result
             // rgType
             // 
             this.rgType.EditValue = "样本号";
-            this.rgType.Location = new System.Drawing.Point(38, 178);
-            this.rgType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rgType.Location = new System.Drawing.Point(33, 138);
             this.rgType.Name = "rgType";
             this.rgType.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.rgType.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -438,7 +436,7 @@ namespace dcl.client.result
             this.rgType.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("样本号", "按标本号"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("序号", "按流水号")});
-            this.rgType.Size = new System.Drawing.Size(235, 34);
+            this.rgType.Size = new System.Drawing.Size(206, 26);
             this.rgType.TabIndex = 15;
             this.rgType.SelectedIndexChanged += new System.EventHandler(this.rgType_SelectedIndexChanged);
             // 
@@ -446,9 +444,9 @@ namespace dcl.client.result
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10.5F);
-            this.label4.Location = new System.Drawing.Point(36, 142);
+            this.label4.Location = new System.Drawing.Point(32, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 22);
+            this.label4.Size = new System.Drawing.Size(50, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "条码号";
             // 
@@ -456,9 +454,9 @@ namespace dcl.client.result
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 10.5F);
-            this.label2.Location = new System.Drawing.Point(18, 36);
+            this.label2.Location = new System.Drawing.Point(16, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 22);
+            this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "检查日期";
             // 
@@ -466,8 +464,7 @@ namespace dcl.client.result
             // 
             this.txtPatDate.EditValue = null;
             this.txtPatDate.EnterMoveNextControl = true;
-            this.txtPatDate.Location = new System.Drawing.Point(106, 33);
-            this.txtPatDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPatDate.Location = new System.Drawing.Point(93, 26);
             this.txtPatDate.Name = "txtPatDate";
             this.txtPatDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
             this.txtPatDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -476,7 +473,7 @@ namespace dcl.client.result
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtPatDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtPatDate.Size = new System.Drawing.Size(166, 28);
+            this.txtPatDate.Size = new System.Drawing.Size(145, 24);
             this.txtPatDate.TabIndex = 0;
             this.txtPatDate.EditValueChanged += new System.EventHandler(this.txtPatDate_EditValueChanged);
             // 
@@ -484,9 +481,9 @@ namespace dcl.client.result
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10.5F);
-            this.label5.Location = new System.Drawing.Point(36, 72);
+            this.label5.Location = new System.Drawing.Point(32, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 22);
+            this.label5.Size = new System.Drawing.Size(50, 17);
             this.label5.TabIndex = 13;
             this.label5.Text = "实验组";
             // 
@@ -507,10 +504,9 @@ namespace dcl.client.result
             this.txtInstructment.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.txtInstructment.KeyUpDownMoveNext = false;
             this.txtInstructment.LoadDataOnDesignMode = true;
-            this.txtInstructment.Location = new System.Drawing.Point(106, 104);
-            this.txtInstructment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtInstructment.MaximumSize = new System.Drawing.Size(571, 27);
-            this.txtInstructment.MinimumSize = new System.Drawing.Size(57, 27);
+            this.txtInstructment.Location = new System.Drawing.Point(93, 81);
+            this.txtInstructment.MaximumSize = new System.Drawing.Size(500, 21);
+            this.txtInstructment.MinimumSize = new System.Drawing.Size(50, 21);
             this.txtInstructment.Name = "txtInstructment";
             this.txtInstructment.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.txtInstructment.PFont = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -520,7 +516,7 @@ namespace dcl.client.result
             this.txtInstructment.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.txtInstructment.SelectOnly = true;
             this.txtInstructment.ShowAllInstrmt = false;
-            this.txtInstructment.Size = new System.Drawing.Size(166, 27);
+            this.txtInstructment.Size = new System.Drawing.Size(145, 21);
             this.txtInstructment.TabIndex = 2;
             this.txtInstructment.UseExtend = false;
             this.txtInstructment.valueMember = null;
@@ -530,9 +526,9 @@ namespace dcl.client.result
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.5F);
-            this.label1.Location = new System.Drawing.Point(18, 107);
+            this.label1.Location = new System.Drawing.Point(16, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 22);
+            this.label1.Size = new System.Drawing.Size(64, 17);
             this.label1.TabIndex = 7;
             this.label1.Text = "实验仪器";
             // 
@@ -553,10 +549,9 @@ namespace dcl.client.result
             this.txtType.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.txtType.KeyUpDownMoveNext = false;
             this.txtType.LoadDataOnDesignMode = true;
-            this.txtType.Location = new System.Drawing.Point(106, 69);
-            this.txtType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtType.MaximumSize = new System.Drawing.Size(571, 27);
-            this.txtType.MinimumSize = new System.Drawing.Size(57, 27);
+            this.txtType.Location = new System.Drawing.Point(93, 54);
+            this.txtType.MaximumSize = new System.Drawing.Size(500, 21);
+            this.txtType.MinimumSize = new System.Drawing.Size(50, 21);
             this.txtType.Name = "txtType";
             this.txtType.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.txtType.PFont = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -565,7 +560,7 @@ namespace dcl.client.result
             this.txtType.SelectFilter = null;
             this.txtType.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.txtType.SelectOnly = true;
-            this.txtType.Size = new System.Drawing.Size(166, 27);
+            this.txtType.Size = new System.Drawing.Size(145, 21);
             this.txtType.TabIndex = 1;
             this.txtType.UseExtend = false;
             this.txtType.valueMember = null;
@@ -577,9 +572,10 @@ namespace dcl.client.result
             this.gcAdditionalInput.Controls.Add(this.lblInput);
             this.gcAdditionalInput.Controls.Add(this.txtPatInspetor);
             this.gcAdditionalInput.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gcAdditionalInput.Location = new System.Drawing.Point(0, 378);
+            this.gcAdditionalInput.Location = new System.Drawing.Point(0, 319);
+            this.gcAdditionalInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcAdditionalInput.Name = "gcAdditionalInput";
-            this.gcAdditionalInput.Size = new System.Drawing.Size(302, 72);
+            this.gcAdditionalInput.Size = new System.Drawing.Size(264, 56);
             this.gcAdditionalInput.TabIndex = 38;
             this.gcAdditionalInput.Text = "辅助输入";
             // 
@@ -587,9 +583,9 @@ namespace dcl.client.result
             // 
             this.lblInput.AutoSize = true;
             this.lblInput.Font = new System.Drawing.Font("Tahoma", 10.5F);
-            this.lblInput.Location = new System.Drawing.Point(36, 36);
+            this.lblInput.Location = new System.Drawing.Point(32, 28);
             this.lblInput.Name = "lblInput";
-            this.lblInput.Size = new System.Drawing.Size(64, 22);
+            this.lblInput.Size = new System.Drawing.Size(50, 17);
             this.lblInput.TabIndex = 35;
             this.lblInput.Text = "录入者";
             this.lblInput.Visible = false;
@@ -611,10 +607,9 @@ namespace dcl.client.result
             this.txtPatInspetor.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.txtPatInspetor.KeyUpDownMoveNext = true;
             this.txtPatInspetor.LoadDataOnDesignMode = true;
-            this.txtPatInspetor.Location = new System.Drawing.Point(106, 34);
-            this.txtPatInspetor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPatInspetor.MaximumSize = new System.Drawing.Size(571, 27);
-            this.txtPatInspetor.MinimumSize = new System.Drawing.Size(57, 27);
+            this.txtPatInspetor.Location = new System.Drawing.Point(93, 26);
+            this.txtPatInspetor.MaximumSize = new System.Drawing.Size(500, 21);
+            this.txtPatInspetor.MinimumSize = new System.Drawing.Size(50, 21);
             this.txtPatInspetor.Name = "txtPatInspetor";
             this.txtPatInspetor.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.txtPatInspetor.PFont = new System.Drawing.Font("Tahoma", 10.5F);
@@ -623,7 +618,7 @@ namespace dcl.client.result
             this.txtPatInspetor.SelectFilter = null;
             this.txtPatInspetor.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.txtPatInspetor.SelectOnly = true;
-            this.txtPatInspetor.Size = new System.Drawing.Size(166, 27);
+            this.txtPatInspetor.Size = new System.Drawing.Size(145, 21);
             this.txtPatInspetor.TabIndex = 34;
             this.txtPatInspetor.UseExtend = false;
             this.txtPatInspetor.valueMember = null;
@@ -639,15 +634,15 @@ namespace dcl.client.result
             this.groupControl3.Controls.Add(this.ckOrder);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
+            this.groupControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(302, 120);
+            this.groupControl3.Size = new System.Drawing.Size(264, 93);
             this.groupControl3.TabIndex = 35;
             this.groupControl3.Text = "设置";
             // 
             // ckSID
             // 
-            this.ckSID.Location = new System.Drawing.Point(43, 30);
-            this.ckSID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ckSID.Location = new System.Drawing.Point(38, 23);
             this.ckSID.Name = "ckSID";
             this.ckSID.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.ckSID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -656,76 +651,71 @@ namespace dcl.client.result
             this.ckSID.Properties.Appearance.Options.UseFont = true;
             this.ckSID.Properties.Appearance.Options.UseForeColor = true;
             this.ckSID.Properties.Caption = "自动编号";
-            this.ckSID.Size = new System.Drawing.Size(91, 26);
+            this.ckSID.Size = new System.Drawing.Size(80, 21);
             this.ckSID.TabIndex = 28;
             this.ckSID.CheckedChanged += new System.EventHandler(this.ckSID_CheckedChanged);
             // 
             // ckIns
             // 
             this.ckIns.Enabled = false;
-            this.ckIns.Location = new System.Drawing.Point(161, 59);
-            this.ckIns.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ckIns.Location = new System.Drawing.Point(141, 46);
             this.ckIns.Name = "ckIns";
             this.ckIns.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.ckIns.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.ckIns.Properties.Appearance.Options.UseFont = true;
             this.ckIns.Properties.Appearance.Options.UseForeColor = true;
             this.ckIns.Properties.Caption = "自选仪器";
-            this.ckIns.Size = new System.Drawing.Size(91, 26);
+            this.ckIns.Size = new System.Drawing.Size(80, 21);
             this.ckIns.TabIndex = 25;
             this.ckIns.CheckedChanged += new System.EventHandler(this.ckIns_CheckedChanged);
             // 
             // cbBindingIns
             // 
-            this.cbBindingIns.Location = new System.Drawing.Point(42, 88);
-            this.cbBindingIns.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbBindingIns.Location = new System.Drawing.Point(37, 68);
             this.cbBindingIns.Name = "cbBindingIns";
             this.cbBindingIns.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.cbBindingIns.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.cbBindingIns.Properties.Appearance.Options.UseFont = true;
             this.cbBindingIns.Properties.Appearance.Options.UseForeColor = true;
             this.cbBindingIns.Properties.Caption = "锁定仪器";
-            this.cbBindingIns.Size = new System.Drawing.Size(91, 26);
+            this.cbBindingIns.Size = new System.Drawing.Size(80, 21);
             this.cbBindingIns.TabIndex = 21;
             // 
             // chkBarcodeCanRepeat
             // 
-            this.chkBarcodeCanRepeat.Location = new System.Drawing.Point(161, 88);
-            this.chkBarcodeCanRepeat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkBarcodeCanRepeat.Location = new System.Drawing.Point(141, 68);
             this.chkBarcodeCanRepeat.Name = "chkBarcodeCanRepeat";
             this.chkBarcodeCanRepeat.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.chkBarcodeCanRepeat.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.chkBarcodeCanRepeat.Properties.Appearance.Options.UseFont = true;
             this.chkBarcodeCanRepeat.Properties.Appearance.Options.UseForeColor = true;
             this.chkBarcodeCanRepeat.Properties.Caption = "重复录入";
-            this.chkBarcodeCanRepeat.Size = new System.Drawing.Size(91, 26);
+            this.chkBarcodeCanRepeat.Size = new System.Drawing.Size(80, 21);
             this.chkBarcodeCanRepeat.TabIndex = 30;
             // 
             // ckCom
             // 
             this.ckCom.EditValue = true;
-            this.ckCom.Location = new System.Drawing.Point(161, 30);
-            this.ckCom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ckCom.Location = new System.Drawing.Point(141, 23);
             this.ckCom.Name = "ckCom";
             this.ckCom.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.ckCom.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.ckCom.Properties.Appearance.Options.UseFont = true;
             this.ckCom.Properties.Appearance.Options.UseForeColor = true;
             this.ckCom.Properties.Caption = "判断组合";
-            this.ckCom.Size = new System.Drawing.Size(91, 26);
+            this.ckCom.Size = new System.Drawing.Size(80, 21);
             this.ckCom.TabIndex = 22;
             // 
             // ckOrder
             // 
-            this.ckOrder.Location = new System.Drawing.Point(42, 59);
-            this.ckOrder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ckOrder.Location = new System.Drawing.Point(37, 46);
             this.ckOrder.Name = "ckOrder";
             this.ckOrder.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.ckOrder.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.ckOrder.Properties.Appearance.Options.UseFont = true;
             this.ckOrder.Properties.Appearance.Options.UseForeColor = true;
             this.ckOrder.Properties.Caption = "锁定流水号";
-            this.ckOrder.Size = new System.Drawing.Size(113, 26);
+            this.ckOrder.Size = new System.Drawing.Size(99, 21);
             this.ckOrder.TabIndex = 23;
             // 
             // panel2
@@ -735,20 +725,17 @@ namespace dcl.client.result
             this.panel2.Controls.Add(this.pcBottomCount);
             this.panel2.Controls.Add(this.groupControl2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(306, 77);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(268, 60);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(923, 728);
+            this.panel2.Size = new System.Drawing.Size(807, 566);
             this.panel2.TabIndex = 1;
             // 
             // gridControlSingle
             // 
             this.gridControlSingle.DataSource = this.bsPatList;
             this.gridControlSingle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlSingle.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gridControlSingle.Location = new System.Drawing.Point(0, 90);
+            this.gridControlSingle.Location = new System.Drawing.Point(0, 70);
             this.gridControlSingle.MainView = this.gridViewSingle;
-            this.gridControlSingle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlSingle.Name = "gridControlSingle";
             this.gridControlSingle.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1,
@@ -756,7 +743,7 @@ namespace dcl.client.result
             this.repositoryItemGridLookUpEdit1,
             this.repositoryItemLookUpEdit2,
             this.repositoryItemCheckEdit1});
-            this.gridControlSingle.Size = new System.Drawing.Size(923, 608);
+            this.gridControlSingle.Size = new System.Drawing.Size(807, 473);
             this.gridControlSingle.TabIndex = 59;
             this.gridControlSingle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewSingle});
@@ -1275,19 +1262,18 @@ namespace dcl.client.result
             this.pcBottomCount.Controls.Add(this.statusColorPanel1);
             this.pcBottomCount.Controls.Add(this.pnCount);
             this.pcBottomCount.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pcBottomCount.Location = new System.Drawing.Point(0, 698);
-            this.pcBottomCount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pcBottomCount.Location = new System.Drawing.Point(0, 543);
             this.pcBottomCount.Name = "pcBottomCount";
-            this.pcBottomCount.Size = new System.Drawing.Size(923, 30);
+            this.pcBottomCount.Size = new System.Drawing.Size(807, 23);
             this.pcBottomCount.TabIndex = 58;
             // 
             // statusColorPanel1
             // 
             this.statusColorPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.statusColorPanel1.Location = new System.Drawing.Point(431, 2);
-            this.statusColorPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.statusColorPanel1.Location = new System.Drawing.Point(376, 2);
+            this.statusColorPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.statusColorPanel1.Name = "statusColorPanel1";
-            this.statusColorPanel1.Size = new System.Drawing.Size(490, 26);
+            this.statusColorPanel1.Size = new System.Drawing.Size(429, 19);
             this.statusColorPanel1.TabIndex = 4;
             // 
             // pnCount
@@ -1296,25 +1282,26 @@ namespace dcl.client.result
             this.pnCount.Controls.Add(this.lblPrintCount);
             this.pnCount.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnCount.Location = new System.Drawing.Point(2, 2);
+            this.pnCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnCount.Name = "pnCount";
-            this.pnCount.Size = new System.Drawing.Size(176, 26);
+            this.pnCount.Size = new System.Drawing.Size(154, 19);
             this.pnCount.TabIndex = 3;
             // 
             // lbHeader
             // 
             this.lbHeader.AutoSize = true;
-            this.lbHeader.Location = new System.Drawing.Point(5, 4);
+            this.lbHeader.Location = new System.Drawing.Point(4, 3);
             this.lbHeader.Name = "lbHeader";
-            this.lbHeader.Size = new System.Drawing.Size(73, 18);
+            this.lbHeader.Size = new System.Drawing.Size(59, 14);
             this.lbHeader.TabIndex = 2;
             this.lbHeader.Text = "登记总数:";
             // 
             // lblPrintCount
             // 
             this.lblPrintCount.AutoSize = true;
-            this.lblPrintCount.Location = new System.Drawing.Point(84, 4);
+            this.lblPrintCount.Location = new System.Drawing.Point(74, 3);
             this.lblPrintCount.Name = "lblPrintCount";
-            this.lblPrintCount.Size = new System.Drawing.Size(13, 18);
+            this.lblPrintCount.Size = new System.Drawing.Size(11, 14);
             this.lblPrintCount.TabIndex = 0;
             this.lblPrintCount.Text = ".";
             // 
@@ -1324,8 +1311,9 @@ namespace dcl.client.result
             this.groupControl2.Controls.Add(this.txtIDFiter);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(923, 90);
+            this.groupControl2.Size = new System.Drawing.Size(807, 70);
             this.groupControl2.TabIndex = 6;
             this.groupControl2.Text = "过滤";
             // 
@@ -1334,9 +1322,10 @@ namespace dcl.client.result
             this.panel5.Controls.Add(this.rgTypeFiter);
             this.panel5.Controls.Add(this.radioGroupPatFlag);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(586, 27);
+            this.panel5.Location = new System.Drawing.Point(512, 21);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(335, 61);
+            this.panel5.Size = new System.Drawing.Size(293, 47);
             this.panel5.TabIndex = 34;
             // 
             // rgTypeFiter
@@ -1344,7 +1333,6 @@ namespace dcl.client.result
             this.rgTypeFiter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rgTypeFiter.EditValue = "样本号";
             this.rgTypeFiter.Location = new System.Drawing.Point(0, 0);
-            this.rgTypeFiter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rgTypeFiter.Name = "rgTypeFiter";
             this.rgTypeFiter.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.rgTypeFiter.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -1354,15 +1342,14 @@ namespace dcl.client.result
             this.rgTypeFiter.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("样本号", "按样本号"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("序号", "按序号")});
-            this.rgTypeFiter.Size = new System.Drawing.Size(335, 32);
+            this.rgTypeFiter.Size = new System.Drawing.Size(293, 24);
             this.rgTypeFiter.TabIndex = 19;
             // 
             // radioGroupPatFlag
             // 
             this.radioGroupPatFlag.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.radioGroupPatFlag.EditValue = "全部";
-            this.radioGroupPatFlag.Location = new System.Drawing.Point(0, 32);
-            this.radioGroupPatFlag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioGroupPatFlag.Location = new System.Drawing.Point(0, 24);
             this.radioGroupPatFlag.Name = "radioGroupPatFlag";
             this.radioGroupPatFlag.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupPatFlag.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -1373,20 +1360,19 @@ namespace dcl.client.result
             new DevExpress.XtraEditors.Controls.RadioGroupItem("全部", "全部"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("未检验", "未检验"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("需复查", "需复查")});
-            this.radioGroupPatFlag.Size = new System.Drawing.Size(335, 29);
+            this.radioGroupPatFlag.Size = new System.Drawing.Size(293, 23);
             this.radioGroupPatFlag.TabIndex = 18;
             this.radioGroupPatFlag.SelectedIndexChanged += new System.EventHandler(this.radioGroupPatFlag_SelectedIndexChanged);
             // 
             // txtIDFiter
             // 
             this.txtIDFiter.EnterMoveNextControl = true;
-            this.txtIDFiter.Location = new System.Drawing.Point(48, 40);
-            this.txtIDFiter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtIDFiter.Location = new System.Drawing.Point(42, 31);
             this.txtIDFiter.Name = "txtIDFiter";
             this.txtIDFiter.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
             this.txtIDFiter.Properties.Appearance.Options.UseFont = true;
             this.txtIDFiter.Properties.NullText = "例：1-5.7.9.10-15";
-            this.txtIDFiter.Size = new System.Drawing.Size(211, 28);
+            this.txtIDFiter.Size = new System.Drawing.Size(185, 24);
             this.txtIDFiter.TabIndex = 17;
             this.txtIDFiter.ToolTip = "例：1-5.7.9.10-15";
             this.txtIDFiter.ToolTipTitle = "例：1-5.7.9.10-15";
@@ -1398,10 +1384,9 @@ namespace dcl.client.result
             this.panelTop.Appearance.Options.UseBackColor = true;
             this.panelTop.Controls.Add(this.pnlQuery);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelTop.Location = new System.Drawing.Point(0, 77);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelTop.Location = new System.Drawing.Point(0, 60);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(306, 728);
+            this.panelTop.Size = new System.Drawing.Size(268, 566);
             this.panelTop.TabIndex = 2;
             // 
             // barSave
@@ -1410,13 +1395,13 @@ namespace dcl.client.result
             this.barSave.AutoEnableButtons = false;
             this.barSave.Dock = System.Windows.Forms.DockStyle.Top;
             this.barSave.Location = new System.Drawing.Point(0, 0);
-            this.barSave.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barSave.Margin = new System.Windows.Forms.Padding(4);
             this.barSave.Name = "barSave";
             this.barSave.NotWriteLogButtonNameList = ((System.Collections.Generic.List<string>)(resources.GetObject("barSave.NotWriteLogButtonNameList")));
             this.barSave.OrderCustomer = true;
             this.barSave.QuickOption = false;
             this.barSave.ShowItemToolTips = false;
-            this.barSave.Size = new System.Drawing.Size(1229, 77);
+            this.barSave.Size = new System.Drawing.Size(1075, 60);
             this.barSave.TabIndex = 1;
             this.barSave.OnBtnBCPrintClicked += new System.EventHandler(this.btnPrintBarCode_Click);
             this.barSave.OnBtnPrintListClicked += new System.EventHandler(this.btnPrintQD_Click);
@@ -1431,15 +1416,14 @@ namespace dcl.client.result
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1229, 805);
+            this.ClientSize = new System.Drawing.Size(1075, 626);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.barSave);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmSampleRegisterNew";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "标本录入";
@@ -1584,5 +1568,6 @@ namespace dcl.client.result
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private System.Windows.Forms.Label lbSid;
         private DevExpress.XtraEditors.CheckEdit cbManualIntr;
+        private System.Windows.Forms.CheckBox chkYhsBarCode;
     }
 }

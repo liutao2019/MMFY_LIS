@@ -12,3 +12,12 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\o
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csproj.GenerateResource.Cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.root.logon.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.root.logon.pdb
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.dll
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.root.logon\obj\Debug\dcl.root.logon.pdb

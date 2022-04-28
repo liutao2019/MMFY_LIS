@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.cache.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.cache.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.cache.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.dll
+D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.svr.cache\obj\Debug\dcl.svr.cache.pdb

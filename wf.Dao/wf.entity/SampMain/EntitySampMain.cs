@@ -618,6 +618,12 @@ namespace dcl.entity
         [FieldMapAttribute(ClabName = "bc_insurance_name", MedName = "samp_insurance_name", WFName = "Sma_insurance_name")]
         public String SampInsuranceName { get; set; }
 
+        /// <summary>
+        /// 粤核酸总码
+        /// </summary>
+        [FieldMapAttribute(ClabName = "bc_yhs_BarCode", MedName = "samp_yhs_BarCode", WFName = "Sma_yhs_BarCode")]
+        public String SampYhsBarCode { get; set; }
+
         #region 附加字段 组别信息
 
         /// <summary>

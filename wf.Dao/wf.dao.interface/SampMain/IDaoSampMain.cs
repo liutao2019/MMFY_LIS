@@ -119,6 +119,15 @@ namespace dcl.dao.interfaces
         Boolean UpdateSampMainOtherInfo(EntitySampMain sampMain, String sampBarId);
 
         /// <summary>
+        /// 更新条码的粤核酸总码信息
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="sex"></param>
+        /// <param name="sampBarId"></param>
+        /// <returns></returns>
+        Boolean UpdateSampMainYHSBarCode(EntitySampMain sampMain, String sampBarId);
+
+        /// <summary>
         /// 判断是否存在该标本
         /// </summary>
         /// <param name="sampBarId"></param>

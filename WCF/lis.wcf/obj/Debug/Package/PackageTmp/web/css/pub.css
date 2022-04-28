@@ -1,0 +1,113 @@
+﻿body
+{
+    font-size:12px;
+    margin:0px;
+}
+
+.tab1
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/001.gif', sizingMethod='scale');
+	height:35px;
+	width:100%;
+	background-position:left top;
+	padding:0px;
+	border:0px;
+	text-indent:28px;
+}
+
+.txt
+{
+     border:1px solid #7F9DB9;  
+}
+
+.txt1
+{
+    border-left:none;   
+    border-right:none;
+    border-top:none;
+    border-bottom:1px solid black;   
+}
+
+a:link {
+    color:black;
+}
+
+a:visited {
+	color:#800080;
+}
+
+.addunits
+{
+    text-align: right;
+}
+
+.td
+{
+    float:left;
+}
+
+.normalButton
+{ 
+	BORDER-RIGHT: #666666 1px solid; 
+	BORDER-TOP: #666666 1px solid; 
+	FONT-SIZE: 12px; 
+	BACKGROUND-IMAGE: url("../Images/button/button_bg.gif"); 
+	BORDER-LEFT: #666666 1px solid; 
+	BORDER-BOTTOM: #666666 1px solid; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: #ffffff 
+}
+
+.gridHeader
+{
+	BACKGROUND: #F0ECD5;
+	color: #FFFFFF;      
+	font-weight: bold; 
+	font-size:10pt;
+	background-color:#507CD1;
+	/* -background-image: url("../Images/content_table/header_bg.gif");  */
+}
+
+/* ---------- 内容样式定义 ---------- */
+.contentTable tbody
+{
+	BACKGROUND: #FFFFFF; 
+	FONT-SIZE: 10pt;
+}
+
+.contentTable thead
+{
+	BACKGROUND: #D3E5FA; 
+	color: #FFFFFF; 
+	font-weight: bold; 
+	font-size:9pt;
+	background-image: url("Images/content_table/header_bg.gif"); 
+}
+
+.contentTable tfoot
+{
+	BACKGROUND: #EFF7FF;
+	FONT-SIZE: 10pt;
+}
+
+.contentTable .ctFoot
+{
+	BACKGROUND: #EFF7FF;
+	font-weight:normal;
+	color:#000000;
+}
+
+.controlPanel
+{
+	BACKGROUND:#EFF7FF;
+}
+
+table.contentTable
+{
+	background-color:#000000;
+}
+
+.contentTable table
+{
+	background-color:#000000;
+}

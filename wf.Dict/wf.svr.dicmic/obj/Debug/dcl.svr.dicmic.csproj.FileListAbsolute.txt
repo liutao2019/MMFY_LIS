@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.dicmic.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.dicmic.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.dicmic.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.dll
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.svr.dicmic\obj\Debug\dcl.svr.dicmic.pdb

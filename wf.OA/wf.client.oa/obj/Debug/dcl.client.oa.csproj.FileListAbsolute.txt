@@ -58,3 +58,35 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.OA\wf.client.oa\obj\Debug\dcl.clie
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.oa.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.oa.pdb
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmAnnuncementInfo.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmAnnuncementMgr.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmAttendance.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmDialog.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmDocManage.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmDutyDict.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmHandOverInfo.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmHandOverInput.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmHandOverMgr.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmHandOverNullRes.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmInstrmtBusiness.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmOfficeBusiness.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmOfficeMessage.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmOfficePlan.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmOfficePlanCopy.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmOrderSearch.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmOrderType.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmStaffManage.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.OrderDetail.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.FrmDutySelect.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.ucHandOverLayout.resources
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.dll
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.client.oa\obj\Debug\dcl.client.oa.pdb

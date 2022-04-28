@@ -395,159 +395,312 @@ namespace dcl.client.result
             }
 
             ProxyPidReportMain proxyPatient = new ProxyPidReportMain();
-            EntityPidReportMain patient = proxyPatient.Service.GetPatientsByBarCode(this.txtBarCode.Text);
-            string defaultSampleState = UserInfo.GetSysConfigValue("DefaultSampleState");
-            patient.PidRemark = defaultSampleState;
-            if (patient == null || string.IsNullOrEmpty(patient.RepBarCode))
-            {
-                lis.client.control.MessageDialog.Show("无此条形码的信息,请与临床科联系", "提示");
 
-                this.txtBarCode.Text = string.Empty;
-                this.ActiveControl = this.txtBarCode;
-                this.txtBarCode.Focus();
-            }
-            else
+            if (chkYhsBarCode.Checked)
             {
-                #region 判断该条码是否可以使用当前仪器
-                List<EntityDicInstrument> Instruments = proxyPatient.Service.GetAllItrForBarCode(this.txtBarCode.Text);
-                if (Instruments.Count == 0)
-                {
-                    lis.client.control.MessageDialog.Show("此条形码暂无仪器可供录入，请检查！", "提示");
-                    return;
-                }
-                var a = from x in Instruments where x.ItrId == this.txtInstructment.valueMember select x;
-                if (a.Count() == 0)
-                {
-                    string tip = "此条形码无法在该仪器录入，此条形码可用的仪器为：\n";
-                    foreach (EntityDicInstrument Instrument in Instruments)
-                    {
-                        tip += Instrument.ItrName + "、";
-                    }
-                    lis.client.control.MessageDialog.Show(tip.TrimEnd('、'), "提示");
-                    return;
-                }
+                EntitySampQC sampQC1 = new EntitySampQC();
+                sampQC1.SampYhsBarCode = txtBarCode.Text.Trim();
+
+                //通过总码先获取各明细条码信息，再逐一转换成患者信息进行登记
+                List<EntitySampMain> sampleList = new ProxySampMain().Service.SampMainQuery(sampQC1);
+
+                #region 暂时作废，原因使用该方法遍历生成会出现卡顿现象
+                //if (sampleList != null && sampleList.Count > 0)
+                //{
+                //    foreach (var pat in sampleList)
+                //    {
+                //        EntityPidReportMain patient = proxyPatient.Service.GetPatientsByBarCode(pat.SampBarCode);
+
+                //        string defaultSampleState = UserInfo.GetSysConfigValue("DefaultSampleState");
+                //        patient.PidRemark = defaultSampleState;
+                //        if (patient == null || string.IsNullOrEmpty(patient.RepBarCode))
+                //        {
+                //            lis.client.control.MessageDialog.Show("无此条形码的信息,请与临床科联系", "提示");
+
+                //            this.txtBarCode.Text = string.Empty;
+                //            this.ActiveControl = this.txtBarCode;
+                //            this.txtBarCode.Focus();
+                //        }
+                //        else
+                //        {
+                //            #region 判断该条码是否可以使用当前仪器
+                //            //List<EntityDicInstrument> Instruments = proxyPatient.Service.GetAllItrForBarCode(pat.SampBarCode);
+                //            //if (Instruments.Count == 0)
+                //            //{
+                //            //    lis.client.control.MessageDialog.Show("此条形码暂无仪器可供录入，请检查！", "提示");
+                //            //    return;
+                //            //}
+                //            //var a = from x in Instruments where x.ItrId == this.txtInstructment.valueMember select x;
+                //            //if (a.Count() == 0)
+                //            //{
+                //            //    string tip = "此条形码无法在该仪器录入，此条形码可用的仪器为：\n";
+                //            //    foreach (EntityDicInstrument Instrument in Instruments)
+                //            //    {
+                //            //        tip += Instrument.ItrName + "、";
+                //            //    }
+                //            //    lis.client.control.MessageDialog.Show(tip.TrimEnd('、'), "提示");
+                //            //    return;
+                //            //}
+                //            #endregion
+
+                //            this.bsPatInfo.DataSource = patient;
+
+                //            if (!chkBarcodeCanRepeat.Checked)
+                //            {
+                //                patient.ListPidReportDetail = patient.ListPidReportDetail.FindAll(w => w.SampFlag == 0);
+                //            }
+
+                //            if (patient.ListPidReportDetail.Count == 0)
+                //            {
+                //                EntityPatientQC qc = new EntityPatientQC();
+                //                qc.RepBarCode = this.txtBarCode.Text;
+                //                List<EntityPidReportMain> listPidReport = new ProxyPidReportMain().Service.PatientQuery(qc);
+                //                string mes = "此条码已登记！";
+                //                if (listPidReport != null && listPidReport.Count > 0)
+                //                {
+                //                    mes = string.Format("该条码在 {1} 时 在仪器 {0} 录入,样本号:{2},序号:{3},操作人:{4} \r\n",
+                //                         listPidReport[0].ItrName, listPidReport[0].RepInDate, listPidReport[0].RepSid, listPidReport[0].RepSerialNum,
+                //                         string.IsNullOrEmpty(listPidReport[0].LrName) ? listPidReport[0].RepCheckUserId : listPidReport[0].LrName);
+                //                }
+                //                MessageDialog.Show(mes, "提示");
+                //                ClearAndSetBarcodeInputFocus();
+                //            }
+                //            else
+                //            {
+                //                string strSave = Save(patient);
+                //                if (strSave != string.Empty)
+                //                {
+                //                    statBarcodeCount++;//登记一条数据
+                //                    string pat_id = strSave;
+                //                    if (rgType.SelectedIndex == 1 && !ckOrder.Checked)
+                //                    {
+                //                        this.txtSid.Text = string.Empty;
+                //                    }                                    
+                //                }
+                //            }
+                //        }
+                //    }
+
+                //}
+
                 #endregion
 
-                string status = patient.BcStatus;
-                if (status == "9")
+                List<EntityPidReportMain> patientLIst = proxyPatient.Service.GetPatientsBySampleMain(sampleList);
+                if (patientLIst != null && patientLIst.Count > 0)
                 {
-                    /**********提示信息增加操作者和时间*******************************************/
-                    string name = string.Empty;
-                    string time = string.Empty;
-                    string remark = string.Empty;
-
-                    ProxySampProcessDetail proxyProcess = new ProxySampProcessDetail();
-                    EntitySampProcessDetail process = proxyProcess.Service.GetLastSampProcessDetail(patient.RepBarCode);
-
-                    if (process != null && !string.IsNullOrEmpty(process.ProcBarno))
+                    foreach (var patient in patientLIst)
                     {
-                        name = process.ProcUsername;
-                        time = process.ProcDate.ToString();
-                        remark = process.ProcContent;
-                    }
-
-                    MessageDialog.Show(string.Format("此条码已回退，不允许录入！\r\n{2}\r\n 操作者：{0},时间：{1}", name, time, remark), "提示");
-                    ClearAndSetBarcodeInputFocus();
-                    return;
-                }
-
-
-                this.bsPatInfo.DataSource = patient;
-                if (patient.BcStatus == "0"
-                  || patient.BcStatus == "1"
-                  || patient.BcStatus == "2"
-                  || patient.BcStatus == "3"
-                  || patient.BcStatus == "4"
-                  || patient.BcStatus == "8"
-                  || patient.BcStatus == "9"
-                  || patient.BcStatus == "500"
-                  || patient.BcStatus == "510"
-                    )
-                {
-                    if (patient.PidSrcId == "108" && UserInfo.GetSysConfigValue("Barcode_ZYShouldReceiveConfirm") == "是")//住院
-                    {
-                        MessageDialog.Show("当前条码未签收！", MessageBoxButtons.OK, MessageBoxDefaultButton.Button3);
-                        ClearAndSetBarcodeInputFocus();
-                        return;
-                    }
-
-                    if (patient.PidSrcId == "109" && UserInfo.GetSysConfigValue("Barcode_TJShouldReceiveConfirm") == "是")//住院
-                    {
-                        MessageDialog.Show("当前条码未签收！", MessageBoxButtons.OK, MessageBoxDefaultButton.Button3);
-                        ClearAndSetBarcodeInputFocus();
-                        return;
-                    }
-                    if (patient.PidSrcId == "107" && UserInfo.GetSysConfigValue("Barcode_MZShouldReceiveConfirm") == "是")//住院
-                    {
-                        MessageDialog.Show("当前条码未签收！", MessageBoxButtons.OK, MessageBoxDefaultButton.Button3);
-                        ClearAndSetBarcodeInputFocus();
-                        return;
-                    }
-                }
-
-                if (CheckReceiveTimeAndPatdate)
-                {
-                    DateTime recvTime;
-                    DateTime jyTime = ServerDateTime.GetServerDateTime();
-
-                    if (patient.SampReceiveDate != null)
-                    {
-                        recvTime = patient.SampReceiveDate.Value;
-                        if ((recvTime > jyTime)
-                            ||
-                            (DateTime.TryParse(dateCheck.EditValue.ToString(), out jyTime) &&
-                             recvTime > jyTime))
+                        string defaultSampleState = UserInfo.GetSysConfigValue("DefaultSampleState");
+                        patient.PidRemark = defaultSampleState;
+                        if (patient == null || string.IsNullOrEmpty(patient.RepBarCode))
                         {
-                            MessageDialog.Show("签收时间大于检验时间，请检查！", "提示");
+                            lis.client.control.MessageDialog.Show("无此条形码的信息,请与临床科联系", "提示");
+
+                            this.txtBarCode.Text = string.Empty;
+                            this.ActiveControl = this.txtBarCode;
+                            this.txtBarCode.Focus();
+                        }
+                        else
+                        {
+                            this.bsPatInfo.DataSource = patient;
+
+                            if (!chkBarcodeCanRepeat.Checked)
+                            {
+                                patient.ListPidReportDetail = patient.ListPidReportDetail.FindAll(w => w.SampFlag == 0);
+                            }
+
+                            if (patient.ListPidReportDetail.Count == 0)
+                            {
+                                EntityPatientQC qc = new EntityPatientQC();
+                                qc.RepBarCode = this.txtBarCode.Text;
+                                List<EntityPidReportMain> listPidReport = new ProxyPidReportMain().Service.PatientQuery(qc);
+                                string mes = "此条码已登记！";
+                                if (listPidReport != null && listPidReport.Count > 0)
+                                {
+                                    mes = string.Format("该条码在 {1} 时 在仪器 {0} 录入,样本号:{2},序号:{3},操作人:{4} \r\n",
+                                         listPidReport[0].ItrName, listPidReport[0].RepInDate, listPidReport[0].RepSid, listPidReport[0].RepSerialNum,
+                                         string.IsNullOrEmpty(listPidReport[0].LrName) ? listPidReport[0].RepCheckUserId : listPidReport[0].LrName);
+                                }
+                                MessageDialog.Show(mes, "提示");
+                                ClearAndSetBarcodeInputFocus();
+                            }
+                            else
+                            {
+                                string strSave = Save(patient);
+                                if (strSave != string.Empty)
+                                {
+                                    statBarcodeCount++;//登记一条数据
+                                    string pat_id = strSave;
+                                    if (rgType.SelectedIndex == 1 && !ckOrder.Checked)
+                                    {
+                                        this.txtSid.Text = string.Empty;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+            else
+            {
+                EntityPidReportMain patient = proxyPatient.Service.GetPatientsByBarCode(txtBarCode.Text);
+
+                string defaultSampleState = UserInfo.GetSysConfigValue("DefaultSampleState");
+                patient.PidRemark = defaultSampleState;
+                if (patient == null || string.IsNullOrEmpty(patient.RepBarCode))
+                {
+                    lis.client.control.MessageDialog.Show("无此条形码的信息,请与临床科联系", "提示");
+
+                    this.txtBarCode.Text = string.Empty;
+                    this.ActiveControl = this.txtBarCode;
+                    this.txtBarCode.Focus();
+                }
+                else
+                {
+                    #region 判断该条码是否可以使用当前仪器
+                    List<EntityDicInstrument> Instruments = proxyPatient.Service.GetAllItrForBarCode(txtBarCode.Text);
+                    if (Instruments.Count == 0)
+                    {
+                        lis.client.control.MessageDialog.Show("此条形码暂无仪器可供录入，请检查！", "提示");
+                        return;
+                    }
+                    var a = from x in Instruments where x.ItrId == this.txtInstructment.valueMember select x;
+                    if (a.Count() == 0)
+                    {
+                        string tip = "此条形码无法在该仪器录入，此条形码可用的仪器为：\n";
+                        foreach (EntityDicInstrument Instrument in Instruments)
+                        {
+                            tip += Instrument.ItrName + "、";
+                        }
+                        lis.client.control.MessageDialog.Show(tip.TrimEnd('、'), "提示");
+                        return;
+                    }
+                    #endregion
+
+                    string status = patient.BcStatus;
+                    if (status == "9")
+                    {
+                        /**********提示信息增加操作者和时间*******************************************/
+                        string name = string.Empty;
+                        string time = string.Empty;
+                        string remark = string.Empty;
+
+                        ProxySampProcessDetail proxyProcess = new ProxySampProcessDetail();
+                        EntitySampProcessDetail process = proxyProcess.Service.GetLastSampProcessDetail(patient.RepBarCode);
+
+                        if (process != null && !string.IsNullOrEmpty(process.ProcBarno))
+                        {
+                            name = process.ProcUsername;
+                            time = process.ProcDate.ToString();
+                            remark = process.ProcContent;
+                        }
+
+                        MessageDialog.Show(string.Format("此条码已回退，不允许录入！\r\n{2}\r\n 操作者：{0},时间：{1}", name, time, remark), "提示");
+                        ClearAndSetBarcodeInputFocus();
+                        return;
+                    }
+
+
+                    this.bsPatInfo.DataSource = patient;
+                    if (patient.BcStatus == "0"
+                      || patient.BcStatus == "1"
+                      || patient.BcStatus == "2"
+                      || patient.BcStatus == "3"
+                      || patient.BcStatus == "4"
+                      || patient.BcStatus == "8"
+                      || patient.BcStatus == "9"
+                      || patient.BcStatus == "500"
+                      || patient.BcStatus == "510"
+                        )
+                    {
+                        if (patient.PidSrcId == "108" && UserInfo.GetSysConfigValue("Barcode_ZYShouldReceiveConfirm") == "是")//住院
+                        {
+                            MessageDialog.Show("当前条码未签收！", MessageBoxButtons.OK, MessageBoxDefaultButton.Button3);
+                            ClearAndSetBarcodeInputFocus();
+                            return;
+                        }
+
+                        if (patient.PidSrcId == "109" && UserInfo.GetSysConfigValue("Barcode_TJShouldReceiveConfirm") == "是")//住院
+                        {
+                            MessageDialog.Show("当前条码未签收！", MessageBoxButtons.OK, MessageBoxDefaultButton.Button3);
+                            ClearAndSetBarcodeInputFocus();
+                            return;
+                        }
+                        if (patient.PidSrcId == "107" && UserInfo.GetSysConfigValue("Barcode_MZShouldReceiveConfirm") == "是")//住院
+                        {
+                            MessageDialog.Show("当前条码未签收！", MessageBoxButtons.OK, MessageBoxDefaultButton.Button3);
                             ClearAndSetBarcodeInputFocus();
                             return;
                         }
                     }
 
-                }
-
-                if (!chkBarcodeCanRepeat.Checked)
-                {
-                    patient.ListPidReportDetail = patient.ListPidReportDetail.FindAll(w => w.SampFlag == 0);
-                }
-
-                if (patient.ListPidReportDetail.Count == 0)
-                {
-                    EntityPatientQC qc = new EntityPatientQC();
-                    qc.RepBarCode = this.txtBarCode.Text;
-                    List<EntityPidReportMain> listPidReport = new ProxyPidReportMain().Service.PatientQuery(qc);
-                    string mes = "此条码已登记！";
-                    if (listPidReport != null && listPidReport.Count > 0)
+                    if (CheckReceiveTimeAndPatdate)
                     {
-                        mes = string.Format("该条码在 {1} 时 在仪器 {0} 录入,样本号:{2},序号:{3},操作人:{4} \r\n",
-                             listPidReport[0].ItrName, listPidReport[0].RepInDate, listPidReport[0].RepSid, listPidReport[0].RepSerialNum,
-                             string.IsNullOrEmpty(listPidReport[0].LrName) ? listPidReport[0].RepCheckUserId : listPidReport[0].LrName);
-                    }
-                    MessageDialog.Show(mes, "提示");
-                    ClearAndSetBarcodeInputFocus();
-                }
-                else
-                {
-                    string strSave = Save(patient);
-                    if (strSave != string.Empty)
-                    {
-                        statBarcodeCount++;//登记一条数据
-                        string pat_id = strSave;
-                        if (rgType.SelectedIndex == 1 && !ckOrder.Checked)
+                        DateTime recvTime;
+                        DateTime jyTime = ServerDateTime.GetServerDateTime();
+
+                        if (patient.SampReceiveDate != null)
                         {
-                            this.txtSid.Text = string.Empty;
+                            recvTime = patient.SampReceiveDate.Value;
+                            if ((recvTime > jyTime)
+                                ||
+                                (DateTime.TryParse(dateCheck.EditValue.ToString(), out jyTime) &&
+                                 recvTime > jyTime))
+                            {
+                                MessageDialog.Show("签收时间大于检验时间，请检查！", "提示");
+                                ClearAndSetBarcodeInputFocus();
+                                return;
+                            }
                         }
 
-                        ////自动打印细菌申请单
-                        //if (chkAutoPrint.Checked)
-                        //{
-                        //    List<string> listRepId = new List<string>();
-                        //    listRepId.Add(strSave);
-                        //    this.PrintBacApply(listRepId);
-                        //}
+                    }
+
+                    if (!chkBarcodeCanRepeat.Checked)
+                    {
+                        patient.ListPidReportDetail = patient.ListPidReportDetail.FindAll(w => w.SampFlag == 0);
+                    }
+
+                    if (patient.ListPidReportDetail.Count == 0)
+                    {
+                        EntityPatientQC qc = new EntityPatientQC();
+                        qc.RepBarCode = this.txtBarCode.Text;
+                        List<EntityPidReportMain> listPidReport = new ProxyPidReportMain().Service.PatientQuery(qc);
+                        string mes = "此条码已登记！";
+                        if (listPidReport != null && listPidReport.Count > 0)
+                        {
+                            mes = string.Format("该条码在 {1} 时 在仪器 {0} 录入,样本号:{2},序号:{3},操作人:{4} \r\n",
+                                 listPidReport[0].ItrName, listPidReport[0].RepInDate, listPidReport[0].RepSid, listPidReport[0].RepSerialNum,
+                                 string.IsNullOrEmpty(listPidReport[0].LrName) ? listPidReport[0].RepCheckUserId : listPidReport[0].LrName);
+                        }
+                        MessageDialog.Show(mes, "提示");
+                        ClearAndSetBarcodeInputFocus();
+                    }
+                    else
+                    {
+                        string strSave = Save(patient);
+                        if (strSave != string.Empty)
+                        {
+                            statBarcodeCount++;//登记一条数据
+                            string pat_id = strSave;
+                            if (rgType.SelectedIndex == 1 && !ckOrder.Checked)
+                            {
+                                this.txtSid.Text = string.Empty;
+                            }
+
+                            ////自动打印细菌申请单
+                            //if (chkAutoPrint.Checked)
+                            //{
+                            //    List<string> listRepId = new List<string>();
+                            //    listRepId.Add(strSave);
+                            //    this.PrintBacApply(listRepId);
+                            //}
+                        }
                     }
                 }
             }
+   
         }
 
         private bool LocatePatientByBarcode(string pat_id)

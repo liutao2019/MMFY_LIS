@@ -34,3 +34,23 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Select\wf.client.select\obj\Debug\
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.pdb
+D:\LIS\NEW_MMFY_LIS\Release\zh-CHS\Microsoft.Data.ConnectionUI.Dialog.resources.dll
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.resultquery.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.resultquery.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.ControlReportResultShow.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.FrmCombineClassPrint.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.FrmCombineModeSel.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.FrmItemSort.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.FrmPatSelector.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.FrmSetPrintPerson.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.FrmTwoWaySelect.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.WaitForm1.resources
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.dll
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.client.select\obj\Debug\dcl.client.resultquery.pdb

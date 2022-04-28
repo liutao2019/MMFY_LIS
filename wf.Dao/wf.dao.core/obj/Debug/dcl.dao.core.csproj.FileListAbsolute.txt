@@ -3,3 +3,10 @@ D:\WiseFly\Source Code\Lis.Release\WCF\lis.wcf\bin\dcl.dao.core.pdb
 D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.dll
 D:\WiseFly\Source Code\Lis.Release\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.pdb
+D:\LIS\NEW_MMFY_LIS\WCF\lis.wcf\bin\dcl.dao.core.dll
+D:\LIS\NEW_MMFY_LIS\WCF\lis.wcf\bin\dcl.dao.core.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.dll
+D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.core\obj\Debug\dcl.dao.core.pdb

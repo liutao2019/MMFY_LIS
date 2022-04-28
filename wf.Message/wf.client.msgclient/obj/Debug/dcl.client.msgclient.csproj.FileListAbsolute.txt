@@ -25,3 +25,32 @@ D:\WiseFly\Source Code\Lis.Release\wf.Message\wf.client.msgclient\obj\Debug\dcl.
 D:\WiseFly\Source Code\Lis.Release\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.application
 D:\WiseFly\Source Code\Lis.Release\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.exe
 D:\WiseFly\Source Code\Lis.Release\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.pdb
+D:\LIS\NEW_MMFY_LIS\Release\zh-CHS\Microsoft.Data.ConnectionUI.Dialog.resources.dll
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\危急值配置.exe
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.msgclient.exe.config
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.msgclient.exe.manifest
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.msgclient.application
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.msgclient.exe
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.msgclient.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\Interop.SpeechLib.dll
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.csproj.ResolveComReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmBscripe.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmExportType.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmMessages.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmMsgGather.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmReadAffirm.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmSelectHistory.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmSetting.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.FrmUpdatePatRes.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.SelectDicPubDoctor.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.WebBroswer.resources
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.exe.manifest
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.application
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.exe
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.client.msgclient\obj\Debug\dcl.client.msgclient.pdb

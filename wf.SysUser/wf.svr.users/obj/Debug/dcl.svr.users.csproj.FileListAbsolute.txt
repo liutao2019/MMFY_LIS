@@ -10,3 +10,11 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.users.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.users.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.users.pdb
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.dll
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.svr.users\obj\Debug\dcl.svr.users.pdb

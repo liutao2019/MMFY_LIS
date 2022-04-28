@@ -37,6 +37,18 @@ namespace dcl.svr.interfaces
         internal delegate NameValueCollection UploadOrUndoDCLReport_Delegate(List<string> listRepId);
 
         /// <summary>
+        /// 上传或取消报告委托定义
+        /// </summary>
+        /// <param name="listRepId"></param>
+        internal delegate bool UploadOrUndoYssReport_Delegate(List<string> listRepId);
+
+        /// <summary>
+        /// 获取人员信息
+        /// </summary>
+        /// <param name="listRepId"></param>
+        internal delegate List<EntitySampMain> GetYssPatientInfo_Delegate(List<string> listRepId);
+
+        /// <summary>
         /// 批量执行院网接口
         /// </summary>
         /// <param name="operation"></param>
@@ -651,5 +663,73 @@ namespace dcl.svr.interfaces
         {
             return new List<EntityPidReportMain>();
         }
+        /// <summary>
+        /// 上传粤省事报告（异步）
+        /// </summary>
+        /// <param name="result"></param>
+        public void UploadYssReportAsync(List<string> listPatId)
+        {
+            try
+            {
+                UploadOrUndoYssReport_Delegate updel = new UploadOrUndoYssReport_Delegate(UploadYssReport);
+                updel.BeginInvoke(listPatId, null, null);
+            }
+            catch (AggregateException ex)
+            {
+                Lib.LogManager.Logger.LogException(ex);
+
+            }
+        }
+
+        /// <summary>
+        /// 上传粤省事报告基方法
+        /// </summary>
+        /// <param name="result"></param>
+        /// <returns></returns>
+        internal virtual bool UploadYssReport(List<string> listPatId)
+        {
+            return true;
+        }
+        /// <summary>
+        /// 取消粤省事报告（异步）
+        /// </summary>
+        /// <param name="listRepId"></param>
+        public void UndoUploadYssReportAsync(List<string> listPatId)
+        {
+            UploadOrUndoYssReport_Delegate updel = new UploadOrUndoYssReport_Delegate(UndoUploadYssReport);
+            updel.BeginInvoke(listPatId, null, null);
+        }
+
+        /// <summary>
+        /// 取消粤省事报告基方法
+        /// </summary>
+        /// <param name="strRepId"></param>
+        /// <returns></returns>
+        internal virtual bool UndoUploadYssReport(List<string> listPatId)
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// 获取采样人员信息基方法
+        /// </summary>
+        internal virtual List<EntitySampMain> GetYssPatientInfoBase(List<string> listPatId)
+        {
+            return new List<EntitySampMain>();
+        }
+
+
+        /// <summary>
+        /// 获取采样人员信息
+        /// </summary>
+        public List<EntitySampMain> GetYssPatientInfo(List<string> listPatId)
+        {
+            List<EntitySampMain> sampMainList = new List<EntitySampMain>();
+            GetYssPatientInfo_Delegate getInfo = new GetYssPatientInfo_Delegate(GetYssPatientInfoBase);
+            sampMainList = getInfo.Invoke(listPatId);
+            return sampMainList;
+        }
+
+
     }
 }

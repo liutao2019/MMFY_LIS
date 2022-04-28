@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.qc.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.qc.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.qc.pdb
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.dll
+D:\LIS\NEW_MMFY_LIS\wf.QualityControl\wf.svr.qc\obj\Debug\dcl.svr.qc.pdb

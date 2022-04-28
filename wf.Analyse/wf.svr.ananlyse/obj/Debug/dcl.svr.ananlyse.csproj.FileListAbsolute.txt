@@ -1,0 +1,7 @@
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.ananlyse.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.ananlyse.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.svr.ananlyse\obj\Debug\dcl.svr.ananlyse.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.svr.ananlyse\obj\Debug\dcl.svr.ananlyse.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.svr.ananlyse\obj\Debug\dcl.svr.ananlyse.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.svr.ananlyse\obj\Debug\dcl.svr.ananlyse.dll
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.svr.ananlyse\obj\Debug\dcl.svr.ananlyse.pdb

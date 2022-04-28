@@ -10,3 +10,11 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.interfaces.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.interfaces.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.interfaces.pdb
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.dll
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.pdb

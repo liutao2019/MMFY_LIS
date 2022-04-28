@@ -25,5 +25,19 @@ namespace dcl.svr.resultcheck
             }
             return;
         }
+
+        public void SendYssReport(List<string> listPatId, EnumOperationCode auditType)
+        {
+            if (auditType == EnumOperationCode.Report)
+            {
+                DCLExtInterfaceFactory.DCLExtInterface.UploadYssReportAsync(listPatId);
+            }
+            else if (auditType == EnumOperationCode.UndoReport)
+            {
+                DCLExtInterfaceFactory.DCLExtInterface.UndoUploadYssReportAsync(listPatId);
+            }
+            return;
+        }
+        
     }
 }

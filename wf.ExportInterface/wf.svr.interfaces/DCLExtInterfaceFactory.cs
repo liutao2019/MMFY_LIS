@@ -14,7 +14,7 @@
                 switch (strInterfaceMode)
                 {
                     case "茂名妇幼保健院":
-                        return new DCLExtInterface_MMFY();
+                        return new dcl.svr.interfaces.DCLExtInterface_MMFY();
                     default:
                         return new DCLExtInterface_Default();
                 }

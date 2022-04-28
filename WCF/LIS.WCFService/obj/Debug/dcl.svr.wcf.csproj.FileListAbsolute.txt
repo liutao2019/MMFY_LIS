@@ -10,3 +10,11 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.wcf.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.wcf.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.wcf.pdb
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.dll
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFService\obj\Debug\dcl.svr.wcf.pdb

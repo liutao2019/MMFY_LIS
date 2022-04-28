@@ -28,3 +28,20 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Instrmt\wf.client.instrmt\obj\Debu
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.instrmt.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.instrmt.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.FrmDictInstrmtMaintain.resources
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.FrmInstrmtMain.resources
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.FrmInstrmtRegistration.resources
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.FrmInstrmtServicing.resources
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.FrmMaintainSelect.resources
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.ItrRegistraionLog.resources
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.dll
+D:\LIS\NEW_MMFY_LIS\wf.Instrmt\wf.client.instrmt\obj\Debug\dcl.client.instrmt.pdb

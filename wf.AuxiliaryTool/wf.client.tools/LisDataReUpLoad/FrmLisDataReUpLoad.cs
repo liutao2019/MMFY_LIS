@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace dcl.client.tools
@@ -165,7 +166,7 @@ namespace dcl.client.tools
             try
             {
                 ProxyPidReportMain proxy = new ProxyPidReportMain();
-                List<EntityPidReportMain> listPatient = proxy.Service.GetFaultUpLoadReport(patientQc);
+                List<EntityPidReportMain> listPatient = proxy.Service.GetFaultUpLoadReport(patientQc,"");
                 if (listPatient.Count == 0)
                     lis.client.control.MessageDialog.Show("暂无数据！");
                 gcLisData.DataSource = listPatient;
@@ -218,8 +219,51 @@ namespace dcl.client.tools
             {
                 lis.client.control.MessageDialog.Show(ex.Message);
             }
+            
         }
 
+        private void btnUploadOut_Click(object sender, EventArgs e)
+        {
+            List<EntityPidReportMain> listPatient = gcLisData.DataSource as List<EntityPidReportMain>;
+            if (listPatient == null || listPatient.Count == 0)
+            {
+                lis.client.control.MessageDialog.Show("暂无可以重传的数据！");
+                return;
+            }
+            List<string> Pids = new List<string>();
+            foreach (EntityPidReportMain report in listPatient)
+            {
+                if (report.RepStatus == 0)
+                {
+                    continue;
+                }
+                Pids.Add(report.RepId);
+            }
+            if (Pids.Count == 0)
+                return;
+            if (UserInfo.GetSysConfigValue("Audit_UploadYss") == "是")
+            {
+                try
+                {
+                    ProxyDCLInterfacesTool Po = new ProxyDCLInterfacesTool();
+                    EntityResponse value = Po.Service.ReUploadYssReport(Pids);
+                    if (value.Scusess)
+                    {
+                        lis.client.control.MessageDialog.Show("上传成功！");
+                    }
+                    else
+                    {
+                        lis.client.control.MessageDialog.Show(string.Format("上传失败，消息：{0} \r\n", value.ErroMsg));
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    lis.client.control.MessageDialog.Show(ex.Message);
+                }
+            }
+
+        }
 
         /// <summary>
         /// 自动重传勾选
@@ -267,7 +311,7 @@ namespace dcl.client.tools
             try
             {
                 ProxyPidReportMain proxy = new ProxyPidReportMain();
-                listPatient = proxy.Service.GetFaultUpLoadReport(patientQc);
+                listPatient = proxy.Service.GetFaultUpLoadReport(patientQc,"");
 
                 if (listPatient == null || listPatient.Count == 0)
                 {
@@ -309,6 +353,101 @@ namespace dcl.client.tools
             {
                 TbReuploadLog = logText + "\r\n下一次执行：" + DateTime.Now.AddMilliseconds(timer1.Interval);
             }
+        }
+
+        #endregion
+
+        #region 粤核酸采检索
+        private void btnSearchYss_Click(object sender, EventArgs e)
+        {
+            gcLisData.DataSource = null;
+
+            if (PatDate.Date > PatDateEnd.Date)
+            {
+                lis.client.control.MessageDialog.Show("检索起始日期不能大于结束日期！");
+                return;
+            }
+            if ((PatDateEnd.Date - PatDate.Date).Days > 10)
+            {
+                lis.client.control.MessageDialog.Show("检索日期最长不能超过10天！");
+                return;
+            }
+
+            string strBarcode = txtBarcode.Text.Trim();
+            string strRepId = txtRepid.Text.Trim();
+            string ItrID = selectDict_Instrmt1.valueMember;
+
+            EntityPatientQC patientQc = new EntityPatientQC();
+            patientQc.RepBarCode = strBarcode;
+            patientQc.RepId = strRepId;
+            patientQc.ListItrId = new List<string> { ItrID };
+            patientQc.DateStart = DateTime.Parse(PatDate.ToString("yyyy-MM-dd 00:00:00"));
+            patientQc.DateEnd = DateTime.Parse(PatDateEnd.ToString("yyyy-MM-dd 23:59:59"));
+
+            try
+            {
+                ProxyPidReportMain proxy = new ProxyPidReportMain();
+                List<EntityPidReportMain> listPatient = proxy.Service.GetFaultUpLoadReport(patientQc, "发布粤省事检验报告");
+                if (listPatient.Count == 0)
+                    lis.client.control.MessageDialog.Show("暂无数据！");
+                listPatient = listPatient.GroupBy(m => m.RepId).Select(item => item.First()).ToList<EntityPidReportMain>();
+                for (int i = 0; i < listPatient.Count; i++)
+                {
+                    listPatient[i].PidRes = Regex.Replace(listPatient[i].PidRes, @"\d|\W|[A-Za-z]", "").Replace("上传粤省事检验报告出错", "上传粤省事检验报告出错：");
+                }
+                gcLisData.DataSource = listPatient;
+            }
+            catch (Exception ex)
+            {
+                lis.client.control.MessageDialog.Show(ex.Message);
+            }
+        }
+        #endregion
+
+        #region 粤核酸结果重传
+
+        private void btnUploadYss_Click(object sender, EventArgs e)
+        {
+            List<EntityPidReportMain> listPatient = gcLisData.DataSource as List<EntityPidReportMain>;
+            if (listPatient == null || listPatient.Count == 0)
+            {
+                lis.client.control.MessageDialog.Show("暂无可以重传的数据！");
+                return;
+            }
+            List<string> Pids = new List<string>();
+            foreach (EntityPidReportMain report in listPatient)
+            {
+                if (report.RepStatus == 0)
+                {
+                    continue;
+                }
+                Pids.Add(report.RepId);
+            }
+            if (Pids.Count == 0)
+                return;
+           
+            if (UserInfo.GetSysConfigValue("Audit_UploadYss") == "是")
+            {
+                try
+                {
+                    ProxyDCLInterfacesTool Po = new ProxyDCLInterfacesTool();
+                    EntityResponse value = Po.Service.ReUploadYssReport(Pids);
+                    if (value.Scusess)
+                    {
+                        lis.client.control.MessageDialog.Show("上传成功！");
+                    }
+                    else
+                    {
+                        lis.client.control.MessageDialog.Show(string.Format("上传失败，消息：{0} \r\n", value.ErroMsg));
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    lis.client.control.MessageDialog.Show(ex.Message);
+                }
+            }
+
         }
 
         #endregion

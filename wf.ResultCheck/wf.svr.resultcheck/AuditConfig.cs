@@ -320,6 +320,18 @@ namespace dcl.svr.resultcheck
 
         #endregion
 
+        /// <summary>
+        /// 审核外院报告是否调用接口上传到粤省事
+        /// </summary>
+        public bool Audit_UploadYss { get; set; }
+        /// <summary>
+        /// 审核外院报告是否调用接口上传到粤省事
+        /// </summary>
+        public bool Audit_UploadAllPatTypeYss { get; set; }
+        /// <summary>
+        /// 粤省事上传过滤某些科室
+        /// </summary>
+        public string Audit_YSSFilterDept { get; set; }
         #endregion
 
         public AuditConfig()

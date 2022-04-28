@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCombineModeSel));
             this.sysToolBar1 = new dcl.client.common.SysToolBar();
             this.controlReportResultShow1 = new dcl.client.resultquery.ControlReportResultShow();
             this.plBottom = new System.Windows.Forms.Panel();
             this.gcPar = new DevExpress.XtraGrid.GridControl();
-            this.bsPar = new System.Windows.Forms.BindingSource(this.components);
+            this.bsPar = new System.Windows.Forms.BindingSource();
             this.gridViewPatientList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.col_selected = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
@@ -95,7 +94,7 @@
             this.txtBingdingItrID = new DevExpress.XtraEditors.PopupContainerEdit();
             this.popupItrIDs = new DevExpress.XtraEditors.PopupContainerControl();
             this.gcApparatus = new DevExpress.XtraGrid.GridControl();
-            this.bindingSourceItr = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceItr = new System.Windows.Forms.BindingSource();
             this.gvApparatus = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.rchkgvApparatus = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
@@ -160,10 +159,10 @@
             this.deEnd = new DevExpress.XtraEditors.DateEdit();
             this.deStart = new DevExpress.XtraEditors.DateEdit();
             this.prpPar = new dcl.client.common.PrintPreview();
-            this.contextMenuLeft = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuLeft = new System.Windows.Forms.ContextMenuStrip();
             this.SaveColumnSortToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.ReportSumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printingSystem1 = new DevExpress.XtraPrinting.PrintingSystem(this.components);
+            this.printingSystem1 = new DevExpress.XtraPrinting.PrintingSystem();
             this.mpState = new DevExpress.XtraEditors.ProgressBarControl();
             this.lblState = new DevExpress.XtraEditors.LabelControl();
             this.xtcReport = new DevExpress.XtraTab.XtraTabControl();
@@ -265,12 +264,12 @@
             this.sysToolBar1.AutoEnableButtons = false;
             this.sysToolBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sysToolBar1.Location = new System.Drawing.Point(2, 2);
-            this.sysToolBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.sysToolBar1.Margin = new System.Windows.Forms.Padding(4);
             this.sysToolBar1.Name = "sysToolBar1";
             this.sysToolBar1.NotWriteLogButtonNameList = ((System.Collections.Generic.List<string>)(resources.GetObject("sysToolBar1.NotWriteLogButtonNameList")));
             this.sysToolBar1.OrderCustomer = true;
             this.sysToolBar1.ShowItemToolTips = false;
-            this.sysToolBar1.Size = new System.Drawing.Size(1217, 81);
+            this.sysToolBar1.Size = new System.Drawing.Size(1064, 62);
             this.sysToolBar1.TabIndex = 0;
             this.sysToolBar1.OnBtnSearchClicked += new System.EventHandler(this.sysToolBar1_OnBtnSearchClicked);
             this.sysToolBar1.OnBtnBCPrintClicked += new System.EventHandler(this.sysToolBar1_OnBtnClassPrintClicked);
@@ -295,9 +294,9 @@
             this.controlReportResultShow1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlReportResultShow1.Font = new System.Drawing.Font("宋体", 10.5F);
             this.controlReportResultShow1.Location = new System.Drawing.Point(2, 2);
-            this.controlReportResultShow1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.controlReportResultShow1.Margin = new System.Windows.Forms.Padding(5);
             this.controlReportResultShow1.Name = "controlReportResultShow1";
-            this.controlReportResultShow1.Size = new System.Drawing.Size(804, 1019);
+            this.controlReportResultShow1.Size = new System.Drawing.Size(704, 722);
             this.controlReportResultShow1.TabIndex = 0;
             // 
             // plBottom
@@ -305,10 +304,9 @@
             this.plBottom.Controls.Add(this.gcPar);
             this.plBottom.Controls.Add(this.plGrid);
             this.plBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.plBottom.Location = new System.Drawing.Point(0, 955);
-            this.plBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plBottom.Location = new System.Drawing.Point(0, 673);
             this.plBottom.Name = "plBottom";
-            this.plBottom.Size = new System.Drawing.Size(394, 105);
+            this.plBottom.Size = new System.Drawing.Size(345, 82);
             this.plBottom.TabIndex = 3;
             this.plBottom.Visible = false;
             // 
@@ -316,15 +314,13 @@
             // 
             this.gcPar.DataSource = this.bsPar;
             this.gcPar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcPar.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcPar.Font = new System.Drawing.Font("Tahoma", 12F);
             this.gcPar.Location = new System.Drawing.Point(0, 0);
             this.gcPar.MainView = this.gridViewPatientList;
-            this.gcPar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gcPar.Name = "gcPar";
             this.gcPar.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gcPar.Size = new System.Drawing.Size(394, 46);
+            this.gcPar.Size = new System.Drawing.Size(345, 36);
             this.gcPar.TabIndex = 1;
             this.gcPar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPatientList});
@@ -641,135 +637,121 @@
             this.plGrid.Controls.Add(this.chkAudited);
             this.plGrid.Controls.Add(this.chkReported);
             this.plGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.plGrid.Location = new System.Drawing.Point(0, 46);
-            this.plGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plGrid.Location = new System.Drawing.Point(0, 36);
             this.plGrid.Name = "plGrid";
-            this.plGrid.Size = new System.Drawing.Size(394, 59);
+            this.plGrid.Size = new System.Drawing.Size(345, 46);
             this.plGrid.TabIndex = 0;
             // 
             // chkPositive
             // 
-            this.chkPositive.Location = new System.Drawing.Point(280, 31);
-            this.chkPositive.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkPositive.Location = new System.Drawing.Point(245, 24);
             this.chkPositive.Name = "chkPositive";
             this.chkPositive.Properties.Caption = "阳性";
-            this.chkPositive.Size = new System.Drawing.Size(54, 22);
+            this.chkPositive.Size = new System.Drawing.Size(47, 19);
             this.chkPositive.TabIndex = 153;
             this.chkPositive.CheckedChanged += new System.EventHandler(this.chkChange_CheckedChanged);
             // 
             // ckReset
             // 
-            this.ckReset.Location = new System.Drawing.Point(200, 55);
-            this.ckReset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ckReset.Location = new System.Drawing.Point(175, 43);
             this.ckReset.Name = "ckReset";
             this.ckReset.Properties.Caption = "返回重置条件";
-            this.ckReset.Size = new System.Drawing.Size(127, 22);
+            this.ckReset.Size = new System.Drawing.Size(111, 19);
             this.ckReset.TabIndex = 152;
             this.ckReset.Visible = false;
             // 
             // lblReport
             // 
-            this.lblReport.Location = new System.Drawing.Point(126, 6);
-            this.lblReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblReport.Location = new System.Drawing.Point(110, 5);
             this.lblReport.Name = "lblReport";
-            this.lblReport.Size = new System.Drawing.Size(5, 18);
+            this.lblReport.Size = new System.Drawing.Size(4, 14);
             this.lblReport.TabIndex = 151;
             this.lblReport.Text = ".";
             // 
             // lblPrint
             // 
-            this.lblPrint.Location = new System.Drawing.Point(265, 6);
-            this.lblPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblPrint.Location = new System.Drawing.Point(232, 5);
             this.lblPrint.Name = "lblPrint";
-            this.lblPrint.Size = new System.Drawing.Size(5, 18);
+            this.lblPrint.Size = new System.Drawing.Size(4, 14);
             this.lblPrint.TabIndex = 150;
             this.lblPrint.Text = ".";
             // 
             // lblAll
             // 
-            this.lblAll.Location = new System.Drawing.Point(43, 6);
-            this.lblAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblAll.Location = new System.Drawing.Point(38, 5);
             this.lblAll.Name = "lblAll";
-            this.lblAll.Size = new System.Drawing.Size(5, 18);
+            this.lblAll.Size = new System.Drawing.Size(4, 14);
             this.lblAll.TabIndex = 149;
             this.lblAll.Text = ".";
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(8, 6);
-            this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl15.Location = new System.Drawing.Point(7, 5);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(30, 18);
+            this.labelControl15.Size = new System.Drawing.Size(24, 14);
             this.labelControl15.TabIndex = 148;
             this.labelControl15.Text = "总数";
             // 
             // labelControl14
             // 
-            this.labelControl14.Location = new System.Drawing.Point(89, 6);
-            this.labelControl14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl14.Location = new System.Drawing.Point(78, 5);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(30, 18);
+            this.labelControl14.Size = new System.Drawing.Size(24, 14);
             this.labelControl14.TabIndex = 147;
             this.labelControl14.Text = "报告";
             // 
             // labelControl13
             // 
-            this.labelControl13.Location = new System.Drawing.Point(229, 6);
-            this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl13.Location = new System.Drawing.Point(200, 5);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(30, 18);
+            this.labelControl13.Size = new System.Drawing.Size(24, 14);
             this.labelControl13.TabIndex = 146;
             this.labelControl13.Text = "打印";
             // 
             // chkTypeAll
             // 
             this.chkTypeAll.EditValue = true;
-            this.chkTypeAll.Location = new System.Drawing.Point(157, 4);
-            this.chkTypeAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkTypeAll.Location = new System.Drawing.Point(137, 3);
             this.chkTypeAll.Name = "chkTypeAll";
             this.chkTypeAll.Properties.Caption = "全部";
-            this.chkTypeAll.Size = new System.Drawing.Size(59, 22);
+            this.chkTypeAll.Size = new System.Drawing.Size(52, 19);
             this.chkTypeAll.TabIndex = 144;
             this.chkTypeAll.Visible = false;
             this.chkTypeAll.CheckedChanged += new System.EventHandler(this.chkChange_CheckedChanged);
             // 
             // chkUnaudited
             // 
-            this.chkUnaudited.Location = new System.Drawing.Point(0, 31);
-            this.chkUnaudited.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkUnaudited.Location = new System.Drawing.Point(0, 24);
             this.chkUnaudited.Name = "chkUnaudited";
             this.chkUnaudited.Properties.Caption = "未审核";
-            this.chkUnaudited.Size = new System.Drawing.Size(64, 22);
+            this.chkUnaudited.Size = new System.Drawing.Size(56, 19);
             this.chkUnaudited.TabIndex = 140;
             this.chkUnaudited.CheckedChanged += new System.EventHandler(this.chkChange_CheckedChanged);
             // 
             // chkPrinted
             // 
-            this.chkPrinted.Location = new System.Drawing.Point(206, 31);
-            this.chkPrinted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkPrinted.Location = new System.Drawing.Point(180, 24);
             this.chkPrinted.Name = "chkPrinted";
             this.chkPrinted.Properties.Caption = "已打印";
-            this.chkPrinted.Size = new System.Drawing.Size(67, 22);
+            this.chkPrinted.Size = new System.Drawing.Size(59, 19);
             this.chkPrinted.TabIndex = 143;
             this.chkPrinted.CheckedChanged += new System.EventHandler(this.chkChange_CheckedChanged);
             // 
             // chkAudited
             // 
-            this.chkAudited.Location = new System.Drawing.Point(67, 31);
-            this.chkAudited.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkAudited.Location = new System.Drawing.Point(59, 24);
             this.chkAudited.Name = "chkAudited";
             this.chkAudited.Properties.Caption = "已审核";
-            this.chkAudited.Size = new System.Drawing.Size(63, 22);
+            this.chkAudited.Size = new System.Drawing.Size(55, 19);
             this.chkAudited.TabIndex = 141;
             this.chkAudited.CheckedChanged += new System.EventHandler(this.chkChange_CheckedChanged);
             // 
             // chkReported
             // 
-            this.chkReported.Location = new System.Drawing.Point(136, 31);
-            this.chkReported.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkReported.Location = new System.Drawing.Point(119, 24);
             this.chkReported.Name = "chkReported";
             this.chkReported.Properties.Caption = "已报告";
-            this.chkReported.Size = new System.Drawing.Size(65, 22);
+            this.chkReported.Size = new System.Drawing.Size(57, 19);
             this.chkReported.TabIndex = 142;
             this.chkReported.CheckedChanged += new System.EventHandler(this.chkChange_CheckedChanged);
             // 
@@ -795,9 +777,8 @@
             this.panPar.Controls.Add(this.plDate);
             this.panPar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panPar.Location = new System.Drawing.Point(0, 0);
-            this.panPar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panPar.Name = "panPar";
-            this.panPar.Size = new System.Drawing.Size(394, 1060);
+            this.panPar.Size = new System.Drawing.Size(345, 755);
             this.panPar.TabIndex = 2;
             this.panPar.Text = "查询条件";
             // 
@@ -805,41 +786,37 @@
             // 
             this.plOutRep.Controls.Add(this.ckdIsShowOutRep);
             this.plOutRep.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plOutRep.Location = new System.Drawing.Point(2, 896);
-            this.plOutRep.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plOutRep.Location = new System.Drawing.Point(2, 698);
             this.plOutRep.Name = "plOutRep";
-            this.plOutRep.Size = new System.Drawing.Size(390, 32);
+            this.plOutRep.Size = new System.Drawing.Size(341, 25);
             this.plOutRep.TabIndex = 178;
             this.plOutRep.Visible = false;
             // 
             // ckdIsShowOutRep
             // 
             this.ckdIsShowOutRep.EditValue = true;
-            this.ckdIsShowOutRep.Location = new System.Drawing.Point(25, 8);
-            this.ckdIsShowOutRep.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ckdIsShowOutRep.Location = new System.Drawing.Point(22, 6);
             this.ckdIsShowOutRep.Name = "ckdIsShowOutRep";
             this.ckdIsShowOutRep.Properties.Caption = "显示外部报告(金域)";
-            this.ckdIsShowOutRep.Size = new System.Drawing.Size(199, 22);
+            this.ckdIsShowOutRep.Size = new System.Drawing.Size(174, 19);
             this.ckdIsShowOutRep.TabIndex = 0;
             // 
             // plInpatientMessage
             // 
             this.plInpatientMessage.Controls.Add(this.labelInpatientMessage);
             this.plInpatientMessage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plInpatientMessage.Location = new System.Drawing.Point(2, 864);
-            this.plInpatientMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plInpatientMessage.Location = new System.Drawing.Point(2, 673);
             this.plInpatientMessage.Name = "plInpatientMessage";
-            this.plInpatientMessage.Size = new System.Drawing.Size(390, 32);
+            this.plInpatientMessage.Size = new System.Drawing.Size(341, 25);
             this.plInpatientMessage.TabIndex = 176;
             this.plInpatientMessage.Visible = false;
             // 
             // labelInpatientMessage
             // 
             this.labelInpatientMessage.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.labelInpatientMessage.Location = new System.Drawing.Point(75, 10);
-            this.labelInpatientMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelInpatientMessage.Location = new System.Drawing.Point(66, 8);
             this.labelInpatientMessage.Name = "labelInpatientMessage";
-            this.labelInpatientMessage.Size = new System.Drawing.Size(210, 18);
+            this.labelInpatientMessage.Size = new System.Drawing.Size(168, 14);
             this.labelInpatientMessage.TabIndex = 97;
             this.labelInpatientMessage.Text = "请在下方列表点击病人查看报告";
             // 
@@ -848,19 +825,17 @@
             this.plexam.Controls.Add(this.labelControl3);
             this.plexam.Controls.Add(this.txtEmpCompany);
             this.plexam.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plexam.Location = new System.Drawing.Point(2, 824);
-            this.plexam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plexam.Location = new System.Drawing.Point(2, 642);
             this.plexam.Name = "plexam";
-            this.plexam.Size = new System.Drawing.Size(390, 40);
+            this.plexam.Size = new System.Drawing.Size(341, 31);
             this.plexam.TabIndex = 177;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(9, 6);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl3.Location = new System.Drawing.Point(8, 5);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(72, 22);
+            this.labelControl3.Size = new System.Drawing.Size(56, 17);
             this.labelControl3.TabIndex = 127;
             this.labelControl3.Text = "体检单位";
             // 
@@ -869,10 +844,9 @@
             this.txtEmpCompany.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmpCompany.EnterMoveNextControl = true;
-            this.txtEmpCompany.Location = new System.Drawing.Point(87, 6);
-            this.txtEmpCompany.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmpCompany.Location = new System.Drawing.Point(76, 5);
             this.txtEmpCompany.Name = "txtEmpCompany";
-            this.txtEmpCompany.Size = new System.Drawing.Size(293, 24);
+            this.txtEmpCompany.Size = new System.Drawing.Size(256, 20);
             this.txtEmpCompany.TabIndex = 126;
             // 
             // plOperer
@@ -882,10 +856,9 @@
             this.plOperer.Controls.Add(this.lbInOper);
             this.plOperer.Controls.Add(this.selectInOper);
             this.plOperer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plOperer.Location = new System.Drawing.Point(2, 746);
-            this.plOperer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plOperer.Location = new System.Drawing.Point(2, 581);
             this.plOperer.Name = "plOperer";
-            this.plOperer.Size = new System.Drawing.Size(390, 78);
+            this.plOperer.Size = new System.Drawing.Size(341, 61);
             this.plOperer.TabIndex = 175;
             // 
             // selectAuditOper
@@ -904,10 +877,9 @@
             this.selectAuditOper.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectAuditOper.KeyUpDownMoveNext = false;
             this.selectAuditOper.LoadDataOnDesignMode = true;
-            this.selectAuditOper.Location = new System.Drawing.Point(87, 42);
-            this.selectAuditOper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectAuditOper.MaximumSize = new System.Drawing.Size(571, 27);
-            this.selectAuditOper.MinimumSize = new System.Drawing.Size(57, 27);
+            this.selectAuditOper.Location = new System.Drawing.Point(76, 33);
+            this.selectAuditOper.MaximumSize = new System.Drawing.Size(500, 21);
+            this.selectAuditOper.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectAuditOper.Name = "selectAuditOper";
             this.selectAuditOper.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.selectAuditOper.PFont = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -916,7 +888,7 @@
             this.selectAuditOper.SelectFilter = null;
             this.selectAuditOper.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.selectAuditOper.SelectOnly = true;
-            this.selectAuditOper.Size = new System.Drawing.Size(207, 27);
+            this.selectAuditOper.Size = new System.Drawing.Size(181, 21);
             this.selectAuditOper.TabIndex = 31;
             this.selectAuditOper.UseExtend = false;
             this.selectAuditOper.valueMember = null;
@@ -924,20 +896,18 @@
             // lbAuditOper
             // 
             this.lbAuditOper.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAuditOper.Location = new System.Drawing.Point(22, 42);
-            this.lbAuditOper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lbAuditOper.Location = new System.Drawing.Point(19, 33);
             this.lbAuditOper.Name = "lbAuditOper";
-            this.lbAuditOper.Size = new System.Drawing.Size(57, 23);
+            this.lbAuditOper.Size = new System.Drawing.Size(45, 18);
             this.lbAuditOper.TabIndex = 29;
             this.lbAuditOper.Text = "一审者";
             // 
             // lbInOper
             // 
             this.lbInOper.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbInOper.Location = new System.Drawing.Point(22, 8);
-            this.lbInOper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lbInOper.Location = new System.Drawing.Point(19, 6);
             this.lbInOper.Name = "lbInOper";
-            this.lbInOper.Size = new System.Drawing.Size(57, 23);
+            this.lbInOper.Size = new System.Drawing.Size(45, 18);
             this.lbInOper.TabIndex = 30;
             this.lbInOper.Text = "录入者";
             // 
@@ -957,10 +927,9 @@
             this.selectInOper.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectInOper.KeyUpDownMoveNext = false;
             this.selectInOper.LoadDataOnDesignMode = true;
-            this.selectInOper.Location = new System.Drawing.Point(87, 6);
-            this.selectInOper.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectInOper.MaximumSize = new System.Drawing.Size(571, 27);
-            this.selectInOper.MinimumSize = new System.Drawing.Size(57, 27);
+            this.selectInOper.Location = new System.Drawing.Point(76, 5);
+            this.selectInOper.MaximumSize = new System.Drawing.Size(500, 21);
+            this.selectInOper.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectInOper.Name = "selectInOper";
             this.selectInOper.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.selectInOper.PFont = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -969,7 +938,7 @@
             this.selectInOper.SelectFilter = null;
             this.selectInOper.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.selectInOper.SelectOnly = true;
-            this.selectInOper.Size = new System.Drawing.Size(207, 27);
+            this.selectInOper.Size = new System.Drawing.Size(181, 21);
             this.selectInOper.TabIndex = 28;
             this.selectInOper.UseExtend = false;
             this.selectInOper.valueMember = null;
@@ -982,10 +951,9 @@
             this.plYQ.Controls.Add(this.chkAll);
             this.plYQ.Controls.Add(this.chkOwn);
             this.plYQ.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plYQ.Location = new System.Drawing.Point(2, 677);
-            this.plYQ.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plYQ.Location = new System.Drawing.Point(2, 527);
             this.plYQ.Name = "plYQ";
-            this.plYQ.Size = new System.Drawing.Size(390, 69);
+            this.plYQ.Size = new System.Drawing.Size(341, 54);
             this.plYQ.TabIndex = 144;
             // 
             // panel1
@@ -996,18 +964,16 @@
             this.panel1.Controls.Add(this.labelControl8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(390, 69);
+            this.panel1.Size = new System.Drawing.Size(341, 54);
             this.panel1.TabIndex = 159;
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(9, 5);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl5.Location = new System.Drawing.Point(8, 4);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(72, 22);
+            this.labelControl5.Size = new System.Drawing.Size(56, 17);
             this.labelControl5.TabIndex = 161;
             this.labelControl5.Text = "申请医生";
             // 
@@ -1030,10 +996,9 @@
             this.lueDoctor.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.lueDoctor.KeyUpDownMoveNext = false;
             this.lueDoctor.LoadDataOnDesignMode = true;
-            this.lueDoctor.Location = new System.Drawing.Point(87, 6);
-            this.lueDoctor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lueDoctor.MaximumSize = new System.Drawing.Size(571, 26);
-            this.lueDoctor.MinimumSize = new System.Drawing.Size(57, 26);
+            this.lueDoctor.Location = new System.Drawing.Point(76, 5);
+            this.lueDoctor.MaximumSize = new System.Drawing.Size(500, 20);
+            this.lueDoctor.MinimumSize = new System.Drawing.Size(50, 20);
             this.lueDoctor.Name = "lueDoctor";
             this.lueDoctor.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.lueDoctor.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1042,7 +1007,7 @@
             this.lueDoctor.SelectFilter = null;
             this.lueDoctor.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.lueDoctor.SelectOnly = false;
-            this.lueDoctor.Size = new System.Drawing.Size(293, 26);
+            this.lueDoctor.Size = new System.Drawing.Size(256, 20);
             this.lueDoctor.TabIndex = 160;
             this.lueDoctor.UseExtend = false;
             this.lueDoctor.valueMember = null;
@@ -1066,10 +1031,9 @@
             this.lueItem.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.lueItem.KeyUpDownMoveNext = false;
             this.lueItem.LoadDataOnDesignMode = true;
-            this.lueItem.Location = new System.Drawing.Point(87, 39);
-            this.lueItem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lueItem.MaximumSize = new System.Drawing.Size(571, 26);
-            this.lueItem.MinimumSize = new System.Drawing.Size(57, 26);
+            this.lueItem.Location = new System.Drawing.Point(76, 30);
+            this.lueItem.MaximumSize = new System.Drawing.Size(500, 20);
+            this.lueItem.MinimumSize = new System.Drawing.Size(50, 20);
             this.lueItem.Name = "lueItem";
             this.lueItem.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.lueItem.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1078,7 +1042,7 @@
             this.lueItem.SelectFilter = null;
             this.lueItem.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.lueItem.SelectOnly = false;
-            this.lueItem.Size = new System.Drawing.Size(293, 26);
+            this.lueItem.Size = new System.Drawing.Size(256, 20);
             this.lueItem.TabIndex = 159;
             this.lueItem.UseExtend = false;
             this.lueItem.valueMember = null;
@@ -1086,23 +1050,21 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(9, 39);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl8.Location = new System.Drawing.Point(8, 30);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(72, 22);
+            this.labelControl8.Size = new System.Drawing.Size(56, 17);
             this.labelControl8.TabIndex = 162;
             this.labelControl8.Text = "组合项目";
             // 
             // txtBingdingItrID
             // 
             this.txtBingdingItrID.EditValue = "未设置";
-            this.txtBingdingItrID.Location = new System.Drawing.Point(87, 172);
-            this.txtBingdingItrID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBingdingItrID.Location = new System.Drawing.Point(76, 134);
             this.txtBingdingItrID.Name = "txtBingdingItrID";
             this.txtBingdingItrID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtBingdingItrID.Properties.PopupControl = this.popupItrIDs;
-            this.txtBingdingItrID.Size = new System.Drawing.Size(184, 24);
+            this.txtBingdingItrID.Size = new System.Drawing.Size(161, 20);
             this.txtBingdingItrID.TabIndex = 164;
             this.txtBingdingItrID.Visible = false;
             this.txtBingdingItrID.Closed += new DevExpress.XtraEditors.Controls.ClosedEventHandler(this.txtBingdingItrID_Closed);
@@ -1218,23 +1180,21 @@
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(31, 174);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl9.Location = new System.Drawing.Point(27, 135);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(60, 22);
+            this.labelControl9.Size = new System.Drawing.Size(44, 17);
             this.labelControl9.TabIndex = 163;
             this.labelControl9.Text = "仪    器";
             this.labelControl9.Visible = false;
             // 
             // chkAll
             // 
-            this.chkAll.Location = new System.Drawing.Point(198, 189);
-            this.chkAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkAll.Location = new System.Drawing.Point(173, 147);
             this.chkAll.Name = "chkAll";
             this.chkAll.Properties.Caption = "全院";
             this.chkAll.Properties.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Radio;
             this.chkAll.Properties.RadioGroupIndex = 0;
-            this.chkAll.Size = new System.Drawing.Size(65, 22);
+            this.chkAll.Size = new System.Drawing.Size(57, 19);
             this.chkAll.TabIndex = 114;
             this.chkAll.TabStop = false;
             this.chkAll.Visible = false;
@@ -1242,13 +1202,12 @@
             // chkOwn
             // 
             this.chkOwn.EditValue = true;
-            this.chkOwn.Location = new System.Drawing.Point(105, 189);
-            this.chkOwn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkOwn.Location = new System.Drawing.Point(92, 147);
             this.chkOwn.Name = "chkOwn";
             this.chkOwn.Properties.Caption = "本院";
             this.chkOwn.Properties.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Radio;
             this.chkOwn.Properties.RadioGroupIndex = 0;
-            this.chkOwn.Size = new System.Drawing.Size(66, 22);
+            this.chkOwn.Size = new System.Drawing.Size(58, 19);
             this.chkOwn.TabIndex = 113;
             this.chkOwn.Visible = false;
             // 
@@ -1257,10 +1216,9 @@
             this.panelPatDiag.Controls.Add(this.txtPatDiag);
             this.panelPatDiag.Controls.Add(this.labelControl30);
             this.panelPatDiag.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPatDiag.Location = new System.Drawing.Point(2, 638);
-            this.panelPatDiag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelPatDiag.Location = new System.Drawing.Point(2, 497);
             this.panelPatDiag.Name = "panelPatDiag";
-            this.panelPatDiag.Size = new System.Drawing.Size(390, 39);
+            this.panelPatDiag.Size = new System.Drawing.Size(341, 30);
             this.panelPatDiag.TabIndex = 174;
             this.panelPatDiag.Visible = false;
             // 
@@ -1269,19 +1227,17 @@
             this.txtPatDiag.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPatDiag.EnterMoveNextControl = true;
-            this.txtPatDiag.Location = new System.Drawing.Point(87, 6);
-            this.txtPatDiag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPatDiag.Location = new System.Drawing.Point(76, 5);
             this.txtPatDiag.Name = "txtPatDiag";
-            this.txtPatDiag.Size = new System.Drawing.Size(293, 24);
+            this.txtPatDiag.Size = new System.Drawing.Size(256, 20);
             this.txtPatDiag.TabIndex = 19;
             // 
             // labelControl30
             // 
             this.labelControl30.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl30.Location = new System.Drawing.Point(41, 6);
-            this.labelControl30.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl30.Location = new System.Drawing.Point(36, 5);
             this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(36, 22);
+            this.labelControl30.Size = new System.Drawing.Size(28, 17);
             this.labelControl30.TabIndex = 124;
             this.labelControl30.Text = "诊断";
             // 
@@ -1290,10 +1246,9 @@
             this.plBed.Controls.Add(this.txtPatBed);
             this.plBed.Controls.Add(this.blPatBed);
             this.plBed.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plBed.Location = new System.Drawing.Point(2, 605);
-            this.plBed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plBed.Location = new System.Drawing.Point(2, 471);
             this.plBed.Name = "plBed";
-            this.plBed.Size = new System.Drawing.Size(390, 33);
+            this.plBed.Size = new System.Drawing.Size(341, 26);
             this.plBed.TabIndex = 173;
             this.plBed.Visible = false;
             // 
@@ -1302,19 +1257,17 @@
             this.txtPatBed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPatBed.EnterMoveNextControl = true;
-            this.txtPatBed.Location = new System.Drawing.Point(87, 4);
-            this.txtPatBed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPatBed.Location = new System.Drawing.Point(76, 3);
             this.txtPatBed.Name = "txtPatBed";
-            this.txtPatBed.Size = new System.Drawing.Size(293, 24);
+            this.txtPatBed.Size = new System.Drawing.Size(256, 20);
             this.txtPatBed.TabIndex = 19;
             // 
             // blPatBed
             // 
             this.blPatBed.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blPatBed.Location = new System.Drawing.Point(41, 3);
-            this.blPatBed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.blPatBed.Location = new System.Drawing.Point(36, 2);
             this.blPatBed.Name = "blPatBed";
-            this.blPatBed.Size = new System.Drawing.Size(36, 22);
+            this.blPatBed.Size = new System.Drawing.Size(28, 17);
             this.blPatBed.TabIndex = 124;
             this.blPatBed.Text = "床号";
             // 
@@ -1323,10 +1276,9 @@
             this.plTel.Controls.Add(this.txtPatTel);
             this.plTel.Controls.Add(this.blPatTel);
             this.plTel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plTel.Location = new System.Drawing.Point(2, 573);
-            this.plTel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plTel.Location = new System.Drawing.Point(2, 446);
             this.plTel.Name = "plTel";
-            this.plTel.Size = new System.Drawing.Size(390, 32);
+            this.plTel.Size = new System.Drawing.Size(341, 25);
             this.plTel.TabIndex = 170;
             this.plTel.Visible = false;
             // 
@@ -1335,19 +1287,17 @@
             this.txtPatTel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPatTel.EnterMoveNextControl = true;
-            this.txtPatTel.Location = new System.Drawing.Point(87, 4);
-            this.txtPatTel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPatTel.Location = new System.Drawing.Point(76, 3);
             this.txtPatTel.Name = "txtPatTel";
-            this.txtPatTel.Size = new System.Drawing.Size(293, 24);
+            this.txtPatTel.Size = new System.Drawing.Size(256, 20);
             this.txtPatTel.TabIndex = 19;
             // 
             // blPatTel
             // 
             this.blPatTel.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blPatTel.Location = new System.Drawing.Point(25, 4);
-            this.blPatTel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.blPatTel.Location = new System.Drawing.Point(22, 3);
             this.blPatTel.Name = "blPatTel";
-            this.blPatTel.Size = new System.Drawing.Size(54, 22);
+            this.blPatTel.Size = new System.Drawing.Size(42, 17);
             this.blPatTel.TabIndex = 124;
             this.blPatTel.Text = "电话号";
             // 
@@ -1356,10 +1306,9 @@
             this.plBarCode.Controls.Add(this.txtBarcodeId);
             this.plBarCode.Controls.Add(this.labelControl16);
             this.plBarCode.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plBarCode.Location = new System.Drawing.Point(2, 541);
-            this.plBarCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plBarCode.Location = new System.Drawing.Point(2, 421);
             this.plBarCode.Name = "plBarCode";
-            this.plBarCode.Size = new System.Drawing.Size(390, 32);
+            this.plBarCode.Size = new System.Drawing.Size(341, 25);
             this.plBarCode.TabIndex = 164;
             // 
             // txtBarcodeId
@@ -1367,19 +1316,17 @@
             this.txtBarcodeId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBarcodeId.EnterMoveNextControl = true;
-            this.txtBarcodeId.Location = new System.Drawing.Point(87, 4);
-            this.txtBarcodeId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBarcodeId.Location = new System.Drawing.Point(76, 3);
             this.txtBarcodeId.Name = "txtBarcodeId";
-            this.txtBarcodeId.Size = new System.Drawing.Size(293, 24);
+            this.txtBarcodeId.Size = new System.Drawing.Size(256, 20);
             this.txtBarcodeId.TabIndex = 19;
             // 
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Location = new System.Drawing.Point(25, 4);
-            this.labelControl16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl16.Location = new System.Drawing.Point(22, 3);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(54, 22);
+            this.labelControl16.Size = new System.Drawing.Size(42, 17);
             this.labelControl16.TabIndex = 124;
             this.labelControl16.Text = "条码号";
             // 
@@ -1388,19 +1335,17 @@
             this.plOrigin.Controls.Add(this.labelControl18);
             this.plOrigin.Controls.Add(this.lue_ori);
             this.plOrigin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plOrigin.Location = new System.Drawing.Point(2, 509);
-            this.plOrigin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plOrigin.Location = new System.Drawing.Point(2, 396);
             this.plOrigin.Name = "plOrigin";
-            this.plOrigin.Size = new System.Drawing.Size(390, 32);
+            this.plOrigin.Size = new System.Drawing.Size(341, 25);
             this.plOrigin.TabIndex = 163;
             // 
             // labelControl18
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl18.Location = new System.Drawing.Point(9, 6);
-            this.labelControl18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl18.Location = new System.Drawing.Point(8, 5);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(72, 22);
+            this.labelControl18.Size = new System.Drawing.Size(56, 17);
             this.labelControl18.TabIndex = 126;
             this.labelControl18.Text = "来源类型";
             // 
@@ -1423,10 +1368,9 @@
             this.lue_ori.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.lue_ori.KeyUpDownMoveNext = false;
             this.lue_ori.LoadDataOnDesignMode = true;
-            this.lue_ori.Location = new System.Drawing.Point(87, 4);
-            this.lue_ori.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lue_ori.MaximumSize = new System.Drawing.Size(571, 26);
-            this.lue_ori.MinimumSize = new System.Drawing.Size(57, 26);
+            this.lue_ori.Location = new System.Drawing.Point(76, 3);
+            this.lue_ori.MaximumSize = new System.Drawing.Size(500, 20);
+            this.lue_ori.MinimumSize = new System.Drawing.Size(50, 20);
             this.lue_ori.Name = "lue_ori";
             this.lue_ori.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.lue_ori.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1435,7 +1379,7 @@
             this.lue_ori.SelectFilter = null;
             this.lue_ori.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.lue_ori.SelectOnly = true;
-            this.lue_ori.Size = new System.Drawing.Size(293, 26);
+            this.lue_ori.Size = new System.Drawing.Size(256, 20);
             this.lue_ori.TabIndex = 18;
             this.lue_ori.UseExtend = false;
             this.lue_ori.valueMember = null;
@@ -1449,10 +1393,9 @@
             this.plCtype.Controls.Add(this.lue_Wtype);
             this.plCtype.Controls.Add(this.labelControl10);
             this.plCtype.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plCtype.Location = new System.Drawing.Point(2, 410);
-            this.plCtype.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plCtype.Location = new System.Drawing.Point(2, 319);
             this.plCtype.Name = "plCtype";
-            this.plCtype.Size = new System.Drawing.Size(390, 99);
+            this.plCtype.Size = new System.Drawing.Size(341, 77);
             this.plCtype.TabIndex = 161;
             // 
             // selectDict_Instrmt2
@@ -1474,10 +1417,9 @@
             this.selectDict_Instrmt2.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDict_Instrmt2.KeyUpDownMoveNext = false;
             this.selectDict_Instrmt2.LoadDataOnDesignMode = true;
-            this.selectDict_Instrmt2.Location = new System.Drawing.Point(87, 67);
-            this.selectDict_Instrmt2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectDict_Instrmt2.MaximumSize = new System.Drawing.Size(571, 26);
-            this.selectDict_Instrmt2.MinimumSize = new System.Drawing.Size(57, 26);
+            this.selectDict_Instrmt2.Location = new System.Drawing.Point(76, 52);
+            this.selectDict_Instrmt2.MaximumSize = new System.Drawing.Size(500, 20);
+            this.selectDict_Instrmt2.MinimumSize = new System.Drawing.Size(50, 20);
             this.selectDict_Instrmt2.Name = "selectDict_Instrmt2";
             this.selectDict_Instrmt2.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.selectDict_Instrmt2.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1487,7 +1429,7 @@
             this.selectDict_Instrmt2.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.selectDict_Instrmt2.SelectOnly = true;
             this.selectDict_Instrmt2.ShowAllInstrmt = false;
-            this.selectDict_Instrmt2.Size = new System.Drawing.Size(293, 26);
+            this.selectDict_Instrmt2.Size = new System.Drawing.Size(256, 20);
             this.selectDict_Instrmt2.TabIndex = 168;
             this.selectDict_Instrmt2.UseExtend = false;
             this.selectDict_Instrmt2.valueMember = null;
@@ -1495,10 +1437,9 @@
             // labelControl19
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Location = new System.Drawing.Point(25, 6);
-            this.labelControl19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl19.Location = new System.Drawing.Point(22, 5);
             this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(54, 22);
+            this.labelControl19.Size = new System.Drawing.Size(42, 17);
             this.labelControl19.TabIndex = 114;
             this.labelControl19.Text = "实验组";
             // 
@@ -1521,10 +1462,9 @@
             this.selectDict_Instrmt1.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDict_Instrmt1.KeyUpDownMoveNext = false;
             this.selectDict_Instrmt1.LoadDataOnDesignMode = true;
-            this.selectDict_Instrmt1.Location = new System.Drawing.Point(87, 37);
-            this.selectDict_Instrmt1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectDict_Instrmt1.MaximumSize = new System.Drawing.Size(571, 26);
-            this.selectDict_Instrmt1.MinimumSize = new System.Drawing.Size(57, 26);
+            this.selectDict_Instrmt1.Location = new System.Drawing.Point(76, 29);
+            this.selectDict_Instrmt1.MaximumSize = new System.Drawing.Size(500, 20);
+            this.selectDict_Instrmt1.MinimumSize = new System.Drawing.Size(50, 20);
             this.selectDict_Instrmt1.Name = "selectDict_Instrmt1";
             this.selectDict_Instrmt1.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.selectDict_Instrmt1.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1534,7 +1474,7 @@
             this.selectDict_Instrmt1.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.selectDict_Instrmt1.SelectOnly = true;
             this.selectDict_Instrmt1.ShowAllInstrmt = false;
-            this.selectDict_Instrmt1.Size = new System.Drawing.Size(293, 26);
+            this.selectDict_Instrmt1.Size = new System.Drawing.Size(256, 20);
             this.selectDict_Instrmt1.TabIndex = 167;
             this.selectDict_Instrmt1.UseExtend = false;
             this.selectDict_Instrmt1.valueMember = null;
@@ -1542,10 +1482,9 @@
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(32, 67);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl11.Location = new System.Drawing.Point(28, 52);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(46, 22);
+            this.labelControl11.Size = new System.Drawing.Size(36, 17);
             this.labelControl11.TabIndex = 166;
             this.labelControl11.Text = "仪器2";
             // 
@@ -1568,10 +1507,9 @@
             this.lue_Wtype.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.lue_Wtype.KeyUpDownMoveNext = false;
             this.lue_Wtype.LoadDataOnDesignMode = true;
-            this.lue_Wtype.Location = new System.Drawing.Point(87, 6);
-            this.lue_Wtype.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lue_Wtype.MaximumSize = new System.Drawing.Size(571, 26);
-            this.lue_Wtype.MinimumSize = new System.Drawing.Size(57, 26);
+            this.lue_Wtype.Location = new System.Drawing.Point(76, 5);
+            this.lue_Wtype.MaximumSize = new System.Drawing.Size(500, 20);
+            this.lue_Wtype.MinimumSize = new System.Drawing.Size(50, 20);
             this.lue_Wtype.Name = "lue_Wtype";
             this.lue_Wtype.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.lue_Wtype.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1580,7 +1518,7 @@
             this.lue_Wtype.SelectFilter = null;
             this.lue_Wtype.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.lue_Wtype.SelectOnly = true;
-            this.lue_Wtype.Size = new System.Drawing.Size(293, 26);
+            this.lue_Wtype.Size = new System.Drawing.Size(256, 20);
             this.lue_Wtype.TabIndex = 17;
             this.lue_Wtype.UseExtend = false;
             this.lue_Wtype.valueMember = null;
@@ -1589,10 +1527,9 @@
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(32, 37);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl10.Location = new System.Drawing.Point(28, 29);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(46, 22);
+            this.labelControl10.Size = new System.Drawing.Size(36, 17);
             this.labelControl10.TabIndex = 165;
             this.labelControl10.Text = "仪器1";
             // 
@@ -1601,19 +1538,17 @@
             this.plName.Controls.Add(this.labelControl4);
             this.plName.Controls.Add(this.txtName);
             this.plName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plName.Location = new System.Drawing.Point(2, 378);
-            this.plName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plName.Location = new System.Drawing.Point(2, 294);
             this.plName.Name = "plName";
-            this.plName.Size = new System.Drawing.Size(390, 32);
+            this.plName.Size = new System.Drawing.Size(341, 25);
             this.plName.TabIndex = 157;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(41, 4);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl4.Location = new System.Drawing.Point(36, 3);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(36, 22);
+            this.labelControl4.Size = new System.Drawing.Size(28, 17);
             this.labelControl4.TabIndex = 97;
             this.labelControl4.Text = "姓名";
             // 
@@ -1621,10 +1556,9 @@
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(87, 4);
-            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtName.Location = new System.Drawing.Point(76, 3);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(293, 24);
+            this.txtName.Size = new System.Drawing.Size(256, 20);
             this.txtName.TabIndex = 12;
             this.txtName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtName_KeyDown);
             // 
@@ -1633,19 +1567,17 @@
             this.plId.Controls.Add(this.labelPatID);
             this.plId.Controls.Add(this.txt_in_no);
             this.plId.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plId.Location = new System.Drawing.Point(2, 346);
-            this.plId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plId.Location = new System.Drawing.Point(2, 269);
             this.plId.Name = "plId";
-            this.plId.Size = new System.Drawing.Size(390, 32);
+            this.plId.Size = new System.Drawing.Size(341, 25);
             this.plId.TabIndex = 156;
             // 
             // labelPatID
             // 
             this.labelPatID.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPatID.Location = new System.Drawing.Point(25, 4);
-            this.labelPatID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelPatID.Location = new System.Drawing.Point(22, 3);
             this.labelPatID.Name = "labelPatID";
-            this.labelPatID.Size = new System.Drawing.Size(55, 22);
+            this.labelPatID.Size = new System.Drawing.Size(42, 17);
             this.labelPatID.TabIndex = 106;
             this.labelPatID.Text = "病人ID";
             // 
@@ -1653,10 +1585,9 @@
             // 
             this.txt_in_no.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_in_no.Location = new System.Drawing.Point(87, 4);
-            this.txt_in_no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_in_no.Location = new System.Drawing.Point(76, 3);
             this.txt_in_no.Name = "txt_in_no";
-            this.txt_in_no.Size = new System.Drawing.Size(293, 24);
+            this.txt_in_no.Size = new System.Drawing.Size(256, 20);
             this.txt_in_no.TabIndex = 11;
             this.txt_in_no.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_in_no_KeyDown);
             // 
@@ -1665,19 +1596,17 @@
             this.plIdType.Controls.Add(this.labelControl17);
             this.plIdType.Controls.Add(this.lue_no_id);
             this.plIdType.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plIdType.Location = new System.Drawing.Point(2, 307);
-            this.plIdType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plIdType.Location = new System.Drawing.Point(2, 239);
             this.plIdType.Name = "plIdType";
-            this.plIdType.Size = new System.Drawing.Size(390, 39);
+            this.plIdType.Size = new System.Drawing.Size(341, 30);
             this.plIdType.TabIndex = 155;
             // 
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Location = new System.Drawing.Point(25, 6);
-            this.labelControl17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl17.Location = new System.Drawing.Point(22, 5);
             this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(55, 22);
+            this.labelControl17.Size = new System.Drawing.Size(42, 17);
             this.labelControl17.TabIndex = 112;
             this.labelControl17.Text = "ID类型";
             // 
@@ -1700,10 +1629,9 @@
             this.lue_no_id.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.lue_no_id.KeyUpDownMoveNext = false;
             this.lue_no_id.LoadDataOnDesignMode = true;
-            this.lue_no_id.Location = new System.Drawing.Point(87, 6);
-            this.lue_no_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lue_no_id.MaximumSize = new System.Drawing.Size(571, 26);
-            this.lue_no_id.MinimumSize = new System.Drawing.Size(57, 26);
+            this.lue_no_id.Location = new System.Drawing.Point(76, 5);
+            this.lue_no_id.MaximumSize = new System.Drawing.Size(500, 20);
+            this.lue_no_id.MinimumSize = new System.Drawing.Size(50, 20);
             this.lue_no_id.Name = "lue_no_id";
             this.lue_no_id.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.lue_no_id.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1712,7 +1640,7 @@
             this.lue_no_id.SelectFilter = null;
             this.lue_no_id.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.lue_no_id.SelectOnly = true;
-            this.lue_no_id.Size = new System.Drawing.Size(293, 26);
+            this.lue_no_id.Size = new System.Drawing.Size(256, 20);
             this.lue_no_id.TabIndex = 13;
             this.lue_no_id.UseExtend = false;
             this.lue_no_id.valueMember = null;
@@ -1722,19 +1650,17 @@
             this.plDepart.Controls.Add(this.labelControl6);
             this.plDepart.Controls.Add(this.lueDepId);
             this.plDepart.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plDepart.Location = new System.Drawing.Point(2, 275);
-            this.plDepart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plDepart.Location = new System.Drawing.Point(2, 214);
             this.plDepart.Name = "plDepart";
-            this.plDepart.Size = new System.Drawing.Size(390, 32);
+            this.plDepart.Size = new System.Drawing.Size(341, 25);
             this.plDepart.TabIndex = 154;
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(41, 4);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl6.Location = new System.Drawing.Point(36, 3);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(36, 22);
+            this.labelControl6.Size = new System.Drawing.Size(28, 17);
             this.labelControl6.TabIndex = 100;
             this.labelControl6.Text = "科室";
             // 
@@ -1757,10 +1683,9 @@
             this.lueDepId.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.lueDepId.KeyUpDownMoveNext = false;
             this.lueDepId.LoadDataOnDesignMode = true;
-            this.lueDepId.Location = new System.Drawing.Point(87, 5);
-            this.lueDepId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lueDepId.MaximumSize = new System.Drawing.Size(571, 26);
-            this.lueDepId.MinimumSize = new System.Drawing.Size(57, 26);
+            this.lueDepId.Location = new System.Drawing.Point(76, 4);
+            this.lueDepId.MaximumSize = new System.Drawing.Size(500, 20);
+            this.lueDepId.MinimumSize = new System.Drawing.Size(50, 20);
             this.lueDepId.Name = "lueDepId";
             this.lueDepId.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.lueDepId.PFont = new System.Drawing.Font("Tahoma", 9F);
@@ -1769,7 +1694,7 @@
             this.lueDepId.SelectFilter = null;
             this.lueDepId.SelectMode = dcl.client.control.HopePopSelectMode.SingleClick;
             this.lueDepId.SelectOnly = true;
-            this.lueDepId.Size = new System.Drawing.Size(293, 26);
+            this.lueDepId.Size = new System.Drawing.Size(256, 20);
             this.lueDepId.TabIndex = 10;
             this.lueDepId.UseExtend = false;
             this.lueDepId.valueMember = null;
@@ -1781,29 +1706,26 @@
             this.plOrder.Controls.Add(this.txtXHEnd);
             this.plOrder.Controls.Add(this.txtXHStart);
             this.plOrder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plOrder.Location = new System.Drawing.Point(2, 207);
-            this.plOrder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plOrder.Location = new System.Drawing.Point(2, 161);
             this.plOrder.Name = "plOrder";
-            this.plOrder.Size = new System.Drawing.Size(390, 68);
+            this.plOrder.Size = new System.Drawing.Size(341, 53);
             this.plOrder.TabIndex = 150;
             // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(25, 6);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl7.Location = new System.Drawing.Point(22, 5);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(54, 22);
+            this.labelControl7.Size = new System.Drawing.Size(42, 17);
             this.labelControl7.TabIndex = 144;
             this.labelControl7.Text = "流水号";
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(57, 39);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl2.Location = new System.Drawing.Point(50, 30);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(18, 22);
+            this.labelControl2.Size = new System.Drawing.Size(14, 17);
             this.labelControl2.TabIndex = 145;
             this.labelControl2.Text = "至";
             // 
@@ -1813,13 +1735,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtXHEnd.EditValue = "";
             this.txtXHEnd.EnterMoveNextControl = true;
-            this.txtXHEnd.Location = new System.Drawing.Point(87, 37);
-            this.txtXHEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtXHEnd.Location = new System.Drawing.Point(76, 29);
             this.txtXHEnd.Name = "txtXHEnd";
             this.txtXHEnd.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.txtXHEnd.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?";
             this.txtXHEnd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtXHEnd.Size = new System.Drawing.Size(293, 24);
+            this.txtXHEnd.Size = new System.Drawing.Size(256, 20);
             this.txtXHEnd.TabIndex = 5;
             // 
             // txtXHStart
@@ -1828,12 +1749,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtXHStart.EditValue = "";
             this.txtXHStart.EnterMoveNextControl = true;
-            this.txtXHStart.Location = new System.Drawing.Point(87, 6);
-            this.txtXHStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtXHStart.Location = new System.Drawing.Point(76, 5);
             this.txtXHStart.Name = "txtXHStart";
             this.txtXHStart.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?";
             this.txtXHStart.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtXHStart.Size = new System.Drawing.Size(293, 24);
+            this.txtXHStart.Size = new System.Drawing.Size(256, 20);
             this.txtXHStart.TabIndex = 4;
             // 
             // plSid
@@ -1843,29 +1763,26 @@
             this.plSid.Controls.Add(this.txtYBStart);
             this.plSid.Controls.Add(this.txtYBEnd);
             this.plSid.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plSid.Location = new System.Drawing.Point(2, 139);
-            this.plSid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.plSid.Location = new System.Drawing.Point(2, 108);
             this.plSid.Name = "plSid";
-            this.plSid.Size = new System.Drawing.Size(390, 68);
+            this.plSid.Size = new System.Drawing.Size(341, 53);
             this.plSid.TabIndex = 149;
             // 
             // labelControl24
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl24.Location = new System.Drawing.Point(25, 6);
-            this.labelControl24.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl24.Location = new System.Drawing.Point(22, 5);
             this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(54, 22);
+            this.labelControl24.Size = new System.Drawing.Size(42, 17);
             this.labelControl24.TabIndex = 135;
             this.labelControl24.Text = "标本号";
             // 
             // labelControl21
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl21.Location = new System.Drawing.Point(57, 37);
-            this.labelControl21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl21.Location = new System.Drawing.Point(50, 29);
             this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(18, 22);
+            this.labelControl21.Size = new System.Drawing.Size(14, 17);
             this.labelControl21.TabIndex = 138;
             this.labelControl21.Text = "至";
             // 
@@ -1875,12 +1792,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtYBStart.EditValue = "";
             this.txtYBStart.EnterMoveNextControl = true;
-            this.txtYBStart.Location = new System.Drawing.Point(87, 6);
-            this.txtYBStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtYBStart.Location = new System.Drawing.Point(76, 5);
             this.txtYBStart.Name = "txtYBStart";
             this.txtYBStart.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?";
             this.txtYBStart.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtYBStart.Size = new System.Drawing.Size(293, 24);
+            this.txtYBStart.Size = new System.Drawing.Size(256, 20);
             this.txtYBStart.TabIndex = 2;
             // 
             // txtYBEnd
@@ -1889,13 +1805,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtYBEnd.EditValue = "";
             this.txtYBEnd.EnterMoveNextControl = true;
-            this.txtYBEnd.Location = new System.Drawing.Point(87, 37);
-            this.txtYBEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtYBEnd.Location = new System.Drawing.Point(76, 29);
             this.txtYBEnd.Name = "txtYBEnd";
             this.txtYBEnd.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.txtYBEnd.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?";
             this.txtYBEnd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtYBEnd.Size = new System.Drawing.Size(293, 24);
+            this.txtYBEnd.Size = new System.Drawing.Size(256, 20);
             this.txtYBEnd.TabIndex = 3;
             // 
             // plDate
@@ -1907,17 +1822,16 @@
             this.plDate.Controls.Add(this.deEnd);
             this.plDate.Controls.Add(this.deStart);
             this.plDate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.plDate.Location = new System.Drawing.Point(2, 27);
+            this.plDate.Location = new System.Drawing.Point(2, 21);
             this.plDate.Margin = new System.Windows.Forms.Padding(1);
             this.plDate.Name = "plDate";
-            this.plDate.Size = new System.Drawing.Size(390, 112);
+            this.plDate.Size = new System.Drawing.Size(341, 87);
             this.plDate.TabIndex = 140;
             // 
             // cbDateType
             // 
             this.cbDateType.EditValue = "检验日期";
-            this.cbDateType.Location = new System.Drawing.Point(87, 9);
-            this.cbDateType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbDateType.Location = new System.Drawing.Point(76, 7);
             this.cbDateType.Name = "cbDateType";
             this.cbDateType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1926,36 +1840,33 @@
             "签收日期",
             "报告日期"});
             this.cbDateType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbDateType.Size = new System.Drawing.Size(293, 24);
+            this.cbDateType.Size = new System.Drawing.Size(256, 20);
             this.cbDateType.TabIndex = 149;
             // 
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Location = new System.Drawing.Point(9, 13);
-            this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl12.Location = new System.Drawing.Point(8, 10);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(72, 22);
+            this.labelControl12.Size = new System.Drawing.Size(56, 17);
             this.labelControl12.TabIndex = 148;
             this.labelControl12.Text = "日期类型";
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(9, 80);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl1.Location = new System.Drawing.Point(8, 62);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(72, 22);
+            this.labelControl1.Size = new System.Drawing.Size(56, 17);
             this.labelControl1.TabIndex = 146;
             this.labelControl1.Text = "结束日期";
             // 
             // labelControl25
             // 
             this.labelControl25.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl25.Location = new System.Drawing.Point(9, 46);
-            this.labelControl25.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl25.Location = new System.Drawing.Point(8, 36);
             this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(72, 22);
+            this.labelControl25.Size = new System.Drawing.Size(56, 17);
             this.labelControl25.TabIndex = 134;
             this.labelControl25.Text = "开始日期";
             // 
@@ -1965,8 +1876,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deEnd.EditValue = null;
             this.deEnd.EnterMoveNextControl = true;
-            this.deEnd.Location = new System.Drawing.Point(87, 76);
-            this.deEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.deEnd.Location = new System.Drawing.Point(76, 59);
             this.deEnd.Name = "deEnd";
             this.deEnd.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1977,7 +1887,7 @@
             this.deEnd.Properties.EditFormat.FormatString = "yyyy\'-\'MM\'-\'dd\' \'HH\'-\'mm\'-\'ss";
             this.deEnd.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.deEnd.Properties.Mask.EditMask = "yyyy\'-\'MM\'-\'dd\' \'HH\'-\'mm\'-\'ss";
-            this.deEnd.Size = new System.Drawing.Size(293, 24);
+            this.deEnd.Size = new System.Drawing.Size(256, 20);
             this.deEnd.TabIndex = 1;
             // 
             // deStart
@@ -1986,8 +1896,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deStart.EditValue = null;
             this.deStart.EnterMoveNextControl = true;
-            this.deStart.Location = new System.Drawing.Point(87, 42);
-            this.deStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.deStart.Location = new System.Drawing.Point(76, 33);
             this.deStart.Name = "deStart";
             this.deStart.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1998,16 +1907,16 @@
             this.deStart.Properties.EditFormat.FormatString = "yyyy\'-\'MM\'-\'dd\' \'HH\'-\'mm\'-\'ss";
             this.deStart.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.deStart.Properties.Mask.EditMask = "yyyy\'-\'MM\'-\'dd\' \'HH\'-\'mm\'-\'ss";
-            this.deStart.Size = new System.Drawing.Size(293, 24);
+            this.deStart.Size = new System.Drawing.Size(256, 20);
             this.deStart.TabIndex = 0;
             // 
             // prpPar
             // 
             this.prpPar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.prpPar.Location = new System.Drawing.Point(0, 0);
-            this.prpPar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.prpPar.Margin = new System.Windows.Forms.Padding(4);
             this.prpPar.Name = "prpPar";
-            this.prpPar.Size = new System.Drawing.Size(810, 1024);
+            this.prpPar.Size = new System.Drawing.Size(708, 726);
             this.prpPar.TabIndex = 2;
             this.prpPar.Visible = false;
             // 
@@ -2018,19 +1927,19 @@
             this.SaveColumnSortToolStrip,
             this.ReportSumToolStripMenuItem});
             this.contextMenuLeft.Name = "contextMenuStrip1";
-            this.contextMenuLeft.Size = new System.Drawing.Size(154, 52);
+            this.contextMenuLeft.Size = new System.Drawing.Size(137, 48);
             // 
             // SaveColumnSortToolStrip
             // 
             this.SaveColumnSortToolStrip.Name = "SaveColumnSortToolStrip";
-            this.SaveColumnSortToolStrip.Size = new System.Drawing.Size(153, 24);
+            this.SaveColumnSortToolStrip.Size = new System.Drawing.Size(136, 22);
             this.SaveColumnSortToolStrip.Text = "保存列顺序";
             this.SaveColumnSortToolStrip.Click += new System.EventHandler(this.SaveColumnSortToolStrip_Click);
             // 
             // ReportSumToolStripMenuItem
             // 
             this.ReportSumToolStripMenuItem.Name = "ReportSumToolStripMenuItem";
-            this.ReportSumToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.ReportSumToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.ReportSumToolStripMenuItem.Text = "报告解读";
             this.ReportSumToolStripMenuItem.Click += new System.EventHandler(this.ReportSumToolStripMenuItem_Click);
             // 
@@ -2038,10 +1947,9 @@
             // 
             this.mpState.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mpState.Location = new System.Drawing.Point(233, 405);
-            this.mpState.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mpState.Location = new System.Drawing.Point(204, 315);
             this.mpState.Name = "mpState";
-            this.mpState.Size = new System.Drawing.Size(479, 31);
+            this.mpState.Size = new System.Drawing.Size(417, 24);
             this.mpState.TabIndex = 3;
             this.mpState.Visible = false;
             // 
@@ -2049,10 +1957,9 @@
             // 
             this.lblState.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblState.Location = new System.Drawing.Point(233, 379);
-            this.lblState.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblState.Location = new System.Drawing.Point(204, 295);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(10, 18);
+            this.lblState.Size = new System.Drawing.Size(8, 14);
             this.lblState.TabIndex = 4;
             this.lblState.Text = "..";
             this.lblState.Visible = false;
@@ -2061,10 +1968,9 @@
             // 
             this.xtcReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtcReport.Location = new System.Drawing.Point(0, 0);
-            this.xtcReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtcReport.Name = "xtcReport";
             this.xtcReport.SelectedTabPage = this.xtReport;
-            this.xtcReport.Size = new System.Drawing.Size(817, 1060);
+            this.xtcReport.Size = new System.Drawing.Size(714, 755);
             this.xtcReport.TabIndex = 5;
             this.xtcReport.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtReport,
@@ -2077,17 +1983,15 @@
             this.xtReport.Controls.Add(this.prpPar);
             this.xtReport.Controls.Add(this.mpState);
             this.xtReport.Controls.Add(this.lblState);
-            this.xtReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtReport.Name = "xtReport";
-            this.xtReport.Size = new System.Drawing.Size(810, 1024);
+            this.xtReport.Size = new System.Drawing.Size(708, 726);
             this.xtReport.Text = "报告预览";
             // 
             // xtAnalysis
             // 
             this.xtAnalysis.Controls.Add(this.panelControl2);
-            this.xtAnalysis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtAnalysis.Name = "xtAnalysis";
-            this.xtAnalysis.Size = new System.Drawing.Size(808, 1023);
+            this.xtAnalysis.Size = new System.Drawing.Size(708, 726);
             this.xtAnalysis.Text = "历史对比";
             // 
             // panelControl2
@@ -2095,8 +1999,9 @@
             this.panelControl2.Controls.Add(this.patHistory1);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl2.Location = new System.Drawing.Point(0, 0);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(808, 1023);
+            this.panelControl2.Size = new System.Drawing.Size(708, 726);
             this.panelControl2.TabIndex = 1;
             // 
             // patHistory1
@@ -2105,17 +2010,16 @@
             this.patHistory1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.patHistory1.dtResultShowDataSort = null;
             this.patHistory1.Location = new System.Drawing.Point(2, 2);
-            this.patHistory1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.patHistory1.Margin = new System.Windows.Forms.Padding(4);
             this.patHistory1.Name = "patHistory1";
-            this.patHistory1.Size = new System.Drawing.Size(804, 1019);
+            this.patHistory1.Size = new System.Drawing.Size(704, 722);
             this.patHistory1.TabIndex = 0;
             // 
             // xtcShow
             // 
             this.xtcShow.Controls.Add(this.panelControl1);
-            this.xtcShow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtcShow.Name = "xtcShow";
-            this.xtcShow.Size = new System.Drawing.Size(808, 1023);
+            this.xtcShow.Size = new System.Drawing.Size(708, 726);
             this.xtcShow.Text = "结果数据";
             // 
             // panelControl1
@@ -2123,8 +2027,9 @@
             this.panelControl1.Controls.Add(this.controlReportResultShow1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(808, 1023);
+            this.panelControl1.Size = new System.Drawing.Size(708, 726);
             this.panelControl1.TabIndex = 1;
             // 
             // plSysbar
@@ -2132,30 +2037,31 @@
             this.plSysbar.Controls.Add(this.sysToolBar1);
             this.plSysbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.plSysbar.Location = new System.Drawing.Point(0, 0);
-            this.plSysbar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.plSysbar.Name = "plSysbar";
-            this.plSysbar.Size = new System.Drawing.Size(1221, 85);
+            this.plSysbar.Size = new System.Drawing.Size(1068, 66);
             this.plSysbar.TabIndex = 6;
             // 
             // panelControl3
             // 
             this.panelControl3.Controls.Add(this.splitContainerControl1);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl3.Location = new System.Drawing.Point(0, 85);
+            this.panelControl3.Location = new System.Drawing.Point(0, 66);
+            this.panelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1221, 1064);
+            this.panelControl3.Size = new System.Drawing.Size(1068, 759);
             this.panelControl3.TabIndex = 8;
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Location = new System.Drawing.Point(2, 2);
+            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.panel2);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.xtcReport);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1217, 1060);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1064, 755);
             this.splitContainerControl1.SplitterPosition = 345;
             this.splitContainerControl1.TabIndex = 0;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -2167,22 +2073,20 @@
             this.panel2.Controls.Add(this.panPar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(394, 1060);
+            this.panel2.Size = new System.Drawing.Size(345, 755);
             this.panel2.TabIndex = 4;
             // 
             // FrmCombineModeSel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1221, 1149);
+            this.ClientSize = new System.Drawing.Size(1068, 825);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.plSysbar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.LookAndFeel.SkinName = "Blue";
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmCombineModeSel";
             this.Text = "报告查询";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

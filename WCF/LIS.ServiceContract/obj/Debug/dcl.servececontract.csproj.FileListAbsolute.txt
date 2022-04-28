@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.servececontract.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.servececontract.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.servececontract.pdb
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.dll
+D:\LIS\NEW_MMFY_LIS\WCF\LIS.ServiceContract\obj\Debug\dcl.servececontract.pdb

@@ -10,3 +10,11 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.tools.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.tools.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.tools.pdb
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.dll
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.svr.tools\obj\Debug\dcl.svr.tools.pdb

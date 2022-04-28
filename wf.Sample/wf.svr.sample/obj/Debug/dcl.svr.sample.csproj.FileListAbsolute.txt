@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.sample.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.sample.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.sample.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.dll
+D:\LIS\NEW_MMFY_LIS\wf.Sample\wf.svr.sample\obj\Debug\dcl.svr.sample.pdb

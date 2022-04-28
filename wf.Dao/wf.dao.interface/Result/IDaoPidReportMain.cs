@@ -262,7 +262,7 @@ namespace dcl.dao.interfaces
         /// </summary>
         /// <param name="qc"></param>
         /// <returns></returns>
-        List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc);
+        List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc, string type);
 
     }
 }

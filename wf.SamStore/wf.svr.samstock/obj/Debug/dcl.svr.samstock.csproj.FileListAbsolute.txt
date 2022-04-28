@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.samstock.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.samstock.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.samstock.pdb
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.dll
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.svr.samstock\obj\Debug\dcl.svr.samstock.pdb
