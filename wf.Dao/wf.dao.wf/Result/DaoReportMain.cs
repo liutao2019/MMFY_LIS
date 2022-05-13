@@ -1731,7 +1731,62 @@ group by Pma_rep_id,Pma_bar_code", strin);
         /// <returns></returns>
         public List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc, string type)
         {
-            string sql = @"select Pat_lis_main.*,
+            string sql = string.Empty;
+            if (type.Contains("粤省事"))
+            {
+                sql = @"select Pat_lis_main.*,
+sys_interface_log.operation_content pid_res
+from 
+sys_interface_log(nolock)
+left outer join Pat_lis_main(nolock) on Pat_lis_main.Pma_rep_id=sys_interface_log.rep_id
+where operation_name='发布粤省事检验报告' and operation_success=0
+and rep_id not in(
+select rep_id from sys_interface_log(nolock) where operation_name='发布粤省事检验报告'
+and operation_success=1
+) 
+AND Pat_lis_main.Pma_in_date >= '{0}'
+AND Pat_lis_main.Pma_in_date <= '{1}'
+";
+
+                string sql2 = @"
+UNION ALL 
+select Pat_lis_main.*,
+'-' pid_res
+from 
+Pat_lis_main(nolock)
+where 1=1
+and not EXISTS(
+select 1 from sys_interface_log(nolock) where operation_name='发布粤省事检验报告' 
+and operation_success=1
+AND rep_id = Pat_lis_main.Pma_rep_id
+) 
+AND Pat_lis_main.Pma_pat_name LIKE '%163030%'
+AND Pat_lis_main.Pma_in_date >= '{0}'
+AND Pat_lis_main.Pma_in_date <= '{1}'
+";
+
+                sql = string.Format(sql, qc.DateStart?.ToString("yyyy-MM-dd HH:mm:ss"), qc.DateEnd?.ToString("yyyy-MM-dd HH:mm:ss"));
+                if (!string.IsNullOrEmpty(qc.RepBarCode))
+                {
+                    sql += string.Format(" and Pat_lis_main.Pma_bar_code='{0}'", qc.RepBarCode);
+                    sql2 += string.Format(" and Pat_lis_main.Pma_bar_code='{0}'", qc.RepBarCode);
+                }
+                else if (!string.IsNullOrEmpty(qc.RepId))
+                {
+                    sql += string.Format(" and Pat_lis_main.Pma_rep_id='{0}'", qc.RepId);
+                    sql2 += string.Format(" and Pat_lis_main.Pma_rep_id='{0}'", qc.RepId);
+                }
+                if (qc.ListItrId?.Count > 0 && !string.IsNullOrEmpty(qc.ListItrId[0]))
+                {
+                    sql += string.Format(" and Pat_lis_main.Pma_Ditr_id = '{0}' ", qc.ListItrId[0]);
+                    sql2 += string.Format(" and Pat_lis_main.Pma_Ditr_id = '{0}' ", qc.ListItrId[0]);
+                }
+                sql2 = string.Format(sql2, qc.DateStart?.ToString("yyyy-MM-dd HH:mm:ss"), qc.DateEnd?.ToString("yyyy-MM-dd HH:mm:ss"));
+                sql += sql2;
+            }
+            else
+            {
+                sql = @"select Pat_lis_main.*,
 sys_interface_log.operation_content pid_res
 from 
 sys_interface_log(nolock)
@@ -1741,34 +1796,36 @@ and rep_id not in(
 select rep_id from sys_interface_log where operation_name='{0}'
 and operation_success=1
 ) ";
-            if (!string.IsNullOrEmpty(type))
-            {
-                sql = string.Format(sql, type);
-            }
-            else
-            {
-                sql = string.Format(sql, "上传二审数据到中间表");
-            }
-            if(!string.IsNullOrEmpty(qc.RepBarCode))
-            {
-                sql += string.Format(" and Pat_lis_main.Pma_bar_code='{0}'",qc.RepBarCode);
-            }
-            else if(!string.IsNullOrEmpty(qc.RepId))
-            {
-                sql += string.Format(" and Pat_lis_main.Pma_rep_id='{0}'", qc.RepId);
-            }
-            else
-            {
-                sql += string.Format(" and Pat_lis_main.Pma_in_date>='{0}'",qc.DateStart?.ToString("yyyy-MM-dd HH:mm:ss"));
-                sql += string.Format(" and Pat_lis_main.Pma_in_date<='{0}'", qc.DateEnd?.ToString("yyyy-MM-dd HH:mm:ss"));
-                if(qc.ListItrId?.Count>0 && !string.IsNullOrEmpty(qc.ListItrId[0]))
+                if (!string.IsNullOrEmpty(type))
                 {
-                    sql += string.Format(" and Pat_lis_main.Pma_Ditr_id = '{0}' ", qc.ListItrId[0]);
+                    sql = string.Format(sql, type);
+                }
+                else
+                {
+                    sql = string.Format(sql, "上传二审数据到中间表");
+                }
+                if (!string.IsNullOrEmpty(qc.RepBarCode))
+                {
+                    sql += string.Format(" and Pat_lis_main.Pma_bar_code='{0}'", qc.RepBarCode);
+                }
+                else if (!string.IsNullOrEmpty(qc.RepId))
+                {
+                    sql += string.Format(" and Pat_lis_main.Pma_rep_id='{0}'", qc.RepId);
+                }
+                else
+                {
+                    sql += string.Format(" and Pat_lis_main.Pma_in_date>='{0}'", qc.DateStart?.ToString("yyyy-MM-dd HH:mm:ss"));
+                    sql += string.Format(" and Pat_lis_main.Pma_in_date<='{0}'", qc.DateEnd?.ToString("yyyy-MM-dd HH:mm:ss"));
+                    if (qc.ListItrId?.Count > 0 && !string.IsNullOrEmpty(qc.ListItrId[0]))
+                    {
+                        sql += string.Format(" and Pat_lis_main.Pma_Ditr_id = '{0}' ", qc.ListItrId[0]);
+                    }
                 }
             }
-
+           
             try
             {
+                Lib.LogManager.Logger.LogInfo("查询失败报告SQL：" + sql);
                 DBManager helper = new DBManager();
                 DataTable dt = helper.ExecSel(sql);
                 return EntityManager<EntityPidReportMain>.ConvertToList(dt);

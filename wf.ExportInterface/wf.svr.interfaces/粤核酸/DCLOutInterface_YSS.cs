@@ -230,7 +230,7 @@ namespace dcl.svr.interfaces
             List<EntitySampMain> listSampMain = new List<EntitySampMain>();
 
             EntitySampQC sampQC = new EntitySampQC();
-            sampQC.ListSampBarId = SampBarId;
+            sampQC.SampYhsBarCode = SampBarId.FirstOrDefault();
             var daoSamMain = DclDaoFactory.DaoHandler<IDaoSampMain>();
             //通过身份证、姓名、项目、条码状态查询患者在lis中对应的条码信息
             listSampMain = daoSamMain.GetSampMain(sampQC);
@@ -367,6 +367,10 @@ namespace dcl.svr.interfaces
                 entitySampMain.SampPrintTime = 1;
                 entitySampMain.SampBarType = 0;
                 entitySampMain.SampYhsBarCode = SampBarId;
+                entitySampMain.CollectionDate = cache.ServerDateTime.GetDatabaseServerDateTime();
+                entitySampMain.SendDate = cache.ServerDateTime.GetDatabaseServerDateTime();
+                entitySampMain.ReceiverDate = cache.ServerDateTime.GetDatabaseServerDateTime();
+                entitySampMain.ReachDate = cache.ServerDateTime.GetDatabaseServerDateTime();
 
                 entitySampDetail.SampBarId = SampBarId;
                 entitySampDetail.SampBarCode = SampBarId;
@@ -374,13 +378,11 @@ namespace dcl.svr.interfaces
                 entitySampDetail.OrderCode = "250403089S-2/3";
                 entitySampDetail.ComId = "100224";
                 entitySampDetail.ComName = "新型冠状病毒RNA测定（5合1）";
-                entitySampDetail.SampDate = System.DateTime.Now;
-                entitySampDetail.OrderDate = System.DateTime.Now;
-                entitySampDetail.OrderOccDate = System.DateTime.Now; 
+                entitySampDetail.SampDate = cache.ServerDateTime.GetDatabaseServerDateTime();              
 
                 entitySampProcessDetail.ProcBarcode = SampBarId;
                 entitySampProcessDetail.ProcBarno = SampBarId;
-                entitySampProcessDetail.ProcDate = System.DateTime.Now;
+                entitySampProcessDetail.ProcDate = cache.ServerDateTime.GetDatabaseServerDateTime();
                 entitySampProcessDetail.ProcUsercode = "0434";
                 entitySampProcessDetail.ProcUsername = "温嫦莉";
                 entitySampProcessDetail.ProcStatus = "5";
@@ -417,7 +419,14 @@ namespace dcl.svr.interfaces
                         entitySampMain.PidOrgId = ConfigurationManager.AppSettings["HospitalId"];
                         entitySampMain.PidInNo = patient.identityNumber;
                         entitySampMain.PidName = patient.personName;
-                        entitySampMain.PidAge = patient.age;
+                        if (patient.age == "0")
+                        {
+                            entitySampMain.PidAge = "";
+                        }
+                        else
+                        {
+                            entitySampMain.PidAge = patient.age;
+                        }
                         entitySampMain.PidTel = patient.phoneNumber;
                         //entitySampMain.CollectionDate = Convert.ToDateTime(patient.sampleDate);
                         //entitySampMain.ReceiverDate = Convert.ToDateTime(patient.detectionDate);
@@ -429,7 +438,23 @@ namespace dcl.svr.interfaces
                             entitySampMain.PidSex = "0";
                         entitySampMain.SampRegistyAddress = patient.householdDivision;
                         entitySampMain.PidAddress = patient.livingAddress;
-                        entitySampMain.PidIdentityName = patient.identityType;
+
+                        if(patient.identityNumber.Contains("H"))
+                        {
+                            entitySampMain.PidIdentityName = "港澳通行证";
+                        }
+                        else if (patient.identityNumber.Contains("M") || patient.identityNumber.Contains("F") || patient.identityNumber.Contains("m"))
+                        {
+                            entitySampMain.PidIdentityName = "其他";
+                        }
+                        else
+                        {
+                            entitySampMain.PidIdentityName = patient.identityType;
+                        }
+                        if (patient.identityType.Contains("通行证"))
+                        {
+                            entitySampMain.PidIdentityName = "港澳台通行证";
+                        }
                         entitySampMain.PidIdentityCard = patient.identityNumber;
                         if (!string.IsNullOrEmpty(patient.birthDate))
                         {
@@ -448,6 +473,11 @@ namespace dcl.svr.interfaces
                         entitySampMain.SampComName = "新型冠状病毒RNA测定（5合1）";
                         entitySampMain.SampPrintTime = 1;
                         entitySampMain.SampBarType = 0;
+                        entitySampMain.SampOccDate = Convert.ToDateTime(patient.sampleDate);
+                        entitySampMain.CollectionDate = Convert.ToDateTime(patient.sampleDate);
+                        entitySampMain.SendDate = cache.ServerDateTime.GetDatabaseServerDateTime();
+                        entitySampMain.ReceiverDate = cache.ServerDateTime.GetDatabaseServerDateTime();
+                        entitySampMain.ReachDate = cache.ServerDateTime.GetDatabaseServerDateTime();
 
                         entitySampDetail.SampBarId = SampBarId + ii;
                         entitySampDetail.SampBarCode = SampBarId + ii;
@@ -456,12 +486,10 @@ namespace dcl.svr.interfaces
                         entitySampDetail.ComId = "100224";
                         entitySampDetail.ComName = "新型冠状病毒RNA测定（5合1）";
                         entitySampDetail.SampDate = Convert.ToDateTime(patient.sampleDate);
-                        entitySampDetail.OrderDate = Convert.ToDateTime(patient.sampleDate);
-                        entitySampDetail.OrderOccDate = Convert.ToDateTime(patient.sampleDate);
 
                         entitySampProcessDetail.ProcBarcode = SampBarId + ii;
                         entitySampProcessDetail.ProcBarno = SampBarId + ii;
-                        entitySampProcessDetail.ProcDate = Convert.ToDateTime(patient.sampleDate);
+                        entitySampProcessDetail.ProcDate = cache.ServerDateTime.GetDatabaseServerDateTime();
                         entitySampProcessDetail.ProcUsercode = "0434";
                         entitySampProcessDetail.ProcUsername = "温嫦莉";
                         entitySampProcessDetail.ProcStatus = "5";

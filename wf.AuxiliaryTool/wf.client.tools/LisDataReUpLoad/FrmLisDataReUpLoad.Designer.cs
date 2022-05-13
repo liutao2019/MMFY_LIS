@@ -87,6 +87,7 @@
             this.dateend2 = new DevExpress.XtraEditors.DateEdit();
             this.tbLog = new System.Windows.Forms.RichTextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cbAutoReuploadYhs = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PnLeft)).BeginInit();
             this.PnLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
@@ -130,6 +131,7 @@
             this.splitContainerControl2.Horizontal = false;
             this.splitContainerControl2.Location = new System.Drawing.Point(2, 2);
             this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.cbAutoReuploadYhs);
             this.splitContainerControl2.Panel1.Controls.Add(this.btnSearchYhs);
             this.splitContainerControl2.Panel1.Controls.Add(this.btnUpdateYhs);
             this.splitContainerControl2.Panel1.Controls.Add(this.tbReuploadInterTime);
@@ -151,7 +153,7 @@
             this.splitContainerControl2.Panel2.Controls.Add(this.tbReuploadLog);
             this.splitContainerControl2.Panel2.Text = "Panel2";
             this.splitContainerControl2.Size = new System.Drawing.Size(242, 481);
-            this.splitContainerControl2.SplitterPosition = 330;
+            this.splitContainerControl2.SplitterPosition = 353;
             this.splitContainerControl2.TabIndex = 178;
             this.splitContainerControl2.Text = "splitContainerControl2";
             // 
@@ -347,6 +349,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtBegin.Size = new System.Drawing.Size(143, 20);
             this.dtBegin.TabIndex = 183;
+
+            this.dtBegin.Properties.DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBegin.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBegin.Properties.EditFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBegin.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBegin.Properties.Mask.EditMask = "yyyy-MM-dd HH:mm:ss";
             // 
             // btnUpload
             // 
@@ -374,6 +382,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtEnd.Size = new System.Drawing.Size(143, 20);
             this.dtEnd.TabIndex = 184;
+
+            this.dtEnd.Properties.DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtEnd.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtEnd.Properties.EditFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtEnd.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtEnd.Properties.Mask.EditMask = "yyyy-MM-dd HH:mm:ss";
             // 
             // tbReuploadLog
             // 
@@ -382,7 +396,7 @@
             this.tbReuploadLog.Location = new System.Drawing.Point(0, 0);
             this.tbReuploadLog.Name = "tbReuploadLog";
             this.tbReuploadLog.ReadOnly = true;
-            this.tbReuploadLog.Size = new System.Drawing.Size(242, 146);
+            this.tbReuploadLog.Size = new System.Drawing.Size(242, 123);
             this.tbReuploadLog.TabIndex = 208;
             this.tbReuploadLog.Text = "";
             // 
@@ -801,6 +815,18 @@
             this.tbLog.TabIndex = 207;
             this.tbLog.Text = "";
             // 
+            // cbAutoReuploadYhs
+            // 
+            this.cbAutoReuploadYhs.AutoSize = true;
+            this.cbAutoReuploadYhs.Location = new System.Drawing.Point(16, 331);
+            this.cbAutoReuploadYhs.Name = "cbAutoReuploadYhs";
+            this.cbAutoReuploadYhs.Size = new System.Drawing.Size(98, 18);
+            this.cbAutoReuploadYhs.TabIndex = 214;
+            this.cbAutoReuploadYhs.Text = "自动核酸重传";
+            this.toolTip1.SetToolTip(this.cbAutoReuploadYhs, "开启后默认每隔1h自动重传当天上传失败的报告");
+            this.cbAutoReuploadYhs.UseVisualStyleBackColor = true;
+            this.cbAutoReuploadYhs.CheckedChanged += new System.EventHandler(this.cbAutoReuploadYhs_CheckedChanged);
+            // 
             // FrmLisDataReUpLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -900,5 +926,6 @@
         private System.Windows.Forms.RichTextBox tbReuploadLog;
         private System.Windows.Forms.Button btnSearchYhs;
         private System.Windows.Forms.Button btnUpdateYhs;
+        private System.Windows.Forms.CheckBox cbAutoReuploadYhs;
     }
 }

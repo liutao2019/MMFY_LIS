@@ -603,7 +603,9 @@ namespace dcl.svr.resultcheck
                         listResult.Add(result);
                         if (result.Success)
                         {
+
                             listSuccessPatID.Add(result.Data.Patient.RepId);
+
                             if (patinfo.PidSrcId == "110")
                             {
                                 listOutPatientsID.Add(result.Data.Patient.RepId);

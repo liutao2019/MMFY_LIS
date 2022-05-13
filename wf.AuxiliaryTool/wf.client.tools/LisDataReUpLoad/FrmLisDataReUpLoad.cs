@@ -292,6 +292,32 @@ namespace dcl.client.tools
         }
 
         /// <summary>
+        /// 自动重传勾选
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cbAutoReuploadYhs_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbAutoReuploadYhs.Checked)
+            {
+                timer1.Interval = string.IsNullOrEmpty(tbReuploadInterTime.Text) ? 3600000 : Convert.ToInt32(tbReuploadInterTime.Text) * 60000;
+                timer1.Elapsed += Timer2_Elapsed; ;
+                timer1.Start();
+                TbReuploadLog = "自动核酸重传开始:" + DateTime.Now;
+                this.tbReuploadInterTime.Text = (timer1.Interval / 60000).ToString();
+                this.tbReuploadInterTime.Enabled = false;
+                Timer2_Elapsed(null, null);
+            }
+            else
+            {
+                timer1.Elapsed -= Timer2_Elapsed;
+                timer1.Stop();
+                TbReuploadLog = "自动核酸重传结束:" + DateTime.Now + "\r\n";
+                this.tbReuploadInterTime.Enabled = true;
+            }
+        }
+
+        /// <summary>
         /// 报告重传自动触发事件
         /// </summary>
         /// <param name="sender"></param>
@@ -355,6 +381,65 @@ namespace dcl.client.tools
             }
         }
 
+        private void Timer2_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            EntityPatientQC patientQc = new EntityPatientQC();
+            string logText = "正在重传：" + DateTime.Now + "\r\n";
+
+            //patientQc.RepBarCode = strBarcode;
+            //patientQc.RepId = strRepId;
+            //patientQc.ListItrId = new List<string> { ItrID };
+            patientQc.DateStart = DateTime.Now.Date;
+            patientQc.DateEnd = DateTime.Now.Date.AddDays(1);
+
+            List<EntityPidReportMain> listPatient = new List<EntityPidReportMain>();
+            try
+            {
+                ProxyPidReportMain proxy = new ProxyPidReportMain();
+                listPatient = proxy.Service.GetFaultUpLoadReport(patientQc, "发布粤省事检验报告");
+
+                if (listPatient == null || listPatient.Count == 0)
+                {
+                    logText += "当天无需重传报告";
+                    return;
+                }
+
+                List<string> Pids = new List<string>();
+                foreach (EntityPidReportMain report in listPatient)
+                {
+                    if (report.RepStatus == 0)
+                    {
+                        continue;
+                    }
+                    Pids.Add(report.RepId);
+                }
+                if (Pids.Count == 0)
+                {
+                    logText += "当天无需重传报告";
+                    return;
+                }
+
+                ProxyDCLInterfacesTool Po = new ProxyDCLInterfacesTool();
+                EntityResponse value = Po.Service.ReUploadYssReport(Pids);
+                if (value.Scusess)
+                {
+                    logText += "此次共重传" + Pids.Count + "份核酸报告：报告单号为：\r\n" + string.Join(",", Pids.ToArray());
+                }
+                else
+                {
+                    logText += "上传失败：" + value.ErroMsg;
+                }
+            }
+            catch (Exception ex)
+            {
+                logText += "上传出错：" + ex.Message;
+            }
+            finally
+            {
+                TbReuploadLog = logText + "\r\n下一次执行：" + DateTime.Now.AddMilliseconds(timer1.Interval);
+            }
+        }
+
         #endregion
 
         #region 粤核酸采检索
@@ -381,8 +466,8 @@ namespace dcl.client.tools
             patientQc.RepBarCode = strBarcode;
             patientQc.RepId = strRepId;
             patientQc.ListItrId = new List<string> { ItrID };
-            patientQc.DateStart = DateTime.Parse(PatDate.ToString("yyyy-MM-dd 00:00:00"));
-            patientQc.DateEnd = DateTime.Parse(PatDateEnd.ToString("yyyy-MM-dd 23:59:59"));
+            patientQc.DateStart = DateTime.Parse(PatDate.ToString("yyyy-MM-dd HH:mm:ss"));
+            patientQc.DateEnd = DateTime.Parse(PatDateEnd.ToString("yyyy-MM-dd HH:mm:ss"));
 
             try
             {

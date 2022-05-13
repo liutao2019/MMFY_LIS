@@ -795,6 +795,35 @@ namespace dcl.svr.result
 
                 if (listOriginPatInfo == null || listOriginPatInfo.RepStatus >= 1) continue;
 
+                List<string> listOutPatientsID = new List<string>();
+                List<string> listCovidPatientsID = new List<string>();
+
+                if (listOriginPatInfo.PidSrcId == "110")
+                {
+                    listOutPatientsID.Add(pat_id);
+                }
+                if (listOriginPatInfo.PidComName.Contains("新冠") || listOriginPatInfo.PidComName.Contains("新型冠状"))
+                {
+                    listCovidPatientsID.Add(pat_id);
+                }
+
+                if (Audit_UploadYss)
+                {
+                    if (Audit_UploadAllPatTypeYss)
+                    {
+                        if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
+                    else
+                    {
+                        if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
+                }
 
                 var patient = listOriginPatInfo;
                 DBManager helper = new DBManager();
@@ -828,6 +857,8 @@ namespace dcl.svr.result
                     }
                     helper.CommitTrans();
                     helper = null;
+
+                   
                 }
                 catch (Exception ex)
                 {
@@ -862,6 +893,36 @@ namespace dcl.svr.result
                 {
                     op.AddCustomMessage("12", pat_id, "状态异常", EnumOperationErrorLevel.Error);
                     continue;
+                }
+
+                List<string> listOutPatientsID = new List<string>();
+                List<string> listCovidPatientsID = new List<string>();
+
+                if (listOriginPatInfo.PidSrcId == "110")
+                {
+                    listOutPatientsID.Add(pat_id);
+                }
+                if (listOriginPatInfo.PidComName.Contains("新冠") || listOriginPatInfo.PidComName.Contains("新型冠状"))
+                {
+                    listCovidPatientsID.Add(pat_id);
+                }
+
+                if (Audit_UploadYss)
+                {
+                    if (Audit_UploadAllPatTypeYss)
+                    {
+                        if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
+                    else
+                    {
+                        if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
                 }
 
                 var patient = listOriginPatInfo;
