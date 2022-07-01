@@ -28,11 +28,11 @@ namespace dcl.svr.resultcheck
 
         public void SendYssReport(List<string> listPatId, EnumOperationCode auditType)
         {
-            if (auditType == EnumOperationCode.Report)
+            if (auditType == EnumOperationCode.Report || auditType == EnumOperationCode.Audit)
             {
                 DCLExtInterfaceFactory.DCLExtInterface.UploadYssReportAsync(listPatId);
             }
-            else if (auditType == EnumOperationCode.UndoReport)
+            else if (auditType == EnumOperationCode.UndoReport || auditType == EnumOperationCode.UndoAudit)
             {
                 DCLExtInterfaceFactory.DCLExtInterface.UndoUploadYssReportAsync(listPatId);
             }

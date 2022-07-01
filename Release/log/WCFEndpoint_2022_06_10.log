@@ -1,0 +1,169 @@
+
+时间：2022-06-10 18:47:23
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 18:48:02
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 18:48:48
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 18:49:45
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 18:49:54
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 18:50:04
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 18:50:10
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 19:08:47
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 19:09:28
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 19:10:56
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 19:11:25
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 19:23:53
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+
+
+时间：2022-06-10 19:33:00
+进程：wf.ClientEntrance.exe
+模块：WCFEndpoint   方法：WCFEndpointAddress   行数：122
+标题：
+附加信息：
+confName=svc.DataInterface
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 117
+

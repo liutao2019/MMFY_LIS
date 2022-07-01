@@ -1530,7 +1530,7 @@ namespace wf.client.reagent
                         detail.Rsd_validdate = item.ValidDate;
                         detail.Rsd_barcoderule = "1";
                         ProxyReaSetting proxy = new ProxyReaSetting();
-                        string oldBarcode = proxy.Service.GetReaBarcodeByID("1");
+                        string oldBarcode = proxy.Service.GetReaBarcodeByID("100000");
                         DateTime dt = ServerDateTime.GetServerDateTime();
                         bool res = false;
                         string barcode;
@@ -1864,7 +1864,7 @@ namespace wf.client.reagent
             else
             {
                 ProxyReaSetting proxy = new ProxyReaSetting();
-                string oldBarcode = proxy.Service.GetReaBarcodeByID("1");
+                string oldBarcode = proxy.Service.GetReaBarcodeByID("100000");
                 DateTime dt = ServerDateTime.GetServerDateTime();
                 bool res = false;
                 string barcode;

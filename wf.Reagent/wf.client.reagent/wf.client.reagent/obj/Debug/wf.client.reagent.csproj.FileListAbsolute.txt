@@ -31,3 +31,4 @@ D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.client.reagent\wf.client.reagent\obj\Debug\wf.
 D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.client.reagent\wf.client.reagent\obj\Debug\wf.client.reagent.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.client.reagent\wf.client.reagent\obj\Debug\wf.client.reagent.dll
 D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.client.reagent\wf.client.reagent\obj\Debug\wf.client.reagent.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Reagent\wf.client.reagent\wf.client.reagent\obj\Debug\wf.client.reagent.dll.licenses

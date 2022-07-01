@@ -508,8 +508,19 @@ namespace dcl.client.result.PatControl
                 this.SelectAllPatientInGrid(false);
                 OnAddNewDemand();
 
+                //ThreadLoadPatientStatus();
+
                 Thread t = new Thread(ThreadLoadPatientStatus);
                 t.Start();
+
+                //if (ItrID == "100112")//新冠检验仪器
+                //{
+
+                    //ThreadLoadPatientYhsStatus();
+                    //Lib.LogManager.Logger.LogInfo("核酸上传状态！", "1");
+                    //Thread thread = new Thread(ThreadLoadPatientYhsStatus);
+                    //thread.Start();
+                //}
             }
             catch (Exception EX)
             {
@@ -532,6 +543,7 @@ namespace dcl.client.result.PatControl
                 //Thread.Sleep(2000);
                 SetPatStatus(this.gridControl1, table);
             }
+
         }
 
         private delegate void DelegateSetPatStatus(GridControl grid, List<EntityPidReportMain> data);
@@ -614,6 +626,95 @@ namespace dcl.client.result.PatControl
 
             }
         }
+        #endregion
+
+        #region  线程加载病人新冠粤核酸状态
+
+        /// <summary>
+        /// 加载患者粤核酸上传状态
+        /// </summary>
+        private void ThreadLoadPatientYhsStatus()
+        {
+            try
+            {
+                ProxyPidReportMain proxy = new ProxyPidReportMain();
+                Dictionary<string, string> table = proxy.Service.GetPatientYhsStatus(this.PatDate, this.PatDateEnd);
+                SetPatYhsStatus(this.gridControl1, table);
+            }
+            catch (Exception ex)
+            {
+                Lib.LogManager.Logger.LogInfo("核酸上传状态！", ex.Message + "||" + ex.StackTrace + "||" + ex.Source);
+            }
+           
+        }
+
+        private delegate void DelegateSetPatYhsStatus(GridControl grid, Dictionary<string, string> data);
+
+        private void SetPatYhsStatus(GridControl grid, Dictionary<string, string> data)
+        {
+            if (grid.InvokeRequired)
+            {
+                DelegateSetPatYhsStatus del = new DelegateSetPatYhsStatus(SetPatYhsStatus);
+                this.Invoke(del, new object[] { grid, data });
+            }
+            else
+            {
+                try
+                {
+                    if (grid.DataSource != null && grid.DataSource is BindingSource)
+                    {
+                        BindingSource bs = grid.DataSource as BindingSource;
+                        if (bs != null)
+                        {
+                            bAllowFirePatientChange = false;
+                            List<EntityPidReportMain> source = bs.DataSource as List<EntityPidReportMain>;
+                            string YhsUploadStatus = string.Empty;
+                            if (source != null)
+                            {
+                                foreach (EntityPidReportMain rowSource in source)
+                                {
+                                    string pat_id = rowSource.RepId.ToString();
+
+                                    if (data.ContainsKey(pat_id))
+                                    {
+                                        YhsUploadStatus = data[pat_id].ToString();
+                                    }
+                                    
+                                    YhsFormatRowApplyTo(YhsUploadStatus);
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Lib.LogManager.Logger.LogException(ex);
+                    //throw;
+                }
+                finally
+                {
+                    this.gridControl1.RefreshDataSource();
+
+                    bAllowFirePatientChange = true;
+                }
+            }
+        }
+
+        private void YhsFormatRowApplyTo(string status)
+        {
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            GridFormatRule rule = new GridFormatRule();
+            rule.Column = gridViewPatientList.Columns["YhsUploadStatus"];
+            rule.ColumnApplyTo = gridViewPatientList.Columns["YhsUploadStatus"];
+            formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue1.Value1 = status;
+            formatConditionRuleValue1.Appearance.BackColor = Color.Gray;//病人身份颜色
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            rule.Rule = formatConditionRuleValue1;
+            gridViewPatientList.FormatRules.Add(rule);
+        }
+
         #endregion
 
         /// <summary>

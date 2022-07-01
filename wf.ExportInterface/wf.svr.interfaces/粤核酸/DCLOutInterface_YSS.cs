@@ -163,6 +163,11 @@ namespace dcl.svr.interfaces
                 Lib.LogManager.Logger.LogInfo("发布粤省事检验报告：报告单号：" + strPatId);
                 var patMain = daoPidMain.GetPatientInfo(strPatId);
                 var pidDetails = daoSamDetail.GetSampDetail(patMain.RepBarCode);
+                if (patMain.RepBarCode.Length > 14)
+                {
+                    Lib.LogManager.Logger.LogInfo("发布粤省事检验报告失败：条码为粤核酸子条码无需上传，条码号为：" + patMain.RepBarCode);
+                    continue;
+                }
                 if (pidDetails.Count == 0)
                 {
                     Lib.LogManager.Logger.LogInfo("发布粤省事检验报告失败：查不到该报告条码明细信息，报告单号：" + strPatId);
@@ -230,7 +235,8 @@ namespace dcl.svr.interfaces
             List<EntitySampMain> listSampMain = new List<EntitySampMain>();
 
             EntitySampQC sampQC = new EntitySampQC();
-            sampQC.SampYhsBarCode = SampBarId.FirstOrDefault();
+            sampQC.ListSampBarId = SampBarId;
+            //sampQC.SampYhsBarCode = SampBarId.FirstOrDefault();
             var daoSamMain = DclDaoFactory.DaoHandler<IDaoSampMain>();
             //通过身份证、姓名、项目、条码状态查询患者在lis中对应的条码信息
             listSampMain = daoSamMain.GetSampMain(sampQC);
@@ -363,7 +369,7 @@ namespace dcl.svr.interfaces
                 entitySampMain.SampSamName = "咽拭子";
                 entitySampMain.PidDeptCode = "1901";
                 entitySampMain.PidDeptName = "河东门诊部(妇)";
-                entitySampMain.SampComName = "新型冠状病毒RNA测定（5合1）";
+                entitySampMain.SampComName = "新型冠状病毒RNA测定（混检）";
                 entitySampMain.SampPrintTime = 1;
                 entitySampMain.SampBarType = 0;
                 entitySampMain.SampYhsBarCode = SampBarId;
@@ -377,7 +383,7 @@ namespace dcl.svr.interfaces
                 entitySampDetail.OrderName = "新型冠状病毒RNA测定（混合检测）";
                 entitySampDetail.OrderCode = "250403089S-2/3";
                 entitySampDetail.ComId = "100224";
-                entitySampDetail.ComName = "新型冠状病毒RNA测定（5合1）";
+                entitySampDetail.ComName = "新型冠状病毒RNA测定（混检）";
                 entitySampDetail.SampDate = cache.ServerDateTime.GetDatabaseServerDateTime();              
 
                 entitySampProcessDetail.ProcBarcode = SampBarId;
@@ -470,7 +476,10 @@ namespace dcl.svr.interfaces
                         entitySampMain.PidDeptCode = "1901";
                         entitySampMain.PidDeptName = "河东门诊部(妇)";
                         entitySampMain.SampYhsBarCode = SampBarId;
-                        entitySampMain.SampComName = "新型冠状病毒RNA测定（5合1）";
+                        if (patient.collectType.Contains("单采"))
+                            entitySampMain.SampComName = "新型冠状病毒RNA测定（单样检测）";
+                        else
+                            entitySampMain.SampComName = "新型冠状病毒RNA测定（混检）";
                         entitySampMain.SampPrintTime = 1;
                         entitySampMain.SampBarType = 0;
                         entitySampMain.SampOccDate = Convert.ToDateTime(patient.sampleDate);
@@ -479,12 +488,27 @@ namespace dcl.svr.interfaces
                         entitySampMain.ReceiverDate = cache.ServerDateTime.GetDatabaseServerDateTime();
                         entitySampMain.ReachDate = cache.ServerDateTime.GetDatabaseServerDateTime();
 
+                        entitySampMain.PidDiag = "体检";
+                        entitySampMain.SendUserId = "0434";
+                        entitySampMain.SendUserName = "温嫦莉";
+
                         entitySampDetail.SampBarId = SampBarId + ii;
                         entitySampDetail.SampBarCode = SampBarId + ii;
-                        entitySampDetail.OrderName = "新型冠状病毒RNA测定（混合检测）";
-                        entitySampDetail.OrderCode = "250403089S-2/3";
-                        entitySampDetail.ComId = "100224";
-                        entitySampDetail.ComName = "新型冠状病毒RNA测定（5合1）";
+                        if (patient.collectType.Contains("单采"))
+                        {
+                            entitySampDetail.OrderName = "新型冠状病毒RNA测定（单样检测）";
+                            entitySampDetail.OrderCode = "250403089S-2/3";
+                            entitySampDetail.ComId = "100223";
+                            entitySampDetail.ComName = "新型冠状病毒RNA测定（单样检测）";
+                        }
+                        else
+                        {
+                            entitySampDetail.OrderName = "新型冠状病毒RNA测定（混合检测）";
+                            entitySampDetail.OrderCode = "250403089S-2/3";
+                            entitySampDetail.ComId = "100224";
+                            entitySampDetail.ComName = "新型冠状病毒RNA测定（混检）";
+                        }
+                           
                         entitySampDetail.SampDate = Convert.ToDateTime(patient.sampleDate);
 
                         entitySampProcessDetail.ProcBarcode = SampBarId + ii;

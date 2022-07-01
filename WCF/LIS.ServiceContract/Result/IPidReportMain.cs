@@ -86,6 +86,16 @@ namespace dcl.servececontract
         List<EntityPidReportMain> GetPatientStatus(DateTime startDate, DateTime endDate ,string pat_itr_id);
 
         /// <summary>
+        /// 线程加载病人新冠结果上传状态
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [OperationContract]
+        Dictionary<string, string> GetPatientYhsStatus(DateTime startDate, DateTime endDate);
+
+
+        /// <summary>
         /// 获取病人资料状态
         /// </summary>
         /// <param name="repid"></param>

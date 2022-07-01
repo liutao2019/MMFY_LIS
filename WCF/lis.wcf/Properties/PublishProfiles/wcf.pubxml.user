@@ -6,7 +6,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\WiseFly\Workspace\MMFY\LIS\Server\NewRelease\WCF_Pub</_PublishTargetUrl>
-    <History>False|2022-04-26T09:23:44.1642695Z;False|2022-04-26T16:55:56.9612137+08:00;False|2022-04-26T16:53:25.0273962+08:00;False|2022-04-26T15:53:37.3959158+08:00;False|2022-04-26T15:36:18.4998855+08:00;True|2022-04-26T11:10:47.8669289+08:00;True|2022-04-22T19:08:03.4552294+08:00;True|2022-04-20T18:56:11.4508091+08:00;True|2022-04-19T17:30:53.8665107+08:00;True|2022-04-18T16:55:05.6257986+08:00;True|2022-04-18T16:52:06.6066165+08:00;True|2022-04-18T16:46:12.7425372+08:00;True|2022-04-18T09:47:09.2115620+08:00;True|2022-04-16T17:42:14.1289135+08:00;True|2022-04-16T17:34:18.2114745+08:00;True|2022-04-16T17:27:25.2792292+08:00;True|2022-04-16T09:58:29.6233922+08:00;False|2022-04-16T09:56:14.5192164+08:00;</History>
+    <History>True|2022-05-27T11:31:30.4670190Z;False|2022-04-26T17:23:44.1642695+08:00;False|2022-04-26T16:55:56.9612137+08:00;False|2022-04-26T16:53:25.0273962+08:00;False|2022-04-26T15:53:37.3959158+08:00;False|2022-04-26T15:36:18.4998855+08:00;True|2022-04-26T11:10:47.8669289+08:00;True|2022-04-22T19:08:03.4552294+08:00;True|2022-04-20T18:56:11.4508091+08:00;True|2022-04-19T17:30:53.8665107+08:00;True|2022-04-18T16:55:05.6257986+08:00;True|2022-04-18T16:52:06.6066165+08:00;True|2022-04-18T16:46:12.7425372+08:00;True|2022-04-18T09:47:09.2115620+08:00;True|2022-04-16T17:42:14.1289135+08:00;True|2022-04-16T17:34:18.2114745+08:00;True|2022-04-16T17:27:25.2792292+08:00;True|2022-04-16T09:58:29.6233922+08:00;False|2022-04-16T09:56:14.5192164+08:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="addResult.txt">
@@ -184,10 +184,10 @@
       <publishTime>01/08/2019 11:19:05</publishTime>
     </File>
     <File Include="bin/dcl.common.dll">
-      <publishTime>04/16/2022 17:27:04</publishTime>
+      <publishTime>05/24/2022 11:23:38</publishTime>
     </File>
     <File Include="bin/dcl.common.pdb">
-      <publishTime>04/16/2022 17:27:04</publishTime>
+      <publishTime>05/24/2022 11:23:38</publishTime>
     </File>
     <File Include="bin/dcl.dao.clab.dll">
       <publishTime>01/09/2019 10:18:32</publishTime>
@@ -196,16 +196,16 @@
       <publishTime>01/09/2019 10:18:32</publishTime>
     </File>
     <File Include="bin/dcl.dao.core.dll">
-      <publishTime>04/16/2022 17:27:05</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.dao.core.pdb">
-      <publishTime>04/16/2022 17:27:05</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.dao.interfaces.dll">
-      <publishTime>04/26/2022 11:10:28</publishTime>
+      <publishTime>05/27/2022 19:23:03</publishTime>
     </File>
     <File Include="bin/dcl.dao.interfaces.pdb">
-      <publishTime>04/26/2022 11:10:28</publishTime>
+      <publishTime>05/27/2022 19:23:03</publishTime>
     </File>
     <File Include="bin/dcl.dao.med.dll">
       <publishTime>01/22/2019 09:34:34</publishTime>
@@ -220,16 +220,16 @@
       <publishTime>08/01/2019 20:58:43</publishTime>
     </File>
     <File Include="bin/dcl.entity.dll">
-      <publishTime>04/16/2022 17:27:03</publishTime>
+      <publishTime>05/24/2022 11:23:37</publishTime>
     </File>
     <File Include="bin/dcl.entity.pdb">
-      <publishTime>04/16/2022 17:27:03</publishTime>
+      <publishTime>05/24/2022 11:23:37</publishTime>
     </File>
     <File Include="bin/dcl.hl7.dll">
-      <publishTime>04/26/2022 11:10:30</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.hl7.pdb">
-      <publishTime>04/26/2022 11:10:30</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.pub.entities.dict.dll">
       <publishTime>08/14/2019 15:06:09</publishTime>
@@ -244,10 +244,10 @@
       <publishTime>08/21/2019 15:01:31</publishTime>
     </File>
     <File Include="bin/dcl.pub.wcf.dll">
-      <publishTime>04/26/2022 11:10:40</publishTime>
+      <publishTime>05/27/2022 19:31:20</publishTime>
     </File>
     <File Include="bin/dcl.pub.wcf.pdb">
-      <publishTime>04/26/2022 11:10:40</publishTime>
+      <publishTime>05/27/2022 19:31:20</publishTime>
     </File>
     <File Include="bin/dcl.root.common.dll">
       <publishTime>12/26/2018 16:36:20</publishTime>
@@ -268,25 +268,25 @@
       <publishTime>08/21/2019 16:06:33</publishTime>
     </File>
     <File Include="bin/dcl.root.logon.dll">
-      <publishTime>04/26/2022 11:10:31</publishTime>
+      <publishTime>05/27/2022 19:30:02</publishTime>
     </File>
     <File Include="bin/dcl.root.logon.pdb">
-      <publishTime>04/26/2022 11:10:31</publishTime>
+      <publishTime>05/27/2022 19:30:02</publishTime>
     </File>
     <File Include="bin/Dcl.SendDataToAPP.dll">
       <publishTime>07/31/2019 14:01:22</publishTime>
     </File>
     <File Include="bin/dcl.servececontract.dll">
-      <publishTime>04/26/2022 11:10:28</publishTime>
+      <publishTime>05/27/2022 19:20:56</publishTime>
     </File>
     <File Include="bin/dcl.servececontract.pdb">
-      <publishTime>04/26/2022 11:10:28</publishTime>
+      <publishTime>05/27/2022 19:20:56</publishTime>
     </File>
     <File Include="bin/dcl.svr.ananlyse.dll">
-      <publishTime>04/26/2022 11:10:31</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.svr.ananlyse.pdb">
-      <publishTime>04/26/2022 11:10:31</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.svr.autoaudit.dll">
       <publishTime>08/01/2019 20:58:55</publishTime>
@@ -301,28 +301,28 @@
       <publishTime>08/01/2019 20:58:52</publishTime>
     </File>
     <File Include="bin/dcl.svr.ca.dll">
-      <publishTime>04/16/2022 17:27:04</publishTime>
+      <publishTime>05/24/2022 11:25:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.ca.pdb">
-      <publishTime>04/16/2022 17:27:04</publishTime>
+      <publishTime>05/24/2022 11:25:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.cache.dll">
-      <publishTime>04/26/2022 11:10:30</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.svr.cache.pdb">
-      <publishTime>04/26/2022 11:10:30</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.svr.dicbasic.dll">
-      <publishTime>04/26/2022 11:10:33</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/dcl.svr.dicbasic.pdb">
-      <publishTime>04/26/2022 11:10:33</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/dcl.svr.dicmic.dll">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.dicmic.pdb">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.elisa.dll">
       <publishTime>04/07/2022 12:05:08</publishTime>
@@ -337,16 +337,16 @@
       <publishTime>08/21/2019 16:12:30</publishTime>
     </File>
     <File Include="bin/dcl.svr.instrmt.dll">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.instrmt.pdb">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.interfaces.dll">
-      <publishTime>04/26/2022 11:10:32</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/dcl.svr.interfaces.pdb">
-      <publishTime>04/26/2022 11:10:32</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/dcl.svr.micManageMent.dll">
       <publishTime>01/09/2019 10:18:45</publishTime>
@@ -355,22 +355,22 @@
       <publishTime>01/09/2019 10:18:45</publishTime>
     </File>
     <File Include="bin/dcl.svr.msg.dll">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/dcl.svr.msg.pdb">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/dcl.svr.oa.dll">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/dcl.svr.oa.pdb">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/dcl.svr.qc.dll">
-      <publishTime>04/26/2022 11:10:33</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.qc.pdb">
-      <publishTime>04/26/2022 11:10:33</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.queuenumber.dll">
       <publishTime>04/07/2022 12:05:13</publishTime>
@@ -385,31 +385,31 @@
       <publishTime>01/22/2019 09:34:38</publishTime>
     </File>
     <File Include="bin/dcl.svr.report.dll">
-      <publishTime>04/26/2022 11:10:31</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.svr.report.pdb">
-      <publishTime>04/26/2022 11:10:31</publishTime>
+      <publishTime>05/27/2022 19:31:11</publishTime>
     </File>
     <File Include="bin/dcl.svr.result.dll">
-      <publishTime>04/26/2022 11:10:38</publishTime>
+      <publishTime>05/27/2022 19:31:17</publishTime>
     </File>
     <File Include="bin/dcl.svr.result.dll.config">
       <publishTime>04/07/2022 12:05:27</publishTime>
     </File>
     <File Include="bin/dcl.svr.result.pdb">
-      <publishTime>04/26/2022 11:10:38</publishTime>
+      <publishTime>05/27/2022 19:31:17</publishTime>
     </File>
     <File Include="bin/dcl.svr.resultcheck.dll">
-      <publishTime>04/26/2022 11:10:37</publishTime>
+      <publishTime>05/27/2022 19:31:17</publishTime>
     </File>
     <File Include="bin/dcl.svr.resultcheck.pdb">
-      <publishTime>04/26/2022 11:10:37</publishTime>
+      <publishTime>05/27/2022 19:31:17</publishTime>
     </File>
     <File Include="bin/dcl.svr.resultquery.dll">
-      <publishTime>04/26/2022 11:10:38</publishTime>
+      <publishTime>05/27/2022 19:31:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.resultquery.pdb">
-      <publishTime>04/26/2022 11:10:38</publishTime>
+      <publishTime>05/27/2022 19:31:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.root.com.dll">
       <publishTime>08/21/2019 16:12:25</publishTime>
@@ -418,46 +418,46 @@
       <publishTime>08/21/2019 16:12:25</publishTime>
     </File>
     <File Include="bin/dcl.svr.sample.dll">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.sample.pdb">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:13</publishTime>
     </File>
     <File Include="bin/dcl.svr.samstock.dll">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:15</publishTime>
     </File>
     <File Include="bin/dcl.svr.samstock.pdb">
-      <publishTime>04/26/2022 11:10:34</publishTime>
+      <publishTime>05/27/2022 19:31:15</publishTime>
     </File>
     <File Include="bin/dcl.svr.statistical.dll">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/dcl.svr.statistical.pdb">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/dcl.svr.tools.dll">
-      <publishTime>04/26/2022 11:10:39</publishTime>
+      <publishTime>05/27/2022 19:31:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.tools.pdb">
-      <publishTime>04/26/2022 11:10:39</publishTime>
+      <publishTime>05/27/2022 19:31:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.touchprint.dll">
-      <publishTime>04/26/2022 11:10:32</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/dcl.svr.touchprint.pdb">
-      <publishTime>04/26/2022 11:10:32</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/dcl.svr.users.dll">
-      <publishTime>04/26/2022 11:10:35</publishTime>
+      <publishTime>05/27/2022 19:31:15</publishTime>
     </File>
     <File Include="bin/dcl.svr.users.pdb">
-      <publishTime>04/26/2022 11:10:35</publishTime>
+      <publishTime>05/27/2022 19:31:15</publishTime>
     </File>
     <File Include="bin/dcl.svr.wcf.dll">
-      <publishTime>04/26/2022 11:10:39</publishTime>
+      <publishTime>05/27/2022 19:31:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.wcf.pdb">
-      <publishTime>04/26/2022 11:10:39</publishTime>
+      <publishTime>05/27/2022 19:31:18</publishTime>
     </File>
     <File Include="bin/dcl.svr.whonet.dll">
       <publishTime>04/07/2022 12:05:08</publishTime>
@@ -781,10 +781,10 @@
       <publishTime>04/16/2022 09:56:01</publishTime>
     </File>
     <File Include="bin/Lib.DataInterface.dll">
-      <publishTime>04/16/2022 17:34:01</publishTime>
+      <publishTime>05/24/2022 11:25:19</publishTime>
     </File>
     <File Include="bin/Lib.DataInterface.pdb">
-      <publishTime>04/16/2022 17:34:01</publishTime>
+      <publishTime>05/24/2022 11:25:19</publishTime>
     </File>
     <File Include="bin/Lib.EntityCore.dll">
       <publishTime>04/07/2022 12:05:07</publishTime>
@@ -997,16 +997,16 @@
       <publishTime>04/07/2022 12:05:12</publishTime>
     </File>
     <File Include="bin/wf.dao.wf.dll">
-      <publishTime>04/26/2022 11:10:32</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/wf.dao.wf.pdb">
-      <publishTime>04/26/2022 11:10:32</publishTime>
+      <publishTime>05/27/2022 19:31:12</publishTime>
     </File>
     <File Include="bin/wf.svr.reagent.dll">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/wf.svr.reagent.pdb">
-      <publishTime>04/26/2022 11:10:36</publishTime>
+      <publishTime>05/27/2022 19:31:16</publishTime>
     </File>
     <File Include="bin/ZlyySmsInterface.dll">
       <publishTime>07/31/2019 14:01:20</publishTime>

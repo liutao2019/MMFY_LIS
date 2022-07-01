@@ -1946,6 +1946,34 @@ namespace dcl.svr.result
 
         }
 
+        /// <summary>
+        /// 获取病人新冠结果粤核酸上传状态
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        public Dictionary<string, string> GetPatientYhsStatus(DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                Dictionary<string, string> listPats = new Dictionary<string, string>();
+                IDaoPidReportMain dao = DclDaoFactory.DaoHandler<IDaoPidReportMain>();
+                if (dao != null)
+                {
+                    EntityPatientQC PatientQC = new EntityPatientQC();
+                    PatientQC.DateStart = startDate.Date;
+                    PatientQC.DateEnd = endDate.Date.AddDays(1);
+                    listPats = dao.GetPatientYhsStatus(PatientQC);
+                }
+                return listPats;
+            }
+            catch (Exception ex)
+            {
+                Lib.LogManager.Logger.LogException(ex);
+                throw;
+            }
+        }
+
         public EntityPidReportMain GetPatientByPatId(string strPatId, bool withPidRepDetail)
         {
             EntityPidReportMain patient = null;

@@ -16,7 +16,6 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ResultCheck\wf.svr.result\obj\Debu
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ResultCheck\wf.svr.result\obj\Debug\dcl.svr.result.csproj.GenerateResource.Cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ResultCheck\wf.svr.result\obj\Debug\dcl.svr.result.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ResultCheck\wf.svr.result\obj\Debug\dcl.svr.result.pdb
-D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
 D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.result.dll.config
 D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.result.dll
 D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.result.pdb

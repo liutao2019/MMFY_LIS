@@ -600,39 +600,19 @@ namespace dcl.svr.resultcheck
                     foreach (EntityPidReportMain patinfo in listPatinfo)
                     {
                         EntityOperationResult result = AduitReport(patinfo, auditType, caller, today);
+                        if (patinfo.PidComName.Contains("新冠") || patinfo.PidComName.Contains("新型冠状"))
+                        {
+                            listCovidPatientsID.Add(result.Data.Patient.RepId);                            
+                        }
+
                         listResult.Add(result);
                         if (result.Success)
                         {
-
-                            listSuccessPatID.Add(result.Data.Patient.RepId);
-
-                            if (patinfo.PidSrcId == "110")
-                            {
-                                listOutPatientsID.Add(result.Data.Patient.RepId);
-                            }
-                            if (patinfo.PidComName.Contains("新冠") || patinfo.PidComName.Contains("新型冠状"))
-                            {
-                                if (string.IsNullOrEmpty(config.Audit_YSSFilterDept))
-                                {
-                                    listCovidPatientsID.Add(result.Data.Patient.RepId);
-                                }
-                                else
-                                {
-                                    if (!string.IsNullOrEmpty(patinfo.PidDeptCode) && config.Audit_YSSFilterDept.Contains(patinfo.PidDeptCode))
-                                    {
-
-                                    }
-                                    else
-                                    {
-                                        listCovidPatientsID.Add(result.Data.Patient.RepId);
-                                    }
-                                }
-                            }
+                            listSuccessPatID.Add(result.Data.Patient.RepId);                         
                         }
 
                     }
                 }
-                new SendDataToMid().Run(listSuccessPatID, auditType);
                 if (config.Audit_UploadYss)
                 {
                     if (config.Audit_UploadAllPatTypeYss)
@@ -649,8 +629,8 @@ namespace dcl.svr.resultcheck
                             new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), auditType);
                         }
                     }
-
                 }
+                new SendDataToMid().Run(listSuccessPatID, auditType);               
             }
             catch (Exception ex)
             {

@@ -1038,6 +1038,67 @@ where 1=1 ";
             return listIsResult;
         }
 
+        /// <summary>
+        /// 获取患者新冠结果粤核酸上传状态
+        /// </summary>
+        /// <param name="eyPatientQC"></param>
+        /// <returns></returns>
+        public Dictionary<string, string> GetPatientYhsStatus(EntityPatientQC eyPatientQC)
+        {         
+            Dictionary<string, string> listResult = new Dictionary<string, string>();
+            //判断录入时间是否有值并且是正确的时间
+            bool isDateStart = eyPatientQC.DateStart != null && eyPatientQC.DateStart > Convert.ToDateTime("1900-01-01");
+            bool isDateEnd = eyPatientQC.DateEnd != null && eyPatientQC.DateEnd > Convert.ToDateTime("1900-01-01");
+            {
+                if (eyPatientQC != null && eyPatientQC.ListItrId.Count > 0 && isDateStart && isDateEnd)
+                {
+                    try
+                    {
+                        #region 查找上传状态(SQL语句)
+                        string sqlStr = @"SELECT 
+                        PAT_LIS_MAIN.PMA_REP_ID,
+                        (CASE WHEN SYS_INTERFACE_LOG.OPERATION_SUCCESS IS NULL THEN 0 ELSE SYS_INTERFACE_LOG.OPERATION_SUCCESS END) AS yhsuploadstatus
+                        FROM PAT_LIS_MAIN (NOLOCK)
+                        INNER JOIN SAMPLE_MAIN (NOLOCK) ON PMA_LIS_MAIN.PMA_BAR_CODE = SAMPLE_MAIN.SMA_BAR_ID
+                        LEFT JOIN SYS_INTERFACE_LOG (NOLOCK) ON SAMPLE_MAIN.SMA_YHS_BARCODE = SYS_INTERFACE_LOG.SAMP_BAR_ID
+                        WHERE 1=1
+                        AND SYS_INTERFACE_LOG.OPERATION_NAME = '发布粤省事检验报告' ";
+
+                        #endregion
+                        if (isDateStart)
+                        {
+                            sqlStr += string.Format("and Pma_in_date >= '{0}'", eyPatientQC.DateStart?.ToString("yyyy-MM-dd HH:mm:ss"));
+                        }
+                        if (isDateEnd)
+                        {
+                            sqlStr += string.Format("and Pma_in_date < '{0}'", eyPatientQC.DateEnd?.ToString("yyyy-MM-dd HH:mm:ss"));
+                        }
+                        DBManager helper = new DBManager();
+
+                        DataTable dtPatiens = helper.ExecuteDtSql(sqlStr);
+
+                        if (dtPatiens.Rows.Count > 0)
+                        {
+                            foreach (DataRow row in dtPatiens.Rows)
+                            {
+                                if (!listResult.ContainsKey(row["PMA_REP_ID"].ToString()))
+                                {
+                                    listResult.Add(row["PMA_REP_ID"].ToString(), row["yhsuploadstatus"].ToString());
+                                }
+                            }
+                        }
+
+                        //listIsResult = EntityManager<EntityPidReportMain>.ConvertToList(dtPatiens).OrderBy(i => i.RepId).ToList();
+                    }
+                    catch (Exception ex)
+                    {
+                        Lib.LogManager.Logger.LogException("获取患者新冠结果粤核酸上传状态", ex);
+                    }
+                }
+                return listResult;
+            }
+
+        }
 
         public List<EntityPidReportMain> SearchPatientForReportCopyUse(string sbPatId)
         {
@@ -1760,9 +1821,10 @@ select 1 from sys_interface_log(nolock) where operation_name='发布粤省事检
 and operation_success=1
 AND rep_id = Pat_lis_main.Pma_rep_id
 ) 
-AND Pat_lis_main.Pma_pat_name LIKE '%163030%'
+AND Pat_lis_main.Pma_com_name LIKE '%新型冠状%'
 AND Pat_lis_main.Pma_in_date >= '{0}'
 AND Pat_lis_main.Pma_in_date <= '{1}'
+AND DATALENGTH(Pat_lis_main.Pma_bar_code) < 16
 ";
 
                 sql = string.Format(sql, qc.DateStart?.ToString("yyyy-MM-dd HH:mm:ss"), qc.DateEnd?.ToString("yyyy-MM-dd HH:mm:ss"));

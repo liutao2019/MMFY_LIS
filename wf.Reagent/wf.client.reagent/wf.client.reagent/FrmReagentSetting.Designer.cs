@@ -39,8 +39,8 @@ namespace wf.client.reagent
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.bsReaSetting = new System.Windows.Forms.BindingSource(this.components);
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.selectDicReaSupplier1 = new dcl.client.control.SelectDicReaSupplier();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.ceDelFlag = new DevExpress.XtraEditors.CheckEdit();
@@ -106,6 +106,7 @@ namespace wf.client.reagent
             this.colpy_code = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colwb_code = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDrea_provincialno = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.txtSort = new DevExpress.XtraEditors.TextEdit();
@@ -113,7 +114,6 @@ namespace wf.client.reagent
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.sysToolBar1 = new dcl.client.common.SysToolBar();
-            this.colDrea_provincialno = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -123,8 +123,8 @@ namespace wf.client.reagent
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsReaSetting)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceDelFlag.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cePrintFlag.Properties)).BeginInit();
@@ -260,6 +260,10 @@ namespace wf.client.reagent
             this.textEdit2.StyleController = this.layoutControl1;
             this.textEdit2.TabIndex = 25;
             // 
+            // bsReaSetting
+            // 
+            this.bsReaSetting.DataSource = typeof(dcl.entity.EntityReaSetting);
+            // 
             // textEdit1
             // 
             this.textEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bsReaSetting, "Drea_alarmdays", true));
@@ -269,10 +273,6 @@ namespace wf.client.reagent
             this.textEdit1.Size = new System.Drawing.Size(215, 20);
             this.textEdit1.StyleController = this.layoutControl1;
             this.textEdit1.TabIndex = 24;
-            // 
-            // bsReaSetting
-            // 
-            this.bsReaSetting.DataSource = typeof(dcl.entity.EntityReaSetting);
             // 
             // selectDicReaSupplier1
             // 
@@ -1079,6 +1079,15 @@ namespace wf.client.reagent
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 6;
             // 
+            // colDrea_provincialno
+            // 
+            this.colDrea_provincialno.Caption = "省标编号";
+            this.colDrea_provincialno.FieldName = "Drea_provincialno";
+            this.colDrea_provincialno.Name = "colDrea_provincialno";
+            this.colDrea_provincialno.Visible = true;
+            this.colDrea_provincialno.VisibleIndex = 2;
+            this.colDrea_provincialno.Width = 97;
+            // 
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.layoutControl2);
@@ -1155,15 +1164,6 @@ namespace wf.client.reagent
             this.sysToolBar1.OnBtnCancelClicked += new System.EventHandler(this.sysToolBar1_OnBtnCancelClicked);
             this.sysToolBar1.OnBtnRefreshClicked += new System.EventHandler(this.sysToolBar1_OnBtnRefreshClicked);
             // 
-            // colDrea_provincialno
-            // 
-            this.colDrea_provincialno.Caption = "省标编号";
-            this.colDrea_provincialno.FieldName = "Drea_provincialno";
-            this.colDrea_provincialno.Name = "colDrea_provincialno";
-            this.colDrea_provincialno.Visible = true;
-            this.colDrea_provincialno.VisibleIndex = 2;
-            this.colDrea_provincialno.Width = 97;
-            // 
             // FrmReagentSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1184,8 +1184,8 @@ namespace wf.client.reagent
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsReaSetting)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceDelFlag.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cePrintFlag.Properties)).EndInit();

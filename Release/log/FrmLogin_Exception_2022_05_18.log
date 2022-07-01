@@ -1,0 +1,57 @@
+
+时间：2022-05-18 17:40:44
+进程：wf.ClientEntrance.exe
+模块：FrmLogin   方法：FrmLogin_Load   行数：175
+标题：
+附加信息：
+System.ServiceModel.EndpointNotFoundException: 没有终结点在侦听可以接受消息的 http://localhost:8190/lis/power/SystemConfigBIZ.svc。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。 ---> System.Net.WebException: 远程服务器返回错误: (400) 错误的请求。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 dcl.servececontract.ISystemConfig.GetSysParaCaChe()
+   在 dcl.client.cache.CacheSysconfig.Refresh() 位置 D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.Client.Cache\CacheSysconfig.cs:行号 50
+   在 dcl.client.cache.CacheSysconfig..ctor() 位置 D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.Client.Cache\CacheSysconfig.cs:行号 41
+   在 dcl.client.cache.CacheSysconfig.get_Current() 位置 D:\LIS\NEW_MMFY_LIS\wf.Cache\wf.Client.Cache\CacheSysconfig.cs:行号 26
+   在 dcl.client.common.ConfigHelper.GetSysConfigValueWithoutLogin(String configCode) 位置 D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\ConfigHelper.cs:行号 193
+   在 wf.ClientEntrance.FrmLogin.CASignRead() 位置 D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:行号 933
+   在 wf.ClientEntrance.FrmLogin.FrmLogin_Load(Object sender, EventArgs e) 位置 D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:行号 170
+
+
+时间：2022-05-18 17:40:52
+进程：wf.ClientEntrance.exe
+模块：FrmLogin   方法：btnLogin_Click   行数：432
+标题：
+附加信息：
+System.ServiceModel.EndpointNotFoundException: 没有终结点在侦听可以接受消息的 http://localhost:8190/lis/UserLoginBIZ.svc。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。 ---> System.Net.WebException: 远程服务器返回错误: (400) 错误的请求。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 dcl.servececontract.ILogin.CsLogin(EntityRequest request)
+   在 wf.ClientEntrance.FrmLogin.btnLogin_Click(Object sender, EventArgs e) 位置 D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\FrmLogin.cs:行号 427
+
