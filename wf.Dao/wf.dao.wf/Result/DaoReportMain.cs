@@ -1801,9 +1801,10 @@ from
 sys_interface_log(nolock)
 left outer join Pat_lis_main(nolock) on Pat_lis_main.Pma_rep_id=sys_interface_log.rep_id
 where operation_name='发布粤省事检验报告' and operation_success=0
-and rep_id not in(
-select rep_id from sys_interface_log(nolock) where operation_name='发布粤省事检验报告'
+and not EXISTS(
+select 1 from sys_interface_log(nolock) where operation_name='发布粤省事检验报告'
 and operation_success=1
+AND sys_interface_log.rep_id = Pat_lis_main.Pma_rep_id
 ) 
 AND Pat_lis_main.Pma_in_date >= '{0}'
 AND Pat_lis_main.Pma_in_date <= '{1}'
