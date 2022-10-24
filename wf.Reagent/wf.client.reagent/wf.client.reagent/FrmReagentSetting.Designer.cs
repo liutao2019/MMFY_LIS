@@ -32,14 +32,13 @@ namespace wf.client.reagent
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReagentSetting));
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.bsReaSetting = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaSetting = new System.Windows.Forms.BindingSource();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.selectDicReaSupplier1 = new dcl.client.control.SelectDicReaSupplier();
             this.txtId = new DevExpress.XtraEditors.TextEdit();

@@ -32,10 +32,10 @@ namespace dcl.client.statistical
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.ChartTitle chartTitle1 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.ChartTitle chartTitle5 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.ChartTitle chartTitle6 = new DevExpress.XtraCharts.ChartTitle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReagentStatistics));
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -113,8 +113,8 @@ namespace dcl.client.statistical
             this.xtReport.SuspendLayout();
             this.xtImg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rgChar.Properties)).BeginInit();
@@ -454,30 +454,30 @@ namespace dcl.client.statistical
             // chartControl1
             // 
             this.chartControl1.AppearanceNameSerializable = "In A Fog";
-            xyDiagram1.AxisX.Interlaced = true;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.Title.Text = "人次";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram3.AxisX.Interlaced = true;
+            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram3.AxisY.Title.Text = "人次";
+            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram3;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Location = new System.Drawing.Point(0, 44);
             this.chartControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteRepository.Add("调色板1", new DevExpress.XtraCharts.Palette("调色板1", DevExpress.XtraCharts.PaletteScaleMode.Repeat, new DevExpress.XtraCharts.PaletteEntry[] {
                 new DevExpress.XtraCharts.PaletteEntry(System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(207)))), ((int)(((byte)(210))))), System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(207)))), ((int)(((byte)(210))))))}));
-            series1.Name = "系列1";
+            series3.Name = "系列1";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
+        series3};
             this.chartControl1.Size = new System.Drawing.Size(649, 370);
             this.chartControl1.TabIndex = 1;
-            chartTitle1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            chartTitle1.Text = "综合统计分析";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
-            chartTitle2.Font = new System.Drawing.Font("Tahoma", 12F);
-            chartTitle2.Text = "统计日期";
+            chartTitle5.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            chartTitle5.Text = "综合统计分析";
+            chartTitle6.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle6.Font = new System.Drawing.Font("Tahoma", 12F);
+            chartTitle6.Text = "统计日期";
             this.chartControl1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
-            chartTitle1,
-            chartTitle2});
+            chartTitle5,
+            chartTitle6});
             // 
             // panelControl2
             // 
@@ -645,7 +645,7 @@ namespace dcl.client.statistical
             // 
             this.textEdit1.Location = new System.Drawing.Point(51, 4);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(259, 21);
+            this.textEdit1.Size = new System.Drawing.Size(259, 20);
             this.textEdit1.TabIndex = 1;
             // 
             // labelControl11
@@ -710,8 +710,8 @@ namespace dcl.client.statistical
             this.xtraTabControl1.ResumeLayout(false);
             this.xtReport.ResumeLayout(false);
             this.xtImg.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);

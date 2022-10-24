@@ -376,7 +376,7 @@ namespace dcl.svr.result
 
             List<EntityPidReportDetail> listPatCombine = patient.ListPidReportDetail;
 
-            if (!string.IsNullOrEmpty(patient.RepBarCode))
+            if (patient.RepBarCode.Length <= 14 && !string.IsNullOrEmpty(patient.RepBarCode))
             {
                 //条码号登记判断并发
                 string patId = GetPatientPatId(patient.RepItrId, patient.RepBarCode, patient.RepSid, patient.RepInDate.Value);
@@ -469,15 +469,19 @@ namespace dcl.svr.result
                 patient.RepStatus = 0;
                 //刪除条码重新登记后需判断该条码是否有修改记录
                 bool isModify = false;
-                List<EntitySampProcessDetail> listDetail = new SampProcessDetailBIZ().GetSampProcessDetail(patient.RepBarCode);
-                if (listDetail.Count > 0)
+                if (patient.RepBarCode.Length <= 14)
                 {
-                    foreach (EntitySampProcessDetail detail in listDetail)
+                    List<EntitySampProcessDetail> listDetail = new SampProcessDetailBIZ().GetSampProcessDetail(patient.RepBarCode);
+                    if (listDetail.Count > 0)
                     {
-                        if (detail.ProcStatus == "35")
-                            isModify = true;
+                        foreach (EntitySampProcessDetail detail in listDetail)
+                        {
+                            if (detail.ProcStatus == "35")
+                                isModify = true;
+                        }
                     }
                 }
+                
                 if (isModify)
                 {
                     patient.RepModifyFrequency = 1;//修改次数
@@ -489,14 +493,14 @@ namespace dcl.svr.result
                 result.Data.Patient.RepId = pat_id;
 
                 //判断是否已回退
-                if (!string.IsNullOrEmpty(barcode) && new SampMainBIZ().Returned(barcode))
+                if (barcode.Length <= 14 && !string.IsNullOrEmpty(barcode) && new SampMainBIZ().Returned(barcode))
                 {
                     result.Data.Patient.RepBarCode = barcode;
                     result.AddMessage(EnumOperateErrorCode.HaveReturned, EnumOperateErrorLevel.Error);
                 }
 
                 //判断是否存在样本号
-                else if (ExsitSid(patient.RepSid, patient.RepItrId, patient.RepInDate.Value))
+                else if (barcode.Length <= 14 && ExsitSid(patient.RepSid, patient.RepItrId, patient.RepInDate.Value))
                 {
                     result.AddMessage(EnumOperateErrorCode.SIDExist, EnumOperateErrorLevel.Error);
                 }
@@ -540,6 +544,11 @@ namespace dcl.svr.result
                                                  , listPatCombine);
                         }
                         listPatients.Add(patient);
+
+
+                        System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+                        sw.Start();//开始计时
+
 
                         //插入病人资料
                         if (InsertNewPatient(listPatients))
@@ -591,6 +600,10 @@ namespace dcl.svr.result
                         else
                             result.AddMessage(EnumOperateErrorCode.Exception, EnumOperateErrorLevel.Error);
 
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码插入时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
+
+
                     }
                 }
             }
@@ -615,6 +628,9 @@ namespace dcl.svr.result
             {
                 foreach (EntityPidReportMain item in patients)
                 {
+                    System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+                    sw.Start();//开始计时
+
                     result = mainDao.InsertNewPatient(item);
                     //插入病人信息成功后插入病人组合信息
                     if (result && item.ListPidReportDetail.Count > 0)
@@ -634,8 +650,15 @@ namespace dcl.svr.result
                             i++;
 
                         }
-                        result = new PidReportDetailBIZ().InsertNewReportDetail(item.ListPidReportDetail);
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码插入患者表时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
 
+                        sw.Start();//开始计时
+                        result = new PidReportDetailBIZ().InsertNewReportDetail(item.ListPidReportDetail);
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码插入患者明细表时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
+
+                        sw.Start();//开始计时
                         //存在条码号就更新上机标志
                         if (result &&
                             !string.IsNullOrEmpty(item.RepBarCode) &&
@@ -644,6 +667,8 @@ namespace dcl.svr.result
                             SampDetailBIZ sampDetailBIZ = new SampDetailBIZ();
                             sampDetailBIZ.UpdateSampDetailSampFlagByComId(item.RepBarCode, listComId, "1");
                         }
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码号更新上机标志时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
                     }
                 }
 

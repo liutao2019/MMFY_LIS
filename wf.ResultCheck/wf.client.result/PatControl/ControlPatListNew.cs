@@ -922,7 +922,7 @@ namespace dcl.client.result.PatControl
             int countReported = 0;
             int countPrinted = 0;
             int countTotal = 0;
-
+            int countYhsTotals = 0;
 
             int countPass = 0;
             int countUnPass = 0;
@@ -939,6 +939,11 @@ namespace dcl.client.result.PatControl
 
                     foreach (EntityPidReportMain item in dtpat)
                     {
+                        if (item.RepBarCode.Length == 14)
+                        {
+                            countYhsTotals++;
+                        }
+
                         if (item.RepStatus == Convert.ToInt32(LIS_Const.PATIENT_FLAG.Audited)
                             || item.RepStatus == Convert.ToInt32(LIS_Const.PATIENT_FLAG.Printed)
                             || item.RepStatus == Convert.ToInt32(LIS_Const.PATIENT_FLAG.Reported)
@@ -1001,7 +1006,7 @@ namespace dcl.client.result.PatControl
                     }
                 }
             }
-            this.lbRecordCount.Text = string.Format("总数：{0} 已{4}：{1} 未{4}：{2} 已{5}：{3}", countTotal, countAudited, countUnAudited, countReported, LocalSetting.Current.Setting.AuditWord, LocalSetting.Current.Setting.ReportWord);
+            this.lbRecordCount.Text = string.Format("总数：{0} 已{4}：{1} 未{4}：{2} 已{5}：{3} 核酸管数：{6}", countTotal, countAudited, countUnAudited, countReported, LocalSetting.Current.Setting.AuditWord, LocalSetting.Current.Setting.ReportWord, countYhsTotals);
         }
         bool Lab_ShowAlarmColumn = false;
 

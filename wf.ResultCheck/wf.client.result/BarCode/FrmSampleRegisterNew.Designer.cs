@@ -113,6 +113,7 @@ namespace dcl.client.result
             this.txtIDFiter = new DevExpress.XtraEditors.TextEdit();
             this.panelTop = new DevExpress.XtraEditors.PanelControl();
             this.barSave = new dcl.client.common.SysToolBar();
+            this.lblYhsPrint = new System.Windows.Forms.Label();
             this.pnlQuery.SuspendLayout();
             this.pnlPatInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -1278,13 +1279,14 @@ namespace dcl.client.result
             // 
             // pnCount
             // 
+            this.pnCount.Controls.Add(this.lblYhsPrint);
             this.pnCount.Controls.Add(this.lbHeader);
             this.pnCount.Controls.Add(this.lblPrintCount);
             this.pnCount.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnCount.Location = new System.Drawing.Point(2, 2);
             this.pnCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnCount.Name = "pnCount";
-            this.pnCount.Size = new System.Drawing.Size(154, 19);
+            this.pnCount.Size = new System.Drawing.Size(295, 19);
             this.pnCount.TabIndex = 3;
             // 
             // lbHeader
@@ -1411,6 +1413,15 @@ namespace dcl.client.result
             this.barSave.OnPrintPreviewClicked += new System.EventHandler(this.btnPrintPreviewQD_Click);
             this.barSave.OnBtnExportClicked += new System.EventHandler(this.BtnExport_Click);
             this.barSave.BtnAnswerClick += new System.EventHandler(this.btnGaps_Click);
+            // 
+            // lblYhsPrint
+            // 
+            this.lblYhsPrint.AutoSize = true;
+            this.lblYhsPrint.Location = new System.Drawing.Point(142, 2);
+            this.lblYhsPrint.Name = "lblYhsPrint";
+            this.lblYhsPrint.Size = new System.Drawing.Size(67, 14);
+            this.lblYhsPrint.TabIndex = 3;
+            this.lblYhsPrint.Text = "核酸管数：";
             // 
             // FrmSampleRegisterNew
             // 
@@ -1569,5 +1580,6 @@ namespace dcl.client.result
         private System.Windows.Forms.Label lbSid;
         private DevExpress.XtraEditors.CheckEdit cbManualIntr;
         private System.Windows.Forms.CheckBox chkYhsBarCode;
+        private System.Windows.Forms.Label lblYhsPrint;
     }
 }

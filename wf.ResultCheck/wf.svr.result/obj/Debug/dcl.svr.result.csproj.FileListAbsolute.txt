@@ -26,4 +26,3 @@ D:\LIS\NEW_MMFY_LIS\wf.ResultCheck\wf.svr.result\obj\Debug\dcl.svr.result.csproj
 D:\LIS\NEW_MMFY_LIS\wf.ResultCheck\wf.svr.result\obj\Debug\dcl.svr.result.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.ResultCheck\wf.svr.result\obj\Debug\dcl.svr.result.dll
 D:\LIS\NEW_MMFY_LIS\wf.ResultCheck\wf.svr.result\obj\Debug\dcl.svr.result.pdb
-D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml

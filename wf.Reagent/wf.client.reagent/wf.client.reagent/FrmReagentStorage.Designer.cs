@@ -34,18 +34,17 @@ namespace wf.client.reagent
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReagentStorage));
-            this.bsReaSetting = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaSetting = new System.Windows.Forms.BindingSource();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.sysToolBar1 = new dcl.client.common.SysToolBar();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.gcReaStorage = new DevExpress.XtraGrid.GridControl();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.面板设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bsReaStorage = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaStorage = new System.Windows.Forms.BindingSource();
             this.gvReaStorage = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colRsr_no = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRsr_applier = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,7 +54,7 @@ namespace wf.client.reagent
             this.colRsr_status = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRsr_printflag = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcReaPurchase = new DevExpress.XtraGrid.GridControl();
-            this.bsReaPurchase = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaPurchase = new System.Windows.Forms.BindingSource();
             this.gvReaPurchase = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colRpc_no = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRpc_applier = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -86,9 +85,9 @@ namespace wf.client.reagent
             this.dtBegin = new DevExpress.XtraEditors.DateEdit();
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
             this.gcReaDetail = new DevExpress.XtraGrid.GridControl();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip();
             this.MenuDelItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bsReaStorageDetail = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaStorageDetail = new System.Windows.Forms.BindingSource();
             this.gvReadetail = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colRsd_no = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colReagentName = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -98,21 +97,21 @@ namespace wf.client.reagent
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit1 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsSup = new System.Windows.Forms.BindingSource(this.components);
+            this.bsSup = new System.Windows.Forms.BindingSource();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit1 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsGroup = new System.Windows.Forms.BindingSource(this.components);
+            this.bsGroup = new System.Windows.Forms.BindingSource();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemTextEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit2 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsPdt = new System.Windows.Forms.BindingSource(this.components);
+            this.bsPdt = new System.Windows.Forms.BindingSource();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit3 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsUnit = new System.Windows.Forms.BindingSource(this.components);
+            this.bsUnit = new System.Windows.Forms.BindingSource();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemTextEdit4 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -121,10 +120,10 @@ namespace wf.client.reagent
             this.repositoryItemTextEdit6 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit4 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsPos = new System.Windows.Forms.BindingSource(this.components);
+            this.bsPos = new System.Windows.Forms.BindingSource();
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit5 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsCon = new System.Windows.Forms.BindingSource(this.components);
+            this.bsCon = new System.Windows.Forms.BindingSource();
             this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit7 = new lis.client.control.ctlRepositoryItemLookUpEdit();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -1467,7 +1466,7 @@ namespace wf.client.reagent
             // 
             // lookUpEdit3
             // 
-            this.lookUpEdit3.Location = new System.Drawing.Point(63, 333);
+            this.lookUpEdit3.Location = new System.Drawing.Point(63, 352);
             this.lookUpEdit3.Name = "lookUpEdit3";
             this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1482,7 +1481,7 @@ namespace wf.client.reagent
             // 
             // lookUpEdit2
             // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(63, 309);
+            this.lookUpEdit2.Location = new System.Drawing.Point(63, 328);
             this.lookUpEdit2.Name = "lookUpEdit2";
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1497,7 +1496,7 @@ namespace wf.client.reagent
             // 
             // lookUpEdit1
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(63, 285);
+            this.lookUpEdit1.Location = new System.Drawing.Point(63, 304);
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1513,7 +1512,7 @@ namespace wf.client.reagent
             // radioGroup2
             // 
             this.radioGroup2.EditValue = "完全入库";
-            this.radioGroup2.Location = new System.Drawing.Point(63, 533);
+            this.radioGroup2.Location = new System.Drawing.Point(63, 552);
             this.radioGroup2.Name = "radioGroup2";
             this.radioGroup2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroup2.Properties.Appearance.Options.UseBackColor = true;
@@ -1526,7 +1525,7 @@ namespace wf.client.reagent
             // 
             // txtPurno
             // 
-            this.txtPurno.Location = new System.Drawing.Point(63, 41);
+            this.txtPurno.Location = new System.Drawing.Point(63, 60);
             this.txtPurno.Name = "txtPurno";
             this.txtPurno.Size = new System.Drawing.Size(156, 20);
             this.txtPurno.StyleController = this.layoutControl1;
@@ -1534,7 +1533,7 @@ namespace wf.client.reagent
             // 
             // txtReason
             // 
-            this.txtReason.Location = new System.Drawing.Point(63, 509);
+            this.txtReason.Location = new System.Drawing.Point(63, 528);
             this.txtReason.Name = "txtReason";
             this.txtReason.Size = new System.Drawing.Size(156, 20);
             this.txtReason.StyleController = this.layoutControl1;
@@ -1543,7 +1542,7 @@ namespace wf.client.reagent
             // 
             // radioGroup1
             // 
-            this.radioGroup1.Location = new System.Drawing.Point(63, 456);
+            this.radioGroup1.Location = new System.Drawing.Point(63, 475);
             this.radioGroup1.Name = "radioGroup1";
             this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
@@ -1557,7 +1556,7 @@ namespace wf.client.reagent
             // dateEdit2
             // 
             this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(63, 187);
+            this.dateEdit2.Location = new System.Drawing.Point(63, 206);
             this.dateEdit2.Name = "dateEdit2";
             this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1569,7 +1568,7 @@ namespace wf.client.reagent
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(12, 562);
+            this.simpleButton1.Location = new System.Drawing.Point(12, 581);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(207, 22);
             this.simpleButton1.StyleController = this.layoutControl1;
@@ -1579,7 +1578,7 @@ namespace wf.client.reagent
             // 
             // txtBarcode
             // 
-            this.txtBarcode.Location = new System.Drawing.Point(63, 485);
+            this.txtBarcode.Location = new System.Drawing.Point(63, 504);
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Properties.ReadOnly = true;
             this.txtBarcode.Size = new System.Drawing.Size(156, 20);
@@ -1602,7 +1601,7 @@ namespace wf.client.reagent
             this.selectDicReaStoreCondition1.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDicReaStoreCondition1.KeyUpDownMoveNext = false;
             this.selectDicReaStoreCondition1.LoadDataOnDesignMode = true;
-            this.selectDicReaStoreCondition1.Location = new System.Drawing.Point(63, 431);
+            this.selectDicReaStoreCondition1.Location = new System.Drawing.Point(63, 450);
             this.selectDicReaStoreCondition1.MaximumSize = new System.Drawing.Size(500, 21);
             this.selectDicReaStoreCondition1.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectDicReaStoreCondition1.Name = "selectDicReaStoreCondition1";
@@ -1634,7 +1633,7 @@ namespace wf.client.reagent
             this.selectDicReaStorePosition1.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDicReaStorePosition1.KeyUpDownMoveNext = false;
             this.selectDicReaStorePosition1.LoadDataOnDesignMode = true;
-            this.selectDicReaStorePosition1.Location = new System.Drawing.Point(63, 406);
+            this.selectDicReaStorePosition1.Location = new System.Drawing.Point(63, 425);
             this.selectDicReaStorePosition1.MaximumSize = new System.Drawing.Size(500, 21);
             this.selectDicReaStorePosition1.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectDicReaStorePosition1.Name = "selectDicReaStorePosition1";
@@ -1652,7 +1651,7 @@ namespace wf.client.reagent
             // 
             // txtInvoice
             // 
-            this.txtInvoice.Location = new System.Drawing.Point(63, 382);
+            this.txtInvoice.Location = new System.Drawing.Point(63, 401);
             this.txtInvoice.Name = "txtInvoice";
             this.txtInvoice.Size = new System.Drawing.Size(156, 20);
             this.txtInvoice.StyleController = this.layoutControl1;
@@ -1661,7 +1660,7 @@ namespace wf.client.reagent
             // txtPrice
             // 
             this.txtPrice.EditValue = "0";
-            this.txtPrice.Location = new System.Drawing.Point(63, 261);
+            this.txtPrice.Location = new System.Drawing.Point(63, 280);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(156, 20);
             this.txtPrice.StyleController = this.layoutControl1;
@@ -1683,7 +1682,7 @@ namespace wf.client.reagent
             this.selectDicReaUnit1.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDicReaUnit1.KeyUpDownMoveNext = false;
             this.selectDicReaUnit1.LoadDataOnDesignMode = true;
-            this.selectDicReaUnit1.Location = new System.Drawing.Point(63, 236);
+            this.selectDicReaUnit1.Location = new System.Drawing.Point(63, 255);
             this.selectDicReaUnit1.MaximumSize = new System.Drawing.Size(500, 21);
             this.selectDicReaUnit1.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectDicReaUnit1.Name = "selectDicReaUnit1";
@@ -1715,7 +1714,7 @@ namespace wf.client.reagent
             this.selectDicReaSupplier2.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDicReaSupplier2.KeyUpDownMoveNext = false;
             this.selectDicReaSupplier2.LoadDataOnDesignMode = true;
-            this.selectDicReaSupplier2.Location = new System.Drawing.Point(63, 211);
+            this.selectDicReaSupplier2.Location = new System.Drawing.Point(63, 230);
             this.selectDicReaSupplier2.MaximumSize = new System.Drawing.Size(500, 21);
             this.selectDicReaSupplier2.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectDicReaSupplier2.Name = "selectDicReaSupplier2";
@@ -1747,7 +1746,7 @@ namespace wf.client.reagent
             this.selectDicReaProduct1.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDicReaProduct1.KeyUpDownMoveNext = false;
             this.selectDicReaProduct1.LoadDataOnDesignMode = true;
-            this.selectDicReaProduct1.Location = new System.Drawing.Point(63, 357);
+            this.selectDicReaProduct1.Location = new System.Drawing.Point(63, 376);
             this.selectDicReaProduct1.MaximumSize = new System.Drawing.Size(500, 21);
             this.selectDicReaProduct1.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectDicReaProduct1.Name = "selectDicReaProduct1";
@@ -1765,7 +1764,7 @@ namespace wf.client.reagent
             // 
             // txtBatchNo
             // 
-            this.txtBatchNo.Location = new System.Drawing.Point(63, 163);
+            this.txtBatchNo.Location = new System.Drawing.Point(63, 182);
             this.txtBatchNo.Name = "txtBatchNo";
             this.txtBatchNo.Size = new System.Drawing.Size(156, 20);
             this.txtBatchNo.StyleController = this.layoutControl1;
@@ -1773,7 +1772,7 @@ namespace wf.client.reagent
             // 
             // txtCount
             // 
-            this.txtCount.Location = new System.Drawing.Point(63, 139);
+            this.txtCount.Location = new System.Drawing.Point(63, 158);
             this.txtCount.Name = "txtCount";
             this.txtCount.Size = new System.Drawing.Size(156, 20);
             this.txtCount.StyleController = this.layoutControl1;
@@ -1781,7 +1780,7 @@ namespace wf.client.reagent
             // 
             // txtPackage
             // 
-            this.txtPackage.Location = new System.Drawing.Point(63, 115);
+            this.txtPackage.Location = new System.Drawing.Point(63, 134);
             this.txtPackage.Name = "txtPackage";
             this.txtPackage.Size = new System.Drawing.Size(156, 20);
             this.txtPackage.StyleController = this.layoutControl1;
@@ -1803,7 +1802,7 @@ namespace wf.client.reagent
             this.selectDicReaGroup2.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDicReaGroup2.KeyUpDownMoveNext = false;
             this.selectDicReaGroup2.LoadDataOnDesignMode = true;
-            this.selectDicReaGroup2.Location = new System.Drawing.Point(63, 90);
+            this.selectDicReaGroup2.Location = new System.Drawing.Point(63, 109);
             this.selectDicReaGroup2.MaximumSize = new System.Drawing.Size(500, 21);
             this.selectDicReaGroup2.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectDicReaGroup2.Name = "selectDicReaGroup2";
@@ -1835,7 +1834,7 @@ namespace wf.client.reagent
             this.selectDicReaSetting1.FilterMode = dcl.client.control.DclPopFilterMode.FuzzyMatching;
             this.selectDicReaSetting1.KeyUpDownMoveNext = false;
             this.selectDicReaSetting1.LoadDataOnDesignMode = true;
-            this.selectDicReaSetting1.Location = new System.Drawing.Point(63, 65);
+            this.selectDicReaSetting1.Location = new System.Drawing.Point(63, 84);
             this.selectDicReaSetting1.MaximumSize = new System.Drawing.Size(500, 21);
             this.selectDicReaSetting1.MinimumSize = new System.Drawing.Size(50, 21);
             this.selectDicReaSetting1.Name = "selectDicReaSetting1";
@@ -1856,7 +1855,7 @@ namespace wf.client.reagent
             // 
             this.txtReaDate.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bsReaStorage, "Rsr_date", true));
             this.txtReaDate.EditValue = null;
-            this.txtReaDate.Location = new System.Drawing.Point(63, 17);
+            this.txtReaDate.Location = new System.Drawing.Point(63, 36);
             this.txtReaDate.Name = "txtReaDate";
             this.txtReaDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1868,7 +1867,7 @@ namespace wf.client.reagent
             // 
             // txtReaSid
             // 
-            this.txtReaSid.Location = new System.Drawing.Point(63, -7);
+            this.txtReaSid.Location = new System.Drawing.Point(63, 12);
             this.txtReaSid.Name = "txtReaSid";
             this.txtReaSid.Properties.ReadOnly = true;
             this.txtReaSid.Size = new System.Drawing.Size(156, 20);
@@ -1904,7 +1903,7 @@ namespace wf.client.reagent
             this.layoutControlItem27,
             this.layoutControlItem9,
             this.layoutControlItem21});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, -19);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(231, 615);
             this.layoutControlGroup1.TextVisible = false;
