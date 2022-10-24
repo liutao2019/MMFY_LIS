@@ -34,18 +34,17 @@ namespace wf.client.reagent
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReagentStorage));
-            this.bsReaSetting = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaSetting = new System.Windows.Forms.BindingSource();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.sysToolBar1 = new dcl.client.common.SysToolBar();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.gcReaStorage = new DevExpress.XtraGrid.GridControl();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.面板设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bsReaStorage = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaStorage = new System.Windows.Forms.BindingSource();
             this.gvReaStorage = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colRsr_no = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRsr_applier = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,7 +54,7 @@ namespace wf.client.reagent
             this.colRsr_status = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRsr_printflag = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcReaPurchase = new DevExpress.XtraGrid.GridControl();
-            this.bsReaPurchase = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaPurchase = new System.Windows.Forms.BindingSource();
             this.gvReaPurchase = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colRpc_no = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRpc_applier = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -86,9 +85,9 @@ namespace wf.client.reagent
             this.dtBegin = new DevExpress.XtraEditors.DateEdit();
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
             this.gcReaDetail = new DevExpress.XtraGrid.GridControl();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip();
             this.MenuDelItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bsReaStorageDetail = new System.Windows.Forms.BindingSource(this.components);
+            this.bsReaStorageDetail = new System.Windows.Forms.BindingSource();
             this.gvReadetail = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colRsd_no = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colReagentName = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -98,21 +97,21 @@ namespace wf.client.reagent
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit1 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsSup = new System.Windows.Forms.BindingSource(this.components);
+            this.bsSup = new System.Windows.Forms.BindingSource();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit1 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsGroup = new System.Windows.Forms.BindingSource(this.components);
+            this.bsGroup = new System.Windows.Forms.BindingSource();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemTextEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit2 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsPdt = new System.Windows.Forms.BindingSource(this.components);
+            this.bsPdt = new System.Windows.Forms.BindingSource();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit3 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsUnit = new System.Windows.Forms.BindingSource(this.components);
+            this.bsUnit = new System.Windows.Forms.BindingSource();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemTextEdit4 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -121,10 +120,10 @@ namespace wf.client.reagent
             this.repositoryItemTextEdit6 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit4 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsPos = new System.Windows.Forms.BindingSource(this.components);
+            this.bsPos = new System.Windows.Forms.BindingSource();
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit5 = new lis.client.control.ctlRepositoryItemLookUpEdit();
-            this.bsCon = new System.Windows.Forms.BindingSource(this.components);
+            this.bsCon = new System.Windows.Forms.BindingSource();
             this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ctlRepositoryItemLookUpEdit7 = new lis.client.control.ctlRepositoryItemLookUpEdit();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();

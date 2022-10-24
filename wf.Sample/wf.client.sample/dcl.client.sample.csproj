@@ -78,9 +78,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Reference\CardReader.dll</HintPath>
     </Reference>
+    <Reference Include="dcl.client.dicbasic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.dicbasic.dll</HintPath>
+    </Reference>
     <Reference Include="dcl.client.dicmic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Release\dcl.client.dicmic.dll</HintPath>
+    </Reference>
+    <Reference Include="dcl.client.elisa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\dcl.client.elisa.dll</HintPath>
     </Reference>
     <Reference Include="dcl.entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

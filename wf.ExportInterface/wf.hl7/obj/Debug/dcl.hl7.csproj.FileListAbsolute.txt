@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.hl7.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.hl7.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.hl7.pdb
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.dll
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.hl7\obj\Debug\dcl.hl7.pdb

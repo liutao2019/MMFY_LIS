@@ -326,6 +326,16 @@ where 1=1
                 strSql = string.Format(strSql, "", "");
             }
 
+            if (!string.IsNullOrEmpty(sampQc.PidIdentityCard))
+            {
+                sqlWhere += string.Format(@"and Sample_main.Sma_identity_card ='{0}'", sampQc.PidIdentityCard);
+            }
+            if(!string.IsNullOrEmpty(sampQc.SampYhsBarCode))
+            {
+                sqlWhere += string.Format(@"and Sample_main.sma_yhs_BarCode ='{0}'", sampQc.SampYhsBarCode);
+            }
+
+
             string sqlMain = strSql + sqlWhere;
             DBManager helper = GetDbManager();
             DataTable dt = helper.ExecuteDtSql(sqlMain);
@@ -333,7 +343,6 @@ where 1=1
             list = EntityManager<EntitySampMain>.ConvertToList(dt);
             return list;
         }
-
 
         /// <summary>
         /// 简单统计条码工作量
@@ -419,6 +428,7 @@ where 1=1
                     listSql.AddRange(daoDetail.CreateSampDetail(sampMain.ListSampDetail, helper));
 
                     listSql.AddRange(daoProcess.BatchSaveSampProcessDetail(sampMain.ListSampProcessDetail, helper));
+
                 }
 
                 //记录一次生成的条码
@@ -445,6 +455,67 @@ where 1=1
             //sw.Stop();
             return result;
         }
+
+
+        /// <summary>
+        /// 调用粤核酸接口生成条码信息
+        /// </summary>
+        /// <param name="listSampMain"></param>
+        /// <returns></returns>
+        public bool CreateSampMainByYSS(List<EntitySampMain> listSampMain)
+        {
+            //Stopwatch sw = new Stopwatch();
+
+            //sw.Start();
+
+            bool result = false;
+
+            DBManager helper = new DBManager();
+
+            IDbTransaction trans = helper.BeginTrans();
+
+            PropertyInfo[] propertys = listSampMain[0].GetType().GetProperties();
+
+            List<String> listSql = new List<string>();
+
+            DaoSampDetail daoDetail = new DaoSampDetail();
+
+            DaoSampProcessDetail daoProcess = new DaoSampProcessDetail();
+
+            try
+            {
+                foreach (EntitySampMain sampMain in listSampMain)
+                {
+                    listSql.Add(helper.ConverToDBSQL(sampMain, propertys, "Sample_main"));
+
+                    listSql.AddRange(daoDetail.CreateSampDetail(sampMain.ListSampDetail, helper));
+
+                    listSql.AddRange(daoProcess.BatchSaveSampProcessDetail(sampMain.ListSampProcessDetail, helper));
+                }
+
+                //记录一次生成的条码
+                //StringBuilder strSqlInfo = new StringBuilder();
+                //foreach (string sql in listSql)
+                //{
+                //    strSqlInfo.AppendLine(sql);
+                //}
+                //Lib.LogManager.Logger.LogInfo(strSqlInfo.ToString());
+
+                helper.ExecSql(listSql.ToArray());
+                trans.Commit();
+
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                trans.Rollback();
+                Lib.LogManager.Logger.LogException(ex);
+            }
+
+            return result;
+        }
+
 
         public Boolean DeleteSampMain(String sampBarId)
         {
@@ -800,13 +871,40 @@ WHERE Sma_bar_id = '{0}'", sampBarId);
                 DBManager helper = GetDbManager();
 
                 string strUpdateSql = @"UPDATE Sample_main SET Sma_identity_name=@Sma_identity_name ,Sma_identity_card=@Sma_identity_card,
-                                       Sma_pat_type = @Sma_pat_type, Sma_pat_address = @Sma_pat_address WHERE Sma_bar_id =@samp_bar_id";
+                                       Sma_pat_type = @Sma_pat_type, Sma_pat_address = @Sma_pat_address WHERE Sma_bar_id =@samp_bar_id ";
 
                 List<DbParameter> paramHt = new List<DbParameter>();
                 paramHt.Add(new SqlParameter("@Sma_identity_name", sampMain.PidIdentityName));
                 paramHt.Add(new SqlParameter("@Sma_identity_card", sampMain.PidIdentityCard));
                 paramHt.Add(new SqlParameter("@Sma_pat_type", sampMain.SampPatType));
                 paramHt.Add(new SqlParameter("@Sma_pat_address", sampMain.PidAddress));
+                paramHt.Add(new SqlParameter("@samp_bar_id", sampBarId));
+               
+                result = helper.ExecCommand(strUpdateSql, paramHt) > 0;
+            }
+            catch (Exception ex)
+            {
+                Lib.LogManager.Logger.LogException(ex);
+                result = false;
+            }
+
+            return result;
+        }
+
+
+        public bool UpdateSampMainYHSBarCode(EntitySampMain sampMain, string sampBarId)
+        {
+            bool result = false;
+
+            try
+            {
+                DBManager helper = GetDbManager();
+
+                string strUpdateSql = @"UPDATE Sample_main SET Samp_yhs_BarCode= @Samp_yhs_BarCode WHERE Sma_bar_id =@samp_bar_id ";
+
+                List<DbParameter> paramHt = new List<DbParameter>();
+
+                paramHt.Add(new SqlParameter("@Samp_yhs_BarCode", sampMain.SampYhsBarCode));
                 paramHt.Add(new SqlParameter("@samp_bar_id", sampBarId));
 
                 result = helper.ExecCommand(strUpdateSql, paramHt) > 0;
@@ -819,7 +917,6 @@ WHERE Sma_bar_id = '{0}'", sampBarId);
 
             return result;
         }
-
 
         public Boolean ExistSampMain(String sampBarId)
         {

@@ -1328,7 +1328,7 @@ where 1=1  " + code, subSql);
             //条码号
             if (!string.IsNullOrEmpty(query.PatBarCode))
             {
-                where += " and Pat_lis_main.Pma_bar_code='" + query.PatBarCode + "'";
+                where += " and Pat_lis_main.Pma_bar_code = '" + query.PatBarCode + "'";
                 if (query.SearchOuterInterfaceMode)
                 {
                     //系统配置：是否金域报表自定义连接地址

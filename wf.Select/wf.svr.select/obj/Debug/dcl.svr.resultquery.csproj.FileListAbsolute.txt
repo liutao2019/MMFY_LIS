@@ -10,3 +10,11 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.resultquery.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.resultquery.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.resultquery.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.dll
+D:\LIS\NEW_MMFY_LIS\wf.Select\wf.svr.select\obj\Debug\dcl.svr.resultquery.pdb

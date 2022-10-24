@@ -15,7 +15,7 @@ using Lib.DAC;
 
 namespace dcl.svr.interfaces
 {
-    internal class DCLExtInterface_MMFY : DCLExtInterfaceBase
+    internal partial class DCLExtInterface_MMFY : DCLExtInterfaceBase
     {
         #region SQL
         string SQLCheckPassword = @"select * from hisinterface.v_employee_lis where user_login_name='{0}' and user_pwd='{1}' and valid_flag=1";

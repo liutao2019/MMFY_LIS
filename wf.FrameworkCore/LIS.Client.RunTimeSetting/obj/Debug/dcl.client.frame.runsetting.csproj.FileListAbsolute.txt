@@ -12,3 +12,12 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\LIS.Client.RunTimeSe
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.csproj.GenerateResource.Cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.frame.runsetting.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.frame.runsetting.pdb
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.dll
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\LIS.Client.RunTimeSetting\obj\Debug\dcl.client.frame.runsetting.pdb

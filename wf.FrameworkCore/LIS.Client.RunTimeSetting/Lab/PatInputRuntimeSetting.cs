@@ -727,6 +727,7 @@ namespace dcl.client.frame.runsetting
             table.Rows.Add(new object[] { "TatTime", "TatTime", "TAT(分钟)", 70, false, 22, true });
             table.Rows.Add(new object[] { "RepReportDate", "RepReportDate", "审核时间", 80, true, 23, true });
             table.Rows.Add(new object[] { "MicReportFlag", "MicReportFlag", "中期报告", 80, false, 24, true });
+            table.Rows.Add(new object[] { "YhsUploadStatus", "YhsUploadStatus", "粤核酸状态", 10, false, 25, true });
             return table;
         }
 

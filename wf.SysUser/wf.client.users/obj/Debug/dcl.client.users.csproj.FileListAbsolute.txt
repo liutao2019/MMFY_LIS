@@ -44,3 +44,28 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SysUser\wf.client.users\obj\Debug\
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.users.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.users.pdb
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmChangePassword.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmExceptionLog.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmFuncManagePro.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.frmLocalSetting.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmNetCASignRecord.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmDictOperationLog.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmOperationLog.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmRoleManagePro.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmCaSign.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmSysLog.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmSysOperationLog.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmSystemConfig.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.FrmUserManagePro.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.reportStateMonitor.resources
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.dll
+D:\LIS\NEW_MMFY_LIS\wf.SysUser\wf.client.users\obj\Debug\dcl.client.users.pdb

@@ -30,3 +30,21 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Analyse\wf.client.ananlyse\obj\Deb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.ananlyse.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.ananlyse.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.FrmAdvanBasicQuery.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.FrmAdvanBacQuery.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.FrmAdvanTimeQuery.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.FrmDateBasicAnalyse.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.FrmSummaryPrint.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.FrmTimeAnalyse.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.FrmBacilliBasicAnalyse.resources
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.dll
+D:\LIS\NEW_MMFY_LIS\wf.Analyse\wf.client.ananlyse\obj\Debug\dcl.client.ananlyse.pdb

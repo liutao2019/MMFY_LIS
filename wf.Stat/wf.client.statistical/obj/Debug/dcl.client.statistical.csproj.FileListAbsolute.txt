@@ -20,3 +20,17 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Stat\wf.client.statistical\obj\Deb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.statistical.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.statistical.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.FrmAdvanGeneralQuery.resources
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.FrmGeneralStatistics.resources
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.FrmReagentStatistics.resources
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.dll
+D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.pdb

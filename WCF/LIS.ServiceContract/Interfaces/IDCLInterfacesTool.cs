@@ -31,5 +31,8 @@ namespace dcl.servececontract
 
         [OperationContract]
         EntityResponse ReChargeBarcode(List<EntitySampMain> Barids);
+
+        [OperationContract]
+        EntityResponse ReUploadYssReport(List<string> RepId);
     }
 }

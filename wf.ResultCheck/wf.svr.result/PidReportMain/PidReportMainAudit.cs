@@ -80,6 +80,9 @@ namespace dcl.svr.resultcheck
             config.Audit_SendTjCriticalToMsg = CacheSysConfig.Current.GetSystemConfig("Audit_SendTjCriticalToMsg") == "是";
             config.Barcode_CheckCombineAllAudit = CacheSysConfig.Current.GetSystemConfig("Barcode_CheckCombineAllAudit") == "是";
             config.AuditTips_SampStatus = CacheSysConfig.Current.GetSystemConfig("AuditTips_SampStatus");
+            config.Audit_UploadYss = CacheSysConfig.Current.GetSystemConfig("Audit_UploadYss") == "是";
+            config.Audit_UploadAllPatTypeYss = CacheSysConfig.Current.GetSystemConfig("Audit_UploadAllPatTypeYss") == "是";
+            config.Audit_YSSFilterDept = CacheSysConfig.Current.GetSystemConfig("Audit_YSSFilterDept");
             //
             //不进行负数结果检查的项目(项目id,项目id2)
             string audit_AllowNegativeResult = CacheSysConfig.Current.GetSystemConfig("Audit_AllowNegativeResult");
@@ -588,6 +591,8 @@ namespace dcl.svr.resultcheck
                 DateTime today = ServerDateTime.GetDatabaseServerDateTime();
                 IDaoPidReportMain mainDao = DclDaoFactory.DaoHandler<IDaoPidReportMain>();
                 List<string> listSuccessPatID = new List<string>();
+                List<string> listOutPatientsID = new List<string>();
+                List<string> listCovidPatientsID = new List<string>();
                 if (mainDao != null)
                 {
                     List<EntityPidReportMain> listPatinfo = mainDao.GetPatientInfo(listPatientsID);
@@ -595,14 +600,37 @@ namespace dcl.svr.resultcheck
                     foreach (EntityPidReportMain patinfo in listPatinfo)
                     {
                         EntityOperationResult result = AduitReport(patinfo, auditType, caller, today);
+                        if (patinfo.PidComName.Contains("新冠") || patinfo.PidComName.Contains("新型冠状"))
+                        {
+                            listCovidPatientsID.Add(result.Data.Patient.RepId);                            
+                        }
+
                         listResult.Add(result);
                         if (result.Success)
                         {
-                            listSuccessPatID.Add(result.Data.Patient.RepId);
+                            listSuccessPatID.Add(result.Data.Patient.RepId);                         
+                        }
+
+                    }
+                }
+                if (config.Audit_UploadYss)
+                {
+                    if (config.Audit_UploadAllPatTypeYss)
+                    {
+                        if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), auditType);
+                        }
+                    }
+                    else
+                    {
+                        if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), auditType);
                         }
                     }
                 }
-                new SendDataToMid().Run(listSuccessPatID, auditType);
+                new SendDataToMid().Run(listSuccessPatID, auditType);               
             }
             catch (Exception ex)
             {

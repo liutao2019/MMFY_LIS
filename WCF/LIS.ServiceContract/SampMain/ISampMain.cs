@@ -122,6 +122,16 @@ namespace dcl.servececontract
         Boolean UpdateSampMainOtherInfo(EntitySampMain sampMain, String sampBarId);
 
         /// <summary>
+        /// 更新条码绑定的总码
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="sex"></param>
+        /// <param name="sampBarId"></param>
+        /// <returns></returns>
+        [OperationContract]
+        Boolean UpdateSampMainYHSBarCode(EntitySampMain sampMain, String sampBarId);
+
+        /// <summary>
         /// 手工生成条码
         /// </summary>
         /// <param name="sampMain"></param>
@@ -228,5 +238,14 @@ namespace dcl.servececontract
         /// <returns></returns>
         [OperationContract]
         List<EntitySampMain> GetFaultChargeSamp(EntitySampQC qc);
+
+        /// <summary>
+        /// 获取粤省事返回的患者信息
+        /// </summary>
+        /// <param name="qc"></param>
+        /// <returns></returns>
+        [OperationContract]
+        List<EntitySampMain> GetSampleInfo(List<string> listPatId);
+
     }
 }

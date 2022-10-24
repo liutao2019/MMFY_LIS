@@ -42,3 +42,27 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\zh-CHS\Microsoft.Data.Connect
 D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\CodeConfig.xml
 D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.client.tools.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.client.tools.pdb
+D:\LIS\NEW_MMFY_LIS\Release\zh-CHS\Microsoft.Data.ConnectionUI.Dialog.resources.dll
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.tools.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.tools.pdb
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.ConGauge.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.ConTempLine.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmBatchEdit.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmLisDocManager.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmMergeResultNew.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmSource.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmTarget.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmTempDetail.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmTempHandle.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmTempLine.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmError.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmImportLisResult.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.FrmLisDataReUpLoad.resources
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.dll
+D:\LIS\NEW_MMFY_LIS\wf.AuxiliaryTool\wf.client.tools\obj\Debug\dcl.client.tools.pdb

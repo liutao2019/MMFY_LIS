@@ -119,6 +119,11 @@ namespace dcl.entity
         public String PidName { get; set; }
 
         /// <summary>
+        /// 患者身份证信息
+        /// </summary>
+        public String PidIdentityCard { get; set; }
+
+        /// <summary>
         /// 架子号
         /// </summary>
         public String RegRackNo { get; set; }
@@ -185,7 +190,15 @@ namespace dcl.entity
         /// <summary>
         /// 是否只查询住院
         /// </summary>
-        public bool SearchHospital { get; set; } 
+        public bool SearchHospital { get; set; }
+        #endregion
+
+
+        #region 粤核酸用
+        /// <summary>
+        /// 粤核酸总码
+        /// </summary>
+        public String SampYhsBarCode { get; set; }
         #endregion
     }
 

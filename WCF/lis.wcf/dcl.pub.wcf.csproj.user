@@ -9,7 +9,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NameOfLastUsedPublishProfile>wcf</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\LIS\NEW_MMFY_LIS\WCF\lis.wcf\Properties\PublishProfiles\wcf.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

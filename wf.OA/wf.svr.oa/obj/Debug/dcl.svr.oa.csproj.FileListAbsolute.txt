@@ -10,3 +10,11 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.oa.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.oa.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.oa.pdb
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.dll
+D:\LIS\NEW_MMFY_LIS\wf.OA\wf.svr.oa\obj\Debug\dcl.svr.oa.pdb

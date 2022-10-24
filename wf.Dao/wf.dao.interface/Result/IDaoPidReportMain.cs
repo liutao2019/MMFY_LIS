@@ -118,6 +118,12 @@ namespace dcl.dao.interfaces
         /// <returns></returns>
         List<EntityPidReportMain> GetPatientStateForQueryIsResult(EntityPatientQC eyPatientQC);
 
+        /// <summary>
+        /// 查找病人新冠结果粤核酸上传状态
+        /// </summary>
+        /// <param name="eyPatientQC"></param>
+        /// <returns></returns>
+        Dictionary<string, string> GetPatientYhsStatus(EntityPatientQC eyPatientQC);
 
         /// <summary>
         /// 查询病人信息单表的所有字段(报告复制用,查询出的数据处理后还要插入到病人信息表中,故单独写方法)
@@ -262,7 +268,7 @@ namespace dcl.dao.interfaces
         /// </summary>
         /// <param name="qc"></param>
         /// <returns></returns>
-        List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc);
+        List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc, string type);
 
     }
 }

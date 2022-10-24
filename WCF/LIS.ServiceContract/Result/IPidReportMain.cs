@@ -22,6 +22,14 @@ namespace dcl.servececontract
         EntityPidReportMain GetPatientsByBarCode(string barCode);
 
         /// <summary>
+        /// 根据条码获取病人资料
+        /// </summary>
+        /// <param name="barCode"></param>
+        /// <returns></returns>
+        [OperationContract]
+        List<EntityPidReportMain> GetPatientsBySampleMain(List<EntitySampMain> entitySampMain);
+
+        /// <summary>
         /// 更新病人资料，适用于更新多个字段内容
         /// </summary>
         /// <param name="patient"></param>
@@ -76,6 +84,16 @@ namespace dcl.servececontract
         /// <returns></returns>
         [OperationContract]
         List<EntityPidReportMain> GetPatientStatus(DateTime startDate, DateTime endDate ,string pat_itr_id);
+
+        /// <summary>
+        /// 线程加载病人新冠结果上传状态
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [OperationContract]
+        Dictionary<string, string> GetPatientYhsStatus(DateTime startDate, DateTime endDate);
+
 
         /// <summary>
         /// 获取病人资料状态
@@ -201,6 +219,6 @@ namespace dcl.servececontract
         /// <param name="Reports"></param>
         /// <returns></returns>
         [OperationContract]
-        List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc);
+        List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc, string type);
     }
 }

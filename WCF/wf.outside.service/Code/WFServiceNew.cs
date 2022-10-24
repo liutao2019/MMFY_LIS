@@ -115,16 +115,13 @@ namespace dcl.outside.service
         private string GetPatientReport(string XMLData)
         {
             NameValueCollection Parameter = ConvertToParameter(XMLData);
-
             if (Parameter.Count == 0)
                 return ErroMessage("调用参数不能为空");
 
             //报告ID
             string strRepId = Parameter["RepId"];
-
             if (string.IsNullOrEmpty(strRepId))
                 return ErroMessage("参数RepId不能为空");
-
             List<EntityDicInstrument> listInstrmt = dcl.svr.cache.DictInstrmtCache.Current.DclCache;
 
             IDaoPidReportMain dao = DclDaoFactory.DaoHandler<IDaoPidReportMain>();
@@ -141,7 +138,6 @@ namespace dcl.outside.service
 
                     DCLReportPrintBIZ reportBiz = new DCLReportPrintBIZ();
                     string pdf = reportBiz.GetReportPDF(par);
-
                     XmlDocument doc = ResponseTemplate;
 
                     XmlNode nodeResult = doc.SelectSingleNode("Response/Result");
@@ -164,6 +160,7 @@ namespace dcl.outside.service
                     obrResult.AppendChild(elementValue);
 
                     return ConvertXmlToString(doc);
+                
                 }
                 else
                     return ErroMessage("该报告仪器已被删除，请联系工程师");

@@ -20,3 +20,27 @@ D:\WiseFly\Source Code\Lis.Release\wf.FrameworkCore\lis.client.control\obj\Debug
 D:\WiseFly\Source Code\Lis.Release\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.dll.licenses
 D:\WiseFly\Source Code\Lis.Release\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.dll
 D:\WiseFly\Source Code\Lis.Release\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\lis.client.control.dll.config
+D:\LIS\NEW_MMFY_LIS\Release\lis.client.control.dll
+D:\LIS\NEW_MMFY_LIS\Release\lis.client.control.pdb
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.FrmCheckPassword.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.HopePopSelect.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.LISCheckBox.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.ctlTimeCountDown.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.FrmFilter.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.ScrollingTextControl.ScrollingText.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.frmMessageDialog.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.SelectDict_Sex.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.SelectDict_PatCheckType.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.SelectDict_TypeChecks.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.VideoOutputControl.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.WaitingDailog.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.dll
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.control\obj\Debug\lis.client.control.pdb

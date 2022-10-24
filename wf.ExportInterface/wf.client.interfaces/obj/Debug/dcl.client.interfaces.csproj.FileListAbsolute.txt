@@ -26,3 +26,19 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.client.interfac
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.interfaces.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.interfaces.pdb
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.FrmHIS.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.CommandNew.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.ConContrastDefine.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.ConnectionNew.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.ConHISInterfaces.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.dll
+D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.client.interfaces\obj\Debug\dcl.client.interfaces.pdb

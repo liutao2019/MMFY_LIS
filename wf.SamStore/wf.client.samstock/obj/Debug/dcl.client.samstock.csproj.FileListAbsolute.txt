@@ -30,3 +30,21 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.client.samstock\obj\De
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.samstock.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.samstock.pdb
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.FrmPrintTempBarCode.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.FrmRackUseStatus.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.FrmSamDestory.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.FrmSamSave.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.FrmSamSearch.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.FrmSamStoreRecord.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.FrmPatientsView.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.dll
+D:\LIS\NEW_MMFY_LIS\wf.SamStore\wf.client.samstock\obj\Debug\dcl.client.samstock.pdb

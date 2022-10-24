@@ -22,3 +22,17 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\lis.client.common\ob
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.common.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.common.pdb
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.FrmSelectInstrument.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.PrintPreview.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.Properties.Resources.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.SysToolBar.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.dll
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.pdb

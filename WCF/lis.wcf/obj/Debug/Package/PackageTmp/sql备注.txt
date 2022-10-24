@@ -1,0 +1,125 @@
+---------- 常规相关
+select * from Pat_lis_main where Pma_bar_code = '1929246185' and Pma_pat_name = '杨测试'
+--100003201908035
+
+select * from Pat_lis_main where Pma_rep_id = '100003201908035'
+select * from Pat_lis_detail where Pdet_id = '100003201908035'
+select * from Lis_result where Lres_Pma_rep_id= '100003201908035'
+
+
+-------------细菌相关
+select * from Pat_lis_main where Pma_bar_code ='1929243062'
+select * from  Lis_result_bact where Lbac_id = '100064201908031612'
+select * from Dict_mic_bacteria where Dbact_id = '100003'
+select * from Lis_result_bact 
+
+
+-------统计报表
+select * from dict_report_stat where rep_type = 'GeneralStatistics'
+
+
+-------仪器中间表相关
+select * from Lis_result_originalex where Lro_Ditr_id = '100079' 
+and Lro_date >'2019-08-11'  and Lro_sid = '16'
+
+update Lis_result_originalex set Lro_date = '2019-08-12 01:55:06.607'
+ where Lro_Ditr_id = '100079' 
+and Lro_date >'2019-08-11'  and Lro_sid = '16'
+
+
+---------------各个涉及到项目编码的数据表，与项目字典不一致时候
+SELECT Rel_itr_channel_code.Ricc_itm_ecd,Dict_itm.Ditm_ecode
+FROM Rel_itr_channel_code 
+left join Dict_itm on Ditm_id = Rel_itr_channel_code.Ricc_Ditm_id
+WHERE Rel_itr_channel_code.Ricc_itm_ecd <>Dict_itm.Ditm_ecode
+
+
+SELECT Rel_itm_combine_item.Rici_Ditm_ecode,Dict_itm.Ditm_ecode
+FROM Rel_itm_combine_item 
+left join Dict_itm on Ditm_id = Rel_itm_combine_item.Rici_Ditm_id
+WHERE Rel_itm_combine_item.Rici_Ditm_ecode <>Dict_itm.Ditm_ecode
+
+
+SELECT Rel_itm_property.Rproty_Ditm_ecode,Dict_itm.Ditm_ecode
+FROM Rel_itm_property 
+left join Dict_itm on Ditm_id = Rel_itm_property.Rproty_Ditm_id
+WHERE Rel_itm_property.Rproty_Ditm_ecode <>Dict_itm.Ditm_ecode
+
+select *from Rel_itm_calculaformula
+
+---------------各个涉及到项目编码的数据表，与项目字典不一致时候
+
+
+--****************************************各个日期查询
+select 
+Sma_occ_date 申请日期,
+Sma_collection_date 采集日期,
+Sma_send_date 收取日期,
+Sma_reach_date 送达日期,
+Sma_receiver_date 接收日期
+from Sample_main 
+where Sma_bar_id in ('1929234567')
+order by Sma_receiver_date desc
+
+
+select 
+Pma_sam_receive_date 申请日期,
+--Pma_recive_date 申请日期,--无值
+Pma_collection_date 采集日期 ,
+--Pma_send_date 发送日期,--无值
+Pma_sam_send_date 收取日期,
+Pma_sam_reach_date 送达日期,
+Pma_apply_date 接收日期,
+Pma_in_date 录入日期,
+Pma_check_date 检验日期,
+Pma_audit_date 审核日期,
+Pma_report_date 报告日期,
+Pma_print_date 打印日期
+from Pat_lis_main where Pma_bar_code = '1929234567'
+--****************************************各个日期查询
+
+
+
+--****************************************项目参考值
+select 
+Dict_itm.Ditm_id,
+Rel_itm_refdetail.Rref_lower_limit_value,
+Rel_itm_refdetail.Rref_upper_limit_value,
+Dict_itm.Ditm_ecode,
+Dict_itm.Ditm_name,
+Dict_itm.Ditm_pri_id,
+Dict_itm.sort_no,
+isnull(Dict_itm.Ditm_calu_flag,0) as Ditm_calu_flag,
+Dict_itm.Ditm_rep_code,
+Dict_itm.Ditm_method,
+Rel_itm_sample.Ritm_sam_id,
+Rel_itm_sample.Ritm_unit,
+Rel_itm_sample.Ritm_price,
+Rel_itm_refdetail.Rref_age_lower_limit,
+Rel_itm_refdetail.Rref_age_upper_limit,
+Rel_itm_refdetail.Rref_sex,
+Rel_itm_refdetail.Rref_danger_lower_limit,
+Rel_itm_refdetail.Rref_danger_upper_limit,
+Rel_itm_refdetail.Rref_min_value,
+Rel_itm_refdetail.Rref_max_value,
+Rel_itm_refdetail.Rref_result_allow,
+Rel_itm_refdetail.Rref_flag
+from Dict_itm
+left join Rel_itm_sample on (Dict_itm.Ditm_id = Rel_itm_sample.Ritm_id and (Rel_itm_sample.Ritm_sam_id = '5' or Rel_itm_sample.Ritm_sam_id = '-1')
+and Rel_itm_sample.Ritm_Ditr_id=(select (case when count(Ritm_Ditr_id)>=1 then '100040' else '-1' end) from Rel_itm_sample
+where  Ritm_id=Dict_itm.Ditm_id and Ritm_sam_id in('5','-1')
+and Ritm_Ditr_id='100040'))
+left join Rel_itm_refdetail on (Dict_itm.Ditm_id = Rel_itm_refdetail.Rref_Ditm_id and Rref_id=
+(select top 1 Rref_id from Rel_itm_refdetail where Dict_itm.Ditm_id = Rel_itm_refdetail.Rref_Ditm_id and 
+Rel_itm_refdetail.Rref_Dsam_id in('5','-1') and (Rel_itm_refdetail.Rref_sex in ('0','1')) 
+and 9460800>isnull(Rref_age_lower_minute,0) and  9460800 <= Rref_age_upper_minute
+and Rref_flag='0' 
+and (Rref_sam_remark = '' or Rref_sam_remark is null or Rref_sam_remark=1)
+and (Rref_Ditr_id=(select (case when count(Ritm_Ditr_id)>=1 then '100040' else '-1' end) from Rel_itm_sample
+where  Ritm_id=Dict_itm.Ditm_id and Ritm_sam_id in('5','-1')
+and Ritm_Ditr_id='100040')) ))--  
+where
+Dict_itm.del_flag <> '1'
+and Dict_itm.Ditm_id in ('2612','2586','2604','2616','2607','2600','1965','2236','1850','1549','1557','2093')
+
+

@@ -131,6 +131,8 @@
     <Compile Include="old\HospitalInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SMHisInterfacesBIZ.cs" />
+    <Compile Include="粤核酸\DCLOutInterface_YSS.cs" />
+    <Compile Include="粤核酸\WebApiAgent.cs" />
     <Compile Include="茂名妇幼保健院\DCLExtInterface_MMFY.cs" />
     <Compile Include="茂名妇幼保健院\MZReportCreater.cs" />
     <Compile Include="茂名妇幼保健院\WebServiceAgent.cs" />

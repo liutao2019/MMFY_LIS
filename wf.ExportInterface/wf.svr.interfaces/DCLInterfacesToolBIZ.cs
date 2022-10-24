@@ -104,5 +104,26 @@ namespace dcl.svr.interfaces
             }
             return response;
         }
+
+        public EntityResponse ReUploadYssReport(List<string> RepId)
+        {
+            EntityResponse response = new EntityResponse();
+
+            try
+            {
+                DCLExtInterfaceFactory.DCLExtInterface.UploadYssReportAsync(RepId);
+
+                response.Scusess = true;
+                response.SetResult(response);
+            }
+            catch (Exception ex)
+            {
+                response.Scusess = false;
+                response.ErroMsg = ex.ToString();
+                Logger.LogException(ex);
+            }
+
+            return response;
+        }
     }
 }

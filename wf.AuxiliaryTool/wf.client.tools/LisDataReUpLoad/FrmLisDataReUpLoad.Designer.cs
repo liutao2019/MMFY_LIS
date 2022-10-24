@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PnLeft = new DevExpress.XtraEditors.PanelControl();
             this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.btnSearchYhs = new System.Windows.Forms.Button();
+            this.btnUpdateYhs = new System.Windows.Forms.Button();
             this.tbReuploadInterTime = new dcl.client.control.NumberTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.cbAutoReupload = new System.Windows.Forms.CheckBox();
@@ -83,7 +86,8 @@
             this.btnReCharge = new System.Windows.Forms.Button();
             this.dateend2 = new DevExpress.XtraEditors.DateEdit();
             this.tbLog = new System.Windows.Forms.RichTextBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cbAutoReuploadYhs = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PnLeft)).BeginInit();
             this.PnLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
@@ -118,7 +122,7 @@
             this.PnLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnLeft.Location = new System.Drawing.Point(0, 0);
             this.PnLeft.Name = "PnLeft";
-            this.PnLeft.Size = new System.Drawing.Size(246, 456);
+            this.PnLeft.Size = new System.Drawing.Size(246, 485);
             this.PnLeft.TabIndex = 176;
             // 
             // splitContainerControl2
@@ -127,6 +131,9 @@
             this.splitContainerControl2.Horizontal = false;
             this.splitContainerControl2.Location = new System.Drawing.Point(2, 2);
             this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.cbAutoReuploadYhs);
+            this.splitContainerControl2.Panel1.Controls.Add(this.btnSearchYhs);
+            this.splitContainerControl2.Panel1.Controls.Add(this.btnUpdateYhs);
             this.splitContainerControl2.Panel1.Controls.Add(this.tbReuploadInterTime);
             this.splitContainerControl2.Panel1.Controls.Add(this.label11);
             this.splitContainerControl2.Panel1.Controls.Add(this.cbAutoReupload);
@@ -145,10 +152,34 @@
             this.splitContainerControl2.Panel1.Text = "Panel1";
             this.splitContainerControl2.Panel2.Controls.Add(this.tbReuploadLog);
             this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(242, 452);
-            this.splitContainerControl2.SplitterPosition = 288;
+            this.splitContainerControl2.Size = new System.Drawing.Size(242, 481);
+            this.splitContainerControl2.SplitterPosition = 353;
             this.splitContainerControl2.TabIndex = 178;
             this.splitContainerControl2.Text = "splitContainerControl2";
+            // 
+            // btnSearchYhs
+            // 
+            this.btnSearchYhs.Font = new System.Drawing.Font("宋体", 10F);
+            this.btnSearchYhs.Location = new System.Drawing.Point(16, 238);
+            this.btnSearchYhs.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearchYhs.Name = "btnSearchYhs";
+            this.btnSearchYhs.Size = new System.Drawing.Size(213, 24);
+            this.btnSearchYhs.TabIndex = 213;
+            this.btnSearchYhs.Text = "核酸检索";
+            this.btnSearchYhs.UseVisualStyleBackColor = true;
+            this.btnSearchYhs.Click += new System.EventHandler(this.btnSearchYss_Click);
+            // 
+            // btnUpdateYhs
+            // 
+            this.btnUpdateYhs.Font = new System.Drawing.Font("宋体", 10F);
+            this.btnUpdateYhs.Location = new System.Drawing.Point(16, 275);
+            this.btnUpdateYhs.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdateYhs.Name = "btnUpdateYhs";
+            this.btnUpdateYhs.Size = new System.Drawing.Size(213, 25);
+            this.btnUpdateYhs.TabIndex = 212;
+            this.btnUpdateYhs.Text = "核酸重传";
+            this.btnUpdateYhs.UseVisualStyleBackColor = true;
+            this.btnUpdateYhs.Click += new System.EventHandler(this.btnUploadYss_Click);
             // 
             // tbReuploadInterTime
             // 
@@ -156,7 +187,7 @@
             this.tbReuploadInterTime.DataStyle = dcl.client.control.NumberTextBox.StyleSort.Integer;
             this.tbReuploadInterTime.DecimalDigit = 2;
             this.tbReuploadInterTime.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.tbReuploadInterTime.Location = new System.Drawing.Point(208, 264);
+            this.tbReuploadInterTime.Location = new System.Drawing.Point(208, 305);
             this.tbReuploadInterTime.Name = "tbReuploadInterTime";
             this.tbReuploadInterTime.ReservedDigit = 1;
             this.tbReuploadInterTime.ReservedStyle = dcl.client.control.NumberTextBox.Reserved.Round;
@@ -168,7 +199,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(117, 268);
+            this.label11.Location = new System.Drawing.Point(117, 309);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(88, 14);
             this.label11.TabIndex = 210;
@@ -178,7 +209,7 @@
             // cbAutoReupload
             // 
             this.cbAutoReupload.AutoSize = true;
-            this.cbAutoReupload.Location = new System.Drawing.Point(16, 266);
+            this.cbAutoReupload.Location = new System.Drawing.Point(16, 307);
             this.cbAutoReupload.Name = "cbAutoReupload";
             this.cbAutoReupload.Size = new System.Drawing.Size(74, 18);
             this.cbAutoReupload.TabIndex = 209;
@@ -193,7 +224,7 @@
             this.btnSearch.Location = new System.Drawing.Point(16, 168);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(213, 29);
+            this.btnSearch.Size = new System.Drawing.Size(213, 24);
             this.btnSearch.TabIndex = 189;
             this.btnSearch.Text = "检索";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -318,14 +349,20 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtBegin.Size = new System.Drawing.Size(143, 20);
             this.dtBegin.TabIndex = 183;
+
+            this.dtBegin.Properties.DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBegin.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBegin.Properties.EditFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtBegin.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtBegin.Properties.Mask.EditMask = "yyyy-MM-dd HH:mm:ss";
             // 
             // btnUpload
             // 
             this.btnUpload.Font = new System.Drawing.Font("宋体", 10F);
-            this.btnUpload.Location = new System.Drawing.Point(16, 210);
+            this.btnUpload.Location = new System.Drawing.Point(16, 202);
             this.btnUpload.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(213, 29);
+            this.btnUpload.Size = new System.Drawing.Size(213, 24);
             this.btnUpload.TabIndex = 182;
             this.btnUpload.Text = "重传";
             this.btnUpload.UseVisualStyleBackColor = true;
@@ -345,6 +382,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtEnd.Size = new System.Drawing.Size(143, 20);
             this.dtEnd.TabIndex = 184;
+
+            this.dtEnd.Properties.DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtEnd.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtEnd.Properties.EditFormat.FormatString = "yyyy-MM-dd HH:mm:ss";
+            this.dtEnd.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtEnd.Properties.Mask.EditMask = "yyyy-MM-dd HH:mm:ss";
             // 
             // tbReuploadLog
             // 
@@ -353,7 +396,7 @@
             this.tbReuploadLog.Location = new System.Drawing.Point(0, 0);
             this.tbReuploadLog.Name = "tbReuploadLog";
             this.tbReuploadLog.ReadOnly = true;
-            this.tbReuploadLog.Size = new System.Drawing.Size(242, 159);
+            this.tbReuploadLog.Size = new System.Drawing.Size(242, 123);
             this.tbReuploadLog.TabIndex = 208;
             this.tbReuploadLog.Text = "";
             // 
@@ -363,7 +406,7 @@
             this.Pages.Location = new System.Drawing.Point(0, 0);
             this.Pages.Name = "Pages";
             this.Pages.SelectedTabPage = this.Page1;
-            this.Pages.Size = new System.Drawing.Size(864, 485);
+            this.Pages.Size = new System.Drawing.Size(864, 514);
             this.Pages.TabIndex = 177;
             this.Pages.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.Page1,
@@ -374,7 +417,7 @@
             this.Page1.Controls.Add(this.gcLisData);
             this.Page1.Controls.Add(this.PnLeft);
             this.Page1.Name = "Page1";
-            this.Page1.Size = new System.Drawing.Size(858, 456);
+            this.Page1.Size = new System.Drawing.Size(858, 485);
             this.Page1.Text = "中间表数据重传";
             // 
             // gcLisData
@@ -383,7 +426,7 @@
             this.gcLisData.Location = new System.Drawing.Point(246, 0);
             this.gcLisData.MainView = this.gvLisData;
             this.gcLisData.Name = "gcLisData";
-            this.gcLisData.Size = new System.Drawing.Size(612, 456);
+            this.gcLisData.Size = new System.Drawing.Size(612, 485);
             this.gcLisData.TabIndex = 177;
             this.gcLisData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvLisData});
@@ -464,7 +507,7 @@
             // 
             this.Page2.Controls.Add(this.panelControl1);
             this.Page2.Name = "Page2";
-            this.Page2.Size = new System.Drawing.Size(858, 456);
+            this.Page2.Size = new System.Drawing.Size(858, 485);
             this.Page2.Text = "收费补收";
             // 
             // panelControl1
@@ -474,7 +517,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(858, 456);
+            this.panelControl1.Size = new System.Drawing.Size(858, 485);
             this.panelControl1.TabIndex = 177;
             // 
             // panelControl2
@@ -483,7 +526,7 @@
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl2.Location = new System.Drawing.Point(227, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(629, 452);
+            this.panelControl2.Size = new System.Drawing.Size(629, 481);
             this.panelControl2.TabIndex = 1;
             // 
             // gcChargeInfo
@@ -492,7 +535,7 @@
             this.gcChargeInfo.Location = new System.Drawing.Point(2, 2);
             this.gcChargeInfo.MainView = this.gvChargeInfo;
             this.gcChargeInfo.Name = "gcChargeInfo";
-            this.gcChargeInfo.Size = new System.Drawing.Size(625, 448);
+            this.gcChargeInfo.Size = new System.Drawing.Size(625, 477);
             this.gcChargeInfo.TabIndex = 178;
             this.gcChargeInfo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvChargeInfo});
@@ -582,7 +625,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.tbLog);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(225, 452);
+            this.splitContainerControl1.Size = new System.Drawing.Size(225, 481);
             this.splitContainerControl1.SplitterPosition = 258;
             this.splitContainerControl1.TabIndex = 0;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -768,15 +811,27 @@
             this.tbLog.Location = new System.Drawing.Point(0, 0);
             this.tbLog.Name = "tbLog";
             this.tbLog.ReadOnly = true;
-            this.tbLog.Size = new System.Drawing.Size(225, 189);
+            this.tbLog.Size = new System.Drawing.Size(225, 218);
             this.tbLog.TabIndex = 207;
             this.tbLog.Text = "";
+            // 
+            // cbAutoReuploadYhs
+            // 
+            this.cbAutoReuploadYhs.AutoSize = true;
+            this.cbAutoReuploadYhs.Location = new System.Drawing.Point(16, 331);
+            this.cbAutoReuploadYhs.Name = "cbAutoReuploadYhs";
+            this.cbAutoReuploadYhs.Size = new System.Drawing.Size(98, 18);
+            this.cbAutoReuploadYhs.TabIndex = 214;
+            this.cbAutoReuploadYhs.Text = "自动核酸重传";
+            this.toolTip1.SetToolTip(this.cbAutoReuploadYhs, "开启后默认每隔1h自动重传当天上传失败的报告");
+            this.cbAutoReuploadYhs.UseVisualStyleBackColor = true;
+            this.cbAutoReuploadYhs.CheckedChanged += new System.EventHandler(this.cbAutoReuploadYhs_CheckedChanged);
             // 
             // FrmLisDataReUpLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 485);
+            this.ClientSize = new System.Drawing.Size(864, 514);
             this.Controls.Add(this.Pages);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmLisDataReUpLoad";
@@ -869,5 +924,8 @@
         private System.Windows.Forms.Button btnUpload;
         public DevExpress.XtraEditors.DateEdit dtEnd;
         private System.Windows.Forms.RichTextBox tbReuploadLog;
+        private System.Windows.Forms.Button btnSearchYhs;
+        private System.Windows.Forms.Button btnUpdateYhs;
+        private System.Windows.Forms.CheckBox cbAutoReuploadYhs;
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BCConfirm));
-            dcl.client.sample.PrintStep printStep1 = new dcl.client.sample.PrintStep();
-            dcl.client.sample.CoolStepController coolStepController1 = new dcl.client.sample.CoolStepController();
+            dcl.client.sample.PrintStep printStep2 = new dcl.client.sample.PrintStep();
+            dcl.client.sample.CoolStepController coolStepController2 = new dcl.client.sample.CoolStepController();
             this.panelTo = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.txtBcfrequency = new DevExpress.XtraEditors.TextEdit();
@@ -57,6 +57,7 @@
             this.sysToolBar1 = new dcl.client.common.SysToolBar();
             this.gcTitle = new DevExpress.XtraEditors.GroupControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.chkHsBarCode = new System.Windows.Forms.CheckBox();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.patientControl = new dcl.client.sample.PatientControlForMed();
             ((System.ComponentModel.ISupportInitialize)(this.dtSub)).BeginInit();
@@ -78,19 +79,18 @@
             // 
             this.panelTo.Controls.Add(this.label14);
             this.panelTo.Controls.Add(this.txtBcfrequency);
-            this.panelTo.Location = new System.Drawing.Point(680, 7);
-            this.panelTo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelTo.Location = new System.Drawing.Point(595, 5);
             this.panelTo.Name = "panelTo";
-            this.panelTo.Size = new System.Drawing.Size(175, 32);
+            this.panelTo.Size = new System.Drawing.Size(153, 25);
             this.panelTo.TabIndex = 29;
             this.panelTo.Visible = false;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 7);
+            this.label14.Location = new System.Drawing.Point(3, 5);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 18);
+            this.label14.Size = new System.Drawing.Size(59, 14);
             this.label14.TabIndex = 5;
             this.label14.Text = "条码批号:";
             this.label14.Visible = false;
@@ -98,11 +98,10 @@
             // txtBcfrequency
             // 
             this.txtBcfrequency.EditValue = "";
-            this.txtBcfrequency.Location = new System.Drawing.Point(82, 4);
-            this.txtBcfrequency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBcfrequency.Location = new System.Drawing.Point(72, 3);
             this.txtBcfrequency.Name = "txtBcfrequency";
             this.txtBcfrequency.Properties.NullText = "请输入条码并回车";
-            this.txtBcfrequency.Size = new System.Drawing.Size(90, 24);
+            this.txtBcfrequency.Size = new System.Drawing.Size(79, 20);
             this.txtBcfrequency.TabIndex = 4;
             this.txtBcfrequency.ToolTip = "请输入条码并回车";
             this.txtBcfrequency.Visible = false;
@@ -112,22 +111,21 @@
             this.lbBarCode.AutoSize = true;
             this.lbBarCode.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbBarCode.ForeColor = System.Drawing.Color.Black;
-            this.lbBarCode.Location = new System.Drawing.Point(7, 15);
+            this.lbBarCode.Location = new System.Drawing.Point(6, 12);
             this.lbBarCode.Name = "lbBarCode";
-            this.lbBarCode.Size = new System.Drawing.Size(114, 28);
+            this.lbBarCode.Size = new System.Drawing.Size(91, 22);
             this.lbBarCode.TabIndex = 28;
             this.lbBarCode.Text = "条码号:";
             // 
             // txtBarcode
             // 
-            this.txtBarcode.Location = new System.Drawing.Point(127, 16);
-            this.txtBarcode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBarcode.Location = new System.Drawing.Point(111, 12);
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtBarcode.Properties.Appearance.Options.UseFont = true;
             this.txtBarcode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtBarcode.Properties.NullText = "请输入条码并回车";
-            this.txtBarcode.Size = new System.Drawing.Size(183, 28);
+            this.txtBarcode.Size = new System.Drawing.Size(160, 24);
             this.txtBarcode.TabIndex = 0;
             this.txtBarcode.ToolTip = "请输入条码并回车";
             this.txtBarcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
@@ -137,9 +135,9 @@
             this.lblOp.AutoSize = true;
             this.lblOp.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblOp.ForeColor = System.Drawing.Color.Red;
-            this.lblOp.Location = new System.Drawing.Point(519, 50);
+            this.lblOp.Location = new System.Drawing.Point(454, 39);
             this.lblOp.Name = "lblOp";
-            this.lblOp.Size = new System.Drawing.Size(27, 27);
+            this.lblOp.Size = new System.Drawing.Size(22, 21);
             this.lblOp.TabIndex = 8;
             this.lblOp.Text = ".";
             // 
@@ -148,9 +146,9 @@
             this.lblOP2.AutoSize = true;
             this.lblOP2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblOP2.ForeColor = System.Drawing.Color.Black;
-            this.lblOP2.Location = new System.Drawing.Point(438, 57);
+            this.lblOP2.Location = new System.Drawing.Point(383, 44);
             this.lblOP2.Name = "lblOP2";
-            this.lblOP2.Size = new System.Drawing.Size(75, 18);
+            this.lblOP2.Size = new System.Drawing.Size(60, 14);
             this.lblOP2.TabIndex = 7;
             this.lblOP2.Text = "操作人:";
             // 
@@ -158,9 +156,9 @@
             // 
             this.lbPackCount.AutoSize = true;
             this.lbPackCount.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbPackCount.Location = new System.Drawing.Point(8, 58);
+            this.lbPackCount.Location = new System.Drawing.Point(7, 45);
             this.lbPackCount.Name = "lbPackCount";
-            this.lbPackCount.Size = new System.Drawing.Size(289, 20);
+            this.lbPackCount.Size = new System.Drawing.Size(232, 16);
             this.lbPackCount.TabIndex = 24;
             this.lbPackCount.Text = "已收取包数：0  应收取包数：0";
             this.lbPackCount.Visible = false;
@@ -170,9 +168,9 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 25F);
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(14, 31);
+            this.label15.Location = new System.Drawing.Point(12, 24);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 51);
+            this.label15.Size = new System.Drawing.Size(28, 41);
             this.label15.TabIndex = 23;
             this.label15.Text = ".";
             this.label15.Visible = false;
@@ -181,10 +179,9 @@
             // 
             this.chkPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkPrint.AutoSize = true;
-            this.chkPrint.Location = new System.Drawing.Point(861, 6);
-            this.chkPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkPrint.Location = new System.Drawing.Point(1511, 5);
             this.chkPrint.Name = "chkPrint";
-            this.chkPrint.Size = new System.Drawing.Size(90, 22);
+            this.chkPrint.Size = new System.Drawing.Size(74, 18);
             this.chkPrint.TabIndex = 25;
             this.chkPrint.Text = "自动打印";
             this.chkPrint.UseVisualStyleBackColor = true;
@@ -194,8 +191,7 @@
             // 
             this.rgType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rgType.EditValue = "样本号";
-            this.rgType.Location = new System.Drawing.Point(858, 32);
-            this.rgType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rgType.Location = new System.Drawing.Point(1504, 25);
             this.rgType.Name = "rgType";
             this.rgType.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.rgType.Properties.Appearance.Options.UseBackColor = true;
@@ -203,7 +199,7 @@
             this.rgType.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("样本号", "按样本号"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("序号", "按序号")});
-            this.rgType.Size = new System.Drawing.Size(210, 23);
+            this.rgType.Size = new System.Drawing.Size(184, 18);
             this.rgType.TabIndex = 24;
             this.rgType.Visible = false;
             // 
@@ -211,9 +207,9 @@
             // 
             this.labelUrgentFlag.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.labelUrgentFlag.ForeColor = System.Drawing.Color.Red;
-            this.labelUrgentFlag.Location = new System.Drawing.Point(380, 15);
+            this.labelUrgentFlag.Location = new System.Drawing.Point(332, 12);
             this.labelUrgentFlag.Name = "labelUrgentFlag";
-            this.labelUrgentFlag.Size = new System.Drawing.Size(33, 27);
+            this.labelUrgentFlag.Size = new System.Drawing.Size(29, 21);
             this.labelUrgentFlag.TabIndex = 6;
             this.labelUrgentFlag.Text = "急";
             this.labelUrgentFlag.Visible = false;
@@ -223,9 +219,9 @@
             this.lblTo.AutoSize = true;
             this.lblTo.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblTo.ForeColor = System.Drawing.Color.Red;
-            this.lblTo.Location = new System.Drawing.Point(519, 12);
+            this.lblTo.Location = new System.Drawing.Point(454, 9);
             this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(27, 27);
+            this.lblTo.Size = new System.Drawing.Size(22, 21);
             this.lblTo.TabIndex = 3;
             this.lblTo.Text = ".";
             // 
@@ -234,9 +230,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(419, 19);
+            this.label10.Location = new System.Drawing.Point(367, 15);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 18);
+            this.label10.Size = new System.Drawing.Size(75, 14);
             this.label10.TabIndex = 3;
             this.label10.Text = "目标科室:";
             // 
@@ -244,10 +240,9 @@
             // 
             this.chkRegFlag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkRegFlag.AutoSize = true;
-            this.chkRegFlag.Location = new System.Drawing.Point(962, 6);
-            this.chkRegFlag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkRegFlag.Location = new System.Drawing.Point(1602, 5);
             this.chkRegFlag.Name = "chkRegFlag";
-            this.chkRegFlag.Size = new System.Drawing.Size(120, 22);
+            this.chkRegFlag.Size = new System.Drawing.Size(98, 18);
             this.chkRegFlag.TabIndex = 22;
             this.chkRegFlag.Text = "是否同步登记";
             this.chkRegFlag.UseVisualStyleBackColor = true;
@@ -258,9 +253,9 @@
             this.lblMes2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMes2.AutoSize = true;
             this.lblMes2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblMes2.Location = new System.Drawing.Point(951, 65);
+            this.lblMes2.Location = new System.Drawing.Point(1585, 51);
             this.lblMes2.Name = "lblMes2";
-            this.lblMes2.Size = new System.Drawing.Size(127, 15);
+            this.lblMes2.Size = new System.Drawing.Size(101, 12);
             this.lblMes2.TabIndex = 19;
             this.lblMes2.Text = "分钟作为采集时间";
             this.lblMes2.Visible = false;
@@ -270,9 +265,9 @@
             this.lblMes1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMes1.AutoSize = true;
             this.lblMes1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblMes1.Location = new System.Drawing.Point(809, 65);
+            this.lblMes1.Location = new System.Drawing.Point(1461, 51);
             this.lblMes1.Name = "lblMes1";
-            this.lblMes1.Size = new System.Drawing.Size(67, 15);
+            this.lblMes1.Size = new System.Drawing.Size(53, 12);
             this.lblMes1.TabIndex = 18;
             this.lblMes1.Text = "往前调整";
             this.lblMes1.Visible = false;
@@ -282,8 +277,7 @@
             this.cmbFowardMinutes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbFowardMinutes.EditValue = "0";
             this.cmbFowardMinutes.EnterMoveNextControl = true;
-            this.cmbFowardMinutes.Location = new System.Drawing.Point(882, 61);
-            this.cmbFowardMinutes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbFowardMinutes.Location = new System.Drawing.Point(1525, 47);
             this.cmbFowardMinutes.Name = "cmbFowardMinutes";
             this.cmbFowardMinutes.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
             this.cmbFowardMinutes.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -302,17 +296,17 @@
             "180",
             "240"});
             this.cmbFowardMinutes.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbFowardMinutes.Size = new System.Drawing.Size(64, 24);
+            this.cmbFowardMinutes.Size = new System.Drawing.Size(56, 20);
             this.cmbFowardMinutes.TabIndex = 17;
             this.cmbFowardMinutes.Visible = false;
             // 
             // ctlTimeCountDown1
             // 
             this.ctlTimeCountDown1.BackColor = System.Drawing.Color.Transparent;
-            this.ctlTimeCountDown1.Location = new System.Drawing.Point(318, 21);
-            this.ctlTimeCountDown1.Margin = new System.Windows.Forms.Padding(5);
+            this.ctlTimeCountDown1.Location = new System.Drawing.Point(278, 16);
+            this.ctlTimeCountDown1.Margin = new System.Windows.Forms.Padding(4);
             this.ctlTimeCountDown1.Name = "ctlTimeCountDown1";
-            this.ctlTimeCountDown1.Size = new System.Drawing.Size(46, 22);
+            this.ctlTimeCountDown1.Size = new System.Drawing.Size(40, 17);
             this.ctlTimeCountDown1.TabIndex = 16;
             this.ctlTimeCountDown1.TimeSeconds = 120;
             this.ctlTimeCountDown1.TimeOut += new lis.client.control.ctlTimeCountDown.TimeOutEventHandler(this.ctlTimeCountDown1_TimeOut);
@@ -321,8 +315,7 @@
             // 
             this.cbStatus.EditValue = "送达";
             this.cbStatus.EnterMoveNextControl = true;
-            this.cbStatus.Location = new System.Drawing.Point(134, 33);
-            this.cbStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbStatus.Location = new System.Drawing.Point(117, 26);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
             this.cbStatus.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -332,16 +325,16 @@
             "收取",
             "二次送检"});
             this.cbStatus.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbStatus.Size = new System.Drawing.Size(132, 24);
+            this.cbStatus.Size = new System.Drawing.Size(116, 20);
             this.cbStatus.TabIndex = 6;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(4, 6);
+            this.label12.Location = new System.Drawing.Point(4, 5);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 22);
+            this.label12.Size = new System.Drawing.Size(97, 17);
             this.label12.TabIndex = 27;
             this.label12.Text = "签收目标科室:";
             this.label12.Visible = false;
@@ -350,20 +343,20 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(83, 38);
+            this.label13.Location = new System.Drawing.Point(73, 30);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 15);
+            this.label13.Size = new System.Drawing.Size(35, 12);
             this.label13.TabIndex = 10;
             this.label13.Text = "状态:";
             // 
             // lueTypes
             // 
             this.lueTypes.displayMember = "";
-            this.lueTypes.Location = new System.Drawing.Point(134, 6);
-            this.lueTypes.Margin = new System.Windows.Forms.Padding(5);
+            this.lueTypes.Location = new System.Drawing.Point(117, 5);
+            this.lueTypes.Margin = new System.Windows.Forms.Padding(4);
             this.lueTypes.Name = "lueTypes";
             this.lueTypes.PBorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.lueTypes.Size = new System.Drawing.Size(132, 26);
+            this.lueTypes.Size = new System.Drawing.Size(116, 20);
             this.lueTypes.TabIndex = 26;
             this.lueTypes.valueMember = null;
             this.lueTypes.Visible = false;
@@ -374,12 +367,12 @@
             this.sysToolBar1.AutoEnableButtons = false;
             this.sysToolBar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sysToolBar1.Location = new System.Drawing.Point(0, 0);
-            this.sysToolBar1.Margin = new System.Windows.Forms.Padding(5);
+            this.sysToolBar1.Margin = new System.Windows.Forms.Padding(4);
             this.sysToolBar1.Name = "sysToolBar1";
             this.sysToolBar1.NotWriteLogButtonNameList = ((System.Collections.Generic.List<string>)(resources.GetObject("sysToolBar1.NotWriteLogButtonNameList")));
             this.sysToolBar1.OrderCustomer = true;
             this.sysToolBar1.ShowItemToolTips = false;
-            this.sysToolBar1.Size = new System.Drawing.Size(1370, 75);
+            this.sysToolBar1.Size = new System.Drawing.Size(1199, 58);
             this.sysToolBar1.TabIndex = 8;
             this.sysToolBar1.OnBtnBCPrintReturnClicked += new System.EventHandler(this.sysToolBar1_OnBtnBCPrintReturnClicked);
             this.sysToolBar1.OnBtnPrintListClicked += new System.EventHandler(this.sysToolBar1_OnBtnPrintListClicked);
@@ -397,13 +390,15 @@
             this.gcTitle.Controls.Add(this.panelControl1);
             this.gcTitle.Controls.Add(this.panelControl2);
             this.gcTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gcTitle.Location = new System.Drawing.Point(0, 75);
+            this.gcTitle.Location = new System.Drawing.Point(0, 58);
+            this.gcTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcTitle.Name = "gcTitle";
-            this.gcTitle.Size = new System.Drawing.Size(1370, 121);
+            this.gcTitle.Size = new System.Drawing.Size(1199, 94);
             this.gcTitle.TabIndex = 30;
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.chkHsBarCode);
             this.panelControl1.Controls.Add(this.panelTo);
             this.panelControl1.Controls.Add(this.lbBarCode);
             this.panelControl1.Controls.Add(this.ctlTimeCountDown1);
@@ -422,10 +417,22 @@
             this.panelControl1.Controls.Add(this.rgType);
             this.panelControl1.Controls.Add(this.labelUrgentFlag);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(2, 27);
+            this.panelControl1.Location = new System.Drawing.Point(2, 21);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1091, 92);
+            this.panelControl1.Size = new System.Drawing.Size(954, 71);
             this.panelControl1.TabIndex = 2;
+            // 
+            // chkHsBarCode
+            // 
+            this.chkHsBarCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkHsBarCode.AutoSize = true;
+            this.chkHsBarCode.Location = new System.Drawing.Point(262, 44);
+            this.chkHsBarCode.Name = "chkHsBarCode";
+            this.chkHsBarCode.Size = new System.Drawing.Size(86, 18);
+            this.chkHsBarCode.TabIndex = 32;
+            this.chkHsBarCode.Text = "核酸总条码";
+            this.chkHsBarCode.UseVisualStyleBackColor = true;
             // 
             // panelControl2
             // 
@@ -434,49 +441,50 @@
             this.panelControl2.Controls.Add(this.lueTypes);
             this.panelControl2.Controls.Add(this.label13);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl2.Location = new System.Drawing.Point(1093, 27);
+            this.panelControl2.Location = new System.Drawing.Point(956, 21);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(275, 92);
+            this.panelControl2.Size = new System.Drawing.Size(241, 71);
             this.panelControl2.TabIndex = 1;
             // 
             // patientControl
             // 
             this.patientControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patientControl.Location = new System.Drawing.Point(0, 196);
-            this.patientControl.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.patientControl.Location = new System.Drawing.Point(0, 152);
+            this.patientControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.patientControl.Name = "patientControl";
             this.patientControl.SelectType = dcl.client.sample.SelectType.Create;
             this.patientControl.SelectWhenNotPrint = false;
             this.patientControl.ShouldMultiSelect = true;
             this.patientControl.ShowCollectNotice = false;
-            this.patientControl.Size = new System.Drawing.Size(1370, 798);
-            printStep1.BaseSampMain = null;
-            printStep1.Bcfrequency = null;
-            printStep1.EnabledFowardMinutes = false;
-            printStep1.FowardMinutes = 0;
-            printStep1.MustFinishPreviousAction = true;
-            printStep1.Printer = null;
-            printStep1.ShouldDoAction = true;
-            printStep1.ShouldEnabledBarcodeInput = true;
-            printStep1.ShouldEnlableSimpleSearchPanel = true;
-            coolStepController1.MustFinishPreviousAction = true;
-            coolStepController1.ShouldDoAction = true;
-            printStep1.StepController = coolStepController1;
-            printStep1.TimeOutValue = new System.DateTime(((long)(0)));
-            this.patientControl.Step = printStep1;
+            this.patientControl.Size = new System.Drawing.Size(1199, 621);
+            printStep2.BaseSampMain = null;
+            printStep2.Bcfrequency = null;
+            printStep2.EnabledFowardMinutes = false;
+            printStep2.FowardMinutes = 0;
+            printStep2.MustFinishPreviousAction = true;
+            printStep2.Printer = null;
+            printStep2.ShouldDoAction = true;
+            printStep2.ShouldEnabledBarcodeInput = true;
+            printStep2.ShouldEnlableSimpleSearchPanel = true;
+            coolStepController2.MustFinishPreviousAction = true;
+            coolStepController2.ShouldDoAction = true;
+            printStep2.StepController = coolStepController2;
+            printStep2.TimeOutValue = new System.DateTime(((long)(0)));
+            this.patientControl.Step = printStep2;
             this.patientControl.StepType = dcl.client.sample.StepType.Print;
             this.patientControl.TabIndex = 31;
             // 
             // BCConfirm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.patientControl);
             this.Controls.Add(this.gcTitle);
             this.Controls.Add(this.sysToolBar1);
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BCConfirm";
-            this.Size = new System.Drawing.Size(1370, 994);
+            this.Size = new System.Drawing.Size(1199, 773);
             this.Load += new System.EventHandler(this.BCConfirm_Load);
             this.VisibleChanged += new System.EventHandler(this.BCConfirm_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dtSub)).EndInit();
@@ -530,5 +538,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         public PatientControlForMed patientControl;
+        private System.Windows.Forms.CheckBox chkHsBarCode;
     }
 }

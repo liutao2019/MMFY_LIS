@@ -8,3 +8,10 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\Release\dcl.svr.report.pdb
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.csprojResolveAssemblyReference.cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.pdb
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.report.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.report.pdb
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.dll
+D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.svr.report\obj\Debug\dcl.svr.report.pdb

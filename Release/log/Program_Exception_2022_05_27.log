@@ -1,0 +1,48 @@
+
+时间：2022-05-27 19:39:17
+进程：wf.ClientEntrance.exe
+模块：Program   方法：Main   行数：74
+标题：
+附加信息：
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 123
+   在 dcl.client.wcf.ProxyBase`1.CreateProxy(String configName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 40
+   在 dcl.client.wcf.ProxyBase`1..ctor() 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 21
+   在 dcl.client.wcf.ProxyDataInterface..ctor()
+   在 wf.ClientEntrance.Program.Main(String[] args) 位置 D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\Program.cs:行号 70
+
+
+时间：2022-05-27 19:39:42
+进程：wf.ClientEntrance.exe
+模块：Program   方法：Main   行数：74
+标题：
+附加信息：
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 123
+   在 dcl.client.wcf.ProxyBase`1.CreateProxy(String configName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 40
+   在 dcl.client.wcf.ProxyBase`1..ctor() 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 21
+   在 dcl.client.wcf.ProxyDataInterface..ctor()
+   在 wf.ClientEntrance.Program.Main(String[] args) 位置 D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\Program.cs:行号 70
+
+
+时间：2022-05-27 19:40:43
+进程：wf.ClientEntrance.exe
+模块：Program   方法：Main   行数：74
+标题：
+附加信息：
+System.UriFormatException: 无效的 URI: 指定的端口无效。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 System.ServiceModel.EndpointAddress..ctor(String uri)
+   在 dcl.client.wcf.WCFEndpoint.WCFEndpointAddress(String confName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 123
+   在 dcl.client.wcf.ProxyBase`1.CreateProxy(String configName) 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 40
+   在 dcl.client.wcf.ProxyBase`1..ctor() 位置 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\ProxyBase.cs:行号 21
+   在 dcl.client.wcf.ProxyDataInterface..ctor()
+   在 wf.ClientEntrance.Program.Main(String[] args) 位置 D:\LIS\NEW_MMFY_LIS\wf.MainClient\wf.ClientEntrance\Program.cs:行号 70
+

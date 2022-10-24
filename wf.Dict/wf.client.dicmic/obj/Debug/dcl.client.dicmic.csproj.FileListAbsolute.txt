@@ -28,3 +28,20 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.client.dicmic\obj\Debug\dc
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.dll.licenses
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.pdb
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.dicmic.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.client.dicmic.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.ConDict_Antibio.resources
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.ConDict_Btype.resources
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.ConDict_An_Stype.resources
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.ConDict_An_Sstd.resources
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.ConDict_Bacteri.resources
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.ConDefAntiType.resources
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.ConDic_Antibio_Type.resources
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.dll.licenses
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.dll
+D:\LIS\NEW_MMFY_LIS\wf.Dict\wf.client.dicmic\obj\Debug\dcl.client.dicmic.pdb

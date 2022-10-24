@@ -1,0 +1,7 @@
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.ca.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.ca.pdb
+D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.svr.ca\obj\Debug\dcl.svr.ca.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.svr.ca\obj\Debug\dcl.svr.ca.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.svr.ca\obj\Debug\dcl.svr.ca.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.svr.ca\obj\Debug\dcl.svr.ca.dll
+D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.svr.ca\obj\Debug\dcl.svr.ca.pdb

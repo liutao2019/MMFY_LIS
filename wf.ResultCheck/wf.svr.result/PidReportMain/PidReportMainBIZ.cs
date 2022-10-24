@@ -196,6 +196,55 @@ namespace dcl.svr.result
             return patient;
         }
 
+        /// <summary>
+        /// 根据条码信息转换成病人信息
+        /// </summary>
+        /// <param name="entitySampMain"></param>
+        /// <returns></returns>
+        public List<EntityPidReportMain> GetPatientsBySampleMain(List<EntitySampMain> entitySampMain)
+        {
+            List<EntityPidReportMain> patientList = new List<EntityPidReportMain>();
+
+            foreach (var sampMain in entitySampMain)
+            {
+                EntityPidReportMain patient = new EntityPidReportMain();
+
+                if (sampMain != null && !string.IsNullOrEmpty(sampMain.SampBarCode))
+                {
+                    //填充条码病人资料到lis病人资料
+                    patient = ConvertSampMainToPatient(sampMain);
+
+                    //根据条码获取条码明细
+                    List<EntitySampDetail> dtBCCombine = sampMain.ListSampDetail;
+
+
+                    //项目序号
+                    int com_seq = 0;
+                    foreach (EntitySampDetail drBCCombine in dtBCCombine)//条码检验组合转换为LIS中的病人检验组合
+                    {
+                        EntityPidReportDetail reportDetail = new EntityPidReportDetail();
+
+                        reportDetail.ComId = drBCCombine.ComId;//项目ID
+                        reportDetail.OrderCode = drBCCombine.OrderCode;//组合HIS编码
+                        reportDetail.OrderPrice = drBCCombine.OrderPrice.ToString();//价格
+                        reportDetail.OrderSn = drBCCombine.OrderSn;//医嘱ID
+                        reportDetail.SortNo = com_seq;//顺序号
+                        reportDetail.SampFlag = drBCCombine.SampFlag;//上机标志
+                        reportDetail.PatComName = drBCCombine.ComName;//组合名称
+                        reportDetail.RepBarCode = sampMain.SampBarCode;//条码号
+                        reportDetail.ApplyID = drBCCombine.ApplyID;//申请单号
+
+                        patient.ListPidReportDetail.Add(reportDetail);
+                    }
+
+                }
+
+                patientList.Add(patient);
+            }
+
+         
+            return patientList;
+        }
 
         public List<EntityPidReportMain> GetAllLabPat(string labId, DateTime startDate, DateTime endDate)
         {
@@ -327,7 +376,7 @@ namespace dcl.svr.result
 
             List<EntityPidReportDetail> listPatCombine = patient.ListPidReportDetail;
 
-            if (!string.IsNullOrEmpty(patient.RepBarCode))
+            if (patient.RepBarCode.Length <= 14 && !string.IsNullOrEmpty(patient.RepBarCode))
             {
                 //条码号登记判断并发
                 string patId = GetPatientPatId(patient.RepItrId, patient.RepBarCode, patient.RepSid, patient.RepInDate.Value);
@@ -420,15 +469,19 @@ namespace dcl.svr.result
                 patient.RepStatus = 0;
                 //刪除条码重新登记后需判断该条码是否有修改记录
                 bool isModify = false;
-                List<EntitySampProcessDetail> listDetail = new SampProcessDetailBIZ().GetSampProcessDetail(patient.RepBarCode);
-                if (listDetail.Count > 0)
+                if (patient.RepBarCode.Length <= 14)
                 {
-                    foreach (EntitySampProcessDetail detail in listDetail)
+                    List<EntitySampProcessDetail> listDetail = new SampProcessDetailBIZ().GetSampProcessDetail(patient.RepBarCode);
+                    if (listDetail.Count > 0)
                     {
-                        if (detail.ProcStatus == "35")
-                            isModify = true;
+                        foreach (EntitySampProcessDetail detail in listDetail)
+                        {
+                            if (detail.ProcStatus == "35")
+                                isModify = true;
+                        }
                     }
                 }
+                
                 if (isModify)
                 {
                     patient.RepModifyFrequency = 1;//修改次数
@@ -440,14 +493,14 @@ namespace dcl.svr.result
                 result.Data.Patient.RepId = pat_id;
 
                 //判断是否已回退
-                if (!string.IsNullOrEmpty(barcode) && new SampMainBIZ().Returned(barcode))
+                if (barcode.Length <= 14 && !string.IsNullOrEmpty(barcode) && new SampMainBIZ().Returned(barcode))
                 {
                     result.Data.Patient.RepBarCode = barcode;
                     result.AddMessage(EnumOperateErrorCode.HaveReturned, EnumOperateErrorLevel.Error);
                 }
 
                 //判断是否存在样本号
-                else if (ExsitSid(patient.RepSid, patient.RepItrId, patient.RepInDate.Value))
+                else if (barcode.Length <= 14 && ExsitSid(patient.RepSid, patient.RepItrId, patient.RepInDate.Value))
                 {
                     result.AddMessage(EnumOperateErrorCode.SIDExist, EnumOperateErrorLevel.Error);
                 }
@@ -491,6 +544,11 @@ namespace dcl.svr.result
                                                  , listPatCombine);
                         }
                         listPatients.Add(patient);
+
+
+                        System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+                        sw.Start();//开始计时
+
 
                         //插入病人资料
                         if (InsertNewPatient(listPatients))
@@ -542,6 +600,10 @@ namespace dcl.svr.result
                         else
                             result.AddMessage(EnumOperateErrorCode.Exception, EnumOperateErrorLevel.Error);
 
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码插入时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
+
+
                     }
                 }
             }
@@ -566,6 +628,9 @@ namespace dcl.svr.result
             {
                 foreach (EntityPidReportMain item in patients)
                 {
+                    System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+                    sw.Start();//开始计时
+
                     result = mainDao.InsertNewPatient(item);
                     //插入病人信息成功后插入病人组合信息
                     if (result && item.ListPidReportDetail.Count > 0)
@@ -585,8 +650,15 @@ namespace dcl.svr.result
                             i++;
 
                         }
-                        result = new PidReportDetailBIZ().InsertNewReportDetail(item.ListPidReportDetail);
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码插入患者表时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
 
+                        sw.Start();//开始计时
+                        result = new PidReportDetailBIZ().InsertNewReportDetail(item.ListPidReportDetail);
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码插入患者明细表时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
+
+                        sw.Start();//开始计时
                         //存在条码号就更新上机标志
                         if (result &&
                             !string.IsNullOrEmpty(item.RepBarCode) &&
@@ -595,6 +667,8 @@ namespace dcl.svr.result
                             SampDetailBIZ sampDetailBIZ = new SampDetailBIZ();
                             sampDetailBIZ.UpdateSampDetailSampFlagByComId(item.RepBarCode, listComId, "1");
                         }
+                        sw.Stop();
+                        Lib.LogManager.Logger.LogInfo("条码号更新上机标志时间：", sw.Elapsed.ToString(@"hh\:mm\:ss"));
                     }
                 }
 
@@ -1897,6 +1971,34 @@ namespace dcl.svr.result
 
         }
 
+        /// <summary>
+        /// 获取病人新冠结果粤核酸上传状态
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        public Dictionary<string, string> GetPatientYhsStatus(DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                Dictionary<string, string> listPats = new Dictionary<string, string>();
+                IDaoPidReportMain dao = DclDaoFactory.DaoHandler<IDaoPidReportMain>();
+                if (dao != null)
+                {
+                    EntityPatientQC PatientQC = new EntityPatientQC();
+                    PatientQC.DateStart = startDate.Date;
+                    PatientQC.DateEnd = endDate.Date.AddDays(1);
+                    listPats = dao.GetPatientYhsStatus(PatientQC);
+                }
+                return listPats;
+            }
+            catch (Exception ex)
+            {
+                Lib.LogManager.Logger.LogException(ex);
+                throw;
+            }
+        }
+
         public EntityPidReportMain GetPatientByPatId(string strPatId, bool withPidRepDetail)
         {
             EntityPidReportMain patient = null;
@@ -2071,13 +2173,13 @@ namespace dcl.svr.result
         /// </summary>
         /// <param name="Reports"></param>
         /// <returns></returns>
-        public List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc)
+        public List<EntityPidReportMain> GetFaultUpLoadReport(EntityPatientQC qc, string type)
         {
             List<EntityPidReportMain> list = new List<EntityPidReportMain>();
             IDaoPidReportMain mainDao = DclDaoFactory.DaoHandler<IDaoPidReportMain>();
             if (mainDao != null)
             {
-                list = mainDao.GetFaultUpLoadReport(qc);
+                list = mainDao.GetFaultUpLoadReport(qc, type);
             }
             return list;
         }

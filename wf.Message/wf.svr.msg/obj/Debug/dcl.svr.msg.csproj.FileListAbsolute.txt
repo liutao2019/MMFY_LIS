@@ -1,0 +1,8 @@
+D:\LIS\NEW_MMFY_LIS\Release\CodeConfig.xml
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.msg.dll
+D:\LIS\NEW_MMFY_LIS\Release\dcl.svr.msg.pdb
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.svr.msg\obj\Debug\dcl.svr.msg.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.svr.msg\obj\Debug\dcl.svr.msg.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.svr.msg\obj\Debug\dcl.svr.msg.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.svr.msg\obj\Debug\dcl.svr.msg.dll
+D:\LIS\NEW_MMFY_LIS\wf.Message\wf.svr.msg\obj\Debug\dcl.svr.msg.pdb

@@ -31,9 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Lib.LogManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\PACS\代码文件\Wisefly_US\WiseflyUS\ya - 副本\lib\Lib.LogManager.dll</HintPath>
+    <Reference Include="Lib.LogManager">
+      <HintPath>..\..\..\Release\Lib.LogManager.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

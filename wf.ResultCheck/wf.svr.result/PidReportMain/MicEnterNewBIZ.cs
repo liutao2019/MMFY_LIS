@@ -18,6 +18,9 @@ namespace dcl.svr.result
 {
     public class MicEnterNewBIZ : IMicEnterNew
     {
+        private bool Audit_UploadYss = CacheSysConfig.Current.GetSystemConfig("Audit_UploadYss") == "是";
+        private bool Audit_UploadAllPatTypeYss = CacheSysConfig.Current.GetSystemConfig("Audit_UploadAllPatTypeYss") == "是";
+
         /// <summary>
         /// 根据细菌ID获取抗生素明细信息
         /// </summary>
@@ -657,12 +660,24 @@ namespace dcl.svr.result
             List<EntityObrResultBact> listAllBact = new List<EntityObrResultBact>();
             List<EntityObrResultDesc> listAllDesc = new List<EntityObrResultDesc>();
 
+            List<string> listOutPatientsID = new List<string>();
+            List<string> listCovidPatientsID = new List<string>();
+
             DateTime anditDate = ServerDateTime.GetDatabaseServerDateTime();
             foreach (var pat_id in listPatientsID)
             {
                 EntityPidReportMain listOriginPatInfo = new PidReportMainBIZ().GetPatientByPatId(pat_id, false);
                 if (listOriginPatInfo == null)
                     continue;
+
+                if (listOriginPatInfo.PidSrcId == "110")
+                {
+                    listOutPatientsID.Add(pat_id);
+                }
+                if (listOriginPatInfo.PidComName.Contains("新冠") || listOriginPatInfo.PidComName.Contains("新型冠状"))
+                {
+                    listCovidPatientsID.Add(pat_id);
+                }
 
                 var listAnti = new ObrResultAntiBIZ().GetAntiResultById(pat_id);
                 var listDesc = new ObrResultDescBIZ().GetDescResultById(pat_id);
@@ -721,6 +736,24 @@ namespace dcl.svr.result
 
             new resultcheck.SendDataToMid().Run(listPatientsID.ToList(), EnumOperationCode.MidReport);
 
+            if (Audit_UploadYss)
+            {
+                if (Audit_UploadAllPatTypeYss)
+                {
+                    if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                    {
+                        new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), EnumOperationCode.Report);
+                    }
+                }
+                else
+                {
+                    if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                    {
+                        new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), EnumOperationCode.Report);
+                    }
+                }
+            }
+
             //发送危急值消息
             SendCriticalMessage scm = new SendCriticalMessage();
             EntityQcResultList res = new EntityQcResultList();
@@ -762,6 +795,35 @@ namespace dcl.svr.result
 
                 if (listOriginPatInfo == null || listOriginPatInfo.RepStatus >= 1) continue;
 
+                List<string> listOutPatientsID = new List<string>();
+                List<string> listCovidPatientsID = new List<string>();
+
+                if (listOriginPatInfo.PidSrcId == "110")
+                {
+                    listOutPatientsID.Add(pat_id);
+                }
+                if (listOriginPatInfo.PidComName.Contains("新冠") || listOriginPatInfo.PidComName.Contains("新型冠状"))
+                {
+                    listCovidPatientsID.Add(pat_id);
+                }
+
+                if (Audit_UploadYss)
+                {
+                    if (Audit_UploadAllPatTypeYss)
+                    {
+                        if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
+                    else
+                    {
+                        if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
+                }
 
                 var patient = listOriginPatInfo;
                 DBManager helper = new DBManager();
@@ -795,6 +857,8 @@ namespace dcl.svr.result
                     }
                     helper.CommitTrans();
                     helper = null;
+
+                   
                 }
                 catch (Exception ex)
                 {
@@ -829,6 +893,36 @@ namespace dcl.svr.result
                 {
                     op.AddCustomMessage("12", pat_id, "状态异常", EnumOperationErrorLevel.Error);
                     continue;
+                }
+
+                List<string> listOutPatientsID = new List<string>();
+                List<string> listCovidPatientsID = new List<string>();
+
+                if (listOriginPatInfo.PidSrcId == "110")
+                {
+                    listOutPatientsID.Add(pat_id);
+                }
+                if (listOriginPatInfo.PidComName.Contains("新冠") || listOriginPatInfo.PidComName.Contains("新型冠状"))
+                {
+                    listCovidPatientsID.Add(pat_id);
+                }
+
+                if (Audit_UploadYss)
+                {
+                    if (Audit_UploadAllPatTypeYss)
+                    {
+                        if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
+                    else
+                    {
+                        if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                        {
+                            new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), EnumOperationCode.Report);
+                        }
+                    }
                 }
 
                 var patient = listOriginPatInfo;
@@ -882,6 +976,9 @@ namespace dcl.svr.result
             EntityOperationResultList reList = new EntityOperationResultList();
             if (listPatientsID == null || listPatientsID.Count() == 0) return reList;
 
+            List<string> listOutPatientsID = new List<string>();
+            List<string> listCovidPatientsID = new List<string>();
+
             List<EntityPidReportMain> listAllPat = new List<EntityPidReportMain>();
             List<EntityObrResultAnti> listAllAnti = new List<EntityObrResultAnti>();
             List<EntityObrResultBact> listAllBact = new List<EntityObrResultBact>();
@@ -895,6 +992,15 @@ namespace dcl.svr.result
                 EntityPidReportMain listOriginPatInfo = new PidReportMainBIZ().GetPatientByPatId(pat_id, false);
                 if (listOriginPatInfo == null)
                     continue;
+
+                if (listOriginPatInfo.PidSrcId == "110")
+                {
+                    listOutPatientsID.Add(pat_id);
+                }
+                if (listOriginPatInfo.PidComName.Contains("新冠") || listOriginPatInfo.PidComName.Contains("新型冠状"))
+                {
+                    listCovidPatientsID.Add(pat_id);
+                }
 
                 var listAnti = new ObrResultAntiBIZ().GetAntiResultById(pat_id);
                 var listDesc = new ObrResultDescBIZ().GetDescResultById(pat_id);
@@ -973,6 +1079,23 @@ namespace dcl.svr.result
 
             new resultcheck.SendDataToMid().Run(listPatientsID.ToList(), EnumOperationCode.Report);
 
+            if (Audit_UploadYss)
+            {
+                if (Audit_UploadAllPatTypeYss)
+                {
+                    if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                    {
+                        new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), EnumOperationCode.Report);
+                    }
+                }
+                else
+                {
+                    if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                    {
+                        new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), EnumOperationCode.Report);
+                    }
+                }
+            }
 
             //发送危急值消息
             SendCriticalMessage scm = new SendCriticalMessage();
@@ -997,6 +1120,9 @@ namespace dcl.svr.result
             EntityOperationResultList reList = new EntityOperationResultList();
             if (listPatientsID == null || listPatientsID.Count() == 0) return reList;
 
+            List<string> listOutPatientsID = new List<string>();
+            List<string> listCovidPatientsID = new List<string>();
+
             List<EntityPidReportMain> listAllPat = new List<EntityPidReportMain>();
             List<EntityObrResultAnti> listAllAnti = new List<EntityObrResultAnti>();
             List<EntityObrResultDesc> listAllDesc = new List<EntityObrResultDesc>();
@@ -1009,6 +1135,15 @@ namespace dcl.svr.result
 
                 if (listOriginPatInfo == null)
                     continue;
+
+                if (listOriginPatInfo.PidSrcId == "110")
+                {
+                    listOutPatientsID.Add(pat_id);
+                }
+                if (listOriginPatInfo.PidComName.Contains("新冠") || listOriginPatInfo.PidComName.Contains("新型冠状"))
+                {
+                    listCovidPatientsID.Add(pat_id);
+                }
 
                 var patient = listOriginPatInfo;
 
@@ -1070,6 +1205,23 @@ namespace dcl.svr.result
 
             new SendDataToMid().Run(listPatientsID, EnumOperationCode.UndoReport);
 
+            if (Audit_UploadYss)
+            {
+                if (Audit_UploadAllPatTypeYss)
+                {
+                    if (listCovidPatientsID != null && listCovidPatientsID.Count > 0)
+                    {
+                        new SendDataToMid().SendYssReport(listCovidPatientsID.ToList(), EnumOperationCode.UndoReport);
+                    }
+                }
+                else
+                {
+                    if (listOutPatientsID != null && listOutPatientsID.Count > 0)
+                    {
+                        new SendDataToMid().SendYssReport(listOutPatientsID.ToList(), EnumOperationCode.UndoReport);
+                    }
+                }
+            }
 
             //发送危急值消息 for delete;
             SendCriticalMessage scm = new SendCriticalMessage();

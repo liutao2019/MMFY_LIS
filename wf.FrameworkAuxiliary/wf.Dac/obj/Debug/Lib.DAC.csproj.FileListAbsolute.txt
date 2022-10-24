@@ -12,3 +12,12 @@ D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debu
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.GenerateResource.Cache
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.dll
 D:\WiseFly\Source Code\zhanghx\Lis.Release\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.pdb
+D:\LIS\NEW_MMFY_LIS\Release\Lib.DAC.dll
+D:\LIS\NEW_MMFY_LIS\Release\Lib.DAC.pdb
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.AssemblyReference.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.frmConnectionStringBuilder.resources
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.GenerateResource.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.CoreCompileInputs.cache
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.CopyComplete
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.dll
+D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.pdb
