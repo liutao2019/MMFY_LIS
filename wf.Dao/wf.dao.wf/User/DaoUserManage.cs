@@ -376,11 +376,19 @@ where Dict_profession.del_flag=0 and Dpro_type = 1 and Dict_itr_instrument.del_f
         {
             try
             {
-                String sql = string.Format(@"update Base_user set Buser_image = {0} where Buser_id = '{1}'", userSign, userId);
+                String sql = string.Format(@"update Base_user set Buser_image = {0} where Buser_id = '{1}'", userSign.ToString(), userId);
 
                 DBManager helper = new DBManager();
 
-                DataTable dt = helper.ExecuteDtSql(sql);
+                //DataTable dt = helper.ExecuteDtSql(sql);
+
+                Dictionary<string, object> values = new Dictionary<string, object>();
+                values.Add("Buser_image", userSign);
+                Dictionary<string, object> keys = new Dictionary<string, object>();
+                keys.Add("Buser_id", userId);
+
+                helper.UpdateOperation("Base_user", values, keys);
+
                 return true;
             }
             catch (Exception ex)
@@ -475,7 +483,7 @@ where Dict_profession.del_flag=0 and Dpro_type = 1 and Dict_itr_instrument.del_f
                 {
                     Dictionary<string, object> values = new Dictionary<string, object>();
                     values.Add("Buser_name", userInfo.UserName);
-                    values.Add("Buser_loginid", userInfo.UserLoginid);
+                    //values.Add("Buser_loginid", userInfo.UserLoginid);
                     values.Add("Buser_password", userInfo.UserPassword);
                     values.Add("Buser_Ditr_id", userInfo.ItrId);
                     values.Add("sort_no", userInfo.SortNo);
@@ -496,6 +504,8 @@ where Dict_profession.del_flag=0 and Dpro_type = 1 and Dict_itr_instrument.del_f
                     values.Add("Buser_ca_mode", userInfo.UserCaFlag);
                     values.Add("Buser_Dorg_id", userInfo.UserOrgId);
                     values.Add("Buser_identity", userInfo.Identity);
+                    values.Add("Buser_caentity_id", userInfo.CaEntityId);
+
                     Dictionary<string, object> keys = new Dictionary<string, object>();
                     keys.Add("Buser_id", userInfo.UserId);
 

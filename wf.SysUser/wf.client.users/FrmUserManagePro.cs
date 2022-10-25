@@ -489,6 +489,7 @@ namespace dcl.client.users
             if (ckeCASign.Checked)
             {
                 drPowerUserInfo.UserCaFlag = true;
+                drPowerUserInfo.CaEntityId = this.txtCAEntityID.Text;
             }
             else
             {
