@@ -36,3 +36,17 @@ D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.fram
 D:\LIS\NEW_MMFY_LIS\Release\dcl.client.frame.dll
 D:\LIS\NEW_MMFY_LIS\Release\dcl.client.frame.pdb
 D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.frame.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.frame.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\Camera_NET.CameraControl.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.FrmBase.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.FrmBaseExt.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.FrmCommon.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.FrmCommonExt.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.PubWaitForm.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.csproj.GenerateResource.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lib.client.common\obj\Debug\dcl.client.frame.pdb

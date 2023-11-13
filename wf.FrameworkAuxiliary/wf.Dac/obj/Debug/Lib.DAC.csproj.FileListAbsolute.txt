@@ -21,3 +21,12 @@ D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.CoreCo
 D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.dll
 D:\LIS\NEW_MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\Lib.DAC.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\Lib.DAC.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.frmConnectionStringBuilder.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.GenerateResource.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkAuxiliary\wf.Dac\obj\Debug\Lib.DAC.pdb

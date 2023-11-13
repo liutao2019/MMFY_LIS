@@ -6,3 +6,11 @@ D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.csproj.CoreCompi
 D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.dll
 D:\LIS\NEW_MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\CodeConfig.xml
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.ca.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.ca.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.ca\dcl.client.ca\obj\Debug\dcl.client.ca.pdb

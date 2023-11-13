@@ -19,3 +19,9 @@ D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.csproj.AssemblyReferen
 D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.csproj.CoreCompileInputs.cache
 D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.dll
 D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.entity.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.entity.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.entity\obj\Debug\dcl.entity.pdb

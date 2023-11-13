@@ -34,3 +34,17 @@ D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistic
 D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.dll
 D:\LIS\NEW_MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\CodeConfig.xml
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.statistical.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.statistical.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.FrmAdvanGeneralQuery.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.FrmGeneralStatistics.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.FrmReagentStatistics.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.Properties.Resources.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.GenerateResource.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.dll.licenses
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.Stat\wf.client.statistical\obj\Debug\dcl.client.statistical.pdb

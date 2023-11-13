@@ -36,3 +36,17 @@ D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.comm
 D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.dll
 D:\LIS\NEW_MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\CodeConfig.xml
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.common.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.common.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.FrmSelectInstrument.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.PrintPreview.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.Properties.Resources.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.SysToolBar.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.GenerateResource.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.dll.licenses
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.FrameworkCore\lis.client.common\obj\Debug\dcl.client.common.pdb

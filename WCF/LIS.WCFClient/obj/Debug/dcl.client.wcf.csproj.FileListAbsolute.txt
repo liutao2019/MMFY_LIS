@@ -15,3 +15,10 @@ D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.csproj.CoreCompil
 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.dll
 D:\LIS\NEW_MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.wcf.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.wcf.pdb
+E:\Wisefly\LIS\MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.dll
+E:\Wisefly\LIS\MMFY_LIS\WCF\LIS.WCFClient\obj\Debug\dcl.client.wcf.pdb

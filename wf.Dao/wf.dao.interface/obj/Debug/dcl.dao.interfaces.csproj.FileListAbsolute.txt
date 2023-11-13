@@ -15,3 +15,10 @@ D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.csproj.
 D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.dll
 D:\LIS\NEW_MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.dao.interfaces.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.dao.interfaces.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.Dao\wf.dao.interface\obj\Debug\dcl.dao.interfaces.pdb

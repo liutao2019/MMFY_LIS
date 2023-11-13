@@ -18,3 +18,11 @@ D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.cs
 D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.dll
 D:\LIS\NEW_MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\CodeConfig.xml
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.interfaces.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.interfaces.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.ExportInterface\wf.interfaces\obj\Debug\dcl.interfaces.pdb

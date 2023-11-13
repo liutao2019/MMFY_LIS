@@ -33,3 +33,16 @@ D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repde
 D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.csproj.CopyComplete
 D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.dll
 D:\LIS\NEW_MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.pdb
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.repdesign.dll
+E:\Wisefly\LIS\MMFY_LIS\Release\dcl.client.repdesign.pdb
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.csproj.AssemblyReference.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.MainForm.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.PrintRibbonControllerResources.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.Properties.Resources.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.XRDesignRibbonControllerResources.resources
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.csproj.GenerateResource.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.dll.licenses
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.csproj.CoreCompileInputs.cache
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.csproj.CopyComplete
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.dll
+E:\Wisefly\LIS\MMFY_LIS\wf.XtraReport\wf.client.repdesign\obj\Debug\dcl.client.repdesign.pdb
